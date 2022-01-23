@@ -1,0 +1,116 @@
+{
+  "main": {
+    "id": "b37c4644f1300975",
+    "type": "split",
+    "children": [
+      {
+        "id": "7df9306ab9d4f055",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "idea/ob手动安装第三方插件.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "15d7452f08618502",
+    "type": "split",
+    "children": [
+      {
+        "id": "321e386ec3327438",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6827c36c17b2a595",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "58b8d8ba0a08e1cc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#content",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd79926c93506cad",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6e7e2a5f68aaa2f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf742558061a0012",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34a398c2327168f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "idea/ob手动安装第三方插件.md"
+              }
+            }
+          },
+          {
+            "id": "119ebc55b7765501",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "idea/ob手动安装第三方插件.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 238
+  },
+  "active": "7df9306ab9d4f055",
+  "lastOpenFiles": [
+    "idea/ob手动安装第三方插件.md",
+    "idea/obsidian使用指北.md",
+    "essay/知乎/未命名.md",
+    "idea/idea-content.md",
+    "idea/在消息爆炸时代记录一些平时的所思所想.md",
+    "idea/科学上网指北.md",
+    "idea/github访问过慢.md",
+    "idea/mac快捷键.md",
+    "idea/Pasted image 20220123222339.png",
+    "idea/Pasted image 20220123222252.png"
+  ]
+}
