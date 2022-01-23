@@ -16,4 +16,3 @@ B站：一个专注于OB教学干货分享的UP主，有事没事可以看一个
 - [Johnny学OB](https://ob.pory.app/)
 - [Airtable - OB社区插件汇总 - Johnny整理 - 每周更新 - B站 Johnny学](https://airtable.com/shrdmp10Lxmf5Wmgl/tblJqnWpcKURTjysX)
 - [obsidian插件说明](https://docs.qq.com/sheet/DUVpCS3ZTTnJrTFpV?scene=cae366bda12e2556a7ab0220tL1To1&tab=BB08J2)
-- 
