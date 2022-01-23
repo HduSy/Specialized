@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7c6360f0a2b486f8",
+        "id": "22b63bbb57523fd2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/idea/ob手动安装第三方插件.md",
+            "file": "Roval/idea/template.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/ob手动安装第三方插件.md",
+                "file": "Roval/idea/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,18 +100,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "7c6360f0a2b486f8",
+  "active": "22b63bbb57523fd2",
   "lastOpenFiles": [
-    "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/rider/me.md",
-    "Roval/plan/一款活动常用功能插件.md",
-    "Roval/idea/idea-content.md",
+    "Roval/idea/template.md",
     "Roval/idea/obsidian使用指北.md",
-    "未命名.md",
-    "Roval/idea/vscode快捷键.md",
-    "Roval/idea/mac快捷键.md",
-    "Roval/idea/若有所思.md"
+    "Roval/dev/HTML/html-content.md",
+    "Roval/dev/lib/lib-content.md",
+    "Roval/dev/CSS/css-content.md",
+    "Roval/idea/idea-content.md",
+    "Roval/rider/me.md",
+    "Roval/idea/若有所思.md",
+    "Roval/dev/git/命令.md",
+    "Roval/idea/ob手动安装第三方插件.md"
   ]
 }
