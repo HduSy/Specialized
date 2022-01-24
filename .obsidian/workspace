@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/lib-content.md",
+            "file": "页面显示隐藏WEB API.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "775a662ec3dc03ff",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/lib-content.md",
+                "file": "页面显示隐藏WEB API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +106,15 @@
   },
   "active": "7e53801ecb463baa",
   "lastOpenFiles": [
+    "页面显示隐藏WEB API.md",
+    "Roval/dev/HTML/background.md",
+    "Roval/dev/HTML/html-content.md",
     "Roval/dev/lib/lib-content.md",
     "Roval/dev/lib/vue3.0.md",
     "Roval/plan/一款活动常用功能插件.md",
     "Roval/rider/me.md",
     "Roval/idea/idea-content.md",
     "Roval/dev/SCRIPTS/script-content.md",
-    "Roval/dev/SCRIPTS/typescript.md",
-    "Roval/dev/HTML/html-content.md",
-    "Roval/dev/CSS/css-content.md",
-    "Roval/idea/template.md"
+    "Roval/dev/SCRIPTS/typescript.md"
   ]
 }
