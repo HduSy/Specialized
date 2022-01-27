@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/vue-cli.md",
+            "file": "Roval/dev/experience/接口请求规范.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/vue-cli.md",
+                "file": "Roval/dev/experience/接口请求规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +105,8 @@
   },
   "active": "7e53801ecb463baa",
   "lastOpenFiles": [
+    "Roval/dev/experience/接口请求规范.md",
+    "Roval/dev/git/命令.md",
     "Roval/dev/lib/vue-cli.md",
     "页面显示隐藏WEB API.md",
     "Roval/dev/HTML/background.md",
@@ -112,8 +114,6 @@
     "Roval/dev/lib/lib-content.md",
     "Roval/dev/lib/vue3.0.md",
     "Roval/plan/一款活动常用功能插件.md",
-    "Roval/rider/me.md",
-    "Roval/idea/idea-content.md",
-    "Roval/dev/SCRIPTS/script-content.md"
+    "Roval/rider/me.md"
   ]
 }
