@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/essay/掘金/juejin-list.md",
+            "file": "Roval/dev/CSS/pixi.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/掘金/juejin-list.md",
+                "file": "Roval/dev/CSS/pixi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "f101ed43ea00394f",
   "lastOpenFiles": [
+    "Roval/dev/CSS/pixi.md",
+    "Roval/dev/CSS/animation.md",
+    "Roval/dev/CSS/css-content.md",
     "Roval/essay/掘金/juejin-list.md",
     "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
     "Roval/dev/SCRIPTS/2022-02-10.md",
     "Roval/dev/SCRIPTS/BOM.md",
     "Roval/dev/lib/webpack.md",
     "Roval/dev/lib/vue3.0.md",
-    "Roval/dev/lib/vue2.0.md",
-    "Roval/dev/lib/vue-cli.md",
-    "Roval/dev/experience/func.md",
-    "Roval/dev/experience/H5背景固定.md"
+    "Roval/dev/lib/vue2.0.md"
   ]
 }
