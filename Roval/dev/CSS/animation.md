@@ -6,9 +6,11 @@
 - transition - 过渡
 - animation - 动画
 
-#### 动画引擎
+#### 动画
 [[pixi]]
 [[canvas]]
+[[webgl]]
+[[svg]]
 
 ##### 工具网站
 - [easing缓动函数参考](https://easings.net/#)
