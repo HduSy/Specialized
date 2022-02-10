@@ -1,11 +1,10 @@
 #### 日期
 2022-02-10
-#### 引用来源
-[[juejin-list#如何在项目中用好 TypeScript 🤔 https juejin cn post 7058868160706904078|如何在项目中用好 TypeScript 🤔]]
+
 #### 摘要
 `TypeScript`增强了IDE功能，更好的代码提示、定义跳转、接口提示、代码重构，静态类型检查，在代码编写阶段发现语法错误。
 
- #### 内容
+#### 正文
  ##### 1. 善用类型注释
  当鼠标悬浮在使用到该类型的地方时，编辑器会有更好的提示
  ```ts
@@ -157,3 +156,6 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 `Required`：必须属性
 `Pick`：选取属性
 `Omit`：剔除属性
+
+#### 参考文献
+[[juejin-list#如何在项目中用好 TypeScript 🤔 https juejin cn post 7058868160706904078|如何在项目中用好 TypeScript 🤔]]
