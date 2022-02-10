@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/experience/front-end.md",
+            "file": "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/experience/front-end.md",
+                "file": "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "5c8f2ac9c60cb1f3",
   "lastOpenFiles": [
-    "Roval/dev/experience/front-end.md",
-    "Roval/dev/experience/页面显示隐藏WEB API.md",
-    "Roval/dev/CSS/Pasted image 20220208150310.png",
-    "Roval/dev/CSS/word-break.md",
-    "Roval/dev/CSS/white-space.md",
-    "Roval/dev/CSS/css-content.md",
-    "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/idea/ob使用指北.md",
-    "Roval/dev/CSS/word-wrap.md",
-    "Roval/dev/experience/video iPhone低电量模式.md"
+    "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
+    "Roval/dev/SCRIPTS/BOM.md",
+    "Roval/dev/lib/webpack.md",
+    "Roval/dev/lib/vue3.0.md",
+    "Roval/dev/lib/vue2.0.md",
+    "Roval/dev/lib/vue-cli.md",
+    "Roval/dev/experience/func.md",
+    "Roval/dev/experience/H5背景固定.md",
+    "Roval/dev/experience/video iPhone低电量模式.md",
+    "Roval/dev/experience/front-end.md"
   ]
 }
