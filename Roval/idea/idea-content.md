@@ -7,7 +7,7 @@
 
 [[github访问过慢]]
 
-[[mac快捷键]]
+[[Mac Keyboard shortcuts]]
 
 [[ob使用指北]]
 
@@ -15,4 +15,4 @@
 
 [[template]]
 
-[[vscode快捷键]]
+[[VSCODE Keyboard shortcuts]]

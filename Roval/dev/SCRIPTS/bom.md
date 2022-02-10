@@ -26,7 +26,7 @@ export default {
  isMacOS: /macintosh/i.test(ua),  
 }
 
-3.  window对象
+3.  window对象[[window]]
     
     -   作用域：BOM中window===JS中global，JS中通过let\const定义的变量却不会成为window属性
         
@@ -39,3 +39,4 @@ export default {
     -   视口位置：浏览器窗口大小通常无法完整显示整个页面，度量文档相对于视口滚动距离的属性有`window.pageXOffset\window.scrollX、window.pageYOffset\window.scrollY`；`scroll()\scrollTo(x,y)\scrollBy(xL,yL)`
         
     -   导航与打开：`window.open(url,targetWin,options,replace:boolean),targetWin also can be _self、_parent、_top or _blank`、`window.close()`
+- window对象

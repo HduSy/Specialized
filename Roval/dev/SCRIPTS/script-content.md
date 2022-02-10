@@ -1,7 +1,6 @@
-### 双向链接
-摘要：记录JavaScript语法。
+#### JavaScript
 
-[[bom]]
+[[BOM]]
 
 [[error]]
 
@@ -11,5 +10,9 @@
 
 [[regex]]
 
-[[typescript]]
+#### TypeScript
+
+[[TypeScript基础语法]]
+
+[[拥抱TypeScript之代码实践]]
 

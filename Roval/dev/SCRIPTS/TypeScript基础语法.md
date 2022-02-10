@@ -1,14 +1,14 @@
 # 入门到放弃
 
-## 基础
+### 基础
 
-### 基础数据类型
+#### 基础数据类型
 
-number、string、boolean、undefined、null、void
+`number、string、boolean、undefined、null、void`
 
 需要注意的是void与undefined&null区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，void的常用场景就是定义函数无返回值，声明一个变量为void类型没有多大意义，因为只能被赋值为undefined&null
 
-### 任意值
+#### 任意值
 
 -   声明变量时未指定类型，则为any类型
     
@@ -33,7 +33,7 @@ number、string、boolean、undefined、null、void
 -   当ts并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
     
 
-### 对象类型——接口
+### 对象类型——接口interface
 
 接口一方面是对行为的抽象，具体实现则由类去实现，另一方面是对对象形状进行描述
 
@@ -41,34 +41,39 @@ number、string、boolean、undefined、null、void
     
 -   可选属性
     
-    interface Person {  
-     name: string;  
-     age?: number;  
-    }
+    ```typescript
+	interface Person {
+		name: string;
+		age?: number;
+	}
+	```
     
 -   任意属性
     
-    interface Person {  
-     name: string;  
-     age?: number;  
-     [propName: string]: any;  
+```typescript
+	interface Person {
+		name: string;
+		age?: number;
+		[propName: string]: any;  
     }
-    
-    1.  一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
-        
-    2.  任意属性可定义为联合类型
+```
+
+1. 一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
+2. 任意属性可定义为联合类型
         
 -   只读属性
     
-    interface Person {  
-     readonly id: number;  
-     name: string;  
-     age?: number;  
-     [propName: string]: any;  
+```typescript
+    interface Person {
+		readonly id: number;
+		name: string;
+		age?: number;
+		[propName: string]: any;  
     }
-    
-    属性前加`readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值
-    
+```
+    	
+属性前加`readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值
+[[type VS interface]]
 
 ### 数组类型
 
@@ -78,42 +83,50 @@ number、string、boolean、undefined、null、void
     
 -   接口表示（不推荐）
     
-    interface NumberArray {  
-     [index: number]: any;  
-    }  
-    let fibonacci: NumberArray = [1, '1', 2, 3, 5];
-    
-    但是在表示**类数组**方面很nice，如`IArguments`, `NodeList`, `HTMLCollection`
-    
-    function sum() {  
-     let args: IArguments = arguments;  
+```typescript
+    interface NumberArray {
+		[index: number]: any;  
     }
+    let fibonacci: NumberArray = [1, '1', 2, 3, 5];
+```
     
+但是在表示**类数组**方面很nice，如`IArguments`, `NodeList`, `HTMLCollection`
+```typescript
+    function sum() {
+		let args: IArguments = arguments;  
+    }
 
+```
+    
 ### 函数的类型
 
 -   函数声明，参数个数确定，不可多不可少
     
-    function sum(x: number, y: number): number {  
-     return x + y;  
+```typescript
+    function sum(x: number, y: number): number {
+		return x + y;  
     }
+```
     
 -   函数表达式，TS中的`=>`用来表示函数定义，左边是输入类型，右边是输出类型，不同于ES6中的箭头函数
-    
-    let mySum: (x: number, y: number) => number = function (x: number, y: number): number {  
-     return x + y;  
+```typescript
+    let mySum: (x: number, y: number) => number = 
+	function (x: number, y: number):number {
+		return x + y;  
     };
+```
     
 -   接口定义函数
     
-    interface SearchFunc {  
-     (source: string, subString: string): boolean;  
+```typescript
+    interface SearchFunc {
+		(source: string, subString: string): boolean;  
     }  
-    ​  
     let mySearch: SearchFunc;  
-    mySearch = function(source: string, subString: string) {  
-     return source.search(subString) !== -1;  
+    mySearch = function(source: string, subString: string) {
+		return source.search(subString) !== -1;  
     }
+```
     
 -   可选参数
     
@@ -121,24 +134,29 @@ number、string、boolean、undefined、null、void
     
 -   参数默认值，**TypeScript 会将添加了默认值的参数识别为可选参数**, 此时就不受「可选参数必须接在必需参数后面」的限制了
     
-    function buildName(firstName: string, lastName: string = 'Cat') {  
-        return firstName + ' ' + lastName;  
+```typescript
+    function buildName(firstName: string, lastName: string = 'Cat') {
+		return firstName + ' ' + lastName;  
     }  
     let tomcat = buildName('Tom', 'Cat');  
     let tom = buildName('Tom');
+```
     
 -   剩余参数，只能是最后一个参数
     
-    function push(array: any[], ...items: any[]) {  
-        items.forEach(function(item) {  
-            array.push(item);  
-        });  
-    }  
+```typescript
+    function push(array: any[], ...items: any[]) {
+		items.forEach(function(item) {
+			array.push(item);
+		});  
+    }
     let a = [];  
     push(a, 1, 2, 3);
+```
     
 -   函数重载
     
+```typescript
     function reverse(x: number): number; // 定义  
     function reverse(x: string): string; // 定义  
     // 实现  
@@ -149,6 +167,7 @@ number、string、boolean、undefined、null、void
             return x.split('').reverse().join('');  
         }  
     }
+```
     
 
 ### 类型断言
