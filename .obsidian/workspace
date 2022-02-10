@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5c8f2ac9c60cb1f3",
+        "id": "f101ed43ea00394f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
+            "file": "Roval/essay/掘金/juejin-list.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
+                "file": "Roval/essay/掘金/juejin-list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,17 +103,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "5c8f2ac9c60cb1f3",
+  "active": "f101ed43ea00394f",
   "lastOpenFiles": [
+    "Roval/essay/掘金/juejin-list.md",
     "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
+    "Roval/dev/SCRIPTS/2022-02-10.md",
     "Roval/dev/SCRIPTS/BOM.md",
     "Roval/dev/lib/webpack.md",
     "Roval/dev/lib/vue3.0.md",
     "Roval/dev/lib/vue2.0.md",
     "Roval/dev/lib/vue-cli.md",
     "Roval/dev/experience/func.md",
-    "Roval/dev/experience/H5背景固定.md",
-    "Roval/dev/experience/video iPhone低电量模式.md",
-    "Roval/dev/experience/front-end.md"
+    "Roval/dev/experience/H5背景固定.md"
   ]
 }
