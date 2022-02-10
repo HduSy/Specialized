@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/idea/ob手动安装第三方插件.md",
+            "file": "Roval/dev/experience/front-end.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/ob手动安装第三方插件.md",
+                "file": "Roval/dev/experience/front-end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -104,15 +105,15 @@
   },
   "active": "5c8f2ac9c60cb1f3",
   "lastOpenFiles": [
+    "Roval/dev/experience/front-end.md",
+    "Roval/dev/experience/页面显示隐藏WEB API.md",
+    "Roval/dev/CSS/Pasted image 20220208150310.png",
+    "Roval/dev/CSS/word-break.md",
+    "Roval/dev/CSS/white-space.md",
+    "Roval/dev/CSS/css-content.md",
     "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
-    "Roval/dev/SCRIPTS/script-content.md",
-    "Roval/dev/SCRIPTS/TypeScript基础语法.md",
-    "Roval/essay/掘金/juejin-list.md",
-    "Roval/dev/SCRIPTS/BOM.md",
-    "Roval/dev/lib/vue2.0.md",
-    "Roval/dev/lib/lib-content.md",
-    "Roval/dev/杂/一些零碎的点.md",
-    "Roval/dev/experience/H5背景固定.md"
+    "Roval/idea/ob使用指北.md",
+    "Roval/dev/CSS/word-wrap.md",
+    "Roval/dev/experience/video iPhone低电量模式.md"
   ]
 }
