@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/plan/Github.md",
-            "mode": "source",
+            "file": "Roval/coder/2022H1.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/plan/Github.md",
+                "file": "Roval/coder/2022H1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +105,8 @@
   },
   "active": "f101ed43ea00394f",
   "lastOpenFiles": [
+    "Roval/coder/2022H1.md",
+    "Roval/coder/2021H2.md",
     "Roval/plan/Github.md",
     "Roval/idea/personal.md",
     "Roval/plan/WebView与H5.md",
@@ -112,8 +114,6 @@
     "Roval/dev/杂/一些零碎的点.md",
     "Roval/dev/experience/定时任务&手动触发.md",
     "Roval/dev/experience/宏任务&微任务.md",
-    "Roval/coder/OKR.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/2022H1.md"
+    "Roval/coder/OKR.md"
   ]
 }
