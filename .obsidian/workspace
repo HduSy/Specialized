@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/experience/定时任务&手动触发.md",
+            "file": "Roval/plan/Github.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/experience/定时任务&手动触发.md",
+                "file": "Roval/plan/Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "f101ed43ea00394f",
   "lastOpenFiles": [
+    "Roval/plan/Github.md",
+    "Roval/idea/personal.md",
+    "Roval/plan/WebView与H5.md",
+    "Roval/plan/一款活动常用功能插件.md",
+    "Roval/dev/杂/一些零碎的点.md",
     "Roval/dev/experience/定时任务&手动触发.md",
     "Roval/dev/experience/宏任务&微任务.md",
     "Roval/coder/OKR.md",
     "Roval/coder/2021H2自评.md",
-    "Roval/coder/2022H1.md",
-    "Roval/coder/2021H2.md",
-    "Roval/idea/personal.md",
-    "Roval/plan/WebView与H5.md",
-    "Roval/dev/experience/Pasted image 20220211105336.png",
-    "Roval/dev/experience/H5白屏问题汇总.md"
+    "Roval/coder/2022H1.md"
   ]
 }
