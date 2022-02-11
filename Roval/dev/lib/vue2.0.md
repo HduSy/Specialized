@@ -8,5 +8,15 @@
 - 使用**Virtual-DOM**与优秀的**Diff**算法；
 
 ### 指令
-`v-bind`：将标签属性绑定到vue实例data中property，不仅可以绑定DOM内容、标签属性，还可以绑定到DOM结构。
+`v-bind`：将标签属性绑定到vue实例data中property，不仅可以绑定到DOM内容、属性，还可以绑定到DOM结构。
 `v-if`：
+
+### 经典问题点整理
+
+- 与自定义元素关系![[Pasted image 20220211002140.png]]
+
+- 所有的 Vue 组件都是 Vue 实例。
+- 只有当实例被创建时就已经存在于 `data` 中的 property 才是**响应式**的，`Object.freeze()`例外。
+- Vue 实例暴露了一些以`$`开头的属性、方法，与自定义属性、方法区分开。
+- Vue实例初始化时必将经历的生命周期钩子函数，这些函数禁止用箭头函数，避免`this`指不到Vue实例自身。![[Pasted image 20220211003207.png]]
+- 
