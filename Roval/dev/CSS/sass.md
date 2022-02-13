@@ -4,11 +4,11 @@ CSS本身并不是一门编程语言，它更像是设计师的工具，对程�
 
 ## 1.使用变量
 
-Sass允许将css属性值定义为变量，方便在其他地方重复使用，符号为`$`。
+`Sass`允许将`css`属性值定义为变量，方便在其他地方重复使用，符号为`$`。
 
 ### 1-1.变量声明
 
-任何可以用作CSS属性值的地方都可以使用Sass变量去赋值。
+任何可以用作`css`属性值的地方都可以使用`Sass`变量去赋值。
 
 ```scss
 $black-color: #000;  
@@ -24,36 +24,42 @@ $width: 100px;
 
 ### 1-2.变量引用
 
-凡是CSS属性值存在的地方都可以用Sass变量赋值，编译结果中，变量会被替换为它的值。
+凡是`css`属性值存在的地方都可以用`Sass`变量赋值，编译结果中，变量会被替换为它的值。
 
+```scss
 $highlight-color: green;  
 $highlight-border: 1px solid $highlight-color;
+```
 
 ### 1-3.变量名用_还是-分割
 
-除纯CSS部分如类名外，sass中是互通的。
+除纯`css`部分如类名外，`Sass`中是互通的。
 
+```scss
 $bg-color: pink;  
-.contain {  
- background-color: $bg_color;  
+.contain {
+	background-color: $bg_color;  
 }
+```
 
 ## 2.嵌套规则
 
-嵌套规则可以避免CSS中大量重复书写工作，可以像俄罗斯🪆一样层层打开。
+嵌套规则可以避免`css`中大量重复书写工作，可以像俄罗斯🪆一样层层打开。
 
+```scss
 // from  
-#content {  
- article {  
- h1 { color: #333 }  
- p { margin-bottom: 1.4em }  
- }  
- aside { background-color: #EEE }  
+#content { 
+	article {  
+		h1 { color: #333 }  
+		p { margin-bottom: 1.4em }  
+	}
+	aside { background-color: #EEE }  
 }  
 // to  
 #content article h1 { color: #333 }  
 #content article p { margin-bottom: 1.4em }  
 #content aside { background-color: #EEE }
+```
 
 ### 2.1父选择器标识符`&`
 
