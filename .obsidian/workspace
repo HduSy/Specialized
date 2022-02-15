@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/CSS/sass.md",
+            "file": "Roval/dev/lib/lib-content.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/CSS/sass.md",
+                "file": "Roval/dev/lib/lib-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "f101ed43ea00394f",
   "lastOpenFiles": [
+    "Roval/dev/lib/lib-content.md",
+    "Roval/dev/lib/Untitled.md",
+    "Roval/dev/lib/vue3.0.md",
+    "Roval/essay/掘金/juejin-list.md",
+    "Roval/dev/SCRIPTS/fetch.md",
+    "Roval/dev/SCRIPTS/BOM.md",
+    "Roval/dev/SCRIPTS/window.md",
     "Roval/dev/CSS/sass.md",
     "Roval/idea/科学上网指北.md",
-    "Roval/dev/lib/vue2.0.md",
-    "Roval/coder/2022H1.md",
-    "Roval/coder/2021H2.md",
-    "Roval/plan/Github.md",
-    "Roval/idea/personal.md",
-    "Roval/plan/WebView与H5.md",
-    "Roval/plan/一款活动常用功能插件.md",
-    "Roval/dev/杂/一些零碎的点.md"
+    "Roval/dev/lib/vue2.0.md"
   ]
 }
