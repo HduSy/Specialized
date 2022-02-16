@@ -7,12 +7,8 @@
         "id": "ce81090a742b5166",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Roval/essay/网络文章/阮一峰的网络日志.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/阮一峰的网络日志.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +100,15 @@
   },
   "active": "ce81090a742b5166",
   "lastOpenFiles": [
-    "Roval/essay/网络文章/阮一峰的网络日志.md",
+    "Roval/coder/Q1任务组件推平台.md",
+    "Roval/coder/微博.jpg",
+    "Roval/coder/饿了吗.jpg",
+    "Roval/coder/赛事任务Schema配置.png",
+    "Roval/coder/2021H2.md",
     "Roval/coder/2022H1.md",
     "Roval/coder/OKR.md",
-    "Roval/coder/2021H2.md",
+    "Roval/essay/网络文章/阮一峰的网络日志.md",
     "Roval/dev/CSS/前端一键换肤几种实现方案.md",
-    "Roval/essay/掘金/juejin-list.md",
-    "Roval/dev/CSS/animation.md",
-    "Roval/dev/experience/Untitled.md",
-    "Roval/dev/experience/定时任务&手动触发.md",
-    "Roval/idea/科学上网指北.md"
+    "Roval/essay/掘金/juejin-list.md"
   ]
 }
