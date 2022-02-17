@@ -1,114 +1,103 @@
 {
   "main": {
-    "id": "f2783c5b72327082",
+    "id": "efecb9e40b7e5d68",
     "type": "split",
     "children": [
       {
-        "id": "ce81090a742b5166",
+        "id": "5afa35efa2e8958b",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Roval/coder/2022H1.md",
+            "mode": "preview"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "0fd4a2f457da8b2f",
-    "type": "split",
+    "id": "ac18be420c59bfa5",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "06321c9b7c778575",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bffc3b260f907f67",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "70f1a770cd895029",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "b0aad93ca396c812",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "9b6a031a5c99a581",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "775a662ec3dc03ff",
-    "type": "split",
+    "id": "3d8baea0d160c9bd",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "541608c41693bd2e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "54ae84a27e8d5631",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "bf73832e550b5400",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "f233cb5ad7f98517",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
+        "id": "82638264a14c17d0",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "12830a2147f775a3",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Roval/coder/2022H1.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": true,
+            "unlinkedCollapsed": false
           }
-        ],
-        "currentTab": 2
+        }
+      },
+      {
+        "id": "aee6b1278e4147bc",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 2
   },
-  "active": "ce81090a742b5166",
+  "active": "5afa35efa2e8958b",
   "lastOpenFiles": [
+    "Roval/coder/2022H1.md",
+    "Roval/coder/2021H2自评.md",
+    "Roval/coder/OKR.md",
+    "Roval/dev/杂/一些零碎的点.md",
+    "Roval/coder/2021H2.md",
     "Roval/coder/Q1任务组件推平台.md",
     "Roval/coder/微博.jpg",
     "Roval/coder/饿了吗.jpg",
     "Roval/coder/赛事任务Schema配置.png",
-    "Roval/coder/2021H2.md",
-    "Roval/coder/2022H1.md",
-    "Roval/coder/OKR.md",
-    "Roval/essay/网络文章/阮一峰的网络日志.md",
-    "Roval/dev/CSS/前端一键换肤几种实现方案.md",
-    "Roval/essay/掘金/juejin-list.md"
+    "Roval/essay/网络文章/阮一峰的网络日志.md"
   ]
 }

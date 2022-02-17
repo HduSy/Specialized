@@ -1,8 +1,8 @@
 [
   "calendar",
   "obsidian-git",
-  "ProxyGithub",
   "discordian-plugin",
   "obsidian-outliner",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "ProxyGithub"
 ]
