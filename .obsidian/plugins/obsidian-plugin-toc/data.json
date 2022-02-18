@@ -1,6 +1,6 @@
 {
-  "minimumDepth": 2,
+  "minimumDepth": 1,
   "maximumDepth": 6,
   "listStyle": "bullet",
-  "title": "## 文件名"
+  "title": "### 目录"
 }

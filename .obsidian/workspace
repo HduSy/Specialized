@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/vue2.0.md",
+            "file": "Roval/idea/template.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/vue2.0.md",
+                "file": "Roval/idea/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,15 +105,15 @@
   },
   "active": "5afa35efa2e8958b",
   "lastOpenFiles": [
-    "Roval/dev/lib/vue2.0.md",
-    "Roval/plan/Github.md",
-    "Roval/dev/git/命令.md",
-    "Roval/dev/git/发版标签生成器.md",
+    "Roval/idea/template.md",
+    "Roval/dev/lib/Untitled.md",
+    "Roval/dev/lib/vue3.0.md",
+    "Roval/dev/lib/vue-cli.md",
     "Roval/dev/lib/eslint.md",
-    "Roval/dev/lib/lib-content.md",
-    "Roval/dev/杂/一些零碎的点.md",
-    "Roval/coder/2022H1.md",
-    "Roval/coder/OKR.md",
-    "Roval/coder/2021H2自评.md"
+    "Roval/dev/lib/Vue2.0.md",
+    "Roval/dev/lib/vue2.0.md",
+    "Roval/idea/personal.md",
+    "Roval/idea/fuck.md",
+    "Roval/idea/fuck.md"
   ]
 }
