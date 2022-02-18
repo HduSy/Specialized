@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Roval/dev/lib/eslint.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -18,86 +19,92 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ac18be420c59bfa5",
-    "type": "mobile-drawer",
+    "id": "21e546468cbad3c7",
+    "type": "split",
     "children": [
       {
-        "id": "b0aad93ca396c812",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "9b6a031a5c99a581",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "a38bd3fbbb29849f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cb83236b63fccc1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f926a5a774fed732",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "3d8baea0d160c9bd",
-    "type": "mobile-drawer",
+    "id": "01024862868e1e3e",
+    "type": "split",
     "children": [
       {
-        "id": "82638264a14c17d0",
-        "type": "leaf",
-        "state": {
-          "type": "calendar",
-          "state": {}
-        }
-      },
-      {
-        "id": "12830a2147f775a3",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "Roval/dev/lib/eslint.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": true,
-            "unlinkedCollapsed": false
+        "id": "52b5fd77c107b8bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68551f2d7a6d698a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Roval/dev/lib/eslint.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0573b25f762d028b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "aee6b1278e4147bc",
-        "type": "leaf",
-        "state": {
-          "type": "advanced-tables-toolbar",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 2
+    "direction": "horizontal",
+    "width": 300
   },
   "active": "5afa35efa2e8958b",
   "lastOpenFiles": [
     "Roval/dev/lib/eslint.md",
-    "Roval/coder/2022H1.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/OKR.md",
+    "Roval/dev/lib/lib-content.md",
     "Roval/dev/杂/一些零碎的点.md",
+    "Roval/coder/2022H1.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/2021H2自评.md",
     "Roval/coder/2021H2.md",
     "Roval/coder/Q1任务组件推平台.md",
     "Roval/coder/微博.jpg",
-    "Roval/coder/饿了吗.jpg",
-    "Roval/coder/赛事任务Schema配置.png"
+    "Roval/coder/饿了吗.jpg"
   ]
 }
