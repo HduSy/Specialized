@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/eslint.md",
+            "file": "Roval/dev/lib/vue2.0.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/eslint.md",
+                "file": "Roval/dev/lib/vue2.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,8 +87,17 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "484273409b60fcc7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -96,15 +105,15 @@
   },
   "active": "5afa35efa2e8958b",
   "lastOpenFiles": [
+    "Roval/dev/lib/vue2.0.md",
+    "Roval/plan/Github.md",
+    "Roval/dev/git/命令.md",
+    "Roval/dev/git/发版标签生成器.md",
     "Roval/dev/lib/eslint.md",
     "Roval/dev/lib/lib-content.md",
     "Roval/dev/杂/一些零碎的点.md",
     "Roval/coder/2022H1.md",
     "Roval/coder/OKR.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/2021H2.md",
-    "Roval/coder/Q1任务组件推平台.md",
-    "Roval/coder/微博.jpg",
-    "Roval/coder/饿了吗.jpg"
+    "Roval/coder/2021H2自评.md"
   ]
 }

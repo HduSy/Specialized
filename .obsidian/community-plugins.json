@@ -4,5 +4,7 @@
   "discordian-plugin",
   "obsidian-outliner",
   "table-editor-obsidian",
-  "ProxyGithub"
+  "ProxyGithub",
+  "templater-obsidian",
+  "obsidian-plugin-toc"
 ]
