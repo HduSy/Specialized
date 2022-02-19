@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Roval/dev/lib/Vue2.0.md",
-            "mode": "preview"
+            "mode": "preview",
+            "source": false
           }
         }
       }
@@ -18,66 +19,81 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a7a47bde05aceb60",
-    "type": "mobile-drawer",
+    "id": "7242531fd2d20a1f",
+    "type": "split",
     "children": [
       {
-        "id": "46fcdeb9be50d5f2",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "4eda23154664346f",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "3bc028f6f04ed323",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d12da71239f19437",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "767b8f3d7e455493",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "9081ed6dcb11242e",
-    "type": "mobile-drawer",
+    "id": "092986a236de2cf1",
+    "type": "split",
     "children": [
       {
-        "id": "2d33c37c3653b331",
-        "type": "leaf",
-        "state": {
-          "type": "calendar",
-          "state": {}
-        }
-      },
-      {
-        "id": "a74b068bd3711790",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "Roval/dev/lib/Vue2.0.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "e6fbfddfecc4f7ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c63299eee3c4ba0c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "284dea7aed7029c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Roval/dev/lib/Vue2.0.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "6d9b7949f4da6753",
   "lastOpenFiles": [
