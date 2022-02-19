@@ -22,3 +22,5 @@
 
 #### 个别插件配置
 [Templater](http://jdev.tw/blog/6484/obsidian-templater-plugin)
+[更详细的Templater配置说明](https://silentvoid13.github.io/Templater/user-functions/system-user-functions.html)
+

@@ -1,17 +1,16 @@
 {
   "main": {
-    "id": "efecb9e40b7e5d68",
+    "id": "1a4da0c0df015f86",
     "type": "split",
     "children": [
       {
-        "id": "5afa35efa2e8958b",
+        "id": "6d9b7949f4da6753",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/idea/template.md",
-            "mode": "source",
-            "source": false
+            "file": "Roval/dev/lib/Vue2.0.md",
+            "mode": "preview"
           }
         }
       }
@@ -19,101 +18,78 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "21e546468cbad3c7",
-    "type": "split",
+    "id": "a7a47bde05aceb60",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "a38bd3fbbb29849f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6cb83236b63fccc1",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "f926a5a774fed732",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "46fcdeb9be50d5f2",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "4eda23154664346f",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "01024862868e1e3e",
-    "type": "split",
+    "id": "9081ed6dcb11242e",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "52b5fd77c107b8bf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "68551f2d7a6d698a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Roval/idea/template.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "0573b25f762d028b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "484273409b60fcc7",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
+        "id": "2d33c37c3653b331",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "a74b068bd3711790",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Roval/dev/lib/Vue2.0.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ],
-        "currentTab": 2
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
-  "active": "5afa35efa2e8958b",
+  "active": "6d9b7949f4da6753",
   "lastOpenFiles": [
-    "Roval/idea/template.md",
-    "Roval/dev/lib/Untitled.md",
-    "Roval/dev/lib/vue3.0.md",
-    "Roval/dev/lib/vue-cli.md",
-    "Roval/dev/lib/eslint.md",
     "Roval/dev/lib/Vue2.0.md",
+    "Roval/dev/experience/func.md",
+    "Roval/dev/SCRIPTS/script-content.md",
+    "Roval/dev/lib/lib-content.md",
+    "Roval/idea/template.md",
+    "Roval/dev/lib/vue3.0.md",
+    "Roval/dev/lib/eslint.md",
     "Roval/dev/lib/vue2.0.md",
-    "Roval/idea/personal.md",
-    "Roval/idea/fuck.md",
-    "Roval/idea/fuck.md"
+    "Roval/dev/lib/vue-cli.md",
+    "Roval/idea/ob使用指北.md"
   ]
 }
