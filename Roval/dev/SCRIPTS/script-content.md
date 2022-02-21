@@ -14,5 +14,5 @@
 
 [[TypeScript基础语法]]
 
-[[拥抱TypeScript之代码实践]]
+[[拥抱TS之代码中的实践]]
 
