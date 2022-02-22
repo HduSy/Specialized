@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/coder/2021H2自评.md",
+            "file": "Roval/dev/CSS/css-content.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/2021H2自评.md",
+                "file": "Roval/dev/CSS/css-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "6d9b7949f4da6753",
   "lastOpenFiles": [
+    "Roval/dev/CSS/css-content.md",
     "Roval/coder/2021H2自评.md",
     "Roval/coder/2021H2.md",
     "Roval/coder/2022H1.md",
@@ -105,7 +106,6 @@
     "Roval/dev/SCRIPTS/为什么要用TypeScript.md",
     "Roval/dev/SCRIPTS/script-content.md",
     "Roval/dev/SCRIPTS/BOM.md",
-    "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md",
-    "Roval/dev/lib/Vue2.0.md"
+    "Roval/dev/SCRIPTS/拥抱TypeScript之代码实践.md"
   ]
 }
