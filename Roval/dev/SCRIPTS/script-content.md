@@ -16,3 +16,4 @@
 
 [[拥抱TS之代码中的实践]]
 
+[[Type VS Interface]]
