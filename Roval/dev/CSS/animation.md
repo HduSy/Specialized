@@ -7,7 +7,7 @@
 - animation - 动画
 
 #### 动画
-[[pixi]]
+[[Roval/dev/CSS/pixi]]
 [[canvas]]
 [[webgl]]
 [[svg]]
