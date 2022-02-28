@@ -7,5 +7,9 @@
 
 ## 正文
 #### undefined
-![[Pasted image 20220228161416.png]]
+![[Pasted image 20220228165322.png]]
+### ''
+![[Pasted image 20220228165401.png]]
+### empty array or object
+![[Pasted image 20220228165758.png]]
 ## 参考文献
