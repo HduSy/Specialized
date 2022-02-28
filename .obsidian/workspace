@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6d9b7949f4da6753",
+        "id": "dad1be2c2f7f3ea3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Roval/dev/lib/PIXI.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/PIXI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +90,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6d9b7949f4da6753",
+  "active": "dad1be2c2f7f3ea3",
   "lastOpenFiles": [
     "Roval/dev/lib/PIXI.md",
     "Roval/dev/lib/eslint.md",
