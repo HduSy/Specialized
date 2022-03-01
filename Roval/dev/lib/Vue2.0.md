@@ -74,5 +74,10 @@ current-user:
 </current-user>
 ```
 #### 独占默认插槽的简写
+当组件**只存在**默认插槽时，组件本身可当作插槽模板来用，即`v-slot`指令可应用在标签上。
+```html
+<current-user v-slot="slotProps"> {{ slotProps.user.firstName }} </current-user>
+```
 #### 插槽解构
+插槽工作原理就是单参数函数，能够作为函数参数的JavaScript表达式都可作为`v-slot`的值。函数的参数可解构。
 ## 参考文献
