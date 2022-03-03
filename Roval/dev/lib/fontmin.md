@@ -30,6 +30,7 @@ function minifyFont() {
  .use(Fontmin.css()) // css 生成插件  
  .dest(path.join(__dirname, './'))  
   fontmin.run(function(err, files, stream) {  
+
     if (err) { // 异常捕捉  
  console.error(err)  
     }  
