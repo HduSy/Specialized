@@ -14,18 +14,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "525000e0b342742e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "conflict-files-obsidian-git.md",
-            "mode": "source",
-            "source": false
-          }
-        }
       }
     ],
     "direction": "vertical"
@@ -118,10 +106,10 @@
   "active": "dad1be2c2f7f3ea3",
   "lastOpenFiles": [
     "Roval/dev/lib/npm命令.md",
+    "conflict-files-obsidian-git.md",
     "Roval/dev/lib/eslint.md",
     "Roval/dev/lib/fontmin.md",
     "Roval/coder/2022H1.md",
-    "conflict-files-obsidian-git.md",
     "Roval/dev/lib/qs.md",
     "Roval/dev/lib/Vue2.0.md",
     "Roval/dev/lib/Pasted image 20220228161416.png.md",
