@@ -101,4 +101,36 @@ current-user:
 修改原数组本身的方法，如`push、pop、shift、splicce`等。
 ##### 非变更方法（替换方法
 新数组替换原有数组，`slice、concat`等不修改数组本身的方法。**所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作。**
+#### 组件基础
+1、vue通过`component`元素`is`属性动态切换不同组件，属性值可以是**已注册**组件名字或组件的选项对象。
+```html
+<component v-bind:is="currentTab.component" class="tab"></component>
+```
+组件名：
+```html
+<component v-bind:is="currentTabComponent" class="tab"></component>
+```
+```js
+Vue.component("tab-home", {
+
+template: "<div>Home component</div>"
+
+});
+currentTab = 'Home'
+currentTabComponent = "tab-" + currentTab.toLowerCase();
+```
+选项对象：
+```js
+currentTab = {
+	name: "Home",
+	component: {template: "<div>Home component</div>"}
+}
+```
+2、property vs attribute
+property其实还是dom对象的属性，随时可更改，值也会变，也不受限可扩展，初始值或许部分依赖于html attribute但不完全是这样，html attribute值的范围是有限的，遵循html标准。`v-bind`的`.prop`修饰符可指定“属性”作为一个`DOM property`绑定而不是作为`HTML attribute`绑定。
+3、一些html元素如`ul、table、form`等天生不认自定义组件标签如`<blog-info/>`，这时用其支持的标签，同时`is`指定自定义标签即可。当有如下情况时，当我没说：
+-   字符串 (例如：`template: '...'`)
+-   [单文件组件 (`.vue`)](https://cn.vuejs.org/v2/guide/single-file-components.html)
+-   [`<script type="text/x-template">`](https://cn.vuejs.org/v2/guide/components-edge-cases.html#X-Templates)
 ## 参考文献
+[[juejin-list#property vs attribute https juejin cn post 6844904114065768462|property vs attribute]]
