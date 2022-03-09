@@ -12,8 +12,10 @@
 > — <cite>Cicero</cite>
 
 ## 正文
+
 ### 生命周期
 ![[Pasted image 20220211003207.png]]
+
 
 ### 动态参数
 指令绑定动态参数时要注意最好小写，因为模版会将其全部小写化，这样的话，当data中的动态参数是大写时，就绑定不到了。
@@ -25,6 +27,7 @@ data: {
 	eventName: 'href',
 }
 ```
+
 ### 插槽
 Vue提供一组插槽API`<slot></slot>`来实现内容分发，之间可以是任何模版或HTML，也可以是其他组件。
 #### 后备内容（default）
@@ -37,6 +40,7 @@ submit-button: <button type="submit"> <slot>Submit</slot> </button>
 👇
 <button type="submit"> Submit </button>
 ```
+
 #### 具名插槽（name）
 当同时存在多个插槽时，`slot`利用attribute`name`区分，不提供时`name`为`default`，同时`template`元素上使用指令`v-slot:`指定分发到哪个插槽的`name`。
 ```html
@@ -59,6 +63,7 @@ base-layout：
 	</header>
 </div>
 ```
+
 #### 作用域插槽（插槽prop）
 **编译作用域**决定父组件所在父级作用域与子模板所在子作用域不在同一作用域，想在父组件在插槽内容中使用子组件数据，通过在 `<slot>` 元素上绑定attribute（**插槽 prop**），然后在父级作用域中，使用带值的 `v-slot` 来定义所有插槽prop的对象名字。
 ```html
@@ -73,19 +78,23 @@ current-user:
 	</template>
 </current-user>
 ```
+
 #### 独占默认插槽的简写
 当组件**只存在**默认插槽时，组件本身可当作插槽模板来用，即`v-slot`指令可应用在标签上。
 ```html
 <current-user v-slot="slotProps"> {{ slotProps.user.firstName }} </current-user>
 ```
+
 #### 插槽解构
 插槽工作原理就是单参数函数，能够作为函数参数的JavaScript表达式都可作为`v-slot`的值。函数的参数可解构。
+
 #### 条件渲染
 `v-if`：惰性渲染，只有条件为truthy时才会渲染；
 `v-show`：不论条件真假都会渲染，更改`display`属性，始终存在于`DOM`中。
 `v-if`：有切换开销，因为切换过程会使条件块内的事件监听器与子组件销毁与重建；
 `v-show`：有初始渲染开销。
-#### 列表渲染
+
+### 列表渲染
 `v-for`
 ```html
 0、item in items
@@ -96,12 +105,14 @@ current-user:
 5、n in 100 // 重复100次
 ```
 注：`v-for`与`v-if`同时使用时，前者优先级大，前者循环的情况下，再判断条件满足与否，满足条件的才会显示。
+
 #### 数组更新检测
 ##### 变更方法（非替换
 修改原数组本身的方法，如`push、pop、shift、splicce`等。
 ##### 非变更方法（替换方法
 新数组替换原有数组，`slice、concat`等不修改数组本身的方法。**所以用一个含有相同元素的数组去替换原来的数组是非常高效的操作。**
-#### 组件基础
+
+### 组件基础
 1、vue通过`component`元素`is`属性动态切换不同组件，属性值可以是**已注册**组件名字或组件的选项对象。
 ```html
 <component v-bind:is="currentTab.component" class="tab"></component>
@@ -132,5 +143,14 @@ property其实还是dom对象的属性，随时可更改，值也会变，也不
 -   字符串 (例如：`template: '...'`)
 -   [单文件组件 (`.vue`)](https://cn.vuejs.org/v2/guide/single-file-components.html)
 -   [`<script type="text/x-template">`](https://cn.vuejs.org/v2/guide/components-edge-cases.html#X-Templates)
+
+### prop
+- 一次性传入一个对象所有属性作为组件prop的写法：v-bind=obj；
+- vue的prop为单向数据流不建议子组件修改，需要修改的两种场景：
+	- 以初始值传入作为子组件本地数据使用；
+	- 以初始值传入需经转换，作为子组件计算属性。
+- prop验证：数组和对象的默认值必须通过一个函数来返回；prop验证在实例创建之前就开始了，因此选项里的data、computed等在`default`、`validator`（自定义验证函数）中是不可用的；
+- prop合并/替换：多数情况prop会发生替换，class/style特殊点，会合并class="a"=>class="a b"；
+- inheritAttrs:false与$attrs打组合拳，实现更细粒度的prop传递（手动决定这些 attribute 会被赋予哪个元素）。
 ## 参考文献
 [[juejin-list#property vs attribute https juejin cn post 6844904114065768462|property vs attribute]]
