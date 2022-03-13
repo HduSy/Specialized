@@ -152,5 +152,10 @@ property其实还是dom对象的属性，随时可更改，值也会变，也不
 - prop验证：数组和对象的默认值必须通过一个函数来返回；prop验证在实例创建之前就开始了，因此选项里的data、computed等在`default`、`validator`（自定义验证函数）中是不可用的；
 - prop合并/替换：多数情况prop会发生替换，class/style特殊点，会合并class="a"=>class="a b"；
 - inheritAttrs:false与$attrs打组合拳，实现更细粒度的prop传递（手动决定这些 attribute 会被赋予哪个元素）。
+
+### 自定义事件
+`.native`修饰符可以直接监听子组件根元素上的原生方法。
+`$listeners`property提供作用在组件上的所有监听器，通`v-on="$listeners"`，就可以使组件内所有元素获取所有事件监听器了。
+v-bind.sync="doc"
 ## 参考文献
 [[juejin-list#property vs attribute https juejin cn post 6844904114065768462|property vs attribute]]
