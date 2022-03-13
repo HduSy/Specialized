@@ -168,7 +168,19 @@ v-bind.sync="doc"
 </div>
 // 父组件 Father
 <div>
-	<child
+	<child v-slot='slotProps'>{{slotProps.txt}}+'-'+{{slotProps.txt}}</child> //独占默认插槽可直接写在组件标签上
+</div>
+// or
+<div>
+	<child>
+		<template v-slot='slotProps'>{{slotProps.txt}}+'-'+{{slotProps.txt}}</template>
+	</child> //独占默认插槽可直接写在组件标签上
+</div>
+// 插槽缩写 & 插槽解构
+<div>
+	<child>
+		<template #default='{txt}'>{{txt}}+'-'+{{txt}}</template>
+	</child>
 </div>
 
 ```
