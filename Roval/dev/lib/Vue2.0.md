@@ -157,5 +157,21 @@ property其实还是dom对象的属性，随时可更改，值也会变，也不
 `.native`修饰符可以直接监听子组件根元素上的原生方法。
 `$listeners`property提供作用在组件上的所有监听器，通`v-on="$listeners"`，就可以使组件内所有元素获取所有事件监听器了。
 v-bind.sync="doc"
+
+#### 插槽
+1、组件设计时留好槽位，以便在组件开始结束标签之间插入内容。
+2、作用域插槽的目的是在父级作用域提供访问子级作用域的能力，这样就能在父组件访问子组件实例上的数据项了。用法：
+```html
+// 子组件 Child
+<div>
+	<slot :txt=txt>{{txt}}</slot>
+</div>
+// 父组件 Father
+<div>
+	<child
+</div>
+
+```
+
 ## 参考文献
 [[juejin-list#property vs attribute https juejin cn post 6844904114065768462|property vs attribute]]
