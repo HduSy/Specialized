@@ -14,7 +14,7 @@
 
 ##### 工具网站
 - [easing缓动函数参考](https://easings.net/#)
-- 
+- [运营自选动画效果大全](https://animista.net/)
 
 #### 参考文献
 [[juejin-list#如何选取合适的前端动效方案？ https juejin cn post 6844903830094610446|如何选取合适的前端动效方案]]
