@@ -8,7 +8,5 @@
 ## 正文
 
 ## 参考文献
-[官网](https://greensock.com/gsap/)
-[StackOverflow上一篇简明介绍核心几个库](https://segmentfault.com/a/1190000005366176###)
+[官网Get Started](https://greensock.com/get-started/)
 [官方Easing Visualizer](https://greensock.com/ease-visualizer)
-[# Animating Vue with GreenSock]()
