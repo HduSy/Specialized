@@ -73,7 +73,7 @@
 ```
     	
 属性前加`readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值
-[[type VS interface]]
+[[Type VS Interface]]
 
 ### 数组类型
 
