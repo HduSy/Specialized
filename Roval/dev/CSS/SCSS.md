@@ -108,6 +108,6 @@ nav a, aside a {
 
 ### 6. SassScript
 #### 6-1 Interactive Shell
-通过命令行输入 `sass -i`  
+通过命令行输入 `sass -i`  进行一些 `Sass` 支持的简单运算～
 ## 参考文献
 [Scss 官网](https://www.sass.hk/)
