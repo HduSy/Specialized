@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dd1ac7ede4a24c1a",
+        "id": "1972badcc24653af",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/essay/网络文章/阮一峰的网络日志.md",
+            "file": "Roval/dev/lib/Webpack.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/阮一峰的网络日志.md",
+                "file": "Roval/dev/lib/Webpack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +94,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "dd1ac7ede4a24c1a",
+  "active": "1972badcc24653af",
   "lastOpenFiles": [
-    "Roval/essay/网络文章/阮一峰的网络日志.md",
-    "Roval/idea/科学上网指北.md",
-    "Roval/dev/lib/React.md",
-    "Roval/dev/杂/工程化.md",
-    "Roval/dev/杂/一些零碎的点.md",
-    "Roval/dev/lib/TypeScript.md",
+    "Roval/dev/lib/Webpack.md",
+    "Roval/dev/lib/npm命令.md",
     "Roval/dev/lib/Eslint.md",
-    "Roval/dev/css/SCSS.md",
-    "Roval/dev/css/开发经验.md",
-    "Roval/dev/css/sass.md"
+    "Roval/dev/lib/case-sensitive-paths.md",
+    "Roval/dev/杂/工程化.md",
+    "Roval/dev/杂/一些网站.md",
+    "Roval/dev/杂/一些零碎的点.md",
+    "Roval/idea/template.md",
+    "Roval/idea/personal.md",
+    "Roval/idea/ob手动安装第三方插件.md"
   ]
 }
