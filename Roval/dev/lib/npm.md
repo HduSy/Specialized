@@ -13,6 +13,10 @@ https://github.com/tj/commander.js
 https://github.com/jprichardson/node-jsonfile
 - 终端字体样式设置
 https://github.com/chalk/chalk
+- 终端进度转轮提示
+https://www.npmjs.com/package/ora
+- 验证是否合法 npm 包名
+https://github.com/npm/validate-npm-package-name
 
 
 ## 参考文献
