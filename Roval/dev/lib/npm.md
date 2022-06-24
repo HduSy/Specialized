@@ -19,7 +19,10 @@ https://www.npmjs.com/package/ora
 https://github.com/npm/validate-npm-package-name
 - 命令行交互
 https://github.com/SBoudrias/Inquirer.js
-- 下载一个 git regist
+- 下载一个 git repo
+https://www.npmjs.com/package/download-git-repo
+
+
 
 ## 参考文献
 [2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)
