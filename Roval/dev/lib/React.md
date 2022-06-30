@@ -6,6 +6,11 @@
 > — <cite>Winston Churchill</cite>
 
 ## 正文
+- Fragments 避免添加额外 DOM 元素以防标签失效->[Fragment](https://zh-hans.reactjs.org/docs/fragments.html)
+
+短写法：`<></>`，无属性可加；常规写法：`<React.Fragment key={}></React.Fragment>`
+
+- test
 
 ## 参考文献
 [《React 学习之道》](https://github.com/the-road-to-learn-react/the-road-to-learn-react-chinese)
