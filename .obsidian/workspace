@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/git/命令.md",
+            "file": "Roval/dev/git/工程化规范.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/git/命令.md",
+                "file": "Roval/dev/git/工程化规范.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
   },
   "active": "1972badcc24653af",
   "lastOpenFiles": [
-    "Roval/dev/git/命令.md",
+    "Roval/dev/git/工程化规范.md",
     "Roval/dev/git/命令.md",
     "Roval/dev/lib/React.md",
     "Roval/dev/lib/qs.md",
@@ -104,7 +104,6 @@
     "Roval/dev/lib/TypeScript.md",
     "Roval/dev/lib/npm.md",
     "Roval/coder/2022H1自评.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/2022H1.md"
+    "Roval/coder/2021H2自评.md"
   ]
 }
