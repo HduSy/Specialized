@@ -23,6 +23,8 @@ https://github.com/SBoudrias/Inquirer.js
 https://www.npmjs.com/package/download-git-repo
 - css in js React 实践
 https://styled-components.com/docs/basics CSS删除容易、无类名冲突
+- px2Rem
+https://www.npmjs.com/package/px2rem
 
 
 
