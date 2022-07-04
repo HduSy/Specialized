@@ -25,7 +25,23 @@ https://www.npmjs.com/package/download-git-repo
 https://styled-components.com/docs/basics CSS删除容易、无类名冲突
 - px2Rem
 https://www.npmjs.com/package/px2rem
-
+- postcss flex 布局下 bug 修复补丁
+https://www.npmjs.com/package/postcss-flexbugs-fixes
+```js postcss.config.js
+module.exports = {  
+  plugins: [  
+    require('autoprefixer')(),  
+    require('postcss-flexbugs-fixes')(),  
+    require('postcss-px2rem')({  
+      remUnit: 100,  
+    }),  
+  ],  
+};
+```
+- zip 压缩方案
+[压缩解压缩 zip 到本地disk or 内存 buffer](https://github.com/cthackers/adm-zip)
+- 获取 .md 类型文件 MD5值
+[md5-file](https://www.npmjs.com/package/md5-file)
 
 
 ## 参考文献
