@@ -9,3 +9,4 @@
 
 ## 参考文献
 [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)
+[工具类型](https://www.typescriptlang.org/docs/handbook/utility-types.html)

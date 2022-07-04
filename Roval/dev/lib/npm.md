@@ -42,6 +42,9 @@ module.exports = {
 [压缩解压缩 zip 到本地disk or 内存 buffer](https://github.com/cthackers/adm-zip)
 - 获取 .md 类型文件 MD5值
 [md5-file](https://www.npmjs.com/package/md5-file)
+- glog 语法快速遍历文件系统，支持模式匹配，返回文件路径名
+[fast-glob](https://github.com/mrmlnc/fast-glob)
+- 
 
 
 ## 参考文献
