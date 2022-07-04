@@ -11,8 +11,11 @@
 
 短写法：`<></>`，无属性可加；常规写法：`<React.Fragment key={}></React.Fragment>`
 ### Hooks
-- useEffect 为函数式组件提供副效应
+- useEffect 为函数式组件提供副效应，支持第二个参数填依赖项，条件执行
 [阮一峰 useEffect](https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html)
+- 产生 memorization 函数，以空间换时间，缓存纯函数计算结果，只有指定依赖项发生变更时才重新计算结果。
+[CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
+- more
 ### 相关生态库
 - react-loadable
 - 

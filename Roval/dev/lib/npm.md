@@ -46,6 +46,8 @@ module.exports = {
 [fast-glob](https://github.com/mrmlnc/fast-glob)
 - 使用 glob 语法删除文件/文件夹
 [del](https://www.npmjs.com/package/del)
+- VSCODE 代码编辑器
+[monaco-editor](https://github.com/microsoft/monaco-editor)
 
 
 ## 参考文献
