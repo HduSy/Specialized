@@ -49,6 +49,8 @@ module.exports = {
 - VSCODE 代码编辑器
 [monaco-editor](https://github.com/microsoft/monaco-editor)
 
-
+#### 命令
+- npm link 本地开发测试依赖包免构建发版流程
+- 
 ## 参考文献
 [2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)
