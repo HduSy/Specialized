@@ -48,6 +48,9 @@ module.exports = {
 [del](https://www.npmjs.com/package/del)
 - VSCODE 代码编辑器
 [monaco-editor](https://github.com/microsoft/monaco-editor)
+- ORM框架，方便操作数据库
+[typeorm](https://typeorm.bootcss.com/)
+
 
 #### 命令
 - npm link 本地开发测试依赖包免构建发版流程
