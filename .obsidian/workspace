@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/essay/网络文章/张鑫旭.md",
+            "file": "Roval/dev/lib/npm.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/张鑫旭.md",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "b0c33d82f623180e",
   "lastOpenFiles": [
+    "Roval/dev/lib/npm.md",
     "Roval/essay/网络文章/张鑫旭.md",
     "Roval/essay/知乎/zhihu-list.md",
     "Roval/essay/掘金/juejin-list.md",
@@ -105,7 +106,6 @@
     "Roval/dev/scripts/DOM.md",
     "Roval/dev/scripts/BOM.md",
     "Roval/dev/scripts/script-content.md",
-    "Roval/dev/lib/lib-content.md",
-    "Roval/dev/lib/NodeJS.md"
+    "Roval/dev/lib/lib-content.md"
   ]
 }
