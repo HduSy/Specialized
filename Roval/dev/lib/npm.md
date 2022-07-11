@@ -50,6 +50,10 @@ module.exports = {
 [monaco-editor](https://github.com/microsoft/monaco-editor)
 - ORM框架，方便操作数据库
 [typeorm](https://typeorm.bootcss.com/)
+- nodejs 压缩中间件
+[compression](https://www.npmjs.com/package/compression)
+- nodejs cookie 中间件
+[cookie-parser](https://www.npmjs.com/package/cookie-parser)
 
 
 #### 命令
