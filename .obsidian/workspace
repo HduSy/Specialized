@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/npm.md",
+            "file": "Roval/idea/ob使用指北.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/idea/ob使用指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "b0c33d82f623180e",
   "lastOpenFiles": [
-    "Roval/dev/lib/npm.md",
-    "Roval/essay/网络文章/infoQ.md",
-    "Roval/essay/网络文章/Github.md",
-    "Roval/dev/lib/nestjs.md",
-    "Roval/dev/lib/Eslint.md",
-    "Roval/dev/git/命令.md",
-    "Roval/dev/杂/MDN.md",
-    "Roval/dev/杂/一些网站.md",
-    "Roval/essay/掘金/juejin-list.md",
-    "Roval/dev/杂/GoogleChromeDev.md"
+    "Roval/idea/ob使用指北.md",
+    "Roval/idea/idea-content.md",
+    "Roval/idea/Pasted image 20220123222716.png",
+    "Roval/rider/一份详细又简略的公路车相关知识.md",
+    "Roval/rider/以俱乐部名义进行的一些活动.md",
+    "Roval/idea/ob手动安装第三方插件.md",
+    "Roval/idea/Pasted image 20220123222339.png",
+    "Roval/essay/网络文章/张鑫旭.md",
+    "Roval/essay/网络文章/阮一峰的网络日志.md",
+    "Roval/dev/lib/Portal-Vue.md"
   ]
 }
