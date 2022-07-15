@@ -1,7 +1,9 @@
 {
   "commitMessage": "Roval_vault backup: {{date}}",
+  "autoCommitMessage": "Roval_vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 45,
+  "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": true,
   "disablePush": false,
@@ -14,5 +16,9 @@
   "gitPath": "",
   "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": false,
-  "treeStructure": false
+  "treeStructure": false,
+  "refreshSourceControl": true,
+  "basePath": "",
+  "differentIntervalCommitAndPush": false,
+  "changedFilesInStatusBar": false
 }

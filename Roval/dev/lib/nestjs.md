@@ -30,109 +30,68 @@ date updated: 2022-07-15 14:37
 
 ### 提供者 Providers
 
+#### 创建
+
+`nest -g service [name]`  
+通过 `@Injectable()` 和 `class` 创建。
+
+#### 概念
+
 由 `@Injectable` 装饰器修饰的普通类，可以是 `service`、`repositry`、`factory`、`helper` 等，在 `constructor` 构造函数中注入，替控制器分担一些额外的更加复杂的处理。
 
+#### 示例
+
 ```ts
-@Post('/upload/codeblock')
-
-@UseInterceptors(FileInterceptor('file'))
-
-async uploadCodeBlock(
-
-@UploadedFile() file: TUploadFileField,
-
-@BasicAuthUser() username: string,
-
-@Body('id', ParseIntPipe) id: number,
-
-@Body('bfs', ParseIntPipe) bfs: number
-
-) {
-
-// 检查用户权限
-
-await this.cliService.getInfoWithAuth(id, username, { vCodeMode: false });
-
+@Post('/upload/codeblock')  
+@UseInterceptors(FileInterceptor('file'))  
+async uploadCodeBlock(  
+  @UploadedFile() file: TUploadFileField,  
+  @BasicAuthUser() username: string,  
+  @Body('id', ParseIntPipe) id: number,  
+  @Body('bfs', ParseIntPipe) bfs: number  
+) {  
+  // 检查用户权限  
+  await this.cliService.getInfoWithAuth(id, username, { vCodeMode: false });  
   
-
-// 提取zip文件
-
-const {
-
-oss: ossFiles,
-
-bfs: bfsFiles,
-
-json: jsonFile,
-
-} = this.cliService.getZipUploadResources(file.buffer, {
-
-useBfs: bfs === 1,
-
-readHtml: false,
-
-prefix: `activity${id}/`,
-
-});
-
+  // 提取zip文件  
+  const {  
+    oss: ossFiles,  
+    bfs: bfsFiles,  
+    json: jsonFile,  
+  } = this.cliService.getZipUploadResources(file.buffer, {  
+    useBfs: bfs === 1,  
+    readHtml: false,  
+    prefix: `activity${id}/`,  
+  });  
   
-
-// 分别上传bfs和oss资源
-
-const [bfsResult, ossResult] = await Promise.all([
-
-this.bfsService.uploadMany(bfsFiles, true),
-
-this.ossService.uploadMany(ossFiles),
-
-]);
-
+  // 分别上传bfs和oss资源  
+  const [bfsResult, ossResult] = await Promise.all([  
+    this.bfsService.uploadMany(bfsFiles, true),  
+    this.ossService.uploadMany(ossFiles),  
+  ]);  
   
-
-// 将上传得到的URL组合起来，下发给用户
-
-const fileResultList: Array<{
-
-path: string;
-
-url: string;
-
-}> = [
-
-...this.cliService.mappingUrlAndFile(bfsResult, bfsFiles),
-
-...this.cliService.mappingUrlAndFile(ossResult, ossFiles),
-
-];
-
+  // 将上传得到的URL组合起来，下发给用户  
+  const fileResultList: Array<{  
+    path: string;  
+    url: string;  
+  }> = [  
+    ...this.cliService.mappingUrlAndFile(bfsResult, bfsFiles),  
+    ...this.cliService.mappingUrlAndFile(ossResult, ossFiles),  
+  ];  
   
-
-// 上传完文件，增加处理逻辑
-
-const codeblockResources = this.cliService.filterCodeBlockResources(
-
-fileResultList,
-
-jsonFile
-
-);
-
-await this.actPageService.updateCodeBlockConfig(
-
-id,
-
-codeblockResources,
-
-username
-
-);
-
-return {
-
-files: fileResultList,
-
-};
-
+  // 上传完文件，增加处理逻辑  
+  const codeblockResources = this.cliService.filterCodeBlockResources(  
+    fileResultList,  
+    jsonFile  
+  );  
+  await this.actPageService.updateCodeBlockConfig(  
+    id,  
+    codeblockResources,  
+    username  
+  );  
+  return {  
+    files: fileResultList,  
+  };  
 }
 ```
 
