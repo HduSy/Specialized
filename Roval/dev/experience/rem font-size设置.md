@@ -1,11 +1,12 @@
-
-创建日期：2022-03-11 11:57:30
+创建日期：2022-03-11 11:57:30  
 最后修改：2022-03-11 11:57:30
-- - -
-> We shall never know all the good that a simple smile can do.
-> — <cite>Mother Teresa</cite>
 
-## 正文
+- - -
+> We shall never know all the good that a simple smile can do.  
+>—<cite>Mother Teresa</cite>
+
+# 正文
+
 ```js
 const defaults = {  
   scale: 'x',  
@@ -103,4 +104,5 @@ function pc_xy() {
 import resize from '@/common/js/resizeConfig'  
 resize({ type: 'h5', scale: 'xy' })
 ```
-## 参考文献
+
+# 参考文献

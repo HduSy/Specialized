@@ -1,4 +1,4 @@
-#### JavaScript
+# JavaScript
 
 [[BOM]]
 
@@ -10,7 +10,7 @@
 
 [[regex]]
 
-#### TypeScript
+# TypeScript
 
 [[TypeScript基础语法]]
 

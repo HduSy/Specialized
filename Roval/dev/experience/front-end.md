@@ -1,6 +1,9 @@
 一些开发中起一定奇特作用的函数
-##### 防抖截流[[func]]
-##### 换行省略
+
+# 防抖截流 [[func]]
+
+# 换行省略
+
 ```scss
 @mixin multilineTextEllipsis($line, $line-height, $width) {
 	width: $width;
@@ -20,6 +23,3 @@
 	}
 }
 ```
-
-
-

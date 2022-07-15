@@ -1,14 +1,18 @@
-
-创建日期：2022-03-01 21:21:23
+创建日期：2022-03-01 21:21:23  
 最后修改：2022-03-01 21:21:23
-- - -
-> Nothing diminishes anxiety faster than action.
-> — <cite>Walter Inglis Anderson</cite>
 
-## 正文
-### font-minify
+- - -
+> Nothing diminishes anxiety faster than action.  
+>—<cite>Walter Inglis Anderson</cite>
+
+# 正文
+
+## Font-minify
+
 ![[Pasted image 20220301212244.png]]
-### index.js
+
+## index.js
+
 ```js
 const Fontmin = require('fontmin')  
 const path = require('path')  
@@ -39,4 +43,5 @@ function minifyFont() {
 }  
 minifyFont()
 ```
+
 ## 参考文献

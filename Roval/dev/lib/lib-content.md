@@ -1,5 +1,10 @@
-### 双向链接
-摘要：记录使用过&未使用过的npm包
+---
+date created: 2022-07-15 14:30
+---
+
+# 双向链接
+
+摘要：记录使用过&未使用过的 npm 包
 
 [[vue-cli]]
 
@@ -14,4 +19,3 @@
 [blobjs](https://github.com/clarketm/Blob.js/blob/master/Blob.js) - Blob polyfill
 
 [[eslint]]
-

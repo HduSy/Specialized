@@ -2,153 +2,221 @@
 
 ## 事件流
 
-1.  事件：用户或浏览器执行某种动作
-    
-2.  事件流：
-    
-    -   IE事件冒泡
-        
-    -   Netscape事件捕获
-        
-    -   DOM2三个阶段（捕获、目标、冒泡）
-        
+1. 事件：用户或浏览器执行某种动作
+		
+2. 事件流：
+		
+		- IE事件冒泡
+				
+		- Netscape事件捕获
+				
+		- DOM2三个阶段（捕获、目标、冒泡）
+				
 
 ## 事件处理程序
 
-1.  事件处理程序：响应事件而调用的函数，名称以'on'开头，onclick、onload...
-    
-    -   DOM0事件处理程序：
-        
-        let btn = document.getElementById("myBtn");  
-        btn.onclick = function() {  
-         console.log('Clicked');  
-        };
-        
-    -   DOM2事件处理程序 `addEventListener` `removeEventListener`
-        
-        let btn = document.getElementById("myBtn");  
-        btn.addEventListener("click", () => {  
-         console.log(this.id);  
-        }, false);
-        
-    -   IE事件处理程序 `attachEvent` `detachEvent`
-        
+1. 事件处理程序：响应事件而调用的函数，名称以 'on' 开头，onclick、onload…
+		
+		- DOM0事件处理程序：
+				
+
+				let btn = document.getElementById("myBtn");  
+				btn.onclick = function() {  
+				 console.log('Clicked');  
+				};
+
+				
+		- DOM2事件处理程序 `addEventListener` `removeEventListener`
+				
+
+				let btn = document.getElementById("myBtn");  
+				btn.addEventListener("click", () => {  
+				 console.log(this.id);  
+				}, false);
+
+				
+		- IE事件处理程序 `attachEvent` `detachEvent`
+				
 
 ## 17.3 事件对象
 
-1.  DOM事件对象
-    
-    在DOM合规的浏览器中不管是哪种方式（DOM0/DOM1）指定事件处理程序，`event`对象都是传给事件处理程序的**唯一**参数，该对象有以下属性和方法：
-    
-    ![image-20210718210447893](file:///Users/santu/Library/Mobile%20Documents/com~apple~CloudDocs/MarkDown/Essay/image-20210718210447893-6613493.png?lastModify=1642935291)
-    
-    ![image-20210718210542863](file:///Users/santu/Library/Mobile%20Documents/com~apple~CloudDocs/MarkDown/Essay/image-20210718210542863-6613545.png?lastModify=1642935291)
-    
-    其中要注意的是`target`始终是事件发生实际所在目标元素，而`currentTarget`指事件当前所在目标元素，有可能是事件传递到了父元素，该父元素注册的事件处理程序中`event.currentTarget===this`；
-    
-    其次利用`event.type`可用在同一处理程序处理同时处理不同类型事件；
-    
-    另外`event`对象只在事件处理程序执行期间存在，之后就销毁了，如果有闭包函数可能存在内存泄露。
-    
-2.  IE事件对象 与DOM事件对象不同的是IE事件对象是基于事件处理程序**被指定的方式**以不同方式来访问的。
-    
-    属性/方法
-    
-    类型
-    
-    读/写
-    
-    说明
-    
-    cancelBubble
-    
-    Boolean
-    
-    读/写
-    
-    相当于stopPropagation()
-    
-    returnValue
-    
-    Boolean
-    
-    读/写
-    
-    相当于preventDefault()
-    
-    srcElement
-    
-    Element
-    
-    只读
-    
-    相当于target属性
-    
-    type
-    
-    String
-    
-    只读
-    
-    触发的事件类型
-    
-3.  跨浏览器事件对象 跨浏览器方案自定义了处理方式存在差异的事件新方法
-    
+1. DOM 事件对象
+		
+
+		在DOM合规的浏览器中不管是哪种方式（DOM0/DOM1）指定事件处理程序，`event`对象都是传给事件处理程序的**唯一**参数，该对象有以下属性和方法：
+
+		
+
+		![image-20210718210447893](file:///Users/santu/Library/Mobile%20Documents/com~apple~CloudDocs/MarkDown/Essay/image-20210718210447893-6613493.png?lastModify=1642935291)
+
+		
+
+		![image-20210718210542863](file:///Users/santu/Library/Mobile%20Documents/com~apple~CloudDocs/MarkDown/Essay/image-20210718210542863-6613545.png?lastModify=1642935291)
+
+		
+
+		其中要注意的是`target`始终是事件发生实际所在目标元素，而`currentTarget`指事件当前所在目标元素，有可能是事件传递到了父元素，该父元素注册的事件处理程序中`event.currentTarget===this`；
+
+		
+
+		其次利用`event.type`可用在同一处理程序处理同时处理不同类型事件；
+
+		
+
+		另外`event`对象只在事件处理程序执行期间存在，之后就销毁了，如果有闭包函数可能存在内存泄露。
+
+		
+2. IE 事件对象 与 DOM 事件对象不同的是 IE 事件对象是基于事件处理程序**被指定的方式**以不同方式来访问的。
+		
+
+		属性/方法
+
+		
+
+		类型
+
+		
+
+		读/写
+
+		
+
+		说明
+
+		
+
+		cancelBubble
+
+		
+
+		Boolean
+
+		
+
+		读/写
+
+		
+
+		相当于stopPropagation()
+
+		
+
+		returnValue
+
+		
+
+		Boolean
+
+		
+
+		读/写
+
+		
+
+		相当于preventDefault()
+
+		
+
+		srcElement
+
+		
+
+		Element
+
+		
+
+		只读
+
+		
+
+		相当于target属性
+
+		
+
+		type
+
+		
+
+		String
+
+		
+
+		只读
+
+		
+
+		触发的事件类型
+
+		
+3. 跨浏览器事件对象 跨浏览器方案自定义了处理方式存在差异的事件新方法
+		
 
 ## 17.4 事件类型
 
-1.  UIEvent
-    
-    -   `load`：在`window`对象上，整个页面包括一切外部资源，图片、JavaScript文件、CSS文件等加载完毕后触发`load`事件。另外动态创建`img、script、link`支持指定`load`事件，在资源下载完后触发。第一种指定方式：`window`上JavaScript指定
-        
-        window.addEventListener('load', () => {  
-         const imgEl = document.createElement('img')  
-         const scriptEl = document.createElement('script')  
-         const linkEl = document.createElement('link')  
-         imgEl.src = 'xxx'  
-         scriptEl.src = 'xxx'  
-         linkEl.type = 'text/css'  
-         linkEl.rel = 'stylesheet'  
-         // 必须写在指定img src属性前面  
-         imgEl.addEventListener('load', (event) => {  
-         console.log(event.target.src);  
-         })  
-         document.body.appendChild(scriptEl)  
-         document.getElementsByTagName('head')[0].appendChild(linkEl)  
-         document.body.appendChild(imgEl)  
-         // 前后无所谓  
-         scriptEl.addEventListener('load', (event) => {  
-         console.log('script loaded');  
-         })  
-         linkEl.addEventListener('load', (event) => {  
-         console.log('link loaded');  
-         })  
-        })
-        
-        第二种指定方式：元素`onload`属性「对window指定方式的一种向后兼容」
-        
-    -   `unload`事件与`load`事件相对
-        
-        页面卸载后触发，当A页面导航至B页面时，常用于**清理引用，避免内存泄露**。
-        
-    -   `resize`
-        
-        窗口大小发生缩放变化时出发，最大化/最小化窗口也会触发
-        
-    -   `scroll`
-        
-        页面滚动时触发
-        
-2.  FocusEvent
-    
-    最重要的两个事件是`focus`&`blur`，但他们都不支持冒泡，因此IE新增`focusin`&`focusout`、Opera新增`DOMFocusIn`&`DOMFocusOut的冒泡版
-    
-3.  鼠标和滚轮事件
-    
+1. UIEvent
+		
+		- `load`：在`window`对象上，整个页面包括一切外部资源，图片、JavaScript文件、CSS文件等加载完毕后触发`load`事件。另外动态创建`img、script、link`支持指定`load`事件，在资源下载完后触发。第一种指定方式：`window`上JavaScript指定
+				
+
+				window.addEventListener('load', () => {  
+				 const imgEl = document.createElement('img')  
+				 const scriptEl = document.createElement('script')  
+				 const linkEl = document.createElement('link')  
+				 imgEl.src = 'xxx'  
+				 scriptEl.src = 'xxx'  
+				 linkEl.type = 'text/css'  
+				 linkEl.rel = 'stylesheet'  
+				 // 必须写在指定img src属性前面  
+				 imgEl.addEventListener('load', (event) => {  
+				 console.log(event.target.src);  
+				 })  
+				 document.body.appendChild(scriptEl)  
+				 document.getElementsByTagName('head')[0].appendChild(linkEl)  
+				 document.body.appendChild(imgEl)  
+				 // 前后无所谓  
+				 scriptEl.addEventListener('load', (event) => {  
+				 console.log('script loaded');  
+				 })  
+				 linkEl.addEventListener('load', (event) => {  
+				 console.log('link loaded');  
+				 })  
+				})
+
+				
+
+				第二种指定方式：元素`onload`属性「对window指定方式的一种向后兼容」
+
+				
+		- `unload`事件与`load`事件相对
+				
+
+				页面卸载后触发，当A页面导航至B页面时，常用于**清理引用，避免内存泄露**。
+
+				
+		- `resize`
+				
+
+				窗口大小发生缩放变化时出发，最大化/最小化窗口也会触发
+
+				
+		- `scroll`
+				
+
+				页面滚动时触发
+
+				
+2. FocusEvent
+		
+
+		最重要的两个事件是`focus`&`blur`，但他们都不支持冒泡，因此IE新增`focusin`&`focusout`、Opera新增`DOMFocusIn`&`DOMFocusOut的冒泡版
+
+		
+3. 鼠标和滚轮事件
+		
 
 `click`、`dblclick`
 
-`mousedown`:按下鼠标键
+`mousedown`: 按下鼠标键
 
 `mouseenter`：元素外部移到元素内部，不冒泡也不在鼠标经过后代元素时触发
 
@@ -158,103 +226,131 @@
 
 `mouseover`：元素外部移到元素内部
 
-`mousemove`:元素上移动
+`mousemove`: 元素上移动
 
-`mouseup`:松开鼠标键时触发
+`mouseup`: 松开鼠标键时触发
 
--   由于鼠标事件之间相互联系，取消默认行为也会也会影响其他事件，例如`click`依赖`mousedown`&`mouseup`事件，取消任意一个都不再触发`click`
-    
--   三类坐标：`event.clientX/Y`鼠标视口坐标、`event.pageX/Y`鼠标页面坐标、`event.screenX/Y`鼠标屏幕坐标
-    
--   组合键盘按键与鼠标：`event.shiftKey/altKey/ctrlKey/metaKey`当相应的按键被按下时为`true`
-    
--   相关元素`event.relatedTarget/fromElement/toElement`：与目标元素对应理解，`mouseenter/mouseleave`，鼠标从A元素移到B元素触发A元素`mouseleave`，B元素为相关元素，触发B元素`mouseenter`，A元素为相关元素
-    
--   鼠标按键`event.button`:0-左（主）键、1-滚轮键、2-右键
-    
--   额外事件信息：`event.detail`可以看点击次数、`shiftLeft\ctrlLeft\altLeft`等
-    
--   `mouseWheel`:冒泡到`document/window`
-    
--   触摸屏设备会表现得不一样。
-    
-    1.  不支持`dblclick`
-        
-    2.  单点触发`mousemove`，若未发生变化则会触发`mousedown mouseup click`
-        
-    3.  `mousemove`触发`mouseover mouseout`
-        
-    4.  ...
-        
--   无障碍解决，除`click`事件可由按键`回车`触发，其余多数都不支持按键触发，考虑无障碍时要注意
-    
+- 由于鼠标事件之间相互联系，取消默认行为也会也会影响其他事件，例如 `click` 依赖 `mousedown`&`mouseup` 事件，取消任意一个都不再触发 `click`
+		
+- 三类坐标：`event.clientX/Y` 鼠标视口坐标、`event.pageX/Y` 鼠标页面坐标、`event.screenX/Y` 鼠标屏幕坐标
+		
+- 组合键盘按键与鼠标：`event.shiftKey/altKey/ctrlKey/metaKey` 当相应的按键被按下时为 `true`
+		
+- 相关元素 `event.relatedTarget/fromElement/toElement`：与目标元素对应理解，`mouseenter/mouseleave`，鼠标从 A 元素移到 B 元素触发 A 元素 `mouseleave`，B 元素为相关元素，触发 B 元素 `mouseenter`，A 元素为相关元素
+		
+- 鼠标按键 `event.button`:0- 左（主）键、1- 滚轮键、2- 右键
+		
+- 额外事件信息：`event.detail` 可以看点击次数、`shiftLeft\ctrlLeft\altLeft` 等
+		
+- `mouseWheel`: 冒泡到 `document/window`
+		
+- 触摸屏设备会表现得不一样。
+		
+		1. 不支持`dblclick`
+				
+		2. 单点触发`mousemove`，若未发生变化则会触发`mousedown mouseup click`
+				
+		3. `mousemove`触发`mouseover mouseout`
+				
+		4. …
+				
+- 无障碍解决，除 `click` 事件可由按键 `回车` 触发，其余多数都不支持按键触发，考虑无障碍时要注意
+		
 
-4.  键盘和输入事件
-    
-    -   键盘事件有三：`keydown、keypress按住不放会持续触发，keyup`，输入事件只有一个`textInput`，方便在输入框文本显示给用户前进行拦截，该事件会在文本出现在文本框之前触发。
-        
-    -   键码`keyCode`：键盘上的按键都对应一个键码，对于字母和数字键，`keyCode`值与小写字母及数字ASCII编码一致
-        
-    -   字符编码`charCode`：按键字符对应的ASCII编码
-        
-    -   DOM3新增了一些属性如`key、code、location`但由于各家浏览器实现有较大差异，不建议使用
-        
-    -   详细拿`textInput`事件来说一说，`textInput`是对`keypress`的替代，但它仅在可编辑区域上会触发，而后者是在任何可获取焦点的元素上触发；另外前者在插入新字符时会被触发而后者对任何可能影响文本的键都会触发。`textInput`主要关注与字符输入，因此想event新增了data属性获取要插入的字符
-        
-5.  合成事件
-    
-    IME通常需要同时按下多个按键输入一个字符，在这种情况下过滤输入内容，就用到了合成事件，有如下三种:`compositionstart、compositionend、compositionupdate`
-    
-6.  那些被浏览器较好支持的H5事件
-    
-    -   `contextmenu`：右键菜单, `event.preventDefault`
-        
-    -   `beforeunload`：页面卸载前触发，通过设置`event.returnvalue`来设置确认框中显示字符
-        
-    -   `DOMContentloaded`：相比于`loaded`，不用等js、图片资源下载完毕后再触发，DOM树结构构建完成后就会触发，该事件始终在`load`事件之前触发
-        
-    -   `readystatechange`
-        
-    -   `pageshow/pagehide`：FireFox和Opera实现了**往返缓存**功能，将过往页面放在缓存里，加快前进后退页面恢复速度，同时保存了页面状态，如果页面在缓存里，则并不会触发`load`事件。正常情况下，`pageshow`事件在`load`事件之后触发，事件处理程序必须加在`window`上
-        
-    -   `hashchange`事件
-        
-        事件处理程序必须加在`window`上，监听URL中#之后部分的变化。event新增两个属性`oldURL&newURL`分别对应变化前后完整URL
-        
-7.  设备事件
-    
-    `orientationchange`：横竖屏切换（Safari）
-    
-    `deviceorientation`：x、y、z轴旋转角度
-    
-    `devicemotion`：加速度等移动信息
-    
-8.  触摸及手势事件
-    
-    `touchstart` 手指放在了屏幕上
-    
-    `touchmove` 手指在屏幕上滑动时连续触发
-    
-    `touchend` 手指离开屏幕
-    
-    `touchcancel` 系统停止跟踪时触发
-    
-    手势事件只有同时在一个元素内部时才会触发
-    
-    `gesturestart` 一个手指已放在屏幕，另个手指也放上时
-    
-    `gestureend` 其中一个离开屏幕
-    
-    `gesturechange` 任何一个手指在屏幕上的位置发生变化
-    
+4. 键盘和输入事件
+		
+		- 键盘事件有三：`keydown、keypress按住不放会持续触发，keyup`，输入事件只有一个`textInput`，方便在输入框文本显示给用户前进行拦截，该事件会在文本出现在文本框之前触发。
+				
+		- 键码`keyCode`：键盘上的按键都对应一个键码，对于字母和数字键，`keyCode`值与小写字母及数字ASCII编码一致
+				
+		- 字符编码`charCode`：按键字符对应的ASCII编码
+				
+		- DOM3新增了一些属性如`key、code、location`但由于各家浏览器实现有较大差异，不建议使用
+				
+		- 详细拿`textInput`事件来说一说，`textInput`是对`keypress`的替代，但它仅在可编辑区域上会触发，而后者是在任何可获取焦点的元素上触发；另外前者在插入新字符时会被触发而后者对任何可能影响文本的键都会触发。`textInput`主要关注与字符输入，因此想event新增了data属性获取要插入的字符
+				
+5. 合成事件
+		
+
+		IME通常需要同时按下多个按键输入一个字符，在这种情况下过滤输入内容，就用到了合成事件，有如下三种:`compositionstart、compositionend、compositionupdate`
+
+		
+6. 那些被浏览器较好支持的 H5 事件
+		
+		- `contextmenu`：右键菜单, `event.preventDefault`
+				
+		- `beforeunload`：页面卸载前触发，通过设置`event.returnvalue`来设置确认框中显示字符
+				
+		- `DOMContentloaded`：相比于`loaded`，不用等js、图片资源下载完毕后再触发，DOM树结构构建完成后就会触发，该事件始终在`load`事件之前触发
+				
+		- `readystatechange`
+				
+		- `pageshow/pagehide`：FireFox和Opera实现了**往返缓存**功能，将过往页面放在缓存里，加快前进后退页面恢复速度，同时保存了页面状态，如果页面在缓存里，则并不会触发`load`事件。正常情况下，`pageshow`事件在`load`事件之后触发，事件处理程序必须加在`window`上
+				
+		- `hashchange`事件
+				
+
+				事件处理程序必须加在`window`上，监听URL中#之后部分的变化。event新增两个属性`oldURL&newURL`分别对应变化前后完整URL
+
+				
+7. 设备事件
+		
+
+		`orientationchange`：横竖屏切换（Safari）
+
+		
+
+		`deviceorientation`：x、y、z轴旋转角度
+
+		
+
+		`devicemotion`：加速度等移动信息
+
+		
+8. 触摸及手势事件
+		
+
+		`touchstart` 手指放在了屏幕上
+
+		
+
+		`touchmove` 手指在屏幕上滑动时连续触发
+
+		
+
+		`touchend` 手指离开屏幕
+
+		
+
+		`touchcancel` 系统停止跟踪时触发
+
+		
+
+		手势事件只有同时在一个元素内部时才会触发
+
+		
+
+		`gesturestart` 一个手指已放在屏幕，另个手指也放上时
+
+		
+
+		`gestureend` 其中一个离开屏幕
+
+		
+
+		`gesturechange` 任何一个手指在屏幕上的位置发生变化
+
+		
 
 ## 17.5 内存与性能
 
-1.  事件委托
-    
-    利用冒泡，给公有父元素添加事件处理程序，以达到减少DOM访问次数、减小内存。适合使用事件委托的事件包括：`click、mousedown、mouseup、keydown、keypress、mouseover、mouseout`
-    
-2.  删除事件处理程序 指定事件处理程序为null，最好在`onunload`事件处理程序中对`onload`事件处理程序中的操作进行审查
-    
+1. 事件委托
+		
 
-17.6 模拟事件 `javascript`提供能力模拟DOM事件并拥有冒泡等DOM能力，创建`Event`对象然后初始化事件信息，然后通过`dispatchEvent`进行元素绑定
+		利用冒泡，给公有父元素添加事件处理程序，以达到减少DOM访问次数、减小内存。适合使用事件委托的事件包括：`click、mousedown、mouseup、keydown、keypress、mouseover、mouseout`
+
+		
+2. 删除事件处理程序 指定事件处理程序为 null，最好在 `onunload` 事件处理程序中对 `onload` 事件处理程序中的操作进行审查
+		
+
+17.6 模拟事件 `javascript` 提供能力模拟 DOM 事件并拥有冒泡等 DOM 能力，创建 `Event` 对象然后初始化事件信息，然后通过 `dispatchEvent` 进行元素绑定

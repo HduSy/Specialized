@@ -1,8 +1,10 @@
-#### 日期
-2022年2月10日
+# 日期
 
-#### 正文
-1. Pixi的`Application`对象默认使用`WebGL`引擎渲染模式，如果强制使用`Canvas`引擎绘制，则须配置：
+2022 年 2 月 10 日
+
+# 正文
+
+1. Pixi 的 `Application` 对象默认使用 `WebGL` 引擎渲染模式，如果强制使用 `Canvas` 引擎绘制，则须配置：
 ```ts
 let app = new PIXI.Application({
     width: 256,         // default: 800
@@ -15,6 +17,6 @@ let app = new PIXI.Application({
 );
 ```
 
+# 参考文献
 
-#### 参考文献
 [Pixi官网教程中译](https://github.com/Zainking/LearningPixi)
