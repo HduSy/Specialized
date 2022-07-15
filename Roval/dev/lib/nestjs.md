@@ -95,4 +95,38 @@ async uploadCodeBlock(
 }
 ```
 
+### 模块 Modules
+
+#### 创建
+
+`nest -g service [name]`  
+通过 `@Module()` 和 `class` 创建。
+
+#### 概念
+
+由 `@Module` 装饰器修饰的普通类，将紧密相关的功能聚合在一起。
+
+| 属性 | 描述 |
+| ----------- | ---------- |
+| providers | 服务提供者 |
+| controllers | 控制器 |
+| imports | 引入模块列表，目的是引入其他模块导出的 providers 以本模块使用 |
+| exports | 导出由本模块提供的 providers，目的是其他模块引入本模块时，providers 可用，是本模块 providers 的子集 |
+
+##### 功能模块
+
+提供特定功能。
+
+##### 共享模块
+
+多个模块之间可以共享 providers。
+
+##### 全局模块
+
+不引入模块就无法使用该模块下的 providers，有时仅仅想使用特定 providers 而不想引入对应 module，那么就可以以 `@Global` 装饰符修饰 Module，并通过根或核心模块注册。
+
+##### 动态模块
+
+#### 示例
+
 ## 参考文献
