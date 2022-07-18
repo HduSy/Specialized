@@ -131,4 +131,45 @@ async uploadCodeBlock(
 
 #### 示例
 
+```ts
+@Module({  
+  imports: [  
+    ActDbModule,  
+    WebActBackendModule,  
+    OssModule.register(),  
+    BfsModule.register(),  
+    HttpModule,  
+    StaticServerModule,  
+  ],  
+  providers: [Logger, CliService],  
+  controllers: [CliController, CliNoAuthController],  
+})  
+export class CliModule {}
+```
+
+### 中间件 Middlewares
+
+#### 概念
+
+函数式&类式中间件。路由处理程序之前执行，可访问 req&res 对象，及请求响应周期中的 next() 中间件函数。
+
+#### 作用
+
+- 执行任何代码。
+- 对请求和响应对象进行更改。
+- 结束请求 - 响应周期。
+- 调用堆栈中的下一个中间件函数。
+- 如果当前的中间件函数没有结束请求 - 响应周期, 它必须调用 `next()` 将控制传递给下一个中间件函数。否则, 请求将被挂起。
+
+#### 创建
+
+两种方式创建自定义 `Nest` 中间件：
+
+1. 函数中创建；
+2. 由 `@Injectable` 装饰的，实现了（implements）`NestMiddle` 接口的类。
+
+#### 应用中间件
+
+包含中间件的模块必须实现 `NestModule` 接口，通过模块类的 `configure()` 方法来设置。
+
 ## 参考文献
