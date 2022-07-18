@@ -112,15 +112,15 @@
   },
   "active": "b0c33d82f623180e",
   "lastOpenFiles": [
+    "Roval/coder/coder-content.md",
+    "Roval/coder/OKR.md",
+    "Roval/dev/git/命令.md",
+    "Roval/dev/git/工程化规范.md",
     "Roval/essay/网络文章/阮一峰的网络日志.md",
     "Roval/essay/网络文章/张鑫旭.md",
-    "Roval/dev/git/命令.md",
     "Roval/dev/lib/nestjs.md",
     "Roval/idea/ob使用指北.md",
     "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/idea/idea-content.md",
-    "Roval/idea/github访问过慢.md",
-    "Roval/idea/科学上网指北.md",
-    "Roval/idea/template.md"
+    "Roval/idea/idea-content.md"
   ]
 }
