@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/npm.md",
+            "file": "Roval/dev/lib/nestjs.md",
             "mode": "source",
             "source": false
           }
@@ -64,6 +64,14 @@
         "type": "tabs",
         "children": [
           {
+            "id": "5af41272dc749f97",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {}
+            }
+          },
+          {
             "id": "de1030cf98a79b67",
             "type": "leaf",
             "state": {
@@ -77,14 +85,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
-                "collapseAll": false,
+                "file": "Roval/dev/lib/nestjs.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -96,25 +104,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 277,
-    "collapsed": true
+    "width": 277
   },
   "active": "b0c33d82f623180e",
   "lastOpenFiles": [
+    "Roval/idea/ob使用指北.md",
+    "Roval/idea/ob手动安装第三方插件.md",
+    "Roval/idea/idea-content.md",
+    "Roval/idea/github访问过慢.md",
+    "Roval/idea/科学上网指北.md",
+    "Roval/idea/template.md",
+    "Roval/idea/personal.md",
+    "Roval/idea/若有所思.md",
     "Roval/dev/lib/nestjs.md",
-    "Roval/dev/杂/一些零碎的点.md",
-    "Roval/dev/lib/React.md",
-    "Roval/dev/scripts/regex.md",
-    "Roval/dev/scripts/Type VS Interface.md",
-    "Roval/dev/scripts/TypeScript基础语法.md",
-    "Roval/dev/scripts/window.md",
-    "Roval/dev/tools/VSCODE Keyboard shortcuts.md",
-    "Roval/dev/tools/Mac Keyboard shortcuts.md",
-    "Roval/dev/tools/dev useful websites.md"
+    "Roval/dev/lib/GSAP.md"
   ]
 }

@@ -8,5 +8,7 @@
   "templater-obsidian",
   "obsidian-plugin-toc",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-admonition",
+  "obsidian-quiet-outline"
 ]

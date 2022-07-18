@@ -289,7 +289,7 @@ export class HttpExceptionFiltter implements ExceptionFilter {
 
 #### 绑定管道
 
-使用装饰符 `@UsePipes()`，范围和异常过滤一样，可以指定是控制器的、特定路由的和全局的。
+使用装饰符 `@UsePipes()`，范围和异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。
 
 #### 内置管道
 
@@ -329,7 +329,29 @@ export class JoiValidationPipe implements PipeTransform {
 
 #### 类验证
 
-[class-validator](https://www.npmjs.com/package/class-validator) 验证装饰器
+[[npm#普通对象与类实例间相互转换|class-transformer]]、[[npm#基于装饰器的类型验证|class-validator]] 两个库提供了支持
+
+```ts
+import { ArgumentMetadata, BadRequestException, Injectable, PipeTransform } from '@nestjs/common'  
+import { plainToClass } from 'class-transformer'  
+import { validate } from 'class-validator'  
+  
+@Injectable()  
+export class ClassvalidatePipe implements PipeTransform {  
+  async transform(value: any, { metatype }: ArgumentMetadata) {  
+    if (!metatype||!this.toValidate(metatype)) return value  
+    // This method transforms a plain javascript object to instance of specific class.  
+    const object = plainToClass(metatype, value)  
+    const errors = await validate(object)  
+    if (errors.length) throw new BadRequestException('Validation Failed.')  
+    return value  
+  }  
+  private toValidate(metatype: Function): boolean {  
+    const types: Function[] = [String,Boolean, Number, Array, Object]  
+    return !types.includes(metatype)  
+  }  
+}
+```
 
 ## 参考文献
 
