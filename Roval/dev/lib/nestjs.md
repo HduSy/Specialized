@@ -247,6 +247,38 @@ testError() {
 
 #### 异常过滤器
 
-自定义异常处理，对异常层有更细粒度的完全控制权。
+##### 概念
+
+通过创建由 `@Catch([T])` 装饰符修饰，实现了（`implements`）`ExceptionFilter` 接口的类，来自定义异常处理，对异常层有更细粒度的完全控制权。在指定 `catch(exception: T, host: ArgumentsHost)` 函数签名内实现自定逻辑，其中 `T` 为异常类型。
+
+##### 示例
+
+```ts
+import { ArgumentsHost, Catch, ExceptionFilter, HttpException } from '@nestjs/common'  
+import {Response,Request} from 'express'  
+@Catch(HttpException) // 绑定到元数据到该过滤器  
+export class HttpExceptionFiltter implements ExceptionFilter {  
+  // 异常对象 exception: T，T：异常类型。  
+  catch(exception: HttpException, host: ArgumentsHost): any {  
+    const ctx = host.switchToHttp()  
+    const response = ctx.getResponse<Response>()  
+    const request = ctx.getRequest<Request>()  
+    const status = exception.getStatus()  
+    response.status(status)  
+      .json({  
+        statusCode: status,  
+        timestamp: new Date().toISOString(),  
+        path: request.url  
+      })  
+  }  
+}
+```
+
+##### 作用域
+
+路由范围、控制器范围，全局范围。通过 `@UseFilters` 绑定。
 
 ## 参考文献
+
+1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)
+2.
