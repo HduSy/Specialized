@@ -127,6 +127,8 @@ async uploadCodeBlock(
 
 ##### 动态模块
 
+允许自定义模块，动态注册、配置 providers。
+
 #### 示例
 
 ## 参考文献
