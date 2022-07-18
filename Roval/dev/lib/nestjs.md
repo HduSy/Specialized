@@ -245,4 +245,8 @@ testError() {
 - `ServiceUnavailableException`
 - `GatewayTimeoutException`
 
+#### 异常过滤器
+
+自定义异常处理，对异常层有更细粒度的完全控制权。
+
 ## 参考文献
