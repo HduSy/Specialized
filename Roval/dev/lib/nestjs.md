@@ -151,7 +151,7 @@ export class CliModule {}
 
 #### 概念
 
-函数式&类式中间件。路由处理程序之前执行，可访问 req&res 对象，及请求响应周期中的 next() 中间件函数。
+在路由处理程序之前执行，可访问 req&res 对象，及请求响应周期中的 next() 中间件函数。
 
 #### 作用
 
@@ -166,10 +166,83 @@ export class CliModule {}
 两种方式创建自定义 `Nest` 中间件：
 
 1. 函数中创建；
-2. 由 `@Injectable` 装饰的，实现了（implements）`NestMiddle` 接口的类。
+2. 由 `@Injectable` 装饰的，实现了（`implements`）`NestMiddle` 接口的类。
 
 #### 应用中间件
 
-包含中间件的模块必须实现 `NestModule` 接口，通过模块类的 `configure()` 方法来设置。
+包含中间件的模块必须实现（`implements`）`NestModule` 接口，通过模块类的 `configure()` 方法来设置。
+
+### 异常过滤器
+
+#### 概念
+
+内置的**异常层**负责处理整个应用程序中的所有抛出的异常，当捕获到未处理的异常时，最终用户将收到友好的响应。
+开箱即用，此操作由内置的全局异常过滤器执行，该过滤器处理类型 `HttpException`（及其子类）的异常。
+
+```json
+// 兜底
+{
+   "statusCode": 500,
+   "message": "Internal server error"
+}
+```
+
+#### 示例
+
+`HttpException` 构造函数接受两种类型参数传递：
+
+```ts
+import { HttpException, HttpStatus } from '@nestjs/common'
+// string, code
+@Get('/error')  
+testError() {  
+  throw new HttpException('Forbidden', HttpStatus.FORBIDDEN)  
+}
+/** 响应
+{
+  "statusCode": 403,
+  "message": "Forbidden"
+}
+**/
+
+
+// obj, code
+@Get('/error')  
+testError() {  
+  throw new HttpException({  
+    code: HttpStatus.FORBIDDEN,  
+    message: 'This is a custom message.'  
+  }, HttpStatus.FORBIDDEN)  
+}
+/** 响应
+{
+  "code": 403,
+  "message": "This is a custom message."
+}
+**/
+```
+
+#### 自定义异常
+
+通过 `extends HttpException` 实现。
+
+#### 内置 HTTP 异常
+
+- `BadRequestException`
+- `UnauthorizedException`
+- `NotFoundException`
+- `ForbiddenException`
+- `NotAcceptableException`
+- `RequestTimeoutException`
+- `ConflictException`
+- `GoneException`
+- `PayloadTooLargeException`
+- `UnsupportedMediaTypeException`
+- `UnprocessableException`
+- `InternalServerErrorException`
+- `NotImplementedException`
+- `BadGatewayException`
+- `ServiceUnavailableException`
+- `GatewayTimeoutException`
 
 ## 参考文献
