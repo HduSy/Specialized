@@ -172,7 +172,7 @@ export class CliModule {}
 
 包含中间件的模块必须实现（`implements`）`NestModule` 接口，通过模块类的 `configure()` 方法来设置。
 
-### 异常过滤器
+### 异常过滤器 ExceptionFilter
 
 #### 概念
 
@@ -277,6 +277,55 @@ export class HttpExceptionFiltter implements ExceptionFilter {
 ##### 作用域
 
 路由范围、控制器范围，全局范围。通过 `@UseFilters` 绑定。
+
+### 管道 Pipe
+
+#### 概念
+
+由 `@Injectable()` 装饰，实现了（`implements`）`PipeTransform` 接口的类。功能：
+
+	- 数据转换：将输入数据转换为需要的数据输出；
+	- 数据验证：对输入数据进行验证，如果通过则继续，否则抛出异常。
+
+#### 内置管道
+
+- `ValidationPipe`
+- `ParseIntPipe`
+- `ParseBoolPipe`
+- `ParseArrayPipe`
+- `ParseUUIDPipe`
+- `DefaultValuePipe`
+
+#### 对象结构验证
+
+[Joi](https://joi.dev/api/?v=17.6.0) 提供了语义化 API 以非常简单的方式创建 schema，对对象结构进行验证
+
+```ts
+import { ObjectSchema } from '@hapi/joi';  
+import {  
+  ArgumentMetadata,  
+  BadRequestException,  
+  Injectable,  
+  PipeTransform,  
+} from '@nestjs/common';  
+  
+@Injectable()  
+export class JoiValidationPipe implements PipeTransform {  
+  constructor(private schema: ObjectSchema) {}  
+  // 管道必须实现的方法  
+  transform(value: any, metadata: ArgumentMetadata) {  
+    const { error } = this.schema.validate(value);  
+    if (error) {  
+      throw new BadRequestException('Validation failed');  
+    }  
+    return value;  
+  }  
+}
+```
+
+#### 绑定管道
+
+使用装饰符 `@UsePipes()`。
 
 ## 参考文献
 
