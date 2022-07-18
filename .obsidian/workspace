@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/nestjs.md",
+            "file": "Roval/dev/lib/npm.md",
             "mode": "source",
             "source": false
           }
@@ -43,7 +43,7 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/nestjs.md",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +106,7 @@
   },
   "active": "b0c33d82f623180e",
   "lastOpenFiles": [
+    "Roval/dev/lib/nestjs.md",
     "Roval/dev/杂/一些零碎的点.md",
     "Roval/dev/lib/React.md",
     "Roval/dev/scripts/regex.md",
@@ -114,7 +115,6 @@
     "Roval/dev/scripts/window.md",
     "Roval/dev/tools/VSCODE Keyboard shortcuts.md",
     "Roval/dev/tools/Mac Keyboard shortcuts.md",
-    "Roval/dev/tools/dev useful websites.md",
-    "Roval/essay/公众号文章/性能优化之全面图片改造方案.md"
+    "Roval/dev/tools/dev useful websites.md"
   ]
 }

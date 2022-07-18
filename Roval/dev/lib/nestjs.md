@@ -287,6 +287,10 @@ export class HttpExceptionFiltter implements ExceptionFilter {
 	- 数据转换：将输入数据转换为需要的数据输出；
 	- 数据验证：对输入数据进行验证，如果通过则继续，否则抛出异常。
 
+#### 绑定管道
+
+使用装饰符 `@UsePipes()`，范围和异常过滤一样，可以指定是控制器的、特定路由的和全局的。
+
 #### 内置管道
 
 - `ValidationPipe`
@@ -323,9 +327,9 @@ export class JoiValidationPipe implements PipeTransform {
 }
 ```
 
-#### 绑定管道
+#### 类验证
 
-使用装饰符 `@UsePipes()`。
+[class-validator](https://www.npmjs.com/package/class-validator) 验证装饰器
 
 ## 参考文献
 

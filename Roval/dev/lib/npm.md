@@ -56,8 +56,9 @@ module.exports = {
 [compression](https://www.npmjs.com/package/compression)
 - nodejs cookie 中间件  
 [cookie-parser](https://www.npmjs.com/package/cookie-parser)
-- 最强大的 schema 描述语言和 js 验证器  
-[joi](https://joi.dev/)
+- 可读性好的 api 创建 schema 描述文件验证对象结构
+- [joi](https://joi.dev/)
+- [class-transformer](https://www.npmjs.com/package/class-transformer)
 
 ## 命令
 
