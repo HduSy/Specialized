@@ -355,6 +355,48 @@ export class ClassvalidatePipe implements PipeTransform {
 
 ### 守卫 Guards
 
+#### 概念
+
+由 `@Injectable()` 装饰，实现了（`implements`）`CanActivate` 接口的类，类中必须实现 `canActivate` 方法。根据运行时出现的条件（如权限、角色、访问控制列表等）决定是否把该请求丢给路由处理程序处理，即授权。与 pipe 一样，范围可以是控制器、特定路由处理程序、全局的。
+
+#### 示例
+
+```ts
+import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'  
+import { Observable } from 'rxjs'  
+  
+@Injectable()  
+export class AuthGuard implements CanActivate {  
+  canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {  
+    const request = context.switchToHttp().getRequest()  
+    return this.validateRequest(request)  
+  }  
+  validateRequest(req) {  
+  //  守卫处理逻辑  
+    return true  
+  }  
+}
+```
+
+`canActivate` 函数的第一个参数继承并扩展了 `ArgumentsHost`：
+
+```ts
+export interface ExecutionContext extends ArgumentsHost {  
+  getClass<T = any>(): Type<T>;  // 拿到控制器类类型 XxxControllertype
+  getHandler(): Function;  // 返回路由处理程序方法引用
+}
+```
+
+#### 绑定守卫
+
+使用装饰符 `@UseGuards()`，范围和管道、异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。
+
+```ts
+@Controller('cats')  
+@UseGuards(AuthGuard)  
+export class CatsController {}
+```
+
 ## 参考文献
 
 1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)
