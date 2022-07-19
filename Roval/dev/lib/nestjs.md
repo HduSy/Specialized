@@ -397,6 +397,52 @@ export interface ExecutionContext extends ArgumentsHost {
 export class CatsController {}
 ```
 
+#### 反射器
+
+自定装饰器 `@Roles`，利用 `@SetMetadata` 能力，将定制元数据附加到路由处理程序。
+
+```ts
+import {SetMetadata} from '@nestjs/common'  
+export const Roles = (...roles: string[]) => SetMetadata('roles',roles)
+```
+
+ `@Roles` 使用：
+
+```ts
+@Post()  
+@Roles('admin')  
+async create(@Body() createCatDto: CreateCatDto) {  
+  this.catsService.create(createCatDto);  
+}
+```
+
+反射器：
+
+```ts
+import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'  
+import { Observable } from 'rxjs'  
+import {Reflector} from '@nestjs/core'  
+  
+@Injectable()  
+export class RoleGuard implements CanActivate{  
+  constructor(private reflector:Reflector) {  
+  }  
+  canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {  
+    const roles = this.reflector.get<string[]>('roles', context.getHandler())  
+    if (!roles) {  
+      return true  
+    }  
+    const request = context.switchToHttp().getRequest()  
+    const user = request.user  
+    return this.matchRoles(roles, user.roles)  
+  }  
+  matchRoles(roles: string[], uroles: string[]) {  
+    // 简单或复杂的处理程序  
+    return true  
+  }  
+}
+```
+
 ## 参考文献
 
 1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)
