@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/essay/网络文章/技术阅读.md",
+            "file": "Roval/dev/lib/react-redux.md",
             "mode": "source",
             "source": false
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/dev/lib/react-redux.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,15 +112,15 @@
   },
   "active": "15923fe5358bc31a",
   "lastOpenFiles": [
+    "Roval/dev/lib/nestjs.md",
+    "Roval/dev/lib/Eslint.md",
+    "Roval/dev/scripts/regex.md",
+    "Roval/essay/网络文章/技术阅读.md",
     "Roval/dev/lib/react-redux.md",
     "Roval/dev/lib/GSAP.md",
     "Roval/dev/lib/npm.md",
     "Roval/dev/lib/NodeJS.md",
-    "Roval/dev/lib/nestjs.md",
     "Roval/dev/lib/lib-content.md",
-    "Roval/dev/lib/fontmin.md",
-    "Roval/dev/lib/Eslint.md",
-    "Roval/dev/lib/Vue3.md",
-    "Roval/dev/lib/Pasted image 20220211003207.png"
+    "Roval/dev/lib/fontmin.md"
   ]
 }
