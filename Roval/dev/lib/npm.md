@@ -86,6 +86,10 @@ module.exports = {
 
 [class-validator](https://www.npmjs.com/package/class-validator)
 
+### React Router
+
+[react-router-dom](https://v5.reactrouter.com/web/guides/quick-start)
+
 ## 命令
 
 - npm link 本地开发测试依赖包免构建发版流程
