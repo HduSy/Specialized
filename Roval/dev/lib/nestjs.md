@@ -416,7 +416,7 @@ async create(@Body() createCatDto: CreateCatDto) {
 }
 ```
 
-反射器：
+反射：
 
 ```ts
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common'  
@@ -442,6 +442,8 @@ export class RoleGuard implements CanActivate{
   }  
 }
 ```
+
+### 拦截器 Interceptor
 
 ## 参考文献
 
