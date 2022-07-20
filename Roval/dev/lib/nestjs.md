@@ -276,7 +276,7 @@ export class HttpExceptionFiltter implements ExceptionFilter {
 
 ##### 作用域
 
-路由范围、控制器范围，全局范围。通过 `@UseFilters` 绑定。
+路由范围、控制器范围，全局范围。通过 `@UseFilters` 绑定。`app.useGlobalFilters()` 可设置全局。
 
 ### 管道 Pipe
 
@@ -289,7 +289,7 @@ export class HttpExceptionFiltter implements ExceptionFilter {
 
 #### 绑定管道
 
-使用装饰符 `@UsePipes()`，范围和异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。
+使用装饰符 `@UsePipes()`，范围和异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。`app.useGlobalPipes()` 可设置全局。
 
 #### 内置管道
 
@@ -389,7 +389,7 @@ export interface ExecutionContext extends ArgumentsHost {
 
 #### 绑定守卫
 
-使用装饰符 `@UseGuards()`，范围和管道、异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。
+使用装饰符 `@UseGuards()`，范围和管道、异常过滤一样，可以指定是控制器的、特定路由的和全局的，还可以是针对参数的。`app.useGlobalGuards()` 可设置全局。
 
 ```ts
 @Controller('cats')  
@@ -444,6 +444,41 @@ export class RoleGuard implements CanActivate{
 ```
 
 ### 拦截器 Interceptor
+
+#### 概念
+
+由 `@Injectable()` 装饰，实现了（`implements`）`NestInterceptor` 接口的类，类中必须实现 `intercept` 方法，该方法接收两个参数，执行上下文 `ExecutionContext` 实例和调用处理程序 `CallHandler`。
+
+- 第一个参数不用多说，继承自 `ArgumentsHost`，是传递给原始处理程序参数的一个包装，根据应用程序的类型包含不同的参数数组。
+- 第二个参数，提供 `handle` 方法，只有被调用（并且已返回值），最终方法才会被触发。
+
+#### 功能
+
+- 在函数执行之前/之后绑定**额外的逻辑**
+- 转换从函数返回的结果
+- **转换**从函数抛出的异常
+- 扩展基本函数行为
+- 根据所选条件完全重写函数 (例如, 缓存目的)
+
+#### 示例
+
+```ts
+import { CallHandler, ExecutionContext, Injectable, NestInterceptor } from '@nestjs/common'  
+import { Observable,tap } from 'rxjs'  
+  
+@Injectable()  
+export class LoggingInterceptor implements NestInterceptor{  
+  intercept(context: ExecutionContext, next: CallHandler<any>): Observable<any> | Promise<Observable<any>> {  
+    console.log('Before...')  
+    const now = Date.now();  
+    return next.handle().pipe(tap(()=>console.log(`After... ${Date.now() - now}ms`)))  
+  }  
+}
+```
+
+#### 绑定拦截器
+
+使用 `@UseInterceptors` 装饰，范围与管道、异常过滤、守卫一样, 可以是控制器范围内的, 方法范围内的或者全局范围内的。`app.useGlobalInterceptors()` 可设置全局。
 
 ## 参考文献
 
