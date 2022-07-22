@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/coder/coder-content.md",
+            "file": "Roval/coder/个人发展计划周表.md",
             "mode": "source",
             "source": false
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/coder/个人发展计划周表.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,15 +112,15 @@
   },
   "active": "15923fe5358bc31a",
   "lastOpenFiles": [
-    "Roval/coder/OKR.md",
-    "Roval/coder/coder-content.md",
-    "Roval/dev/git/命令.md",
-    "Roval/dev/lib/Typescript.md",
-    "Roval/dev/lib/nestjs.md",
-    "Roval/coder/2022H1自评.md",
-    "Roval/coder/2022H1.md",
-    "Roval/dev/lib/react-redux.md",
-    "Roval/dev/lib/Eslint.md",
-    "Roval/dev/scripts/regex.md"
+    "Roval/coder/2021H2.md",
+    "Roval/coder/plan/仿掘金站外抽屉方案.md",
+    "Roval/coder/plan/群机器人推送.md",
+    "Roval/coder/plan/设计切图规范.md",
+    "Roval/coder/plan/一款活动常用功能插件.md",
+    "Roval/coder/plan/周报问题记录.md",
+    "Roval/coder/plan/Apple Studio Display滚轮入场动画实现.md",
+    "Roval/coder/plan/ffmpeg.md",
+    "Roval/coder/plan/Github.md",
+    "Roval/coder/plan/H5事件大全.md"
   ]
 }
