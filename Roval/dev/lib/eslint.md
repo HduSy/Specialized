@@ -7,6 +7,12 @@
 
 # 正文
 
+## 关于
+
+`JavaScript` 是一门动态的弱类型语言，开发中非常容易出错，想要调试必须让代码执行起来。`eslint` 是一种代码检查工具，提供可插入的规则，让开发者在编程过程尽早发现有问题的模式和代码，从而保证代码的一致性和避免错误。
+
+## 高级配置
+
 ## Root
 
 [定义指定目录下Eslint规则](https://eslint.org/docs/user-guide/configuring/configuration-files#cascading-and-hierarchy)  
@@ -79,4 +85,3 @@ parserOptions: {
 ## 参考文献
 
 - [Configuring Eslint](https://eslint.bootcss.com/docs/user-guide/configuring)
--
