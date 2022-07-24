@@ -54,7 +54,7 @@ package-lock.json
 
 ### Private
 
-禁止发布，防止意外发布到开源社区。
+`npm publish` 拒绝发布，防止意外发布到开源社区。
 
 ### Repository
 
@@ -79,6 +79,10 @@ package-lock.json
 ### devDependencies
 
 通过 `npm run install --save-dev` 命令安装依赖。
+
+### Engines
+
+项目以来 `node` 版本。
 
 ## 见过的 Npm 包
 
