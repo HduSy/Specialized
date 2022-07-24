@@ -9,6 +9,51 @@
 
 ## 配置文件说明 package.json
 
+### Files
+
+（可选）文件数组，列出安装该依赖时会包括的条目，忽略时将包含所有文件。
+
+```
+以下文件无论是否设置，总是包含：
+
+package.json
+README
+CHANGES/CHANGELOG/HISTORY
+LICENSE/LICENCE
+NOTICE
+
+以下文件总是被忽略：
+.git
+CVS
+.svn
+.hg
+.lock-wscript
+.wafpickle-N
+.*.swp
+.DS_Store
+._*
+npm-debug.log
+.npmrc
+node_modules
+config.gypi
+*.orig
+package-lock.json
+```
+
+### Main
+
+（可选）主入口文件，默认 `index.js`。
+
+### Browser
+
+当依赖作为客户端浏览器使用时，应使用 `browser` 替代 `main`，告诉用户可能包含 `node` 环境不支持的用法。
+
+### Bin
+
+提供的内部命令对应可执行文件位置。
+### repository
+cang k
+
 ## 见过的 Npm 包
 
 开发 CLI 脚手架必备 [commander.js](https://github.com/tj/commander.js)
