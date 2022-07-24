@@ -51,8 +51,34 @@ package-lock.json
 ### Bin
 
 提供的内部命令对应可执行文件位置。
-### repository
-cang k
+
+### Private
+
+禁止发布，防止意外发布到开源社区。
+
+### Repository
+
+代码仓库地址。
+
+### Scripts
+
+命令行 `npm` 脚本缩写。
+
+### Config
+
+添加命令行环境变量。
+
+### Dependencies
+
+通过 `npm install --save` 命令安装依赖。
+
+`Please do not put test harnesses or transpilers or other "development" time tools in your dependencies object.`  
+
+不要把测试、开发用依赖安装到 `dependencies`。
+
+### devDependencies
+
+通过 `npm run install --save-dev` 命令安装依赖。
 
 ## 见过的 Npm 包
 
