@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/杂/工程化.md",
+            "file": "Roval/coder/个人发展计划周表.md",
             "mode": "source",
             "source": false
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
+                "file": "Roval/coder/个人发展计划周表.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +112,7 @@
   },
   "active": "15923fe5358bc31a",
   "lastOpenFiles": [
+    "Roval/dev/杂/工程化.md",
     "Roval/dev/tools/dev useful websites.md",
     "Roval/coder/个人发展计划周表.md",
     "Roval/coder/2021H2.md",
@@ -120,7 +121,6 @@
     "Roval/coder/plan/设计切图规范.md",
     "Roval/coder/plan/一款活动常用功能插件.md",
     "Roval/coder/plan/周报问题记录.md",
-    "Roval/coder/plan/Apple Studio Display滚轮入场动画实现.md",
-    "Roval/coder/plan/ffmpeg.md"
+    "Roval/coder/plan/Apple Studio Display滚轮入场动画实现.md"
   ]
 }
