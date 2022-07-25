@@ -11,7 +11,18 @@
 
 `JavaScript` 是一门动态的弱类型语言，开发中非常容易出错，想要调试必须让代码执行起来。`eslint` 是一种代码检查工具，提供可插入的规则，让开发者在编程过程尽早发现有问题的模式和代码，从而保证代码的一致性和避免错误。
 
+## 原理
+
 ## 高级配置
+
+### 解析器 - Parser
+
+`eslint` 默认使用 `espree` 解析器，通过该配置项指定其他解析器，要求：
+
+- 一个 `Node` 模块，必须通过 `npm` 单独安装解析器依赖；
+- 必须符合 [parser-interface](https://cn.eslint.org/docs/developer-guide/working-with-plugins#working-with-custom-parsers)
+
+### 处理器 - Processer
 
 ## Root
 
