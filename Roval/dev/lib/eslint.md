@@ -11,6 +11,17 @@
 
 `JavaScript` 是一门动态的弱类型语言，开发中非常容易出错，想要调试必须让代码执行起来。`eslint` 是一种代码检查工具，提供可插入的规则，让开发者在编程过程尽早发现有问题的模式和代码，从而保证代码的一致性和避免错误。
 
+## 配置文件的存在形式
+
+`package.json` 的 `eslintConfig` 属性 和 `.eslintrc.*`（`.eslintrc.js`、`.eslintrc.yml`、`.eslintrc.yaml`、`.eslintrc.json`），使用优先级：
+
+1. `.eslintrc.js`
+2. `.eslintrc.yaml`
+3. `.eslintrc.yml`
+4. `.eslintrc.json`
+5. `.eslintrc`
+6. `package.json`
+
 ## 原理
 
 ## 高级配置
@@ -23,6 +34,85 @@
 - 必须符合 [parser-interface](https://cn.eslint.org/docs/developer-guide/working-with-plugins#working-with-custom-parsers)
 
 ### 处理器 - Processer
+
+### 环境 - Environments
+
+定义一组预定义的全局变量。
+
+- `browser` - 浏览器环境中的全局变量。
+- `node` - Node.js 全局变量和 Node.js 作用域。
+- `commonjs` - CommonJS 全局变量和 CommonJS 作用域 (用于 Browserify/WebPack 打包的只在浏览器中运行的代码)。
+- `shared-node-browser` - Node.js 和 Browser 通用全局变量。
+- `es6` - 启用除了 modules 以外的所有 ECMAScript 6 特性（该选项会自动设置 `ecmaVersion` 解析器选项为 6）。
+- `worker` - Web Workers 全局变量。
+- `amd` - 将 `require()` 和 `define()` 定义为像 [amd](https://github.com/amdjs/amdjs-api/wiki/AMD) 一样的全局变量。
+- `mocha` - 添加所有的 Mocha 测试全局变量。
+- `jasmine` - 添加所有的 Jasmine 版本 1.3 和 2.0 的测试全局变量。
+- `jest` - Jest 全局变量。
+- `phantomjs` - PhantomJS 全局变量。
+- `protractor` - Protractor 全局变量。
+- `qunit` - QUnit 全局变量。
+- `jquery` - jQuery 全局变量。
+- `prototypejs` - Prototype.js 全局变量。
+- `shelljs` - ShellJS 全局变量。
+- `meteor` - Meteor 全局变量。
+- `mongo` - MongoDB 全局变量。
+- `applescript` - AppleScript 全局变量。
+- `nashorn` - Java 8 Nashorn 全局变量。
+- `serviceworker` - Service Worker 全局变量。
+- `atomtest` - Atom 测试全局变量。
+- `embertest` - Ember 测试全局变量。
+- `webextensions` - WebExtensions 全局变量。
+- `greasemonkey` - GreaseMonkey 全局变量。
+
+### 全局变量 - Globals
+
+### 插件 - Plugins
+
+第三方插件需通过 `npm` 安装。
+
+### 规则 - Rules
+
+#### 规则禁用
+
+禁用规则或禁用整个文件的规则校验：
+
+```
+/* eslint-disable [rulename,] */
+```
+
+禁用指定行：
+
+```
+alert('foo'); // eslint-disable-line [rulename,]
+```
+
+或
+
+```
+// eslint-disable-next-line [rulename,]
+alert('foo');
+```
+
+还有能力通过配置 `overrides` 禁用指定文件：
+
+```
+{
+  "rules": {...},
+  "overrides": [
+    {
+      "files": ["*-test.js","*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
+```
+
+### 共享配置 - Settings
+
+共享会提供给每一个将被执行的规则。
 
 ## Root
 
