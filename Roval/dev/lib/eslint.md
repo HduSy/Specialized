@@ -145,6 +145,12 @@ alert('foo');
 
 共享会提供给每一个将被执行的规则。
 
+### 继承 - Extends
+
+规则可以被继承。`extends` 属性值可以是：
+```ts
+
+```
 ## Root
 
 [定义指定目录下Eslint规则](https://eslint.org/docs/user-guide/configuring/configuration-files#cascading-and-hierarchy)  
