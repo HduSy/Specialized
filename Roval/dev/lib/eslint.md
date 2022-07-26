@@ -55,11 +55,15 @@
 
 ## 原理
 
+### 开发心得
+
+依据 [ast-explorer](https://astexplorer.net/) 实时解析得到的抽象语法树，针对特定节点（node）书写检测代码，对代码值进行逻辑判断。
+
 ## 高级配置
 
 ### 解析器 - Parser
 
-`eslint` 默认使用 `espree` 解析器，通过该配置项指定其他解析器，要求：
+将源码解析成 `AST` 的工具，`eslint` 默认使用 `espree` 解析器，通过该配置项指定其他解析器，要求：
 
 - 一个 `Node` 模块，必须通过 `npm` 单独安装解析器依赖；
 - 必须符合 [parser-interface](https://cn.eslint.org/docs/developer-guide/working-with-plugins#working-with-custom-parsers)
