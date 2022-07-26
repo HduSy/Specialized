@@ -9,6 +9,10 @@
 
 ## 配置文件说明 package.json
 
+### Type
+
+指明文件为哪种模块处理方式。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ES6` 模块处理。
+
 ### Files
 
 （可选）文件数组，列出安装该依赖时会包括的条目，忽略时将包含所有文件。
