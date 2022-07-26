@@ -100,7 +100,7 @@
 
 ### 插件 - Plugins
 
-第三方插件需通过 `npm` 安装。
+每个插件都是一个命名为 `eslint-config-<plugin-name>` 的 `npm` 模块，输出规则。配置 `plugins` 属性值时可省略前缀。
 
 ### 规则 - Rules
 
@@ -143,14 +143,23 @@ alert('foo');
 
 ### 共享配置 - Settings
 
-共享会提供给每一个将被执行的规则。
+共享配置会提供给每一个将被执行的规则，发布为一个 npm 包。[创建共享配置](https://cn.eslint.org/docs/developer-guide/shareable-configs)
 
 ### 继承 - Extends
 
 规则可以被继承。`extends` 属性值可以是：
-```ts
 
-```
+1. 指定配置的字符串（配置文件路径、共享配置名称、`eslint:recommended` 或 `eslint:all`）
+2. 字符串数组，后面的覆盖前面的
+
+### eslint:recommended
+
+[`eslint`推荐规则](https://cn.eslint.org/docs/rules/)
+
+### eslint:all
+
+不推荐使用。将开启所有核心规则，这些规则会随 `eslint` 版本迭代改变，源码未变时，将是破坏性的更改。
+
 ## Root
 
 [定义指定目录下Eslint规则](https://eslint.org/docs/user-guide/configuring/configuration-files#cascading-and-hierarchy)  
