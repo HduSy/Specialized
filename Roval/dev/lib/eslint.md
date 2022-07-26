@@ -255,3 +255,5 @@ parserOptions: {
 ## 参考文献
 
 - [Configuring Eslint](https://eslint.bootcss.com/docs/user-guide/configuring)
+- [`esling`工作原理](https://zhuanlan.zhihu.com/p/53680918)
+- [掘金137赞-开发插件及原理讲解](https://juejin.cn/post/6844904016363667469)
