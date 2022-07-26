@@ -100,7 +100,7 @@
 
 ### 插件 - Plugins
 
-每个插件都是一个命名为 `eslint-config-<plugin-name>` 的 `npm` 模块，输出规则。配置 `plugins` 属性值时可省略前缀。
+每个插件都是一个命名为 `eslint-config-<plugin-name>` 的 `npm` 模块，暴露额外规则以供使用。在配置 `plugins` 属性值时可省略前缀。
 
 ### 规则 - Rules
 
@@ -159,6 +159,10 @@ alert('foo');
 ### eslint:all
 
 不推荐使用。将开启所有核心规则，这些规则会随 `eslint` 版本迭代改变，源码未变时，将是破坏性的更改。
+
+### .eslintignore
+
+以 glob 匹配模式告诉 `eslint` 忽略指定文件夹和文件。
 
 ## Root
 
