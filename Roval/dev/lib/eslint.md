@@ -64,6 +64,25 @@
 - 一个 `Node` 模块，必须通过 `npm` 单独安装解析器依赖；
 - 必须符合 [parser-interface](https://cn.eslint.org/docs/developer-guide/working-with-plugins#working-with-custom-parsers)
 
+### 解析器选项 - parserOptions
+
+解析器配置项。
+
+```json
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": "error"
+    }
+}
+```
+
 ### 处理器 - Processer
 
 ### 环境 - Environments
