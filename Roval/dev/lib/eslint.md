@@ -59,6 +59,10 @@
 
 依据 [ast-explorer](https://astexplorer.net/) 实时解析得到的抽象语法树，针对特定节点（node）书写检测代码，对代码值进行逻辑判断。
 
+### 调试心得
+
+通过 `npm link` 软链到全局环境，然后在其他项目中同样 `link` 下使用。
+
 ## 高级配置
 
 ### 解析器 - Parser
@@ -261,3 +265,4 @@ parserOptions: {
 - [Configuring Eslint](https://eslint.bootcss.com/docs/user-guide/configuring)
 - [`esling`工作原理](https://zhuanlan.zhihu.com/p/53680918)
 - [掘金137赞-开发插件及原理讲解](https://juejin.cn/post/6844904016363667469)
+- [eslint vs prettier](https://juejin.cn/post/6990929456382607374)
