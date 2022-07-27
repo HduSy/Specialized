@@ -70,7 +70,7 @@
 
 ### 解析器选项 - parserOptions
 
-解析器配置项。
+`ESLint` 允许你指定你想要支持的 `JavaScript` 语言选项。指定支持的**语法**，并不意味着支持全局变量及类型（还需要 `env` 指定）。
 
 ```json
 {
@@ -89,9 +89,9 @@
 
 ### 处理器 - Processer
 
-### 环境 - Environments
+### 环境 - Env
 
-定义一组预定义的全局变量。
+**启用**预定义的全局变量。
 
 - `browser` - 浏览器环境中的全局变量。
 - `node` - Node.js 全局变量和 Node.js 作用域。
