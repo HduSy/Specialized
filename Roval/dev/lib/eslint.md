@@ -168,9 +168,22 @@ alert('foo');
 }
 ```
 
-### 共享配置 - Settings
+### 共享配置 - Extends
 
-共享配置会提供给每一个将被执行的规则，发布为一个 npm 包。[创建共享配置](https://cn.eslint.org/docs/developer-guide/shareable-configs)
+#### 来自第三方配置中的配置
+
+共享配置会提供给每一个将被执行的规则，发布为一个 npm 包，`name` 命名为 `eslint-config-xxx`。[创建共享配置](https://cn.eslint.org/docs/developer-guide/shareable-configs)
+
+#### 来自第三方插件中的配置
+
+`eslint-plugin-xxx`，`plugins` 属性值可以省略包名的前缀 `eslint-plugin-`。
+
+`extends` 属性值可以由以下组成：
+
+- `plugin:`
+- 包名 (省略了前缀，比如，`react`)
+- `/`
+- 配置名称 (比如 `recommended`)
 
 ### 继承 - Extends
 
