@@ -61,7 +61,33 @@
 
 ### 调试心得
 
-通过 `npm link` 软链到全局环境，然后在其他项目中同样 `link` 下使用。
+1、通过 `npm link` 软链到全局环境，然后在其他项目中同样 `link` 下使用。
+2、`mocha` 测试用例 `invalid` 抛出消息要与自定义规则中 `context.report` 抛出的错误 `message` 严格一致，否则 `node` 报 `assertion` 错误。
+
+```js
+// 自定义规则 rule
+context.report({  
+  node,  
+  message: '函数参数最多不能超过3个'  
+})
+```
+
+```js 
+// 测试用例
+invalid: [  
+  {  
+    code: 'function test(d, e, f, g) {}',  
+    errors: [  
+      {  
+        message: "函数参数最多不能超过3个",  
+        type: 'FunctionDeclaration',  
+      }  
+    ],  
+  },  
+],
+```
+
+两块的 `message` 必须严格相等。
 
 ## 高级配置
 
