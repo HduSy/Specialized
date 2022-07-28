@@ -91,11 +91,9 @@
 }
 ```
 
-### 处理器 - Processer
-
 ### 环境 - Env
 
-**启用**预定义的全局变量。
+指定脚本运行环境，**启用**预定义的**全局变量**。
 
 - `browser` - 浏览器环境中的全局变量。
 - `node` - Node.js 全局变量和 Node.js 作用域。
@@ -125,9 +123,48 @@
 
 ### 全局变量 - Globals
 
+访问源文件未定义变量，`no-undef` 规则将发出警告。
+
 ### 插件 - Plugins
 
 每个插件都是一个命名为 `eslint-config-<plugin-name>` 的 `npm` 模块，暴露额外规则以供使用。在配置 `plugins` 属性值时可省略前缀。
+
+### 处理器 - Processer
+
+从另一种文件中提取或预处理转换 `javascript` 代码。
+
+### 覆写 - Overrides
+
+为特定类型的文件应用。
+应用一：为特定类型文件指定处理器。
+
+```
+{
+    "plugins": ["a-plugin"],
+    "overrides": [
+        {
+            "files": ["*.md"],
+            "processor": "a-plugin/markdown"
+        }
+    ]
+}
+```
+
+应用二：为特定类型文件禁用规则。
+
+```
+{
+  "rules": {...},
+  "overrides": [
+    {
+      "files": ["*-test.js","*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
+```
 
 ### 规则 - Rules
 
@@ -168,11 +205,20 @@ alert('foo');
 }
 ```
 
-### 共享配置 - Extends
+### 共享配置 - Settings
+
+在配置文件中添加共享设置项，允许不同规则共用。
+
+### 继承 - Extends
+
+`extends` 属性值可以是：
+
+- 指定配置的字符串 (配置文件的路径、可共享配置的名称、`eslint:recommended` 或 `eslint:all`)
+- 字符串数组：每个配置继承它前面的配置
 
 #### 来自第三方配置中的配置
 
-共享配置会提供给每一个将被执行的规则，发布为一个 npm 包，`name` 命名为 `eslint-config-xxx`。[创建共享配置](https://cn.eslint.org/docs/developer-guide/shareable-configs)
+发布为一个 npm 包，`name` 命名为 `eslint-config-xxx`。[创建共享配置](https://cn.eslint.org/docs/developer-guide/shareable-configs)
 
 #### 来自第三方插件中的配置
 
@@ -279,3 +325,4 @@ parserOptions: {
 - [`esling`工作原理](https://zhuanlan.zhihu.com/p/53680918)
 - [掘金137赞-开发插件及原理讲解](https://juejin.cn/post/6844904016363667469)
 - [eslint vs prettier](https://juejin.cn/post/6990929456382607374)
+- [eslint-config-xxx 使用](https://cn.eslint.org/docs/developer-guide/shareable-configs)
