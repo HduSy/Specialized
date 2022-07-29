@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "15923fe5358bc31a",
+        "id": "06ca15b310470d5c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/Eslint.md",
+            "file": "Roval/coder/个人发展计划周表.md",
             "mode": "source",
             "source": false
           }
@@ -27,14 +27,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9683d8fb1566a3d2",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
             "id": "7e1b781910bca3a8",
             "type": "leaf",
             "state": {
@@ -48,8 +40,17 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "9683d8fb1566a3d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -64,18 +65,53 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5af41272dc749f97",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {}
-            }
-          },
-          {
             "id": "de1030cf98a79b67",
             "type": "leaf",
             "state": {
               "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bfc3ececed9f244a",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Roval/coder/个人发展计划周表.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.2243666225993224,
+                  "close": false
+                }
+              }
+            }
+          },
+          {
+            "id": "5af41272dc749f97",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
               "state": {}
             }
           },
@@ -85,13 +121,25 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/Eslint.md",
+                "file": "Roval/coder/个人发展计划周表.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0cb7860aa19a30db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Roval/coder/个人发展计划周表.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
@@ -104,23 +152,24 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 277
   },
-  "active": "15923fe5358bc31a",
+  "active": "5af41272dc749f97",
   "lastOpenFiles": [
-    "Roval/dev/杂/工程化.md",
     "Roval/coder/个人发展计划周表.md",
-    "Roval/coder/coder-content.md",
     "Roval/dev/lib/Eslint.md",
+    "Roval/dev/lib/lib-content.md",
+    "Roval/dev/杂/工程化.md",
+    "Roval/coder/coder-content.md",
     "Roval/coder/可能示意图.png",
     "Roval/coder/OKR.md",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/dev/git/命令.md",
-    "Roval/dev/lib/npm.md",
-    "Roval/dev/tools/dev useful websites.md"
+    "Roval/dev/lib/npm.md"
   ]
 }
