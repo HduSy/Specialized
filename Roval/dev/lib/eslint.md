@@ -153,7 +153,7 @@ invalid: [
 
 ### 插件 - Plugins
 
-每个插件都是一个命名为 `eslint-config-<plugin-name>` 的 `npm` 模块，暴露额外规则以供使用。在配置 `plugins` 属性值时可省略前缀。
+每个插件都是一个命名为 `eslint-plugin-<plugin-name>` 的 `npm` 模块，暴露额外规则以供使用。在配置 `plugins` 属性值时可省略前缀。
 
 ### 处理器 - Processer
 
@@ -352,5 +352,4 @@ parserOptions: {
 - [掘金137赞-开发插件及原理讲解](https://juejin.cn/post/6844904016363667469)
 - [eslint vs prettier](https://juejin.cn/post/6990929456382607374)
 - [eslint-config-xxx 使用](https://cn.eslint.org/docs/developer-guide/shareable-configs)
-- [前端代码规范-eslint、prettier、editorConfig](https://juejin.cn/post/6895889063111294990
-- 
+- [前端代码规范 -eslint、prettier、editorConfig](https://juejin.cn/post/6895889063111294990
