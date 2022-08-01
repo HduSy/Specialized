@@ -152,5 +152,7 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 ## 参考文献
 
-[2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)  
-[前端工程化之强大的glob语法](https://juejin.cn/post/6876363718578405384)
+1. [2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)  
+2. [前端工程化之强大的glob语法](https://juejin.cn/post/6876363718578405384)
+3. [pnpm使用详细纤细说明/浏览26301/点赞361](https://juejin.cn/post/7053340250210795557)
+4.
