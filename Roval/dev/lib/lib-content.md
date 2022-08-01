@@ -8,7 +8,7 @@ date created: 2022-07-15 14:30
 
 [[vue-cli]]
 
-[[Vue2.0]]
+[[vue2.0]]
 
 [[vue3.0]]
 
