@@ -482,5 +482,6 @@ export class LoggingInterceptor implements NestInterceptor{
 
 ## 参考文献
 
-1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)
-2.
+1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
+2. [中文文档](https://docs.nestjs.cn/)
+3.
