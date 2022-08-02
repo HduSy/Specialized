@@ -1,7 +1,7 @@
 创建日期：2022-03-03 14:30:08  
 最后修改：2022-03-03 14:30:08
 
-#cli
+#前端 #cli
 
 - - -
 > Accept challenges, so that you may feel the exhilaration of victory.  
@@ -148,13 +148,47 @@ Nodejs Cookie 中间件 [cookie-parser](https://www.npmjs.com/package/cookie-par
 
 React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-start)
 
-## 命令
+## 升级
 
-- npm link 本地开发测试依赖包免构建发版流程
+### Npm
+
+#### 描述
+
+几次大版本升级。
+
+#### 提升
+
+无。
+
+#### 命令
+
+npm link 本地开发测试依赖包免构建发版流程
+
+### Yarn
+
+### Pnpm
+
+#### 描述
+
+#### 提升
+
+1、优化磁盘空间  
+2、大幅提升下载速度
+
+#### 命令
+
+##### 本地免发布调试开发中的 Npm 包
+
+`pnpm link <dir>`：指定 `dir` 目录下软件包链接到当前目录下 `node_modules` 目录中；
+
+`pnpm link --global`：将当前工作目录或 `--dir` 参数指定目录下软件包链接到全局环境 `node_modules` 目录中；
+
+`pnpm link --global [pkg-name]`：将全局环境 `node_modules` 目录中指定软件包链接到当前工作目录下；
 
 ## 参考文献
 
 1. [2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)  
 2. [前端工程化之强大的glob语法](https://juejin.cn/post/6876363718578405384)
 3. [pnpm使用详细纤细说明/浏览26301/点赞361](https://juejin.cn/post/7053340250210795557)  
-4.[npm 官网关于 package.json 详细字段说明](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+4. [npm 官网关于 package.json 详细字段说明](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+5. [pnpm 中文官网](https://www.pnpm.cn/)

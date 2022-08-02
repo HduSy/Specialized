@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/webpack.md",
+            "file": "Roval/dev/lib/npm.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/lib/webpack.md",
+                "file": "Roval/dev/lib/npm.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/webpack.md",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/webpack.md",
+                "file": "Roval/dev/lib/npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -153,14 +153,15 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
     "width": 277
   },
-  "active": "06ca15b310470d5c",
+  "active": "5af41272dc749f97",
   "lastOpenFiles": [
+    "Roval/dev/lib/webpack.md",
     "Roval/dev/lib/vue3.md",
     "Roval/dev/lib/vue2.0.md",
     "Roval/dev/lib/vue-cli.md",
@@ -169,7 +170,6 @@
     "Roval/dev/lib/react.md",
     "Roval/dev/lib/qs.md",
     "Roval/dev/lib/prettier.md",
-    "Roval/dev/lib/portal-vue.md",
-    "Roval/dev/lib/pixi.md"
+    "Roval/dev/lib/portal-vue.md"
   ]
 }
