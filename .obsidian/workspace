@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/coder/coder-content.md",
+            "file": "Roval/dev/git/命令.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/git/命令.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/git/命令.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/git/命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,6 +161,7 @@
   },
   "active": "06ca15b310470d5c",
   "lastOpenFiles": [
+    "Roval/coder/coder-content.md",
     "Roval/dev/lib/npm.md",
     "Roval/dev/lib/webpack.md",
     "Roval/dev/lib/vue3.md",
@@ -169,7 +170,6 @@
     "Roval/dev/lib/typescript.md",
     "Roval/dev/lib/react-redux.md",
     "Roval/dev/lib/react.md",
-    "Roval/dev/lib/qs.md",
-    "Roval/dev/lib/prettier.md"
+    "Roval/dev/lib/qs.md"
   ]
 }
