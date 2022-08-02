@@ -92,7 +92,7 @@ package-lock.json
 
 ## 见过的 Npm 包
 
-开发 CLI 脚手架必备 [commander.js](https://github.com/tj/commander.js)
+开发 CLI 脚手架必备 [commander.js](https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md)
 
 Node 环境下 Json 文件读写 [node-jsonfile](https://github.com/jprichardson/node-jsonfile)
 
