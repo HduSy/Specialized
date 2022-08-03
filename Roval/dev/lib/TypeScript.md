@@ -96,6 +96,56 @@ const strLength: number = (someValue as string).length; // 语法支持 jsx
 
 ## 接口
 
+### 可选属性
+
+```ts
+interface Itest {
+	x?:number;
+}
+```
+
+### 只读属性
+
+只能在对象创建时修改其属性值。
+
+```ts
+interface Itest {
+	readonly x:number;
+}
+let ro = R
+```
+
+### 函数类型
+
+```
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+```
+
+### 索引类型
+
+数字索引的返回值必须是字符串索引返回值类型的子类型，因为 `javascript` 会把数字类型索引转为字符串类型索引去取值。
+
+```
+// 数字索引
+interface StringArray {
+  [index: number]: string;
+}
+// 字符串索引
+interface StringArray {
+  [index: string]: string;
+}
+// 设置只读
+interface StringArray {
+  readonly [index: string]: string;
+}
+```
+
+### 接口继承类
+
+当接口继承了一个类类型时，同样会继承到类的 private 和 protected 成员，这意味着这个接口类型只能被这个类或其子类所实现（implement）。。
+
 # 参考文献
 
 [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)  
