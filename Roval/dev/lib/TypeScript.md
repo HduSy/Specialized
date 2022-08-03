@@ -144,7 +144,32 @@ interface StringArray {
 
 ### 接口继承类
 
-当接口继承了一个类类型时，同样会继承到类的 private 和 protected 成员，这意味着这个接口类型只能被这个类或其子类所实现（implement）。。
+当接口继承了一个类类型时，同样会继承到类的 private 和 protected 成员，这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。
+
+```ts
+class Control {
+    private state: any;
+}
+interface SelectableControl extends Control {
+    select(): void;
+}
+// ok
+class Button extends Control implements SelectableControl {
+    select() { }
+}
+class TextBox extends Control {
+
+}
+// not ok
+// Error: Property 'state' is missing in type 'Image'.
+class Image implements SelectableControl {
+    select() { }
+}
+
+class Location {
+
+}
+```
 
 # 参考文献
 
