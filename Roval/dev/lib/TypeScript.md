@@ -94,6 +94,8 @@ const someValue: any = 'this is a string';
 const strLength: number = (someValue as string).length; // 语法支持 jsx
 ```
 
+## 接口
+
 # 参考文献
 
 [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)  
