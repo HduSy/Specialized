@@ -13,7 +13,12 @@
 
 ### Type
 
-指明文件为哪种模块处理方式。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ES6` 模块处理。
+指明文件为哪种模块处理方式。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ECMAScript module` 模块处理。
+
+三点说明：
+1、建议始终不要忽略，虽然默认是 `commonjs` 规范；
+2、指明了 `.js` 和无扩展名文件处理方式；
+3、不受 `type` 影响的两种类型文件，`.mjs` 的文件都按照 `ES` 模块来处理，`.cjs` 的文件都按照 `commonJs` 模块来处理；
 
 ### Files
 

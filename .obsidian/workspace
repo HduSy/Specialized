@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/scripts/模块.md",
+            "file": "Roval/dev/lib/npm.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/scripts/模块.md",
+                "file": "Roval/dev/lib/npm.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/scripts/模块.md",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/scripts/模块.md",
+                "file": "Roval/dev/lib/npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,6 +161,7 @@
   },
   "active": "06ca15b310470d5c",
   "lastOpenFiles": [
+    "Roval/dev/scripts/模块.md",
     "Roval/dev/scripts/BOM.md",
     "Roval/dev/scripts/Nodejs.md",
     "Roval/dev/scripts/fetch.md",
@@ -169,7 +170,6 @@
     "Roval/dev/scripts/DOM.md",
     "Roval/dev/scripts/promise.md",
     "Roval/dev/scripts/Proxy.md",
-    "Roval/dev/scripts/regex.md",
-    "Roval/dev/scripts/script-content.md"
+    "Roval/dev/scripts/regex.md"
   ]
 }
