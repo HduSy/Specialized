@@ -33,7 +33,7 @@
 - 当 ts 并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
 		
 
-### 对象类型——接口 interface
+### 对象类型——接口 Interface
 
 接口一方面是对行为的抽象，具体实现则由类去实现，另一方面是对对象形状进行描述
 
@@ -42,10 +42,12 @@
 - 可选属性
 		
 		```typescript
-	interface Person {
-		name: string;
-		age?: number;
+
+	interface Person {  
+		name: string;  
+		age?: number;  
 	}
+
 	```
 		
 - 任意属性
@@ -208,3 +210,5 @@
 声明语句：声明语句中只能定义类型，不能定义具体实现
 
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
+
+## 配置文件 tsconfig.json
