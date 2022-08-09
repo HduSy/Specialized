@@ -211,4 +211,8 @@
 
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
 
-## 配置文件 tsconfig.json
+## Tsc 配置文件 tsconfig.json
+
+## 参考文档
+
+[详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)
