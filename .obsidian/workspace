@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/npm.md",
+            "file": "Roval/dev/scripts/模块.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/dev/scripts/模块.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/dev/scripts/模块.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/dev/scripts/模块.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,15 +161,15 @@
   },
   "active": "06ca15b310470d5c",
   "lastOpenFiles": [
-    "Roval/coder/coder-content.md",
-    "Roval/dev/git/命令.md",
-    "Roval/dev/lib/typescript.md",
-    "Roval/coder/2022H1.md",
-    "Roval/dev/experience/接口请求规范.md",
-    "Roval/coder/plan/一款活动常用功能插件.md",
-    "Roval/dev/lib/npm.md",
-    "Roval/dev/lib/webpack.md",
-    "Roval/dev/lib/vue3.md",
-    "Roval/dev/lib/vue2.0.md"
+    "Roval/dev/scripts/BOM.md",
+    "Roval/dev/scripts/Nodejs.md",
+    "Roval/dev/scripts/fetch.md",
+    "Roval/dev/scripts/event.md",
+    "Roval/dev/scripts/error.md",
+    "Roval/dev/scripts/DOM.md",
+    "Roval/dev/scripts/promise.md",
+    "Roval/dev/scripts/Proxy.md",
+    "Roval/dev/scripts/regex.md",
+    "Roval/dev/scripts/script-content.md"
   ]
 }
