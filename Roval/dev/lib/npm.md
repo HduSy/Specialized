@@ -182,6 +182,10 @@ npm link 本地开发测试依赖包免构建发版流程
 
 #### 命令
 
+##### 等同于 Npx 功能
+
+`pnpm dlx <pkg_name> [options]`
+
 ##### 本地免发布调试开发中的 Npm 包
 
 `pnpm link <dir>`：指定 `dir` 目录下软件包链接到当前目录下 `node_modules` 目录中；
