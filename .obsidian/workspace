@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/coder/coder-content.md",
+            "file": "Roval/dev/tools/dev useful websites.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/tools/dev useful websites.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/tools/dev useful websites.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/dev/tools/dev useful websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -161,15 +161,15 @@
   },
   "active": "06ca15b310470d5c",
   "lastOpenFiles": [
-    "Roval/coder/渲染流程 1.png.md",
+    "Roval/essay/网络文章/技术阅读.md",
     "Roval/coder/coder-content.md",
+    "Roval/coder/渲染流程 1.png.md",
     "Roval/coder/OKR.md",
     "Roval/coder/渲染流程.png",
     "Roval/coder/渲染流程 1.png",
     "Roval/dev/lib/eslint.md",
     "Roval/dev/lib/npm.md",
     "Roval/dev/git/命令.md",
-    "Roval/dev/lib/Pasted image 20220211002140.png",
-    "Roval/essay/网络文章/技术阅读.md"
+    "Roval/dev/lib/Pasted image 20220211002140.png"
   ]
 }
