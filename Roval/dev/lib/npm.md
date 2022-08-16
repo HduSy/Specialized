@@ -155,6 +155,8 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 将指定 `.env` 文件中的配置加载到环境变量 `process.env` 中。[dotenv](https://github.com/motdotla/dotenv)
 
+`nodejs spawn` 跨平台解决方案 [cross-spawn](https://www.npmjs.com/package/cross-spawn) 自动根据操作系统平台决定是否起一个 `shell` 来执行当前 **系统命令**。
+
 ## 升级
 
 ### Npm
