@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a8c0e2f860c000fe",
+        "id": "59e9143e0dccee1b",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Roval/coder/coder-content.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -28,7 +32,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "接口",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -66,6 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Roval/coder/coder-content.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -95,11 +100,22 @@
             }
           },
           {
+            "id": "3adea2c588f6baa2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Roval/coder/coder-content.md"
+              }
+            }
+          },
+          {
             "id": "eede4b179cb9dd80",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -137,23 +154,24 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 277
   },
-  "active": "a8c0e2f860c000fe",
+  "active": "3adea2c588f6baa2",
   "lastOpenFiles": [
+    "Roval/coder/个人发展计划周表.md",
     "Roval/coder/coder-content.md",
+    "Roval/coder/review/2021春节许愿前端问题复盘.md",
     "Roval/dev/lib/npm.md",
     "Roval/dev/tools/dev useful websites.md",
     "Roval/essay/网络文章/技术阅读.md",
     "Roval/coder/渲染流程 1.png.md",
     "Roval/coder/OKR.md",
     "Roval/coder/渲染流程.png",
-    "Roval/coder/渲染流程 1.png",
-    "Roval/dev/lib/eslint.md",
-    "Roval/dev/git/命令.md"
+    "Roval/coder/渲染流程 1.png"
   ]
 }
