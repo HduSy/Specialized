@@ -43,6 +43,7 @@ Vue 提供一组插槽 API`<slot></slot>` 来实现内容分发，之间可以�
 ```html
 submit-button: <button type="submit"> <slot>Submit</slot> </button>
 ```
+
 ```html
 <submit-button></submit-button>
 👇
@@ -76,7 +77,7 @@ base-layout：
 
 ### 作用域插槽（插槽 prop）
 
-**编译作用域**决定父组件所在父级作用域与子模板所在子作用域不在同一作用域，想在父组件在插槽内容中使用子组件数据，通过在 `<slot>` 元素上绑定 attribute（**插槽 prop**），然后在父级作用域中，使用带值的 `v-slot` 来定义所有插槽 prop 的对象名字。
+**编译作用域** 决定父组件所在父级作用域与子模板所在子作用域不在同一作用域，想在父组件在插槽内容中使用子组件数据，通过在 `<slot>` 元素上绑定 attribute（**插槽 prop**），然后在父级作用域中，使用带值的 `v-slot` 来定义所有插槽 prop 的对象名字。
 
 ```html
 current-user:
@@ -93,7 +94,7 @@ current-user:
 
 ### 独占默认插槽的简写
 
-当组件**只存在**默认插槽时，组件本身可当作插槽模板来用，即 `v-slot` 指令可应用在标签上。
+当组件 **只存在** 默认插槽时，组件本身可当作插槽模板来用，即 `v-slot` 指令可应用在标签上。
 
 ```html
 <current-user v-slot="slotProps"> {{ slotProps.user.firstName }} </current-user>
@@ -137,7 +138,7 @@ current-user:
 
 ### 组件基础
 
-1、vue 通过 `component` 元素 `is` 属性动态切换不同组件，属性值可以是**已注册**组件名字或组件的选项对象。
+1、vue 通过 `component` 元素 `is` 属性动态切换不同组件，属性值可以是 **已注册** 组件名字或组件的选项对象。
 
 ```html
 <component v-bind:is="currentTab.component" class="tab"></component>
@@ -148,6 +149,7 @@ current-user:
 ```html
 <component v-bind:is="currentTabComponent" class="tab"></component>
 ```
+
 ```js
 Vue.component("tab-home", {
 

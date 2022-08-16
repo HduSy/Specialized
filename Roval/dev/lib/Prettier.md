@@ -56,4 +56,3 @@ module.exports = {
 # 参考文献
 
 1. [vscode prettier 与 eslint 冲突](https://zhuanlan.zhihu.com/p/347339865)
-2.

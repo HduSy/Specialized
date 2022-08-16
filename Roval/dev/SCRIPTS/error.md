@@ -18,7 +18,7 @@
 				
 		7. URIError 调用`encodeURI&decodeURI`时传入错误格式的URI时报错
 				
-- try/catch 语句目的在于处理自己**无法控制&预知**发生的错误，否则应归于代码书写问题则须自己处理
+- try/catch 语句目的在于处理自己 **无法控制&预知** 发生的错误，否则应归于代码书写问题则须自己处理
 		
 - final 语句不论 try/catch 执行如何始终执行，且会忽略 try/catch 中的 return 返回值
 		
@@ -27,7 +27,7 @@
 - 捕获错误的目的在于阻止浏览器默认错误响应行为，抛出错误是为了说明错误出处，错误原因
 		
 
-## error 事件
+## Error 事件
 
 任何没有被 try/catch 捕获的错误，就会成为全文档 window 上的 error 事件，不同于其余事件处理程序，其 callback 的参数不传 event 对象，而是三个参数 `message、url、line`，即错误消息、错误所在文档地址、错误行号
 

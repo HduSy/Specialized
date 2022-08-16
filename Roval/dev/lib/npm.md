@@ -151,7 +151,9 @@ Nodejs Cookie 中间件 [cookie-parser](https://www.npmjs.com/package/cookie-par
 
 基于装饰器的类型验证 [class-validator](https://www.npmjs.com/package/class-validator)
 
-React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-start)
+React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-start)  
+
+将指定 `.env` 文件中的配置加载到环境变量 `process.env` 中。[dotenv](https://github.com/motdotla/dotenv)
 
 ## 升级
 

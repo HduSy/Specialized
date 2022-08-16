@@ -1,4 +1,4 @@
-# github 访问过慢
+# Github 访问过慢
 
 参考仓库：[521xueweihan/GitHub520](https://github.com/521xueweihan/GitHub520)
 

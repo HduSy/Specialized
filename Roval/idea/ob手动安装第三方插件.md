@@ -1,4 +1,4 @@
-# ob 手动安装第三方插件
+# Ob 手动安装第三方插件
 
 无法在 ob 内使用第三方插件库下载安装第三方插件，进行了一些尝试。
 
@@ -10,7 +10,7 @@ B 站：一个专注于 OB 教学干货分享的 UP 主，有事没事可以看�
 
 在当前库隐藏文件夹 `.obsidian` 下新建 `plugins` 文件夹存放第三方插件，记得保留插件必备的三个文件（通常由 `.json\.css\.js` 构成。
 
-又或者**非手动方式**：[教ob学会绕道的插件](https://milinshushe.feishu.cn/docs/doccnCX49h4x5O4gsY4rCmKIBgd)，下载地址：[juqkai/obsidian-proxy-github](https://github.com/juqkai/obsidian-proxy-github)
+又或者 **非手动方式**：[教ob学会绕道的插件](https://milinshushe.feishu.cn/docs/doccnCX49h4x5O4gsY4rCmKIBgd)，下载地址：[juqkai/obsidian-proxy-github](https://github.com/juqkai/obsidian-proxy-github)
 
 插件列表在线文档：
 

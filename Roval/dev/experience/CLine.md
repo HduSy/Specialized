@@ -13,6 +13,4 @@
 find . -name "*.png" | xargs rm -rf
 ```
 
-2、
-
 # 参考文献

@@ -1,8 +1,8 @@
 # AFC CYCLING CLUB
 
-**DATE**: 2021-10-20
-**OWNER**: [TTT](https://www.strava.com/athletes/91014737)
-**OFFICIAL**: [AFC](https://www.strava.com/clubs/afcb)
+**DATE**: 2021-10-20  
+**OWNER**: [TTT](https://www.strava.com/athletes/91014737)  
+**OFFICIAL**: [AFC](https://www.strava.com/clubs/afcb)  
 **ABOUT**: AFC(==Away From City== 逃离城市，离城 CYCLING CLUB)
 
 <p align="justify"> 仔细回想你的骑行初衷，脑海是否浮现 " 在路上 "、" 去远方 "、" 风景 "…再想想自己的身体是被困在城市『绕圈』？车子是否被锁在室内『骑行台』？思绪是否被 "FTP"、" 踏频 "、"MHR"…等等众多『数据项』干扰？钱包是否被 " 器材 "、" 装备 "…掏空？

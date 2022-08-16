@@ -34,6 +34,7 @@ type 能做到，interface 不能做到：
 - type 可以声明 **元组类型**，如 `type yuanzu = [myType1, myType2]`  
 interface 能做到，type 不能做到：
 interface 可以 **声明合并**，type 会覆盖只保留最后一个声明：
+
 ```typescript
 	interface test {
 		name: string
@@ -49,8 +50,10 @@ interface 可以 **声明合并**，type 会覆盖只保留最后一个声明：
 	}
 	*/
 ```
+
 - interface 新建了一个类型，type 不会新建一个类型而只是创建了一个别名来引用类型；
 - 继承写法
+
 ```ts
 // 接口继承接口extends
 interface Alarm {

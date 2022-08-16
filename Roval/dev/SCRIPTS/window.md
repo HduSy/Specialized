@@ -23,6 +23,7 @@
 5. 窗口位置  
 `window.pageXoffset/scrollX/pageYoffset/scrollY`：衡量文档相对于视口滚动距离。
 `window.scroll(x,y)/scrollTo(x,y)/scrollBy(x,y)`：操纵文档滚动。接受一个 `ScrollTpOptions` 参数，通过 `behavior` 属性告诉浏览器是否平滑滚动。
+
 ```js
 window.scrollTo({
 	left: 100,
@@ -30,5 +31,6 @@ window.scrollTo({
 	behavior: 'smooth', // auto 正常滚动
 })
 ```
+
 6. 导航与打开新窗口  
 `window.open(url: 链接,target: 目标窗口,特性字符串，当前打开时是否替换当前页浏览记录)`，target 也可以是 `_self、_top、_parent、_blank`。

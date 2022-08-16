@@ -173,7 +173,7 @@ export class CliModule {}
 
 #### 概念
 
-内置的**异常层**负责处理整个应用程序中的所有抛出的异常，当捕获到未处理的异常时，最终用户将收到友好的响应。
+内置的 **异常层** 负责处理整个应用程序中的所有抛出的异常，当捕获到未处理的异常时，最终用户将收到友好的响应。
 开箱即用，此操作由内置的全局异常过滤器执行，该过滤器处理类型 `HttpException`（及其子类）的异常。
 
 ```json
@@ -451,9 +451,9 @@ export class RoleGuard implements CanActivate{
 
 #### 功能
 
-- 在函数执行之前/之后绑定**额外的逻辑**
+- 在函数执行之前/之后绑定 **额外的逻辑**
 - 转换从函数返回的结果
-- **转换**从函数抛出的异常
+- **转换** 从函数抛出的异常
 - 扩展基本函数行为
 - 根据所选条件完全重写函数 (例如, 缓存目的)
 
@@ -481,4 +481,3 @@ export class LoggingInterceptor implements NestInterceptor{
 
 1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
 2. [中文文档](https://docs.nestjs.cn/)
-3.

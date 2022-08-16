@@ -1,3 +1,5 @@
+# promise
+
 #《JS 高程》中译讲解不是很好，转阮一峰 ES6
 
 ## 两个特点
@@ -30,7 +32,7 @@ Promise.any，其中一个实例状态 fulfilled 就会导致 p 状态 fulfilled
 
 const p = Promise.any([p1, p2, p3])
 
-Promise.allSettled，所有实例状态均定下后，将所有实例结果作为 p 回调，一旦结束状态总是**fulfilled**的
+Promise.allSettled，所有实例状态均定下后，将所有实例结果作为 p 回调，一旦结束状态总是 **fulfilled** 的
 
 const p = Promise.allSettled([p1, p2, p3])
 

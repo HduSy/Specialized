@@ -32,6 +32,7 @@
 
  当鼠标悬浮在使用到该类型的地方时，编辑器会有更好的提示
 
+ 
  ```ts
 /** 奖品信息 */
 interface IAwardItem {  
@@ -43,6 +44,7 @@ interface IAwardItem {
 	 splinter_count: number; // 碎片上限, 只有gift_type=2时有效  
 }
  ```
+ 
 
 ### 2、善用 *.d.ts 声明文件
 
@@ -154,7 +156,7 @@ TypeScript 为类定义提供了三种访问修饰符：
 - instanceof：用于判断一个实例是否属于某个类
 - in：用于判断一个属性/方法是否属于某个对象
 
-### 10、常量枚举 vs 普通枚举
+### 10、常量枚举 Vs 普通枚举
 
 ```ts
 const enum Direction {  
@@ -183,6 +185,7 @@ enum Direction {
 
 - 类型索引 `keyof`  
 `keyof` 类似于 `Object.keys`
+
 ```ts
 interface TaskActionNames {  
  // 签到  
@@ -198,8 +201,10 @@ type TaskActionName = keyof TaskActionNames
 // 等效于
 type TaskActionName = 'checkin'|'watchVideo'|'watchMovie'|'post'
 ```
+
 - 类型约束 `extend`  
 常与 `keyof` 一起使用
+
 ```ts
 function getValue<T, K extends keyof T>(obj: T, key: K) {  
   return obj[key]  
@@ -208,6 +213,7 @@ const obj = { a: 1 }
 const a = getValue(obj, 'a') // 1  
 const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 ```
+
 - 类型映射 `in`  
 `in` 关键词的作用主要是做类型的映射，配合 `keyof` 遍历已有接口的 `key` 或者是遍历联合类型。
 - ts 内置类型  

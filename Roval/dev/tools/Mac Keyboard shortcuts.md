@@ -1,4 +1,4 @@
-# 用熟常用的一些就 ok 啦
+# 用熟常用的一些就 Ok 啦
 
 ## [参考地址](https://support.apple.com/zh-cn/HT201236)
 

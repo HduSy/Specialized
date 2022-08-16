@@ -100,6 +100,7 @@ function pc_xy() {
   html.style.fontSize=`${100 * scale}px`  
 }
 ```
+
 ```js
 import resize from '@/common/js/resizeConfig'  
 resize({ type: 'h5', scale: 'xy' })

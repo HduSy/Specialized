@@ -6,7 +6,7 @@
 				
 		- 查询字符串location.search返回URL中?及之后的字符串通过手段可解析URL参数为`key-value`对象；URLSearchParams提供一套API直接操作查询字符串
 				
-		- 操作地址有三种方式，location.href = ；window.location = ；location.assign()；其中第一种最常用。
+		- 操作地址有三种方式，location.href =；window.location =；location.assign()；其中第一种最常用。
 				
 		- 修改location的属性都会导致重新加载，属性列表如下：
 				
@@ -36,7 +36,7 @@ export default {
 				
 		- 窗口位置：`.screenLeft`、`.screenTop`：窗口距离屏幕左侧/上侧的CSS像素；`.moveTo(x,y)`、`.moveBy(xL,yL)`：移动窗口;
 				
-		- 窗口大小： `innerWidth、innerHeight、outterWidth、outterHeight`：页面视口大小/浏览器窗口自身大小；`resizeTo(w,h)、resizeBy(wL,hL)`：缩放窗口大小；
+		- 窗口大小：`innerWidth、innerHeight、outterWidth、outterHeight`：页面视口大小/浏览器窗口自身大小；`resizeTo(w,h)、resizeBy(wL,hL)`：缩放窗口大小；
 				
 		- 视口位置：浏览器窗口大小通常无法完整显示整个页面，度量文档相对于视口滚动距离的属性有`window.pageXOffset\window.scrollX、window.pageYOffset\window.scrollY`；`scroll()\scrollTo(x,y)\scrollBy(xL,yL)`
 				

@@ -48,10 +48,13 @@
 		age?: number;  
 	}
 
+	
 	```
 		
 - 任意属性
+	
 		
+
 ```typescript
 	interface Person {
 		name: string;
@@ -65,6 +68,7 @@
 				
 - 只读属性
 		
+
 ```typescript
     interface Person {
 		readonly id: number;
@@ -73,6 +77,7 @@
 		[propName: string]: any;  
     }
 ```
+
 			
 
 属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
@@ -86,15 +91,17 @@
 		
 - 接口表示（不推荐）
 		
+
 ```typescript
     interface NumberArray {
 		[index: number]: any;  
     }
     let fibonacci: NumberArray = [1, '1', 2, 3, 5];
 ```
+
 		
 
-但是在表示**类数组**方面很 nice，如 `IArguments`, `NodeList`, `HTMLCollection`
+但是在表示 **类数组** 方面很 nice，如 `IArguments`, `NodeList`, `HTMLCollection`
 
 ```typescript
     function sum() {
@@ -102,28 +109,34 @@
     }
 
 ```
+
 		
 
 ### 函数的类型
 
 - 函数声明，参数个数确定，不可多不可少
 		
+
 ```typescript
     function sum(x: number, y: number): number {
 		return x + y;  
     }
 ```
+
 		
 - 函数表达式，TS 中的 `=>` 用来表示函数定义，左边是输入类型，右边是输出类型，不同于 ES6 中的箭头函数
+
 ```typescript
     let mySum: (x: number, y: number) => number = 
 	function (x: number, y: number):number {
 		return x + y;  
     };
 ```
+
 		
 - 接口定义函数
 		
+
 ```typescript
     interface SearchFunc {
 		(source: string, subString: string): boolean;  
@@ -133,6 +146,7 @@
 		return source.search(subString) !== -1;  
     }
 ```
+
 		
 - 可选参数
 		
@@ -142,6 +156,7 @@
 		
 - 参数默认值，**TypeScript 会将添加了默认值的参数识别为可选参数**, 此时就不受「可选参数必须接在必需参数后面」的限制了
 		
+
 ```typescript
     function buildName(firstName: string, lastName: string = 'Cat') {
 		return firstName + ' ' + lastName;  
@@ -149,9 +164,11 @@
     let tomcat = buildName('Tom', 'Cat');  
     let tom = buildName('Tom');
 ```
+
 		
 - 剩余参数，只能是最后一个参数
 		
+
 ```typescript
     function push(array: any[], ...items: any[]) {
 		items.forEach(function(item) {
@@ -161,9 +178,11 @@
     let a = [];  
     push(a, 1, 2, 3);
 ```
+
 		
 - 函数重载
 		
+
 ```typescript
     function reverse(x: number): number; // 定义  
     function reverse(x: string): string; // 定义  
@@ -176,6 +195,7 @@
         }  
     }
 ```
+
 		
 
 ### 类型断言
