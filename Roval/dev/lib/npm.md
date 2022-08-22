@@ -175,6 +175,14 @@ npm link 本地开发测试依赖包免构建发版流程
 
 ### Yarn
 
+### Lerna
+
+#### 描述
+
+`monorepo: lerna + yarn`  
+
+[使用](https://segmentfault.com/a/1190000023059277)
+
 ### Pnpm
 
 #### 描述
