@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/npm.md",
+            "file": "Roval/coder/coder-content.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/lib/npm.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -163,10 +163,10 @@
   },
   "active": "59e9143e0dccee1b",
   "lastOpenFiles": [
+    "Roval/dev/lib/npm.md",
     "Roval/dev/git/工程化规范.md",
     "Roval/dev/git/4iiIv.gif",
     "Roval/coder/coder-content.md",
-    "Roval/dev/lib/npm.md",
     "Roval/coder/个人发展计划周表.md",
     "Roval/coder/review/2021春节许愿前端问题复盘.md",
     "Roval/dev/tools/dev useful websites.md",
