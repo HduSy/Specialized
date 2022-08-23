@@ -171,7 +171,9 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 #### 命令
 
-npm link 本地开发测试依赖包免构建发版流程
+npm link 本地开发测试依赖包免构建发版流程  
+
+`npm owner add <用户名> <包名>`：添加包发布权限人
 
 ### Yarn
 
