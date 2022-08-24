@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/lib/npm.md",
+            "file": "Roval/essay/网络文章/技术阅读.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/essay/网络文章/技术阅读.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/lib/npm.md"
+                "file": "Roval/essay/网络文章/技术阅读.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/essay/网络文章/技术阅读.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/essay/网络文章/技术阅读.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -163,9 +163,9 @@
   },
   "active": "59e9143e0dccee1b",
   "lastOpenFiles": [
+    "Roval/dev/lib/npm.md",
     "Roval/dev/lib/vue3.md",
     "Roval/coder/coder-content.md",
-    "Roval/dev/lib/npm.md",
     "Roval/dev/git/工程化规范.md",
     "Roval/dev/git/4iiIv.gif",
     "Roval/coder/个人发展计划周表.md",
