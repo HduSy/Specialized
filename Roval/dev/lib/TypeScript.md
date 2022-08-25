@@ -94,6 +94,15 @@ const someValue: any = 'this is a string';
 const strLength: number = (someValue as string).length; // 语法支持 jsx
 ```
 
+### Unknown & Never
+
+[类型系统 top/bottom type](https://mp.weixin.qq.com/s/rZ96wy8xUrx4T1qG5OKS0w)
+
+#### Never 妙用
+
+- unreachable code detect
+- exhaustive check
+
 ## 接口
 
 ### 可选属性
