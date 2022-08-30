@@ -157,6 +157,10 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 `nodejs spawn` 跨平台解决方案 [cross-spawn](https://www.npmjs.com/package/cross-spawn) 自动根据操作系统平台决定是否起一个 `shell` 来执行当前 **系统命令**。
 
+`jss` [css in js lib](https://cssinjs.org/)  
+
+`intersection-observer` [polyfill for intersection-observer](https://www.npmjs.com/package/intersection-observer)
+
 ## 升级
 
 ### Npm
