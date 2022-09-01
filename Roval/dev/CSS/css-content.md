@@ -15,4 +15,5 @@
 [[word-break]]：控制单词
 
 [border-radius](https://www.shejiku.net/css-border-radius.html)：清晰讲解  
-![[Pasted image 20220511113040.png]]
+![[Pasted image 20220511113040.png]]  
+[linear- gradient](https://www.w3cplus.com/css3/do-you-really-understand-css-linear-gradients.html)：详细讲解
