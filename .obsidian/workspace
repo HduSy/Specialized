@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/dev/css/css-content.md",
+            "file": "Roval/coder/coder-content.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/css/css-content.md",
+                "file": "Roval/coder/coder-content.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/css/css-content.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/css/css-content.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/css/css-content.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -163,6 +163,7 @@
   },
   "active": "59e9143e0dccee1b",
   "lastOpenFiles": [
+    "Roval/dev/css/css-content.md",
     "Roval/dev/杂/mermaid.md",
     "Roval/dev/杂/工程化.md",
     "Roval/coder/个人发展计划周表.md",
@@ -171,7 +172,6 @@
     "Roval/coder/Pasted image 20220815110542.png",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/coder/可能示意图.png",
-    "Roval/coder/2022H1自评.md",
-    "Roval/coder/2021H2自评.md"
+    "Roval/coder/2022H1自评.md"
   ]
 }
