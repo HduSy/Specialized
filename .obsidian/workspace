@@ -19,88 +19,103 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ecf50d41641851c8",
-    "type": "mobile-drawer",
+    "id": "317d2957f5fb5f5c",
+    "type": "split",
     "children": [
       {
-        "id": "3bde088f9a1ad83f",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "9f0a7097f67d9aa6",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "ff419d1472c490c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14e1169b99dcb7e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9feee2242ef25628",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "e660b67a2514344c",
-    "type": "mobile-drawer",
+    "id": "71a4fcca78732a2a",
+    "type": "split",
     "children": [
       {
-        "id": "35903bd75afe1989",
-        "type": "leaf",
-        "state": {
-          "type": "calendar",
-          "state": {}
-        }
-      },
-      {
-        "id": "38504e2a72b598a1",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "Roval/coder/coder-content.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "912bea9f20451dd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "551168ab89ee8e7c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "47905a53fa05f52b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Roval/coder/coder-content.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c717fd34029393ab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Roval/coder/coder-content.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd3d285e0198cd64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Roval/coder/coder-content.md"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "d1eee5fec7cbcbae",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "Roval/coder/coder-content.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
-      },
-      {
-        "id": "acab55aab0862fa0",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "Roval/coder/coder-content.md"
-          }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "59e9143e0dccee1b",
   "lastOpenFiles": [
