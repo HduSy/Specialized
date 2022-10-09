@@ -23,3 +23,5 @@
 [monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin) Monaco-Editor 引入。
 
 ## 参考文献
+
+[万字webpack5教学](https://mp.weixin.qq.com/s/Ap8vWQqgGpe-PdU2EZFxDA)
