@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2eed323cfb5bb971",
+        "id": "937c3c64338d53d2",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "61bc3d9d4bbb98ba",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Roval/essay/网络文章/技术阅读.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -81,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/essay/网络文章/技术阅读.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/essay/网络文章/技术阅读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +105,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/essay/网络文章/技术阅读.md"
+              }
             }
           }
         ],
@@ -117,17 +117,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2eed323cfb5bb971",
+  "active": "937c3c64338d53d2",
   "lastOpenFiles": [
-    "Roval/coder/coder-content.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/2022H2晋升答辩小记.md",
+    "Roval/essay/网络文章/技术阅读.md",
     "conflict-files-obsidian-git.md",
+    "Roval/coder/coder-content.md",
     "Roval/coder/Untitled 1.md",
     "Roval/coder/Untitled.md",
-    "Roval/coder/OKR.md",
     "Roval/coder/tmp.md",
     "Roval/coder/Pasted image 20220815110542.png",
-    "Roval/coder/个人发展计划周表.md",
-    "Roval/coder/2022H2晋升答辩小记.md",
-    "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md"
+    "Roval/coder/个人发展计划周表.md"
   ]
 }
