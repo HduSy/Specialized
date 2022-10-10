@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Roval/essay/网络文章/技术阅读.md",
+            "file": "Roval/coder/coder-content.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           }
@@ -119,9 +119,9 @@
   },
   "active": "937c3c64338d53d2",
   "lastOpenFiles": [
+    "Roval/essay/网络文章/技术阅读.md",
     "Roval/coder/OKR.md",
     "Roval/coder/2022H2晋升答辩小记.md",
-    "Roval/essay/网络文章/技术阅读.md",
     "conflict-files-obsidian-git.md",
     "Roval/coder/coder-content.md",
     "Roval/coder/Untitled 1.md",
