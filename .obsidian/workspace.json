@@ -23,9 +23,11 @@
             "id": "a77dc813e06ebcab",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.0.0"
+                "file": "Roval/coder/coder-content.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
