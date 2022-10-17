@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "1a4da0c0df015f86",
+    "type": "split",
+    "children": [
+      {
+        "id": "a82686e4ecafc9b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "937c3c64338d53d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/coder-content.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a77dc813e06ebcab",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.0"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "317d2957f5fb5f5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff419d1472c490c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14e1169b99dcb7e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9feee2242ef25628",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "71a4fcca78732a2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "912bea9f20451dd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "551168ab89ee8e7c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "47905a53fa05f52b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Roval/coder/coder-content.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c717fd34029393ab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Roval/coder/coder-content.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bd3d285e0198cd64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Roval/coder/coder-content.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "a77dc813e06ebcab",
+  "lastOpenFiles": [
+    "Roval/essay/网络文章/技术阅读.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/2022H2晋升答辩小记.md",
+    "conflict-files-obsidian-git.md",
+    "Roval/coder/coder-content.md",
+    "Roval/coder/Untitled 1.md",
+    "Roval/coder/Untitled.md",
+    "Roval/coder/tmp.md",
+    "Roval/coder/Pasted image 20220815110542.png",
+    "Roval/coder/个人发展计划周表.md"
+  ]
+}
