@@ -54,9 +54,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8b144860edaa4696",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -162,10 +172,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "5db14ae05497a8a4",
+  "active": "8b144860edaa4696",
   "lastOpenFiles": [
     "Roval/coder/小记.md",
     "Roval/coder/Untitled.md",
