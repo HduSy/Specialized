@@ -161,6 +161,12 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 `intersection-observer` [polyfill for intersection-observer](https://www.npmjs.com/package/intersection-observer)
 
+`fs-extra` 替换 `fs`，提供更多方法（同步/异步），且支持 promise  
+
+`dotenv` 将 `.env` 文件中的配置加载到 `process.env` 上  
+
+`cross-env` 跨操作系统平台，设置 `NODE_ENV`
+
 ## 升级
 
 ### Npm

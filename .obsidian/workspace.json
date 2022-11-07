@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8b144860edaa4696",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/coder/小记.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           }
@@ -138,17 +125,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8b144860edaa4696",
+  "active": "937c3c64338d53d2",
   "lastOpenFiles": [
+    "Roval/dev/lib/npm.md",
+    "Roval/coder/小记.md",
     "Roval/coder/coder-content.md",
     "Roval/coder/OKR.md",
-    "Roval/coder/小记.md",
     "Roval/essay/网络文章/技术阅读.md",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/coder/Untitled.md",
     "Roval/coder/Pasted image 20220815110542.png",
     "Roval/coder/可能示意图.png",
-    "Roval/coder/个人发展计划周表.md",
-    "Roval/coder/2022H1.md"
+    "Roval/coder/个人发展计划周表.md"
   ]
 }
