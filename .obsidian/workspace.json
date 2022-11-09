@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/科学训练.md",
+                "file": "Roval/coder/小记.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/科学训练.md",
+                "file": "Roval/coder/小记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/科学训练.md",
+                "file": "Roval/coder/小记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/科学训练.md"
+                "file": "Roval/coder/小记.md"
               }
             }
           }
@@ -140,15 +140,15 @@
   },
   "active": "053b172fbf33db47",
   "lastOpenFiles": [
+    "Roval/coder/coder-content.md",
+    "Roval/rider/科学训练.md",
     "Roval/rider/一份详细又简略的公路车相关知识.md",
     "Roval/rider/me.md",
     "Roval/rider/AFC CYCLING CLUB.md",
     "Roval/rider/以俱乐部名义进行的一些活动.md",
-    "Roval/coder/coder-content.md",
     "Roval/dev/lib/npm.md",
     "Roval/coder/小记.md",
     "Roval/coder/OKR.md",
-    "Roval/essay/网络文章/技术阅读.md",
-    "Roval/coder/平台制作页保存冲突加弹窗.png"
+    "Roval/essay/网络文章/技术阅读.md"
   ]
 }
