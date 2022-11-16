@@ -235,4 +235,5 @@
 
 ## 参考文档
 
-[详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)
+[详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  
+[掘金详细TS](https://juejin.cn/post/7068081327857205261)
