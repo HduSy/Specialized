@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/scripts/TypeScript基础语法.md",
+                "file": "Roval/coder/coder-content.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/scripts/TypeScript基础语法.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/scripts/TypeScript基础语法.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/scripts/TypeScript基础语法.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           }
@@ -140,6 +140,7 @@
   },
   "active": "053b172fbf33db47",
   "lastOpenFiles": [
+    "Roval/dev/scripts/TypeScript基础语法.md",
     "Roval/essay/网络文章/技术阅读.md",
     "Roval/dev/experience/rem font-size设置.md",
     "Roval/dev/experience/video iPhone低电量模式.md",
@@ -148,7 +149,6 @@
     "Roval/dev/scripts/为什么要用TypeScript.md",
     "Roval/dev/杂/一些零碎的点.md",
     "Roval/dev/杂/一些网站.md",
-    "Roval/coder/小记.md",
-    "Roval/coder/OKR.md"
+    "Roval/coder/小记.md"
   ]
 }
