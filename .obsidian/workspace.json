@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "447ac84020f6ccdd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +148,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "053b172fbf33db47",
+  "active": "447ac84020f6ccdd",
   "lastOpenFiles": [
     "Roval/dev/scripts/TypeScript基础语法.md",
     "Roval/essay/网络文章/技术阅读.md",
