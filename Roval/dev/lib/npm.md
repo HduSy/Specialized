@@ -165,7 +165,8 @@ React Router [react-router-dom](https://v5.reactrouter.com/web/guides/quick-star
 
 `dotenv` 将 `.env` 文件中的配置加载到 `process.env` 上  
 
-`cross-env` 跨操作系统平台，设置 `NODE_ENV`
+`cross-env` 跨操作系统平台，设置 `NODE_ENV`  
+`humps` 驼峰转换
 
 ## 升级
 

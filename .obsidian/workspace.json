@@ -4,20 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "220b2290c9796112",
+        "id": "a82686e4ecafc9b0",
         "type": "tabs",
         "children": [
           {
-            "id": "7d9082fa8644b824",
+            "id": "937c3c64338d53d2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Roval/coder/Pasted image 20220815110542.png"
+                "file": "Roval/rider/一份详细又简略的公路车相关知识.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "053b172fbf33db47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/lib/npm.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "npm 包",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -55,7 +70,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/Pasted image 20220815110542.png",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/Pasted image 20220815110542.png",
+                "file": "Roval/dev/lib/npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/Pasted image 20220815110542.png"
+                "file": "Roval/dev/lib/npm.md"
               }
             }
           }
@@ -123,17 +139,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7d9082fa8644b824",
+  "active": "9feee2242ef25628",
   "lastOpenFiles": [
-    "Roval/coder/OKR.md",
-    "Roval/coder/小记.md",
     "Roval/coder/coder-content.md",
-    "Roval/coder/平台制作页保存冲突加弹窗.png",
-    "Roval/rider/一份详细又简略的公路车相关知识.md",
     "Roval/dev/scripts/TypeScript基础语法.md",
     "Roval/essay/网络文章/技术阅读.md",
     "Roval/dev/experience/rem font-size设置.md",
     "Roval/dev/experience/video iPhone低电量模式.md",
-    "Roval/dev/experience/Pasted image 20220211105336.png"
+    "Roval/dev/experience/Pasted image 20220211105336.png",
+    "Roval/dev/scripts/模块.md",
+    "Roval/dev/scripts/为什么要用TypeScript.md",
+    "Roval/dev/杂/一些零碎的点.md",
+    "Roval/dev/杂/一些网站.md"
   ]
 }
