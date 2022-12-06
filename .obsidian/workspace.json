@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npm 包",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/coder/coder-content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/lib/npm.md"
+                "file": "Roval/coder/coder-content.md"
               }
             }
           }
@@ -139,8 +138,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9feee2242ef25628",
+  "active": "053b172fbf33db47",
   "lastOpenFiles": [
+    "Roval/dev/lib/npm.md",
     "Roval/coder/coder-content.md",
     "Roval/dev/scripts/TypeScript基础语法.md",
     "Roval/essay/网络文章/技术阅读.md",
@@ -149,7 +149,6 @@
     "Roval/dev/experience/Pasted image 20220211105336.png",
     "Roval/dev/scripts/模块.md",
     "Roval/dev/scripts/为什么要用TypeScript.md",
-    "Roval/dev/杂/一些零碎的点.md",
-    "Roval/dev/杂/一些网站.md"
+    "Roval/dev/杂/一些零碎的点.md"
   ]
 }
