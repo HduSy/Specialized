@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "937c3c64338d53d2",
+            "id": "b3e2491ee1196501",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/一份详细又简略的公路车相关知识.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "053b172fbf33db47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/coder/一些想而未做的事.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/coder/一些想而未做的事.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/coder-content.md",
+                "file": "Roval/coder/一些想而未做的事.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/coder-content.md"
+                "file": "Roval/coder/一些想而未做的事.md"
               }
             }
           }
@@ -138,17 +125,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "053b172fbf33db47",
+  "active": "b3e2491ee1196501",
   "lastOpenFiles": [
-    "Roval/dev/lib/npm.md",
+    "Roval/rider/一份详细又简略的公路车相关知识.md",
+    "Roval/coder/一些想而未做的事.md",
+    "Roval/coder/小记.md",
+    "Roval/coder/2022H1.md",
+    "Roval/idea/若有所思.md",
+    "Roval/dev/算法.md",
+    "Roval/coder/OKR.md",
     "Roval/coder/coder-content.md",
-    "Roval/dev/scripts/TypeScript基础语法.md",
-    "Roval/essay/网络文章/技术阅读.md",
-    "Roval/dev/experience/rem font-size设置.md",
-    "Roval/dev/experience/video iPhone低电量模式.md",
-    "Roval/dev/experience/Pasted image 20220211105336.png",
-    "Roval/dev/scripts/模块.md",
-    "Roval/dev/scripts/为什么要用TypeScript.md",
-    "Roval/dev/杂/一些零碎的点.md"
+    "Roval/coder/平台制作页保存冲突加弹窗.png",
+    "Roval/coder/个人发展计划周表.md"
   ]
 }
