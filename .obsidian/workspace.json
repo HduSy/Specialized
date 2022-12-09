@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/coder/OKR.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "文章",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -57,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/coder/OKR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md",
+                "file": "Roval/coder/OKR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,12 +114,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/网络文章/技术阅读.md"
+                "file": "Roval/coder/OKR.md"
               }
+            }
+          },
+          {
+            "id": "17640fe5d4160710",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -128,15 +135,15 @@
   },
   "active": "b3e2491ee1196501",
   "lastOpenFiles": [
-    "Roval/coder/coder-content.md",
-    "Roval/dev/git/命令.md",
-    "Roval/coder/一些想而未做的事.md",
-    "Roval/rider/一份详细又简略的公路车相关知识.md",
-    "Roval/coder/小记.md",
-    "Roval/coder/2022H1.md",
-    "Roval/idea/若有所思.md",
-    "Roval/dev/算法.md",
+    "Roval/coder/Untitled 1.md",
     "Roval/coder/OKR.md",
-    "Roval/coder/平台制作页保存冲突加弹窗.png"
+    "Roval/coder/Untitled.md",
+    "Roval/coder/小记.md",
+    "Roval/coder/平台制作页保存冲突加弹窗.png",
+    "Roval/coder/2021H2自评.md",
+    "Roval/dev/experience/宏任务&微任务.md",
+    "Roval/dev/css/animation.md",
+    "Roval/dev/算法.md",
+    "Roval/essay/网络文章/技术阅读.md"
   ]
 }
