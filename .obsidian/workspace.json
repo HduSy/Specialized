@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/OKR.md",
+                "file": "Roval/dev/lib/npm.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#npm包",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/OKR.md",
+                "file": "Roval/dev/lib/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/OKR.md",
+                "file": "Roval/dev/lib/npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/OKR.md"
+                "file": "Roval/dev/lib/npm.md"
               }
             }
           },
@@ -127,23 +127,23 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b3e2491ee1196501",
+  "active": "bd3d285e0198cd64",
   "lastOpenFiles": [
-    "Roval/coder/Untitled 1.md",
+    "Roval/dev/lib/vue3.md",
+    "Roval/dev/lib/typescript.md",
     "Roval/coder/OKR.md",
+    "Roval/coder/Untitled 1.md",
     "Roval/coder/Untitled.md",
     "Roval/coder/小记.md",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/coder/2021H2自评.md",
     "Roval/dev/experience/宏任务&微任务.md",
-    "Roval/dev/css/animation.md",
-    "Roval/dev/算法.md",
-    "Roval/essay/网络文章/技术阅读.md"
+    "Roval/dev/css/animation.md"
   ]
 }
