@@ -8,14 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3e2491ee1196501",
+            "id": "d5943f4caea1cea4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/idea/ob使用指北.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/idea/ob使用指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,9 +102,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/npm.md",
+                "file": "Roval/idea/ob使用指北.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/lib/npm.md"
+                "file": "Roval/idea/ob使用指北.md"
               }
             }
           },
@@ -126,24 +126,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bd3d285e0198cd64",
+  "active": "551168ab89ee8e7c",
   "lastOpenFiles": [
-    "Roval/dev/lib/vue3.md",
-    "Roval/dev/lib/typescript.md",
-    "Roval/coder/OKR.md",
+    "Roval/idea/科学上网指北.md",
+    "Roval/idea/ob手动安装第三方插件.md",
+    "Roval/idea/ob使用指北.md",
+    "Roval/essay/《经济学原理》/第一章.md",
+    "Roval/essay/《经济学原理》/Pasted image 20221211144836.png",
     "Roval/coder/Untitled 1.md",
     "Roval/coder/Untitled.md",
-    "Roval/coder/小记.md",
-    "Roval/coder/平台制作页保存冲突加弹窗.png",
-    "Roval/coder/2021H2自评.md",
-    "Roval/dev/experience/宏任务&微任务.md",
-    "Roval/dev/css/animation.md"
+    "Roval/dev/lib/第一章.md",
+    "Roval/dev/lib/Untitled.md",
+    "Roval/dev/lib/npm.md"
   ]
 }
