@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a82686e4ecafc9b0",
+        "id": "045942a4fdeb5694",
         "type": "tabs",
         "children": [
           {
-            "id": "d5943f4caea1cea4",
+            "id": "7838fdbea3d59574",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -132,17 +132,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d5943f4caea1cea4",
+  "active": "7838fdbea3d59574",
   "lastOpenFiles": [
+    "Roval/idea/idea-content.md",
+    "Roval/essay/《经济学原理》/第一章.md",
+    "Roval/coder/可能示意图.png",
+    "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/idea/OB 使用指北.md",
     "Roval/idea/科学上网指北.md",
     "Roval/idea/若有所思.md",
     "Roval/idea/github访问过慢.md",
-    "Roval/idea/idea-content.md",
     "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/idea/personal.md",
-    "Roval/idea/template.md",
-    "Roval/idea/Untitled.md",
-    "Roval/essay/《经济学原理》/第一章.md"
+    "Roval/idea/personal.md"
   ]
 }

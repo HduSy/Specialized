@@ -1,5 +1,11 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Obsidian Nord",
-  "accentColor": ""
+  "cssTheme": "Cybertron",
+  "accentColor": "",
+  "theme": "obsidian",
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "nativeMenus": true,
+  "translucency": false,
+  "enabledCssSnippets": []
 }
