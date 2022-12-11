@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/idea/ob使用指北.md",
+                "file": "Roval/idea/OB 使用指北.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/ob使用指北.md",
+                "file": "Roval/idea/OB 使用指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/ob使用指北.md",
+                "file": "Roval/idea/OB 使用指北.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/ob使用指北.md"
+                "file": "Roval/idea/OB 使用指北.md"
               }
             }
           },
@@ -132,17 +132,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "551168ab89ee8e7c",
+  "active": "d5943f4caea1cea4",
   "lastOpenFiles": [
+    "Roval/idea/OB 使用指北.md",
     "Roval/idea/科学上网指北.md",
+    "Roval/idea/若有所思.md",
+    "Roval/idea/github访问过慢.md",
+    "Roval/idea/idea-content.md",
     "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/idea/ob使用指北.md",
-    "Roval/essay/《经济学原理》/第一章.md",
-    "Roval/essay/《经济学原理》/Pasted image 20221211144836.png",
-    "Roval/coder/Untitled 1.md",
-    "Roval/coder/Untitled.md",
-    "Roval/dev/lib/第一章.md",
-    "Roval/dev/lib/Untitled.md",
-    "Roval/dev/lib/npm.md"
+    "Roval/idea/personal.md",
+    "Roval/idea/template.md",
+    "Roval/idea/Untitled.md",
+    "Roval/essay/《经济学原理》/第一章.md"
   ]
 }
