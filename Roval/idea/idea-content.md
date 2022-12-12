@@ -10,7 +10,7 @@
 
 [[Mac Keyboard shortcuts]]
 
-[[OB 使用指北]]
+[[ob使用指北]]
 
 [[ob手动安装第三方插件]]
 
