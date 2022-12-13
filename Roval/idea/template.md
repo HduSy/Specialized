@@ -3,7 +3,7 @@
 
 - - -
 
-<% tp.web.daily_quote() %>
+# 摘要
 
 # 正文
 

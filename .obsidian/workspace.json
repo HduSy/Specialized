@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "26cedf592be3b12c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/idea/template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
+                "file": "Roval/idea/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
+                "file": "Roval/idea/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -114,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md"
+                "file": "Roval/idea/template.md"
               }
             }
           },
@@ -133,17 +146,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9f53f7593015c298",
+  "active": "26cedf592be3b12c",
   "lastOpenFiles": [
-    "Roval/idea/ob手动安装第三方插件.md",
+    "Roval/idea/test.md",
+    "Roval/idea/template.md",
     "Roval/idea/OB 使用指北.md",
-    "Roval/essay/《经济学原理》/第二章.md",
-    "Roval/essay/《经济学原理》/第一章.md",
     "Roval/idea/idea-content.md",
-    "Roval/coder/可能示意图.png",
-    "Roval/coder/平台制作页保存冲突加弹窗.png",
-    "Roval/idea/科学上网指北.md",
+    "Roval/idea/github访问过慢.md",
     "Roval/idea/若有所思.md",
-    "Roval/idea/github访问过慢.md"
+    "Roval/idea/科学上网指北.md",
+    "Roval/idea/一些骚话.md",
+    "Roval/idea/ob手动安装第三方插件.md",
+    "Roval/essay/《经济学原理》/第二章.md"
   ]
 }
