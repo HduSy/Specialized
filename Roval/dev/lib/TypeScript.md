@@ -183,4 +183,5 @@ class Location {
 # 参考文献
 
 [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)  
-[工具类型](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+[工具类型](https://www.typescriptlang.org/docs/handbook/utility-types.html)  
+[「1.9W字总结」一份通俗易懂的 TS 教程，入门 + 实战！](https://juejin.cn/post/7068081327857205261)
