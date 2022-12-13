@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2da456786cb9ef23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/git/实用快捷键.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/git/命令.md",
+                "file": "Roval/dev/git/实用快捷键.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/git/命令.md",
+                "file": "Roval/dev/git/实用快捷键.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/git/命令.md"
+                "file": "Roval/dev/git/实用快捷键.md"
               }
             }
           },
@@ -146,8 +158,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bd3d285e0198cd64",
+  "active": "2da456786cb9ef23",
   "lastOpenFiles": [
+    "Roval/dev/git/命令.md",
     "Roval/dev/tools/iTerms 2 实用快捷键.md",
     "Roval/dev/lib/typescript.md",
     "Roval/dev/lib/react-redux.md",
@@ -156,7 +169,6 @@
     "Roval/dev/tools/dev useful websites.md",
     "Roval/dev/tools/Mac Keyboard shortcuts.md",
     "Roval/dev/tools/VSCODE Keyboard shortcuts.md",
-    "Roval/dev/css/开发经验.md",
-    "Roval/essay/《经济学原理》/第二章.md"
+    "Roval/dev/css/开发经验.md"
   ]
 }
