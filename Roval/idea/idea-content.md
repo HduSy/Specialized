@@ -14,6 +14,6 @@
 
 [[ob手动安装第三方插件]]
 
-[[template]]
+[[Roval/idea/template]]
 
 [[VSCODE Keyboard shortcuts]]

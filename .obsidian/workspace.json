@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "045942a4fdeb5694",
+        "id": "27ff66adaeece623",
         "type": "tabs",
         "children": [
           {
-            "id": "9f53f7593015c298",
+            "id": "bab2dd8ec6850fb8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/OB 使用指北.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "26cedf592be3b12c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/template.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Roval/idea/template.md"
-              }
+              "state": {}
             }
           },
           {
@@ -140,23 +119,23 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "26cedf592be3b12c",
+  "active": "bab2dd8ec6850fb8",
   "lastOpenFiles": [
-    "Roval/idea/test.md",
-    "Roval/idea/template.md",
+    "Roval/idea/OB 插件之 Templater.md",
     "Roval/idea/OB 使用指北.md",
-    "Roval/idea/idea-content.md",
-    "Roval/idea/github访问过慢.md",
-    "Roval/idea/若有所思.md",
-    "Roval/idea/科学上网指北.md",
-    "Roval/idea/一些骚话.md",
+    "Roval/idea/template.md",
+    "Roval/idea/ob插件.md",
     "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/essay/《经济学原理》/第二章.md"
+    "Roval/idea/idea-content.md",
+    "ob-template/template.md",
+    "Roval/dev/算法.md",
+    "Roval/essay/网络文章/技术阅读.md",
+    "Roval/essay/公众号文章/性能优化之全面图片改造方案.md"
   ]
 }
