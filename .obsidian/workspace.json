@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/lib/typescript.md",
+                "file": "Roval/dev/git/命令.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/lib/typescript.md",
+                "file": "Roval/dev/git/命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/lib/typescript.md",
+                "file": "Roval/dev/git/命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/lib/typescript.md"
+                "file": "Roval/dev/git/命令.md"
               }
             }
           },
@@ -140,23 +140,23 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9dfb0e8ae896d1e3",
+  "active": "bd3d285e0198cd64",
   "lastOpenFiles": [
+    "Roval/dev/tools/iTerms 2 实用快捷键.md",
+    "Roval/dev/lib/typescript.md",
     "Roval/dev/lib/react-redux.md",
     "Roval/essay/网络文章/技术阅读.md",
     "Roval/dev/杂/一些网站.md",
     "Roval/dev/tools/dev useful websites.md",
-    "Roval/dev/tools/iTerms 2 实用快捷键.md",
     "Roval/dev/tools/Mac Keyboard shortcuts.md",
     "Roval/dev/tools/VSCODE Keyboard shortcuts.md",
     "Roval/dev/css/开发经验.md",
-    "Roval/essay/《经济学原理》/第二章.md",
-    "Roval/essay/《经济学原理》/第一章.md"
+    "Roval/essay/《经济学原理》/第二章.md"
   ]
 }
