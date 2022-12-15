@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "ob-template/template.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "ob-template/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "ob-template/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md"
+                "file": "ob-template/template.md"
               }
             }
           },
@@ -135,15 +135,15 @@
   },
   "active": "bab2dd8ec6850fb8",
   "lastOpenFiles": [
+    "Roval/coder/2022H2晋升答辩小记.md",
+    "ob-template/template.md",
+    "Roval/essay/《经济学原理》/第二章.md",
     "Roval/idea/OB 插件之 Templater.md",
     "Roval/idea/OB 使用指北.md",
     "Roval/idea/template.md",
     "Roval/idea/ob插件.md",
     "Roval/idea/ob手动安装第三方插件.md",
     "Roval/idea/idea-content.md",
-    "ob-template/template.md",
-    "Roval/dev/算法.md",
-    "Roval/essay/网络文章/技术阅读.md",
-    "Roval/essay/公众号文章/性能优化之全面图片改造方案.md"
+    "Roval/dev/算法.md"
   ]
 }
