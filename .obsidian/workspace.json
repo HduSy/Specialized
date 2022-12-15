@@ -4,31 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "27ff66adaeece623",
+        "id": "fdfc3addbbe43200",
         "type": "tabs",
         "children": [
           {
-            "id": "bbe42b2d9d7f6910",
+            "id": "0abae984a2aa13ac",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/ISRC.md"
-              }
-            }
-          },
-          {
-            "id": "c291b8fe6c2960da",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Excalidraw_20221215113429.md"
+                "file": "Roval/idea/OB 使用指北.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#掘金",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,13 +86,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Excalidraw_20221215113429.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Roval/idea/OB 使用指北.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -111,8 +103,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Excalidraw_20221215113429.md",
-                "linksCollapsed": false,
+                "file": "Roval/idea/OB 使用指北.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
@@ -123,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Excalidraw_20221215113429.md"
+                "file": "Roval/idea/OB 使用指北.md"
               }
             }
           },
@@ -136,23 +128,23 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "c291b8fe6c2960da",
+  "active": "0abae984a2aa13ac",
   "lastOpenFiles": [
-    "Excalidraw/ISRC.md",
-    "Excalidraw/Excalidraw_20221215112950.md",
-    "Excalidraw/卡片盒系统的卡片构成.md",
-    "Excalidraw/Scripts/Downloaded/Set Dimensions.md",
-    "Excalidraw/Scripts/Downloaded/Set Dimensions.svg",
-    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally.md",
-    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.svg",
-    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.md",
-    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
-    "ob-template/template.md"
+    "Roval/idea/OB 插件之 Templater.md",
+    "Roval/idea/OB 使用指北.md",
+    "w3schools.com/css/default.asp.md",
+    "Roval/idea/超文本的概念.md",
+    "Roval/idea/卡片盒系统.md",
+    "Roval/idea/idea-content.md",
+    "Roval/idea/github访问过慢.md",
+    "Roval/idea/若有所思.md",
+    "Roval/idea/科学上网指北.md",
+    "Roval/idea/笔记原子化.md"
   ]
 }

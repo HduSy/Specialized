@@ -1,6 +1,6 @@
-# 日期
+# 标签
 
-2022 年 2 月 10 日
+#掘金
 
 # 正文
 
@@ -23,6 +23,6 @@
 
 # 参考文献
 
-[[juejin-list#如何选取合适的前端动效方案？ https juejin cn post 6844903830094610446|如何选取合适的前端动效方案]]  
+[如何选取合适的前端动效方案](https:juejin.cn/post/6844903830094610446)  
 [最全动画库总结](https://www.codeinwp.com/blog/best-javascript-animation-libraries/)  
 [awesome](https://project-awesome.org/sergey-pimenov/awesome-web-animation)

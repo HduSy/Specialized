@@ -1,3 +1,7 @@
+# 标签
+
+#掘金
+
 # 目录
 
 - [[#正文|正文]]
@@ -224,4 +228,4 @@ v-bind.sync="doc"
 
 ## 参考文献
 
-[[juejin-list#property vs attribute https juejin cn post 6844904114065768462|property vs attribute]]
+[property vs attribute](https:juejin.cn/post/6844904114065768462)
