@@ -13,14 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "Roval/idea/OB 使用指北.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "75d642ea852649a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/idea/超文本的概念.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e774541919ab586c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/idea/超文本的概念.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c5a5acf1621e6a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/idea/卡片盒系统.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -86,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "Roval/idea/卡片盒系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md",
+                "file": "Roval/idea/卡片盒系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/《经济学原理》/第二章.md"
+                "file": "Roval/idea/卡片盒系统.md"
               }
             }
           },
@@ -127,23 +167,24 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bab2dd8ec6850fb8",
+  "active": "4c5a5acf1621e6a9",
   "lastOpenFiles": [
-    "Roval/essay/《经济学原理》/第一章.md",
+    "Roval/idea/笔记原子化.md",
+    "Roval/idea/超文本的概念.md",
+    "Roval/idea/卡片盒系统.md",
     "Roval/idea/OB 使用指北.md",
+    "Roval/idea/OB 插件之 Templater.md",
+    "Roval/essay/《经济学原理》/第二章.md",
+    "Roval/essay/《经济学原理》/第一章.md",
     "Excalidraw/ISRC.md",
     "Excalidraw/Pasted Image 20221215095556_592.png",
-    "Excalidraw/Pasted Image 20221215095556_614.png",
-    "Excalidraw/Pasted Image 20221215095556_635.png",
-    "Excalidraw/Pasted Image 20221215095924_736.png",
-    "Excalidraw/Excalidraw_20221215095357.md",
-    "Excalidraw/Pasted Image 20221215095541_590.png",
-    "Excalidraw/Excalidraw_22_12_15.md"
+    "Excalidraw/Pasted Image 20221215095556_614.png"
   ]
 }
