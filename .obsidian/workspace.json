@@ -8,59 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bab2dd8ec6850fb8",
+            "id": "bbe42b2d9d7f6910",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/ISRC.md"
               }
             }
           },
           {
-            "id": "75d642ea852649a0",
+            "id": "c291b8fe6c2960da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Roval/idea/超文本的概念.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e774541919ab586c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/超文本的概念.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4c5a5acf1621e6a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/卡片盒系统.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/Excalidraw_20221215113429.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md",
+                "file": "Excalidraw/Excalidraw_20221215113429.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md",
+                "file": "Excalidraw/Excalidraw_20221215113429.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -155,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md"
+                "file": "Excalidraw/Excalidraw_20221215113429.md"
               }
             }
           },
@@ -174,17 +142,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "4c5a5acf1621e6a9",
+  "active": "c291b8fe6c2960da",
   "lastOpenFiles": [
-    "Roval/idea/笔记原子化.md",
-    "Roval/idea/超文本的概念.md",
-    "Roval/idea/卡片盒系统.md",
-    "Roval/idea/OB 使用指北.md",
-    "Roval/idea/OB 插件之 Templater.md",
-    "Roval/essay/《经济学原理》/第二章.md",
-    "Roval/essay/《经济学原理》/第一章.md",
     "Excalidraw/ISRC.md",
-    "Excalidraw/Pasted Image 20221215095556_592.png",
-    "Excalidraw/Pasted Image 20221215095556_614.png"
+    "Excalidraw/Excalidraw_20221215112950.md",
+    "Excalidraw/卡片盒系统的卡片构成.md",
+    "Excalidraw/Scripts/Downloaded/Set Dimensions.md",
+    "Excalidraw/Scripts/Downloaded/Set Dimensions.svg",
+    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally.md",
+    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.svg",
+    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.md",
+    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
+    "ob-template/template.md"
   ]
 }
