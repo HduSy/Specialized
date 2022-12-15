@@ -13,14 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Roval/idea/OB 使用指北.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "0c04aa467d9babf5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/ISRC.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Excalidraw/ISRC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Excalidraw/ISRC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ob-template/template.md"
+                "file": "Excalidraw/ISRC.md"
               }
             }
           },
@@ -133,17 +144,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bab2dd8ec6850fb8",
+  "active": "0c04aa467d9babf5",
   "lastOpenFiles": [
-    "Roval/coder/2022H2晋升答辩小记.md",
-    "ob-template/template.md",
-    "Roval/essay/《经济学原理》/第二章.md",
-    "Roval/idea/OB 插件之 Templater.md",
-    "Roval/idea/OB 使用指北.md",
-    "Roval/idea/template.md",
-    "Roval/idea/ob插件.md",
-    "Roval/idea/ob手动安装第三方插件.md",
-    "Roval/idea/idea-content.md",
-    "Roval/dev/算法.md"
+    "Excalidraw/Pasted Image 20221215095556_592.png",
+    "Excalidraw/Pasted Image 20221215095556_614.png",
+    "Excalidraw/Pasted Image 20221215095556_635.png",
+    "Excalidraw/Pasted Image 20221215095924_736.png",
+    "Excalidraw/ISRC.md",
+    "Excalidraw/Excalidraw_20221215095357.md",
+    "Excalidraw/Pasted Image 20221215095541_590.png",
+    "Excalidraw/Excalidraw_22_12_15.md",
+    "Excalidraw/Excalidraw_22_12_15_0.md",
+    "Excalidraw/{NOTE_NAME}.md"
   ]
 }
