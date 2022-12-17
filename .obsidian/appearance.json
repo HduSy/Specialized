@@ -1,11 +1,13 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Everforest",
+  "cssTheme": "Faded",
   "accentColor": "",
   "theme": "obsidian",
   "baseFontSizeAction": true,
   "showViewHeader": true,
   "nativeMenus": true,
   "translucency": false,
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [
+    "self"
+  ]
 }

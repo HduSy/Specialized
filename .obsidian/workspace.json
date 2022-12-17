@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cea9edde9e6b261b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/idea/笔记内容.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md"
+                "file": "Roval/idea/笔记内容.md"
               }
             }
           },
@@ -96,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md",
+                "file": "Roval/idea/笔记内容.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/卡片盒系统.md",
+                "file": "Roval/idea/笔记内容.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -149,17 +163,18 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bf9b42412cb937d8",
+  "active": "cea9edde9e6b261b",
   "lastOpenFiles": [
-    "Roval/idea/超文本的概念.md",
     "Roval/idea/卡片盒系统.md",
     "Roval/idea/笔记原子化.md",
+    "Roval/idea/超文本的概念.md",
     "2022-12-16.md",
     "Roval/idea/科学上网指北.md",
     "juejin-list.md",
