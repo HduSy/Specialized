@@ -1,10 +1,11 @@
-# 关键词
+Created Date：2022-12-17 21:02:23  
+Last Modified：2022-12-17 21:02:23
 
-#掘金 #css
+# Tags
 
-# 摘要
+ #css
 
-# 正文
+# Content
 
 ## CSS3
 
@@ -13,7 +14,7 @@
 
 ## 动画
 
-- [[Roval/dev/css/pixi]]
+- [[Pixi]]
 - [[WebGL]]
 - [[Svg]]
 
@@ -22,7 +23,7 @@
 - [easing缓动函数参考](https://easings.net/#)
 - [运营自选动画效果大全](https://animista.net/)
 
-# 参考文献
+# Reference
 
 [如何选取合适的前端动效方案](https:juejin.cn/post/6844903830094610446)  
 [最全动画库总结](https://www.codeinwp.com/blog/best-javascript-animation-libraries/)  

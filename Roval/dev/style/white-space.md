@@ -1,10 +1,11 @@
-# White-space
+Created Date：2022-12-17 20:56:17  
+Last Modified：2022-12-17 20:56:17
 
-# 标签
+# Tags
 
-#掘金
+#css
 
-# 摘要
+# Content
 
 空白符及换行符处理
 
@@ -19,6 +20,6 @@ white-space: pre-line; // 连续的空白符会被合并，换行符被保留
 ![[Pasted image 20220208150310.png]]  
 需要注意的是，`<br>` 仍能正常换行
 
-# 参考文献
+# Reference
 
 [彻底搞懂word-break、word-wrap、white-space](https:juejin.cn/post/6844903667863126030)

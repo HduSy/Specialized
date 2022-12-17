@@ -1,11 +1,11 @@
 创建日期：2022-05-28 12:25:00  
 最后修改：2022-05-28 12:25:00
 
-- - -
-> Something opens our wings. Something makes boredom and hurt disappear. Someone fills the cup in front of us: We taste only sacredness.  
->—<cite>Rumi</cite>
+# Tags
 
-# 正文
+#scss
+
+# Content
 
 CSS 本身并不是一门编程语言，它更像是设计师的工具，对程序员来说十分不友好，为此出现了预处理器，为 CSS 开发过程中加入编程元素，并将 SCSS 文件编译为浏览器可以识别的 CSS。
 
@@ -47,7 +47,7 @@ $bg-color: pink;
 }
 ```
 
-### 2. 嵌套规则
+## 2. 嵌套规则
 
 嵌套规则可以避免 `css` 中大量重复书写工作，可以像俄罗斯🪆一样层层打开。
 
@@ -66,7 +66,7 @@ $bg-color: pink;
 #content aside { background-color: #EEE }
 ```
 
-#### 2.1 父选择器标识符 `&`
+### 2.1 父选择器标识符 `&`
 
 默认情况下，`Scss` 在解开一层嵌套时会把父选择器通过一个空格加在子选择器前面，在 `CSS` 中含义为后代选择器，然而很多时候这种 `CSS` 后代选择器的方式并不满足需求，`Scss` 提供了 `&` 选择器为解开嵌套提供了更多机制。添加伪类的用法：
 
@@ -117,12 +117,12 @@ nav a, aside a {
 }
 ```
 
-### 6. SassScript
+## 6. SassScript
 
-#### 6-1 Interactive Shell
+### 6-1 Interactive Shell
 
 通过命令行输入 `sass -i` 进行一些 `Sass` 支持的简单运算～
 
-## 参考文献
+# Reference
 
-[Scss 官网](https://www.sass.hk/)
+[scss 官网](https://www.sass.hk/)

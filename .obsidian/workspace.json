@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "da3009a0cdd44fa2",
+        "id": "299d3d339d9a0adf",
         "type": "tabs",
         "children": [
           {
-            "id": "fadf9b72dda8365f",
+            "id": "3e9ec4559fa38365",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/animation/Animation.md",
+                "file": "Roval/dev/style/linear-gradient.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "c6cdf15d2c5103f3",
+            "id": "0046a4d3e4fab8f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/animation/Canvas.md",
+                "file": "Roval/dev/style/experience/CSS 换行.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,85 +34,23 @@
             }
           },
           {
-            "id": "b42061f8faab25f8",
+            "id": "287c7712c47c3301",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/css/换行.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "05b2ce49778549b0",
+            "id": "e072bc2d45b69e74",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/css/换行.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5d3077c0b4d7dbec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/animation/Animation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fde5ee228ba52062",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/lib/第一章.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "67214d265b9d4c37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/animation/Animation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d8bd428385738647",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/animation/WebGL.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -177,9 +115,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Roval/dev/animation/WebGL.md"
-              }
+              "state": {}
             }
           },
           {
@@ -188,7 +124,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/animation/WebGL.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -205,7 +140,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/animation/WebGL.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -248,17 +182,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d8bd428385738647",
+  "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
-    "Roval/dev/animation/Svg.md",
     "Roval/dev/animation/Animation.md",
-    "Roval/dev/css/scss.md",
-    "Roval/dev/css/linear-gradient.md",
-    "Roval/dev/css/CSS3 function.md",
-    "Roval/dev/css/border.md",
-    "Roval/dev/animation/WebGL.md",
-    "Roval/dev/animation/Pixi.md",
-    "Roval/dev/css/开发经验.md",
-    "Roval/dev/animation/Canvas.md"
+    "Roval/dev/animation/Canvas.md",
+    "Roval/dev/style/experience/CSS 换行.md",
+    "Roval/dev/style/experience/绝对定位居中.md",
+    "Roval/dev/style/scss 使用.md",
+    "Roval/dev/style/white-space.md",
+    "Roval/dev/style/word-wrap.md",
+    "Roval/dev/style/word-break.md",
+    "Roval/dev/style/linear-gradient.md",
+    "Roval/dev/lib/第一章.md"
   ]
 }
