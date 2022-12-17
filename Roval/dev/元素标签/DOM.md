@@ -34,4 +34,10 @@ Last Modified：2022-12-17 21:31:14
 - [data-属性](https://www.bookstack.cn/read/html-tutorial/spilt.11.spilt.2.docs-attribute.md) 放置自定义数据。
 - [事件处理属性](https://www.bookstack.cn/read/html-tutorial/spilt.12.spilt.2.docs-attribute.md) 事件处理属性。
 
+## Script 标签
+
+![[Pasted image 20220704182525.png]]
+
 # Reference
+
+[async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)

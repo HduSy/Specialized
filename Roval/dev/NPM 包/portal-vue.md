@@ -1,12 +1,10 @@
-创建日期：2022-04-03 17:09:17  
-最后修改：2022-04-03 17:09:17
+Created Date：2022-12-17 22:16:17  
+Last Modified：2022-12-17 22:16:17
 
-#前端 #npm包 #vue
+# Tags
 
-- - -
-> Change your life today. Don't gamble on the future, act now, without delay.  
->—<cite>Simone de Beauvoir</cite>
+#npm包 #vue
 
-# 正文
+# Content
 
-# 参考文献
+# Reference

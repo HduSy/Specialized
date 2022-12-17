@@ -1,14 +1,11 @@
-创建日期：2022-07-31 09:42:55  
-最后修改：2022-07-31 09:42:55
+Created Date：2022-12-17 22:17:04  
+Last Modified：2022-12-17 22:17:04
 
-#前端 #规范 #npm包
+# Tags
 
-- - -
+ #规范 #npm包
 
-> Remembering a wrong is like carrying a burden on the mind.  
->—<cite>Buddha</cite>
-
-# 正文
+# Content
 
  代码格式化工具。
 
@@ -53,6 +50,6 @@ module.exports = {
 };
 ```
 
-# 参考文献
+# Reference
 
 1. [vscode prettier 与 eslint 冲突](https://zhuanlan.zhihu.com/p/347339865)

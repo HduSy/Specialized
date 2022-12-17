@@ -1,24 +1,11 @@
-# 标签
+Created Date：2022-12-17 22:26:02  
+Last Modified：2022-12-17 22:26:02
 
-#掘金
+# Tags
 
-# 目录
+#vue
 
-- [[#正文|正文]]
-	- [[#生命周期|生命周期]]
-	- [[#动态参数|动态参数]]
-- [[#参考文献|参考文献]]
-
-创建日期：2022-02-19 00:34:20  
-最后修改：2022-02-19 00:34:19  
-
-#前端 #npm包 #vue
-
-- - -
-> Gratitude is not only the greatest of virtues, but the parent of all the others.  
->—<cite>Cicero</cite>
-
-# 正文
+# Content
 
 ## 生命周期
 
@@ -110,9 +97,9 @@ current-user:
 
 ### 条件渲染
 
-`v-if`：惰性渲染，只有条件为 truthy 时才会渲染；
-`v-show`：不论条件真假都会渲染，更改 `display` 属性，始终存在于 `DOM` 中。
-`v-if`：有切换开销，因为切换过程会使条件块内的事件监听器与子组件销毁与重建；
+`v-if`：惰性渲染，只有条件为 truthy 时才会渲染；  
+`v-show`：不论条件真假都会渲染，更改 `display` 属性，始终存在于 `DOM` 中。  
+`v-if`：有切换开销，因为切换过程会使条件块内的事件监听器与子组件销毁与重建；  
 `v-show`：有初始渲染开销。
 
 ### 列表渲染
@@ -174,7 +161,7 @@ currentTab = {
 ```
 
 2、property vs attribute  
-property 其实还是 dom 对象的属性，随时可更改，值也会变，也不受限可扩展，初始值或许部分依赖于 html attribute 但不完全是这样，html attribute 值的范围是有限的，遵循 html 标准。`v-bind` 的 `.prop` 修饰符可指定“属性”作为一个 `DOM property` 绑定而不是作为 `HTML attribute` 绑定。
+property 其实还是 dom 对象的属性，随时可更改，值也会变，也不受限可扩展，初始值或许部分依赖于 html attribute 但不完全是这样，html attribute 值的范围是有限的，遵循 html 标准。`v-bind` 的 `.prop` 修饰符可指定“属性”作为一个 `DOM property` 绑定而不是作为 `HTML attribute` 绑定。  
 3、一些 html 元素如 `ul、table、form` 等天生不认自定义组件标签如 `<blog-info/>`，这时用其支持的标签，同时 `is` 指定自定义标签即可。当有如下情况时，当我没说：
 
 - 字符串 (例如：`template: '…'`)
@@ -193,13 +180,13 @@ property 其实还是 dom 对象的属性，随时可更改，值也会变，也
 
 ### 自定义事件
 
-`.native` 修饰符可以直接监听子组件根元素上的原生方法。
-`$listeners`property 提供作用在组件上的所有监听器，通 `v-on="$listeners"`，就可以使组件内所有元素获取所有事件监听器了。
+`.native` 修饰符可以直接监听子组件根元素上的原生方法。  
+`$listeners`property 提供作用在组件上的所有监听器，通 `v-on="$listeners"`，就可以使组件内所有元素获取所有事件监听器了。  
 v-bind.sync="doc"
 
 #### 插槽
 
-1、组件设计时留好槽位，以便在组件开始结束标签之间插入内容。
+1、组件设计时留好槽位，以便在组件开始结束标签之间插入内容。  
 2、作用域插槽的目的是在父级作用域提供访问子级作用域的能力，这样就能在父组件访问子组件实例上的数据项了。用法：
 
 ```html
@@ -226,6 +213,6 @@ v-bind.sync="doc"
 
 ```
 
-## 参考文献
+# Reference
 
 [property vs attribute](https:juejin.cn/post/6844904114065768462)

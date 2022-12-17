@@ -1,15 +1,11 @@
-创建日期：2022-05-22 21:33:51  
-最后修改：2022-05-22 21:33:51  
+Created Date：2022-12-17 22:10:54  
+Last Modified：2022-12-17 22:10:54
 
-# 标签
+# Tags
 
-#掘金 #前端 #规范 #npm包
+#npm包
 
-- - -
-> Real magic in relationships means an absence of judgement of others.  
->—<cite>Wayne Dyer</cite>
-
-# 正文
+# Content
 
 ## 关于
 
@@ -47,12 +43,12 @@
 		2. `/*global*/`  
 		3. `/*eslint*/`  
 		4. `/*eslint-env*/`
-2. 命令行选项（或 CLIEngine 等价物）：
+2. 命令行选项（或 CLIEngine 等价物）：  
 		1. `--global`  
 		2. `--rule`  
 		3. `--env`  
 		4. `-c`、`--config`
-3. 项目级配置：
+3. 项目级配置：  
 		1. 与要检测的文件在同一目录下的 `.eslintrc.*` 或 `package.json` 文件  
 		2. 继续在父级目录寻找 `.eslintrc` 或 `package.json` 文件，直到根目录（包括根目录）或直到发现一个有 `"root": true` 的配置。
 4. 如果不是（1）到（3）中的任何一种情况，退回到 `~/.eslintrc` 中自定义的默认配置。
@@ -65,7 +61,7 @@
 
 ### 调试心得
 
-1、通过 `npm link` 软链到全局环境，然后在其他项目中同样 `link` 下使用。
+1、通过 `npm link` 软链到全局环境，然后在其他项目中同样 `link` 下使用。  
 2、`mocha` 测试用例 `invalid` 抛出消息要与自定义规则中 `context.report` 抛出的错误 `message` 严格一致，否则 `node` 报 `assertion` 错误。
 
 ```js
@@ -165,7 +161,7 @@ invalid: [
 
 ### 覆写 - Overrides
 
-为特定类型的文件应用。
+为特定类型的文件应用。  
 应用一：为特定类型文件指定处理器。
 
 ```
@@ -347,7 +343,7 @@ parserOptions: {
 /* eslint-disable-next-line */
 ```
 
-## 参考文献
+# Reference
 
 - [Configuring Eslint](https://eslint.bootcss.com/docs/user-guide/configuring)
 - [`esling`工作原理](https://zhuanlan.zhihu.com/p/53680918)

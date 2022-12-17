@@ -1,14 +1,11 @@
-创建日期：2022-07-13 16:15:12  
-最后修改：2022-07-13 16:15:12
+Created Date：2022-12-17 22:15:28  
+Last Modified：2022-12-17 22:15:27
 
-#后端 #npm包
+# Tags
 
----
+ #npm包
 
-> There are no strangers here; Only friends you haven't yet met.  
->—<cite>William Butler Yeats</cite>
-
-# 正文
+# Content
 
 ## 基本概念
 
@@ -173,7 +170,7 @@ export class CliModule {}
 
 #### 概念
 
-内置的 **异常层** 负责处理整个应用程序中的所有抛出的异常，当捕获到未处理的异常时，最终用户将收到友好的响应。
+内置的 **异常层** 负责处理整个应用程序中的所有抛出的异常，当捕获到未处理的异常时，最终用户将收到友好的响应。  
 开箱即用，此操作由内置的全局异常过滤器执行，该过滤器处理类型 `HttpException`（及其子类）的异常。
 
 ```json
@@ -477,7 +474,7 @@ export class LoggingInterceptor implements NestInterceptor{
 
 使用 `@UseInterceptors` 装饰，范围与管道、异常过滤、守卫一样, 可以是控制器范围内的, 方法范围内的或者全局范围内的。`app.useGlobalInterceptors()` 可设置全局。
 
-## 参考文献
+# Reference
 
 1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
 2. [中文文档](https://docs.nestjs.cn/)

@@ -4,16 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "299d3d339d9a0adf",
+        "id": "29e9114f28003f71",
         "type": "tabs",
         "children": [
           {
-            "id": "3e9ec4559fa38365",
+            "id": "c023d1fee760e688",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7accc4de14670a66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/样式/linear-gradient.md",
+                "file": "Roval/dev/NPM 包/Vue2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +29,12 @@
             }
           },
           {
-            "id": "0046a4d3e4fab8f6",
+            "id": "f6833742c566107e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/样式/experience/CSS 换行.md",
+                "file": "Roval/dev/NPM 包/React.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,20 +42,12 @@
             }
           },
           {
-            "id": "287c7712c47c3301",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e072bc2d45b69e74",
+            "id": "ef3e82c16d6290c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/Pixi.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -55,165 +55,12 @@
             }
           },
           {
-            "id": "8dbca1349b7d7d65",
+            "id": "452a1982e6b1eb4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/SVG.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a5039b40b2a2397",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "f7fbd5c50496bea5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "5d1f55461bb199fe",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "0a44be9df9fb93db",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "5c74cdf7004d2f8b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e322eb95cedae089",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "8238ccf064a1f858",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "e9fb70db9b3893e7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "efe3c5469e630489",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b246d600f5c330d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/样式/border.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83e30e7478df5324",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "bca467f6a2eb83e3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "b1f20ab09f595775",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "617c7307d9632acc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发工具/Mac.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b9da115877b4fc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/JavaScript/BOM.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3008f826207662b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -221,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 20
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -287,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript基础语法.md"
+                "file": "Roval/dev/杂/一些网站.md"
               }
             }
           },
@@ -297,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -314,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -357,17 +204,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f3008f826207662b",
+  "active": "ef3e82c16d6290c7",
   "lastOpenFiles": [
-    "Roval/dev/JavaScript/为什么要用TypeScript.md",
-    "Roval/dev/杂/工程化.md",
-    "Roval/dev/JavaScript/模块化.md",
-    "Roval/dev/JavaScript/BOM.md",
-    "Roval/dev/JavaScript/模块.md",
-    "Roval/dev/杂/Mermaid.md",
-    "Roval/dev/算法/递归.md",
-    "Untitled.md",
-    "Roval/dev/杂/算法.md",
-    "Roval/dev/开发工具/VSCode.md"
+    "Roval/essay/公众号文章整理/性能优化之全面图片改造方案.md",
+    "Roval/essay/网络文章/网络技术文章.md",
+    "Roval/dev/杂/一些网站.md",
+    "Roval/essay/《经济学原理》/第一章.md",
+    "Roval/essay/《经济学原理》/第二章.md",
+    "Roval/dev/NPM 包/Webpack.md",
+    "Roval/dev/NPM 包/React.md",
+    "Roval/dev/NPM 包/webpack.md",
+    "Roval/dev/NPM 包/Vue3.md",
+    "Roval/dev/NPM 包/Vue2.md"
   ]
 }

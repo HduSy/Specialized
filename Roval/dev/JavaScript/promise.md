@@ -1,13 +1,19 @@
-# promise
+Created Date：2022-12-17 22:08:48  
+Last Modified：2022-12-17 22:08:47
 
-#《JS 高程》中译讲解不是很好，转阮一峰 ES6
+# Tags
+
+#JavaScript
+
+# Content
+
+《JS 高程》中译讲解不是很好，转阮一峰 ES6
 
 ## 两个特点
 
 1. 状态一旦发生改变就固定了
 		
 2. 对象状态私有，不受外界影响
-		
 
 ## 缺点
 
@@ -16,7 +22,6 @@
 2. pending 状态时无法得知刚开始执行还是即将完成
 		
 3. 异常捕获，内部抛出的异常外部无法捕获
-		
 
 **方法**
 
@@ -41,7 +46,6 @@ const p = Promise.allSettled([p1, p2, p3])
 - 参数是 promise 对象，原封不动返回
 		
 - 参数是 thenable 对象，将其转为 promise 对象并立即执行其 then 方法
-		
 
 let thenable = {  
  then: function(resolve, reject) {  
@@ -57,6 +61,7 @@ p1.then(function (value) {
 - 参数是原始值，且不具有 then 方法，Promise.resolve 将返回一个新的状态 resolved 的 promise 对象，其回调函数将立即执行
 		
 - 参数为空，返回一个 resolved 的状态的 Promise 对象
-		
 
 Promise.reject，返回一个 rejected 状态的 promise 实例，参数会作为原因，原封不动地传下去
+
+# Reference

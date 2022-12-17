@@ -1,13 +1,11 @@
-创建日期：2022-05-24 11:01:21  
-最后修改：2022-05-24 11:01:21
+Created Date：2022-12-17 22:27:40  
+Last Modified：2022-12-17 22:27:40
 
-#前端 #npm包 #工程化
+# Tags
 
-- - -
-> There are two ways to slide easily through life: to believe everything or to doubt everything; both ways save us from thinking.  
->—<cite>Alfred Korzybski</cite>
+#工程化
 
-# 正文
+# Content
 
 ## Loaders
 
@@ -22,6 +20,6 @@
 
 [monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin) Monaco-Editor 引入。
 
-## 参考文献
+# Reference
 
 [万字webpack5教学](https://mp.weixin.qq.com/s/Ap8vWQqgGpe-PdU2EZFxDA)

@@ -1,4 +1,11 @@
-# Proxy
+Created Date：2022-12-17 22:09:16  
+Last Modified：2022-12-17 22:09:15
+
+# Tags
+
+#JavaScript
+
+# Content
 
 1. 概述  
 Proxy 用于修改某些操作的默认行为，等同于在语言层面做出修改，所以属于一种“元编程”（meta programming），即对编程语言进行编程。[[zhihu-list#怎么理解元编程？https www zhihu com question 23856985]]
@@ -40,3 +47,5 @@ proxy.age
 - **setPrototypeOf(target, proto)**：拦截 `Object.setPrototypeOf(proxy, proto)`，返回一个布尔值。如果目标对象是函数，那么还有两种额外操作可以拦截。
 - **apply(target, object, args)**：拦截 Proxy 实例作为函数调用的操作，比如 `proxy(…args)`、`proxy.call(object,…args)`、`proxy.apply(…)`。
 - **construct(target, args)**：拦截 Proxy 实例作为构造函数调用的操作，比如 `new proxy(…args)`。
+
+# Reference

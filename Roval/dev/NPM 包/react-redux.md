@@ -1,14 +1,11 @@
-创建日期：2022-07-20 14:34:57  
-最后修改：2022-07-20 14:34:57
+Created Date：2022-12-17 22:20:18  
+Last Modified：2022-12-17 22:20:18
 
-#前端 #npm包 #react
+# Tags
 
-- - -
+ #npm包 #react
 
-> A wise man will make more opportunities than he finds.  
->—<cite>Francis Bacon</cite>
-
-# 正文
+# Content
 
 ## 按需使用
 
@@ -44,7 +41,7 @@
 
 #### 说明
 
-在交互的页面（`View`）中，用户无法直接接触 `state`，只能接触 `View`，`View` 的变化触发 `state` 变化，`action` 就是 `View` 发出的通知。
+在交互的页面（`View`）中，用户无法直接接触 `state`，只能接触 `View`，`View` 的变化触发 `state` 变化，`action` 就是 `View` 发出的通知。  
 `action` 是改变 `state` 的唯一方式，携带数据到 `state`。
 
 ##### Action Creator
@@ -90,6 +87,4 @@ unsubscribe();
 
 ## 中间件与异步操作
 
-# 参考文献
-
-[[技术阅读#阮一峰#Redux 入门教程系列|Redux 入门教程系列]]
+# Reference

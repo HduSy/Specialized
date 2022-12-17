@@ -1,13 +1,11 @@
-创建日期：2022-05-07 20:48:34  
-最后修改：2022-05-07 20:48:34
+Created Date：2022-12-17 22:26:41  
+Last Modified：2022-12-17 22:26:40
 
-#前端 #npm包 #vue
+# Tags
 
-- - -
-> Things do not change; we change.  
->—<cite>Henry David Thoreau</cite>
+#vue
 
-# 正文
+# Content
 
 ## 基础
 
@@ -43,10 +41,10 @@ ref 作为顶层属性被访问时，会被自动解包
 
 #### V-show Vs V-if
 
-1、不支持在 `template` 上使用；
-2、`v-if` 确保切换时，事件和子组件真实地被销毁与重建，`v-show` 只会切换 `css display` 属性；
+1、不支持在 `template` 上使用；  
+2、`v-if` 确保切换时，事件和子组件真实地被销毁与重建，`v-show` 只会切换 `css display` 属性；  
 3、`v-if` 惰性渲染，初次渲染时只有为 true 才会被渲染，而 `v-show` 始终会被渲染；
 
-# 参考文献
+# Reference
 
 [Vue3 入门指南与实战案例](https://vue3.chengpeiquan.com/)
