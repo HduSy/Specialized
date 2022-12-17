@@ -1,6 +1,11 @@
-# 用熟常用的一些就 Ok 啦
+Created Date：2022-12-17 21:39:57  
+Last Modified：2022-12-17 21:39:56
 
-## [参考地址](https://support.apple.com/zh-cn/HT201236)
+# Tags
+
+#快捷键
+
+# Content
 
 ## 一、键盘
 
@@ -15,12 +20,10 @@
 - `option+command+whitespace`：输入表情。
 - `command+ctrl+F`：全屏。
 - `command+shift+N`：访达中新建文件夹。
-		
 
 ### 睡眠、退出登录和关机快捷键
 
 - `Ctrl+Command+Q`：快速锁屏
-		
 
 ### 访达和系统快捷键
 
@@ -55,8 +58,11 @@
 - `Option+ 左右 `：以词为单位前后移动光标
 		
 - `Shift+ 上下`：将文本选择范围扩展到上/下一行相同水平位置的最近字符处
-		
 
 ## 二、触摸板
 
 - 系统偏好设置 - 触控板
+
+# Reference
+
+[参考地址](https://support.apple.com/zh-cn/HT201236)

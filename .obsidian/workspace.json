@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/style/linear-gradient.md",
+                "file": "Roval/dev/样式/linear-gradient.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/style/experience/CSS 换行.md",
+                "file": "Roval/dev/样式/experience/CSS 换行.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -45,12 +45,183 @@
             "id": "e072bc2d45b69e74",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/动画/Pixi.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8dbca1349b7d7d65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/动画/SVG.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a5039b40b2a2397",
+            "type": "leaf",
+            "state": {
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "f7fbd5c50496bea5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5d1f55461bb199fe",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "0a44be9df9fb93db",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5c74cdf7004d2f8b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e322eb95cedae089",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "8238ccf064a1f858",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "e9fb70db9b3893e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "efe3c5469e630489",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/Git/Git 使用.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b246d600f5c330d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/样式/border.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83e30e7478df5324",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bca467f6a2eb83e3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b1f20ab09f595775",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "617c7307d9632acc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发工具/Mac.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b9da115877b4fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/JavaScript/BOM.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3008f826207662b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -79,7 +250,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#animation",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,7 +286,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/dev/JavaScript/TypeScript基础语法.md"
+              }
             }
           },
           {
@@ -124,6 +297,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -140,6 +314,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/dev/JavaScript/TypeScript基础语法.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -176,23 +351,23 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "14e1169b99dcb7e3",
+  "active": "f3008f826207662b",
   "lastOpenFiles": [
-    "Roval/dev/animation/Animation.md",
-    "Roval/dev/animation/Canvas.md",
-    "Roval/dev/style/experience/CSS 换行.md",
-    "Roval/dev/style/experience/绝对定位居中.md",
-    "Roval/dev/style/scss 使用.md",
-    "Roval/dev/style/white-space.md",
-    "Roval/dev/style/word-wrap.md",
-    "Roval/dev/style/word-break.md",
-    "Roval/dev/style/linear-gradient.md",
-    "Roval/dev/lib/第一章.md"
+    "Roval/dev/JavaScript/为什么要用TypeScript.md",
+    "Roval/dev/杂/工程化.md",
+    "Roval/dev/JavaScript/模块化.md",
+    "Roval/dev/JavaScript/BOM.md",
+    "Roval/dev/JavaScript/模块.md",
+    "Roval/dev/杂/Mermaid.md",
+    "Roval/dev/算法/递归.md",
+    "Untitled.md",
+    "Roval/dev/杂/算法.md",
+    "Roval/dev/开发工具/VSCode.md"
   ]
 }

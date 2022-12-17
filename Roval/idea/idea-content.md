@@ -8,7 +8,7 @@
 
 [[github访问过慢]]
 
-[[Mac Keyboard shortcuts]]
+[[../dev/开发工具/Mac Keyboard shortcuts]]
 
 [[OB 使用指北]]
 
@@ -16,4 +16,4 @@
 
 [[Roval/idea/template]]
 
-[[VSCODE Keyboard shortcuts]]
+[[../dev/开发工具/VSCODE Keyboard shortcuts]]

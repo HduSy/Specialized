@@ -1,14 +1,13 @@
-创建日期：2022-12-13 15:34:07  
-最后修改：2022-12-13 15:34:07
+Created Date：2022-12-17 21:37:33  
+Last Modified：2022-12-17 21:37:33
 
-- - -
+# Tags
 
-> The greatest danger for most of us is not that our aim is too high, and we miss it, but that it is too low, and we reach it.  
->—<cite>Michelangelo</cite>
+#快捷键
 
-# 正文
+# Content
 
-# Tab 相关 (command)
+## Tab 相关 (command)
 
 新建 tab：`command + t`
 
@@ -20,7 +19,7 @@
 
 查找：`command + f`
 
-# 分屏 (command)
+## 分屏 (command)
 
 垂直分屏：`command + d`
 
@@ -30,7 +29,7 @@
 
 查看剪贴板历史：`command + shift + h`
 
-# 其他 (ctrl)
+## 其他 (ctrl)
 
 清屏：`command + r`
 
@@ -48,10 +47,10 @@
 
 删除到文本末尾：`ctrl + k`
 
-# 自带有哪些很实用的功能/快捷键
+## 自带有哪些很实用的功能/快捷键
 
 选择即复制：鼠标选中内容即完成了复制
 
-# 参考文献
+# Reference
 
 [iTerm2 快捷键大全](https://cnbin.github.io/blog/2015/06/20/iterm2-kuai-jie-jian-da-quan/)

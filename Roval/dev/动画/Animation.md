@@ -3,7 +3,7 @@ Last Modified：2022-12-17 21:02:23
 
 # Tags
 
- #css
+ #动画
 
 # Content
 
@@ -14,9 +14,9 @@ Last Modified：2022-12-17 21:02:23
 
 ## 动画
 
-- [[Pixi]]
+- [[../NPM 包/pixi]]
 - [[WebGL]]
-- [[Svg]]
+- [[SVG]]
 
 ## 工具网站
 

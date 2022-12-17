@@ -1,15 +1,15 @@
-创建日期：2022-07-01 13:44:27  
-最后修改：2022-07-01 13:44:27
+Created Date：2022-12-17 21:25:23  
+Last Modified：2022-12-17 21:25:23
 
-- - -
-> Just as treasures are uncovered from the earth, so virtue appears from good deeds, and wisdom appears from a pure and peaceful mind. To walk safely through the maze of human life, one needs the light of wisdom and the guidance of virtue.  
->—<cite>Buddha</cite>
+# Tags
 
-# 正文
+#git
+
+# Content
 
 ## Git Push
 
-**git push** 命用于从将本地的分支版本上传到远程并合并。
+`git push`命用于从将本地的分支版本上传到远程并合并。
 
 ```
 git push <远程主机名> <本地分支名>:<远程分支名>
@@ -27,7 +27,7 @@ git push <远程主机名> <本地分支名>
 git push --force <远程主机名> <本地分支名>
 ```
 
-- -u 参数
+`-u`
 
 ```
 git push -u origin [target-branch]
@@ -35,7 +35,7 @@ git push -u origin [target-branch]
 
 首次 push 到远程 registry 时指定默认 push 分支，后续 pull/push 操作可不用指定操作的分支。
 
-- -d, --delete
+`-d`
 
 ```
 git push origin --delete feat/topic_ttt
@@ -45,7 +45,7 @@ git push origin --delete feat/topic_ttt
 
 ## Git Pull
 
-	git pull = git fetch + git merge
+`git pull = git fetch + git merge`
 
 将远程分支拉下来并与本地分支合并。
 
@@ -53,23 +53,24 @@ git push origin --delete feat/topic_ttt
 git pull <远程主机名> <远程分支名>[:本地分支名]
 ```
 
-eg. git pull origin master:feat/topic_ttt  
-将远程 origin 的 master 分支拉下来与本地 feat/topic_ttt 分支合并。
+eg. `git pull origin master:feat/topic_ttt `  
+将远程 `origin` 的 `master` 分支拉下来与本地 `feat/topic_ttt` 分支合并。
 
 ## Git Commit
 
-- git commit --amend 修改最近一次提交的 **提交信息**
-- gc --fixup [commitId] 指定分支上 fix bug，然后 grbi --autosquash [commitId] 让 fix-bug-commit 分支合并到 [commitId] 指定那次 commit 里，从而隐去 fix-bug-commit
+`git commit --amend` 修改最近一次提交的 **提交信息**
+
+`gc --fixup [commitId]` 指定分支上 fix bug，然后 `grbi --autosquash [commitId]`让 fix-bug-commit 分支合并到 `[commitId]` 指定那次 `commit` 里，从而隐去 fix-bug-commit
 
 ## Git Reset
 
-撤销 git add 操作，将添加到暂存区的内容取出
+撤销 `git add` 操作，将添加到暂存区的内容取出
 
 ```bash
 git reset --mixed
 ```
 
-仅撤回上一次 commit，暂存区和工作区代码保留；作用相当于 `git commit --amend`
+仅撤回上一次 `commit`，暂存区和工作区代码保留；作用相当于 `git commit --amend`
 
 ```bash
 git reset --soft HEAD^
@@ -91,14 +92,13 @@ git reset --hard HEAD^
 
 ### 作用
 
-- 作用一：减少分支上 commit 提交次数，比如一个 bug fix，中间修了很多次，提交了 3/4 次 commit，我想将它们合成一次 commit，我就可以 `grbi commitId`，其中 `commitId` 为 `previous commitId`。
-- 作用二：从 master 上切分支后，在新的分支上一顿修改提交 commit，想要将所有 commit 合为一次的最快方法就是，`grbm` 即 `git rebase master`，这样 MR 时，master 上就干净很多了
-- 作用三：code review & 便于回滚时 commit 选择
+- 作用一：减少分支上 `commit` 提交次数，比如一个 bug fix，中间修了很多次，提交了 3/4 次 `commit`，我想将它们合成一次 `commit`，我就可以 `grbi commitId`，其中 `commitId` 为 `previous commitId`。
+- 作用二：从 `master` 上切分支后，在新的分支上一顿修改提交 `commit`，想要将所有 `commit` 合为一次的最快方法就是，`grbm` 即 `git rebase master`，这样 MR 时，master 上就干净很多了
+- 作用三：code review & 便于回滚时 `commit` 选择
 
 ### 示意图
 
 ![[4iiIv.gif]]  
-[阮一峰文章](https://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
 
 ### 使用
 
@@ -162,21 +162,21 @@ git stash pop stash@{x}
 
 ### 概念
 
-全分支合并，用于合并指定分支到当前分支。
+全分支合并，用于合并指定分支到当前分支。  
 ![[Wne9D.gif]]
 
 ```bash
 git merge [--ff] <分支名> ## 默认 fast-forward
 ```
 
-将分支的多次 `commit` 压缩到一起，然后合并到当前分支上。
+将分支的多次 `commit` 压缩到一起，然后合并到当前分支上。  
 ![[wzol8.gif]]
 
 ```bash
 git merge --squash <分支名>
 ```
 
-关闭 `fast-forward`，保留分支提交历史，且生成一次合并 `commit`。
+关闭 `fast-forward`，保留分支提交历史，且生成一次合并 `commit`。  
 ![[eWwAH.gif]]
 
 ```bash
@@ -187,13 +187,14 @@ git merge --no-ff <commitHash>
 
 ### 概念
 
-部分合并，将指定的提交（commit）应用于其他分支。
+部分合并，将指定的提交（`commit`）应用于其他分支。
 
 ```bash
 git cherry-pick <commitHash>
 ```
 
-## 参考文献
+# Reference
 
-[简写](https://www.jianshu.com/p/660557b405dd)  
-[阮一峰 cherry-pick](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)
+[Git 命令简写](https://www.jianshu.com/p/660557b405dd)  
+[阮一峰文章](https://www.ruanyifeng.com/blog/2015/08/git-use-process.html)  
+[阮一峰 cherry-pick](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)  

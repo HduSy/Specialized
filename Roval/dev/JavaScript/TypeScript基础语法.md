@@ -1,18 +1,16 @@
-# 标签
+# TypeScript基础语法
 
-#掘金
+## 入门到放弃
 
-# 入门到放弃
+### 基础
 
-## 基础
-
-### 基础数据类型
+#### 基础数据类型
 
 `number、string、boolean、undefined、null、void`
 
 需要注意的是 void 与 undefined&null 区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，void 的常用场景就是定义函数无返回值，声明一个变量为 void 类型没有多大意义，因为只能被赋值为 undefined&null
 
-### 任意值
+#### 任意值
 
 - 声明变量时未指定类型，则为 any 类型
 		
@@ -21,30 +19,25 @@
 - any 类型允许被任意类型的值赋值
 		
 - 对 any 类型进行操作，其返回值仍为 any 类型，属性类型也都是 any 类型【属性污染】
-		
 
-### 类型推断
+#### 类型推断
 
 - 未明确指定一个变量的类型的的时候会推断该变量的类型
 		
 - 当定义变量未赋值时，之后该变量都会成为 any 类型
-		
 
-### 联合类型
+#### 联合类型
 
 - 联合类型通过 `|` 分隔
 		
 - 当 ts 并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
-		
 
-### 对象类型——接口 Interface
+#### 对象类型——接口 Interface
 
 接口一方面是对行为的抽象，具体实现则由类去实现，另一方面是对对象形状进行描述
 
 - 确定属性 少一个属性&多一个属性都是不允许的
-		
 - 可选属性
-		
 		```typescript
 
 	interface Person {  
@@ -52,12 +45,9 @@
 		age?: number;  
 	}
 
-	
 	```
 		
 - 任意属性
-	
-		
 
 ```typescript
 	interface Person {
@@ -71,7 +61,6 @@
 2. 任意属性可定义为联合类型
 				
 - 只读属性
-		
 
 ```typescript
     interface Person {
@@ -81,8 +70,6 @@
 		[propName: string]: any;  
     }
 ```
-
-			
 
 属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
 [[Type VS Interface]]
@@ -94,7 +81,6 @@
 - 数组范型 `Array<element>` 表示，如 `let arr:Array<number> = [1, 2, 3]`
 		
 - 接口表示（不推荐）
-		
 
 ```typescript
     interface NumberArray {
@@ -102,8 +88,6 @@
     }
     let fibonacci: NumberArray = [1, '1', 2, 3, 5];
 ```
-
-		
 
 但是在表示 **类数组** 方面很 nice，如 `IArguments`, `NodeList`, `HTMLCollection`
 
@@ -114,12 +98,9 @@
 
 ```
 
-		
-
 ### 函数的类型
 
 - 函数声明，参数个数确定，不可多不可少
-		
 
 ```typescript
     function sum(x: number, y: number): number {
@@ -127,7 +108,6 @@
     }
 ```
 
-		
 - 函数表达式，TS 中的 `=>` 用来表示函数定义，左边是输入类型，右边是输出类型，不同于 ES6 中的箭头函数
 
 ```typescript
@@ -137,9 +117,7 @@
     };
 ```
 
-		
 - 接口定义函数
-		
 
 ```typescript
     interface SearchFunc {
@@ -151,15 +129,12 @@
     }
 ```
 
-		
 - 可选参数
-		
 
 		与可选属性相似，注意的是后面不能有确定参数
 
 		
 - 参数默认值，**TypeScript 会将添加了默认值的参数识别为可选参数**, 此时就不受「可选参数必须接在必需参数后面」的限制了
-		
 
 ```typescript
     function buildName(firstName: string, lastName: string = 'Cat') {
@@ -169,9 +144,7 @@
     let tom = buildName('Tom');
 ```
 
-		
 - 剩余参数，只能是最后一个参数
-		
 
 ```typescript
     function push(array: any[], ...items: any[]) {
@@ -183,9 +156,7 @@
     push(a, 1, 2, 3);
 ```
 
-		
 - 函数重载
-		
 
 ```typescript
     function reverse(x: number): number; // 定义  
@@ -199,8 +170,6 @@
         }  
     }
 ```
-
-		
 
 ### 类型断言
 
@@ -227,7 +196,6 @@
 		2. `animal` 赋值给 `tom`，需要满足 `Cat` 兼容 `Animal` 才行
 				
 - 类型断言 VS 范型：最优解决方案
-		
 
 ### 声明文件
 

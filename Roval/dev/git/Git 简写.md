@@ -1,12 +1,11 @@
-创建日期：2022-12-13 17:52:00  
-最后修改：2022-12-13 17:52:00
+Created Date：2022-12-17 21:26:17  
+Last Modified：2022-12-17 21:26:17
 
-- - -
+# Tags
 
-> The price of greatness is responsibility.  
->—<cite>Winston Churchill</cite>
+#git #快捷键
 
-# 正文
+# Content
 
 | 简写    | 对应命令                                       |
 | ------- | ---------------------------------------------- |
@@ -27,4 +26,4 @@
 | `gsta`  | `git stash`                                    |
 | `gstp`  | `git stash pop`                                               |
 
-# 参考文献
+# Reference

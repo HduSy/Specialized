@@ -1,22 +1,8 @@
-# 目录
+# Tags
 
-- [[#正文|正文]]
-	- [[#定义|定义]]
-	- [[#目标|目标]]
-	- [[#TS能干点什么|TS能干点什么]]
-		- [[#静态检查|静态检查]]
-		- [[#面向对象编程增强|面向对象编程增强]]
-		- [[#成本|成本]]
-- [[#参考文献|参考文献]]
+#TypeScript
 
-创建日期：2022-02-19 20:43:12  
-最后修改：2022-02-19 20:43:11
-
-- - -
-> Let us resolve to be masters, not the victims, of our history, controlling our own destiny without giving way to blind suspicions and emotions.  
->—<cite>John F. Kennedy</cite>
-
-# 正文
+# Content
 
 ## 定义
 
@@ -36,7 +22,7 @@ JavaScript 类型超集，代码最终将编译为纯 JavaScript 代码。
 
 ### 静态检查
 
-错误尽早在编译期检查出来，而非运行时或线上（不容易发现），只有影响程序正常使用时才会发现。
+错误尽早在编译期检查出来，而非运行时或线上（不容易发现），只有影响程序正常使用时才会发现。  
 1、低级错误，如字符敲错、调用没有的属性或方法（属性、方法判断）；
 
 ```ts
@@ -91,7 +77,7 @@ console.log(howard.name);
 error TS2445: Property 'name' is protected and only accessible within class 'Person' and its subclasses.
 ```
 
-2、接口 `interface`，增强了可扩展性；
+2、接口 `interface`，增强了可扩展性；  
 3、范型 T；
 
 ```ts
@@ -106,11 +92,11 @@ myGenericNumber.add = function(x, y) { return x + y; };
 ```
 
 4、类型系统  
-被调用方负责写好自己对外类型显示，调用方不必关心被调用方内部细节，只需知道什么类型。
+被调用方负责写好自己对外类型显示，调用方不必关心被调用方内部细节，只需知道什么类型。  
 5、模块系统，`namespace`
 
 ### 成本
 
 学习成本中等，因为兼容 JS 代码，可渐进式增加类型、接口定义以增强代码健壮性。
 
-## 参考文献
+# Reference
