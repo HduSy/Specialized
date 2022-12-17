@@ -587,7 +587,7 @@ body {
     --custom-gradient-h2color-1: #00f260;
     --custom-gradient-h2color-2: #0575e6;
     --custom-gradient-h3color-1: #ff00cc;
-    --custom-gradient-h3color-2: #333399;
+    --custom-gradient-h3color-2: #a93c33;
     --custom-gradient-h4color-1: #f7ff00;
     --custom-gradient-h4color-2: #db36a4;
     --custom-gradient-h5color-1: #00c6ff;
@@ -1078,11 +1078,6 @@ body {
     --custom-inline-heading-color: var(--custom-black-800);
 
     /* Headings Filters */
-    /* --custom-heading-filter-brightness: .95;
-    --custom-heading-filter-contrast: 1.1;
-    --custom-heading-filter-saturate: 1.15;
-    --custom-heading-filter-drop-shadow-color: black;
-    --custom-heading-filter-drop-shadow-blur: 6px; */
 
     --custom-heading-filter-brightness: .9;
     --custom-heading-filter-contrast: 1.25;
@@ -1517,13 +1512,6 @@ blockquote table{
 }
 
 /* Preview Code Line */
-/* .markdown-preview-view p code, 
-.markdown-preview-view ol code, 
-.markdown-preview-view ul code{
-    color: var(--Primary-Accent-1);
-    background: var(--Neutral-Accent-1);
-    border:1px solid var(--Neutral-Accent-1-Darkest);
-} */
 
 /* NOTE Copy Button Style Preview & Edit Mode*/
 .markdown-rendered button.copy-code-button,
@@ -1617,9 +1605,6 @@ button.mod-cta{
 /* NOTE Adds dropshadow to all items in edit and preview mode */
 .markdown-source-view, .markdown-preview-view{
     filter: var(--custom-global-drop-shadow);
-    /* filter: drop-shadow(2px 2px 1px black) drop-shadow(0px 0px 2px black); */
-    /* filter: drop-shadow(2px 2px 1px var(--custom-black-300)) drop-shadow(2px 2px 1px var(--custom-black-300)); */
-    /* filter: drop-shadow(2px 2px 1px black) drop-shadow(2px 2px 1px black); */
 }
 
 /* NOTE Style For Hr/Horizontal Rule (Created With ---) */
@@ -2228,11 +2213,10 @@ h6 > a.tag::before, h6 > a.tag:hover::before{
 a.internal-link:hover, 
 .markdown-source-view.is-live-preview span.cm-hmd-internal-link:hover, 
 .markdown-source-view.is-live-preview .cm-header.cm-hmd-internal-link:hover:after{
-    color: #ffffff !important;
-    animation-name: text-shadow_color_change_V2;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-text-fill-color: white;
+    background-size: 4px 50px;
+    background-color: #0fb6d6;
+    animation: none;
 }
 
 .markdown-source-view.is-live-preview .cm-active span.cm-hmd-internal-link{
@@ -2364,14 +2348,7 @@ a.tag:hover{
     -webkit-background-clip: text;
     filter: brightness(var(--custom-heading-filter-brightness))
     contrast(var(--custom-heading-filter-contrast))
-    saturate(var(--custom-heading-filter-saturate))
-    /* drop-shadow(
-        2px
-        4px
-        var(--custom-heading-filter-drop-shadow-blur)
-        var(--custom-heading-filter-drop-shadow-color)
-    ) */
-    ;
+    saturate(var(--custom-heading-filter-saturate));
 }
 
 .markdown-preview-view h1 > a.tag,
@@ -3945,7 +3922,7 @@ body{
 
 /* SECTION ------------------------------- SELF DEFINE CSS ------------------------------- */
 .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
-.external-link:hover {
+ .external-link:hover {
   -webkit-text-fill-color: white;
   background-size: 4px 50px;
   background-color: #f4569d;

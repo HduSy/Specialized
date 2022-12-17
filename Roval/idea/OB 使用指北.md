@@ -79,4 +79,6 @@ sequenceDiagram
 
 [^1]: 很有用！
 
-[^2]: 当然！
+[^2]: 当然！  
+
+[[../dev/scripts/TypeScript基础语法]]
