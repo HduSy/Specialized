@@ -580,20 +580,6 @@ body {
     --interactive-accent-hover: var(--color-accent-2);
     /* Gradient */
     --custom-gradientDegree: 135deg;
-    --custom-gradient-1-percent: 0;
-    --custom-gradient-2-percent: 100%;
-    --custom-gradient-h1color-1: #f12711;
-    --custom-gradient-h1color-2: #f5af19;
-    --custom-gradient-h2color-1: #00f260;
-    --custom-gradient-h2color-2: #0575e6;
-    --custom-gradient-h3color-1: #ff00cc;
-    --custom-gradient-h3color-2: #a93c33;
-    --custom-gradient-h4color-1: #f7ff00;
-    --custom-gradient-h4color-2: #db36a4;
-    --custom-gradient-h5color-1: #00c6ff;
-    --custom-gradient-h5color-2: #0072ff;
-    --custom-gradient-h6color-1: #dd5e89;
-    --custom-gradient-h6color-2: #f7bb97;
     /* Outliner */
     --custom-outliner-indent-lines-width: 1px;
 
@@ -1110,6 +1096,9 @@ body {
     --custom-h5-gradient-2-percent: 30%;
     --custom-h6-gradient-2-percent: 30%;
 
+    --custom-gradient-1-percent: 0;
+    --custom-gradient-2-percent: 100%;
+
     /* Inline Headings Gradient Start/End Percents */
     --custom-h1-gradient-inline-1-percent: 0;
     --custom-h2-gradient-inline-1-percent: 0;
@@ -1143,6 +1132,18 @@ body {
     --custom-h6-gradient-1: var(--cyan-200);
     --custom-h6-gradient-2: var(--green-400);
     --custom-h6-gradient-3: var(--green-400);
+    --custom-gradient-h1color-1: #f12711;
+    --custom-gradient-h1color-2: #f5af19;
+    --custom-gradient-h2color-1: #00f260;
+    --custom-gradient-h2color-2: #0575e6;
+    --custom-gradient-h3color-1: #ff00cc;
+    --custom-gradient-h3color-2: #a93c33;
+    --custom-gradient-h4color-1: #f7ff00;
+    --custom-gradient-h4color-2: #db36a4;
+    --custom-gradient-h5color-1: #00c6ff;
+    --custom-gradient-h5color-2: #0072ff;
+    --custom-gradient-h6color-1: #dd5e89;
+    --custom-gradient-h6color-2: #f7bb97;
 
     /* Lists */
     --list-marker-color-hover: var(--text-muted);
@@ -2244,10 +2245,11 @@ a.tag{
 
 /* NOTE Tag Preview View On Hover */
 a.tag:hover{
-    animation-name: text-shadow_color_change_V3;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-text-fill-color: white;
+    background-size: 4px 50px;
+    background-color: #0fb6d6;
+    animation: none;
+    
 }
 
 /* NOTE Tag Edit View Left Side # */
@@ -2266,11 +2268,10 @@ a.tag:hover{
 
 /* NOTE Tag Edit View On Hover */
 .markdown-source-view.is-live-preview .cm-line .cm-hashtag:not(.cm-hashtag-begin):hover{
-    color: var(--tag-color-hover);
-    animation-name: text-shadow_color_change_V3;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-text-fill-color: white;
+    background-size: 4px 50px;
+    background-color: #0fb6d6;
+    animation: none;
 }
 /* SECTION ------------------------------- Links And Tags END ------------------------------- */
 /* SECTION ------------------------------- Links Popover Preview START ------------------------------- */
