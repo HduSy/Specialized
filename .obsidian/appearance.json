@@ -1,6 +1,6 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Faded",
+  "cssTheme": "Everforest",
   "accentColor": "",
   "theme": "obsidian",
   "baseFontSizeAction": true,
@@ -8,7 +8,6 @@
   "nativeMenus": true,
   "translucency": false,
   "enabledCssSnippets": [
-    "self",
-    "self-define"
+    "self"
   ]
 }
