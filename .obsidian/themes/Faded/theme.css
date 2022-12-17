@@ -1118,6 +1118,7 @@ body {
     --custom-h1-gradiant-2-percent: 30%;
     --custom-h2-gradiant-2-percent: 30%;
     --custom-h3-gradiant-2-percent: 30%;
+    --custom-h3-gradiant-3-percent: 100%;
     --custom-h4-gradiant-2-percent: 30%;
     --custom-h5-gradiant-2-percent: 30%;
     --custom-h6-gradiant-2-percent: 30%;
@@ -1480,8 +1481,9 @@ body {
     --custom-h1-gradiant-2: var(--red-400);
     --custom-h2-gradiant-1: var(--red-300);
     --custom-h2-gradiant-2: var(--pink-500);
-    --custom-h3-gradiant-1: var(--pink-400);
-    --custom-h3-gradiant-2: var(--fuchsia-500);
+    --custom-h3-gradiant-1: #12c2e9;
+    --custom-h3-gradiant-2: #c471ed;
+    --custom-h3-gradiant-3: #f64f59;
     --custom-h4-gradiant-1: var(--fuchsia-400);
     --custom-h4-gradiant-2: var(--blue-500);
     --custom-h5-gradiant-1: var(--blue-400);
@@ -2936,7 +2938,8 @@ a.tag:hover{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
         var(--custom-h3-gradiant-1) var(--custom-h3-gradiant-1-percent),
-        var(--custom-h3-gradiant-2) var(--custom-h3-gradiant-2-percent)
+        var(--custom-h3-gradiant-2) var(--custom-h3-gradiant-2-percent),
+        var(--custom-h3-gradiant-3) var(--custom-h3-gradiant-3-percent),
     );
 }
 
