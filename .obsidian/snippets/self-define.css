@@ -3706,191 +3706,6 @@ body:not(.native-scrollbars)  ::-webkit-scrollbar-track:hover {
     opacity: 1;
 }
 /* SECTION ------------------------------- CSS DB Folder END ------------------------------- */
-
-
-/* SECTION ------------------------------- MCL MULTI COLUMN CSS SNIPPET START ------------------------------- */
-/* === README ===
-	Snippet: MCL Multi Column / Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
-	Version 0.7.0 (updated 2022-11-18)
-	- feature: list column, list grid and list card using tags (need Contextual Typography plugin)
-	- feature: float in live preview using float-right
-	- refine: [!blank] callout as alternative to [!blank-container]
-	Version 0.6.2 (updated 2022-10-22)
-	- rollover main branch to support Obsidian 1.0.0
-	Version 0.6.1 (updated 2022-10-02). Version number follow overall MCL
-	- fix for footnote with -column-list-block created a <br> tag
-
-	What is this snippet for?
-	- to allow Obsidian users to change the layout with preset css by just specifying
-	  the cssClass in the frontmatter (YAML) or naming the Callout block
-	- available cssClass
-		- cssClass: two-column-list
-		- cssClass: {.two-column-list-block}
-		- cssClass: three-column-list
-		- cssClass: {.three-column-list-block}
-		- cssClass: multi-column-list
-	- available Callout format
-		- [!multi-column]
-		- [!blank] / [!blank-container]
-
-	Compatibility
-	- tested to work fine with the following Community Theme
-		- Default Theme
-		- Big Sur / Blue Topaz / California Cost / Notation / Pisum / Prism / Things / Typewriter (with minor issue on title color)
-	- known to be not working
-		- Primary (due to the theme heaving theming, box-shadow and so on)
-
-	Credits
-	- Kevin Powell Youtube channel
-	- https://css-tricks.com/
-	- discord OMG members @Cáo thoát tục (Cáo thoát tục#6993), @mulfok (mulfok#6931) and @Rainbell (Rainbell#3617)
-	- kepano for accomodating my snippets adjustment
-*/
-
-/* @settings
-
-name: Modular CSS Layout - Multi Column
-id: modular-css-layout-mc
-settings:
-
-    -
-        id: multi-column-title
-        title: Callout Column Settings
-        type: heading
-        level: 2
-		collapsed: true
-    -
-        id: callout-min-width
-        title: Minimum Sub-Callout Width
-        description: for sub-callout in [!multi-column]. in px units
-        type: variable-number-slider
-        default: 200
-        min: 100
-        max: 500
-        step: 50
-		format: px
-    -
-        id: callout-gap
-        title: Sub-Callout Gap (any unit)
-        description: NO spacing between figure and unit
-        type: variable-text
-        default: 0.5rem
-	-
-		id: callout-margin
-		title: Sub-Callout Margin (any unit)
-		description: to allow some spacing for box-shadow
-		type: variable-text
-		default: 5px
-    -
-        id: float-small-width
-        title: Floating Callout Width - Small (in px)
-        type: variable-number-slider
-        default: 300
-        min: 200
-        max: 450
-        step: 50
-		format: px
-    -
-        id: float-medium-width
-        title: Floating Callout Width - Medium (in px)
-        type: variable-number-slider
-        default: 400
-        min: 300
-        max: 550
-        step: 50
-		format: px
-    -
-        id: float-large-width
-        title: Floating Callout Width - Large (in px)
-        type: variable-number-slider
-        default: 600
-        min: 500
-        max: 750
-        step: 50
-		format: px
-
-    -
-        id: mc-list-column-title
-        title: List Column Settings
-		description: using `{.xxx-column-list-xxx}` and `#mcl/list-column`
-        type: heading
-        level: 2
-		collapsed: true
-    -
-        id: list-min-width
-        title: Minimum Column Width (in px)
-        type: variable-number-slider
-        default: 200
-        min: 100
-        max: 500
-        step: 50
-		format: px
-    -
-        id: col-rule-color
-        title: Column Ruler Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-    -
-        id: col-rule-width
-        title: Column Ruler Width (in px)
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 4
-        step: 1
-		format: px
-
-	-
-        id: mc-list-grid-title
-        title: List Grid and List Card
-		description: using `#mcl/list-grid` and `#mcl/list-card`
-        type: heading
-        level: 2
-		collapsed: true
-	-
-        id: list-grid-min-width
-        title: Minimum Grid/Card Width (in px/em or similar)
-		type: variable-text
-		default: 250px
-	-
-		id: mcl-card-bg-color
-		title: List Card Background Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-	-
-        id: mcl-card-header-border-width
-        title: Bottom Border for List Card Header (in px/em or similar)
-		description: set to 0 to disable the border
-		type: variable-text
-		default: 1px
-	-
-        id: mcl-card-gap
-        title: List Card Border Width (in px/em or similar)
-		type: variable-text
-		default: 0.2em
-	-
-        id: mcl-card-border-width
-        title: List Card Border Width (in px/em or similar)
-		type: variable-text
-		default: 1px
-	-
-		id: mcl-card-border-color
-		title: List Card Border Color
-		type: variable-themed-color
-		format: hsl
-		opacity: true
-		default-light: '#'
-		default-dark: '#'
-
-*/
-
-
 body{
 	--callout-min-width: 200px;
 	--callout-gap: 0.5rem;
@@ -4127,3 +3942,21 @@ body{
 	/* special adjustment for Sanctum */
 	.markdown-rendered .tag-mcllist-card ul img[alt*=right] {margin: 0;}
 /* SECTION ------------------------------- MCL MULTI COLUMN CSS SNIPPET END ------------------------------- */
+
+/* SECTION ------------------------------- SELF DEFINE CSS ------------------------------- */
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+.external-link:hover {
+  -webkit-text-fill-color: white;
+  background-size: 4px 50px;
+  background-color: #f4569d;
+}
+.cm-strong,
+strong {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  color: #7aa2f7;
+  background-color: #7aa2f7;
+  background-image: linear-gradient(62deg, #87c2fd 0%, #dcb9fc 100%) !important;
+}
+/* SECTION ------------------------------- SELF DEFINE CSS END ------------------------------- */
