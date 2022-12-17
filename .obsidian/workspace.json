@@ -13,14 +13,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/idea/OB 插件之 Templater.md",
+                "file": "Roval/dev/css/animation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6cdf15d2c5103f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/css/canvas.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b42061f8faab25f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/css/换行.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "05b2ce49778549b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/css/border.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -49,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#npm包",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/OB 插件之 Templater.md"
+                "file": "Roval/dev/css/border.md"
               }
             }
           },
@@ -96,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/OB 插件之 Templater.md",
+                "file": "Roval/dev/css/border.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/OB 插件之 Templater.md",
+                "file": "Roval/dev/css/border.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -156,17 +196,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "fadf9b72dda8365f",
+  "active": "05b2ce49778549b0",
   "lastOpenFiles": [
-    "Roval/idea/idea-content.md",
-    "Roval/idea/OB 使用指北.md",
-    "Roval/idea/科学上网指北.md",
-    "Roval/idea/github访问过慢.md",
-    "Roval/idea/OB 插件之 Templater.md",
-    "Roval/idea/卡片盒系统.md",
-    "Roval/idea/若有所思.md",
-    "Roval/idea/超文本的概念.md",
-    "Roval/idea/笔记原子化.md",
-    "Roval/idea/笔记内容.md"
+    "Roval/dev/css/换行.md",
+    "Roval/dev/css/animation.md",
+    "Roval/dev/css/svg.md",
+    "Roval/dev/css/canvas.md",
+    "Roval/dev/css/css-content.md",
+    "Roval/dev/css/开发经验.md",
+    "Roval/dev/杂/mermaid.md",
+    "Roval/dev/杂/MDN.md",
+    "Roval/dev/杂/GoogleChromeDev.md",
+    "Roval/dev/杂/一些网站.md"
   ]
 }
