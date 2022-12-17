@@ -2,7 +2,6 @@
   "ruleConfigs": {
     "Escape YAML Special Characters": {
       "Escapes colons with a space after them (: ), single quotes ('), and double quotes (\") in YAML.": false,
-      "Default Escape Character": "\"",
       "Try to Escape Single Line Arrays": false
     },
     "Format Tags in YAML": {
@@ -10,9 +9,7 @@
     },
     "Format Yaml Array": {
       "Allows for the formatting of regular yaml arrays as either multi-line or single-line and `tags` and `aliases` are allowed to have some Obsidian specific yaml formats. Note that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.": false,
-      "Yaml aliases section style": "single-line",
       "Format yaml aliases section": true,
-      "Yaml tags section style": "single-line",
       "Default yaml array section style": "single-line",
       "Format yaml array sections": true,
       "Force key values to be single-line arrays": "",
@@ -47,7 +44,6 @@
     },
     "YAML Title Alias": {
       "Inserts the title of the file into the YAML frontmatter's aliases section. Gets the title from the first H1 or filename.": false,
-      "YAML aliases section style": "Multi-line array",
       "Preserve existing aliases section style": true,
       "Keep alias that matches the filename": false
     },
@@ -146,17 +142,23 @@
     "Space after list markers": {
       "There should be a single space after list markers and checkboxes.": true
     },
-    "Space between Chinese and English or numbers": {
-      "Ensures that Chinese and English or numbers are separated by a single space. Follow this [guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)": true
-    },
     "Trailing spaces": {
       "Removes extra spaces after every line.": true,
       "Two Space Linebreak": true
-    }
+    },
+    "Space between Chinese Japanese or Korean and English or numbers": {}
   },
   "lintOnSave": true,
   "displayChanged": false,
   "foldersToIgnore": [],
   "linterLocale": "system-default",
-  "logLevel": 4
+  "logLevel": 4,
+  "lintCommands": [],
+  "customRegexes": [],
+  "commonStyles": {
+    "aliasArrayStyle": "single-line",
+    "tagArrayStyle": "single-line",
+    "minimumNumberOfDollarSignsToBeAMathBlock": 2,
+    "escapeCharacter": "\""
+  }
 }

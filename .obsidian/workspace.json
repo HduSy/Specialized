@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fdfc3addbbe43200",
+        "id": "8e86651bed2c643b",
         "type": "tabs",
         "children": [
           {
-            "id": "0abae984a2aa13ac",
+            "id": "bf9b42412cb937d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
-                "mode": "preview",
+                "file": "Roval/idea/卡片盒系统.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#掘金",
+                "query": "tag:#npm包",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,12 +81,22 @@
             }
           },
           {
+            "id": "bd3d285e0198cd64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Roval/idea/卡片盒系统.md"
+              }
+            }
+          },
+          {
             "id": "47905a53fa05f52b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
+                "file": "Roval/idea/卡片盒系统.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,19 +113,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/OB 使用指北.md",
+                "file": "Roval/idea/卡片盒系统.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "bd3d285e0198cd64",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Roval/idea/OB 使用指北.md"
               }
             }
           },
@@ -126,25 +126,46 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "beae303668ec4c24",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8b945910bfe23ee6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0abae984a2aa13ac",
+  "active": "bf9b42412cb937d8",
   "lastOpenFiles": [
-    "Roval/idea/OB 插件之 Templater.md",
-    "Roval/idea/OB 使用指北.md",
-    "w3schools.com/css/default.asp.md",
     "Roval/idea/超文本的概念.md",
     "Roval/idea/卡片盒系统.md",
-    "Roval/idea/idea-content.md",
-    "Roval/idea/github访问过慢.md",
-    "Roval/idea/若有所思.md",
+    "Roval/idea/笔记原子化.md",
+    "2022-12-16.md",
     "Roval/idea/科学上网指北.md",
-    "Roval/idea/笔记原子化.md"
+    "juejin-list.md",
+    "ob-template/template.md",
+    "Roval/idea/OB 使用指北.md",
+    "Roval/dev/scripts/Type VS Interface.md",
+    "Roval/dev/scripts/Proxy.md"
   ]
 }
