@@ -75,7 +75,6 @@ sequenceDiagram
     John-->>-Alice: 最近不错！
 ```
 
-
 # 引用
 
 [^1]: 很有用！

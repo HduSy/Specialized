@@ -580,6 +580,20 @@ body {
     --interactive-accent-hover: var(--color-accent-2);
     /* Gradient */
     --custom-gradientDegree: 135deg;
+    --custom-gradient-1-percent: 0;
+    --custom-gradient-2-percent: 100%;
+    --custom-gradient-h1color-1: #f12711;
+    --custom-gradient-h1color-2: #f5af19;
+    --custom-gradient-h2color-1: #00f260;
+    --custom-gradient-h2color-2: #0575e6;
+    --custom-gradient-h3color-1: #ff00cc;
+    --custom-gradient-h3color-2: #333399;
+    --custom-gradient-h4color-1: #f7ff00;
+    --custom-gradient-h4color-2: #db36a4;
+    --custom-gradient-h5color-1: #00c6ff;
+    --custom-gradient-h5color-2: #0072ff;
+    --custom-gradient-h6color-1: #dd5e89;
+    --custom-gradient-h6color-2: #f7bb97;
     /* Outliner */
     --custom-outliner-indent-lines-width: 1px;
 
@@ -1088,66 +1102,52 @@ body {
     --custom-inline-heading-box-shadow-outer-color: var(--custom-black-950);
 
     /* Headings Gradient Start/End Percents */
-    --custom-h1-gradiant-1-percent: 0;
-    --custom-h2-gradiant-1-percent: 0;
-    --custom-h3-gradiant-1-percent: 0;
-    --custom-h4-gradiant-1-percent: 0;
-    --custom-h5-gradiant-1-percent: 0;
-    --custom-h6-gradiant-1-percent: 0;
-    --custom-h1-gradiant-2-percent: 30%;
-    --custom-h2-gradiant-2-percent: 30%;
-    --custom-h3-gradiant-2-percent: 30%;
-    --custom-h4-gradiant-2-percent: 30%;
-    --custom-h5-gradiant-2-percent: 30%;
-    --custom-h6-gradiant-2-percent: 30%;
-    --custom-h1-gradiant-3-percent: 100%;
-    --custom-h2-gradiant-3-percent: 100%;
-    --custom-h3-gradiant-3-percent: 100%;
-    --custom-h4-gradiant-3-percent: 100%;
-    --custom-h5-gradiant-3-percent: 100%;
-    --custom-h6-gradiant-3-percent: 100%;
+    --custom-h1-gradient-1-percent: 0;
+    --custom-h2-gradient-1-percent: 0;
+    --custom-h3-gradient-1-percent: 0;
+    --custom-h4-gradient-1-percent: 0;
+    --custom-h5-gradient-1-percent: 0;
+    --custom-h6-gradient-1-percent: 0;
+    --custom-h1-gradient-2-percent: 30%;
+    --custom-h2-gradient-2-percent: 30%;
+    --custom-h3-gradient-2-percent: 30%;
+    --custom-h4-gradient-2-percent: 30%;
+    --custom-h5-gradient-2-percent: 30%;
+    --custom-h6-gradient-2-percent: 30%;
 
     /* Inline Headings Gradient Start/End Percents */
-    --custom-h1-gradiant-inline-1-percent: 0;
-    --custom-h2-gradiant-inline-1-percent: 0;
-    --custom-h3-gradiant-inline-1-percent: 0;
-    --custom-h4-gradiant-inline-1-percent: 0;
-    --custom-h5-gradiant-inline-1-percent: 0;
-    --custom-h6-gradiant-inline-1-percent: 0;
-    --custom-h1-gradiant-inline-2-percent: 100%;
-    --custom-h2-gradiant-inline-2-percent: 100%;
-    --custom-h3-gradiant-inline-2-percent: 100%;
-    --custom-h4-gradiant-inline-2-percent: 100%;
-    --custom-h5-gradiant-inline-2-percent: 100%;
-    --custom-h6-gradiant-inline-2-percent: 100%;
+    --custom-h1-gradient-inline-1-percent: 0;
+    --custom-h2-gradient-inline-1-percent: 0;
+    --custom-h3-gradient-inline-1-percent: 0;
+    --custom-h4-gradient-inline-1-percent: 0;
+    --custom-h5-gradient-inline-1-percent: 0;
+    --custom-h6-gradient-inline-1-percent: 0;
+    --custom-h1-gradient-inline-2-percent: 100%;
+    --custom-h2-gradient-inline-2-percent: 100%;
+    --custom-h3-gradient-inline-2-percent: 100%;
+    --custom-h4-gradient-inline-2-percent: 100%;
+    --custom-h5-gradient-inline-2-percent: 100%;
+    --custom-h6-gradient-inline-2-percent: 100%;
 
     /* Headings Gradient Colors */
-    --custom-h1-gradiant-1: var(--custom-gold-2-950);
-    --custom-h1-gradiant-2: var(--red-400);
-    --custom-h2-gradiant-1: var(--red-300);
-    --custom-h2-gradiant-2: var(--pink-500);
-    --custom-h3-gradiant-1: var(--pink-400);
-    --custom-h3-gradiant-2: var(--fuchsia-500);
-    --custom-h4-gradiant-1: var(--fuchsia-400);
-    --custom-h4-gradiant-2: var(--blue-500);
-    --custom-h5-gradiant-1: var(--blue-400);
-    --custom-h5-gradiant-2: var(--cyan-300);
-    --custom-h6-gradiant-1: var(--cyan-200);
-    --custom-h6-gradiant-2: var(--green-400);
-
-    /* Headings Gradient Colors Alt*/
-    /* --custom-h1-gradiant-1: var(--custom-gold-950);
-    --custom-h1-gradiant-2: var(--custom-red-700);
-    --custom-h2-gradiant-1: var(--custom-red-700);
-    --custom-h2-gradiant-2: var(--custom-white-200);
-    --custom-h3-gradiant-1: var(--custom-white-200);
-    --custom-h3-gradiant-2: #2255a1;
-    --custom-h4-gradiant-1: var(--emerald-800);
-    --custom-h4-gradiant-2: var(--custom-white-200);
-    --custom-h5-gradiant-1: var(--custom-white-200);
-    --custom-h5-gradiant-2: var(--indigo-700);
-    --custom-h6-gradiant-1: var(--fuchsia-800);
-    --custom-h6-gradiant-2: var(--custom-white-200); */
+    --custom-h1-gradient-1: var(--custom-gold-2-950);
+    --custom-h1-gradient-2: var(--red-400);
+    --custom-h1-gradient-3: var(--red-400);
+    --custom-h2-gradient-1: var(--red-300);
+    --custom-h2-gradient-2: var(--pink-500);
+    --custom-h2-gradient-3: var(--pink-500);
+    --custom-h3-gradient-1: var(--pink-400);
+    --custom-h3-gradient-2: var(--fuchsia-500);
+    --custom-h3-gradient-3: var(--fuchsia-500);
+    --custom-h4-gradient-1: var(--fuchsia-400);
+    --custom-h4-gradient-2: var(--blue-500);
+    --custom-h4-gradient-3: var(--blue-500);
+    --custom-h5-gradient-1: var(--blue-400);
+    --custom-h5-gradient-2: var(--cyan-300);
+    --custom-h5-gradient-3: var(--cyan-300);
+    --custom-h6-gradient-1: var(--cyan-200);
+    --custom-h6-gradient-2: var(--green-400);
+    --custom-h6-gradient-3: var(--green-400);
 
     /* Lists */
     --list-marker-color-hover: var(--text-muted);
@@ -2496,36 +2496,17 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-1-percent),
-        var(--custom-h1-gradiant-2) var(--custom-h1-gradiant-2-percent)
+        var(--custom-gradient-h1color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h1color-2) var(--custom-gradient-2-percent)
     );
 }
-
-/* .markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link:after{
-    content: "";
-    background-image: linear-gradient(
-        var(--custom-gradientDegree),
-        var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-1-percent),
-        var(--custom-h1-gradiant-2) var(--custom-h1-gradiant-2-percent)
-    );
-    position: absolute;
-    bottom: 0;
-    left: 0%;
-    height: 3px;
-    right: 0%;
-} */
-
-/* .markdown-source-view.is-live-preview .cm-header.cm-header-1.cm-hmd-internal-link:after:hover{
-    background: red!important;
-} */
-
 
 /* NOTE Inline Header 1 Color */
 .markdown-preview-view h1 code, .markdown-source-view .cm-header-1.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-inline-1-percent),
-        var(--custom-h1-gradiant-2) var(--custom-h1-gradiant-inline-2-percent)
+        var(--custom-h1-gradient-1) var(--custom-h1-gradient-inline-1-percent),
+        var(--custom-h1-gradient-2) var(--custom-h1-gradient-inline-2-percent)
     );
 }
 
@@ -2553,8 +2534,8 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h2-gradiant-1) var(--custom-h2-gradiant-1-percent),
-        var(--custom-h2-gradiant-2) var(--custom-h2-gradiant-2-percent)
+        var(--custom-gradient-h2color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h2color-2) var(--custom-gradient-2-percent)
     );
 }
 
@@ -2562,8 +2543,8 @@ a.tag:hover{
 .markdown-preview-view h2 code, .markdown-source-view .cm-header-2.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h2-gradiant-1) var(--custom-h2-gradiant-inline-1-percent),
-        var(--custom-h2-gradiant-2) var(--custom-h2-gradiant-inline-2-percent)
+        var(--custom-h2-gradient-1) var(--custom-h2-gradient-inline-1-percent),
+        var(--custom-h2-gradient-2) var(--custom-h2-gradient-inline-2-percent)
     );
 }
 
@@ -2591,8 +2572,8 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h3-gradiant-1) var(--custom-h3-gradiant-1-percent),
-        var(--custom-h3-gradiant-2) var(--custom-h3-gradiant-2-percent)
+        var(--custom-gradient-h3color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h3color-2) var(--custom-gradient-2-percent)
     );
 }
 
@@ -2600,8 +2581,9 @@ a.tag:hover{
 .markdown-preview-view h3 code, .markdown-source-view .cm-header-3.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h3-gradiant-1) var(--custom-h3-gradiant-inline-1-percent),
-        var(--custom-h3-gradiant-2) var(--custom-h3-gradiant-inline-2-percent)
+        var(--custuom) var(--custom-h3-gradient-inline-1-percent),
+        var(--custom-h3-gradient-2) var(--custom-h3-gradient-inline-2-percent),
+        var(--custom-h3-gradient-2) var(--custom-h3-gradient-inline-2-percent),
     );
 }
 
@@ -2629,8 +2611,8 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h4-gradiant-1) var(--custom-h4-gradiant-1-percent),
-        var(--custom-h4-gradiant-2) var(--custom-h4-gradiant-2-percent)
+        var(--custom-gradient-h4color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h4color-2) var(--custom-gradient-2-percent)
     );
 }
 
@@ -2638,8 +2620,8 @@ a.tag:hover{
 .markdown-preview-view h4 code, .markdown-source-view .cm-header-4.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h4-gradiant-1) var(--custom-h4-gradiant-inline-1-percent),
-        var(--custom-h4-gradiant-2) var(--custom-h4-gradiant-inline-2-percent)
+        var(--custom-h4-gradient-1) var(--custom-h4-gradient-inline-1-percent),
+        var(--custom-h4-gradient-2) var(--custom-h4-gradient-inline-2-percent)
     );
 }
 
@@ -2667,8 +2649,8 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h5-gradiant-1) var(--custom-h5-gradiant-1-percent),
-        var(--custom-h5-gradiant-2) var(--custom-h5-gradiant-2-percent)
+        var(--custom-gradient-h5color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h5color-2) var(--custom-gradient-2-percent)
     );
 }
 
@@ -2676,8 +2658,8 @@ a.tag:hover{
 .markdown-preview-view h5 code, .markdown-source-view .cm-header-5.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h5-gradiant-1) var(--custom-h5-gradiant-inline-1-percent),
-        var(--custom-h5-gradiant-2) var(--custom-h5-gradiant-inline-2-percent)
+        var(--custom-h5-gradient-1) var(--custom-h5-gradient-inline-1-percent),
+        var(--custom-h5-gradient-2) var(--custom-h5-gradient-inline-2-percent)
     );
 }
 
@@ -2705,8 +2687,8 @@ a.tag:hover{
 {
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h6-gradiant-1) var(--custom-h6-gradiant-1-percent),
-        var(--custom-h6-gradiant-2) var(--custom-h6-gradiant-2-percent)
+        var(--custom-gradient-h6color-1) var(--custom-gradient-1-percent),
+        var(--custom-gradient-h6color-2) var(--custom-gradient-2-percent)
     );
 }
 
@@ -2714,8 +2696,8 @@ a.tag:hover{
 .markdown-preview-view h6 code, .markdown-source-view .cm-header-6.cm-inline-code{
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h6-gradiant-1) var(--custom-h6-gradiant-inline-1-percent),
-        var(--custom-h6-gradiant-2) var(--custom-h6-gradiant-inline-2-percent)
+        var(--custom-h6-gradient-1) var(--custom-h6-gradient-inline-1-percent),
+        var(--custom-h6-gradient-2) var(--custom-h6-gradient-inline-2-percent)
     );
 }
 
@@ -3523,8 +3505,8 @@ body:not(.native-scrollbars)  ::-webkit-scrollbar-track:hover {
     -webkit-background-clip: text;
     background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-1-percent),
-        var(--custom-h1-gradiant-2) var(--custom-h1-gradiant-2-percent)
+        var(--custom-h1-gradient-1) var(--custom-h1-gradient-1-percent),
+        var(--custom-h1-gradient-2) var(--custom-h1-gradient-2-percent)
     );
     /* filter: var(--custom-global-drop-shadow); */
 }
@@ -3540,8 +3522,8 @@ body:not(.native-scrollbars)  ::-webkit-scrollbar-track:hover {
     right: 0%;
     /* background-image: linear-gradient(
         var(--custom-gradientDegree),
-        var(--custom-h1-gradiant-1) var(--custom-h1-gradiant-1-percent),
-        var(--custom-h1-gradiant-2) var(--custom-h1-gradiant-2-percent)
+        var(--custom-h1-gradient-1) var(--custom-h1-gradient-1-percent),
+        var(--custom-h1-gradient-2) var(--custom-h1-gradient-2-percent)
     ); */
     /* bottom: -8px; */
 }
