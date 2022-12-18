@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "1d74e06db276b9d1",
+        "id": "384e93fd581d1c2a",
         "type": "tabs",
         "children": [
           {
-            "id": "cb1b055c4180ac83",
+            "id": "5b4c2b745d6a6891",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/idea/Obsidian 主题 Demo 演示.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b45505eda54a8e44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/Obsidian插件Admonition.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9bb01990984d66c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发工具/开发用网站集合.md",
-                "mode": "source",
-                "backlinks": true,
+                "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,12 +49,23 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#网站收集",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c9a578f1e48709c0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
               }
             }
           }
@@ -98,7 +82,43 @@
       {
         "id": "912bea9f20451dd9",
         "type": "tabs",
+        "dimension": 48.85654885654886,
         "children": [
+          {
+            "id": "32d4730a394d450b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.9788837675641728,
+                  "close": true
+                }
+              }
+            }
+          },
           {
             "id": "551168ab89ee8e7c",
             "type": "leaf",
@@ -108,22 +128,12 @@
             }
           },
           {
-            "id": "bd3d285e0198cd64",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Roval/idea/Obsidian插件Admonition.md"
-              }
-            }
-          },
-          {
             "id": "47905a53fa05f52b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/Obsidian插件Admonition.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,49 +150,54 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/Obsidian插件Admonition.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
           },
           {
-            "id": "17640fe5d4160710",
+            "id": "f7472499d3c57b4c",
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "f7ea6788a8935bc7",
+        "type": "tabs",
+        "dimension": 51.143451143451145,
+        "children": [
           {
-            "id": "c9a578f1e48709c0",
+            "id": "bd3d285e0198cd64",
             "type": "leaf",
             "state": {
-              "type": "tag",
+              "type": "outline",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "file": "Roval/idea/Obsidian 插件 Admonition.md"
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "b45505eda54a8e44",
+  "active": "32d4730a394d450b",
   "lastOpenFiles": [
-    "Roval/idea/Obsidian 主题 Demo 演示.md",
-    "Roval/idea/Obsidian插件Admonition.md",
-    "Roval/idea/Obsidian插件Templater.md",
-    "Roval/dev/杂/一些网站.md",
-    "Roval/dev/开发工具/开发用网站集合.md",
-    "ob-template/template.md",
+    "Excalidraw/Excalidraw_20221219122509.md",
+    "Excalidraw_20221219122353.md",
+    "Roval/daily/2022-12-19.md",
+    "2022-12-19.md",
+    "Roval/idea/Github访问过慢.md",
+    "Roval/idea/Obsidian 插件 Admonition.md",
+    "Roval/idea/Obsidian 插件 Templater.md",
     "Roval/idea/科学上网指北.md",
-    "Roval/idea/若有所思.md",
-    "Roval/idea/笔记内容.md",
-    "Roval/coder/2021H2.md"
+    "Roval/idea/Obsidian手动安装第三方插件.md",
+    "Roval/idea/Obsidian 主题 Demo 演示.md"
   ]
 }
