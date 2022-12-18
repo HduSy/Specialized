@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:Roval/coder",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,8 +53,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -137,7 +136,7 @@
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "cb1b055c4180ac83",
+  "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
     "Roval/coder/2021H2.md",
     "Roval/dev/NPM 包/react-redux.md",
