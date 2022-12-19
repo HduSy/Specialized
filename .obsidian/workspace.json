@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "384e93fd581d1c2a",
+        "id": "daa656107635e43e",
         "type": "tabs",
         "children": [
           {
-            "id": "cb1aeeb545674d5d",
+            "id": "64c02fd77ba84d19",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/样式/clip-path.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -90,7 +85,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/样式/clip-path.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +127,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/样式/clip-path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +143,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/样式/clip-path.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -176,9 +168,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Roval/dev/样式/clip-path.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -187,17 +177,17 @@
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "cb1aeeb545674d5d",
+  "active": "64c02fd77ba84d19",
   "lastOpenFiles": [
-    "Roval/dev/样式/border.md",
+    "ob-template/template.md",
     "Roval/dev/样式/clip-path.md",
+    "Roval/dev/样式/border.md",
     "Roval/dev/样式/experience/CSS 换行.md",
     "w3schools.com/css/default.asp.md",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/idea/Obsidian 主题 Demo 演示.md",
     "Roval/idea/Obsidian 插件 Admonition.md",
     "Roval/idea/Obsidian 手动安装第三方插件.md",
-    "Roval/idea/2022-12-19.md",
-    "Roval/idea/Obsidian 插件 Templater.md"
+    "Roval/idea/2022-12-19.md"
   ]
 }
