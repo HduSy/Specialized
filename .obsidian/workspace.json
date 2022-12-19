@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/2021H2.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5c0a909f44543b7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/coder/Proxyman flash 配置.md",
+                "file": "Roval/idea/Obsidian 主题 Demo 演示.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#前端性能优化",
+                "query": "tag:#Npm包",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,11 +65,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +83,7 @@
       {
         "id": "912bea9f20451dd9",
         "type": "tabs",
-        "dimension": 48.85654885654886,
+        "dimension": 42.0997920997921,
         "children": [
           {
             "id": "32d4730a394d450b",
@@ -103,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/2021H2.md",
+                "file": "Roval/idea/Obsidian 主题 Demo 演示.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -114,19 +102,19 @@
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": false,
+                  "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
+                  "collapse-display": true,
                   "showArrow": false,
-                  "textFadeMultiplier": -1.9,
-                  "nodeSizeMultiplier": 0.69395751953125,
-                  "lineSizeMultiplier": 2.86960856119792,
-                  "collapse-forces": false,
-                  "centerStrength": 0.8426513671875,
-                  "repelStrength": 8.23974609375,
-                  "linkStrength": 0.896931966145833,
-                  "linkDistance": 171,
-                  "scale": 1.657726636899391,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.9788837675641728,
                   "close": true
                 }
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/2021H2.md",
+                "file": "Roval/idea/Obsidian 主题 Demo 演示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/2021H2.md",
+                "file": "Roval/idea/Obsidian 主题 Demo 演示.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -182,7 +170,7 @@
       {
         "id": "f7ea6788a8935bc7",
         "type": "tabs",
-        "dimension": 51.143451143451145,
+        "dimension": 57.9002079002079,
         "children": [
           {
             "id": "bd3d285e0198cd64",
@@ -190,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/2021H2.md"
+                "file": "Roval/idea/Obsidian 主题 Demo 演示.md"
               }
             }
           }
@@ -200,17 +188,17 @@
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "cb1aeeb545674d5d",
+  "active": "9feee2242ef25628",
   "lastOpenFiles": [
-    "Roval/coder/Proxyman flash 配置.md",
-    "Roval/coder/2021H2.md",
-    "Roval/essay/技术文章个人整理/本地数据缓存.md",
-    "Roval/dev/JavaScript/localStorage.md",
-    "Roval/dev/JavaScript/Promise.md",
-    "Roval/dev/JavaScript/Proxy.md",
-    "Roval/dev/JavaScript/NodeJS.md",
-    "Roval/dev/JavaScript/模块化.md",
-    "Roval/dev/JavaScript/indexedDB.md",
-    "Roval/dev/JavaScript/sessionStorage.md"
+    "Roval/idea/Obsidian 插件 Admonition.md",
+    "Roval/idea/Obsidian 主题 Demo 演示.md",
+    "Roval/idea/Obsidian 手动安装第三方插件.md",
+    "Roval/idea/2022-12-19.md",
+    "Roval/idea/Obsidian 插件 Templater.md",
+    "Roval/idea/Github访问过慢.md",
+    "Roval/idea/若有所思.md",
+    "Roval/idea/科学上网指北.md",
+    "Roval/idea/卡片盒系统.md",
+    "Roval/idea/超文本的概念.md"
   ]
 }
