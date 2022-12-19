@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md",
+                "file": "Roval/essay/技术文章个人整理/本地数据缓存.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md",
+                "file": "Roval/essay/技术文章个人整理/本地数据缓存.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -101,19 +101,19 @@
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": true,
+                  "collapse-color-groups": false,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.9788837675641728,
+                  "textFadeMultiplier": -1.9,
+                  "nodeSizeMultiplier": 0.69395751953125,
+                  "lineSizeMultiplier": 2.86960856119792,
+                  "collapse-forces": false,
+                  "centerStrength": 0.8426513671875,
+                  "repelStrength": 8.23974609375,
+                  "linkStrength": 0.896931966145833,
+                  "linkDistance": 171,
+                  "scale": 1.657726636899391,
                   "close": true
                 }
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md",
+                "file": "Roval/essay/技术文章个人整理/本地数据缓存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md",
+                "file": "Roval/essay/技术文章个人整理/本地数据缓存.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md"
+                "file": "Roval/essay/技术文章个人整理/本地数据缓存.md"
               }
             }
           }
@@ -189,15 +189,15 @@
   },
   "active": "cb1aeeb545674d5d",
   "lastOpenFiles": [
-    "Roval/essay/书籍/《经济学原理》/第二章.md",
+    "Roval/dev/JavaScript/localStorage.md",
+    "Roval/dev/JavaScript/Promise.md",
+    "Roval/dev/JavaScript/Proxy.md",
+    "Roval/dev/JavaScript/NodeJS.md",
+    "Roval/dev/JavaScript/模块化.md",
+    "Roval/dev/JavaScript/indexedDB.md",
+    "Roval/essay/技术文章个人整理/本地数据缓存.md",
+    "Roval/dev/JavaScript/sessionStorage.md",
     "Roval/essay/技术文章个人整理/性能优化之全面图片改造方案.md",
-    "OB 插件之 Templater.md",
-    "Roval/idea/Obsidian 插件 Templater.md",
-    "Roval/coder/docs/WEB自定义字体性能优化分享.md",
-    "Roval/idea/Github访问过慢.md",
-    "Roval/idea/Obsidian 手动安装第三方插件.md",
-    "Roval/idea/Obsidian 主题 Demo 演示.md",
-    "Roval/idea/Obsidian 插件 Admonition.md",
-    "Roval/idea/若有所思.md"
+    "Roval/essay/书籍/《经济学原理》/第二章.md"
   ]
 }
