@@ -11,8 +11,13 @@
             "id": "7b02b406d355271b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Roval/essay/书籍/《经济学原理》/第二章.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -85,6 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Roval/essay/书籍/《经济学原理》/第二章.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -127,6 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/essay/书籍/《经济学原理》/第二章.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,6 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/essay/书籍/《经济学原理》/第二章.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -168,7 +176,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/essay/书籍/《经济学原理》/第二章.md"
+              }
             }
           }
         ]
@@ -177,8 +187,10 @@
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "14e1169b99dcb7e3",
+  "active": "7b02b406d355271b",
   "lastOpenFiles": [
+    "Roval/essay/书籍/《经济学原理》/第一章.md",
+    "Roval/essay/书籍/《经济学原理》/第二章.md",
     "Roval/coder/2022时光机.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png.md",
     "Roval/coder/2021H2自评.md",
@@ -186,8 +198,6 @@
     "Roval/coder/coder-content.md",
     "Roval/coder/一些想而未做的事.md",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
-    "Roval/coder/小记.md",
-    "Roval/coder/个人发展计划周表.md",
-    "Roval/coder/哔哩同学录.md"
+    "Roval/coder/小记.md"
   ]
 }

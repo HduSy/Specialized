@@ -8,6 +8,7 @@
   "nativeMenus": true,
   "translucency": false,
   "enabledCssSnippets": [
-    "self"
+    "self",
+    "everforest-selfdefine"
   ]
 }
