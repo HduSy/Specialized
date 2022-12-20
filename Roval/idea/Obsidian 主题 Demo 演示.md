@@ -31,8 +31,8 @@ Lasted Modified：2022-12-19 23:12:07
 
 ## 在用插件列表
 
-- https://github.com/platers/obsidian-linter
-- https://github.com/guopenghui/obsidian-quiet-outline
+- <https://github.com/platers/obsidian-linter>
+- <https://github.com/guopenghui/obsidian-quiet-outline>
 
 ## 基础使用
 
@@ -54,11 +54,13 @@ Lasted Modified：2022-12-19 23:12:07
 ~~fuck~~  
 ==fuck==
 
-1. a
-2. b
-3. c
+1) a
 
-这是一个脚注[^1]，第二个脚注[^2]，第三个脚注[^3]，添加的快捷方式[^4]
+2) b
+
+3) c
+
+这是一个脚注 [^1]，第二个脚注 [^2]，第三个脚注 [^3]，添加的快捷方式 [^4]
 
 ```mermaid
 sequenceDiagram

@@ -1,3 +1,5 @@
+# Expand rectangles horizontally keep text centered
+
 /*
 
 ![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-download-raw.jpg)
@@ -8,8 +10,8 @@ Download this file and save to your Obsidian Vault including the first line, or 
 
 This script expands the width of the selected rectangles until they are all the same width and keep the text centered.
 
-See documentation for more details:
-https://zsviczian.github.io/obsidian-excalidraw-plugin/ExcalidrawScriptsEngine.html
+See documentation for more details:  
+<https://zsviczian.github.io/obsidian-excalidraw-plugin/ExcalidrawScriptsEngine.html>
 
 ```javascript
 */

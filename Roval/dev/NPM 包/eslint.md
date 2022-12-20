@@ -15,12 +15,17 @@ Last Modified：2022-12-17 22:10:54
 
 `package.json` 的 `eslintConfig` 属性 和 `.eslintrc.*`（`.eslintrc.js`、`.eslintrc.yml`、`.eslintrc.yaml`、`.eslintrc.json`），使用优先级：
 
-1. `.eslintrc.js`
-2. `.eslintrc.yaml`
-3. `.eslintrc.yml`
-4. `.eslintrc.json`
-5. `.eslintrc`
-6. `package.json`
+1) `.eslintrc.js`
+
+2) `.eslintrc.yaml`
+
+3) `.eslintrc.yml`
+
+4) `.eslintrc.json`
+
+5) `.eslintrc`
+
+6) `package.json`
 
 ### 配置优先级
 
@@ -38,20 +43,23 @@ Last Modified：2022-12-17 22:10:54
 
 #### 优先级
 
-1. 行内配置  
-		1. `/*eslint-disable*/` 和 `/*eslint-enable*/`  
-		2. `/*global*/`  
-		3. `/*eslint*/`  
-		4. `/*eslint-env*/`
-2. 命令行选项（或 CLIEngine 等价物）：  
-		1. `--global`  
-		2. `--rule`  
-		3. `--env`  
-		4. `-c`、`--config`
-3. 项目级配置：  
-		1. 与要检测的文件在同一目录下的 `.eslintrc.*` 或 `package.json` 文件  
-		2. 继续在父级目录寻找 `.eslintrc` 或 `package.json` 文件，直到根目录（包括根目录）或直到发现一个有 `"root": true` 的配置。
-4. 如果不是（1）到（3）中的任何一种情况，退回到 `~/.eslintrc` 中自定义的默认配置。
+1) 行内配置  
+		1) `/*eslint-disable*/` 和 `/*eslint-enable*/`  
+		2) `/*global*/`  
+		3) `/*eslint*/`  
+		4) `/*eslint-env*/`
+
+2) 命令行选项（或 CLIEngine 等价物）：  
+		1) `--global`  
+		2) `--rule`  
+		3) `--env`  
+		4) `-c`、`--config`
+
+3) 项目级配置：  
+		1) 与要检测的文件在同一目录下的 `.eslintrc.*` 或 `package.json` 文件  
+		2) 继续在父级目录寻找 `.eslintrc` 或 `package.json` 文件，直到根目录（包括根目录）或直到发现一个有 `"root": true` 的配置。
+
+4) 如果不是（1）到（3）中的任何一种情况，退回到 `~/.eslintrc` 中自定义的默认配置。
 
 ## 原理
 
@@ -261,8 +269,9 @@ alert('foo');
 
 规则可以被继承。`extends` 属性值可以是：
 
-1. 指定配置的字符串（配置文件路径、共享配置名称、`eslint:recommended` 或 `eslint:all`）
-2. 字符串数组，后面的覆盖前面的
+1) 指定配置的字符串（配置文件路径、共享配置名称、`eslint:recommended` 或 `eslint:all`）
+
+2) 字符串数组，后面的覆盖前面的
 
 ### eslint:recommended
 

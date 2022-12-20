@@ -9,7 +9,7 @@ Last Modified：2022-12-17 21:25:23
 
 ## Git Push
 
-`git push`命用于从将本地的分支版本上传到远程并合并。
+`git push` 命用于从将本地的分支版本上传到远程并合并。
 
 ```
 git push <远程主机名> <本地分支名>:<远程分支名>
@@ -60,7 +60,7 @@ eg. `git pull origin master:feat/topic_ttt `
 
 `git commit --amend` 修改最近一次提交的 **提交信息**
 
-`gc --fixup [commitId]` 指定分支上 fix bug，然后 `grbi --autosquash [commitId]`让 fix-bug-commit 分支合并到 `[commitId]` 指定那次 `commit` 里，从而隐去 fix-bug-commit
+`gc --fixup [commitId]` 指定分支上 fix bug，然后 `grbi --autosquash [commitId]` 让 fix-bug-commit 分支合并到 `[commitId]` 指定那次 `commit` 里，从而隐去 fix-bug-commit
 
 ## Git Reset
 

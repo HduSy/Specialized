@@ -1,3 +1,5 @@
+# Auto Layout
+
 /*
 
 ![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-download-raw.jpg)
@@ -8,9 +10,8 @@ Download this file and save to your Obsidian Vault including the first line, or 
 
 This script performs automatic layout for the selected top-level grouping objects. It is powered by [elkjs](https://github.com/kieler/elkjs) and needs to be connected to the Internet.
 
-
-See documentation for more details:
-https://zsviczian.github.io/obsidian-excalidraw-plugin/ExcalidrawScriptsEngine.html
+See documentation for more details:  
+<https://zsviczian.github.io/obsidian-excalidraw-plugin/ExcalidrawScriptsEngine.html>
 
 ```javascript
 */

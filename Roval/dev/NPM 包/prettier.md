@@ -52,4 +52,4 @@ module.exports = {
 
 # Reference
 
-1. [vscode prettier 与 eslint 冲突](https://zhuanlan.zhihu.com/p/347339865)
+1) [vscode prettier 与 eslint 冲突](https://zhuanlan.zhihu.com/p/347339865)

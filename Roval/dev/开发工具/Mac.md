@@ -14,7 +14,7 @@ Last Modified：2022-12-17 21:39:56
 - `Command+H`：隐藏窗口。
 - `Command+W`：关闭窗口。
 - `Command+ 空格 `：聚焦搜索。
-- `Command+ 逗号 `：打开当前应用`Preference`。
+- `Command+ 逗号 `：打开当前应用 `Preference`。
 - `Command+T`：浏览器打开新标签。
 - `Command+option+Esc`：强制退出。
 - `option+command+whitespace`：输入表情。

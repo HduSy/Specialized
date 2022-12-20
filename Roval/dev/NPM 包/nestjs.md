@@ -159,8 +159,9 @@ export class CliModule {}
 
 两种方式创建自定义 `Nest` 中间件：
 
-1. 函数中创建；
-2. 由 `@Injectable` 装饰的，实现了（`implements`）`NestMiddle` 接口的类。
+1) 函数中创建；
+
+2) 由 `@Injectable` 装饰的，实现了（`implements`）`NestMiddle` 接口的类。
 
 #### 应用中间件
 
@@ -476,5 +477,6 @@ export class LoggingInterceptor implements NestInterceptor{
 
 # Reference
 
-1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
-2. [中文文档](https://docs.nestjs.cn/)
+1) [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
+
+2) [中文文档](https://docs.nestjs.cn/)

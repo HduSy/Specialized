@@ -48,7 +48,7 @@
       "Keep alias that matches the filename": false
     },
     "Capitalize Headings": {
-      "Headings should be formatted with capitalization": true,
+      "Headings should be formatted with capitalization": false,
       "Style": "Title Case",
       "Ignore Cased Words": true,
       "Ignore Words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript",
@@ -61,13 +61,13 @@
       "Heading levels should only increment by one level at a time": true
     },
     "Footnote after Punctuation": {
-      "Ensures that footnote references are placed after punctuation, not before.": false
+      "Ensures that footnote references are placed after punctuation, not before.": true
     },
     "Move Footnotes to the bottom": {
-      "Move all footnotes to the bottom of the document.": false
+      "Move all footnotes to the bottom of the document.": true
     },
     "Re-Index Footnotes": {
-      "Re-indexes footnote keys and footnote, based on the order of occurrence (NOTE: This rule deliberately does *not* preserve the relation between key and footnote, to be able to re-index duplicate keys.)": false,
+      "Re-indexes footnote keys and footnote, based on the order of occurrence (NOTE: This rule deliberately does *not* preserve the relation between key and footnote, to be able to re-index duplicate keys.)": true,
       "Re-indexes footnote keys and footnote, based on the order of occurence (NOTE: This rule deliberately does *not* preserve the relation between key and footnote, to be able to re-index duplicate keys.)": false
     },
     "Convert Bullet List Markers": {
@@ -75,10 +75,10 @@
     },
     "Emphasis Style": {
       "Makes sure the emphasis style is consistent.": true,
-      "Style": "consistent"
+      "Style": "asterisk"
     },
     "No Bare URLs": {
-      "Encloses bare URLs with angle brackets except when enclosed in back ticks, square braces, or single or double quotes.": false
+      "Encloses bare URLs with angle brackets except when enclosed in back ticks, square braces, or single or double quotes.": true
     },
     "Proper Ellipsis": {
       "Replaces three consecutive dots with an ellipsis.": true
@@ -96,8 +96,8 @@
       "Removes two or more consecutive spaces. Ignores spaces at the beginning and ending of the line. ": true
     },
     "Strong Style": {
-      "Makes sure the strong style is consistent.": false,
-      "Style": "consistent"
+      "Makes sure the strong style is consistent.": true,
+      "Style": "asterisk"
     },
     "Two Spaces Between Lines with Content": {
       "Makes sure that two spaces are added to the ends of lines with content continued on the next line for paragraphs, blockquotes, and list items": true
@@ -111,7 +111,7 @@
     },
     "Convert Spaces to Tabs": {
       "Converts leading spaces to tabs.": true,
-      "Tabsize": "2"
+      "Tabsize": "4"
     },
     "Empty Line Around Code Fences": {
       "Ensures that there is an empty line around code fences unless they start or end a document.": true
@@ -146,10 +146,77 @@
       "Removes extra spaces after every line.": true,
       "Two Space Linebreak": true
     },
-    "Space between Chinese Japanese or Korean and English or numbers": {}
+    "Space between Chinese Japanese or Korean and English or numbers": {
+      "Ensures that Chinese, Japanese, or Korean and English or numbers are separated by a single space. Follows these [guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)": true
+    },
+    "Force YAML Escape": {
+      "Escapes the values for the specified YAML keys.": false,
+      "Force YAML Escape on Keys": ""
+    },
+    "Move Tags to Yaml": {
+      "Move all tags to Yaml frontmatter of the document.": false,
+      "Body tag operation": "Nothing",
+      "Tags to ignore": ""
+    },
+    "Headings Start Line": {
+      "Headings that do not start a line will have their preceding whitespace removed to make sure they get recognized as headers.": false
+    },
+    "Remove Trailing Punctuation in Heading": {
+      "Removes the specified punctuation from the end of headings making sure to ignore the semicolon at the end of [HTML entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).": false,
+      "Trailing Punctuation": ".,;:!。，；：！"
+    },
+    "Ordered List Style": {
+      "Makes sure that ordered lists follow the style specified. Note that 2 spaces or 1 tab is considered to be an indentation level.": true,
+      "Number Style": "ascending",
+      "Ordered List Indicator End Style": ")"
+    },
+    "Unordered List Style": {
+      "Makes sure that unordered lists follow the style specified.": true,
+      "List item style": "consistent"
+    },
+    "Empty Line Around Blockquotes": {
+      "Ensures that there is an empty line around blockquotes unless they start or end a document. **Note that an empty line is either one less level of nesting for blockquotes or a newline character.**": true
+    },
+    "Empty Line Around Math Blocks": {
+      "Ensures that there is an empty line around math blocks using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": true
+    },
+    "Move Math Block Indicators to Their Own Line": {
+      "Move all starting and ending math block indicators to their own lines using `Number of Dollar Signs to Indicate a Math Block` to determine how many dollar signs indicates a math block for single-line math.": false
+    },
+    "Remove Space around Characters": {
+      "Ensures that certain characters are not surrounded by whitespace (either single spaces or a tab). Note that this may causes issues with markdown format in some cases.": false,
+      "Include Fullwidth Forms": true,
+      "Include CJK Symbols and Punctuation": true,
+      "Include Dashes": true,
+      "Other symbols": ""
+    },
+    "Add Blockquote Indentation on Paste": {
+      "Adds blockquotes to all but the first line, when the cursor is in a blockquote/callout line during pasting": false
+    },
+    "Prevent Double Checklist Indicator on Paste": {
+      "Removes starting checklist indicator from the text to paste if the line the cursor is on in the file has a checklist indicator": false
+    },
+    "Prevent Double List Item Indicator on Paste": {
+      "Removes starting list indicator from the text to paste if the line the cursor is on in the file has a list indicator": false
+    },
+    "Proper Ellipsis on Paste": {
+      "Replaces three consecutive dots with an ellipsis even if they have a space between them in the text to paste": false
+    },
+    "Remove Hyphens on Paste": {
+      "Removes hyphens from the text to paste": false
+    },
+    "Remove Leading or Trailing Whitespace on Paste": {
+      "Removes any leading non-tab whitespace and all trailing whitespace for the text to paste": false
+    },
+    "Remove Leftover Footnotes from Quote on Paste": {
+      "Removes any leftover footnote references for the text to paste": false
+    },
+    "Remove Multiple Blank Lines on Paste": {
+      "Condenses multiple blank lines down into one blank line for the text to paste": false
+    }
   },
   "lintOnSave": true,
-  "displayChanged": false,
+  "displayChanged": true,
   "foldersToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": 4,

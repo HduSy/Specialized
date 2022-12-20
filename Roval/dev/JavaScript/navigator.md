@@ -7,7 +7,6 @@ Last Modified：2022-12-17 22:04:46
 
 # Content
 
-		
 		- 通常用于确定浏览器的类型
 				
 		- userAgent：返回浏览器的用户代理字符串

@@ -4,17 +4,20 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
+==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 # Text Elements
 
 # Embedded files
-00f45d6f83c8f5f1e54b960e985bcb3c8aa19229: [[Pasted Image 20221215100113_384.png]]
+
+00f45d6f83c8f5f1e54b960e985bcb3c8aa19229: [[Pasted Image 20221215100113_384.png]]  
 5c441e934b93e0ab6d735bfafddd345e11e659f6: [[Pasted Image 20221215100114_666.png]]
 
 %%
+
 # Drawing
+
 ```compressed-json
 N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATL
 
@@ -94,4 +97,5 @@ cJdmxk3VYw3QvzCYEA5qcDQ38wD/0NZqyNxhkJLlLaQcV+sY2qr7g0sFYISDOtdU
 
 vIc3KLIsLfjIP8wAILgCXRAVcopfn3ogkAA=
 ```
+
 %%
