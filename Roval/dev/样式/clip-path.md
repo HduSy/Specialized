@@ -7,8 +7,10 @@ Last Modified：2022-12-20 23:58:31
 
 # Content
 
-```ad-abstract
-用于指定元素显示、隐藏的区域。支持多种形状，也有一些内定函数。
+裁切元素形状。
+
+```ad-tip
+我在 CodePen 上的实践：[clip-path](https://codepen.io/hdusy/pen/QWBWavY)
 ```
 
 ## none
@@ -61,4 +63,5 @@ url 链接图片、linear-gradient 等。
 
 # Reference
 
-[Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)  
+1. [Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)  
+2. 一个将 clip-path 用到极致的神奇网站 [In Pieces - 30 Endangered Species, 30 Pieces.](http://species-in-pieces.com/)
