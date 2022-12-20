@@ -26,7 +26,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+                "file": "Roval/dev/样式/clip-path.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf5457436a0104ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/样式/shape-outside.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6d819be16804e36a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/样式/clip-path.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -104,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+                "file": "Roval/dev/样式/clip-path.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -147,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+                "file": "Roval/dev/样式/clip-path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+                "file": "Roval/dev/样式/clip-path.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -191,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md"
+                "file": "Roval/dev/样式/clip-path.md"
               }
             }
           }
@@ -201,17 +227,17 @@
     "direction": "horizontal",
     "width": 428.5
   },
-  "active": "4316b317824032e3",
+  "active": "6d819be16804e36a",
   "lastOpenFiles": [
-    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
+    "Roval/dev/样式/shape-outside.md",
+    "Roval/dev/样式/clip-path.md",
+    "Roval/dev/样式/border.md",
     "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
     "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
     "经济学.md",
     "Roval/coder/2022时光机.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/2021时光机.md",
-    "Roval/coder/coder-content.md",
-    "Roval/coder/一些想而未做的事.md"
+    "Roval/coder/2021H2自评.md"
   ]
 }
