@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Git",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -203,15 +204,15 @@
   },
   "active": "7731691097494e0c",
   "lastOpenFiles": [
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/dev/Git/Git 简写.md",
+    "Roval/coder/2022时光机.md",
     "Roval/coder/coder-content.md",
     "Roval/idea/一些想做未做的事.md",
     "Roval/coder/一些想而未做的事.md",
     "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
     "Roval/dev/样式/clip-path.md",
     "Roval/dev/样式/function.md",
-    "Roval/dev/样式/shape-outside.md",
-    "Roval/dev/样式/border.md",
-    "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
-    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md"
+    "Roval/dev/样式/shape-outside.md"
   ]
 }
