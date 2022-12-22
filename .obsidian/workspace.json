@@ -69,8 +69,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +113,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.9788837675641728,
+                  "scale": 2.553286842895046,
                   "close": true
                 }
               }
@@ -165,7 +164,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "f7ea6788a8935bc7",
@@ -204,15 +204,15 @@
   },
   "active": "4325f8433e52b185",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/强类型、弱类型、静态类型、动态类型.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/coder/个人发展计划周表.md",
     "Roval/dev/NPM 包/Eslint.md",
-    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/coder/2022时光机.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/Git/Git 简写.md",
     "Roval/coder/coder-content.md",
     "Roval/idea/一些想做未做的事.md",
-    "Roval/coder/一些想而未做的事.md",
-    "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md"
+    "Roval/coder/一些想而未做的事.md"
   ]
 }
