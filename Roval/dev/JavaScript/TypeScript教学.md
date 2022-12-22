@@ -107,9 +107,9 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 学习成本中等，因为兼容 JS 代码，可渐进式增加类型、接口定义以增强代码健壮性。
 
-## TypeScript 基本数据类型
+## TypeScript 入门
 
-### 基础
+### 数据类型
 
 #### 基础数据类型
 
@@ -139,7 +139,7 @@ myGenericNumber.add = function(x, y) { return x + y; };
 		
 - 当 ts 并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
 
-#### 元组 Tuple
+#### 元组 tuple
 
 可以描述已知元素数量和类型的 **数组**。
 
@@ -153,7 +153,7 @@ const x: [number, string] = [1, '1']
 x[3] = '1' // ok. x[3] 类型为 string|number
 ```
 
-#### 枚举 Enum
+#### 枚举 enum
 
 为一组 **数值** 赋予友好名字，默认从 0 开始。
 
@@ -327,12 +327,12 @@ console.log(n)
 
 #### unknown & never
 
-##### Never 妙用
+##### never 妙用
 
 - unreachable code detect
 - exhaustive check
 
-##### 类型断言
+### 类型断言
 
 手动指定值的类型
 
@@ -358,15 +358,15 @@ console.log(n)
 				
 - 类型断言 VS 范型：最优解决方案
 
-##### 声明文件
+### 声明文件
 
 声明语句：声明语句中只能定义类型，不能定义具体实现
 
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
 
-## 接口 Interface
+### 接口 Interface
 
-### 可选属性
+#### 可选属性
 
 ```ts
 interface Itest {
@@ -374,7 +374,7 @@ interface Itest {
 }
 ```
 
-### 只读属性
+#### 只读属性
 
 只能在对象创建时修改其属性值。
 
@@ -385,7 +385,7 @@ interface Itest {
 let ro = R
 ```
 
-### 函数类型
+#### 函数类型
 
 ```
 interface SearchFunc {
@@ -393,7 +393,7 @@ interface SearchFunc {
 }
 ```
 
-### 索引类型
+#### 索引类型
 
 数字索引的返回值必须是字符串索引返回值类型的子类型，因为 `javascript` 会把数字类型索引转为字符串类型索引去取值。
 
@@ -412,7 +412,7 @@ interface StringArray {
 }
 ```
 
-### 接口继承类
+#### 接口继承类
 
 当接口继承了一个类类型时，同样会继承到类的 private 和 protected 成员，这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。
 
@@ -441,18 +441,18 @@ class Location {
 }
 ```
 
-## 类型 Type
+### 类型 Type
 
-## Type VS Interface
+#### type VS interface
 
 声明对象的类型——interface  
 声明类型别名——type
 
-### 相同点
+##### 相同点
 
 对 **接口定义** 的两种不同形式，目的都是一样的，都是用来定义 **对象** 或者 **函数** 的形状
 
-### 不同点
+##### 不同点
 
 type 能做到，interface 不能做到：
 
