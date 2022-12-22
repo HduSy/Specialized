@@ -190,9 +190,8 @@ interface Person {
 }
 ```
 
-1) 一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
-
-2) 任意属性可定义为联合类型
+1. 一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
+2. 任意属性可定义为联合类型
 
 ```typescript
     interface Person {
@@ -704,7 +703,6 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 # Reference
 
 [详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  
-[掘金详细TS](https://juejin.cn/post/7068081327857205261)  
 [接口interface](https://ts.xcatliu.com/advanced/class-and-interfaces.html#%E7%B1%BB%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3)  
 [类型别名type](https://ts.xcatliu.com/advanced/type-aliases.html)  
 [如何在项目中用好 TypeScript 🤔](https:juejin.cn/post/7058868160706904078)  
