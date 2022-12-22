@@ -1,6 +1,6 @@
 {
   "baseFontSize": 14,
-  "cssTheme": "Everforest",
+  "cssTheme": "Faded",
   "accentColor": "",
   "theme": "obsidian",
   "baseFontSizeAction": true,
@@ -9,6 +9,6 @@
   "translucency": false,
   "enabledCssSnippets": [
     "self",
-    "everforest-selfdefine"
+    "self-bold"
   ]
 }

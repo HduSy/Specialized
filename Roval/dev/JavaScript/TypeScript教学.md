@@ -107,9 +107,7 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 学习成本中等，因为兼容 JS 代码，可渐进式增加类型、接口定义以增强代码健壮性。
 
-## TypeScript 基础语法
-
-## 入门到放弃
+## TypeScript 基本数据类型
 
 ### 基础
 
@@ -307,7 +305,7 @@ interface Person {
     }
 ```
 
-#### 无类型 Void
+#### 无类型 void
 
 没有任何类型，声明为 `void` 的变量只能被 `null & undefined` 赋值。
 
@@ -316,7 +314,7 @@ const n: void = null
 const u: void = undefined
 ```
 
-#### 特殊类型 Undefined Null Never
+#### 特殊类型 undefined null never
 
 `undefined`、`null`、`never` 均是任何类型的子类型，可以赋值给其他类型的值。没有类型是 `never` 的子类型或可以赋值给 `never`（`any` 也不行，`never` 本身除外）。
 
@@ -327,14 +325,14 @@ n = a // notok. Type 'any' is not assignable to type 'never'.
 console.log(n)
 ```
 
-#### Unknown & Never
+#### unknown & never
 
 ##### Never 妙用
 
 - unreachable code detect
 - exhaustive check
 
-#### 类型断言
+##### 类型断言
 
 手动指定值的类型
 
@@ -360,13 +358,11 @@ console.log(n)
 				
 - 类型断言 VS 范型：最优解决方案
 
-#### 声明文件
+##### 声明文件
 
 声明语句：声明语句中只能定义类型，不能定义具体实现
 
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
-
-### Tsc 配置文件 tsconfig.json
 
 ## 接口 Interface
 
