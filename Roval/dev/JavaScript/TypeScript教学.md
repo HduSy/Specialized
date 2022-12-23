@@ -113,24 +113,46 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 #### 基础数据类型
 
-`number、string、boolean、undefined、null、void`
+`number、string、boolean`
 
-需要注意的是 void 与 undefined&null 区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，void 的常用场景就是定义函数无返回值，声明一个变量为 void 类型没有多大意义，因为只能被赋值为 undefined&null
+需要注意的是 `void` 与 `undefined&null` 区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，`void` 的常用场景就是定义函数无返回值，声明一个变量为 `void` 类型没有多大意义，因为只能被赋值为 `undefined&null`
 
-#### 任意值
+#### any
+
+表示任意类型。
 
 - 声明变量时未指定类型，则为 any 类型
-		
 - 可以在 any 类型上访问任意方法与属性
-		
 - any 类型允许被任意类型的值赋值
-		
-- 对 any 类型进行操作，其返回值仍为 any 类型，属性类型也都是 any 类型【属性污染】
+- 对 any 类型进行操作，其返回值仍为 any 类型，属性类型也都是 any 类型【属性污染】  
+不建议使用 any，会失去 ts 的意义。
+
+#### unknown
+
+也表示任意类型，但是相比于 any 是类型安全的 ，定义为 unknown 类型的变量，不允许执行任意操作。  
+
+#### void
+
+与 any 类型相反，表示无类型。
+
+- 声明为 void 的变量只能被 null & undefined 赋值；
+
+```ts
+const n: void = null
+const u: void = undefined
+```
+
+- 无返回值的函数，返回值类型可声明为 void；
+
+```ts
+function add(a: number, b: number):void {
+	console.log(a + b)
+}
+```
 
 #### 类型推断
 
 - 未明确指定一个变量的类型的的时候会推断该变量的类型
-		
 - 当定义变量未赋值时，之后该变量都会成为 any 类型
 
 #### 联合类型
@@ -141,7 +163,7 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 #### 元组 tuple
 
-可以描述已知元素数量和类型的 **数组**。
+可以描述已知元素 **数量** 和 **类型** 的数组。
 
 ```ts
 const x: [number, string] = [1, '1']
@@ -151,6 +173,12 @@ const x: [number, string] = [1, '1']
 
 ```ts
 x[3] = '1' // ok. x[3] 类型为 string|number
+```
+
+对元组使用数组方法 push 一个已定义类型的值时，不会报错。
+
+```ts
+x.push(1)
 ```
 
 #### 枚举 enum
@@ -233,85 +261,43 @@ interface Person {
 
 ```
 
-#### 函数的类型
-
-- 函数声明，参数个数确定，不可多不可少
-
-```typescript
-    function sum(x: number, y: number): number {
-		return x + y;  
-    }
-```
-
-- 函数表达式，TS 中的 `=>` 用来表示函数定义，左边是输入类型，右边是输出类型，不同于 ES6 中的箭头函数
-
-```typescript
-    let mySum: (x: number, y: number) => number = 
-	function (x: number, y: number):number {
-		return x + y;  
-    };
-```
-
-- 接口定义函数
-
-```typescript
-    interface SearchFunc {
-		(source: string, subString: string): boolean;  
-    }  
-    let mySearch: SearchFunc;  
-    mySearch = function(source: string, subString: string) {
-		return source.search(subString) !== -1;  
-    }
-```
+#### 函数类型
 
 - 可选参数
 
-		与可选属性相似，注意的是后面不能有确定参数
-
-- 参数默认值，**TypeScript 会将添加了默认值的参数识别为可选参数**, 此时就不受「可选参数必须接在必需参数后面」的限制了
-
-```typescript
-    function buildName(firstName: string, lastName: string = 'Cat') {
-		return firstName + ' ' + lastName;  
-    }  
-    let tomcat = buildName('Tom', 'Cat');  
-    let tom = buildName('Tom');
-```
-
-- 剩余参数，只能是最后一个参数
-
-```typescript
-    function push(array: any[], ...items: any[]) {
-		items.forEach(function(item) {
-			array.push(item);
-		});  
-    }
-    let a = [];  
-    push(a, 1, 2, 3);
-```
-
-- 函数重载
-
-```typescript
-    function reverse(x: number): number; // 定义  
-    function reverse(x: string): string; // 定义  
-    // 实现  
-    function reverse(x: number | string): number | string | void {  
-        if (typeof x === 'number') {  
-            return Number(x.toString().split('').reverse().join(''));  
-        } else if (typeof x === 'string') {  
-            return x.split('').reverse().join('');  
-        }  
-    }
-```
-
-#### 无类型 void
-
-没有任何类型，声明为 `void` 的变量只能被 `null & undefined` 赋值。
+与可选属性相似，注意的是，得放在最后，保证后面不能再有确定参数，写法为 `?:`
 
 ```ts
-const n: void = null
-const u: void = undefined
+function buildName(firstName: string, lastName?: string): string {
+	return firstName + ' ' + lastName;  
+}  
+let tomcat = buildName('Tom', 'Cat');  
+let tom = buildName('Tom');
+```
+
+- 参数默认值
+
+```typescript
+function buildName(firstName: string = 'Tom', lastName: string): string {
+	return firstName + ' ' + lastName;  
+}  
+let tomcat = buildName(undefined, 'Cat');  
+let tom = buildName('Tom');
+```
+
+- 函数重载（）
+
+```typescript
+function reverse(x: number): number; // 定义  
+function reverse(x: string): string; // 定义  
+// 实现  
+function reverse(x: number | string): number | string | void {  
+	if (typeof x === 'number') {  
+		return Number(x.toString().split('').reverse().join(''));  
+	} else if (typeof x === 'string') {  
+		return x.split('').reverse().join('');  
+	}  
+}
 ```
 
 #### 特殊类型 undefined null never
