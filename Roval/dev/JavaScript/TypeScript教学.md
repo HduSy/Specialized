@@ -111,9 +111,7 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 ### 数据类型
 
-#### 基础数据类型
-
-`number、string、boolean`
+#### number、string、boolean
 
 需要注意的是 `void` 与 `undefined&null` 区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，`void` 的常用场景就是定义函数无返回值，声明一个变量为 `void` 类型没有多大意义，因为只能被赋值为 `undefined&null`
 
@@ -148,6 +146,42 @@ const u: void = undefined
 function add(a: number, b: number):void {
 	console.log(a + b)
 }
+```
+
+#### never
+
+**永不** 存在值的类型，如抛出异常的函数、死循环。
+
+```ts
+function print(str: string): never {
+	throw new Error('TTT')
+}
+function print(str: string): never {
+	while(true) {
+		console.log(str)
+	}
+}
+```
+
+#### 数组类型
+
+- 类型 +[] 表示，如 `let arr: number[] = [1, 2, 3]`
+- 数组范型 `Array<element>` 表示，如 `let arr:Array<number> = [1, 2, 3]`
+- 接口表示（不推荐）
+
+```typescript
+    interface NumberArray {
+		[index: number]: any;  
+    }
+    let fibonacci: NumberArray = [1, '1', 2, 3, 5];
+```
+
+但是在表示 **类数组** 方面很 nice，如 `IArguments`, `NodeList`, `HTMLCollection`
+
+```typescript
+    function sum() {
+		let args: IArguments = arguments;  
+    }
 ```
 
 #### 类型推断
@@ -238,28 +272,6 @@ interface Person {
 
 - 只读属性：属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
 [[Type VS Interface]]
-
-#### 数组类型
-
-- 类型 +[] 表示，如 `let arr: number[] = [1, 2, 3]`
-- 数组范型 `Array<element>` 表示，如 `let arr:Array<number> = [1, 2, 3]`
-- 接口表示（不推荐）
-
-```typescript
-    interface NumberArray {
-		[index: number]: any;  
-    }
-    let fibonacci: NumberArray = [1, '1', 2, 3, 5];
-```
-
-但是在表示 **类数组** 方面很 nice，如 `IArguments`, `NodeList`, `HTMLCollection`
-
-```typescript
-    function sum() {
-		let args: IArguments = arguments;  
-    }
-
-```
 
 #### 函数类型
 
