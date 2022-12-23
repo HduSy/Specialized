@@ -163,9 +163,23 @@ function print(str: string): never {
 }
 ```
 
+没有类型是 never 的子类型或可以赋值给 never（any 也不行，never 本身除外）
+
+#### undefined null
+
+`undefined`、`null`、`never` 均是任何类型的子类型，可以赋值给其他类型的值。
+
+```ts
+let n: never
+const a: any = '1'
+n = a // no. Type 'any' is not assignable to type 'never'.
+```
+
 #### 数组类型
 
-- 类型 +[] 表示，如 `let arr: number[] = [1, 2, 3]`
+##### 表示方法
+
+- `类型 +[]` 表示，如 `let arr: number[] = [1, 2, 3]`
 - 数组范型 `Array<element>` 表示，如 `let arr:Array<number> = [1, 2, 3]`
 - 接口表示（不推荐）
 
@@ -184,6 +198,32 @@ function print(str: string): never {
     }
 ```
 
+##### 特点
+
+- 越界访问、赋值不报错；
+- 调用数组方法，push 元素时，类型必须一致。
+
+#### 元组 tuple
+
+##### 表示方法
+
+可以描述已知元素 **指定数量** 和 **指定类型** 的数组。
+
+```ts
+const x: [number, string] = [1, '1']
+```
+
+##### 特点
+
+- 越界访问、赋值报错；
+- 调用数组方法，push 一个 **已定义类型** 的元素时，不会报错。  
+
+```ts
+x.push(1) // ok
+x.push('1') // ok
+x.push(true) // no
+```
+
 #### 类型推断
 
 - 未明确指定一个变量的类型的的时候会推断该变量的类型
@@ -194,26 +234,6 @@ function print(str: string): never {
 - 联合类型通过 `|` 分隔
 		
 - 当 ts 并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
-
-#### 元组 tuple
-
-可以描述已知元素 **数量** 和 **类型** 的数组。
-
-```ts
-const x: [number, string] = [1, '1']
-```
-
-访问越界元素时，类型会自动推导为联合类型：
-
-```ts
-x[3] = '1' // ok. x[3] 类型为 string|number
-```
-
-对元组使用数组方法 push 一个已定义类型的值时，不会报错。
-
-```ts
-x.push(1)
-```
 
 #### 枚举 enum
 
@@ -234,7 +254,7 @@ enum EActInfoType {
 const type: string = EActInfoType[1] // type = 'Publish'
 ```
 
-#### 对象类型——接口 Interface
+#### interface
 
 接口一方面是对行为的抽象，具体实现则由类去实现，另一方面是对对象形状进行描述
 
@@ -310,17 +330,6 @@ function reverse(x: number | string): number | string | void {
 		return x.split('').reverse().join('');  
 	}  
 }
-```
-
-#### 特殊类型 undefined null never
-
-`undefined`、`null`、`never` 均是任何类型的子类型，可以赋值给其他类型的值。没有类型是 `never` 的子类型或可以赋值给 `never`（`any` 也不行，`never` 本身除外）。
-
-```ts
-let n: never
-const a: any = '1'
-n = a // notok. Type 'any' is not assignable to type 'never'.
-console.log(n)
 ```
 
 #### unknown & never
