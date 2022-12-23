@@ -224,6 +224,38 @@ x.push('1') // ok
 x.push(true) // no
 ```
 
+#### interface (Duck Typing)
+
+##### 描述对象
+
+- 确定属性
+- 只读属性
+- 可选属性
+- 任意类型
+1. 一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
+2. 任意属性可定义为联合类型
+
+```typescript
+interface Person {
+    name: string;
+    readonly id: number;
+    age?: number;  
+    [propName: string]: any;  
+}
+```
+
+##### 描述函数
+
+```typescript
+interface ISumFunc {
+	(x: number, y: number) : number
+}
+const sumNumber: ISumFunc = (x, y) => x + y
+```
+
+- 只读属性：属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
+[[Type VS Interface]]
+
 #### 类型推断
 
 - 未明确指定一个变量的类型的的时候会推断该变量的类型
@@ -253,45 +285,6 @@ enum EActInfoType {
 ```ts
 const type: string = EActInfoType[1] // type = 'Publish'
 ```
-
-#### interface
-
-接口一方面是对行为的抽象，具体实现则由类去实现，另一方面是对对象形状进行描述
-
-- 确定属性 少一个属性&多一个属性都是不允许的
-- 可选属性
-
-```typescript
-interface Person {
-    name: string;
-    age?: number;  
-}
-```
-
-- 任意属性
-
-```typescript
-interface Person {
-    name: string;
-    age?: number;
-    [propName: string]: any;  
-}
-```
-
-1. 一个接口中只能定义一个任意属性，且其余属性的类型必须是任意属性的子类型
-2. 任意属性可定义为联合类型
-
-```typescript
-    interface Person {
-		readonly id: number;
-		name: string;
-		age?: number;
-		[propName: string]: any;  
-    }
-```
-
-- 只读属性：属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
-[[Type VS Interface]]
 
 #### 函数类型
 
@@ -332,13 +325,6 @@ function reverse(x: number | string): number | string | void {
 }
 ```
 
-#### unknown & never
-
-##### never 妙用
-
-- unreachable code detect
-- exhaustive check
-
 ### 类型断言
 
 手动指定值的类型
@@ -372,33 +358,6 @@ function reverse(x: number | string): number | string | void {
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
 
 ### 接口 Interface
-
-#### 可选属性
-
-```ts
-interface Itest {
-	x?:number;
-}
-```
-
-#### 只读属性
-
-只能在对象创建时修改其属性值。
-
-```ts
-interface Itest {
-	readonly x:number;
-}
-let ro = R
-```
-
-#### 函数类型
-
-```
-interface SearchFunc {
-  (source: string, subString: string): boolean;
-}
-```
 
 #### 索引类型
 
