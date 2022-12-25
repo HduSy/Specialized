@@ -32,6 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c3fd08ded98562d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/daily/新冠日记.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -217,6 +230,8 @@
   },
   "active": "899f2875cdc74654",
   "lastOpenFiles": [
+    "Roval/daily/新冠日记.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/coder/2022H2自评.md",
     "Roval/coder/2022H1自评.md",
     "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
@@ -224,8 +239,6 @@
     "Roval/coder/2022H1.md",
     "Roval/coder/2021H2.md",
     "Excalidraw/ISRC.md",
-    "Excalidraw/Pasted Image 20221215100113_384.png",
-    "Excalidraw/Pasted Image 20221215100114_666.png",
-    "Excalidraw/卡片盒系统之卡片.md"
+    "Excalidraw/Pasted Image 20221215100113_384.png"
   ]
 }

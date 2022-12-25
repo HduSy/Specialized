@@ -363,7 +363,7 @@ function reverse(x: number | string): number | string | void {
 
 数字索引的返回值必须是字符串索引返回值类型的子类型，因为 `javascript` 会把数字类型索引转为字符串类型索引去取值。
 
-```
+```ts
 // 数字索引
 interface StringArray {
   [index: number]: string;
