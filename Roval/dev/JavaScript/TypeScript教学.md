@@ -345,9 +345,11 @@ const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" 
 
 定义了浏览器环境需要用到的类型
 
-## TS 高阶
+## TS 进阶
 
-### 联合类型 |
+### 高级类型（一）
+
+#### 联合类型 |
 
 表示一个变量支持多种类型。当 ts 不确定变量类型时，只能访问联合类型共有属性或方法。
 
@@ -357,7 +359,7 @@ num = 6
 num = '6'
 ```
 
-### 交叉类型 &
+#### 交叉类型 &
 
 类似接口继承，实现对对象形状的组合和扩展。[[type vs interface]]
 
@@ -372,15 +374,15 @@ const C:B = {
 }
 ```
 
-### 类型别名 type
+#### 类型别名 type
 
 类型起个别名，使得 ts 代码写起来简洁、清晰。[[type vs interface]]
 
-### 类型断言
+#### 类型断言
 
 值 as 类型
 
-### 字面量类型
+#### 字面量类型
 
 定义一些常量，只能从已定义常量中取值
 
@@ -388,12 +390,95 @@ const C:B = {
 type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
 ```
 
-### 声明文件
+#### 声明文件
 
 声明语句：声明语句中只能定义类型，不能定义具体实现  
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，ts 解析所有 .ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
 
-## 泛型
+#### 泛型
+
+定义函数、类、接口时不必预先指定类型，而是在使用时指定具体类型。
+
+##### 基本使用
+
+###### 约束函数
+
+像 **占位符** 一样，在定义类型时作为参数传入。
+
+```ts
+function print<T = number>(param: T):T {
+	console.log(param)
+	return param
+}
+
+function swap<T, U>(tuple: [T, U]):[U, T] {
+	return [tuple[1], tuple[0]]
+}
+```
+
+###### 约束泛型
+
+泛型通过继承接口，可对泛型进行一定的约束，如，要求传入的类型一定要有 length 属性，否则报错
+
+```ts
+interface ILength {
+	length: number
+}
+function printLength<T extends ILength>(param: T):number {
+	return param.length
+}
+
+printLength('ttt') // ok
+printLength([1,2,3]) // ok
+printLength({length: 1}) // ok
+printLength(666) // no
+```
+
+##### 应用
+
+###### 泛型约束类
+
+```ts
+class stack <T> {
+	private data: T[] = []
+	push(item: T) {
+		return this.data.push(item)
+	}
+
+	pop(): T| undefined {
+		return this.data.pop()
+	}
+}
+
+const numStack = new stack<number>()
+numStack.push(1) // ok
+numStack.push('1') // no
+const strStack = new stack<string>()
+strStack.push('1') // ok
+strStack.push(1) // no
+```
+
+###### 泛型约束接口
+
+接口定义更加灵活
+
+```ts
+interface IParam<T, U> {
+	key: T;
+	value: U;
+}
+
+const param1:IParam<string, number> = {key: '1', value: 1}
+const param2:IParam<number, string> = {key: 1, value: '1'}
+```
+
+###### 泛型定义数组
+
+```ts
+const param3: Array<number> = [1,2,3]
+```
+
+### 高级类型（二）
 
 ## 拥抱 TS 之代码中的实践
 
