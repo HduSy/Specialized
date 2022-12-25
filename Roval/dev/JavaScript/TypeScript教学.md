@@ -254,7 +254,7 @@ const sumNumber: ISumFunc = (x, y) => x + y
 ```
 
 - 只读属性：属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
-[[Type VS Interface]]
+[[type vs interface]]
 
 #### 类型推断
 
@@ -356,120 +356,6 @@ function reverse(x: number | string): number | string | void {
 声明语句：声明语句中只能定义类型，不能定义具体实现
 
 声明文件：声明语句放在一个 `.d.ts` 结尾的文件中即是声明文件，typescript 解析所有.ts 文件，因而包含 `.d.ts` 的声明文件，在其他 ts 文件中就可以获得声明文件中的定义了
-
-### 接口 Interface
-
-#### 索引类型
-
-数字索引的返回值必须是字符串索引返回值类型的子类型，因为 `javascript` 会把数字类型索引转为字符串类型索引去取值。
-
-```ts
-// 数字索引
-interface StringArray {
-  [index: number]: string;
-}
-// 字符串索引
-interface StringArray {
-  [index: string]: string;
-}
-// 设置只读
-interface StringArray {
-  readonly [index: string]: string;
-}
-```
-
-#### 接口继承类
-
-当接口继承了一个类类型时，同样会继承到类的 private 和 protected 成员，这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。
-
-```ts
-class Control {
-    private state: any;
-}
-interface SelectableControl extends Control {
-    select(): void;
-}
-// ok
-class Button extends Control implements SelectableControl {
-    select() { }
-}
-class TextBox extends Control {
-
-}
-// not ok
-// Error: Property 'state' is missing in type 'Image'.
-class Image implements SelectableControl {
-    select() { }
-}
-
-class Location {
-
-}
-```
-
-### 类型 Type
-
-#### type VS interface
-
-声明对象的类型——interface  
-声明类型别名——type
-
-##### 相同点
-
-对 **接口定义** 的两种不同形式，目的都是一样的，都是用来定义 **对象** 或者 **函数** 的形状
-
-##### 不同点
-
-type 能做到，interface 不能做到：
-
-- type 可以定义 **基本类型的别名**，如 `type myString = string`
-- type 可以通过 **typeof** 操作符来定义，如 `type myType = typeof someObj`
-- type 可以声明 **联合类型**，如 `type unionType = myType1 | myType2`
-- type 可以声明 **元组类型**，如 `type yuanzu = [myType1, myType2]`  
-interface 能做到，type 不能做到：  
-interface 可以 **声明合并**，type 会覆盖只保留最后一个声明：
-
-```typescript
-	interface test {
-		name: string
-	}
-	interface test {
-		age: number 
-	} 
-	/* 
-	test实际为 
-	{
-		name: string;
-		age: number 
-	}
-	*/
-```
-
-- interface 新建了一个类型，type 不会新建一个类型而只是创建了一个别名来引用类型；
-- 继承写法
-
-```ts
-// 接口继承接口extends
-interface Alarm {
-    alert(): void;
-}
-
-interface LightableAlarm extends Alarm {
-    lightOn(): void;
-    lightOff(): void;
-}
-// type不能extends\implement
-type num = {
-  num:number;
-}
-interface IStrNum extends num {
-  str:string;
-}
-// 与上面等价
-type TStrNum = A & {
-  str:string;
-}
-```
 
 ## 拥抱 TS 之代码中的实践
 
