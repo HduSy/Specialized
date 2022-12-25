@@ -256,36 +256,6 @@ const sumNumber: ISumFunc = (x, y) => x + y
 - 只读属性：属性前加 `readonly`, 只读的约束只在第一次给对象赋值而非第一次给只读属性赋值  
 [[type vs interface]]
 
-#### 类型推断
-
-- 未明确指定一个变量的类型的的时候会推断该变量的类型
-- 当定义变量未赋值时，之后该变量都会成为 any 类型
-
-#### 联合类型
-
-- 联合类型通过 `|` 分隔
-		
-- 当 ts 并不知道联合类型的变量属于哪个类型时，只能访问联合类型共有的属性&方法
-
-#### 枚举 enum
-
-为一组 **数值** 赋予友好名字，默认从 0 开始。
-
-```ts
-enum EActInfoType {  
-  NormalSave,  
-  Publish,  
-  PublishOnSchedule,  
-  Rollback,  
-}
-```
-
-也可以由索引拿到名字：
-
-```ts
-const type: string = EActInfoType[1] // type = 'Publish'
-```
-
 #### 函数类型
 
 - 可选参数
@@ -325,31 +295,98 @@ function reverse(x: number | string): number | string | void {
 }
 ```
 
+#### enum
+
+用来定义常量。数值递增。
+
+```ts
+enum EActInfoType {  
+  NormalSave,  // 0
+  Publish,  // 1
+  PublishOnSchedule,  // 2
+  Rollback,  // 3
+}
+```
+
+反向映射，由枚举值拿到枚举名。
+
+```ts
+const type: string = EActInfoType[1] // type = 'Publish'
+```
+
+const 常量枚举，编译后的代码简洁。
+
+```ts
+const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" }
+```
+
+#### 类型推断
+
+1. 变量声明未赋值为 any 类型；
+2. 变量赋值时；
+3. 为函数指定默认参数时；
+4. 未明确指定函数返回值类型时；
+
+#### 内置类型
+
+##### JS 内置
+
+`number` `boolean` `string` `null` `undefined` `object` `bigint` `symbol`
+
+##### ECMA
+
+`Array` `Error` `RegExp` `Date`
+
+##### DOM BOM
+
+`HTMLElement` `NodeList` `MouseEvent` 等等等
+
+##### TS 核心库
+
+定义了浏览器环境需要用到的类型
+
+## TS 高阶
+
+### 联合类型 |
+
+表示一个变量支持多种类型。当 ts 不确定变量类型时，只能访问联合类型共有属性或方法。
+
+```ts
+let num: number|string;
+num = 6
+num = '6'
+```
+
+### 交叉类型 &
+
+类似接口继承，实现对对象形状的组合和扩展。[[type vs interface]]
+
+```ts
+type A = {
+	a: string
+}
+type B = A & {b: string}
+const C:B = {
+	a: 'hehe',
+	b: 'haha'
+}
+```
+
+### 类型别名 type
+
+类型起个别名，使得 ts 代码写起来简洁、清晰。[[type vs interface]]
+
 ### 类型断言
 
-手动指定值的类型
+值 as 类型
 
-- 用途一：将联合类型断言为具体类型，骗过 TS 编译器使得编译不报错（因为联合类型在使用时，只能调用共用的属性或方法，否则编译报错），但不能避免运行时报错；
-		
-- 用途二：将父类断言为子类，从而访问父类上没有的方法
-		
-- 用途三：将类型断言为 any，如 `(window as any).foo = 1;`
-		
-- 用途四：将 " 烂代码 " 中的 any 类型断言为任意具体类型
-		
-		- TS是结构类型系统，类型之间的对比只会比较它们最终的结构，而会忽略定义时的关系。要使得 `A` 能够被断言为 `B`，只需要 `A` 兼容 `B` 或 `B` 兼容 `A` 即可，这里的`兼容`指的就是`涵盖`
-				
-- 除非迫不得已，千万别用双重断言
-		
-- 类型断言 VS 类型转换：类型断言并不会改变变量本身类型，编译后都会去掉
-		
-- 类型断言 VS 类型声明：类型声明比类型断言更加严格，
-		
-		1. `animal` 断言为 `Cat`，只需要满足 `Animal` 兼容 `Cat` 或 `Cat` 兼容 `Animal` 即可
-				
-		2. `animal` 赋值给 `tom`，需要满足 `Cat` 兼容 `Animal` 才行
-				
-- 类型断言 VS 范型：最优解决方案
+### 字面量类型
+
+定义一些常量，只能从已定义常量中取值
+
+```ts
+type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
+```
 
 ### 声明文件
 

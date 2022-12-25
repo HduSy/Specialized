@@ -56,7 +56,8 @@ const person: User = {name:'Tom',age:18}
 
 ## 不同点
 
-`type` 可以声明 **基本类型的别名**、**联合类型**、**元组类型**；可通过 `typeof` 获取实例类型进行赋值；
+- 目的不同，`interface` 用来描述对象形状，`type` 用来给类型起个别名，方便代码书写简洁；
+- `type` 可以声明 **基本类型的别名**、**联合类型**、**元组类型**；可通过 `typeof` 获取实例类型进行赋值；
 
 ```ts
 type Name = string
@@ -65,7 +66,7 @@ type Address = [string, string]
 type DomType = typeof xxx
 ```
 
-`interface` 会发生 **声明合并**，而 `type` 会覆盖且只保留最后一个声明;
+- `interface` 会发生 **声明合并**，而 `type` 不允许重复声明会报 duplicate 错;
 
 ```typescript
 	interface test {

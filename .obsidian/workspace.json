@@ -26,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "file": "Roval/dev/JavaScript/type vs interface.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,7 +214,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "9ecd88ea82eeda56",
+  "active": "c85c7e7cf86384c1",
   "lastOpenFiles": [
     "Roval/dev/JavaScript/type vs interface.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
