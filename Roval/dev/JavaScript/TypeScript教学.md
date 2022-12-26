@@ -483,6 +483,39 @@ const param3: Array<number> = [1,2,3]
 
 ### 高级类型（二）
 
+#### 索引类型
+
+##### keyof
+
+获取某种类型的所有键，返回类型是联合类型
+
+##### T[K]
+
+获取接口 T 的 K 属性代表的类型
+
+#### 映射类型
+
+##### in
+
+遍历联合类型
+
+```ts
+type Person = "name"|"age"|"school"
+type Obj = {
+	[k in Person]: string
+}
+// 实际上，
+type Obj = {  
+	name: string;  
+	age: string;  
+	school: string;  
+}
+```
+
+##### Partial\<T\>
+
+将类型 T 的所有属性映射为可选
+
 ## 拥抱 TS 之代码中的实践
 
 ### 摘要
