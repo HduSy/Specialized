@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "Roval/coder/fktask.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -117,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "Roval/coder/fktask.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "Roval/coder/fktask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "Roval/coder/fktask.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/daily/新冠日记.md"
+                "file": "Roval/coder/fktask.md"
               }
             }
           }
@@ -216,12 +216,12 @@
   },
   "active": "5c709aa8dd0a06a1",
   "lastOpenFiles": [
+    "Roval/daily/新冠日记.md",
     "Roval/coder/fktask.md",
     "Roval/coder/2021H2自评.md",
     "Roval/coder/Proxyman flash 配置.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/JavaScript/类型体操.md",
-    "Roval/daily/新冠日记.md",
     "Untitled.canvas",
     "Excalidraw/Excalidraw_20221226104752.md",
     "手游情报站.md",
