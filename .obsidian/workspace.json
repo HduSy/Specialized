@@ -4,29 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "85fe7446b0018ad3",
+        "id": "31636e41bf362b8d",
         "type": "tabs",
         "children": [
           {
-            "id": "6b2b560919a0d574",
+            "id": "eca35d214c60e826",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "708b0de503f1ffcc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.1.9"
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 329.5024719238281
   },
   "right": {
     "id": "71a4fcca78732a2a",
@@ -96,6 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -138,6 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -167,7 +164,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "f7ea6788a8935bc7",
@@ -179,7 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/dev/JavaScript/TypeScript教学.md"
+              }
             }
           }
         ]
@@ -202,17 +202,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "708b0de503f1ffcc",
+  "active": "eca35d214c60e826",
   "lastOpenFiles": [
+    "Roval/daily/新冠日记.md",
+    "Untitled.canvas",
+    "Excalidraw/Excalidraw_20221226104752.md",
     "手游情报站.md",
     "Roval/coder/coder-content.md",
     "Roval/dev/样式/clip-path.md",
     "Roval/dev/样式/background.md",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
-    "Roval/idea/Obsidian 主题 Demo 演示.md",
-    "Roval/dev/JavaScript/错误处理.md",
-    "Roval/dev/JavaScript/强类型、弱类型、静态类型、动态类型.md",
-    "Roval/idea/科学上网指北.md"
+    "Roval/idea/Obsidian 主题 Demo 演示.md"
   ]
 }
