@@ -516,6 +516,124 @@ type Obj = {
 
 将类型 T 的所有属性映射为可选
 
+```ts
+type Partial<T> = {
+	[P in keyof T]?: T[P]
+}
+```
+
+##### Readonly\<T\>
+
+将类型 T 的所有属性映射为只读
+
+```ts
+type Readonly<T> = {
+	readonly [P in keyof T]: T[P]
+}
+```
+
+##### Pick<T, K>
+
+从类型 T 中挑选属性 K 组成新的类型。第一个参数为目标类型，第二个参数必须取自目标类型属性字面量联合类型。
+
+```ts
+type Pick<T, K extends keyof T> = {
+	[P in K]: T[P]
+}
+```
+
+##### Record<K, T>
+
+创建一个新的类型
+
+```ts
+type Record<K extends keyof any, T> = {
+	[P in K]: T
+}
+```
+
+##### 条件类型
+
+```ts
+T extends U ? X : Y 
+//若类型 T 可被赋值给类型 U,那么结果类型就是 X 类型,否则就是 Y 类型
+```
+
+##### Exclude<T, U>
+
+联合类型 T 中剔除联合类型 U 剩下的部分
+
+```ts
+type Test = Exclude<'a'|'b'|'c', 'b'>
+// type Test = "a" | "c"
+```
+
+原理
+
+```ts
+type Exclude<T, U> = T extends U ? never : T
+```
+
+never 与其他类型联合结果为其他类型
+
+##### Extract<T, U>
+
+提取联合类型 T 与联合类型 U 交集
+
+```ts
+type Test = Extract<'key1' | 'key2', 'key1'>
+// type Test = "key1"
+```
+
+原理
+
+```ts
+type Extract<T, U> = T extends U ? T : never
+```
+
+##### Omit<T, U>
+
+从类型 T 中剔除类型 U 中的所有属性
+
+```ts
+interface IPer {
+	name: string;
+	age: number;
+}
+type TT = Omit<IPer, 'name'>
+// type TT = {age: number;}
+```
+
+##### NonNullable\<T\>
+
+过滤类型 T 中的 null、undefined 类型
+
+```ts
+type NonNullable<T> = T extends null | undefined ? never : T
+```
+
+##### Parameters\<T\>
+
+获取函数参数类型，T 为函数类型
+
+```ts
+type T3 = Parameters<(arg1: string, arg2: number) => void> // [arg1: string, arg2: number]
+
+const p: T3 = ['', 0]
+```
+
+##### ReturnType\<T\>
+
+获取函数返回值类型，T 为函数类型
+
+```ts
+type T1 = ReturnType<(s: string) => void> // void
+```
+
+#### 类型体操
+
+ts 高级类型会根据传入的类型参数如 T、U 得出新的类型，这个过程涉及类型计算逻辑，该逻辑就为 **类型体操**（社区对一些复杂类型计算逻辑的戏称）
+
 ## 拥抱 TS 之代码中的实践
 
 ### 摘要
