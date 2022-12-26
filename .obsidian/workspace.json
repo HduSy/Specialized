@@ -164,8 +164,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "f7ea6788a8935bc7",
@@ -204,6 +203,8 @@
   },
   "active": "eca35d214c60e826",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/类型体操.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/daily/新冠日记.md",
     "Untitled.canvas",
     "Excalidraw/Excalidraw_20221226104752.md",
@@ -211,8 +212,6 @@
     "Roval/coder/coder-content.md",
     "Roval/dev/样式/clip-path.md",
     "Roval/dev/样式/background.md",
-    "Roval/dev/样式/experience/绝对定位居中.md",
-    "Roval/dev/JavaScript/TypeScript教学.md",
-    "Roval/idea/Obsidian 主题 Demo 演示.md"
+    "Roval/dev/样式/experience/绝对定位居中.md"
   ]
 }
