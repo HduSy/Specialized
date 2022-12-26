@@ -1,14 +1,13 @@
 {
-  "baseFontSize": 14,
-  "cssTheme": "Prism",
-  "accentColor": "",
+  "baseFontSize": 12,
+  "cssTheme": "Dracula for Obsidian",
+  "accentColor": "#40ea34",
   "theme": "obsidian",
   "baseFontSizeAction": true,
   "showViewHeader": true,
   "nativeMenus": true,
   "translucency": false,
   "enabledCssSnippets": [
-    "self",
-    "self-bold"
+    "self"
   ]
 }
