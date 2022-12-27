@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e248b2fe9e48af8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +104,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/daily/新冠日记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/daily/新冠日记.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -187,10 +201,10 @@
     "direction": "horizontal",
     "width": 398.5
   },
-  "active": "5c709aa8dd0a06a1",
+  "active": "e248b2fe9e48af8b",
   "lastOpenFiles": [
-    "Roval/coder/fktask.md",
     "Roval/daily/新冠日记.md",
+    "Roval/coder/fktask.md",
     "Roval/coder/2021H2自评.md",
     "Roval/coder/Proxyman flash 配置.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
