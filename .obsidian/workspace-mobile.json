@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "1a4da0c0df015f86",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d83d99a782074b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "105b3770b96fd8a4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c36fb9697caff04",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "55763206413927e0",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c885bc6acea28257",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "6dea5de462bb07bf",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "c914a9fe9fe56673",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c856f68fb6fe256c",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "a453ad539a6d9905",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "5acd9f6e3ae62a74",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "d9071b6f9faa3f06",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "105b3770b96fd8a4",
+  "lastOpenFiles": [
+    "Roval/dev/tools/dev useful websites.md",
+    "Roval/coder/coder-content.md",
+    "Roval/essay/网络文章/技术阅读.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/2022H2晋升答辩小记.md",
+    "conflict-files-obsidian-git.md",
+    "Roval/coder/Untitled 1.md",
+    "Roval/coder/Untitled.md",
+    "Roval/coder/tmp.md",
+    "Roval/coder/Pasted image 20220815110542.png"
+  ]
+}
