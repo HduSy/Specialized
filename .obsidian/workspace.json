@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/fktask.md",
+                "file": "Roval/coder/小记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/fktask.md",
+                "file": "Roval/coder/小记.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/fktask.md",
+                "file": "Roval/coder/小记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/fktask.md",
+                "file": "Roval/coder/小记.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/fktask.md"
+                "file": "Roval/coder/小记.md"
               }
             }
           }
@@ -189,8 +189,8 @@
   },
   "active": "ec1a95c76c82a138",
   "lastOpenFiles": [
-    "Roval/daily/新冠日记.md",
     "Roval/coder/fktask.md",
+    "Roval/daily/新冠日记.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/coder/Pasted image 20221228121243.png",
