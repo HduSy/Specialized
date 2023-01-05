@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/fktask.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/fktask.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/fktask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/fktask.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "Roval/coder/fktask.md"
               }
             }
           }
@@ -189,6 +189,7 @@
   },
   "active": "ec1a95c76c82a138",
   "lastOpenFiles": [
+    "Roval/coder/小记.md",
     "Roval/coder/fktask.md",
     "Roval/daily/新冠日记.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
@@ -197,7 +198,6 @@
     "Roval/coder/Pasted image 20221228115956.png",
     "Roval/dev/Git/Git 使用.md",
     "conflict-files-obsidian-git.md",
-    "Roval/coder/2021H2自评.md",
-    "Roval/coder/Proxyman flash 配置.md"
+    "Roval/coder/2021H2自评.md"
   ]
 }
