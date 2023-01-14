@@ -213,6 +213,10 @@
     },
     "Remove Multiple Blank Lines on Paste": {
       "Condenses multiple blank lines down into one blank line for the text to paste": false
+    },
+    "Auto-correct Common Misspellings": {
+      "Uses a dictionary of common misspellings to automatically convert them to their proper spellings. See [auto-correct map](https://github.com/platers/obsidian-linter/tree/master/src/utils/auto-correct-misspellings.ts) for the full list of auto-corrected words.": false,
+      "Ignore Words": ""
     }
   },
   "lintOnSave": true,

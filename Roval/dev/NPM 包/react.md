@@ -21,9 +21,15 @@ Last Modified：2022-12-17 22:19:23
 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
 - more
 
-## state
+## UI 呈现所需最小状态原则 - state
 
-![[Pasted image 20230114165200.png]]
+![[Pasted image 20230114165200.png]]  
+
+说人话就是：
+
+1. 随时间改变；
+2. 非 prop 传递；
+4. 可计算得来；
 
 ## 相关生态库
 
