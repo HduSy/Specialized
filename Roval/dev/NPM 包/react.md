@@ -21,6 +21,10 @@ Last Modified：2022-12-17 22:19:23
 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
 - more
 
+## state
+
+![[Pasted image 20230114165200.png]]
+
 ## 相关生态库
 
 - react-loadable
