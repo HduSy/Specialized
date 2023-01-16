@@ -13,28 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/小记.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b18b403eade26473",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/coder/fktask.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,8 +69,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -105,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/coder/fktask.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -148,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/coder/fktask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/coder/fktask.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -192,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md"
+                "file": "Roval/coder/fktask.md"
               }
             }
           }
@@ -216,17 +201,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b18b403eade26473",
+  "active": "ec1a95c76c82a138",
   "lastOpenFiles": [
+    "Roval/coder/小记.md",
+    "Roval/dev/NPM 包/React.md",
     "Roval/coder/fktask.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/Git/Git 简写.md",
-    "Roval/coder/小记.md",
     "Roval/daily/新冠日记.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/coder/Pasted image 20221228121243.png",
-    "Roval/coder/Pasted image 20221228115956.png",
-    "conflict-files-obsidian-git.md"
+    "Roval/coder/Pasted image 20221228115956.png"
   ]
 }
