@@ -11,11 +11,30 @@
             "id": "d6bcd9ea6ee1206d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/2021H2.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3806866a708c868f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/defer 与 async 标签区别.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,6 +104,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Roval/前端面经/defer 与 async 标签区别.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -127,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/前端面经/defer 与 async 标签区别.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,6 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/前端面经/defer 与 async 标签区别.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -168,7 +190,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/前端面经/defer 与 async 标签区别.md"
+              }
             }
           }
         ]
@@ -191,17 +215,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d6bcd9ea6ee1206d",
+  "active": "3806866a708c868f",
   "lastOpenFiles": [
-    "Roval/coder/fktask.md",
+    "Roval/coder/2021H2.md",
+    "Roval/coder/面经.md",
     "Roval/coder/小记.md",
+    "Roval/coder/fktask.md",
     "Roval/dev/NPM 包/React.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/Git/Git 简写.md",
     "Roval/daily/新冠日记.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
-    "Roval/dev/开发经验/front-end.md",
-    "Roval/coder/Pasted image 20221228121243.png",
-    "Roval/coder/Pasted image 20221228115956.png"
+    "Roval/dev/开发经验/front-end.md"
   ]
 }
