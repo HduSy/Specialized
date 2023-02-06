@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/defer 与 async 标签区别.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -76,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#React",
+                "query": "张",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/defer 与 async 标签区别.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/defer 与 async 标签区别.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/defer 与 async 标签区别.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/defer 与 async 标签区别.md"
+                "file": "Roval/dev/杂/一些网站.md"
               }
             }
           }
@@ -228,17 +228,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3806866a708c868f",
+  "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
-    "Roval/前端面经/DOMContentLoaded.md",
+    "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/前端面经/defer 与 async 标签区别.md",
+    "Roval/前端面经/DOMContentLoaded.md",
     "Roval/coder/2021H2.md",
     "Roval/coder/面经.md",
     "Roval/coder/小记.md",
     "Roval/coder/fktask.md",
     "Roval/dev/NPM 包/React.md",
     "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/Git/Git 简写.md",
-    "Roval/daily/新冠日记.md"
+    "Roval/dev/Git/Git 简写.md"
   ]
 }
