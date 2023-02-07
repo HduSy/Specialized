@@ -24,12 +24,9 @@
             "id": "3806866a708c868f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "Roval/coder/Pasted image 20230207105530.png"
               }
             }
           },
@@ -37,13 +34,8 @@
             "id": "4bebce0e5cde68c1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -76,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "张",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/coder/Pasted image 20230207105530.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -160,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/coder/Pasted image 20230207105530.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/coder/Pasted image 20230207105530.png",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -204,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md"
+                "file": "Roval/coder/Pasted image 20230207105530.png"
               }
             }
           }
@@ -230,15 +222,15 @@
   },
   "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
+    "Roval/coder/Pasted image 20230207105542.png",
+    "Roval/coder/Pasted image 20221219152950.png",
+    "Roval/coder/Pasted image 20220815110542.png",
+    "Roval/coder/fktask.md",
+    "Roval/dev/杂/一些网站.md",
+    "Roval/coder/2021H2.md",
     "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/前端面经/defer 与 async 标签区别.md",
     "Roval/前端面经/DOMContentLoaded.md",
-    "Roval/coder/2021H2.md",
-    "Roval/coder/面经.md",
-    "Roval/coder/小记.md",
-    "Roval/coder/fktask.md",
-    "Roval/dev/NPM 包/React.md",
-    "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/Git/Git 简写.md"
+    "Roval/coder/面经.md"
   ]
 }
