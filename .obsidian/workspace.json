@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "06baa638d44365ee",
+        "id": "cb9f3b2ea7d4befd",
         "type": "tabs",
         "children": [
           {
-            "id": "07d6df88f681e327",
+            "id": "028b80bda73f1262",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
+                "file": "Roval/coder/fktask.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "张",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
+                "file": "Roval/coder/fktask.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -113,7 +113,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.1613991940943191,
+                  "scale": 1.7846470091170055,
                   "close": true
                 }
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
+                "file": "Roval/coder/fktask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
+                "file": "Roval/coder/fktask.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/工程化.md"
+                "file": "Roval/coder/fktask.md"
               }
             }
           }
@@ -201,17 +201,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "07d6df88f681e327",
+  "active": "028b80bda73f1262",
   "lastOpenFiles": [
-    "Roval/dev/NPM 包/lint-staged.md",
-    "Roval/dev/NPM 包/husky.md",
-    "Roval/dev/杂/工程化.md",
-    "Roval/dev/NPM 包/stylelint.md",
-    "Roval/dev/NPM 包/fontmin.md",
-    "Roval/dev/NPM 包/prettier.md",
-    "Roval/前端面经/DOMContentLoaded.md",
     "Roval/coder/2021H2.md",
-    "Roval/dev/NPM 包/Eslint.md",
-    "Roval/dev/NPM 包/commitizen.md"
+    "Roval/coder/Pasted image 20230207105530.png",
+    "Roval/coder/Pasted image 20230207105542.png",
+    "Roval/coder/Pasted image 20221219152950.png",
+    "Roval/coder/Pasted image 20220815110542.png",
+    "Roval/coder/fktask.md",
+    "Roval/dev/杂/一些网站.md",
+    "Roval/essay/技术文章个人整理/本地数据缓存.md",
+    "Roval/前端面经/defer 与 async 标签区别.md",
+    "Roval/前端面经/DOMContentLoaded.md"
   ]
 }
