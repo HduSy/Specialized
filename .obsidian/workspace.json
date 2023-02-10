@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/dev/JavaScript/模块化.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9c21f0f4a69ebe07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/JavaScript/String.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "阮",
+                "query": "tag:#JavaScript",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,7 +104,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/dev/JavaScript/String.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/dev/JavaScript/String.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "Roval/dev/JavaScript/String.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md"
+                "file": "Roval/dev/JavaScript/String.md"
               }
             }
           }
@@ -202,17 +215,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "028b80bda73f1262",
+  "active": "9c21f0f4a69ebe07",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/模块化.md",
+    "Roval/dev/JavaScript/fetch.md",
+    "Roval/dev/JavaScript/正则表达式.md",
+    "Roval/dev/JavaScript/事件处理.md",
+    "Roval/dev/杂/一些网站.md",
     "Roval/coder/fktask.md",
     "Roval/coder/2021H2.md",
     "Roval/coder/Pasted image 20230207105530.png",
     "Roval/coder/Pasted image 20230207105542.png",
-    "Roval/coder/Pasted image 20221219152950.png",
-    "Roval/coder/Pasted image 20220815110542.png",
-    "Roval/dev/杂/一些网站.md",
-    "Roval/essay/技术文章个人整理/本地数据缓存.md",
-    "Roval/前端面经/defer 与 async 标签区别.md",
-    "Roval/前端面经/DOMContentLoaded.md"
+    "Roval/coder/Pasted image 20221219152950.png"
   ]
 }
