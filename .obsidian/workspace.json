@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/模块化.md",
+                "file": "Roval/coder/小记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/正则表达式.md",
+                "file": "Roval/dev/JavaScript/String.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "String",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/JavaScript/正则表达式.md",
+                "file": "Roval/coder/小记.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -147,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/JavaScript/正则表达式.md",
+                "file": "Roval/coder/小记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/JavaScript/正则表达式.md",
+                "file": "Roval/coder/小记.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -191,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/JavaScript/正则表达式.md"
+                "file": "Roval/coder/小记.md"
               }
             }
           }
@@ -215,14 +214,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "9c21f0f4a69ebe07",
+  "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/String.md",
+    "Roval/dev/JavaScript/RegExp.md",
+    "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/JavaScript/Pasted image 20230213114020.png",
     "Roval/dev/JavaScript/Pasted image 20220307165656.png",
     "Roval/dev/JavaScript/Pasted image 20220307165426.png",
-    "Roval/dev/JavaScript/正则表达式.md",
-    "Roval/dev/JavaScript/String.md",
-    "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/JavaScript/fetch.md",
     "Roval/dev/JavaScript/事件处理.md",
     "Roval/dev/杂/一些网站.md",

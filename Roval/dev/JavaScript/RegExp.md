@@ -22,20 +22,10 @@ const res = str.match(regx) // ['data:image/png', 'png']
 const ext = res[1]
 ```
 
-## match
+## 在 String 方法中的应用
 
-### tip
+### [[String#match]]
 
-![[Pasted image 20230213114327.png]]
-
-### 实践
-
-```js
-const str = 'ComponentNameTestRegexp'
-console.log(stra.match(/([a-z\d])([A-Z])/g))
-// (3)['tN', 'eT', 'tR']
-console.log(stra.match(/([a-z\d])([A-Z])/))
-// (3)['tN', 't', 'N', index: 8, input: 'ComponentNameTestRegexp', groups: undefined]
-```
+### [[String#replace]]
 
 # Reference
