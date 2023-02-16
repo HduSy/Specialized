@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/面经/Untitled.md",
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -130,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/面经/Untitled.md",
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -173,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/面经/Untitled.md",
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/面经/Untitled.md",
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/面经/Untitled.md"
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md"
               }
             }
           }
@@ -243,6 +243,7 @@
   },
   "active": "a474424f43830681",
   "lastOpenFiles": [
+    "Roval/coder/面经/AVIF.md",
     "Roval/coder/面经/浏览器市场占有率调查.md",
     "Roval/dev/JavaScript/String.md",
     "Roval/coder/review/2021春节许愿前端问题复盘.md",
@@ -251,7 +252,6 @@
     "Roval/coder/review/Untitled.md",
     "Roval/coder/小记.md",
     "Roval/dev/JavaScript/RegExp.md",
-    "Roval/dev/JavaScript/模块化.md",
-    "Roval/dev/JavaScript/Pasted image 20230213114020.png"
+    "Roval/dev/JavaScript/模块化.md"
   ]
 }
