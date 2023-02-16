@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/review/2021春节许愿前端问题复盘.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -32,8 +32,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6efcf2ec722de074",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/面经/浏览器市场占有率调查.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a474424f43830681",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/面经/Untitled.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -62,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "面经",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/面经/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -146,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/面经/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/coder/面经/Untitled.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -190,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "Roval/coder/面经/Untitled.md"
               }
             }
           }
@@ -214,17 +241,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "14e1169b99dcb7e3",
+  "active": "a474424f43830681",
   "lastOpenFiles": [
+    "Roval/coder/面经/浏览器市场占有率调查.md",
     "Roval/dev/JavaScript/String.md",
+    "Roval/coder/review/2021春节许愿前端问题复盘.md",
+    "Roval/coder/2021时光机.md",
+    "Roval/coder/面经.md",
+    "Roval/coder/review/Untitled.md",
+    "Roval/coder/小记.md",
     "Roval/dev/JavaScript/RegExp.md",
     "Roval/dev/JavaScript/模块化.md",
-    "Roval/dev/JavaScript/Pasted image 20230213114020.png",
-    "Roval/dev/JavaScript/Pasted image 20220307165656.png",
-    "Roval/dev/JavaScript/Pasted image 20220307165426.png",
-    "Roval/dev/JavaScript/fetch.md",
-    "Roval/dev/JavaScript/事件处理.md",
-    "Roval/dev/杂/一些网站.md",
-    "Roval/coder/fktask.md"
+    "Roval/dev/JavaScript/Pasted image 20230213114020.png"
   ]
 }
