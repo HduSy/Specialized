@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "小记",
+                "query": "RegE",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "Roval/dev/JavaScript/RegExp.md"
               }
             }
           }
@@ -204,6 +204,7 @@
   },
   "active": "baa44dd41f5a7b18",
   "lastOpenFiles": [
+    "Roval/coder/小记.md",
     "Roval/coder/面经/浏览器市场占有率调查.md",
     "Roval/coder/面经/AVIF.md",
     "Roval/dev/JavaScript/String.md",
@@ -211,7 +212,6 @@
     "Roval/coder/2021时光机.md",
     "Roval/coder/面经.md",
     "Roval/coder/review/Untitled.md",
-    "Roval/coder/小记.md",
     "Roval/dev/JavaScript/RegExp.md",
     "Roval/dev/JavaScript/模块化.md"
   ]
