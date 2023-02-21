@@ -3,7 +3,7 @@ Last Modified：2022-12-17 22:15:27
 
 # Tags
 
-#Npm包
+#Npm包 #后端
 
 # Content
 
@@ -11,7 +11,7 @@ Last Modified：2022-12-17 22:15:27
 
 ### 控制器 Controller
 
-控制器接收处理应用程序特定请求，路由策略控制着哪些控制器接收哪些请求。一个控制器可以有多个路由，不同路由执行不同处理程序。（cli.controller.ts）
+控制器接收 **处理** 应用程序特定 **请求**，**返回响应**。路由策略控制着哪些控制器接收哪些请求。一个控制器可以有多个路由，不同路由执行不同处理程序。（cli.controller.ts）
 
 #### 创建
 
@@ -159,9 +159,8 @@ export class CliModule {}
 
 两种方式创建自定义 `Nest` 中间件：
 
-1) 函数中创建；
-
-2) 由 `@Injectable` 装饰的，实现了（`implements`）`NestMiddle` 接口的类。
+1. 函数中创建；
+2. 由 `@Injectable` 装饰的，实现了（`implements`）`NestMiddle` 接口的类。
 
 #### 应用中间件
 
@@ -477,6 +476,5 @@ export class LoggingInterceptor implements NestInterceptor{
 
 # Reference
 
-1) [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
-
-2) [中文文档](https://docs.nestjs.cn/)
+1. [书栈网](https://www.bookstack.cn/read/nestjs-8-zh/README.md)  
+2. [中文文档](https://docs.nestjs.cn/)
