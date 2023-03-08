@@ -13,25 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/杂/工程化.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
-          },
-          {
-            "id": "bce36dafd512427c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.15"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -60,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "小记",
+                "query": "npm",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/杂/工程化.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -145,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/杂/工程化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "Roval/dev/杂/工程化.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -189,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "Roval/dev/杂/工程化.md"
               }
             }
           }
@@ -213,10 +202,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "bce36dafd512427c",
+  "active": "9feee2242ef25628",
   "lastOpenFiles": [
-    "Roval/dev/JavaScript/RegExp.md",
+    "Roval/dev/NPM 包/Eslint.md",
     "Roval/coder/小记.md",
+    "Roval/dev/JavaScript/RegExp.md",
     "Roval/coder/面经/浏览器市场占有率调查.md",
     "Roval/coder/面经/AVIF.md",
     "Roval/dev/JavaScript/String.md",
