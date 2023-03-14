@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "71a18c6e7d632cb3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,7 +213,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "9feee2242ef25628",
+  "active": "71a18c6e7d632cb3",
   "lastOpenFiles": [
     "Roval/dev/NPM 包/Eslint.md",
     "Roval/coder/小记.md",
