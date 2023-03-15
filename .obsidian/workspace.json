@@ -4,23 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "23ed8ee512b5f687",
+        "id": "e672436796980a53",
         "type": "tabs",
         "children": [
           {
-            "id": "baa44dd41f5a7b18",
+            "id": "9c87f80223d09c66",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/杂/工程化.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6d8ee79a5b8aeb7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +95,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +137,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +153,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/工程化.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Roval/dev/杂/工程化.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -202,8 +201,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "baa44dd41f5a7b18",
+  "active": "b6d8ee79a5b8aeb7",
   "lastOpenFiles": [
+    "Roval/dev/杂/工程化.md",
     "Roval/coder/面经/浏览器市场占有率调查.md",
     "Roval/dev/NPM 包/Eslint.md",
     "Roval/coder/小记.md",
