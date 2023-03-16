@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9ec4ded0f2c69d44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "era-tasklist.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "张",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +96,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -105,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "era-tasklist.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -148,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "era-tasklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md",
+                "file": "era-tasklist.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -192,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/一些网站.md"
+                "file": "era-tasklist.md"
               }
             }
           }
@@ -216,8 +228,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "71a18c6e7d632cb3",
+  "active": "9ec4ded0f2c69d44",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Roval/dev/杂/一些网站.md",
     "Roval/dev/NPM 包/Eslint.md",
     "Roval/coder/小记.md",
     "Roval/dev/JavaScript/RegExp.md",
