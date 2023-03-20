@@ -11,12 +11,9 @@
             "id": "baa44dd41f5a7b18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "temp/era-tasklist.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "temp/Pasted image 20230320155238.png"
               }
             }
           }
@@ -90,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "temp/era-tasklist.md",
+                "file": "temp/Pasted image 20230320155238.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "temp/era-tasklist.md",
+                "file": "temp/Pasted image 20230320155238.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "temp/era-tasklist.md",
+                "file": "temp/Pasted image 20230320155238.png",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "temp/era-tasklist.md"
+                "file": "temp/Pasted image 20230320155238.png"
               }
             }
           }
@@ -203,9 +200,10 @@
   },
   "active": "baa44dd41f5a7b18",
   "lastOpenFiles": [
-    "temp/Pasted image 20230317170943.png.md",
     "temp/Pasted image 20230317162832.png",
     "temp/era-tasklist.md",
+    "temp/Pasted image 20230320155238.png",
+    "temp/Pasted image 20230317170943.png.md",
     "temp/Pasted image 20230317170943.png",
     "temp/Pasted image 20230317110639.png",
     "temp/Pasted image 20230317110031.png",
