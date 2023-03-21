@@ -4,31 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "23ed8ee512b5f687",
+        "id": "45dcffcf2392773d",
         "type": "tabs",
         "children": [
           {
-            "id": "baa44dd41f5a7b18",
+            "id": "d67d75bdcf68bdcc",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "temp/Pasted image 20230320155238.png"
-              }
-            }
-          },
-          {
-            "id": "7903b975a32ab238",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.16"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "temp/Pasted image 20230320155238.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -141,7 +127,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "temp/Pasted image 20230320155238.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +143,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "temp/Pasted image 20230320155238.png",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -184,9 +168,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "temp/Pasted image 20230320155238.png"
-              }
+              "state": {}
             }
           }
         ]
@@ -209,11 +191,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7903b975a32ab238",
+  "active": "d67d75bdcf68bdcc",
   "lastOpenFiles": [
+    "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",
     "temp/era-tasklist.md",
-    "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317170943.png.md",
     "temp/Pasted image 20230317170943.png",
     "temp/Pasted image 20230317110639.png",
