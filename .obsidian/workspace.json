@@ -16,8 +16,19 @@
                 "file": "temp/Pasted image 20230320155238.png"
               }
             }
+          },
+          {
+            "id": "7903b975a32ab238",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,7 +209,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "baa44dd41f5a7b18",
+  "active": "7903b975a32ab238",
   "lastOpenFiles": [
     "temp/Pasted image 20230317162832.png",
     "temp/era-tasklist.md",
