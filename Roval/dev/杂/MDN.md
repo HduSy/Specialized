@@ -14,9 +14,15 @@ Last Modified：2022-12-17 21:18:02
 
 ## 响应式图片
 
-[响应式图片 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 设计问题&分辨率切换问题；sizes&srcset  
-srcset 设置几组图片及固有宽度；  
-sizes 依媒体查询设置槽宽；  
-浏览器检测屏幕宽度 ->sizes 定槽宽 ->根据 srcset 固有宽度取合适图片资源 ->加载并显示
+[响应式图片 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)  
+
+针对设计问题&分辨率切换问题，srcset 设置几组图片及固有宽度，sizes 依媒体查询设置槽宽
+
+### 响应检测顺序
+
+1. 浏览器检测屏幕宽度
+2. sizes 定槽宽
+3. 根据 srcset 固有宽度取合适图片资源
+4. 加载并显示
 
 # Reference

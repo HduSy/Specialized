@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Daily/2023-04-12.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,8 +69,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Daily/2023-04-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Daily/2023-04-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Daily/2023-04-12.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -179,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/MDN.md"
+                "file": "Daily/2023-04-12.md"
               }
             }
           }
@@ -205,13 +204,13 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
+    "Daily/2023-04-07.md",
+    "Roval/dev/杂/MDN.md",
     "Daily/2023-04-12.md",
     "Roval/dev/杂/NPM.md",
     "temp/era-tasklist.md",
     "Roval/dev/杂/YARN.md",
     "Daily/2023-04-06.md",
-    "Roval/dev/杂/MDN.md",
-    "Daily/2023-04-07.md",
     "Daily/2023-04-04.md",
     "Roval/daily/新冠日记.md",
     "Roval/daily",
