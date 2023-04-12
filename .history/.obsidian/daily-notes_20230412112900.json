@@ -1,0 +1,8 @@
+{
+<<<<<<< HEAD
+  "folder": "Roval/daily",
+=======
+  "folder": "Daily",
+>>>>>>> 681c75e (fix: fatal cant read)
+  "autorun": false
+}

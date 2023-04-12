@@ -1,0 +1,50 @@
+Created Date：2023-04-04 10:05:25  
+Last Modified：2023-04-04 10:05:24
+
+# Tags
+
+#前端工程化
+
+# Content
+
+## Yarn
+
+### Resolution
+
+关于 `package.json` 中 `resolutions` 的配置项使用，[resolutions 替换二进制文件镜像地址](https://segmentfault.com/a/1190000021168459)，一些二进制文件并不能通过修改源地址为镜像地址来规避，而且自主编译的成功率也低得多，也就是说通过这种方式 yarn、npm 拿它也没办法。查看源码，会发现安装完后额外使用二进制文件编译的模块多使用 [bin-wrapper](https://www.npmjs.com/package/bin-wrapper) 执行下载和编译。如 `pngquant-bin`：
+
+```javascript install.js
+'use strict';  
+const path = require('path');  
+const BinWrapper = require('bin-wrapper');  
+const pkg = require('../package.json');  
+  
+const url = `https://raw.githubusercontent.com/imagemin/pngquant-bin/v${pkg.version}/vendor/`;  
+  
+module.exports = new BinWrapper()  
+ .src(`${url}macos/pngquant`, 'darwin')  
+ .src(`${url}linux/x86/pngquant`, 'linux', 'x86')  
+ .src(`${url}linux/x64/pngquant`, 'linux', 'x64')  
+ .src(`${url}freebsd/x64/pngquant`, 'freebsd', 'x64')  
+ .src(`${url}win/pngquant.exe`, 'win32')  
+ .dest(path.resolve(__dirname, '../vendor'))  
+ .use(process.platform === 'win32' ? 'pngquant.exe' : 'pngquant');
+```
+
+于是乎，如果在这之前，把下载地址替换成镜像地址，问题便迎刃而解了。[bin-wrapper-china](https://github.com/best-shot/bin-wrapper-china) 的解决思路就是如此。配合 `yarn` 的 `resolutions` 功能，安装时指定特定模块。
+
+```json package.json
+"resolutions": {  
+  "bin-wrapper": "npm:bin-wrapper-china"  
+}
+```
+
+## Lerna
+
+### 描述
+
+`monorepo: lerna + yarn`  
+
+[使用](https://segmentfault.com/a/1190000023059277)
+
+# Reference

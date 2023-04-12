@@ -14,7 +14,11 @@
   "updateSubmodules": false,
   "syncMethod": "merge",
   "customMessageOnAutoBackup": false,
+<<<<<<< HEAD
+  "autoBackupAfterFileChange": false,
+=======
   "autoBackupAfterFileChange": true,
+>>>>>>> 681c75e (fix: fatal cant read)
   "treeStructure": false,
   "refreshSourceControl": true,
   "basePath": "",
