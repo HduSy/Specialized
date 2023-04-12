@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "bdee5bc6c1f2449b",
+        "id": "5cef0a62e00155b5",
         "type": "tabs",
         "children": [
           {
-            "id": "4d4a724772c1a938",
+            "id": "0f61019ce9dd86d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/杂/MDN.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -86,6 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Roval/dev/杂/MDN.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -128,6 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/dev/杂/MDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,6 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/dev/杂/MDN.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -157,7 +165,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "f7ea6788a8935bc7",
@@ -169,7 +178,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/dev/杂/MDN.md"
+              }
             }
           }
         ]
@@ -192,43 +203,41 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "4d4a724772c1a938",
+  "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
-    "Roval/dev/杂/工程化.md",
-    "Daily/npm-exec.md",
-    "Roval/dev/杂/第三方包.md",
-    "Roval/dev/杂/PNPM.md",
-    "Daily/Pasted image 20230406091646.png",
+    "Daily/2023-04-12.md",
     "Roval/dev/杂/NPM.md",
-    "Roval/dev/杂/MDN.md",
+    "temp/era-tasklist.md",
     "Roval/dev/杂/YARN.md",
-    "Roval/dev/NPM 包/React.md",
-    "Roval/daily/新冠日记.md",
-    "Daily/Pasted image 20230407095946.png",
-    "Daily/新冠日记.md",
     "Daily/2023-04-06.md",
-    "Daily/Pasted image 20230407100026.png",
-    "Daily/2023-04-04.md",
-    "Daily/PLAN.png",
-    "Plan/日积月累.md",
+    "Roval/dev/杂/MDN.md",
     "Daily/2023-04-07.md",
+    "Daily/2023-04-04.md",
+    "Roval/daily/新冠日记.md",
     "Roval/daily",
-    "Plan/PLAN.md",
-    "Roval/coder/2022H2自评.md",
-    "Roval/coder/个人发展计划周表.md",
-    "ob-template/template.md",
-    "职业经验之谈/前端技术评审关注点.md",
+    "temp/Pasted image 20230317162832.png",
+    "temp/Pasted image 20230320155238.png",
+    "Roval/dev/杂/工程化.md",
+    "Untitled.canvas",
+    "Plan/日积月累.md",
+    "Daily/Pasted image 20230406091646.png",
+    "Daily/npm-exec.md",
+    "Roval/dev/杂/PNPM.md",
     "Roval/dev/杂/Mermaid.md",
     "Roval/dev/杂/Chrome控制台.md",
     "Roval/dev/杂/一些网站.md",
     "Roval/dev/杂/新词新概念.md",
+    "Roval/dev/杂/第三方包.md",
     "Roval/dev/NPM 包/qs.md",
     "Roval/dev/NPM 包/portal-vue.md",
-    "Untitled.canvas",
+    "Daily/Untitled.md",
+    "Roval/daily/2023-04-04.md",
+    "Daily/新冠日记.md",
+    "Roval/dev/NPM 包/React.md",
     "Daily",
-    "temp/Pasted image 20230320155238.png",
+    "Roval/dev/NPM 包/react-redux.md",
+    "Roval/dev/Git/Git 简写.md",
     "Plan",
-    "temp/Pasted image 20230317162832.png",
     "temp/Pasted image 20230317170943.png",
     "temp/Pasted image 20230317110639.png",
     "temp/Pasted image 20230317110031.png",
