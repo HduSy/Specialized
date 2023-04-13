@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-04-12.md",
+                "file": "Daily/2023-04-13.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-04-12.md",
+                "file": "Daily/2023-04-13.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-04-12.md",
+                "file": "Daily/2023-04-13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-04-12.md",
+                "file": "Daily/2023-04-13.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-04-12.md"
+                "file": "Daily/2023-04-13.md"
               }
             }
           }
@@ -186,7 +186,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,9 +205,10 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
+    "Daily/2023-04-12.md",
+    "Daily/2023-04-13.md",
     "Daily/2023-04-07.md",
     "Roval/dev/杂/MDN.md",
-    "Daily/2023-04-12.md",
     "Roval/dev/杂/NPM.md",
     "temp/era-tasklist.md",
     "Roval/dev/杂/YARN.md",
@@ -235,7 +237,6 @@
     "Roval/dev/NPM 包/React.md",
     "Daily",
     "Roval/dev/NPM 包/react-redux.md",
-    "Roval/dev/Git/Git 简写.md",
     "Plan",
     "temp/Pasted image 20230317170943.png",
     "temp/Pasted image 20230317110639.png",
