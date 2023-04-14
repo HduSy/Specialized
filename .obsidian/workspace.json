@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-04-13.md",
+                "file": "Daily/2023-04-14.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-04-13.md",
+                "file": "Daily/2023-04-14.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-04-13.md",
+                "file": "Daily/2023-04-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-04-13.md",
+                "file": "Daily/2023-04-14.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-04-13.md"
+                "file": "Daily/2023-04-14.md"
               }
             }
           }
@@ -186,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,6 +205,7 @@
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
     "Daily/2023-04-12.md",
+    "Daily/2023-04-14.md",
     "Daily/2023-04-13.md",
     "Daily/2023-04-07.md",
     "Roval/dev/杂/MDN.md",
@@ -236,7 +236,6 @@
     "Daily/新冠日记.md",
     "Roval/dev/NPM 包/React.md",
     "Daily",
-    "Roval/dev/NPM 包/react-redux.md",
     "Plan",
     "temp/Pasted image 20230317170943.png",
     "temp/Pasted image 20230317110639.png",
