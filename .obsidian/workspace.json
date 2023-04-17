@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-04-14.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MDN",
+                "query": "warn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-04-14.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-04-14.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-04-14.md",
+                "file": "Roval/idea/Obsidian 插件 Admonition.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-04-14.md"
+                "file": "Roval/idea/Obsidian 插件 Admonition.md"
               }
             }
           }
@@ -204,8 +205,8 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
-    "Daily/2023-04-12.md",
     "Daily/2023-04-14.md",
+    "Daily/2023-04-12.md",
     "Daily/2023-04-13.md",
     "Daily/2023-04-07.md",
     "Roval/dev/杂/MDN.md",

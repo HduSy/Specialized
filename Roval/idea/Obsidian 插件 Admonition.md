@@ -182,4 +182,4 @@ title:1
 
 # Reference
 
-1) [Github](https://github.com/valentine195/obsidian-admonition)
+1. [Github](https://github.com/valentine195/obsidian-admonition)
