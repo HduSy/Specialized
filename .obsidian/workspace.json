@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/idea/Obsidian 插件 Admonition.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "张鑫",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/idea/Obsidian 插件 Admonition.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/Obsidian 插件 Admonition.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/Obsidian 插件 Admonition.md",
+                "file": "Roval/dev/杂/一些网站.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/Obsidian 插件 Admonition.md"
+                "file": "Roval/dev/杂/一些网站.md"
               }
             }
           }
@@ -205,6 +205,7 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
+    "Roval/idea/Obsidian 插件 Admonition.md",
     "Daily/2023-04-18.md",
     "Daily/2023-04-14.md",
     "Daily/2023-04-12.md",
@@ -235,7 +236,6 @@
     "Roval/dev/NPM 包/portal-vue.md",
     "Daily/Untitled.md",
     "Roval/daily/2023-04-04.md",
-    "Daily/新冠日记.md",
     "Daily",
     "Plan",
     "temp/Pasted image 20230317170943.png",
