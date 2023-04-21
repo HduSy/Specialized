@@ -10,7 +10,8 @@ Last Modified：2022-12-17 21:18:02
 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) on('message', ()=>{})  
 [display 指定内外部显示类型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display)  
 [display 指定内外部显示类型](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display)  
-[event.stopImmediatePropagation - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopImmediatePropagation)
+[event.stopImmediatePropagation - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopImmediatePropagation)  
+[URLSearchParams - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
 
 ## 响应式图片
 
