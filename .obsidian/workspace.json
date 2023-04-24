@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-04-21.md",
+                "file": "Daily/新冠日记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-04-21.md",
+                "file": "Daily/新冠日记.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-04-21.md",
+                "file": "Daily/新冠日记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-04-21.md",
+                "file": "Daily/新冠日记.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-04-21.md"
+                "file": "Daily/新冠日记.md"
               }
             }
           }
@@ -186,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,24 +204,22 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
-    "Daily/2023-04-04.md",
-    "Daily/2023-04-21.md",
-    "Roval/dev/杂/MDN.md",
-    "Roval/前端面经/DOMContentLoaded.md",
+    "Daily/2023-04-24.md",
     "Daily/2023-04-19.md",
-    "Daily/2023-04-13.md",
+    "Daily/2023-04-21.md",
     "Daily/2023-04-20.md",
-    "Roval/dev/杂/一些网站.md",
     "Daily/Pasted image 20230419094956.png",
-    "Roval/idea/Obsidian 插件 Admonition.md",
     "Daily/2023-04-18.md",
+    "Daily/2023-04-13.md",
+    "Daily/2023-04-06.md",
+    "Daily/2023-04-07.md",
     "Daily/2023-04-14.md",
     "Daily/2023-04-12.md",
-    "Daily/2023-04-07.md",
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/NPM.md",
     "temp/era-tasklist.md",
     "Roval/dev/杂/YARN.md",
-    "Daily/2023-04-06.md",
+    "Daily/2023-04-04.md",
     "Roval/daily/新冠日记.md",
     "Roval/daily",
     "temp/Pasted image 20230317162832.png",
@@ -235,8 +232,10 @@
     "Roval/dev/杂/PNPM.md",
     "Roval/dev/杂/Mermaid.md",
     "Roval/dev/杂/Chrome控制台.md",
+    "Roval/dev/杂/一些网站.md",
     "Roval/dev/杂/新词新概念.md",
     "Roval/dev/杂/第三方包.md",
+    "Roval/dev/NPM 包/qs.md",
     "Daily",
     "Plan",
     "temp/Pasted image 20230317170943.png",
