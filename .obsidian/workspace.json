@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Daily/2023-05-08.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,8 +69,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,7 +90,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Daily/2023-05-08.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -134,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Daily/2023-05-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Daily/2023-05-08.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -179,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md"
+                "file": "Daily/2023-05-08.md"
               }
             }
           }
@@ -206,6 +205,8 @@
   },
   "active": "0f61019ce9dd86d6",
   "lastOpenFiles": [
+    "Roval/dev/杂/第三方包.md",
+    "Daily/2023-05-08.md",
     "Roval/dev/杂/一些网站.md",
     "Daily/2023-04-24.md",
     "Daily/2023-04-07.md",
@@ -236,8 +237,6 @@
     "Daily/npm-exec.md",
     "Roval/dev/杂/PNPM.md",
     "Roval/dev/杂/Mermaid.md",
-    "Roval/dev/杂/Chrome控制台.md",
-    "Roval/dev/杂/新词新概念.md",
     "Daily",
     "Plan",
     "temp/Pasted image 20230317170943.png",
