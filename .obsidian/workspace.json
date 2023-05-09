@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5cef0a62e00155b5",
+        "id": "53df435771fd1a45",
         "type": "tabs",
         "children": [
           {
-            "id": "0f61019ce9dd86d6",
+            "id": "480bc47f44bea88a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily/2023-05-08.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -68,6 +63,14 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "8326e4c7addfa67c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -90,7 +93,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-05-08.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -133,7 +135,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-05-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-05-08.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,9 +177,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Daily/2023-05-08.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -203,10 +201,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0f61019ce9dd86d6",
+  "active": "480bc47f44bea88a",
   "lastOpenFiles": [
-    "Roval/dev/杂/第三方包.md",
     "Daily/2023-05-08.md",
+    "Roval/dev/杂/第三方包.md",
     "Roval/dev/杂/一些网站.md",
     "Daily/2023-04-24.md",
     "Daily/2023-04-07.md",
