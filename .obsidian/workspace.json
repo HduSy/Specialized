@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "53df435771fd1a45",
+        "id": "419b044a9d908d99",
         "type": "tabs",
         "children": [
           {
-            "id": "480bc47f44bea88a",
+            "id": "0845ae5ed58a2f9a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2023-05-09.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -93,6 +98,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Daily/2023-05-09.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -135,6 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Daily/2023-05-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,6 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Daily/2023-05-09.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -177,7 +185,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Daily/2023-05-09.md"
+              }
             }
           }
         ]
@@ -201,8 +211,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "480bc47f44bea88a",
+  "active": "0845ae5ed58a2f9a",
   "lastOpenFiles": [
+    "Daily/2023-05-09.md",
     "Daily/2023-05-08.md",
     "Roval/dev/杂/第三方包.md",
     "Roval/dev/杂/一些网站.md",
@@ -234,7 +245,6 @@
     "Daily/Pasted image 20230406091646.png",
     "Daily/npm-exec.md",
     "Roval/dev/杂/PNPM.md",
-    "Roval/dev/杂/Mermaid.md",
     "Daily",
     "Plan",
     "temp/Pasted image 20230317170943.png",
