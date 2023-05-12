@@ -26,15 +26,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Roval/dev/开发工具/iTerms2.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "e7dd5d7fa87e90f1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npm包",
+                "query": "iter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Roval/dev/开发工具/iTerms2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -156,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Roval/dev/开发工具/iTerms2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md",
+                "file": "Roval/dev/开发工具/iTerms2.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -201,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/第三方包.md"
+                "file": "Roval/dev/开发工具/iTerms2.md"
               }
             }
           }
@@ -226,13 +236,13 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "861c21ee6dc67e6b",
+  "active": "e7dd5d7fa87e90f1",
   "lastOpenFiles": [
+    "Roval/dev/杂/第三方包.md",
     "Daily/2023-05-10.md",
     "Daily/2023-04-07.md",
     "Daily/2023-05-09.md",
     "Daily/2023-05-08.md",
-    "Roval/dev/杂/第三方包.md",
     "Roval/dev/杂/一些网站.md",
     "Daily/2023-04-24.md",
     "Daily/2023-04-21.md",
