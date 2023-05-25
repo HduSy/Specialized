@@ -32,19 +32,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e7dd5d7fa87e90f1",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -219,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 398.5,
-    "collapsed": true
+    "width": 398.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,7 +225,7 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e7dd5d7fa87e90f1",
+  "active": "861c21ee6dc67e6b",
   "lastOpenFiles": [
     "Roval/dev/杂/第三方包.md",
     "Daily/2023-05-10.md",
