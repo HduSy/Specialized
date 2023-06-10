@@ -24,14 +24,30 @@
             "id": "0403fcf6f6cf710c",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.5"
+                "file": "Plan/日积月累.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c217740357f98036",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Plan/杭州准备计划.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +125,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-06-06.md",
+                "file": "Plan/杭州准备计划.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -152,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-06-06.md",
+                "file": "Plan/杭州准备计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-06-06.md",
+                "file": "Plan/杭州准备计划.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -197,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-06-06.md"
+                "file": "Plan/杭州准备计划.md"
               }
             }
           }
@@ -221,8 +237,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0403fcf6f6cf710c",
+  "active": "14e1169b99dcb7e3",
   "lastOpenFiles": [
+    "Plan/日积月累.md",
+    "Plan/杭州准备计划.md",
     "Daily/2023-04-13.md",
     "Daily/2023-06-06.md",
     "Daily/Untitled.md",
@@ -249,8 +267,6 @@
     "Daily/2023-04-14.md",
     "Daily/2023-04-12.md",
     "Roval/dev/杂/NPM.md",
-    "temp/era-tasklist.md",
-    "Roval/dev/杂/YARN.md",
     "Roval/daily",
     "temp/Pasted image 20230317162832.png",
     "temp/Pasted image 20230320155238.png",
