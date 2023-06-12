@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6d83d99a782074b4",
+        "id": "efa09c092fa31e6e",
         "type": "tabs",
         "children": [
           {
-            "id": "105b3770b96fd8a4",
+            "id": "395a8abe53628ccf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -58,6 +58,14 @@
             "sortOrder": "frequency",
             "useHierarchy": true
           }
+        }
+      },
+      {
+        "id": "34a23e102bd17a8c",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
         }
       }
     ],
@@ -113,8 +121,23 @@
     ],
     "currentTab": 0
   },
-  "active": "105b3770b96fd8a4",
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "395a8abe53628ccf",
   "lastOpenFiles": [
+    "Plan/杭州准备计划.md",
     "Roval/dev/tools/dev useful websites.md",
     "Roval/coder/coder-content.md",
     "Roval/essay/网络文章/技术阅读.md",

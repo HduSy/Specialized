@@ -37,30 +37,14 @@
             "id": "c217740357f98036",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Plan/杭州准备计划.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c76dea98d4b81f5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plan/日积月累.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "Plan/Pasted image 20230610124906.png"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +122,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Plan/日积月累.md",
+                "file": "Daily/2023-06-06.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Plan/日积月累.md",
+                "file": "Daily/2023-06-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Plan/日积月累.md",
+                "file": "Daily/2023-06-06.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -226,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Plan/日积月累.md"
+                "file": "Daily/2023-06-06.md"
               }
             }
           }
@@ -254,8 +238,8 @@
   "lastOpenFiles": [
     "Plan/杭州准备计划.md",
     "Plan/Pasted image 20230610124906.png.md",
-    "Plan/日积月累.md",
     "Plan/Pasted image 20230610124906.png",
+    "Plan/日积月累.md",
     "Daily/2023-04-13.md",
     "Daily/2023-06-06.md",
     "Daily/Untitled.md",
