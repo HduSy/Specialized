@@ -1,67 +1,40 @@
 {
   "main": {
-    "id": "1a4da0c0df015f86",
+    "id": "2695394fead7422e",
     "type": "split",
     "children": [
       {
-        "id": "c0c31f356b6b30ed",
+        "id": "fa7c8f10afd3ec8c",
         "type": "tabs",
         "children": [
           {
-            "id": "40eaced98576a6e3",
+            "id": "a81622ef55ee9948",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-06-06.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0403fcf6f6cf710c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plan/日积月累.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c217740357f98036",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily/2023-06-12.md",
+                "file": "Roval/rider/科学训练.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "317d2957f5fb5f5c",
+    "id": "5fb910d55b82e9fe",
     "type": "split",
     "children": [
       {
-        "id": "ff419d1472c490c8",
+        "id": "3adbb37496418b5b",
         "type": "tabs",
         "children": [
           {
-            "id": "14e1169b99dcb7e3",
+            "id": "72f1b5a0dd505363",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -71,7 +44,7 @@
             }
           },
           {
-            "id": "9feee2242ef25628",
+            "id": "a0b49ed9eb86a64a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -86,18 +59,7 @@
             }
           },
           {
-            "id": "c9a578f1e48709c0",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "8326e4c7addfa67c",
+            "id": "a511bc77da23914a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -108,67 +70,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5024719238281
+    "width": 300
   },
   "right": {
-    "id": "71a4fcca78732a2a",
+    "id": "004473861237bd88",
     "type": "split",
     "children": [
       {
-        "id": "912bea9f20451dd9",
+        "id": "d5d457569c9e7c43",
         "type": "tabs",
-        "dimension": 42.0997920997921,
         "children": [
           {
-            "id": "32d4730a394d450b",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Daily/2023-06-12.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1.7846470091170055,
-                  "close": true
-                }
-              }
-            }
-          },
-          {
-            "id": "551168ab89ee8e7c",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "47905a53fa05f52b",
+            "id": "299e4bbaa419cf79",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-06-12.md",
+                "file": "Roval/rider/科学训练.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,106 +98,116 @@
             }
           },
           {
-            "id": "c717fd34029393ab",
+            "id": "bda2a51448cd182d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-06-12.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": false
+                "file": "Roval/rider/科学训练.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f7472499d3c57b4c",
+            "id": "bab4ffebd1dd3976",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "f7ea6788a8935bc7",
-        "type": "tabs",
-        "dimension": 57.9002079002079,
-        "children": [
+          },
           {
-            "id": "bd3d285e0198cd64",
+            "id": "aeeb22088cec0590",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-06-12.md"
+                "file": "Roval/rider/科学训练.md"
               }
             }
+          },
+          {
+            "id": "b6bd4c9d1f4a4530",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 398.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "c217740357f98036",
+  "active": "a81622ef55ee9948",
   "lastOpenFiles": [
-    "Plan/日积月累.md",
-    "Daily/2023-06-12.md",
-    "Daily/Untitled.md",
-    "Daily/2023-04-04.md",
     "Plan/Pasted image 20230610124906.png",
-    "Daily/2023-06-06.md",
+    "Plan/日积月累.md",
     "Plan/杭州准备计划.md",
-    "Plan/Pasted image 20230610124906.png.md",
-    "Daily/2023-04-13.md",
-    "Roval/dev/开发经验/front-end.md",
-    "Daily/2023-05-09.md",
-    "Roval/rider/ISRC.md",
-    "Roval/rider/Pasted image 20230525092638.png",
-    "Roval/dev/开发工具/iTerms2.md",
-    "Roval/dev/杂/第三方包.md",
-    "Daily/2023-05-10.md",
-    "Daily/2023-04-07.md",
-    "Daily/2023-05-08.md",
-    "Roval/dev/杂/一些网站.md",
-    "Daily/2023-04-24.md",
-    "Daily/2023-04-21.md",
-    "Roval/dev/杂/MDN.md",
-    "Roval/前端面经/DOMContentLoaded.md",
-    "Daily/2023-04-19.md",
-    "Daily/2023-04-20.md",
-    "Daily/Pasted image 20230419094956.png",
-    "Roval/idea/Obsidian 插件 Admonition.md",
-    "Daily/2023-04-18.md",
-    "Daily/2023-04-14.md",
-    "Roval/daily",
-    "temp/Pasted image 20230317162832.png",
+    "Roval/daily/新冠日记.md",
+    "Roval/coder/2022H1自评.md",
+    "Roval/coder/2021时光机.md",
+    "未命名.md",
+    "职业经验之谈/前端技术评审关注点.md",
+    "职业经验之谈",
+    "temp/era-tasklist.md",
     "temp/Pasted image 20230320155238.png",
-    "Untitled.canvas",
-    "Daily/Pasted image 20230406091646.png",
-    "Daily",
-    "Plan",
-    "temp/Pasted image 20230317170943.png",
-    "temp/Pasted image 20230317110639.png",
-    "temp/Pasted image 20230317110031.png",
-    "temp/任务组件技术设计.png",
+    "temp/Pasted image 20230317162832.png",
     "temp",
-    "职业经验之谈"
+    "ob-template/template.md",
+    "ob-template",
+    "font/SmileySans-Oblique.ttf.woff2",
+    "font",
+    "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
+    "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
+    "Roval/essay/书籍/《经济学原理》/Pasted image 20221213211338.png",
+    "Roval/essay/书籍/《经济学原理》/Pasted image 20221213100036.png",
+    "Roval/essay/书籍/《经济学原理》/Pasted image 20221211144930.png",
+    "Roval/dev/样式/experience/绝对定位居中.md",
+    "Roval/dev/样式/experience/CSS 换行.md",
+    "Roval/essay/技术文章个人整理/本地数据缓存.md",
+    "Roval/essay/书籍/《经济学原理》",
+    "Roval/dev/算法/递归.md",
+    "Roval/dev/样式/word-wrap.md",
+    "Roval/dev/样式/word-break.md",
+    "Roval/dev/样式/white-space.md",
+    "Roval/dev/样式/shape-outside.md",
+    "Roval/dev/样式/scss 使用.md",
+    "Roval/dev/样式/linear-gradient.md",
+    "Roval/dev/样式/function.md",
+    "Roval/dev/样式/experience",
+    "Roval/dev/样式/clip-path.md",
+    "Roval/dev/样式/border.md",
+    "Roval/dev/样式/Pasted image 20220511113040.png",
+    "Roval/dev/样式/Pasted image 20220208150310.png",
+    "Roval/dev/开发经验/Pasted image 20220211105336.png",
+    "Roval/dev/元素标签/Pasted image 20220704182525.png",
+    "Roval/dev/NPM 包/Pasted image 20230115231217.png",
+    "Roval/essay/技术文章个人整理",
+    "Roval/essay/书籍",
+    "Roval/dev/算法",
+    "Untitled.canvas"
   ]
 }
