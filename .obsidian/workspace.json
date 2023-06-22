@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a4ff2b412722c4ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/rider/《自行车训练圣经》.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/科学训练.md",
+                "file": "Roval/rider/《自行车训练圣经》.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/科学训练.md",
+                "file": "Roval/rider/《自行车训练圣经》.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/科学训练.md"
+                "file": "Roval/rider/《自行车训练圣经》.md"
               }
             }
           },
@@ -160,8 +174,11 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "a81622ef55ee9948",
+  "active": "a4ff2b412722c4ed",
   "lastOpenFiles": [
+    "Roval/rider/Pasted image 20230622085706.png",
+    "Roval/rider/科学训练.md",
+    "Roval/rider/《自行车训练圣经》.md",
     "Plan/Pasted image 20230610124906.png",
     "Plan/日积月累.md",
     "Plan/杭州准备计划.md",
@@ -198,13 +215,10 @@
     "Roval/dev/样式/linear-gradient.md",
     "Roval/dev/样式/function.md",
     "Roval/dev/样式/experience",
-    "Roval/dev/样式/clip-path.md",
-    "Roval/dev/样式/border.md",
     "Roval/dev/样式/Pasted image 20220511113040.png",
     "Roval/dev/样式/Pasted image 20220208150310.png",
     "Roval/dev/开发经验/Pasted image 20220211105336.png",
     "Roval/dev/元素标签/Pasted image 20220704182525.png",
-    "Roval/dev/NPM 包/Pasted image 20230115231217.png",
     "Roval/essay/技术文章个人整理",
     "Roval/essay/书籍",
     "Roval/dev/算法",
