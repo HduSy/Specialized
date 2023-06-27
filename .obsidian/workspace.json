@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-04-04.md",
+                "file": "Daily/2023-06-27.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-04-04.md",
+                "file": "Daily/2023-06-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-04-04.md",
+                "file": "Daily/2023-06-27.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-04-04.md"
+                "file": "Daily/2023-06-27.md"
               }
             }
           },
@@ -162,6 +162,8 @@
   },
   "active": "a4ff2b412722c4ed",
   "lastOpenFiles": [
+    "Daily/2023-04-04.md",
+    "Daily/2023-06-27.md",
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230623163900.png",
@@ -200,7 +202,6 @@
     "Roval/dev/样式/shape-outside.md",
     "Roval/dev/样式/scss 使用.md",
     "Roval/dev/样式/linear-gradient.md",
-    "Roval/dev/样式/function.md",
     "Roval/dev/样式/experience",
     "Roval/dev/样式/Pasted image 20220511113040.png",
     "Roval/dev/样式/Pasted image 20220208150310.png",
