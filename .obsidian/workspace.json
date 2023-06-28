@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-06-27.md",
+                "file": "Roval/idea/科学上网指北.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "renzhe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-06-27.md",
+                "file": "Roval/idea/科学上网指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-06-27.md",
+                "file": "Roval/idea/科学上网指北.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-06-27.md"
+                "file": "Roval/idea/科学上网指北.md"
               }
             }
           },
@@ -162,8 +163,8 @@
   },
   "active": "a4ff2b412722c4ed",
   "lastOpenFiles": [
-    "Daily/2023-04-04.md",
     "Daily/2023-06-27.md",
+    "Daily/2023-04-04.md",
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230623163900.png",
