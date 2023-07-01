@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/dev/JavaScript/NodeJS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#npm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/dev/JavaScript/NodeJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/dev/JavaScript/NodeJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md"
+                "file": "Roval/dev/JavaScript/NodeJS.md"
               }
             }
           },
@@ -175,13 +176,14 @@
   },
   "active": "a81622ef55ee9948",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/Pasted image 20230630213419.png",
+    "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/Pasted image 20230627233626.png",
     "Roval/rider/Pasted image 20230627233544.png",
     "Roval/rider/Pasted image 20230627232731.png",
     "Roval/rider/科学训练.md",
     "Daily/2023-06-27.md",
     "Daily/2023-06-12.md",
-    "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/Pasted image 20230623163900.png",
     "Roval/rider/Pasted image 20230622085706.png",
     "Plan/Pasted image 20230610124906.png",
@@ -206,7 +208,6 @@
     "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
     "Roval/essay/书籍/《经济学原理》/Pasted image 20221213211338.png",
     "Roval/essay/书籍/《经济学原理》/Pasted image 20221213100036.png",
-    "Roval/essay/书籍/《经济学原理》/Pasted image 20221211144930.png",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/dev/样式/experience/CSS 换行.md",
     "Roval/essay/技术文章个人整理/本地数据缓存.md",
