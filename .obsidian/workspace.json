@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cdcdb24390597973",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-06.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-06.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-06.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -174,11 +187,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f21301bb9ad12d0d",
+  "active": "cdcdb24390597973",
   "lastOpenFiles": [
-    "Daily/2023-04-04.md",
-    "Daily/2023-07-06.md",
+    "Daily/Pasted image 20230406091646.png",
     "conflict-files-obsidian-git.md",
+    "Daily/2023-07-06.md",
+    "Roval/dev/JavaScript/Pasted image 20230630213419.png",
+    "Daily/2023-04-04.md",
     "Roval/coder/bugs/git push rejected.md",
     "Roval/coder/Untitled.md",
     "Roval/coder/bugs",
@@ -212,13 +227,11 @@
     "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
     "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
     "Roval/essay/书籍/《经济学原理》/Pasted image 20221213211338.png",
-    "Roval/essay/书籍/《经济学原理》/Pasted image 20221213100036.png",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/dev/样式/experience/CSS 换行.md",
     "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/算法/递归.md",
-    "Roval/dev/样式/word-wrap.md",
     "Roval/dev/样式/experience",
     "Roval/essay/技术文章个人整理",
     "Roval/essay/书籍",
