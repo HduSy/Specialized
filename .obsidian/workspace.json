@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f21301bb9ad12d0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2023-07-06.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "renzhe",
+                "query": "npm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +80,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/科学上网指北.md",
+                "file": "Daily/2023-07-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/科学上网指北.md",
+                "file": "Daily/2023-07-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/科学上网指北.md"
+                "file": "Daily/2023-07-06.md"
               }
             }
           },
@@ -161,10 +174,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a4ff2b412722c4ed",
+  "active": "f21301bb9ad12d0d",
   "lastOpenFiles": [
-    "Daily/2023-06-27.md",
     "Daily/2023-04-04.md",
+    "Daily/2023-07-06.md",
+    "conflict-files-obsidian-git.md",
+    "Roval/coder/bugs/git push rejected.md",
+    "Roval/coder/Untitled.md",
+    "Roval/coder/bugs",
+    "Roval/idea/科学上网指北.md",
+    "Roval/rider/Pasted image 20230627233626.png",
+    "Roval/rider/Pasted image 20230627233544.png",
+    "Roval/rider/Pasted image 20230627232731.png",
+    "Daily/2023-06-27.md",
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230623163900.png",
@@ -191,24 +213,15 @@
     "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
     "Roval/essay/书籍/《经济学原理》/Pasted image 20221213211338.png",
     "Roval/essay/书籍/《经济学原理》/Pasted image 20221213100036.png",
-    "Roval/essay/书籍/《经济学原理》/Pasted image 20221211144930.png",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/dev/样式/experience/CSS 换行.md",
     "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/算法/递归.md",
     "Roval/dev/样式/word-wrap.md",
-    "Roval/dev/样式/word-break.md",
-    "Roval/dev/样式/white-space.md",
-    "Roval/dev/样式/shape-outside.md",
-    "Roval/dev/样式/scss 使用.md",
-    "Roval/dev/样式/linear-gradient.md",
     "Roval/dev/样式/experience",
-    "Roval/dev/样式/Pasted image 20220511113040.png",
-    "Roval/dev/样式/Pasted image 20220208150310.png",
     "Roval/essay/技术文章个人整理",
     "Roval/essay/书籍",
-    "Roval/dev/算法",
     "Untitled.canvas"
   ]
 }
