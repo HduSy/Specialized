@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "fa7c8f10afd3ec8c",
+        "id": "60076f3e30b1807d",
         "type": "tabs",
         "children": [
           {
-            "id": "a4ff2b412722c4ed",
+            "id": "25a76b1ccc8eebb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "职业经验之谈/前端技术评审关注点.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0e3aebb36f55f575",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "职业经验之谈/前端技术评审关注点.md",
+                "file": "Daily/2023-07-11.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "职业经验之谈/前端技术评审关注点.md",
+                "file": "Daily/2023-07-11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "职业经验之谈/前端技术评审关注点.md",
+                "file": "Daily/2023-07-11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "职业经验之谈/前端技术评审关注点.md"
+                "file": "Daily/2023-07-11.md"
               }
             }
           },
@@ -173,14 +159,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0e3aebb36f55f575",
+  "active": "25a76b1ccc8eebb8",
   "lastOpenFiles": [
+    "Daily/Untitled.md",
+    "Daily/2023-07-11.md",
+    "Daily/2023-04-07.md",
+    "Daily/2023-05-09.md",
     "职业经验之谈/Points.md",
+    "职业经验之谈/前端技术评审关注点.md",
     "Daily/npm-exec.md",
     "Daily/新冠日记.md",
-    "职业经验之谈/前端技术评审关注点.md",
     "Daily/2023-07-06.md",
-    "Daily/Untitled.md",
     "Daily/Pasted image 20230710115423.png",
     "conflict-files-obsidian-git.md",
     "Roval/idea/科学上网指北.md",
@@ -214,9 +203,6 @@
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
     "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
-    "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
-    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
-    "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/样式/experience",
     "Roval/essay/技术文章个人整理",
