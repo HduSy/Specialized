@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Daily/2023-07-12.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Daily/2023-07-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Daily/2023-07-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-11.md"
+                "file": "Daily/2023-07-12.md"
               }
             }
           },
@@ -161,8 +161,9 @@
   },
   "active": "25a76b1ccc8eebb8",
   "lastOpenFiles": [
-    "Daily/2023-07-06.md",
     "Daily/2023-07-11.md",
+    "Daily/2023-07-12.md",
+    "Daily/2023-07-06.md",
     "Daily/Untitled.md",
     "Daily/2023-04-07.md",
     "Daily/2023-05-09.md",
@@ -202,7 +203,6 @@
     "ob-template",
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
-    "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/样式/experience",
     "Roval/essay/技术文章个人整理",
