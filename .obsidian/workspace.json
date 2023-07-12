@@ -138,12 +138,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,13 +161,13 @@
   },
   "active": "25a76b1ccc8eebb8",
   "lastOpenFiles": [
-    "Daily/2023-07-11.md",
+    "职业经验之谈/Points.md",
     "Daily/2023-07-12.md",
+    "Daily/2023-07-11.md",
     "Daily/2023-07-06.md",
     "Daily/Untitled.md",
     "Daily/2023-04-07.md",
     "Daily/2023-05-09.md",
-    "职业经验之谈/Points.md",
     "职业经验之谈/前端技术评审关注点.md",
     "Daily/npm-exec.md",
     "Daily/新冠日记.md",
