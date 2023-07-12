@@ -64,13 +64,15 @@ eg. `git pull origin master:feat/topic_ttt `
 
 ## Git Reset
 
-撤销 `git add` 操作，将添加到暂存区的内容取出
+不删除工作空间改动代码，撤销 `commit`，并且撤销 `git add` 操作（将添加到暂存区的内容取出）
 
 ```bash
-git reset --mixed
+git reset --mixed HEAD^
+等效
+git reset HEAD^
 ```
 
-仅撤回上一次 `commit`，暂存区和工作区代码保留；作用相当于 `git commit --amend`
+仅撤回上一次 `commit`，不撤销 `git add` （操作暂存区和工作区代码保留）
 
 ```bash
 git reset --soft HEAD^
@@ -87,6 +89,8 @@ git reset --mixed HEAD^
 ```bash
 git reset --hard HEAD^
 ```
+
+除工作空间改动代码，撤销 `commit`，撤销 `git add` 操作。
 
 ## Git Rebase 变基
 

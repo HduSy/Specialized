@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,8 +62,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "引用",
-                "matchingCase": false,
+                "query": "git reset ",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-11.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-11.md"
+                "file": "Roval/dev/Git/Git 使用.md"
               }
             }
           },
@@ -175,8 +175,14 @@
   },
   "active": "25a76b1ccc8eebb8",
   "lastOpenFiles": [
-    "Roval/idea/Obsidian 主题 Demo 演示.md",
+    "Roval/dev/杂/第三方包.md",
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/dev/Git/Git 简写.md",
+    "Roval/coder/coder-content.md",
+    "Roval/dev/杂/工程化.md",
+    "Daily/2023-06-27.md",
     "Daily/2023-07-11.md",
+    "Roval/idea/Obsidian 主题 Demo 演示.md",
     "Daily/2023-07-12.md",
     "Roval/idea/Obsidian 插件 Admonition.md",
     "职业经验之谈/前端技术评审关注点.md",
@@ -201,18 +207,12 @@
     "Roval/rider/Pasted image 20230627233626.png",
     "Roval/rider/Pasted image 20230627233544.png",
     "Roval/rider/Pasted image 20230627232731.png",
-    "Daily/2023-06-27.md",
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230623163900.png",
     "Roval/rider/Pasted image 20230622085706.png",
     "Plan/Pasted image 20230610124906.png",
     "Plan/日积月累.md",
-    "Plan/杭州准备计划.md",
-    "Roval/daily/新冠日记.md",
-    "Roval/coder/2022H1自评.md",
-    "Roval/coder/2021时光机.md",
-    "未命名.md",
     "职业经验之谈",
     "temp/Pasted image 20230320155238.png",
     "temp",
