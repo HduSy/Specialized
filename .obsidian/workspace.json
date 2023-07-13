@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git reset ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
