@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-13.md",
+                "file": "Daily/2023-07-14.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#动画",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-13.md",
+                "file": "Daily/2023-07-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-13.md",
+                "file": "Daily/2023-07-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-13.md"
+                "file": "Daily/2023-07-14.md"
               }
             }
           },
@@ -172,15 +173,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "25a76b1ccc8eebb8",
+  "active": "a0b49ed9eb86a64a",
   "lastOpenFiles": [
+    "Daily/2023-07-13.md",
+    "Daily/2023-07-14.md",
     "Daily/Pasted image 20230713155011.png",
     "Daily/Pasted image 20230713155008.png",
     "Daily/Pasted image 20230713154908.png",
     "Daily/Pasted image 20230713154728.png",
     "Daily/Pasted image 20230713153827.png",
     "Roval/dev/Git/Git 使用.md",
-    "Daily/2023-07-13.md",
     "Roval/dev/杂/第三方包.md",
     "Roval/dev/Git/Git 简写.md",
     "Roval/coder/coder-content.md",
@@ -211,7 +213,6 @@
     "Roval/coder/bugs",
     "Roval/rider/Pasted image 20230627233626.png",
     "Roval/rider/Pasted image 20230627233544.png",
-    "Roval/rider/Pasted image 20230627232731.png",
     "Roval/rider/《自行车训练圣经》.md",
     "职业经验之谈",
     "temp",
