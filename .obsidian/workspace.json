@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-06.md",
+                "file": "Roval/rider/科学训练.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7833316ed93ab698",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/rider/未命名.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-06.md",
+                "file": "Roval/rider/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-06.md",
+                "file": "Roval/rider/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-06.md"
+                "file": "Roval/rider/未命名.md"
               }
             }
           },
@@ -160,19 +174,20 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "b9eff107f4b10d7c",
+  "active": "7833316ed93ab698",
   "lastOpenFiles": [
+    "Roval/rider/科学训练.md",
+    "Roval/rider/未命名.md",
+    "Daily/2023-07-06.md",
     "Roval/dev/JavaScript/NodeJS.md",
     "Daily/2023-06-27.md",
     "Roval/coder/bugs/git push rejected.md",
     "Roval/coder/bugs",
-    "Daily/2023-07-06.md",
     "Roval/dev/JavaScript/Pasted image 20230630213419.png",
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/Pasted image 20230627233626.png",
     "Roval/rider/Pasted image 20230627233544.png",
     "Roval/rider/Pasted image 20230627232731.png",
-    "Roval/rider/科学训练.md",
     "Daily/2023-06-12.md",
     "Roval/rider/Pasted image 20230623163900.png",
     "Roval/rider/Pasted image 20230622085706.png",
@@ -204,7 +219,6 @@
     "Roval/dev/算法/递归.md",
     "Roval/dev/样式/word-wrap.md",
     "Roval/dev/样式/word-break.md",
-    "Roval/dev/样式/white-space.md",
     "Roval/dev/样式/experience",
     "Roval/essay/技术文章个人整理",
     "Roval/essay/书籍",
