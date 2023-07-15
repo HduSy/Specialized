@@ -4,50 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "cf4cbe9fa3e94367",
+        "id": "2d53dea1265d37e7",
         "type": "tabs",
         "children": [
           {
-            "id": "b9eff107f4b10d7c",
+            "id": "9d74bacc60525e98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/科学训练.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7833316ed93ab698",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9cb719d92538758",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
+                "file": "Roval/rider/《自行车训练圣经》.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/《自行车训练圣经》.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/《自行车训练圣经》.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md"
+                "file": "Roval/rider/《自行车训练圣经》.md"
               }
             }
           },
@@ -166,11 +139,52 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
+      },
+      {
+        "id": "fa756dafd5be18c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06de15da7c18b297",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Roval/rider/《自行车训练圣经》.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 419.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,10 +200,13 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "7833316ed93ab698",
+  "active": "9d74bacc60525e98",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Daily/2023-07-14.md",
+    "Roval/rider/《自行车训练圣经》.md",
     "Roval/rider/训练效果 Private Notes.md",
+    "Roval/rider/科学训练.md",
+    "conflict-files-obsidian-git.md",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
     "Roval/rider/IMG_7646.jpg",
@@ -201,17 +218,14 @@
     "Daily/Pasted image 20230713154728.png",
     "Daily/Pasted image 20230713153827.png",
     "Daily/Pasted image 20230710115423.png",
-    "Daily/2023-07-14.md",
     "Daily/2023-07-13.md",
     "Daily/2023-07-12.md",
     "Daily/2023-07-11.md",
-    "Roval/rider/科学训练.md",
     "Daily/2023-07-06.md",
     "Roval/dev/JavaScript/NodeJS.md",
     "Daily/2023-06-27.md",
     "Roval/coder/bugs/git push rejected.md",
     "Roval/coder/bugs",
-    "Roval/rider/《自行车训练圣经》.md",
     "Daily/2023-06-12.md",
     "Plan/日积月累.md",
     "Plan/杭州准备计划.md",
