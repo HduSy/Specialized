@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/未命名.md",
+                "file": "Roval/rider/训练效果 Private Notes.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9cb719d92538758",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/未命名.md",
+                "file": "Roval/rider/训练效果 Private Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/未命名.md",
+                "file": "Roval/rider/训练效果 Private Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/未命名.md"
+                "file": "Roval/rider/训练效果 Private Notes.md"
               }
             }
           },
@@ -157,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,22 +188,31 @@
   },
   "active": "7833316ed93ab698",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Roval/rider/训练效果 Private Notes.md",
+    "Roval/rider/IMG_7648.jpg",
+    "Roval/rider/IMG_7647.jpg",
+    "Roval/rider/IMG_7646.jpg",
+    "Roval/rider/IMG_7645.jpg",
+    "职业经验之谈/Points.md",
+    "Daily/Pasted image 20230713155011.png",
+    "Daily/Pasted image 20230713155008.png",
+    "Daily/Pasted image 20230713154908.png",
+    "Daily/Pasted image 20230713154728.png",
+    "Daily/Pasted image 20230713153827.png",
+    "Daily/Pasted image 20230710115423.png",
+    "Daily/2023-07-14.md",
+    "Daily/2023-07-13.md",
+    "Daily/2023-07-12.md",
+    "Daily/2023-07-11.md",
     "Roval/rider/科学训练.md",
-    "Roval/rider/未命名.md",
     "Daily/2023-07-06.md",
     "Roval/dev/JavaScript/NodeJS.md",
     "Daily/2023-06-27.md",
     "Roval/coder/bugs/git push rejected.md",
     "Roval/coder/bugs",
-    "Roval/dev/JavaScript/Pasted image 20230630213419.png",
     "Roval/rider/《自行车训练圣经》.md",
-    "Roval/rider/Pasted image 20230627233626.png",
-    "Roval/rider/Pasted image 20230627233544.png",
-    "Roval/rider/Pasted image 20230627232731.png",
     "Daily/2023-06-12.md",
-    "Roval/rider/Pasted image 20230623163900.png",
-    "Roval/rider/Pasted image 20230622085706.png",
-    "Plan/Pasted image 20230610124906.png",
     "Plan/日积月累.md",
     "Plan/杭州准备计划.md",
     "Roval/daily/新冠日记.md",
@@ -201,8 +222,6 @@
     "职业经验之谈/前端技术评审关注点.md",
     "职业经验之谈",
     "temp/era-tasklist.md",
-    "temp/Pasted image 20230320155238.png",
-    "temp/Pasted image 20230317162832.png",
     "temp",
     "ob-template/template.md",
     "ob-template",
@@ -210,15 +229,7 @@
     "font",
     "Roval/essay/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
     "Roval/essay/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
-    "Roval/essay/书籍/《经济学原理》/第一章 经济学十大原理.md",
-    "Roval/essay/书籍/《经济学原理》/Pasted image 20221213211338.png",
-    "Roval/dev/样式/experience/绝对定位居中.md",
-    "Roval/dev/样式/experience/CSS 换行.md",
-    "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/essay/书籍/《经济学原理》",
-    "Roval/dev/算法/递归.md",
-    "Roval/dev/样式/word-wrap.md",
-    "Roval/dev/样式/word-break.md",
     "Roval/dev/样式/experience",
     "Roval/essay/技术文章个人整理",
     "Roval/essay/书籍",
