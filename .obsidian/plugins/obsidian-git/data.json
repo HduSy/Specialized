@@ -2,7 +2,7 @@
   "commitMessage": "Roval_vault backup: {{date}}",
   "autoCommitMessage": "Roval_vault backup: {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 45,
+  "autoSaveInterval": 10,
   "autoPushInterval": 0,
   "autoPullInterval": 0,
   "autoPullOnBoot": true,
