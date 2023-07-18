@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-14.md",
+                "file": "Daily/2023-07-18.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-14.md",
+                "file": "Daily/2023-07-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-14.md",
+                "file": "Daily/2023-07-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-14.md"
+                "file": "Daily/2023-07-18.md"
               }
             }
           },
@@ -175,9 +175,11 @@
   },
   "active": "4575610818edd14d",
   "lastOpenFiles": [
+    "Daily/2023-06-06.md",
+    "Daily/2023-07-18.md",
+    "Daily/2023-07-14.md",
     "Roval/idea/Obsidian 主题 Demo 演示.md",
     "conflict-files-obsidian-git.md",
-    "Daily/2023-07-14.md",
     "Roval/rider/训练效果 Private Notes.md",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
@@ -211,8 +213,6 @@
     "Daily/Pasted image 20230710115423.png",
     "Roval/idea/科学上网指北.md",
     "Daily/2023-04-04.md",
-    "Roval/coder/bugs/git push rejected.md",
-    "Roval/coder/Untitled.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
