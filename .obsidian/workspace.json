@@ -32,6 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f2db5c4c677bb757",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -175,13 +188,13 @@
   },
   "active": "4575610818edd14d",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Daily/2023-07-19.md",
     "Daily/Pasted image 20230719112607.png",
     "Daily/2023-07-18.md",
-    "Daily/2023-07-19.md",
     "Daily/2023-06-06.md",
     "Daily/2023-07-14.md",
     "Roval/idea/Obsidian 主题 Demo 演示.md",
-    "conflict-files-obsidian-git.md",
     "Roval/rider/训练效果 Private Notes.md",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
@@ -212,7 +225,6 @@
     "Daily/2023-05-09.md",
     "Daily/npm-exec.md",
     "Daily/新冠日记.md",
-    "Daily/Pasted image 20230710115423.png",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
