@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-24.md",
+                "file": "Daily/2023-07-25.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-24.md",
+                "file": "Daily/2023-07-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-24.md",
+                "file": "Daily/2023-07-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-24.md"
+                "file": "Daily/2023-07-25.md"
               }
             }
           },
@@ -161,11 +161,12 @@
   },
   "active": "4575610818edd14d",
   "lastOpenFiles": [
+    "Daily/2023-07-24.md",
+    "Daily/2023-07-25.md",
     "Daily/2023-07-21.md",
     "Daily/2023-07-19.md",
     "Daily/2023-07-18.md",
     "Daily/2023-07-14.md",
-    "Daily/2023-07-24.md",
     "Daily/Pasted image 20230719145355.png",
     "Daily/Pasted image 20230719143805.png",
     "conflict-files-obsidian-git.md",
@@ -198,7 +199,6 @@
     "Daily/Untitled.md",
     "Daily/2023-04-07.md",
     "Daily/2023-05-09.md",
-    "Daily/npm-exec.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
