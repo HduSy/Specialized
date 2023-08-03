@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
+                "file": "Daily/2023-08-03.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
+                "file": "Daily/2023-08-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
+                "file": "Daily/2023-08-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md"
+                "file": "Daily/2023-08-03.md"
               }
             }
           },
@@ -175,8 +175,9 @@
   },
   "active": "bc1027612f761fef",
   "lastOpenFiles": [
-    "Roval/dev/NPM 包/stylelint.md",
     "Roval/dev/NPM 包/Swiper踩坑指南.md",
+    "Daily/2023-08-03.md",
+    "Roval/dev/NPM 包/stylelint.md",
     "Roval/dev/NPM 包/Eslint.md",
     "Daily/2023-07-26.md",
     "职业经验之谈/Points.md",
@@ -210,7 +211,6 @@
     "Daily/2023-07-11.md",
     "Daily/2023-07-12.md",
     "Roval/idea/Obsidian 插件 Admonition.md",
-    "职业经验之谈/前端技术评审关注点.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
