@@ -8,5 +8,6 @@
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true,
   "spellcheck": false,
-  "trashOption": "system"
+  "trashOption": "system",
+  "showLineNumber": true
 }
