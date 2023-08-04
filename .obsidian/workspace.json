@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "职业经验之谈/Points.md",
+                "file": "Daily/2023-08-04.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "职业经验之谈/Points.md",
+                "file": "Daily/2023-08-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "职业经验之谈/Points.md",
+                "file": "Daily/2023-08-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "职业经验之谈/Points.md"
+                "file": "Daily/2023-08-04.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "fa756dafd5be18c4",
@@ -151,7 +151,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "职业经验之谈/Points.md",
+                "file": "Daily/2023-08-04.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,11 +200,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aeeb22088cec0590",
+  "active": "9d74bacc60525e98",
   "lastOpenFiles": [
+    "Daily/2023-08-03.md",
+    "Daily/2023-08-04.md",
+    "职业经验之谈/Points.md",
     "Roval/rider/训练效果 Private Notes.md",
     "conflict-files-obsidian-git.md",
-    "Daily/2023-08-03.md",
     "Roval/dev/NPM 包/Swiper踩坑指南.md",
     "Daily/2023-07-26.md",
     "Daily/2023-07-25.md",
@@ -221,7 +223,6 @@
     "Roval/rider/IMG_7647.jpg",
     "Roval/rider/IMG_7646.jpg",
     "Roval/rider/IMG_7645.jpg",
-    "职业经验之谈/Points.md",
     "Daily/Pasted image 20230713155011.png",
     "Daily/Pasted image 20230713155008.png",
     "Daily/Pasted image 20230713154908.png",
@@ -238,7 +239,6 @@
     "Plan/日积月累.md",
     "Plan/杭州准备计划.md",
     "Roval/daily/新冠日记.md",
-    "Roval/coder/2022H1自评.md",
     "职业经验之谈",
     "temp",
     "ob-template",
