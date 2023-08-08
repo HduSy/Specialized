@@ -8,9 +8,9 @@
 @mixin multilineTextEllipsis($line, $line-height, $width) {
 	width: $width;
 	line-height: $line-height;
-	height: $line-height * $line;  
-	@if $line == 1 {
-		overflow:hidden;  
+	height: $line-height * $line;
+	overflow:hidden;  
+	@if $line == 1 {  
 		text-overflow:ellipsis;  
 		white-space:nowrap;
 	}
