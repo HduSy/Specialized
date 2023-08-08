@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e3fb50fe65c2cc15",
+        "id": "2f9fc5baae07802c",
         "type": "tabs",
         "children": [
           {
-            "id": "0375531f4f09779c",
+            "id": "799a576d5cc7720c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Roval/rider/IMG_FBA2042B1BE1-1.jpeg"
+                "file": "Roval/dev/开发经验/front-end.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -46,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ellip",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/IMG_FBA2042B1BE1-1.jpeg"
+                "file": "Roval/dev/开发经验/front-end.md"
               }
             }
           },
@@ -144,7 +148,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -156,8 +160,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0375531f4f09779c",
+  "active": "799a576d5cc7720c",
   "lastOpenFiles": [
+    "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
     "Roval/rider/IMG_7646.jpg",
@@ -165,7 +170,6 @@
     "Roval/rider/训练效果 Private Notes.md",
     "Roval/rider/科学训练.md",
     "Daily/2023-08-04.md",
-    "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
     "Daily/2023-07-26.md",
     "职业经验之谈/Points.md",
     "conflict-files-obsidian-git.md",
