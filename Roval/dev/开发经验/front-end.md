@@ -4,12 +4,35 @@
 
 # 换行省略
 
+## 宽高固定
+
 ```scss
 @mixin multilineTextEllipsis($line, $line-height, $width) {
 	width: $width;
+	height: $line-height * $line;
 	line-height: $line-height;
+	overflow:hidden;  
+	@if $line == 1 {  
+		text-overflow:ellipsis;  
+		white-space:nowrap;
+	}
+	@if $line > 1{
+		display: -webkit-box;  
+		-webkit-box-orient: vertical;  
+		-webkit-line-clamp: $line;  
+		box-orient: vertical;  
+		line-clamp: $line;
+	}
+}
+```
+
+## 宽高自适应
+
+```scss
+@mixin multilineTextEllipsis($line, $line-height, $width) {
+	min-width: $width;
 	min-height: $line-height;
-	// height: $line-height * $line;
+	line-height: $line-height;
 	overflow:hidden;  
 	@if $line == 1 {  
 		text-overflow:ellipsis;  
