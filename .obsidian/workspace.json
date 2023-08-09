@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ellip",
+                "query": "mix",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,7 +160,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "799a576d5cc7720c",
+  "active": "a0b49ed9eb86a64a",
   "lastOpenFiles": [
     "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
     "Roval/rider/IMG_7648.jpg",

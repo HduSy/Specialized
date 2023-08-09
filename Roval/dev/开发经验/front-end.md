@@ -8,7 +8,8 @@
 @mixin multilineTextEllipsis($line, $line-height, $width) {
 	width: $width;
 	line-height: $line-height;
-	height: $line-height * $line;
+	min-height: $line-height;
+	// height: $line-height * $line;
 	overflow:hidden;  
 	@if $line == 1 {  
 		text-overflow:ellipsis;  
@@ -21,6 +22,25 @@
 		box-orient: vertical;  
 		line-clamp: $line;
 	}
+}
+```
+
+# 隐藏滚动条
+
+```scss
+@mixin hide-scrollbar {  
+  scrollbar-width: none;  
+  scrollbar-color: transparent transparent;  
+  &::-webkit-scrollbar {  
+    display: none;  
+    background-color: transparent;  
+  }  
+  &::-webkit-scrollbar-thumb {  
+    background-color: transparent;  
+  }  
+  &::-webkit-scrollbar-track {  
+    background-color: transparent;  
+  }  
 }
 ```
 
