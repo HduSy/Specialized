@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "Roval/rider/科学训练.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "Roval/rider/科学训练.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "Roval/rider/科学训练.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md"
+                "file": "Roval/rider/科学训练.md"
               }
             }
           },
@@ -160,15 +159,26 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a0b49ed9eb86a64a",
+  "active": "799a576d5cc7720c",
   "lastOpenFiles": [
+    "Roval/rider/Pasted image 20230809131618.png",
+    "Roval/rider/Pasted image 20230809130732.png",
+    "Roval/rider/Snipaste_2022-12-10_22-51-13.png",
+    "Roval/rider/Snipaste_2022-12-11_03-12-53.png",
+    "Roval/rider/Pasted image 20230622085706.png",
+    "Roval/rider/Pasted image 20230525092638.png",
+    "Roval/rider/AFC CYCLING CLUB.md",
+    "Roval/rider/IMG_7645.jpg",
     "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
+    "Roval/rider/科学训练.md",
+    "Roval/rider/IMG_8097.png",
+    "Excalidraw/Excalidraw_20230809010141.md",
+    "Roval/dev/开发经验/front-end.md",
+    "Excalidraw/Excalidraw_20230809010137.md",
+    "Excalidraw/Excalidraw_20230809010130.md",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
-    "Roval/rider/IMG_7646.jpg",
-    "Roval/rider/IMG_7645.jpg",
     "Roval/rider/训练效果 Private Notes.md",
-    "Roval/rider/科学训练.md",
     "Daily/2023-08-04.md",
     "Daily/2023-07-26.md",
     "职业经验之谈/Points.md",
@@ -186,17 +196,7 @@
     "Daily/2023-07-19.md",
     "Daily/2023-07-18.md",
     "Daily/2023-07-14.md",
-    "Daily/Pasted image 20230719145355.png",
-    "Daily/Pasted image 20230719143805.png",
-    "Daily/Pasted image 20230719112607.png",
     "Daily/2023-06-06.md",
-    "Roval/idea/Obsidian 主题 Demo 演示.md",
-    "Daily/2023-07-13.md",
-    "Daily/Pasted image 20230713155011.png",
-    "Daily/Pasted image 20230713155008.png",
-    "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/杂/第三方包.md",
-    "Roval/dev/Git/Git 简写.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
