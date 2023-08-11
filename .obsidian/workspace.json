@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/首次-面试官-面试点.md",
+                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mix",
+                "query": "swiper",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/首次-面试官-面试点.md",
+                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/首次-面试官-面试点.md",
+                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/首次-面试官-面试点.md"
+                "file": "Roval/dev/NPM 包/Swiper踩坑指南.md"
               }
             }
           },
@@ -161,13 +162,13 @@
   },
   "active": "94531b0ab901393c",
   "lastOpenFiles": [
+    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/Pasted image 20230810150034.png",
     "Roval/前端面经/Pasted image 20230810145940.png",
     "Roval/前端面经/Pasted image 20230810145926.png",
     "Roval/前端面经/Pasted image 20230810143628.png",
     "Roval/前端面经/Pasted image 20230810143350.png",
     "Roval/前端面经/DOMContentLoaded.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Untitled.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230809131618.png",
@@ -175,7 +176,6 @@
     "Roval/rider/Snipaste_2022-12-10_22-51-13.png",
     "Roval/rider/Snipaste_2022-12-11_03-12-53.png",
     "Roval/rider/Pasted image 20230622085706.png",
-    "Roval/rider/Pasted image 20230525092638.png",
     "Roval/rider/AFC CYCLING CLUB.md",
     "Excalidraw/Excalidraw_20230809010141.md",
     "Roval/dev/开发经验/front-end.md",
