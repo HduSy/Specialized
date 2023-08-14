@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "2d53dea1265d37e7",
+        "id": "b8012a8005b099a4",
         "type": "tabs",
         "children": [
           {
-            "id": "9d74bacc60525e98",
+            "id": "4634b03343bfabd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/科学训练.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d62dc6e1369aa2db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/rider/Tarmac SL7 Comp.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/Tarmac SL7 Comp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/Tarmac SL7 Comp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md"
+                "file": "Roval/rider/Tarmac SL7 Comp.md"
               }
             }
           },
@@ -137,9 +151,17 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "f8447e882ed9b0ca",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "fa756dafd5be18c4",
@@ -151,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/rider/训练效果 Private Notes.md",
+                "file": "Roval/rider/Tarmac SL7 Comp.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -184,7 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 419.5
+    "width": 238.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,13 +222,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d74bacc60525e98",
+  "active": "f8447e882ed9b0ca",
   "lastOpenFiles": [
+    "Roval/rider/科学训练.md",
+    "Roval/rider/Tarmac SL7 Comp.md",
+    "Roval/rider/训练效果 Private Notes.md",
     "Roval/rider/IMG_FBA2042B1BE1-1.jpeg",
     "Daily/2023-08-04.md",
     "Daily/2023-08-03.md",
     "职业经验之谈/Points.md",
-    "Roval/rider/训练效果 Private Notes.md",
     "conflict-files-obsidian-git.md",
     "Roval/dev/NPM 包/Swiper踩坑指南.md",
     "Daily/2023-07-26.md",
@@ -219,7 +243,6 @@
     "Daily/Pasted image 20230719112607.png",
     "Roval/rider/《自行车训练圣经》.md",
     "Daily/2023-07-14.md",
-    "Roval/rider/科学训练.md",
     "Roval/rider/IMG_7648.jpg",
     "Roval/rider/IMG_7647.jpg",
     "Roval/rider/IMG_7646.jpg",
@@ -227,7 +250,6 @@
     "Daily/Pasted image 20230713155011.png",
     "Daily/Pasted image 20230713155008.png",
     "Daily/Pasted image 20230713154908.png",
-    "Daily/Pasted image 20230713154728.png",
     "Daily/2023-07-13.md",
     "Daily/2023-07-12.md",
     "Daily/2023-07-11.md",
