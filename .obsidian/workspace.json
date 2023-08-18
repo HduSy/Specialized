@@ -21,19 +21,6 @@
             }
           },
           {
-            "id": "80f490f30a735bcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e665be3ded231e55",
             "type": "leaf",
             "state": {
@@ -46,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Roval/前端面经/面试官问点.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Roval/前端面经/面试官问点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Roval/前端面经/面试官问点.md"
               }
             }
           },
@@ -180,7 +166,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Roval/前端面经/面试官问点.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -229,10 +215,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "80f490f30a735bcb",
+  "active": "8b0dd86b4c5ba0fb",
   "lastOpenFiles": [
-    "Roval/前端面经/面试官问点.md",
     "conflict-files-obsidian-git.md",
+    "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试点.png",
     "Roval/rider/一份详细又简略的公路车相关知识.md",
