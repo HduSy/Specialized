@@ -11,8 +11,23 @@
             "id": "a53d808074ffed21",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/面试官问点.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b0dd86b4c5ba0fb",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Roval/前端面经/面试点.png"
+              }
             }
           }
         ]
@@ -44,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "offsetTop",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343.5
   },
   "right": {
     "id": "004473861237bd88",
@@ -81,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Roval/前端面经/面试官问点.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Roval/前端面经/面试官问点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Roval/前端面经/面试官问点.md"
+              }
             }
           },
           {
@@ -152,6 +171,18 @@
   },
   "active": "a53d808074ffed21",
   "lastOpenFiles": [
+    "Daily/2023-07-13.md",
+    "Roval/前端面经/面试官问点.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Roval/前端面经/Pasted image 20230818110943.png",
+    "Roval/前端面经/Pasted image 20230818110714.png",
+    "Roval/前端面经/面试点.png",
+    "Roval/前端面经/Pasted image 20230810143628.png",
+    "Roval/前端面经/Pasted image 20230810143350.png",
+    "Roval/前端面经/Pasted image 20230810150034.png",
+    "Roval/前端面经/Pasted image 20230810145940.png",
+    "Roval/前端面经/Pasted image 20230810145926.png",
+    "Roval/前端面经/DOMContentLoaded.md",
     "Roval/dev/样式/experience/字体描边.md",
     "Roval/dev/样式/experience/绝对定位居中.md",
     "Roval/dev/样式/experience/Pasted image 20230812105409.png",
@@ -160,19 +191,9 @@
     "Roval/coder/docs/WEB自定义字体性能优化分享.md",
     "Daily/2023-08-11.md",
     "Roval/dev/NPM 包/Swiper踩坑指南.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Roval/前端面经/Pasted image 20230810150034.png",
-    "Roval/前端面经/Pasted image 20230810145940.png",
-    "Roval/前端面经/Pasted image 20230810145926.png",
-    "Roval/前端面经/Pasted image 20230810143628.png",
-    "Roval/前端面经/Pasted image 20230810143350.png",
-    "Roval/前端面经/DOMContentLoaded.md",
     "Untitled.md",
     "Roval/rider/科学训练.md",
     "Roval/rider/Pasted image 20230809131618.png",
-    "Roval/rider/Pasted image 20230809130732.png",
-    "Roval/rider/Snipaste_2022-12-10_22-51-13.png",
-    "Roval/rider/Snipaste_2022-12-11_03-12-53.png",
     "Roval/rider/AFC CYCLING CLUB.md",
     "Excalidraw/Excalidraw_20230809010141.md",
     "Roval/dev/开发经验/front-end.md",
@@ -186,7 +207,6 @@
     "Roval/dev/NPM 包/Eslint.md",
     "Daily/2023-07-06.md",
     "Roval/dev/杂/工程化.md",
-    "Daily/2023-04-04.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
