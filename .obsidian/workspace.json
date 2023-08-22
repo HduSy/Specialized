@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md",
+                "file": "Roval/coder/2021时光机.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "514196706a4d744b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/大R链路优化.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md",
+                "file": "Roval/coder/大R链路优化.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md",
+                "file": "Roval/coder/大R链路优化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md"
+                "file": "Roval/coder/大R链路优化.md"
               }
             }
           },
@@ -153,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md",
+                "file": "Roval/coder/大R链路优化.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -202,10 +216,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "72f1b5a0dd505363",
+  "active": "514196706a4d744b",
   "lastOpenFiles": [
-    "Roval/rider/一份详细又简略的公路车相关知识.md",
+    "Roval/coder/2021时光机.md",
+    "Roval/coder/大R链路优化.md",
     "Roval/前端面经/面试官问点.md",
+    "Roval/rider/一份详细又简略的公路车相关知识.md",
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试点.png",
     "Roval/前端面经/defer 与 async 标签区别.md",
@@ -238,7 +254,6 @@
     "Roval/dev/开发经验/front-end.md",
     "Excalidraw/Excalidraw_20230809010137.md",
     "Excalidraw/Excalidraw_20230809010130.md",
-    "Roval/rider/训练效果 Private Notes.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
