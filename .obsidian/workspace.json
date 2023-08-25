@@ -80,7 +80,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -216,7 +217,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "514196706a4d744b",
+  "active": "a0b49ed9eb86a64a",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Roval/coder/大 R 链路优化.md",
