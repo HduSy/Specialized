@@ -32,6 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0ac946642ea31471",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -218,9 +231,11 @@
   },
   "active": "514196706a4d744b",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Roval/coder/大 R 链路优化.md",
+    "Daily/2023-08-25.md",
     "Daily/2023-08-24.md",
     "Roval/coder/2022H2晋升答辩小记.md",
-    "Roval/coder/大 R 链路优化.md",
     "Roval/dev/开发经验/front-end.md",
     "Daily/2023-08-23.md",
     "Daily/2023-08-22.md",
@@ -232,7 +247,6 @@
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试点.png",
     "Roval/前端面经/defer 与 async 标签区别.md",
-    "conflict-files-obsidian-git.md",
     "Roval/rider/Pasted image 20230818130722.png",
     "Roval/dev/元素标签/DOM.md",
     "Daily/2023-07-24.md",
@@ -253,7 +267,6 @@
     "Daily/2023-08-11.md",
     "Roval/dev/NPM 包/Swiper踩坑指南.md",
     "Untitled.md",
-    "Roval/rider/科学训练.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
