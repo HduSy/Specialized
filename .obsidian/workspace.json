@@ -32,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bb34e4f5a072fead",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -222,7 +232,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d62dc6e1369aa2db",
+  "active": "bb34e4f5a072fead",
   "lastOpenFiles": [
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/dev/杂/一些网站.md",
