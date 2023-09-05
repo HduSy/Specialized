@@ -26,15 +26,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "ec299ed6c523a7ba",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "函数",
+                "query": "clamp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md"
+                "file": "Roval/dev/开发经验/front-end.md"
               }
             }
           },
@@ -168,7 +178,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,10 +227,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a0b49ed9eb86a64a",
+  "active": "ec299ed6c523a7ba",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Roval/coder/大 R 链路优化.md",
+    "conflict-files-obsidian-git.md",
     "Daily/2023-08-25.md",
     "Daily/2023-08-24.md",
     "Roval/coder/2022H2晋升答辩小记.md",
