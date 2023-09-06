@@ -42,9 +42,48 @@
                 "currentVersion": "1.4.5"
               }
             }
+          },
+          {
+            "id": "7297ca2e7b5bd966",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/大 R 链路优化.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dc444226e91a43bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/coder/一起玩.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6bad057281b458f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -73,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "clamp",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +129,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -112,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -178,7 +216,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,10 +265,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ec299ed6c523a7ba",
+  "active": "6bad057281b458f4",
   "lastOpenFiles": [
-    "Roval/coder/大 R 链路优化.md",
+    "Roval/coder/一起玩.md",
     "conflict-files-obsidian-git.md",
+    "Roval/coder/大 R 链路优化.md",
+    "Roval/coder/2022H2自评.md",
+    "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
+    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
+    "Roval/coder/coder-content.md",
+    "Roval/coder/fktask.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/个人发展计划周表.md",
+    "Roval/coder/小记.md",
     "Daily/2023-08-25.md",
     "Daily/2023-08-24.md",
     "Roval/coder/2022H2晋升答辩小记.md",
@@ -255,16 +302,7 @@
     "Roval/前端面经/Pasted image 20230810143628.png",
     "Roval/前端面经/Pasted image 20230810143350.png",
     "Roval/前端面经/Pasted image 20230810150034.png",
-    "Roval/前端面经/Pasted image 20230810145940.png",
     "Roval/前端面经/DOMContentLoaded.md",
-    "Roval/dev/样式/experience/字体描边.md",
-    "Roval/dev/样式/experience/绝对定位居中.md",
-    "Roval/dev/样式/experience/CSS 换行.md",
-    "Roval/dev/样式/background.md",
-    "Roval/coder/docs/WEB自定义字体性能优化分享.md",
-    "Daily/2023-08-11.md",
-    "Roval/dev/NPM 包/Swiper踩坑指南.md",
-    "Untitled.md",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
