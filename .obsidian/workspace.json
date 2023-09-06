@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c018156a9c010d6b",
+        "id": "b8012a8005b099a4",
         "type": "tabs",
         "children": [
           {
-            "id": "8b0dd86b4c5ba0fb",
+            "id": "4634b03343bfabd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/2021时光机.md",
+                "file": "Roval/rider/科学训练.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "514196706a4d744b",
+            "id": "d62dc6e1369aa2db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发经验/front-end.md",
+                "file": "Roval/coder/小记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,35 +34,12 @@
             }
           },
           {
-            "id": "ec299ed6c523a7ba",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.5"
-              }
-            }
-          },
-          {
-            "id": "7297ca2e7b5bd966",
+            "id": "bb34e4f5a072fead",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/coder/大 R 链路优化.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc444226e91a43bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/coder/一起玩.md",
+                "file": "职业经验之谈/Points.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -70,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,8 +76,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": true,
+                "query": "张",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -120,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 300
   },
   "right": {
     "id": "004473861237bd88",
@@ -129,7 +106,6 @@
       {
         "id": "d5d457569c9e7c43",
         "type": "tabs",
-        "dimension": 61.75395858708892,
         "children": [
           {
             "id": "299e4bbaa419cf79",
@@ -137,8 +113,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/一起玩.md",
-                "collapseAll": true,
+                "file": "职业经验之谈/Points.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -154,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/一起玩.md",
+                "file": "职业经验之谈/Points.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,15 +153,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/一起玩.md"
+                "file": "职业经验之谈/Points.md"
               }
             }
           },
           {
-            "id": "b6bd4c9d1f4a4530",
+            "id": "213c22db785eda96",
             "type": "leaf",
             "state": {
               "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "f8447e882ed9b0ca",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
@@ -193,17 +177,16 @@
         "currentTab": 3
       },
       {
-        "id": "e183d635b01aabfc",
+        "id": "fa756dafd5be18c4",
         "type": "tabs",
-        "dimension": 38.24604141291108,
         "children": [
           {
-            "id": "3eb28e2fcd2da53e",
+            "id": "06de15da7c18b297",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/一起玩.md",
+                "file": "职业经验之谈/Points.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,7 +209,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6496039748814517,
+                  "scale": 1,
                   "close": true
                 }
               }
@@ -236,11 +219,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 238.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -249,49 +231,48 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dc444226e91a43bd",
+  "active": "bb34e4f5a072fead",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Roval/coder/一起玩.md",
-    "Roval/coder/大 R 链路优化.md",
-    "Roval/coder/2022H2自评.md",
-    "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
-    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Roval/coder/coder-content.md",
-    "Roval/coder/fktask.md",
-    "Roval/coder/OKR.md",
-    "Roval/coder/个人发展计划周表.md",
     "Roval/coder/小记.md",
+    "Roval/coder/一起玩.md",
+    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
+    "Roval/dev/杂/一些网站.md",
     "Daily/2023-08-25.md",
-    "Daily/2023-08-24.md",
-    "Roval/coder/2022H2晋升答辩小记.md",
-    "Roval/dev/开发经验/front-end.md",
-    "Daily/2023-08-23.md",
-    "Daily/2023-08-22.md",
-    "Daily/Pasted image 20230822151234.png",
-    "Daily/Pasted image 20230822151233.png",
-    "Roval/coder/2021时光机.md",
-    "Roval/前端面经/面试官问点.md",
-    "Roval/rider/一份详细又简略的公路车相关知识.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Roval/前端面经/面试点.png",
-    "Roval/前端面经/defer 与 async 标签区别.md",
-    "Roval/rider/Pasted image 20230818130722.png",
-    "Roval/dev/元素标签/DOM.md",
-    "Daily/2023-07-24.md",
     "Roval/rider/Tarmac SL7 Comp.md",
-    "Daily/2023-07-13.md",
+    "conflict-files-obsidian-git.md",
+    "Roval/前端面经/面试点.png",
+    "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/Pasted image 20230818110943.png",
     "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/前端面经/Pasted image 20230810143628.png",
-    "Roval/前端面经/Pasted image 20230810143350.png",
-    "Roval/前端面经/Pasted image 20230810150034.png",
-    "Roval/前端面经/DOMContentLoaded.md",
-    "temp/ChatGPT",
-    "职业经验之谈/Untitled",
+    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/coder/大 R 链路优化.md",
+    "Daily/Pasted image 20230822151234.png",
+    "Daily/Pasted image 20230822151233.png",
+    "Daily/2023-08-24.md",
+    "Daily/2023-08-23.md",
+    "Daily/2023-08-22.md",
+    "Roval/rider/IMG_8097.png",
+    "Roval/rider/IMG_8097 1.png",
+    "Roval/rider/IMG_7648.jpg",
+    "Roval/rider/AFC CYCLING CLUB.md",
+    "Roval/rider/科学训练.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Roval/dev/样式/experience/字体描边.md",
+    "Daily/2023-08-11.md",
+    "Roval/rider/训练效果 Private Notes.md",
+    "Daily/2023-08-04.md",
+    "Daily/2023-08-03.md",
+    "职业经验之谈/Points.md",
+    "Roval/dev/NPM 包/Swiper踩坑指南.md",
+    "Daily/2023-07-26.md",
+    "Daily/2023-07-25.md",
+    "Daily/2023-07-24.md",
+    "Daily/2023-07-21.md",
+    "Daily/2023-07-19.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
@@ -300,6 +281,8 @@
     "font",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/样式/experience",
+    "Roval/essay/技术文章个人整理",
+    "Roval/essay/书籍",
     "Untitled.canvas"
   ]
 }
