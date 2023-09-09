@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5492349491706f89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/coder/小记.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -173,7 +186,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/coder/小记.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,16 +235,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d62dc6e1369aa2db",
+  "active": "5492349491706f89",
   "lastOpenFiles": [
-    "职业经验之谈/Points.md",
     "Roval/coder/小记.md",
+    "conflict-files-obsidian-git.md",
+    "职业经验之谈/Untitled.md",
+    "职业经验之谈/Points.md",
     "Roval/coder/一起玩.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/dev/杂/一些网站.md",
     "Daily/2023-08-25.md",
     "Roval/rider/Tarmac SL7 Comp.md",
-    "conflict-files-obsidian-git.md",
     "Roval/前端面经/面试点.png",
     "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/Pasted image 20230818110943.png",
@@ -259,7 +273,6 @@
     "Daily/2023-07-25.md",
     "Daily/2023-07-24.md",
     "Daily/2023-07-21.md",
-    "Daily/2023-07-19.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
