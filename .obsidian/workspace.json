@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "职业经验之谈/Untitled.md",
+                "file": "Daily/2023-09-12.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "职业经验之谈/Untitled.md",
+                "file": "Daily/2023-09-12.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "职业经验之谈/Untitled.md",
+                "file": "Daily/2023-09-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "职业经验之谈/Untitled.md"
+                "file": "Daily/2023-09-12.md"
               }
             }
           },
@@ -180,7 +180,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "职业经验之谈/Untitled.md",
+                "file": "Daily/2023-09-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -231,8 +231,9 @@
   },
   "active": "d9c8857be9d52287",
   "lastOpenFiles": [
-    "职业经验之谈/Points.md",
     "职业经验之谈/Untitled.md",
+    "Daily/2023-09-12.md",
+    "职业经验之谈/Points.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/coder/2021时光机.md",
     "职业经验之谈/前端技术评审关注点.md",
@@ -261,7 +262,6 @@
     "Roval/前端面经/defer 与 async 标签区别.md",
     "Roval/rider/Pasted image 20230818130722.png",
     "Roval/dev/元素标签/DOM.md",
-    "Daily/2023-07-24.md",
     "Roval/前端面经/Pasted image 20230818110943.png",
     "Roval/前端面经/Pasted image 20230818110714.png",
     "Roval/前端面经/Pasted image 20230810143628.png",
