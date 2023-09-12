@@ -45,6 +45,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0993897d58a39a6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 2
@@ -231,14 +244,15 @@
   },
   "active": "d9c8857be9d52287",
   "lastOpenFiles": [
-    "职业经验之谈/Untitled.md",
+    "conflict-files-obsidian-git.md",
     "Daily/2023-09-12.md",
+    "Daily/2023-09-09.md",
+    "职业经验之谈/Untitled.md",
     "职业经验之谈/Points.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/coder/2021时光机.md",
     "职业经验之谈/前端技术评审关注点.md",
     "Roval/coder/一起玩.md",
-    "conflict-files-obsidian-git.md",
     "Roval/coder/大 R 链路优化.md",
     "Roval/coder/2022H2自评.md",
     "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
@@ -261,7 +275,6 @@
     "Roval/前端面经/面试点.png",
     "Roval/前端面经/defer 与 async 标签区别.md",
     "Roval/rider/Pasted image 20230818130722.png",
-    "Roval/dev/元素标签/DOM.md",
     "Roval/前端面经/Pasted image 20230818110943.png",
     "Roval/前端面经/Pasted image 20230818110714.png",
     "Roval/前端面经/Pasted image 20230810143628.png",
