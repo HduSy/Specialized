@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "防抖",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -218,11 +218,13 @@
   },
   "active": "d9c8857be9d52287",
   "lastOpenFiles": [
+    "Roval/前端面经/面试官问点.md",
+    "Roval/dev/开发经验/防抖 VS 节流.md",
+    "Daily/2023-09-13.md",
     "Roval/dev/开发工具/Mac.md",
     "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-12.md",
     "conflict-files-obsidian-git.md",
-    "Daily/2023-09-13.md",
     "Daily/2023-09-09.md",
     "职业经验之谈/Untitled.md",
     "职业经验之谈/Points.md",
@@ -245,8 +247,6 @@
     "Daily/2023-08-22.md",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
-    "Roval/前端面经/面试官问点.md",
-    "Roval/rider/一份详细又简略的公路车相关知识.md",
     "Roval/前端面经/面试点.png",
     "Roval/rider/Pasted image 20230818130722.png",
     "Roval/前端面经/Pasted image 20230818110943.png",
