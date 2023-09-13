@@ -21,19 +21,6 @@
             }
           },
           {
-            "id": "dc444226e91a43bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "职业经验之谈/Points.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d9c8857be9d52287",
             "type": "leaf",
             "state": {
@@ -47,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
