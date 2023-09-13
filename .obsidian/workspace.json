@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发工具/Mac.md",
+                "file": "Daily/2023-09-13.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mac",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -102,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发工具/Mac.md",
+                "file": "Daily/2023-09-13.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发工具/Mac.md",
+                "file": "Daily/2023-09-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发工具/Mac.md"
+                "file": "Daily/2023-09-13.md"
               }
             }
           },
@@ -168,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发工具/Mac.md",
+                "file": "Daily/2023-09-13.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,13 +218,14 @@
   },
   "active": "d9c8857be9d52287",
   "lastOpenFiles": [
+    "Roval/dev/开发工具/Mac.md",
+    "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-12.md",
     "conflict-files-obsidian-git.md",
     "Daily/2023-09-13.md",
     "Daily/2023-09-09.md",
     "职业经验之谈/Untitled.md",
     "职业经验之谈/Points.md",
-    "Roval/dev/开发经验/front-end.md",
     "Roval/coder/2021时光机.md",
     "职业经验之谈/前端技术评审关注点.md",
     "Roval/coder/一起玩.md",
@@ -247,7 +247,6 @@
     "Daily/Pasted image 20230822151233.png",
     "Roval/前端面经/面试官问点.md",
     "Roval/rider/一份详细又简略的公路车相关知识.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试点.png",
     "Roval/rider/Pasted image 20230818130722.png",
     "Roval/前端面经/Pasted image 20230818110943.png",
