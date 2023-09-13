@@ -63,6 +63,20 @@ Last Modified：2022-12-17 21:39:56
 
 - 系统偏好设置 - 触控板
 
+## 三、命令行命令
+
+### 查看操作 DNS 缓存
+
+```bash
+dscacheutil -q host
+```
+
+### 清除 DNS 缓存
+
+```bash
+sudo dscacheutil -flushcache
+```
+
 # Reference
 
 [参考地址](https://support.apple.com/zh-cn/HT201236)
