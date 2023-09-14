@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d9c8857be9d52287",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily/2023-09-13.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-09-13.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-09-13.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-09-13.md"
+                "file": "Roval/dev/开发经验/front-end.md"
               }
             }
           },
@@ -167,7 +153,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-09-13.md",
+                "file": "Roval/dev/开发经验/front-end.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -216,13 +202,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d9c8857be9d52287",
+  "active": "514196706a4d744b",
   "lastOpenFiles": [
+    "Daily/2023-09-13.md",
+    "Roval/dev/开发经验/front-end.md",
     "Roval/前端面经/面试官问点.md",
     "Roval/dev/开发经验/防抖 VS 节流.md",
-    "Daily/2023-09-13.md",
     "Roval/dev/开发工具/Mac.md",
-    "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-12.md",
     "conflict-files-obsidian-git.md",
     "Daily/2023-09-09.md",
