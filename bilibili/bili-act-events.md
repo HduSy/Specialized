@@ -43,4 +43,5 @@ Last Modified：2023-09-19 19:06:26
 
 # Reference
 
-[Package - @bilibili/bili-act-events](http://npm.bilibili.co/package/@bilibili/bili-act-events)
+[Package - @bilibili/bili-act-events](http://npm.bilibili.co/package/@bilibili/bili-act-events)  
+[掌握 tsconfig.json - 掘金](https://juejin.cn/post/6844904178234458120?searchId=20230919190218A8B321613ADEE1117F61)
