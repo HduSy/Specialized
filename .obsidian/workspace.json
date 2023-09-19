@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-18.md",
+                "file": "bilibili/bili-act-events.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -66,8 +66,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-18.md",
+                "file": "bilibili/bili-act-events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-18.md",
+                "file": "bilibili/bili-act-events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-18.md"
+                "file": "bilibili/bili-act-events.md"
               }
             }
           },
@@ -170,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-07-18.md",
+                "file": "bilibili/bili-act-events.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,6 +220,7 @@
   },
   "active": "4634b03343bfabd1",
   "lastOpenFiles": [
+    "Daily/2023-07-18.md",
     "bilibili/bili-user.md",
     "bilibili/bili-act-events.md",
     "bilibili",
@@ -258,7 +258,6 @@
     "Roval/rider/IMG_8097.png",
     "Roval/rider/IMG_8097 1.png",
     "Roval/rider/AFC CYCLING CLUB.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
