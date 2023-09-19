@@ -4,29 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c018156a9c010d6b",
+        "id": "0cb3bed839e412bc",
         "type": "tabs",
         "children": [
           {
-            "id": "514196706a4d744b",
+            "id": "ac2f684d8f53dd0c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/杂/第三方包.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "45c43df8b9233992",
+            "id": "75a825a759710ed7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/浏览器/Cookie.md",
+                "file": "bilibili/bili-user.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -101,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/浏览器/Cookie.md",
+                "file": "bilibili/bili-user.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/浏览器/Cookie.md",
+                "file": "bilibili/bili-user.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/浏览器/Cookie.md"
+                "file": "bilibili/bili-user.md"
               }
             }
           },
@@ -177,7 +172,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/浏览器/Cookie.md",
+                "file": "bilibili/bili-user.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,10 +221,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "45c43df8b9233992",
+  "active": "75a825a759710ed7",
   "lastOpenFiles": [
-    "Roval/dev/杂/第三方包.md",
+    "Roval/dev/浏览器/Untitled.md",
+    "bilibili/bili-user.md",
     "Roval/dev/浏览器/Cookie.md",
+    "bilibili",
+    "Roval/dev/杂/第三方包.md",
     "Roval/dev/浏览器",
     "Roval/dev/杂/工程化.md",
     "Roval/coder/plan/一款活动常用功能插件.md",
@@ -254,8 +252,6 @@
     "职业经验之谈/Untitled.md",
     "职业经验之谈/Points.md",
     "Roval/coder/2021时光机.md",
-    "职业经验之谈/前端技术评审关注点.md",
-    "Roval/coder/一起玩.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
@@ -273,7 +269,6 @@
     "ob-template",
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
-    "Roval/essay/书籍/《经济学原理》",
     "Untitled.canvas"
   ]
 }
