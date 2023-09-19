@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b8012a8005b099a4",
+        "id": "c018156a9c010d6b",
         "type": "tabs",
         "children": [
           {
-            "id": "4634b03343bfabd1",
+            "id": "514196706a4d744b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +50,7 @@
               "type": "search",
               "state": {
                 "query": "babel",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343.5
   },
   "right": {
     "id": "004473861237bd88",
@@ -80,6 +80,7 @@
       {
         "id": "d5d457569c9e7c43",
         "type": "tabs",
+        "dimension": 61.75395858708892,
         "children": [
           {
             "id": "299e4bbaa419cf79",
@@ -88,7 +89,7 @@
               "type": "backlink",
               "state": {
                 "file": "Daily/2023-07-18.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -132,40 +133,23 @@
             }
           },
           {
-            "id": "213c22db785eda96",
+            "id": "b6bd4c9d1f4a4530",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
-            }
-          },
-          {
-            "id": "f8447e882ed9b0ca",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "40380d1dba6560ac",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency"
-              }
             }
           }
         ],
         "currentTab": 3
       },
       {
-        "id": "fa756dafd5be18c4",
+        "id": "e183d635b01aabfc",
         "type": "tabs",
+        "dimension": 38.24604141291108,
         "children": [
           {
-            "id": "06de15da7c18b297",
+            "id": "3eb28e2fcd2da53e",
             "type": "leaf",
             "state": {
               "type": "localgraph",
@@ -193,7 +177,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.6496039748814517,
                   "close": true
                 }
               }
@@ -203,10 +187,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -215,48 +200,49 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "4634b03343bfabd1",
+  "active": "514196706a4d744b",
   "lastOpenFiles": [
-    "Roval/rider/《自行车训练圣经》.md",
-    "conflict-files-obsidian-git.md",
     "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
     "Roval/rider/Pasted image 20230914201927.png",
+    "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-13.md",
-    "Daily/2023-09-12.md",
-    "Daily/2023-09-09.md",
-    "Roval/rider/科学训练.md",
-    "职业经验之谈/Untitled.md",
-    "Roval/coder/小记.md",
-    "职业经验之谈/Points.md",
-    "Roval/coder/一起玩.md",
-    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Roval/dev/杂/一些网站.md",
-    "Daily/2023-08-25.md",
-    "Roval/rider/Tarmac SL7 Comp.md",
-    "Roval/前端面经/面试点.png",
     "Roval/前端面经/面试官问点.md",
-    "Roval/前端面经/Pasted image 20230818110943.png",
-    "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/dev/开发经验/防抖 VS 节流.md",
+    "Roval/dev/开发工具/Mac.md",
+    "Daily/2023-09-12.md",
+    "conflict-files-obsidian-git.md",
+    "Daily/2023-09-09.md",
+    "职业经验之谈/Untitled.md",
+    "职业经验之谈/Points.md",
+    "Roval/coder/2021时光机.md",
+    "职业经验之谈/前端技术评审关注点.md",
+    "Roval/coder/一起玩.md",
     "Roval/coder/大 R 链路优化.md",
+    "Roval/coder/2022H2自评.md",
+    "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
+    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
+    "Roval/coder/coder-content.md",
+    "Roval/coder/fktask.md",
+    "Roval/coder/OKR.md",
+    "Roval/coder/个人发展计划周表.md",
+    "Roval/coder/小记.md",
+    "Daily/2023-08-25.md",
+    "Daily/2023-08-24.md",
+    "Roval/coder/2022H2晋升答辩小记.md",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
-    "Daily/2023-08-24.md",
-    "Daily/2023-08-23.md",
-    "Daily/2023-08-22.md",
-    "Roval/rider/IMG_8097.png",
-    "Roval/rider/IMG_8097 1.png",
-    "Roval/rider/AFC CYCLING CLUB.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Roval/dev/样式/experience/字体描边.md",
-    "Daily/2023-08-11.md",
-    "Roval/rider/训练效果 Private Notes.md",
-    "Daily/2023-08-04.md",
+    "Roval/前端面经/面试点.png",
+    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/前端面经/Pasted image 20230818110943.png",
+    "Roval/前端面经/Pasted image 20230818110714.png",
+    "Roval/前端面经/Pasted image 20230810143628.png",
+    "Roval/前端面经/Pasted image 20230810143350.png",
+    "temp/ChatGPT",
+    "职业经验之谈/Untitled",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
@@ -265,8 +251,6 @@
     "font",
     "Roval/essay/书籍/《经济学原理》",
     "Roval/dev/样式/experience",
-    "Roval/essay/技术文章个人整理",
-    "Roval/essay/书籍",
     "Untitled.canvas"
   ]
 }
