@@ -3,7 +3,17 @@ Last Modified：2023-09-19 16:19:26
 
 # Tags
 
+#前端 #浏览器 #网络
+
 # Content
+
+## 应用
+
+`@bilibili/bili-user/src/utils.js`
+
+```javascript
+document.cookie = name + '=' + escape(value) + ';expires=' + exp.toGMTString() + '; path=/; domain=.bilibili.com'
+```
 
 # Reference
 
