@@ -29,9 +29,22 @@
                 "currentVersion": "1.4.12"
               }
             }
+          },
+          {
+            "id": "4367cabbe14693ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -180,7 +193,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -229,8 +242,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3d41e3bb3c5fee40",
+  "active": "4367cabbe14693ad",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
     "Roval/rider/Pasted image 20230914201927.png",
     "Roval/rider/《自行车训练圣经》.md",
@@ -240,7 +255,6 @@
     "Roval/rider/科学训练.md",
     "职业经验之谈/Untitled.md",
     "Roval/coder/小记.md",
-    "conflict-files-obsidian-git.md",
     "职业经验之谈/Points.md",
     "Roval/coder/一起玩.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
