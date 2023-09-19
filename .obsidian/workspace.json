@@ -139,6 +139,16 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "0f0ec2e34bb07c70",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 3
