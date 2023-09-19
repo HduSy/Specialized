@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-07-12.md",
+                "file": "Roval/dev/杂/第三方包.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45c43df8b9233992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/浏览器/cookie.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "网络",
+                "query": "cookie",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +80,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -88,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-07-12.md",
+                "file": "Roval/dev/浏览器/cookie.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-07-12.md",
+                "file": "Roval/dev/浏览器/cookie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-07-12.md"
+                "file": "Roval/dev/浏览器/cookie.md"
               }
             }
           },
@@ -164,7 +177,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-07-12.md",
+                "file": "Roval/dev/浏览器/cookie.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -213,12 +226,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "514196706a4d744b",
+  "active": "72f1b5a0dd505363",
   "lastOpenFiles": [
+    "Roval/dev/杂/第三方包.md",
+    "Roval/dev/浏览器/cookie.md",
+    "Roval/dev/浏览器",
+    "Roval/dev/杂/工程化.md",
+    "Roval/coder/plan/一款活动常用功能插件.md",
+    "Daily/2023-07-12.md",
     "Roval/idea/Obsidian 手动安装第三方插件.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/前端面经/首次-面试官-面试点.md",
-    "Daily/2023-07-12.md",
     "Daily/2023-04-12.md",
     "Daily/2023-07-18.md",
     "Daily/2023-09-19.md",
@@ -238,11 +256,7 @@
     "Roval/coder/2021时光机.md",
     "职业经验之谈/前端技术评审关注点.md",
     "Roval/coder/一起玩.md",
-    "Roval/coder/大 R 链路优化.md",
-    "Roval/coder/2022H2自评.md",
-    "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Roval/coder/coder-content.md",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
     "Roval/前端面经/面试点.png",
@@ -260,7 +274,6 @@
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
     "Roval/essay/书籍/《经济学原理》",
-    "Roval/dev/样式/experience",
     "Untitled.canvas"
   ]
 }
