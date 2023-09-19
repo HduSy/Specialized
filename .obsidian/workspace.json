@@ -4,45 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0cb3bed839e412bc",
+        "id": "b8012a8005b099a4",
         "type": "tabs",
         "children": [
           {
-            "id": "ac2f684d8f53dd0c",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "75a825a759710ed7",
+            "id": "4634b03343bfabd1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bilibili/bili-user.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b54db6e5f8907ff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "Daily/2023-07-18.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -71,8 +49,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cookie",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -88,11 +66,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 300
   },
   "right": {
     "id": "004473861237bd88",
@@ -101,7 +80,6 @@
       {
         "id": "d5d457569c9e7c43",
         "type": "tabs",
-        "dimension": 61.75395858708892,
         "children": [
           {
             "id": "299e4bbaa419cf79",
@@ -109,8 +87,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bilibili/bili-act-events.md",
-                "collapseAll": true,
+                "file": "Daily/2023-07-18.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -126,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "Daily/2023-07-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,12 +127,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bilibili/bili-act-events.md"
+                "file": "Daily/2023-07-18.md"
               }
             }
           },
           {
-            "id": "b6bd4c9d1f4a4530",
+            "id": "213c22db785eda96",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -162,7 +140,15 @@
             }
           },
           {
-            "id": "0f0ec2e34bb07c70",
+            "id": "f8447e882ed9b0ca",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "40380d1dba6560ac",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -175,17 +161,16 @@
         "currentTab": 3
       },
       {
-        "id": "e183d635b01aabfc",
+        "id": "fa756dafd5be18c4",
         "type": "tabs",
-        "dimension": 38.24604141291108,
         "children": [
           {
-            "id": "3eb28e2fcd2da53e",
+            "id": "06de15da7c18b297",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "Daily/2023-07-18.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,7 +193,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6496039748814517,
+                  "scale": 1,
                   "close": true
                 }
               }
@@ -218,11 +203,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 238.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -231,57 +215,58 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b54db6e5f8907ff4",
+  "active": "4634b03343bfabd1",
   "lastOpenFiles": [
     "bilibili/bili-user.md",
     "bilibili/bili-act-events.md",
-    "Roval/dev/浏览器/Untitled.md",
-    "Roval/dev/浏览器/Cookie.md",
     "bilibili",
-    "Roval/dev/杂/第三方包.md",
+    "Roval/dev/浏览器/cookie.md",
     "Roval/dev/浏览器",
-    "Roval/dev/杂/工程化.md",
-    "Roval/coder/plan/一款活动常用功能插件.md",
-    "Daily/2023-07-12.md",
-    "Roval/idea/Obsidian 手动安装第三方插件.md",
-    "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Daily/2023-04-12.md",
-    "Daily/2023-07-18.md",
     "Daily/2023-09-19.md",
+    "Roval/rider/《自行车训练圣经》.md",
+    "conflict-files-obsidian-git.md",
     "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
     "Roval/rider/Pasted image 20230914201927.png",
-    "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-13.md",
-    "Roval/前端面经/面试官问点.md",
-    "Roval/dev/开发经验/防抖 VS 节流.md",
-    "Roval/dev/开发工具/Mac.md",
     "Daily/2023-09-12.md",
-    "conflict-files-obsidian-git.md",
     "Daily/2023-09-09.md",
+    "Roval/rider/科学训练.md",
     "职业经验之谈/Untitled.md",
+    "Roval/coder/小记.md",
     "职业经验之谈/Points.md",
+    "Roval/coder/一起玩.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Daily/Pasted image 20230822151234.png",
-    "Daily/Pasted image 20230822151233.png",
+    "Roval/dev/杂/一些网站.md",
+    "Daily/2023-08-25.md",
+    "Roval/rider/Tarmac SL7 Comp.md",
     "Roval/前端面经/面试点.png",
-    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/Pasted image 20230818110943.png",
     "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/前端面经/Pasted image 20230810143628.png",
-    "Roval/前端面经/Pasted image 20230810143350.png",
-    "temp/ChatGPT",
-    "职业经验之谈/Untitled",
+    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/coder/大 R 链路优化.md",
+    "Daily/Pasted image 20230822151234.png",
+    "Daily/Pasted image 20230822151233.png",
+    "Daily/2023-08-24.md",
+    "Daily/2023-08-23.md",
+    "Daily/2023-08-22.md",
+    "Roval/rider/IMG_8097.png",
+    "Roval/rider/IMG_8097 1.png",
+    "Roval/rider/AFC CYCLING CLUB.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
     "ob-template",
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
+    "Roval/essay/书籍/《经济学原理》",
+    "Roval/dev/样式/experience",
     "Untitled.canvas"
   ]
 }
