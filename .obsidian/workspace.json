@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-09-19.md",
+                "file": "Daily/2023-07-12.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "babel",
+                "query": "网络",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-09-19.md",
+                "file": "Daily/2023-07-12.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-09-19.md",
+                "file": "Daily/2023-07-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-09-19.md"
+                "file": "Daily/2023-07-12.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-09-19.md",
+                "file": "Daily/2023-07-12.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -215,6 +215,11 @@
   },
   "active": "514196706a4d744b",
   "lastOpenFiles": [
+    "Roval/idea/Obsidian 手动安装第三方插件.md",
+    "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Daily/2023-07-12.md",
+    "Daily/2023-04-12.md",
     "Daily/2023-07-18.md",
     "Daily/2023-09-19.md",
     "Daily/2023-09-14.md",
@@ -238,11 +243,6 @@
     "Roval/coder/2022H2 Q3(7-9)+Q4(10-12).md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/coder/coder-content.md",
-    "Roval/coder/fktask.md",
-    "Roval/coder/OKR.md",
-    "Roval/coder/个人发展计划周表.md",
-    "Roval/coder/小记.md",
-    "Daily/2023-08-25.md",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
     "Roval/前端面经/面试点.png",
