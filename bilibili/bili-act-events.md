@@ -134,6 +134,8 @@ rules:  规则
 
 [Package - @bilibili/bili-act-events](http://npm.bilibili.co/package/@bilibili/bili-act-events)  
 
+[GitHub - developit/mitt: 🥊 Tiny 200 byte functional event emitter / pubsub.](https://github.com/developit/mitt)
+
 [代码检查工具！从 TSLint 到 ESLint - 掘金](https://juejin.cn/post/6955025103507849223)  
 [TSLint](https://palantir.github.io/tslint/) - 2019 年【已废弃】- 由 [typescript-eslint](https://typescript-eslint.io/) 替代  
 [快速上手，tsconfig（文件选项） - 掘金](https://juejin.cn/post/6953553286657998879/)  
