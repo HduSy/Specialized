@@ -4,11 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "b8012a8005b099a4",
+        "id": "0cb3bed839e412bc",
         "type": "tabs",
         "children": [
           {
-            "id": "4634b03343bfabd1",
+            "id": "ac2f684d8f53dd0c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "75a825a759710ed7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +29,7 @@
             }
           },
           {
-            "id": "1a048a9e76836f8e",
+            "id": "b54db6e5f8907ff4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,7 +42,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -63,8 +71,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "cookie",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -84,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 343.5
   },
   "right": {
     "id": "004473861237bd88",
@@ -93,6 +101,7 @@
       {
         "id": "d5d457569c9e7c43",
         "type": "tabs",
+        "dimension": 61.75395858708892,
         "children": [
           {
             "id": "299e4bbaa419cf79",
@@ -101,7 +110,7 @@
               "type": "backlink",
               "state": {
                 "file": "bilibili/bili-act-events.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -145,7 +154,7 @@
             }
           },
           {
-            "id": "213c22db785eda96",
+            "id": "b6bd4c9d1f4a4530",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -153,15 +162,7 @@
             }
           },
           {
-            "id": "f8447e882ed9b0ca",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "40380d1dba6560ac",
+            "id": "0f0ec2e34bb07c70",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -174,11 +175,12 @@
         "currentTab": 3
       },
       {
-        "id": "fa756dafd5be18c4",
+        "id": "e183d635b01aabfc",
         "type": "tabs",
+        "dimension": 38.24604141291108,
         "children": [
           {
-            "id": "06de15da7c18b297",
+            "id": "3eb28e2fcd2da53e",
             "type": "leaf",
             "state": {
               "type": "localgraph",
@@ -206,7 +208,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.6496039748814517,
                   "close": true
                 }
               }
@@ -216,10 +218,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -228,58 +231,57 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "1a048a9e76836f8e",
+  "active": "b54db6e5f8907ff4",
   "lastOpenFiles": [
-    "bilibili/bili-user.md",
     "bilibili/rollup.md",
+    "bilibili/bili-user.md",
     "bilibili/bili-act-events.md",
-    "Daily/2023-07-18.md",
+    "Roval/dev/浏览器/Untitled.md",
+    "Roval/dev/浏览器/Cookie.md",
     "bilibili",
-    "Roval/dev/浏览器/cookie.md",
+    "Roval/dev/杂/第三方包.md",
     "Roval/dev/浏览器",
+    "Roval/dev/杂/工程化.md",
+    "Roval/coder/plan/一款活动常用功能插件.md",
+    "Daily/2023-07-12.md",
+    "Roval/idea/Obsidian 手动安装第三方插件.md",
+    "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Daily/2023-04-12.md",
+    "Daily/2023-07-18.md",
     "Daily/2023-09-19.md",
-    "Roval/rider/《自行车训练圣经》.md",
-    "conflict-files-obsidian-git.md",
     "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
     "Roval/rider/Pasted image 20230914201927.png",
+    "Roval/dev/开发经验/front-end.md",
     "Daily/2023-09-13.md",
-    "Daily/2023-09-12.md",
-    "Daily/2023-09-09.md",
-    "Roval/rider/科学训练.md",
-    "职业经验之谈/Untitled.md",
-    "Roval/coder/小记.md",
-    "职业经验之谈/Points.md",
-    "Roval/coder/一起玩.md",
-    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Roval/dev/杂/一些网站.md",
-    "Daily/2023-08-25.md",
-    "Roval/rider/Tarmac SL7 Comp.md",
-    "Roval/前端面经/面试点.png",
     "Roval/前端面经/面试官问点.md",
-    "Roval/前端面经/Pasted image 20230818110943.png",
-    "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/rider/Pasted image 20230818130722.png",
-    "Roval/coder/大 R 链路优化.md",
+    "Roval/dev/开发经验/防抖 VS 节流.md",
+    "Roval/dev/开发工具/Mac.md",
+    "Daily/2023-09-12.md",
+    "conflict-files-obsidian-git.md",
+    "Daily/2023-09-09.md",
+    "职业经验之谈/Untitled.md",
+    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Daily/Pasted image 20230822151234.png",
     "Daily/Pasted image 20230822151233.png",
-    "Daily/2023-08-24.md",
-    "Daily/2023-08-23.md",
-    "Daily/2023-08-22.md",
-    "Roval/rider/IMG_8097.png",
-    "Roval/rider/IMG_8097 1.png",
+    "Roval/前端面经/面试点.png",
+    "Roval/rider/Pasted image 20230818130722.png",
+    "Roval/前端面经/Pasted image 20230818110943.png",
+    "Roval/前端面经/Pasted image 20230818110714.png",
+    "Roval/前端面经/Pasted image 20230810143628.png",
+    "Roval/前端面经/Pasted image 20230810143350.png",
+    "temp/ChatGPT",
+    "职业经验之谈/Untitled",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
     "ob-template",
     "font/SmileySans-Oblique.ttf.woff2",
     "font",
-    "Roval/essay/书籍/《经济学原理》",
-    "Roval/dev/样式/experience",
     "Untitled.canvas"
   ]
 }
