@@ -7,7 +7,7 @@ Last Modified：2023-09-19 19:06:26
 
 # Content
 
-## tsconfig.json
+## tsconfig.json 配置参数
 
 ```json
 {

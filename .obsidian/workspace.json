@@ -19,19 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "20404ca446a2a402",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,7 +218,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "20404ca446a2a402",
+  "active": "4634b03343bfabd1",
   "lastOpenFiles": [
     "Daily/2023-07-18.md",
     "bilibili/bili-user.md",
