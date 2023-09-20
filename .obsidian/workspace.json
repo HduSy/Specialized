@@ -21,20 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bilibili/bili-user.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b54db6e5f8907ff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "职业经验之谈/Untitled.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -42,7 +29,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "职业经验之谈/Untitled.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "职业经验之谈/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bilibili/bili-act-events.md"
+                "file": "职业经验之谈/Untitled.md"
               }
             }
           },
@@ -185,7 +172,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "职业经验之谈/Untitled.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,11 +221,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b54db6e5f8907ff4",
+  "active": "75a825a759710ed7",
   "lastOpenFiles": [
-    "bilibili/rollup.md",
+    "职业经验之谈/Pasted image 20230920141837.png",
+    "职业经验之谈/Pasted image 20230920141807.png",
+    "职业经验之谈/Pasted image 20230920141734.png",
+    "职业经验之谈/Pasted image 20230920141705.png",
+    "职业经验之谈/Pasted image 20230920141632.png",
+    "职业经验之谈/Pasted image 20230920141557.png",
+    "职业经验之谈/Pasted image 20230920141445.png",
+    "职业经验之谈/Pasted image 20230920141410.png",
+    "职业经验之谈/Points.md",
     "bilibili/bili-user.md",
+    "职业经验之谈/前端技术评审关注点.md",
+    "职业经验之谈/Untitled.md",
+    "职业经验之谈/Pasted image 20230920141238.png",
     "bilibili/bili-act-events.md",
+    "bilibili/rollup.md",
     "Roval/dev/浏览器/Untitled.md",
     "Roval/dev/浏览器/Cookie.md",
     "bilibili",
@@ -261,19 +260,7 @@
     "Roval/前端面经/面试官问点.md",
     "Roval/dev/开发经验/防抖 VS 节流.md",
     "Roval/dev/开发工具/Mac.md",
-    "Daily/2023-09-12.md",
-    "conflict-files-obsidian-git.md",
-    "Daily/2023-09-09.md",
-    "职业经验之谈/Untitled.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Daily/Pasted image 20230822151234.png",
-    "Daily/Pasted image 20230822151233.png",
-    "Roval/前端面经/面试点.png",
-    "Roval/rider/Pasted image 20230818130722.png",
-    "Roval/前端面经/Pasted image 20230818110943.png",
-    "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/前端面经/Pasted image 20230810143628.png",
-    "Roval/前端面经/Pasted image 20230810143350.png",
     "temp/ChatGPT",
     "职业经验之谈/Untitled",
     "Roval/coder/bugs",
