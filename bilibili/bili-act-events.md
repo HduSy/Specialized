@@ -7,7 +7,14 @@ Last Modified：2023-09-19 19:06:26
 
 # Content
 
-## tsconfig.json 配置参数
+## tslint vs eslint
+
+`tslint`：类型检查、语言转换 ts->js、语法检查  
+`eslint`：代码风格、语法检查
+
+## tsconfig.json
+
+### config
 
 ```json
 {
@@ -41,7 +48,17 @@ Last Modified：2023-09-19 19:06:26
 }
 ```
 
+### extends
+
+[tslint-config-prettier - npm](https://www.npmjs.com/package/tslint-config-prettier) - 解决 `tslint` 与 `prettier` 的冲突；  
+
+[tslint-eslint-rules - npm](https://www.npmjs.com/package/tslint-eslint-rules) - 补全 `tslint` 中缺失的 `eslint` 规则，【已废弃】- 可由 [Getting Started | typescript-eslint](https://typescript-eslint.io/getting-started) 替代；
+
 # Reference
 
 [Package - @bilibili/bili-act-events](http://npm.bilibili.co/package/@bilibili/bili-act-events)  
-[掌握 tsconfig.json - 掘金](https://juejin.cn/post/6844904178234458120?searchId=20230919190218A8B321613ADEE1117F61)
+
+[代码检查工具！从 TSLint 到 ESLint - 掘金](https://juejin.cn/post/6955025103507849223)  
+[TSLint](https://palantir.github.io/tslint/) - 2019 年【已废弃】- 由 [typescript-eslint](https://typescript-eslint.io/) 替代  
+[快速上手，tsconfig（文件选项） - 掘金](https://juejin.cn/post/6953553286657998879/)  
+[快速上手，tsconfig （编译选项） - 掘金](https://juejin.cn/post/6953554051879403534)  
