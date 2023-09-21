@@ -9,6 +9,10 @@ Last Modified：2023-04-04 10:04:46
 
 ## 配置文件说明 package.json
 
+### main
+
+（可选）主入口文件，默认 `index.js`。
+
 ### type
 
 指明项目中的 `.js` 文件以哪种模块处理。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ECMAScript module` 模块处理。
@@ -52,10 +56,6 @@ config.gypi
 *.orig
 package-lock.json
 ```
-
-### main
-
-（可选）主入口文件，默认 `index.js`。
 
 ### browser
 

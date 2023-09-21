@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/NPM.md",
+                "file": "bilibili/rollup.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/NPM.md",
+                "file": "bilibili/rollup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/NPM.md",
+                "file": "bilibili/rollup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/NPM.md"
+                "file": "bilibili/rollup.md"
               }
             }
           },
@@ -169,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/NPM.md",
+                "file": "bilibili/rollup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -220,8 +220,8 @@
   },
   "active": "1a048a9e76836f8e",
   "lastOpenFiles": [
-    "bilibili/rollup.md",
     "Roval/dev/杂/NPM.md",
+    "bilibili/rollup.md",
     "bilibili/bili-act-events.md",
     "conflict-files-obsidian-git.md",
     "职业经验之谈/Pasted image 20230920144834.png",
