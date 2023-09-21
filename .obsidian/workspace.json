@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "fc420cd11696731b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1a048a9e76836f8e",
             "type": "leaf",
             "state": {
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bilibili/rollup.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -182,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -231,21 +245,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4634b03343bfabd1",
+  "active": "fc420cd11696731b",
   "lastOpenFiles": [
+    "bilibili/rollup.md",
+    "conflict-files-obsidian-git.md",
+    "职业经验之谈/Pasted image 20230920144834.png",
+    "职业经验之谈/Pasted image 20230920144801.png",
+    "职业经验之谈/Pasted image 20230920144724.png",
+    "职业经验之谈/Pasted image 20230920141837.png",
+    "职业经验之谈/Pasted image 20230920141807.png",
+    "职业经验之谈/Pasted image 20230920141734.png",
+    "职业经验之谈/Pasted image 20230920141705.png",
+    "职业经验之谈/Pasted image 20230920141632.png",
+    "职业经验之谈/Pasted image 20230920141557.png",
+    "职业经验之谈/Pasted image 20230920141445.png",
+    "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "bilibili/bili-user.md",
     "bilibili/bili-act-events.md",
-    "bilibili/rollup.md",
     "Daily/2023-07-18.md",
     "bilibili",
     "Roval/dev/浏览器/cookie.md",
     "Roval/dev/浏览器",
     "Daily/2023-09-19.md",
     "Roval/rider/《自行车训练圣经》.md",
-    "conflict-files-obsidian-git.md",
     "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
-    "Roval/rider/Pasted image 20230914201927.png",
     "Daily/2023-09-13.md",
     "Daily/2023-09-12.md",
     "Daily/2023-09-09.md",
@@ -254,23 +278,12 @@
     "Roval/coder/小记.md",
     "职业经验之谈/Points.md",
     "Roval/coder/一起玩.md",
-    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/dev/杂/一些网站.md",
     "Daily/2023-08-25.md",
     "Roval/rider/Tarmac SL7 Comp.md",
-    "Roval/前端面经/面试点.png",
     "Roval/前端面经/面试官问点.md",
-    "Roval/前端面经/Pasted image 20230818110943.png",
-    "Roval/前端面经/Pasted image 20230818110714.png",
-    "Roval/rider/Pasted image 20230818130722.png",
     "Roval/coder/大 R 链路优化.md",
-    "Daily/Pasted image 20230822151234.png",
-    "Daily/Pasted image 20230822151233.png",
     "Daily/2023-08-24.md",
-    "Daily/2023-08-23.md",
-    "Daily/2023-08-22.md",
-    "Roval/rider/IMG_8097.png",
-    "Roval/rider/IMG_8097 1.png",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
