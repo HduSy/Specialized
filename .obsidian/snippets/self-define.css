@@ -1,6 +1,7 @@
 /* SECTION ------------------------------- Style Settings Plugin Defualt Values START ------------------------------- */
 .theme-dark {
     --Minimum-Page-Width: 700px;
+    --file-line-width: calc(72vh);
 }
 /* SECTION ------------------------------- Style Settings Plugin Defualt Values END ------------------------------- */
 

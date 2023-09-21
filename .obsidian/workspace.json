@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bilibili/bili-user.md",
+                "file": "bilibili/rollup.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "bilibili/rollup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "bilibili/rollup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bilibili/bili-act-events.md"
+                "file": "bilibili/rollup.md"
               }
             }
           },
@@ -183,7 +182,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "bilibili/rollup.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,11 +231,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1a048a9e76836f8e",
+  "active": "4634b03343bfabd1",
   "lastOpenFiles": [
     "bilibili/bili-user.md",
-    "bilibili/rollup.md",
     "bilibili/bili-act-events.md",
+    "bilibili/rollup.md",
     "Daily/2023-07-18.md",
     "bilibili",
     "Roval/dev/浏览器/cookie.md",

@@ -10,5 +10,6 @@
   "spellcheck": false,
   "trashOption": "system",
   "showLineNumber": false,
-  "showFrontmatter": false
+  "showFrontmatter": false,
+  "readableLineLength": false
 }
