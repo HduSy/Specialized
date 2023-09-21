@@ -8,25 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4634b03343bfabd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "bilibili/rollup.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1a048a9e76836f8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bilibili/bili-act-events.md",
+                "file": "Roval/dev/杂/NPM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": ".mjs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "Roval/dev/杂/NPM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "Roval/dev/杂/NPM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bilibili/rollup.md"
+                "file": "Roval/dev/杂/NPM.md"
               }
             }
           },
@@ -182,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "bilibili/rollup.md",
+                "file": "Roval/dev/杂/NPM.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -231,10 +218,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4634b03343bfabd1",
+  "active": "1a048a9e76836f8e",
   "lastOpenFiles": [
-    "bilibili/bili-act-events.md",
     "bilibili/rollup.md",
+    "Roval/dev/杂/NPM.md",
+    "bilibili/bili-act-events.md",
     "conflict-files-obsidian-git.md",
     "职业经验之谈/Pasted image 20230920144834.png",
     "职业经验之谈/Pasted image 20230920144801.png",

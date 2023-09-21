@@ -102,6 +102,12 @@ Last Modified：2023-09-20 08:52:52
 --watch.skipWrite           在监视时不要将文件写入磁盘
 ```
 
+## 配置文件
+
+### .cjs 文件 vs .mjs 文件
+
+`commonjs` 模块系统与 `esm` 模块系统 [[../Roval/dev/杂/NPM|NPM]]
+
 ## 优点
 
 输出结果扁平；  

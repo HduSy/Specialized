@@ -9,16 +9,20 @@ Last Modified：2023-04-04 10:04:46
 
 ## 配置文件说明 package.json
 
-### Type
+### type
 
-指明文件为哪种模块处理方式。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ECMAScript module` 模块处理。
+指明项目中的 `.js` 文件以哪种模块处理。`require/module.exports` 的 `Node commonjs` 模块还是 `import/export` 的 `ECMAScript module` 模块处理。
 
 三点说明：  
-1、建议始终不要忽略，虽然默认是 `commonjs` 规范；  
+1、建议始终不要忽略，参数缺失时**默认**是 `commonjs` 规范；  
 2、指明了 `.js` 和无扩展名文件处理方式；  
 3、不受 `type` 影响的两种类型文件，`.mjs` 的文件都按照 `ES` 模块来处理，`.cjs` 的文件都按照 `commonJs` 模块来处理；
 
-### Files
+### exports
+
+[package.json 的 exports 字段](https://es6.ruanyifeng.com/#docs/module-loader#package-json-%E7%9A%84-exports-%E5%AD%97%E6%AE%B5)
+
+### files
 
 （可选）文件数组，列出安装该依赖时会包括的条目，忽略时将包含所有文件。
 
@@ -49,35 +53,35 @@ config.gypi
 package-lock.json
 ```
 
-### Main
+### main
 
 （可选）主入口文件，默认 `index.js`。
 
-### Browser
+### browser
 
 当依赖作为客户端浏览器使用时，应使用 `browser` 替代 `main`，告诉用户可能包含 `node` 环境不支持的用法。
 
-### Bin
+### bin
 
 提供的内部命令对应可执行文件位置。
 
-### Private
+### private
 
 `npm publish` 拒绝发布，防止意外发布到开源社区。
 
-### Repository
+### repository
 
 代码仓库地址。
 
-### Scripts
+### scripts
 
 命令行 `npm` 脚本缩写。
 
-### Config
+### config
 
 添加命令行环境变量。
 
-### Dependencies
+### dependencies
 
 通过 `npm install --save` 命令安装依赖。
 
@@ -89,13 +93,11 @@ package-lock.json
 
 通过 `npm run install --save-dev` 命令安装依赖。
 
-### Engines
+### engines
 
 项目依赖 `node` 版本。
 
 ## package.lock.json 作用
-
-### 参考链接
 
 [npm 依赖管理中被忽略的那些细节_语言 & 开发_政采云前端团队_InfoQ精选文章](https://www.infoq.cn/article/qj3z2ygrzdgicqauaffn)
 
@@ -116,3 +118,6 @@ Run a command from a local or remote npm package.
 
 [2222 年了，总不能还只会 npm i 吧?🔥](https://juejin.cn/post/7069701706606444551)  
 [npm 官网关于 package.json 详细字段说明](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+
+[Node.js 如何处理 ES6 模块 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html)  
+[ES6 入门教程](https://es6.ruanyifeng.com/#docs/module-loader)
