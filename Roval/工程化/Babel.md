@@ -78,7 +78,8 @@ Last Modified：2023-07-18 14:36:01
 
 # Reference
 
-[Babel相关内容串联 | Congzhou's Blog](https://congzhou09.github.io/knowledge/Babel%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%B8%B2%E8%81%94.html)
+[Babel相关内容串联 | Congzhou's Blog](https://congzhou09.github.io/knowledge/Babel%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%B8%B2%E8%81%94.html)  
+[前端工程化（7）：你所需要知道的最新的babel兼容性实现方案 - 掘金](https://juejin.cn/post/6976501655302832159)
 
 [一文彻底读懂Babel - 谢小飞的博客](https://xieyufei.com/2020/11/18/Babel-Practice.html)
 
