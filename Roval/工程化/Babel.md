@@ -61,6 +61,10 @@ Last Modified：2023-07-18 14:36:01
 }
 ```
 
+##### browserlist
+
+[图形化显示浏览器支持范围](https://browsersl.ist/)
+
 ### polyfill
 
 `7.4.0` 后不建议使用 `@babel/polyfill`，将在全局模拟完整的 ECMA2015+ 功能，造成污染。  
@@ -74,11 +78,11 @@ Last Modified：2023-07-18 14:36:01
 
 # Reference
 
+[Babel相关内容串联 | Congzhou's Blog](https://congzhou09.github.io/knowledge/Babel%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%B8%B2%E8%81%94.html)
+
 [一文彻底读懂Babel - 谢小飞的博客](https://xieyufei.com/2020/11/18/Babel-Practice.html)
 
 [一文搞懂Babel配置 - 掘金](https://juejin.cn/post/7116698494827495454)  
 [babel配置指南 · Issue #16 · zyl1314/blog · GitHub](https://github.com/zyl1314/blog/issues/16)  
 
 [深入浅出 Babel 上篇：架构和原理 + 实战 - 掘金](https://juejin.cn/post/6844903956905197576?searchId=20230919153112D7757C501CCE1BA2EF5F)
-
-[Babel相关内容串联 | Congzhou's Blog](https://congzhou09.github.io/knowledge/Babel%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%B8%B2%E8%81%94.html)
