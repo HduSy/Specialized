@@ -1,0 +1,69 @@
+Created Date：2022-12-17 22:27:40  
+Last Modified：2022-12-17 22:27:40
+
+# Tags
+
+#工程化
+
+# Content
+
+## plugins
+
+打包过程做一些处理工作
+
+### mini-css-extract-plugin
+
+升级 webpack4 之后替代了 `extract-text-webpack-plugin`  
+将 CSS 从 JavaScript 中提取出来的插件，它会创建一个单独的 CSS 文件。这个插件适用于生产环境，可以帮助优化页面加载速度
+
+### optimize-css-assets-webpack-plugin
+
+用于优化和压缩 CSS 资源的插件。它使用 cssnano 进行 CSS 的优化和压缩，可以减小 CSS 文件的体积，提高页面加载速度
+
+### VueLoaderPlugin
+
+```js
+const { VueLoaderPlugin } = require('vue-loader')
+```
+
+使得其他规则 `rules` 同样应用到 `.vue` 文件的 `<style>`、`<script>` 标签，通过改 `plugin` 施展魔法，详见代码示例 [[2023-07-11#^f8b58a]]
+
+### case-sensitive-paths
+
+不同 OS 下严格匹配（大小写敏感）模块引入时所在磁盘路径。官网描述：This Webpack plugin enforces the entire path of all required modules match the exact case of the actual path on disk。 [case-sensitive-paths](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin)
+
+### monaco-editor-webpack-plugin
+
+Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin)
+
+## loaders
+
+处理不同类型文件为模块
+
+### file-loader
+
+指定静态资源 **输出** 目录地址，通过 **hash 命名** 文件活得更好缓存。开发时，使用文件相对引用路径，打包输出后自动替换文件路径为正确 URL
+
+### url-loader
+
+封装了 `file-loader`，配置 `limit` 参数，静态资源体积小于 `limit` 时将被转为 Base64URL 作为文件引用路径，从而减少 HTTP 请求次数
+
+### css-loader
+
+用来解释 `@import` 和 `url()`
+
+### style-loader
+
+用来将 `css-loader` 生成的样式表通过 `<style>` 标签插入到页面中去
+
+### postcss-loader
+
+`Javascript` 处理 `css`
+
+# Reference
+
+[万字webpack5教学](https://mp.weixin.qq.com/s/Ap8vWQqgGpe-PdU2EZFxDA)
+
+[【Webpack4】CSS 配置之 postcss-loader - 掘金](https://juejin.cn/post/6844904017802297352)  
+[PostCSS 8 插件迁移的二三事](https://www.w3ctech.com/topic/2226)  
+[https://webpack.js.org/plugins/ignore-plugin/](内置IgnorePlugin插件优化打包体积)

@@ -12,6 +12,18 @@ Last Modified：2023-07-18 14:36:01
 1、语法转换；  
 2、为目标环境添加 `polyfill` 提供不支持的功能；
 
+## 使用方式
+
+### @babel/cli 命令行
+
+### 打包工具
+
+`webpack`：`babel-loader` [[webpack]]  
+`rollup`：`@rollup/plugin-babel` [[rollup]]  
+`@rollup/register`  
+
+无论使用哪种方式，`@babel/core` 和相应 `配置文件` 都是必须的
+
 ## 使用指南
 
 ### plugin
@@ -68,3 +80,5 @@ Last Modified：2023-07-18 14:36:01
 [babel配置指南 · Issue #16 · zyl1314/blog · GitHub](https://github.com/zyl1314/blog/issues/16)  
 
 [深入浅出 Babel 上篇：架构和原理 + 实战 - 掘金](https://juejin.cn/post/6844903956905197576?searchId=20230919153112D7757C501CCE1BA2EF5F)
+
+[Babel相关内容串联 | Congzhou's Blog](https://congzhou09.github.io/knowledge/Babel%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E4%B8%B2%E8%81%94.html)

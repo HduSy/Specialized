@@ -118,7 +118,7 @@ Last Modified：2023-09-20 08:52:52
 
 ### .cjs 文件 vs .mjs 文件
 
-`commonjs` 模块系统与 `esm` 模块系统 [[../Roval/dev/杂/NPM|NPM]]
+`commonjs` 模块系统与 `esm` 模块系统 [[../dev/杂/NPM|NPM]]
 
 ## 优点
 
@@ -137,7 +137,7 @@ Last Modified：2023-09-20 08:52:52
 开发复杂前端应用程序：引入第三方模块 +HMR 功能提高开发效率 + 拆包  
 开发类库：优点
 
-新版本的 `webpack` 的功能几乎覆盖包含了 `rollup` 的优势点。
+新版本的 [[webpack]] 的功能几乎覆盖包含了 `rollup` 的优势点。
 
 ## parcel
 
