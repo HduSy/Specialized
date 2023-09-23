@@ -852,6 +852,10 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 `Pick`：选取属性  
 `Omit`：剔除属性
 
+## tsconfig.json 配置
+
+[[../../../bilibili/bili-act-events|bili-act-events]]
+
 # Reference
 
 [详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  

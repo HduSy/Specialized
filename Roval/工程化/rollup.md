@@ -116,6 +116,12 @@ Last Modified：2023-09-20 08:52:52
 
 ## 配置文件
 
+```js
+export default {
+	external: [''], // 作为外部库引入第三方包
+}
+```
+
 ### .cjs 文件 vs .mjs 文件
 
 `commonjs` 模块系统与 `esm` 模块系统 [[../dev/杂/NPM|NPM]]
@@ -131,6 +137,24 @@ Last Modified：2023-09-20 08:52:52
 加载 `非ESM` 第三方模块时比较复杂，需要配置一堆插件；  
 模块最终打包到一个函数中，不支持 `HMR`；  
 浏览器中，代码拆分功能依赖 `AMD`；
+
+## plugins
+
+### @rollup/plugin-node-resolve
+
+引入非本地第三方库
+
+### @rollup/plugin-commonjs
+
+处理 `commonjs` 模块规范的第三方库
+
+### @rollup/plugin-babel
+
+使用 `babel` 的功能
+
+### @rollup/plugin-json
+
+处理 `json` 导入
 
 ## webpack vs rollup
 

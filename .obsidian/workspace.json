@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/Babel.md",
+                "file": "bilibili/bili-act-events.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/工程化/Babel.md",
+                "file": "bilibili/bili-act-events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/工程化/Babel.md",
+                "file": "bilibili/bili-act-events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/工程化/Babel.md"
+                "file": "bilibili/bili-act-events.md"
               }
             }
           },
@@ -169,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/工程化/Babel.md",
+                "file": "bilibili/bili-act-events.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -220,6 +220,11 @@
   },
   "active": "1a048a9e76836f8e",
   "lastOpenFiles": [
+    "bilibili/bili-user.md",
+    "Roval/coder/个人发展计划周表.md",
+    "Roval/dev/JavaScript/type vs interface.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
+    "bilibili/bili-act-events.md",
     "Roval/工程化/rollup.md",
     "Roval/工程化/Babel.md",
     "Roval/工程化/webpack.md",
@@ -232,7 +237,6 @@
     "Roval/工程化",
     "Roval/dev/杂/一些网站.md",
     "Roval/dev/杂/NPM.md",
-    "bilibili/bili-act-events.md",
     "conflict-files-obsidian-git.md",
     "职业经验之谈/Pasted image 20230920144834.png",
     "职业经验之谈/Pasted image 20230920144801.png",
@@ -245,7 +249,6 @@
     "职业经验之谈/Pasted image 20230920141557.png",
     "职业经验之谈/Pasted image 20230920141445.png",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
-    "bilibili/bili-user.md",
     "bilibili",
     "Roval/dev/浏览器/cookie.md",
     "Roval/dev/浏览器",
@@ -256,9 +259,6 @@
     "Daily/2023-09-13.md",
     "Daily/2023-09-12.md",
     "Daily/2023-09-09.md",
-    "Roval/rider/科学训练.md",
-    "职业经验之谈/Untitled.md",
-    "Roval/coder/小记.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
