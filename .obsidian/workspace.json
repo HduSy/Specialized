@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/tsconfig.json.md",
+                "file": "Roval/工程化/Babel.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96440d9b0c530145",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/工程化/vite.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/工程化/tsconfig.json.md",
+                "file": "Roval/工程化/vite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/工程化/tsconfig.json.md",
+                "file": "Roval/工程化/vite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/工程化/tsconfig.json.md"
+                "file": "Roval/工程化/vite.md"
               }
             }
           },
@@ -169,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/工程化/tsconfig.json.md",
+                "file": "Roval/工程化/vite.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -218,9 +232,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6652db3b869611d8",
+  "active": "96440d9b0c530145",
   "lastOpenFiles": [
     "Roval/工程化/Babel.md",
+    "Roval/工程化/vite.md",
     "Roval/工程化/tsconfig.json.md",
     "bilibili/bili-act-events.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
@@ -258,7 +273,6 @@
     "Roval/rider/《自行车训练圣经》.md",
     "Daily/2023-09-14.md",
     "Roval/rider/上衣尺码参考.md",
-    "Daily/2023-09-13.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
