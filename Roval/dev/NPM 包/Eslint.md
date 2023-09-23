@@ -332,16 +332,6 @@ parserOptions: {
 },
 ```
 
-## tsconfig.json
-
-1、is declared but its value is never read.
-
-```json
-"compilerOptions": {
-	"noUnusedLocals": false,
-}
-```
-
 ## 代码文件里的临时规则设定
 
 [当前文件关闭、当前行关闭等](https://eslint.bootcss.com/docs/user-guide/configuring#disabling-rules-with-inline-comments)

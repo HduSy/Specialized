@@ -651,7 +651,7 @@ ts 高级类型会根据传入的类型参数如 T、U 得出新的类型，这�
 #### 自己写声明文件
 
 1. 一个方法是放在 `@node_modules/@types/xxx/index.d.ts` 下面；
-2. 一个方法是新建 `types` 文件夹，在其中添加 `xxx/index.d.ts` 声明文件，并在 `tsconfig.json` 配置 `paths` 和 `baseUrl` 选项。
+2. 一个方法是新建 `types` 文件夹，在其中添加 `xxx/index.d.ts` 声明文件，并在 [[../../工程化/tsconfig.json|tsconfig.json]] 配置 `paths` 和 `baseUrl` 选项。
 
 ## 拥抱 TS 之代码中的实践
 
@@ -677,7 +677,7 @@ interface IAwardItem {
 
 #### 2、善用 *.d.ts 声明文件
 
-`*.ts` 文件会获取 `*.d.ts` 声明文件中的类型定义。在 `tsconfig.json` 中配置全局自定义类型声明文件，则声明文件中的类型定义都能被项目中的 `*.ts` 文件获取到，不需要 `import` 就可以直接使用。
+`*.ts` 文件会获取 `*.d.ts` 声明文件中的类型定义。在 [[../../工程化/tsconfig.json|tsconfig.json]] 中配置全局自定义类型声明文件，则声明文件中的类型定义都能被项目中的 `*.ts` 文件获取到，不需要 `import` 就可以直接使用。
 
 ```
 common-types.d.ts
@@ -854,12 +854,11 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 
 ## tsconfig.json 配置
 
-[[../../../bilibili/bili-act-events|bili-act-events]]
+[[../../工程化/tsconfig.json|tsconfig.json]]
 
 # Reference
 
 [会写 TypeScript 但你真的会 TS 编译配置吗？ - 掘金](https://juejin.cn/post/7039583726375796749)  
-[详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  
 [接口interface](https://ts.xcatliu.com/advanced/class-and-interfaces.html#%E7%B1%BB%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3)  
 [类型别名type](https://ts.xcatliu.com/advanced/type-aliases.html)  
 [如何在项目中用好 TypeScript 🤔](https:juejin.cn/post/7058868160706904078)  
