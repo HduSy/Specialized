@@ -135,6 +135,8 @@ Last Modified：2023-09-23 12:08:47
 
 # Reference
 
+[TypeScript: TSConfig Reference - Docs on every TSConfig option](https://www.typescriptlang.org/tsconfig)
+
 [快速上手，tsconfig（文件选项） - 掘金](https://juejin.cn/post/6953553286657998879/)  
 [快速上手，tsconfig （编译选项） - 掘金](https://juejin.cn/post/6953554051879403534)  
 [typeScript tsconfig配置详解 - 掘金](https://juejin.cn/post/6844904093568221191)  
