@@ -236,3 +236,4 @@ rules:  规则
 [TSLint](https://palantir.github.io/tslint/) - 2019 年【已废弃】- 由 [typescript-eslint](https://typescript-eslint.io/) 替代  
 [快速上手，tsconfig（文件选项） - 掘金](https://juejin.cn/post/6953553286657998879/)  
 [快速上手，tsconfig （编译选项） - 掘金](https://juejin.cn/post/6953554051879403534)  
+[typeScript tsconfig配置详解 - 掘金](https://juejin.cn/post/6844904093568221191)
