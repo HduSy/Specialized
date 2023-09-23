@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "onsave",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -220,12 +221,12 @@
   },
   "active": "1a048a9e76836f8e",
   "lastOpenFiles": [
+    "Roval/工程化/rollup.md",
+    "bilibili/bili-act-events.md",
     "bilibili/bili-user.md",
     "Roval/coder/个人发展计划周表.md",
     "Roval/dev/JavaScript/type vs interface.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
-    "bilibili/bili-act-events.md",
-    "Roval/工程化/rollup.md",
     "Roval/工程化/Babel.md",
     "Roval/工程化/webpack.md",
     "Daily/2023-07-11.md",
