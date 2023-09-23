@@ -858,6 +858,7 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 
 # Reference
 
+[会写 TypeScript 但你真的会 TS 编译配置吗？ - 掘金](https://juejin.cn/post/7039583726375796749)  
 [详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  
 [接口interface](https://ts.xcatliu.com/advanced/class-and-interfaces.html#%E7%B1%BB%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3)  
 [类型别名type](https://ts.xcatliu.com/advanced/type-aliases.html)  
