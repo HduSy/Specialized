@@ -27,6 +27,8 @@ Last Modified：2023-09-23 16:47:10
 4. 补丁文件修改；
 5. `--force`
 
+## 环境变量和模式
+
 # Reference
 
 [Vite | 下一代的前端工具链](https://cn.vitejs.dev/)
