@@ -29,6 +29,27 @@ Last Modified：2023-09-23 16:47:10
 
 ## 环境变量和模式
 
+### 环境变量
+
+`vite` 在 `import.meta.env` 上暴露环境变量。生产环境不支持动态替换，动态 key 取值 `import.meta.env[key]` 是无效的。
+
+### .env
+
+``` js
+.env                # 所有情况下都会加载
+.env.local          # 所有情况下都会加载，但会被 git 忽略
+.env.[mode]         # 只在指定模式下加载
+.env.[mode].local   # 只在指定模式下加载，但会被 git 忽略
+```
+
+`.env` 类文件会在 Vite 启动一开始时被加载，而改动会在**重启服务器后生效**。
+
+为防止环境变量意外泄漏，`vite` 只暴露指定前缀的环境变量，默认为 `VITE_`。可通过 `envPrefix` 自定义环境变量前缀。
+
+### HTML 环境变量替换
+
+### 模式
+
 # Reference
 
 [Vite | 下一代的前端工具链](https://cn.vitejs.dev/)
