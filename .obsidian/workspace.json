@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/工程化/webpack.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "圣经",
+                "query": "webpack",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/工程化/webpack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/工程化/webpack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md"
+                "file": "Roval/工程化/webpack.md"
               }
             }
           },
@@ -184,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/rider/《自行车训练圣经》.md",
+                "file": "Roval/工程化/webpack.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -235,8 +235,12 @@
   },
   "active": "c77a7ef62a689b0d",
   "lastOpenFiles": [
-    "Roval/工程化/package.json.md",
     "Roval/工程化/Babel.md",
+    "Daily/2023-07-11.md",
+    "Roval/coder/coder-content.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Roval/rider/《自行车训练圣经》.md",
+    "Roval/工程化/package.json.md",
     "Roval/dev/杂/工程化.md",
     "Roval/工程化/vite.md",
     "Roval/工程化/tsconfig.json.md",
@@ -249,9 +253,6 @@
     "bilibili/bili-user.md",
     "Roval/coder/个人发展计划周表.md",
     "Roval/工程化/webpack.md",
-    "Daily/2023-07-11.md",
-    "Roval/coder/coder-content.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试官问点.md",
     "Daily/2023-06-06.md",
     "Roval/工程化",
@@ -273,7 +274,6 @@
     "Roval/dev/浏览器/cookie.md",
     "Roval/dev/浏览器",
     "Daily/2023-09-19.md",
-    "Roval/rider/《自行车训练圣经》.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",

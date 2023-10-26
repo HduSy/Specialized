@@ -7,6 +7,28 @@ Last Modified：2022-12-17 22:27:40
 
 # Content
 
+## config
+
+### output.path
+
+`webpack` 打包输出文件存放目录
+
+### output.publicPath
+
+【生产环境配置】指定静态资源在 `index.html` 中的引用地址**前缀**
+
+| 类型     | 含义 |
+| -------- | ---- |
+| 相对路径 | 相对于 index.html 地址    |
+| 绝对路径 |   相对于根服务器地址 `/`   |
+| CDN 地址         |   相对于 CDN 指定地址   |
+
+`html-webpack-plugin` 中配置的 `publicPath` 优先级较高
+
+### devServer.publicPath
+
+【开发环境配置】`webpack` 打包输出的文件存在于内存里，打包后的资源要想在浏览器的**对外访问路径**为：`publicPath` + 资源文件
+
 ## plugins
 
 打包过程做一些处理工作
