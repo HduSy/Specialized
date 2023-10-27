@@ -68,19 +68,38 @@ Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/pack
 
 ### url-loader
 
+`test: /\.(png|jpg|gif|ttf)$/i`  
 封装了 `file-loader`，配置 `limit` 参数，静态资源体积小于 `limit` 时将被转为 Base64URL 作为文件引用路径，从而减少 HTTP 请求次数
+
+### less-loader
+
+`test: /\.(less)$/`  
+处理 less 文件为模块
+
+### sass-loader
+
+`test: /\.(sass|scss)$/`  
+处理 sass 文件为模块
+
+### sass-resources-loader
+
+将 sass/less 变量全局化，不用每个文件重复引用
 
 ### css-loader
 
-用来解释 `@import` 和 `url()`
+处理 css 文件中的 `@import` 和 `url()` 语法，输出 js 模块
 
 ### style-loader
 
-用来将 `css-loader` 生成的样式表通过 `<style>` 标签插入到页面中去
+用来将 `css-loader` 生成的样式模块通过 `<style>` 标签插入到 html 中去
 
 ### postcss-loader
 
-`Javascript` 处理 `css`
+利用 js 处理 css 成 AST，并能在过程中调用各种插件，如 autoprefixer、cssnano 等
+
+### esbuild-loader
+
+使用 esbuild 的能力提升构建速度
 
 # Reference
 
