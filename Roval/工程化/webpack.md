@@ -35,6 +35,13 @@ Last Modified：2022-12-17 22:27:40
 
 ### html-webpack-plugin
 
+```js
+new HtmlWebpackPlugin({
+	inject: true,
+	template: path.resolve(ROOT_DIR, 'public/index.ejs'),
+})
+```
+
 以指定 HTML 为模板自动引入打包输出的 js、css 资源
 
 ### mini-css-extract-plugin
@@ -65,12 +72,29 @@ Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/pack
 ### webpack.NoEmitOnErrorsPlugin
 
 【webpack 内置】  
-遇到编译报错不输出。比如我们启用热加载开发时，改错资源引用将导致页面实时报错，配置该插件可以让遇到错误的编译不再输出资源文件，页面也不会更新报错。打包时也是如此，遇到错误将跳过输出。
+遇到编译报错不输出。比如我们启用热加载开发时，改错资源引用将导致页面实时报错，配置该插件可以让遇到错误的编译不再输出资源文件，页面也不会更新报错。打包时也是如此，遇到错误将跳过输出。  
+
+[[NoEmitOnErrorsPlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/NoEmitOnErrorsPlugin/)]()
 
 ### webpack.HotModuleReplacementPlugin
 
 【webpack 内置】  
 启用 HMR
+
+### webpack.DefinePlugin
+
+```js
+new webpack.DefinePlugin({
+	'process.env.BABEL_ENV': JSON.stringify('development'),
+	'process.env.NODE_ENV': JSON.stringify('development'),
+	'process.env.BROWSER': true,
+	'process.env.DEBUG': true,
+	__DEBUG__: true,
+})
+```
+
+允许在 **编译时** 将你代码中的变量替换为其他值或表达式。这在需要根据开发模式与生产模式进行不同的操作时，非常有用。  
+[[DefinePlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/define-plugin/)]()
 
 ## loaders
 
