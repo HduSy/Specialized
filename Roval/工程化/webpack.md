@@ -29,6 +29,14 @@ Last Modified：2022-12-17 22:27:40
 
 【开发环境配置】`webpack` 打包输出的文件存在于内存里，打包后的资源要想在浏览器的**对外访问路径**为：`publicPath` + 资源文件
 
+### performance
+
+配置项目静态资源、入口文件达到文件限制时，如何提示
+
+#### hints
+
+打开或关闭提示
+
 ## plugins
 
 打包过程做一些处理工作
@@ -61,9 +69,9 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 使得其他规则 `rules` 同样应用到 `.vue` 文件的 `<style>`、`<script>` 标签，通过改 `plugin` 施展魔法，详见代码示例 [[2023-07-11#^f8b58a]]
 
-### case-sensitive-paths
+### case-sensitive-paths-webpack-plugin
 
-不同 OS 下严格匹配（大小写敏感）模块引入时所在磁盘路径。官网描述：This Webpack plugin enforces the entire path of all required modules match the exact case of the actual path on disk。 [case-sensitive-paths](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin)
+不同 OS 下严格匹配（大小写敏感）模块引入时所在磁盘路径，统一跨平台引入路径大小写。官网描述：This Webpack plugin enforces the entire path of all required modules match the exact case of the actual path on disk。 [case-sensitive-paths](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin)
 
 ### monaco-editor-webpack-plugin
 
