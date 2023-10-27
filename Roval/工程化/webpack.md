@@ -33,6 +33,10 @@ Last Modified：2022-12-17 22:27:40
 
 打包过程做一些处理工作
 
+### html-webpack-plugin
+
+以指定 HTML 为模板自动引入打包输出的 js、css 资源
+
 ### mini-css-extract-plugin
 
 升级 webpack4 之后替代了 `extract-text-webpack-plugin`  
