@@ -58,6 +58,16 @@ const { VueLoaderPlugin } = require('vue-loader')
 
 Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin)
 
+### webpack.NoEmitOnErrorsPlugin
+
+【webpack 内置】  
+遇到编译报错不输出。比如我们启用热加载开发时，改错资源引用将导致页面实时报错，配置该插件可以让遇到错误的编译不再输出资源文件，页面也不会更新报错。打包时也是如此，遇到错误将跳过输出。
+
+### webpack.HotModuleReplacementPlugin
+
+【webpack 内置】  
+启用 HMR
+
 ## loaders
 
 处理不同类型文件为模块
