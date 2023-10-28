@@ -46,11 +46,30 @@ Last Modified：2022-12-17 22:27:40
 ```js
 new HtmlWebpackPlugin({
 	inject: true,
+	chunks: 'all',
+	minify: {
+		removeComments: true,
+		collapseWhitespace: true,
+		removeRedundantAttributes: true,
+		useShortDoctype: true,
+		removeEmptyAttributes: true,
+		removeStyleLinkTypeAttributes: true,
+		keepClosingSlash: true,
+		minifyJS: true,
+		minifyCSS: true,
+		minifyURLs: true,
+	},
 	template: path.resolve(ROOT_DIR, 'public/index.ejs'),
+	externals: {
+		React: `/javascripts/react.${buildKey}.js`,
+		ReactDOM: `/javascripts/react-dom.${buildKey}.js`,
+	},
 })
 ```
 
-以指定 HTML 为模板自动引入打包输出的 js、css 资源
+以指定 HTML 为模板自动引入打包输出的 js、css 资源  
+[html-webpack-plugin: options配置说明](https://github.com/jantimon/html-webpack-plugin#options)  
+[html-webpack-plugin: minify](https://github.com/jantimon/html-webpack-plugin#minification)
 
 ### mini-css-extract-plugin
 
