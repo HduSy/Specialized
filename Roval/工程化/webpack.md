@@ -3,17 +3,24 @@ Last Modified：2022-12-17 22:27:40
 
 # Tags
 
-#工程化
+#工程化 #前端性能优化
 
 # Content
 
-## config
+## 基础 config
 
-### output.path
+### stats
+
+精准控制哪些打包输出信息需要显示出来  
+[Stats | webpack](https://webpack.js.org/configuration/stats/)
+
+### output
+
+#### path
 
 `webpack` 打包输出文件存放目录
 
-### output.publicPath
+#### publicPath
 
 【生产环境配置】指定静态资源在 `index.html` 中的引用地址**前缀**
 
@@ -25,13 +32,57 @@ Last Modified：2022-12-17 22:27:40
 
 `html-webpack-plugin` 中配置的 `publicPath` 优先级较高
 
-### devServer.publicPath
+#### filename
+
+配置打包输出 bundle 的命名，仅针对初始化模块
+
+#### chunkFilename
+
+配置打包输出 bundle 的命名，仅针对按需加载的非初始化模块
+
+### resolve
+
+#### modules
+
+配置模块查找目录
+
+#### extensions
+
+按顺序以文件类型解析引用时省略了后缀的模块
+
+#### alias
+
+配置路径别名，缩短引入路径
+
+### module
+
+#### strictExportPresence
+
+【已废弃】无效导出时 error 而不是 warning,由 parser.javascript.exportsPresence 替代
+
+```js
+parser: {
+	javascript: {
+		exportsPresence: 'error'
+	}
+}
+```
+
+#### rules
+
+为不同文件类型模块配置相应 [[#^6bd27c|loaders]]
+
+### devServer
+
+#### publicPath
 
 【开发环境配置】`webpack` 打包输出的文件存在于内存里，打包后的资源要想在浏览器的**对外访问路径**为：`publicPath` + 资源文件
 
 ### performance
 
-配置项目静态资源、入口文件达到文件限制时，如何提示
+[Performance | webpack](https://webpack.js.org/configuration/performance/)
+
+配置项目静态资源、入口文件达到**文件大小限制**时，以什么级别 log 提示
 
 #### hints
 
@@ -39,7 +90,11 @@ Last Modified：2022-12-17 22:27:40
 
 ### optimization
 
+[Optimization | webpack](https://webpack.js.org/configuration/optimization/)
+
 #### minimizer
+
+覆盖
 
 ```js
 minimizer: [
@@ -56,6 +111,45 @@ minimizer: [
 `true` or `'multiple'`：adds an additional chunk containing only the runtime to each entrypoint.  
 
 [Optimization | optimization.runtimeChunk](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk)
+
+#### splitChunks
+
+进一步制定代码分割策略，减小首屏加载体积，提高首屏加载性能 [[#^22a680|掘金优质文章]]
+
+```js
+module.exports = {
+  //...
+  optimization: {
+    splitChunks: {
+      //在cacheGroups外层的属性设定适用于所有缓存组，不过每个缓存组内部可以重设这些属性
+      chunks: "async", //将什么类型的代码块用于分割，三选一： "initial"：入口代码块 | "all"：全部 | "async"：按需加载的代码块
+      minSize: 30000, //大小超过30kb的模块才会被提取
+      maxSize: 0, //只是提示，可以被违反，会尽量将chunk分的比maxSize小，当设为0代表能分则分，分不了不会强制
+      minChunks: 1, //某个模块至少被多少代码块引用，才会被提取成新的chunk
+      maxAsyncRequests: 5, //分割后，按需加载的代码块最多允许的并行请求数，在webpack5里默认值变为6
+      maxInitialRequests: 3, //分割后，入口代码块最多允许的并行请求数，在webpack5里默认值变为4
+      automaticNameDelimiter: "~", //代码块命名分割符
+      name: true, //每个缓存组打包得到的代码块的名称
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/, //匹配node_modules中的模块
+          priority: -10, //优先级，当模块同时命中多个缓存组的规则时，分配到优先级高的缓存组
+        },
+        default: {
+          minChunks: 2, //覆盖外层的全局属性
+          priority: -20,
+          reuseExistingChunk: true, //是否复用已经从原代码块中分割出来的模块
+        },
+      },
+    },
+  },
+};
+
+```
+
+### watch
+
+开启 `watch` 模式，默认为 `false`，生产环境必须为 `false`.In [webpack-dev-server](https://github.com/webpack/webpack-dev-server) and [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) **watch mode is enabled** by default.
 
 ## plugins
 
@@ -155,6 +249,8 @@ Keep chunk size above the specified limit by merging chunks that are smaller tha
 
 ## loaders
 
+^6bd27c
+
 处理不同类型文件为模块
 
 ### file-loader
@@ -201,6 +297,8 @@ const { ESBuildMinifyPlugin } = require('esbuild-loader');
 使用 `esbuild` 的能力提升 `webpack` 构建速度
 
 # Reference
+
+[在淘宝优化了一个大型项目，分享一些干货（Webpack，SplitChunk代码实例，图文结合） - 掘金](https://juejin.cn/post/6844904183917871117#heading-5) ^22a680
 
 [万字webpack5教学](https://mp.weixin.qq.com/s/Ap8vWQqgGpe-PdU2EZFxDA)
 
