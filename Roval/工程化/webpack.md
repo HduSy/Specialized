@@ -37,6 +37,19 @@ Last Modified：2022-12-17 22:27:40
 
 打开或关闭提示
 
+### optimization
+
+#### minimizer
+
+```js
+minimizer: [
+	new ESBuildMinifyPlugin({
+		target: 'es2015', // Syntax to compile to (see options below for possible values)
+		css: true,
+	}),
+]
+```
+
 ## plugins
 
 打包过程做一些处理工作
@@ -69,7 +82,7 @@ new HtmlWebpackPlugin({
 
 以指定 HTML 为模板自动引入打包输出的 js、css 资源  
 [html-webpack-plugin: options配置说明](https://github.com/jantimon/html-webpack-plugin#options)  
-[html-webpack-plugin: minify](https://github.com/jantimon/html-webpack-plugin#minification)
+[html-webpack-plugin: minify配置压缩html代码](https://github.com/jantimon/html-webpack-plugin#minification)
 
 ### mini-css-extract-plugin
 
@@ -123,6 +136,16 @@ new webpack.DefinePlugin({
 允许在 **编译时** 将你代码中的变量替换为其他值或表达式。这在需要根据开发模式与生产模式进行不同的操作时，非常有用。  
 [[DefinePlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/define-plugin/)]()
 
+### webpack.optimize.MinChunkSizePlugin
+
+```js
+new webpack.optimize.MinChunkSizePlugin({
+	minChunkSize: 10000,
+})
+```
+
+Keep chunk size above the specified limit by merging chunks that are smaller than the `minChunkSize`.
+
 ## loaders
 
 处理不同类型文件为模块
@@ -164,7 +187,11 @@ new webpack.DefinePlugin({
 
 ### esbuild-loader
 
-使用 esbuild 的能力提升构建速度
+```js
+const { ESBuildMinifyPlugin } = require('esbuild-loader');
+```
+
+使用 `esbuild` 的能力提升 `webpack` 构建速度
 
 # Reference
 
