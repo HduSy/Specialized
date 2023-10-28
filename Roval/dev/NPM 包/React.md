@@ -3,7 +3,7 @@ Last Modified：2022-12-17 22:19:23
 
 # Tags
 
- #React
+ #React #前端性能优化
 
 # Content
 
@@ -69,7 +69,24 @@ Last Modified：2022-12-17 22:19:23
 
 ## 相关生态库
 
-- react-loadable
+### react-loadable
+
+基于组件而非路由的代码分割（基于路由缺点，页面中尚处于隐藏的组件也不分情况的加载了）  
+[GitHub - jamiebuilds/react-loadable: :hourglass\_flowing\_sand: A higher order component for loading components with promises.](https://github.com/jamiebuilds/react-loadable)
+
+### react-dnd & react-dnd-html5-backend
+
+元素拖拽  
+[React DnD](https://react-dnd.github.io/react-dnd/about)
+
+### react-redux
+
+全局状态管理
+
+### react-hot-loader
+
+不修改状态的前提下，局部刷新（与 webpack 的 HMR 不同），能提升开发构建速度。  
+[react-hot-loader原理 - react等等我](https://sekin.gitbook.io/react/chapter1/react-hot-loaderyuan-li)
 
 # Reference
 
