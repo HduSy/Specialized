@@ -50,6 +50,13 @@ minimizer: [
 ]
 ```
 
+#### runtimeChunk
+
+`'single'`：creates a runtime file to be shared for all generated chunks.  
+`true` or `'multiple'`：adds an additional chunk containing only the runtime to each entrypoint.  
+
+[Optimization | optimization.runtimeChunk](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk)
+
 ## plugins
 
 打包过程做一些处理工作
