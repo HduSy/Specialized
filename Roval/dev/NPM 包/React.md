@@ -15,6 +15,11 @@ Last Modified：2022-12-17 22:19:23
 
 ## Hooks
 
+### createContext
+
+类似于 Vue 里面 `provide & inject` 跨组件通信方式。创建上下文  
+[createContext – React](https://react.dev/reference/react/createContext)
+
 ### useEffect
 
 - useEffect 为函数式组件提供副效应，支持第二个参数填依赖项，条件执行  
