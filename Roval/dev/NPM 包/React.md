@@ -13,6 +13,10 @@ Last Modified：2022-12-17 22:19:23
 
 短写法：`<></>`，无属性可加；常规写法：`<React.Fragment key={}></React.Fragment>`
 
+### PureComponent vs Component
+
+[无状态组件 | Roundtable Coders](https://johninch.github.io/Roundtable/Question-Bank/react/SFC.html#purecomponent-vs-component)
+
 ## Hooks
 
 ### createContext
