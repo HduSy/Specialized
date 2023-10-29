@@ -78,9 +78,26 @@ Last Modified：2022-12-17 22:19:23
 
 ## React 技术栈
 
+### react-dom
+
+包含一些仅在浏览器 DOM 环境下运行的方法，不支持在 `React Native` 中使用  
+[React DOM API – React 中文文档](https://zh-hans.react.dev/reference/react-dom)
+
+#### createPortal
+
+允许在 `DOM` 的不同位置渲染组件
+
+#### flushSync
+
+强制 `React` 同步刷新状态并更新 `DOM`
+
 ### react-router-dom
 
 路由管理
+
+### react-redux
+
+全局状态管理
 
 ### react-loadable
 
@@ -91,10 +108,6 @@ Last Modified：2022-12-17 22:19:23
 
 元素拖拽  
 [React DnD](https://react-dnd.github.io/react-dnd/about)
-
-### react-redux
-
-全局状态管理
 
 ### react-hot-loader
 
