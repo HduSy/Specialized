@@ -36,7 +36,40 @@ Last Modified：2022-12-17 21:31:14
 
 ## Script 标签
 
+### defer vs async 属性
+
 ![[Pasted image 20220704182525.png]]
+
+### onload 事件
+
+`src` 指定资源加载执行完毕后调用
+
+## HTML 标签
+
+### meta
+
+例如：
+
+```html
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="HTML <meta> 元素表示那些不能由其他 HTML 元相关（meta-related）元素表示的元数据信息。如：<base>、<link>、<script>、<style> 或 <title>。">
+</head>
+```
+
+查找：
+
+```js
+export function getMetaContentByName(name) {
+	const meta = document.head.querySelector(`[name=${name}]`)
+	if(meta) return meta.content
+	return ''
+}
+```
+
+元数据（MetaData），不会显示在页面，但是会被浏览器解析，常用于指定网页描述、关键词、作者、最后更新时间等。  
+[<meta>：元数据元素 - HTML（超文本标记语言） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
 # Reference
 
