@@ -63,8 +63,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "webpack",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
