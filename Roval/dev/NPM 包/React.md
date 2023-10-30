@@ -38,8 +38,13 @@ Last Modified：2022-12-17 22:19:23
 
 - 值的改变不会触发 re-render
 - 可用来操作 DOM 元素
-  
- ### useMemo 性能优化
+
+### React.memo 性能优化
+
+创建（memoized）记忆化组件，`prop` 变化或其自身 `state`、`context` 变化时，才会重新渲染。  
+[memo – React 中文文档](https://zh-hans.react.dev/reference/react/memo)
+
+### useMemo 性能优化
 
 #### useMemo(calculateValue, dependencies)
 

@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/dev/元素标签/DOM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "html",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -101,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/dev/元素标签/DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/dev/元素标签/DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md"
+                "file": "Roval/dev/元素标签/DOM.md"
               }
             }
           },
@@ -184,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM 包/React.md",
+                "file": "Roval/dev/元素标签/DOM.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -207,7 +206,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.6445171371513772,
                   "close": true
                 }
               }
@@ -235,6 +234,8 @@
   },
   "active": "c77a7ef62a689b0d",
   "lastOpenFiles": [
+    "Daily/2023-04-07.md",
+    "Roval/dev/NPM 包/React.md",
     "Roval/工程化/webpack.md",
     "Roval/工程化/Babel.md",
     "Daily/2023-07-11.md",
@@ -271,9 +272,7 @@
     "职业经验之谈/Pasted image 20230920141445.png",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "bilibili",
-    "Roval/dev/浏览器/cookie.md",
     "Roval/dev/浏览器",
-    "Daily/2023-09-19.md",
     "Roval/coder/bugs",
     "职业经验之谈",
     "temp",
