@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/vite.md",
+                "file": "Roval/dev/NPM 包/React.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "html",
+                "query": "react",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/元素标签/DOM.md",
+                "file": "Roval/dev/NPM 包/React.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/元素标签/DOM.md",
+                "file": "Roval/dev/NPM 包/React.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/元素标签/DOM.md"
+                "file": "Roval/dev/NPM 包/React.md"
               }
             }
           },
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/元素标签/DOM.md",
+                "file": "Roval/dev/NPM 包/React.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,8 +232,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c77a7ef62a689b0d",
+  "active": "4f88de231f857e85",
   "lastOpenFiles": [
+    "Daily/2023-04-04.md",
+    "Roval/工程化/vite.md",
+    "Roval/dev/元素标签/DOM.md",
     "Daily/2023-04-07.md",
     "Roval/dev/NPM 包/React.md",
     "Roval/工程化/webpack.md",
@@ -244,7 +247,6 @@
     "Roval/rider/《自行车训练圣经》.md",
     "Roval/工程化/package.json.md",
     "Roval/dev/杂/工程化.md",
-    "Roval/工程化/vite.md",
     "Roval/工程化/tsconfig.json.md",
     "bilibili/bili-act-events.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
@@ -259,7 +261,6 @@
     "Roval/工程化",
     "Roval/dev/杂/一些网站.md",
     "Roval/dev/杂/NPM.md",
-    "conflict-files-obsidian-git.md",
     "职业经验之谈/Pasted image 20230920144834.png",
     "职业经验之谈/Pasted image 20230920144801.png",
     "职业经验之谈/Pasted image 20230920144724.png",
@@ -270,7 +271,6 @@
     "职业经验之谈/Pasted image 20230920141632.png",
     "职业经验之谈/Pasted image 20230920141557.png",
     "职业经验之谈/Pasted image 20230920141445.png",
-    "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "bilibili",
     "Roval/dev/浏览器",
     "Roval/coder/bugs",

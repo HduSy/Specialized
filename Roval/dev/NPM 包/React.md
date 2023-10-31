@@ -60,7 +60,7 @@ Last Modified：2022-12-17 22:19:23
 
 `dependencies`: Reactive values include props, state, and all the variables and functions declared directly inside your component body.
 
-`fn` 是想要缓存的函数，接受任意参数，返回任意类型。一般情况下，组件的 re-render 也会递归 re-render 它的子组件，如果不想子组件重复渲染，可以把子组件用 `memo` 包裹，`memo` 组件的特性就是只要组件 props 不变，那么就会 skip re-render 过程。传递给子组件的函数用 `useCallback` 包裹，这样的话，`dependencies` 不变，函数还是同一函数，子组件可避免重渲染。  
+`fn` 是想要缓存的函数，接受任意参数，返回任意类型。一般情况下，组件的 re-render 也会递归 re-render 它的子组件，如果不想子组件重复渲染，可以把子组件用 `memo` 包裹，`memo` 组件的特性就是只要组件 props 不变，那么就会 skip re-render 过程。传递给子组件的函数用 `useCallback` 包裹，这样的话，`dependencies` 不变，函数还是同一函数，子组件可避免重渲染。 [useCallBack你真的知道怎么用吗。 - 掘金](https://juejin.cn/post/7107943235099557896)
 
 [useCallback – React](https://react.dev/reference/react/useCallback)
 
