@@ -108,11 +108,13 @@ Last Modified：2022-12-17 22:19:23
 
 #### createSelector
 
+【React 性能优化】的一种写法，If the selector is called again with the same arguments, the previously **cached result** is returned instead of recalculating a new result.
+
 ```js
 	import { createSelector } from '@reduxjs/toolkit'
 ```
 
-[GitHub - reduxjs/reselect: Selector library for Redux](https://github.com/reduxjs/reselect)  
+[GitHub - reduxjs/reselect: Selector library for Redux](https://github.com/reduxjs/reselect#createselectorinputselectors--inputselectors-resultfunc-selectoroptions)  
 [GitHub - reselect](https://github.com/reduxjs/reselect)
 
 ### react-loadable
@@ -148,6 +150,11 @@ Last Modified：2022-12-17 22:19:23
 ### prop-types
 
 `React Component Prop` 类型检查 [GitHub - facebook/prop-types: Runtime type checking for React props and similar objects](https://github.com/facebook/prop-types)
+
+### react-highlight-words
+
+做到文字高亮效果  
+[react-highlight-words - npm](https://www.npmjs.com/package/react-highlight-words)
 
 # Reference
 
