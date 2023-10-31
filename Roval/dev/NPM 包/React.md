@@ -104,6 +104,17 @@ Last Modified：2022-12-17 22:19:23
 
 全局状态管理
 
+### @reduxjs/toolkit
+
+#### createSelector
+
+```js
+	import { createSelector } from '@reduxjs/toolkit'
+```
+
+[GitHub - reduxjs/reselect: Selector library for Redux](https://github.com/reduxjs/reselect)  
+[GitHub - reselect](https://github.com/reduxjs/reselect)
+
 ### react-loadable
 
 基于组件而非路由的代码分割（基于路由缺点，页面中尚处于隐藏的组件也不分情况的加载了）  
@@ -133,6 +144,10 @@ Last Modified：2022-12-17 22:19:23
 
 图表  
 [recharts.org](https://recharts.org/en-US)
+
+### prop-types
+
+`React Component Prop` 类型检查 [GitHub - facebook/prop-types: Runtime type checking for React props and similar objects](https://github.com/facebook/prop-types)
 
 # Reference
 
