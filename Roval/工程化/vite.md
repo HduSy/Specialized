@@ -116,6 +116,10 @@ const module = await import(`./dir/${file}.js`)
 
 `Vite` 会通过预加载消除不必要的网络往返，同时请求
 
+## 使用插件
+
+`Vite` 拥有优秀的插件接口设计
+
 ## 依赖预构建
 
 ^352e73
