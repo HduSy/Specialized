@@ -46,6 +46,76 @@ Last Modified：2023-09-23 16:47:10
 
 ### CSS
 
+### 静态资源处理
+
+[[#^9c7654|静态资源处理]]
+
+引入一个资源，将返回解析后的 `URL`：
+
+```js
+import imgUrl from './img.png'
+document.getElementById('hero-img').src = imgUrl
+```
+
+添加查询参数可改变资源引入的方式：
+
+```js
+// 显式加载资源为一个 URL
+import assetAsURL from './asset.js?url'
+// 以字符串形式加载资源
+import assetAsString from './shader.glsl?raw'
+// 加载为 Web Worker
+import Worker from './worker.js?worker'
+// 在构建时 Web Worker 内联为 base64 字符串
+import InlineWorker from './worker.js?worker&inline'
+```
+
+### 导入 JSON
+
+`Vite` 支持直接导入 `JSON` 文件
+
+### Glob 方式导入
+
+`Vite` 支持通过 `import.meta.glob` 函数实现以 [fast-glob](https://github.com/mrmlnc/fast-glob) 方式批量导入文件：
+
+```js
+const modules = import.meta.glob('./dir/*.js')
+// 转译后
+// vite 生成的代码
+const modules = {
+  './dir/foo.js': () => import('./dir/foo.js'),
+  './dir/bar.js': () => import('./dir/bar.js'),
+}
+// 遍历访问
+for (const path in modules) {
+  modules[path]().then((mod) => {
+    console.log(path, mod)
+  })
+}
+```
+
+还有很多其他用法详见 [Glob导入 | Vite 官方中文文档](https://cn.vitejs.dev/guide/features.html#glob-import)  
+
+### 动态导入
+
+`Vite` 导入路径支持变量：  
+
+```js
+const module = await import(`./dir/${file}.js`)
+```
+
+### 构建优化
+
+`Vite` 内置
+
+#### CSS 代码分割
+
+`Vite` 将 `chunk` 中的 `css` 代码抽离为单独文件，待 `chunk` 加载完后，以 `link` 标签插入，`chunk` 会在 `css` 加载完毕后再执行，以避免 `FOUC` 首屏闪烁问题
+
+#### 异步加载优化
+
+`Vite` 会通过预加载消除不必要的网络往返，同时请求
+
 ## 依赖预构建
 
 ^352e73
@@ -99,6 +169,28 @@ Last Modified：2023-09-23 16:47:10
 2. 浏览器 `Network` 选项卡禁用缓存
 3. 命令行 `--force` 选项重启
 4. 重载页面
+
+## 静态资源处理
+
+^9c7654
+
+### public 目录
+
+不会被引入；保持原文件名；的资源可放在 `<root>/<public>` 目录中，打包后目录中的资源文件将被完整复制到目标目录的根目录下
+
+```ad-tip
+要以根绝对路径方式引入其中资源；
+其中的资源不应被JS文件引用；
+```
+
+### new URL(url, import.meta.url)
+
+`import.meta.url` 代表当前模块的 `URL`，`ESM` 原生支持，与 `URL` 构造函数组合使用，通过相对路径，可以得到静态资源的完整 `URL`：
+
+```js
+const imgUrl = new URL('./logo.svg', import.meta.url).href
+document.getElementById('logo-img').src = imgUrl
+```
 
 ## 环境变量和模式
 
