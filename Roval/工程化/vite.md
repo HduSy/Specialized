@@ -120,6 +120,14 @@ const module = await import(`./dir/${file}.js`)
 
 `Vite` 拥有优秀的插件接口设计
 
+### 强制插件执行顺序
+
+`enforce:'pre'|'post'|默认`
+
+### 区分开发/生产环境按需使用
+
+`apply: 'build'|'serve'`
+
 ## 依赖预构建
 
 ^352e73
