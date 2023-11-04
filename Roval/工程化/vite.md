@@ -204,6 +204,42 @@ const imgUrl = new URL('./logo.svg', import.meta.url).href
 document.getElementById('logo-img').src = imgUrl
 ```
 
+## 构建生产版本
+
+### 公共基础路径
+
+指定一个嵌套的公共路径下部署项目
+
+### 自定义构建
+
+调整底层 `rollup` 选项
+
+```js
+// vite.config.js
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      // https://rollupjs.org/configuration-options/
+    },
+  },
+})
+```
+
+### 文件变化时重新构建
+
+`vite build --watch`
+
+```js
+// vite.config.js
+export default defineConfig({
+  build: {
+    watch: {
+      // https://rollupjs.org/configuration-options/#watch
+    },
+  },
+})
+```
+
 ## 环境变量和模式
 
 ### 环境变量
@@ -236,6 +272,10 @@ document.getElementById('logo-img').src = imgUrl
 ^6109a9
 
 `Vite` 打包工具，开启一个 `worker` 支持运行 `TypeScript, VLS, vue-tsc, ESLint, Stylelint` 类型与语法检查
+
+### @vitejs/plugin-legacy
+
+自动生成传统版本的 `chunk` 及与其相对应 ES 语言特性方面的 `polyfill`
 
 # Reference
 
