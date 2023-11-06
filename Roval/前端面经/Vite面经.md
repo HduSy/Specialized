@@ -50,5 +50,6 @@ Last Modified：2023-11-06 14:54:37
 
 # Reference
 
+[牛客网付费 - 前端面试必备 | Vite 篇（P1-30）](https://www.nowcoder.com/discuss/526005909554843648)  
 [面试必备：常见的webpack / Vite面试题汇总 - 掘金](https://juejin.cn/post/7207659644487893051)  
 [谈谈你对vite的了解](https://blog.51cto.com/u_14627797/6316959)
