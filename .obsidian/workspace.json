@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/工程化/Vite.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "vite-plugin-checker",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +80,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/工程化/Vite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/工程化/Vite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md"
+                "file": "Roval/工程化/Vite.md"
               }
             }
           },
@@ -183,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/工程化/Vite.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,8 +235,8 @@
   },
   "active": "3f63d6b6ca5dfc40",
   "lastOpenFiles": [
-    "Roval/工程化/Vite.md",
     "Roval/前端面经/Vite面经.md",
+    "Roval/工程化/Vite.md",
     "Roval/前端面经/面试官问点.md",
     "Roval/工程化/tsconfig.json.md",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",

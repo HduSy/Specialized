@@ -306,11 +306,17 @@ export default defineConfig({
 
 ^6109a9
 
-`Vite` 打包工具，开启一个 `worker` 支持运行 `TypeScript, VLS, vue-tsc, ESLint, Stylelint` 类型与语法检查
+`Vite` 打包工具，开启一个 `worker` 支持运行 `TypeScript, VLS, vue-tsc, ESLint, Stylelint` 类型与语法检查  
+[TypeScript | Vite 官方中文文档](https://cn.vitejs.dev/guide/features.html#typescript)  
+[vite-plugin-checker|教程](https://vite-plugin-checker.netlify.app/)
 
 ### @vitejs/plugin-legacy
 
 自动生成传统版本的 `chunk` 及与其相对应 ES 语言特性方面的 `polyfill`
+
+### vite-plugin-compression
+
+[GitHub - vbenjs/vite-plugin-compression: Use gzip or brotli to compress resources](https://github.com/vbenjs/vite-plugin-compression)
 
 ## API
 
