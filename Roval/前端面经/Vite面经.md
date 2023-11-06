@@ -39,8 +39,8 @@ Last Modified：2023-11-06 14:54:37
 
 1. 不需要全量构建
 2. `esbuild` 打包器快
-3. 按需加载，请求 `Vite load resolve transform parse`
-4. 充分利用缓存，减少请求
+3. 动态引入，按需加载，请求相应路由时才处理 `Vite load resolve transform parse`
+4. 充分利用缓存，依赖强缓存，源码协商缓存，减少请求
 
 ## Vite 相比 Webpack 缺点
 
