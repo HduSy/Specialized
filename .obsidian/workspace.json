@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/Vite.md",
+                "file": "Roval/前端面经/面试官问点.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3f63d6b6ca5dfc40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/Vite面经.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/工程化/Vite.md",
+                "file": "Roval/前端面经/Vite面经.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/工程化/Vite.md",
+                "file": "Roval/前端面经/Vite面经.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/工程化/Vite.md"
+                "file": "Roval/前端面经/Vite面经.md"
               }
             }
           },
@@ -169,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/工程化/Vite.md",
+                "file": "Roval/前端面经/Vite面经.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -192,7 +206,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.31487625515757084,
+                  "scale": 1.027399659063717,
                   "close": true
                 }
               }
@@ -218,13 +232,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "806279083a5462ae",
+  "active": "3f63d6b6ca5dfc40",
   "lastOpenFiles": [
+    "Roval/工程化/Vite.md",
+    "Roval/前端面经/Vite面经.md",
+    "Roval/前端面经/面试官问点.md",
     "Roval/工程化/tsconfig.json.md",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "职业经验之谈/前端技术评审关注点.md",
     "职业经验之谈/Pasted image 20230920141410.png",
-    "Roval/工程化/Vite.md",
     "Roval/工程化/Webpack.md",
     "Roval/工程化/^.md",
     "Untitled.canvas",
@@ -250,8 +266,6 @@
     "Daily/2023-04-04.md",
     "Daily/2023-04-07.md",
     "Roval/工程化/Babel.md",
-    "Daily/2023-07-11.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/工程化",
     "职业经验之谈/Pasted image 20230920144834.png",
     "职业经验之谈/Pasted image 20230920144801.png",

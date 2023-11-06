@@ -319,3 +319,5 @@ export default defineConfig({
 # Reference
 
 [Vite | 下一代的前端工具链](https://cn.vitejs.dev/)
+
+[[../前端面经/Vite面经|Vite面经]]
