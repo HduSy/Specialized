@@ -9,7 +9,7 @@ Last Modified：2023-02-06 22:15:29
 
 ## \<script\>
 
-脚本的下载与执行会打断 HTML 解析过程，在 [[DOMContentLoaded]] 之前执行完所有脚本。
+脚本的下载与执行会打断 HTML 解析过程，在 [[window上页面加载相关事件]] 之前执行完所有脚本。
 
 ## \<script async\>
 

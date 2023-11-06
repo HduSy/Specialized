@@ -52,7 +52,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md",
+                "file": "Roval/前端面经/首次-面试官-面试点.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c37c757f18606e60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/移动端适配方案.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -60,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -106,8 +119,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md",
+                "file": "Roval/前端面经/移动端适配方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md",
+                "file": "Roval/前端面经/移动端适配方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md"
+                "file": "Roval/前端面经/移动端适配方案.md"
               }
             }
           },
@@ -210,7 +222,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/DOMContentLoaded.md",
+                "file": "Roval/前端面经/移动端适配方案.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -259,15 +271,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e505800ae50cc06d",
+  "active": "c37c757f18606e60",
   "lastOpenFiles": [
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Roval/前端面经/移动端适配方案.md",
+    "Roval/前端面经/面试点.png",
+    "Roval/前端面经/window上页面加载相关事件.md",
+    "Roval/前端面经/面试官问点.md",
     "Roval/coder/面经/前端简历模版fromEasy.md",
     "职业经验之谈/好文推荐.md",
     "Roval/coder/面经/AVIF.md",
     "职业经验之谈/前端技术评审关注点.md",
     "Roval/工程化/Vite.md",
     "Roval/前端面经/Vite面经.md",
-    "Roval/前端面经/面试官问点.md",
     "Roval/工程化/tsconfig.json.md",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "职业经验之谈/Pasted image 20230920141410.png",
@@ -290,16 +306,12 @@
     "Roval/essay/技术文章个人整理/本地数据缓存.md",
     "Roval/essay/产品/如何提高网站用户活跃度.md",
     "Roval/essay/产品",
-    "Roval/dev/杂/第三方包.md",
-    "Daily/2023-07-06.md",
-    "Roval/coder/2022H1自评.md",
     "Roval/工程化",
     "职业经验之谈/Pasted image 20230920144834.png",
     "职业经验之谈/Pasted image 20230920144801.png",
     "职业经验之谈/Pasted image 20230920144724.png",
     "职业经验之谈/Pasted image 20230920141837.png",
     "职业经验之谈/Pasted image 20230920141807.png",
-    "职业经验之谈/Pasted image 20230920141734.png",
     "bilibili",
     "Roval/dev/浏览器",
     "Roval/coder/bugs",
