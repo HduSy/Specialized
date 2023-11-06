@@ -7,6 +7,16 @@ Last Modified：2023-09-23 16:47:10
 
 # Content
 
+## 开始
+
+### index.html 作为 Vite 入口文件
+
+`Vite` 项目中的 `index.html` 存放在根目录，而非 `public` 目录，Vite 解析 `<script type="module" src="…">` ，甚至内联引入 JavaScript 的 `<script type="module">` 和引用 CSS 的 `<link href>` 也能利用 Vite 特有的功能被解析，`Vite` 将 `index.html` 视作源码和模块图的一部分
+
+`Vite` 支持多个 `.html` 作为入口的 `多页应用模式`
+
+[index.html | Vite 官方中文文档](https://cn.vitejs.dev/guide/#index-html-and-project-root)
+
 ## 功能
 
 `Vite` 支持 `ES6` 模块引入方式，为打包构建场景提供了增强功能。
@@ -208,7 +218,7 @@ document.getElementById('logo-img').src = imgUrl
 
 ### 公共基础路径
 
-指定一个嵌套的公共路径下部署项目
+指定一个嵌套的公共路径下部署项目，`JS` 中饮用地址，`CSS` 中的 URL 地址，`HTML` 中引用的地址都将据此地址进行替换
 
 ### 自定义构建
 
@@ -333,6 +343,26 @@ export default defineConfig({
 ## API
 
 ### 插件 API
+
+## 配置
+
+### 配置智能提示
+
+```js
+export declare interface ConfigEnv {
+	command: 'build' | 'serve';
+	mode: string; // 'development'|'production'|...
+	/**
+	* @experimental
+	*/
+	ssrBuild?: boolean;
+}
+```
+
+```js
+import { defineConfig } from 'vite'
+export default defineConfig(config:UserConfig|UserConfigFnObject)
+```
 
 # Reference
 
