@@ -281,7 +281,9 @@ export default defineConfig({
 
 `vite` 在 `import.meta.env` 上暴露环境变量。生产环境不支持动态替换，动态 key 取值 `import.meta.env[key]` 是无效的。
 
-### .env
+### .env 文件
+
+`Vite` 支持从环境目录中的 `dotenv` 下列文件中加载**环境变量**
 
 ``` js
 .env                # 所有情况下都会加载
@@ -300,6 +302,10 @@ export default defineConfig({
 
 ### 模式
 
+开发（dev）：`development`  
+生产（build）：`production`  
+[模式 | Vite 官方中文文档](https://cn.vitejs.dev/guide/env-and-mode.html#modes)
+
 ## Vite 插件
 
 ### vite-plugin-checker
@@ -317,6 +323,12 @@ export default defineConfig({
 ### vite-plugin-compression
 
 [GitHub - vbenjs/vite-plugin-compression: Use gzip or brotli to compress resources](https://github.com/vbenjs/vite-plugin-compression)
+
+### vite-plugin-top-level-await
+
+`Vite` 开发时，让普通浏览器也支持模块顶层编写 `await`，而不用额外设置 `build.target` to `esnext`
+
+[vite-plugin-top-level-await - npm](https://www.npmjs.com/package/vite-plugin-top-level-await)
 
 ## API
 
