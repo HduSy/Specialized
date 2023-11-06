@@ -273,6 +273,8 @@ export default defineConfig({
 
 ```
 
+## 部署静态站点
+
 ## 环境变量和模式
 
 ### 环境变量
