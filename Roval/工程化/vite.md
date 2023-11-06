@@ -312,6 +312,10 @@ export default defineConfig({
 
 自动生成传统版本的 `chunk` 及与其相对应 ES 语言特性方面的 `polyfill`
 
+## API
+
+### 插件 API
+
 # Reference
 
 [Vite | 下一代的前端工具链](https://cn.vitejs.dev/)
