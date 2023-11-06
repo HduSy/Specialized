@@ -54,7 +54,17 @@ document.addEventListener("DOMContentLoaded", ready);
 - interactive - 文档解析完成，与 DomContentLoaded 几乎同时，但在其之前
 - complete - 文档和资源加载完成，与 load 几乎同时，但在 load 之前
 
+## pageshow
+
+- Initially loading the page
+- Navigating to the page from another page in the same window or tab
+- Restoring a frozen page on mobile OSes
+- Returning to the page using the browser's forward or back buttons  
+
+`pageshow` 和 `pagehide` 事件发生时，判断页面是否从浏览器缓存加载，还是从服务器请求加载
+
 # Reference
 
 [页面生命周期：DOMContentLoaded，load，beforeunload，unload](https://zh.javascript.info/onload-ondomcontentloaded)  
-[Document: DOMContentLoaded event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+[Document: DOMContentLoaded event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)  
+[Window: pageshow event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageshow_event)
