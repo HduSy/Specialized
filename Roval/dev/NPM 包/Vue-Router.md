@@ -84,9 +84,29 @@ Last Modified：2023-11-07 08:23:23
 
 #### onBeforeRouteLeave、onBeforeRouteUpdate
 
-导航守卫
+导航守卫 `Hook`
 
 #### useLink、RouterLink
+
+### 滚动行为
+
+`scrollBehavior` 路由切换后滚动到顶部、滚动到指定元素、保持原先滚动位置、或者不滚动，回调函数返回 `ScrollToOptions` 对象
+
+#### 延迟滚动
+
+`setTimeout`
+
+```js
+const router = createRouter({
+  scrollBehavior(to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ left: 0, top: 0 })
+      }, 500)
+    })
+  },
+})
+```
 
 # Reference
 
