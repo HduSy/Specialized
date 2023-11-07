@@ -43,6 +43,10 @@ Last Modified：2023-11-07 08:23:23
 - `params` 自动编解码
 - 绕过路径排序
 
+### 命名视图
+
+同级展示多个视图
+
 # Reference
 
 [Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)
