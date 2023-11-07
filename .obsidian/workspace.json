@@ -65,7 +65,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/移动端适配方案.md",
+                "file": "Roval/前端面经/window上页面加载相关事件.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b571a9a17478278f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/三土面试准备.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -73,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -139,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/移动端适配方案.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/移动端适配方案.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/移动端适配方案.md"
+                "file": "Roval/前端面经/三土面试准备.md"
               }
             }
           },
@@ -222,7 +235,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/移动端适配方案.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -268,26 +281,29 @@
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "vscode-editor:Create Code File": false
     }
   },
-  "active": "c37c757f18606e60",
+  "active": "b571a9a17478278f",
   "lastOpenFiles": [
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Roval/前端面经/移动端适配方案.md",
-    "Roval/前端面经/面试点.png",
     "Roval/前端面经/window上页面加载相关事件.md",
+    "Roval/前端面经/三土面试准备.md",
+    "Roval/工程化/Rollup.md",
+    "Roval/工程化/Webpack.md",
+    "Roval/工程化/Vite.md",
+    "Roval/前端面经/移动端适配方案.md",
+    "Roval/前端面经/首次-面试官-面试点.md",
+    "Roval/前端面经/面试点.png",
     "Roval/前端面经/面试官问点.md",
     "Roval/coder/面经/前端简历模版fromEasy.md",
     "职业经验之谈/好文推荐.md",
     "Roval/coder/面经/AVIF.md",
     "职业经验之谈/前端技术评审关注点.md",
-    "Roval/工程化/Vite.md",
     "Roval/前端面经/Vite面经.md",
     "Roval/工程化/tsconfig.json.md",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "职业经验之谈/Pasted image 20230920141410.png",
-    "Roval/工程化/Webpack.md",
     "Roval/工程化/^.md",
     "Untitled.canvas",
     "Roval/dev/NPM 包/React.md",
@@ -303,8 +319,6 @@
     "Roval/coder/个人发展计划周表.md",
     "Roval/coder/大 R 链路优化.md",
     "Roval/dev/元素标签/DOM.md",
-    "Roval/essay/技术文章个人整理/本地数据缓存.md",
-    "Roval/essay/产品/如何提高网站用户活跃度.md",
     "Roval/essay/产品",
     "Roval/工程化",
     "职业经验之谈/Pasted image 20230920144834.png",

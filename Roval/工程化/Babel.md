@@ -19,7 +19,7 @@ Last Modified：2023-07-18 14:36:01
 ### 打包工具
 
 `webpack`：`babel-loader` [[Webpack]]  
-`rollup`：`@rollup/plugin-babel` [[rollup]]  
+`rollup`：`@rollup/plugin-babel` [[Rollup]]  
 `@rollup/register`  
 
 无论使用哪种方式，`@babel/core` 和相应 `配置文件` 都是必须的
