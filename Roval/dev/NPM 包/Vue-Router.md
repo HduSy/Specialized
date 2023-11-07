@@ -70,6 +70,8 @@ Last Modified：2023-11-07 08:23:23
 
 ## 进阶
 
+### 导航守卫
+
 # Reference
 
 [Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)
