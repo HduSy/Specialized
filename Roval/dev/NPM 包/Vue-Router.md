@@ -47,6 +47,29 @@ Last Modified：2023-11-07 08:23:23
 
 同级展示多个视图
 
+### 重定向和别名
+
+#### 相对重定向
+
+### 路由组件传参
+
+通过配置 `props` 为 `true`，`route.params` 将被设置为组件的 `props`，把 `$route` 与组件解耦
+
+### 不同的历史记录模式
+
+#### hash 模式
+
+`createWebHashHistory`  
+`URL` 上多了一个 `#` 字符  
+从未发送到服务器，不需要在服务器上做任何特殊处理，不过，不利于 `SEO`
+
+#### h5 模式
+
+`createWebHistory`  
+`URL` 看着正常些，需要服务器添加**回退路由**，在 `URL` 拿不到任何匹配的资源时，应返回 `index.html`
+
+## 进阶
+
 # Reference
 
 [Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)
