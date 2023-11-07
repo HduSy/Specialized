@@ -72,6 +72,12 @@ Last Modified：2023-11-07 08:23:23
 
 ### 导航守卫
 
+#### 全局前置守卫
+
+`beforeEach` 返回值如下：  
+`false`：取消导航；  
+路由地址：跳转到另一个路由
+
 # Reference
 
 [Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)
