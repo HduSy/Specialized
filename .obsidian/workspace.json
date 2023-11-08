@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue-Router.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue-Router.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue-Router.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue-Router.md"
+                "file": "Roval/前端面经/三土面试准备.md"
               }
             }
           },
@@ -169,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue-Router.md",
+                "file": "Roval/前端面经/三土面试准备.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,8 +221,9 @@
   },
   "active": "e564b515ad0eb2c3",
   "lastOpenFiles": [
-    "Roval/前端面经/三土面试准备.md",
     "Roval/dev/NPM 包/Vue-Router.md",
+    "Roval/前端面经/三土面试准备.md",
+    "Roval/工程化/Vite.md",
     "Roval/dev/NPM 包/BlobJS.md",
     "Roval/前端面经/window上页面加载相关事件.md",
     "Roval/前端面经/首次-面试官-面试点.md",
@@ -235,7 +236,6 @@
     "Roval/前端面经/Vite面经.md",
     "Roval/工程化/Rollup.md",
     "Roval/工程化/Webpack.md",
-    "Roval/工程化/Vite.md",
     "Roval/前端面经/移动端适配方案.md",
     "Roval/前端面经/面试点.png",
     "Roval/coder/面经/前端简历模版fromEasy.md",
