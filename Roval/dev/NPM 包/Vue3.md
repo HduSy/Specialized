@@ -79,6 +79,35 @@ Last Modified：2022-12-17 22:26:40
 
 ### 响应式基础
 
+#### 声明响应状态
+
+##### ref
+
+```js
+import { ref } from 'vue'
+let count = ref<number|string>(0) // 为refs标注类型
+count.value = '0' // 成功!
+```
+
+如果 `ref` 属性不是插值表达式最终计算值，则只有**顶层声明的 ref**才会被正常解包，否则也能正常解包
+
+```html
+<script setup>
+	import {ref} from 'vue'
+	const count = ref(0)
+	const obj = {id: ref(0)}
+	const {id} = obj
+</script>
+<div>{{ count+1 }}</div> // 渲染正常 <div>1</div>
+<div>{{ obj.id+1 }}</div> // 渲染不正常 <div>[Object Object]1</div>
+<div>{{id}}</div> // 渲染正常
+<div>{{obj.id}}</div> // 渲染正常
+```
+
+##### 为什么使用 ref
+
+当你在模板中使用了一个 ref，然后改变了这个 ref 的值时，Vue 会自动检测到这个变化，并且相应地更新 DOM。这是通过一个**基于依赖追踪的响应式系统**实现的。当一个组件首次渲染时，Vue 会**追踪**在渲染过程中使用的每一个 ref。然后，当一个 ref 被修改时，它会**触发**追踪它的组件的一次**重新渲染**。
+
 #### DOM 更新时机
 
 更改响应式状态，DOM 会自动更新，但不是实时的，VUE 会缓冲直至下一次“更新时机”。
