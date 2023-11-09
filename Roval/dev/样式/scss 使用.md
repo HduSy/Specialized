@@ -29,12 +29,14 @@ $width: 100px;
 
 ### 1-2 变量引用
 
-凡是 `css` 属性值存在的地方都可以用 `Sass` 变量赋值，编译结果中，变量会被替换为它的值。
+凡是 `css` 属性的标准值存在的地方都可以用 `Sass` 变量赋值，编译结果中，变量会被替换为它的值。
 
 ```scss
 $highlight-color: green;  
 $highlight-border: 1px solid $highlight-color;
 ```
+
+当变量声明在规则块中，则变量只能在该规则块中使用。
 
 ### 1-3 变量名用 _ 还是 - 分割
 
@@ -66,47 +68,51 @@ $bg-color: pink;
 #content aside { background-color: #EEE }
 ```
 
+容器元素的规则会被单独抽离出来，而嵌套元素的样式则会像容器元素不含任何属性那样抽离
+
 ### 2.1 父选择器标识符 `&`
 
-默认情况下，`Scss` 在解开一层嵌套时会把父选择器通过一个空格加在子选择器前面，在 `CSS` 中含义为后代选择器，然而很多时候这种 `CSS` 后代选择器的方式并不满足需求，`Scss` 提供了 `&` 选择器为解开嵌套提供了更多机制。添加伪类的用法：
+默认情况下，`Sass` 在解开一层嵌套时会**把父选择器通过一个空格加在子选择器前面**，在 `CSS` 中含义为**后代选择器**，这种默认的拼接方式有时并不满足需求，`Sass` 专门提供了 `&` 父选择器为解开嵌套提供了更多机制
+
+添加伪类的用法：
 
 ```scss
-a {
-	text-decoration: none;  
-	color: black;
-	&:hover {
-		color: cornflowerblue;  
-	}  
+// from
+article a {
+  color: blue;
+  &:hover { color: red }
 }
-```
+// to 并不会像默认方式一个简单空格拼接，而是将 `&` 直接替换为父选择器
+article a { color: blue }
+article a:hover { color: red }
+```  
 
-在父选择器前加选择器的用法：
+父选择器前添加父选择器的用法：
 
 ```scss
-.txt-tip {
-	font-size: 20px;
-	.small-screen & {
-		font-size: 16px;  
-	}
-	.big-screen & {
-		font-size: 22px;
-	}  
+// from
+#content aside {
+  color: red;
+  body.ie & { color: green }
 }
+// to
+#content aside {color: red};
+body.ie #content aside { color: green }
 ```
 
 ### 2.2 群组选择器嵌套
 
-解 `CSS` 群组选择器
+`CSS` 群组选择器，命中任一选择器的元素生效（`,` 类比与 `或` 的概念）
 
 ```scss
-// from css  
-.container h1, .container h2, .container h3 { margin-bottom: .8em; }  
-// to scss  
+// from scss  
 .container {
 	h1, h2, h3 {
 		margin-bottom: .8em;
 	}  
-}  
+}
+// from css  
+.container h1, .container h2, .container h3 { margin-bottom: .8em; }  
 // from scss  
 nav, aside {  
  a {color: blue}  
@@ -116,6 +122,31 @@ nav a, aside a {
  color: blue;  
 }
 ```
+
+### 2.3 CSS 选择器应用
+
+[[css]]
+
+```scss
+// from
+article {
+  ~ article { border-top: 1px dashed #ccc }
+  > section { background: #eee }
+  dl > {
+    dt { color: #333 }
+    dd { color: #555 }
+  }
+  nav + & { margin-top: 0 }
+}
+// to
+article ~ article { border-top: 1px dashed #ccc }
+article > footer { background: #eee }
+article dl > dt { color: #333 }
+article dl > dd { color: #555 }
+nav + article { margin-top: 0 }
+```
+
+## 嵌套属性
 
 ## 6. SassScript
 
