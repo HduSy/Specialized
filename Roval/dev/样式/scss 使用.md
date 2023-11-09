@@ -150,6 +150,23 @@ nav + article { margin-top: 0 }
 
 ## 嵌套属性
 
+```scss
+// from
+nav {
+  border: {
+  style: solid;
+  width: 1px;
+  color: #ccc;
+  }
+}
+// to
+nav {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
+```
+
 ## 6. SassScript
 
 ### 6-1 Interactive Shell
