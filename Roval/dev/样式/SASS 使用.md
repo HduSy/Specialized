@@ -272,8 +272,208 @@ a:visited { color: red; }
 
 通过命令行输入 `sass -i` 进行一些 `Sass` 支持的简单运算～
 
+## 8 其他
+
+### 插值 #{}
+
+通过插值可以在选择器或属性名中使用变量
+
+```scss
+// from
+$name: foo;
+$attr: border;
+p.#{$name} {
+  #{$attr}-color: blue;
+}
+// to
+p.foo {  
+  border-color: blue; }
+```
+
+### 数据类型
+
+- 数字，`1, 2, 13,`**10px**
+- 字符串，有引号字符串与无引号字符串，`"foo", 'bar',`**baz**
+- 颜色，`blue, #04a3f9, rgba(255,0,0,0.5)`
+- 布尔型，`true, false`
+- 空值，`null`
+- 数组 (list)，用空格或逗号作分隔符，`1.5em 1em 0 2em, `**Helvetica, Arial, sans-serif**
+- maps, 相当于 JavaScript 的 object，**(key1: value1, key2: value2)**
+
+### 运算符
+
+支持 `+-*/%`  
+
+### @media 指令
+
+媒体查询
+
+### @if 条件指令
+
+当 `@if` 的表达式返回值不是 `false` 或者 `null` 时，条件成立，输出 `{}` 内的代码
+
+```scss
+// from
+p {
+  @if 1 + 1 == 2 { border: 1px solid; }
+  @if 5 < 3 { border: 2px dotted; }
+  @if null  { border: 3px double; }
+}
+// to
+p {
+  border: 1px solid;
+}
+```
+
+### @for 循环指令
+
+重复循环  
+`@for $var from <start> through <end>` 包含 `start end`  
+`@for $var from <start> to <end>` 含左不含右
+
+```scss
+// from
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+// to
+.item-1 {
+  width: 2em; }
+.item-2 {
+  width: 4em; }
+.item-3 {
+  width: 6em; }
+```
+
+### @each
+
+遍历  
+`$var in <list>`
+
+```scss
+// from
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+// to
+.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }
+```
+
+### @while
+
+重复循环，直到条件为 `false`
+
+```scss
+// from
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}
+// to
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+```
+
+### @function @return
+
 ## 实战
+
+```scss
+$bpink: #FF6699;
+@mixin bgCommonSet($width, $height, $url) {
+  width: $width;
+  height: $height;
+  background: url($url) center/contain no-repeat;
+}
+@mixin f-r-c-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin f-r-sb-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin f-r-sb-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin f-r-s-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin f-r-s-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin f-c-s-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin multilineTextEllipsis($line, $line-height, $width) {
+  //width: $width;
+  min-width: $width;
+  line-height: $line-height;
+  min-height: $line-height;
+  //height: $line-height * $line;
+  overflow: hidden;
+  @if $line == 1 {
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  @if $line > 1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    box-orient: vertical;
+    line-clamp: $line;
+  }
+}
+@mixin hide-scrollbar {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+  &::-webkit-scrollbar {
+    display: none;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+```
 
 # Reference
 
-[scss 官网](https://www.sass.hk/)
+[Sass快速入门 | Sass中文网](https://www.sass.hk/)  
+[Sass中文文档 | Sass中文网](https://www.sass.hk/docs/)
