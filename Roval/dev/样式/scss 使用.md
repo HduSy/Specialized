@@ -230,11 +230,49 @@ body {
 
 ## 5 混入
 
-## 6 SassScript
+`@mixin` 声明 `@include` 引用
 
-### 6-1 Interactive Shell
+### 使用场景
+
+如果很容易能为一组属性想出一个简短的名字去描述，那就容易写一个合适的 `minxin`
+
+### 仍适用 CSS 规则
+
+支持选择器嵌套、支持父选择器标识符
+
+### 混合器传参
+
+忘记参数顺序时，也支持 `key-value` 方式传参
+
+```scss
+@mixin link-colors($normal, $hover, $visited) {
+  color: $normal;
+  &:hover { color: $hover; }
+  &:visited { color: $visited; }
+}
+// from
+a {
+  @include link-colors($normal: blue,$visited: green,$hover: red);
+}
+// to
+a { color: blue; }
+a:hover { color: green; }
+a:visited { color: red; }
+```
+
+### 默认参数
+
+## 选择器继承
+
+`@extend`，继承另一个选择器定义的所有样式
+
+## 7 SassScript
+
+### Interactive Shell
 
 通过命令行输入 `sass -i` 进行一些 `Sass` 支持的简单运算～
+
+## 实战
 
 # Reference
 
