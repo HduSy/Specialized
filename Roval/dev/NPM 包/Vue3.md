@@ -44,6 +44,39 @@ Last Modified：2022-12-17 22:26:40
 
 底层机制中，`Vue` 将模版转为高度优化的 `js` 代码，状态变化时，智能推导出需重新渲染的最少数量组件，并应用最少的 `DOM` 操作
 
+#### 插值
+
+`{{}}`
+
+#### 指令
+
+![[Pasted image 20231109224050.png]]
+
+`v-attribute`：指令的任务是其表达式发生变化时更新 `DOM`  
+`v-html`  
+`v-bind` 简写 `:`  
+`v-if`  
+`v-show`  
+`v-for`  
+`v-on` 简写 `@`  
+`v-slot`
+
+##### 参数类型
+
+元素属性：`<a :href="url"> … </a>` 表达式 `url` 的值绑定到元素的 `href` 属性上；  
+事件名称：`<a @click="doSomething"> … </a>` 将 `click` 事件绑定到元素上
+
+##### 参数也可以是动态的
+
+`<a :[attributeName]="attributeName"> … </a>`  
+`<a @[eventName]="eventName"> … </a>`  
+
+动态参数**值限制**为字符串或 `null`，后者时表示移除绑定
+
+##### 修饰符
+
+告诉指令以特殊方式绑定，`.prevent`
+
 ### 响应式基础
 
 #### DOM 更新时机
