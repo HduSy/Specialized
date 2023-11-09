@@ -146,6 +146,8 @@ article dl > dd { color: #555 }
 nav + article { margin-top: 0 }
 ```
 
+[CSS关系选择器实践 - CodeSandbox](https://codesandbox.io/s/cssguan-xi-xuan-ze-qi-shi-jian-wsljzw)
+
 ## 嵌套属性
 
 ## 6. SassScript

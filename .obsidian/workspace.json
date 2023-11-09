@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md",
+                "file": "Roval/dev/样式/css.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -26,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md",
+                "file": "Roval/dev/样式/css.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md",
+                "file": "Roval/dev/样式/css.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md"
+                "file": "Roval/dev/样式/css.md"
               }
             }
           },
@@ -183,7 +182,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/样式/scss 使用.md",
+                "file": "Roval/dev/样式/css.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -233,8 +232,9 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "a1004eb2532591e2",
+  "active": "e564b515ad0eb2c3",
   "lastOpenFiles": [
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/样式/css.md",
     "Roval/dev/样式/scss 使用.md",
     "Roval/前端面经/三土面试准备.md",
@@ -263,7 +263,6 @@
     "Untitled.canvas",
     "Roval/dev/NPM 包/React.md",
     "Roval/coder/2021H2.md",
-    "Roval/coder/Proxyman flash 配置.md",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
     "Roval/coder/可能示意图.png",
