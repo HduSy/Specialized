@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Vue",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -221,13 +221,14 @@
   },
   "active": "e564b515ad0eb2c3",
   "lastOpenFiles": [
-    "Roval/前端面经/三土面试准备.md",
+    "Daily/2023-09-19.md",
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/NPM 包/Vue3.md",
+    "Roval/前端面经/三土面试准备.md",
     "Roval/工程化/Vite.md",
     "Roval/dev/样式/SASS 使用.md",
     "Roval/dev/杂/NPM.md",
     "Roval/dev/NPM 包/Vue-Router.md",
-    "Roval/dev/杂/MDN.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/样式/clip-path.md",
     "Roval/dev/样式/css.md",
@@ -248,7 +249,6 @@
     "Roval/工程化/tsconfig.json.md",
     "职业经验之谈/2023年年中总结会睿总分享实录.md",
     "职业经验之谈/Pasted image 20230920141410.png",
-    "Roval/工程化/^.md",
     "Untitled.canvas",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
     "Roval/coder/平台制作页保存冲突加弹窗.png",
