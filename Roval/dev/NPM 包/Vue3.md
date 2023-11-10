@@ -108,27 +108,65 @@ count.value = '0' // 成功!
 
 当你在模板中使用了一个 ref，然后改变了这个 ref 的值时，Vue 会自动检测到这个变化，并且相应地更新 DOM。这是通过一个**基于依赖追踪的响应式系统**实现的。当一个组件首次渲染时，Vue 会**追踪**在渲染过程中使用的每一个 ref。然后，当一个 ref 被修改时，它会**触发**追踪它的组件的一次**重新渲染**。
 
+#### 深层响应性
+
+`ref` 使任何类型的值具有深层响应性，包括数组、对象、`js` 内置数据结构，其变化会被检测到。当 `ref` 值为非原始值时，`ref()` 内部调用 [`reactive()`](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive) 转换为 `JavaScript` 响应式代理，**拦截响应式对象所有属性的访问与修改，进行依赖追踪与触发更新**
+
 #### DOM 更新时机
 
-更改响应式状态，DOM 会自动更新，但不是实时的，VUE 会缓冲直至下一次“更新时机”。
+**非实时**的，`vue` 会在 `next tick` 更新周期中缓存所有状态的修改，保证不论做了多少次状态修改，组件只被渲染一次。
+
+```js
+import { nextTick } from 'vue'
+
+async function increment() {
+  count.value++
+  await nextTick()
+  // 现在 DOM 已经更新了
+}
+```
+
+### reactive
+
+`reactive()` 将深层地转换对象：当访问嵌套对象时，它们也会被 `reactive()` 包装。当 ref 的值是一个对象时，`ref()` 也会在内部调用它。
 
 #### 响应式代理 Vs 原始对象
 
-`reactive` 返回原始对象的 `proxy` 版本，始终访问声明对象的代理版本，才是 VUE 响应式系统的最佳实践。
+`reactive` 返回原始对象的 `proxy` 版本，始终访问声明对象的代理版本，才是 `vue` 响应式系统的最佳实践。
 
 #### reactive() 局限性
 
-1) 仅对对象类型有效，对基础类型无效；
+1) **值类型要求**：仅对对象类型（对象、数组、`js` 内置数据结构 `Map、Set`）有效，对 `number、string、boolean` 等原始类型无效；
 
-2) `vue` 的响应式系统通过 **属性访问** 进行追踪，必须始终保持对响应式对象的引用。解构属性、属性赋值、属性传递都会失去响应式。
+2) **不可替换整个对象**：`vue` 的响应式系统通过 **属性访问** 进行追踪，必须始终保持对响应式对象的引用。解构属性、属性赋值、属性传递都会失去响应式。
 
-#### Ref
+3) **解构赋值不友好**：从 `reactive` 声明的响应式对象解构赋值出来的变量将**失去响应式**  
 
-创建任何类型值的响应式 `ref` 对象
+由于存在限制，官方建议使用 `ref` 作为声明响应状态的主要 `API`
 
-##### Ref 在模板中的解包
+#### 额外解包细节
 
-ref 作为顶层属性被访问时，会被自动解包
+`ref` 作为 `reative` 对象属性时，会自动解包  
+
+```js
+const count = ref(0)
+const state = reactive({
+  count // 作为响应式对象属性值
+})
+console.log(state.count) // 0 自动解包
+state.count = 1 // 自动解包
+console.log(count.value) // 1
+```
+
+`ref` 作为响应式数组、原生集合类型（`Map、Set`）时，不会自动解包
+
+```js
+const books = reactive([ref('Vue 3 Guide')])
+console.log(books[0].value) // 这里需要 .value，不会自动解包
+
+const map = reactive(new Map([['count', ref(0)]]))
+console.log(map.get('count').value) // 这里需要 .value，不会自动解包
+```
 
 ### 计算属性
 
