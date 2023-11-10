@@ -170,6 +170,18 @@ console.log(map.get('count').value) // 这里需要 .value，不会自动解包
 
 ### 计算属性
 
+`computed()` 方法期望接收一个 `getter` 函数，返回值为一个**计算属性 ref**  
+
+```js
+import { computed } from 'vue'
+const arr = ref([1,2,3])
+const arrSum = computed(() => {
+	const result = 0
+	return arr.reduce((pre, cur) => pre + cur, 0)
+})
+// arrSum 为 ref 响应性值
+```
+
 最佳实践一：不应有副作用  
 最佳实践二：只读不写
 
