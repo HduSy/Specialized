@@ -186,12 +186,16 @@ const arrSum = computed(() => {
 
 ### 条件渲染
 
-#### V-show Vs V-if
+#### v-show VS v-if
 
-1、不支持在 `template` 上使用；  
-2、`v-if` 确保切换时，事件和子组件真实地被销毁与重建，`v-show` 只会切换 `css display` 属性；  
-3、`v-if` 惰性渲染，初次渲染时只有为 true 才会被渲染，而 `v-show` 始终会被渲染；
+[v-if-vs-v-show](https://cn.vuejs.org/guide/essentials/conditional.html#v-if-vs-v-show)  
+1、`v-show` 不支持在 `template` 上使用；  
+2、`v-if` “真实的”条件渲染，确保切换时，条件区块内的事件监听器和子组件被销毁与重建，`v-show` 只会切换 `css display` 属性；  
+3、`v-if` 惰性渲染，初次渲染时只有为 true 才会被渲染，而 `v-show` 始终会被渲染始终出现在 `DOM` 中；
+
+### 列表渲染
 
 # Reference
 
+[Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
 [Vue3 入门指南与实战案例](https://vue3.chengpeiquan.com/)
