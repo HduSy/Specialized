@@ -227,6 +227,18 @@ const arrSum = computed(() => {
 `.right`  
 `.middle`
 
+### 表单输入绑定
+
+`v-model='xxx'` 针对不同表单项封装了属性和方法，可省略手动 `v-bind` 绑定属性和 `v-on` 绑定事件  
+
+#### 修饰符
+
+`.lazy` 表单输入事件，`change` 事件后触发而不是 `input` 事件  
+`.number` 表单输入值自动 `parseFloat` 转化，无法转化则返回原始值  
+`.trim` 去除表单输入值前后空格
+
+#### 组件 v-model
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
