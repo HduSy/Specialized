@@ -323,6 +323,28 @@ unwatch()
 用在元素  
 用在组件（选项式 `API` 与非 `script setup` 时，`ref` 会拿到组件实例相当于子组件 `this`）,`script setup` 组件默认是**私有的**，父组件无法通过 `ref` 访问到，除非另外调用 `defineExpose` 宏显式暴露
 
+### 组件基础
+
+#### defineProps 宏 - 自定义组件 props
+
+#### defineEmits 宏 - 自定义组件事件 emits
+
+#### slot 组件插槽
+
+#### 动态组件 component
+
+`<component :is='xxx'></component>`
+
+`xxx` 可以是**组件名或导入的组件**
+
+#### DOM 中模板解析
+
+- 组件名、prop 名、方法名均转为 `kebab-case`
+- 必须写闭合标签
+- `select、table、ul、ol` 等元素对放置其中的元素类型有限制，相应的，某些元素仅在放置于特定元素中时才会显示
+
+## 组件注册
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
