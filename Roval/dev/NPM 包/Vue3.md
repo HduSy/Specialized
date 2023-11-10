@@ -202,7 +202,30 @@ const arrSum = computed(() => {
 `.self` 只有事件是从事件绑定元素**自身触发**时才会执行回调，不会执行冒泡传递的事件，也不会阻止冒泡事件的传递  
 `.capture` 事件捕获阶段执行  
 `.once` 只触发一次  
-`.passive` 不立即触发 `scroll` 事件，优化移动端性能
+`.passive` 不阻止事件的默认行为，不用等待回调事件的完成  
+`.native` 组件上绑定的事件触发，要用其修饰
+
+### 按键修饰符
+
+`@keyup.xxx`  
+
+`.enter`  
+`.tab`  
+`.delete` (捕获“Delete”和“Backspace”两个按键)  
+`.esc`  
+`.space`  
+`.up`  
+`.down`  
+`.left`  
+`.right`  
+
+`.exact` 修饰符：精确的按键组合才触发事件
+
+### 鼠标按键修饰符
+
+`.left`  
+`.right`  
+`.middle`
 
 # Reference
 
