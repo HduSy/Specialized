@@ -318,6 +318,11 @@ const unwatch = watchEffect(() => {})
 unwatch()
 ```
 
+### 引用 ref
+
+用在元素  
+用在组件（选项式 `API` 与非 `script setup` 时，`ref` 会拿到组件实例相当于子组件 `this`）,`script setup` 组件默认是**私有的**，父组件无法通过 `ref` 访问到，除非另外调用 `defineExpose` 宏显式暴露
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
