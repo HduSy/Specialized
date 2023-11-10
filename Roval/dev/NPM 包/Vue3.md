@@ -239,8 +239,11 @@ const arrSum = computed(() => {
 
 #### 组件 v-model
 
-### 侦听器 watch
+### 侦听器 watch & watchEffect
 
+#### watch
+
+第一个参数为侦听的依赖，第二个参数为回调，第三个参数为配置对象，支持配置**深层侦听与及时回调** `deep、immediate、flush`  
 接受参数 `ref、getter func、前两者组成的数组`
 
 ```js
@@ -261,6 +264,56 @@ watch(
 watch([x, () => y.value], ([newX, newY]) => {
   console.log(`x is ${newX} and y is ${newY}`)
 })
+```
+
+#### watchEffect
+
+当侦听器的源与回调中使用的值是同一个时，可通过 `watchEffect` 简化写法
+
+```js
+const todoId = ref(1)
+const data = ref(null)
+
+watch(todoId, async () => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/todos/${todoId.value}`
+  )
+  data.value = await response.json()
+}, { immediate: true })
+```
+
+简化为
+
+```js
+// 会立即执行
+watchEffect(async () => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/todos/${todoId.value}`
+  )
+  data.value = await response.json()
+})
+```
+
+#### 区别
+
+追踪响应式依赖的方式：
+
+- `watch` 只追踪**明确指定**侦听的数据源，它不会追踪任何在回调中访问到的东西，仅支持**单个依赖项**
+- `watchEffect` 同步执行过程中自动追踪**所有访问**到的响应式属性，支持**多个依赖项、嵌套结构中属性**
+
+#### 回调触发时机
+
+组件更新之前
+
+#### 侦听器的停止
+
+建议同步创建，会自动停止；  
+异步创建的，需手动调用，`unwatch`（创建后的一个返回值）
+
+```js
+const unwatch = watchEffect(() => {})
+// …当该侦听器不再需要时
+unwatch()
 ```
 
 # Reference
