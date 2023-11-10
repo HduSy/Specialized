@@ -195,6 +195,15 @@ const arrSum = computed(() => {
 
 ### 列表渲染
 
+### 事件修饰符
+
+`.stop` stopPropagation 阻止冒泡  
+`.prevent` preventDefault 阻止默认事件  
+`.self` 只有事件是从事件绑定元素**自身触发**时才会执行回调，不会执行冒泡传递的事件，也不会阻止冒泡事件的传递  
+`.capture` 事件捕获阶段执行  
+`.once` 只触发一次  
+`.passive` 不立即触发 `scroll` 事件，优化移动端性能
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
