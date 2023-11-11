@@ -345,6 +345,8 @@ unwatch()
 
 ## 组件注册
 
+局部注册有 `tree shaking` 且依赖关系明确
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
