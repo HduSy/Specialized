@@ -233,7 +233,7 @@ const arrSum = computed(() => {
 
 `v-model='xxx'` 针对不同表单项封装了属性和方法，可省略手动 `v-bind` 绑定属性和 `v-on` 绑定事件  
 
-#### 修饰符
+#### v-model 修饰符
 
 `.lazy` 表单输入事件，`change` 事件后触发而不是 `input` 事件  
 `.number` 表单输入值自动 `parseFloat` 转化，无法转化则返回原始值  
@@ -396,6 +396,40 @@ defineProps({
 
 #### defineEmits 宏 - 自定义组件事件 emits
 
+```js
+// 传入数组
+<script setup>
+const emit = defineEmits(['inFocus', 'submit'])
+function buttonClick() {
+  emit('submit')
+}
+</script>
+```
+
+```js
+// 传入对象，并做校验，返回true通过，返回false事件不合法
+<script setup>
+const emit = defineEmits({
+  // 没有校验
+  click: null,
+
+  // 校验 submit 事件
+  submit: ({ email, password }) => {
+    if (email && password) {
+      return true
+    } else {
+      console.warn('Invalid submit event payload!')
+      return false
+    }
+  }
+})
+
+function submitForm(email, password) {
+  emit('submit', { email, password })
+}
+</script>
+```
+
 #### slot 组件插槽
 
 #### 动态组件 component
@@ -448,6 +482,107 @@ const counter = ref(props.initialCounter)
 const props = defineProps(['size'])
 // 该 prop 变更时计算属性也会自动更新
 const normalizedSize = computed(() => props.size.trim().toLowerCase())
+```
+
+## 组件上的 v-model 用法
+
+默认情况下：
+
+```html
+<CustomInput v-model="searchText" />
+/* to */
+<CustomInput :model-value="searchText" @update:model-value="newVal => searchText=newVal" />
+```
+
+```vue
+<CustomInput v-model="searchText" />
+```
+
+CustomInput.vue 实现
+
+```vue
+<script setup>
+defineProps(['modelValue'])
+defineEmits(['update:modelValue'])
+</script>
+
+<template>
+  <input
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
+  />
+</template>
+```
+
+### 自定义 prop 名
+
+```vue
+<!-- MyComponent.vue -->
+<script setup>
+defineProps(['title'])
+defineEmits(['update:title'])
+</script>
+
+<template>
+  <input
+    type="text"
+    :value="title"
+    @input="$emit('update:title', $event.target.value)"
+  />
+</template>
+```
+
+### 自定义 modelModifiers 修饰符
+
+`vue` 除了支持 `.lazy`、`.number`、`.trim`，还支持自定义 `v-model` 修饰符
+
+```vue
+<script setup>
+const props = defineProps({
+  modelValue: String,
+  modelModifiers: { default: () => ({}) }
+})
+
+const emit = defineEmits(['update:modelValue'])
+
+function emitValue(e) {
+  let value = e.target.value
+  if (props.modelModifiers.capitalize) {
+    value = value.charAt(0).toUpperCase() + value.slice(1)
+  }
+  emit('update:modelValue', value)
+}
+</script>
+
+<template>
+  <input type="text" :value="modelValue" @input="emitValue" />
+</template>
+```
+
+### 自定义 prop 加 modifiers
+
+对于又有参数又有修饰符的 `v-model` 绑定，生成的 prop 名将是 `arg + "Modifiers"`
+
+```html
+<UserName
+  v-model:first-name.capitalize="first"
+  v-model:last-name.uppercase="last"
+/>
+```
+
+```js
+<script setup>
+const props = defineProps({
+  firstName: String,
+  lastName: String,
+  firstNameModifiers: { default: () => ({}) },
+  lastNameModifiers: { default: () => ({}) }
+})
+defineEmits(['update:firstName', 'update:lastName'])
+
+console.log(props.firstNameModifiers) // { capitalize: true }
+console.log(props.lastNameModifiers) // { uppercase: true}
+</script>
 ```
 
 # Reference
