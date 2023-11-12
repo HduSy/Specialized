@@ -585,6 +585,45 @@ console.log(props.lastNameModifiers) // { uppercase: true}
 </script>
 ```
 
+## attributes 透传
+
+组件上没有被内部 `props、emits` 声明的 `attributes` 将会透传给组件（声明过的被组件自己“消费”了），如 `class style id`  
+
+当组件以单个元素作为根元素编写时，透传的 `attributes` 将会自动加到根元素上；  
+当组件以多个元素作为根元素编写时，透传的 `attributes` 必须显式绑定到某个根元素上；`v-bind="$attrs"`
+
+### class、style 透传
+
+会发生合并
+
+### 事件透传
+
+父、子事件将同时触发
+
+### 禁用透传
+
+`defineOptions` 宏，`inheritAttrs:false`，使用场景为不想让透传到根元素，而是想透传到其他元素上的时候，通过 `$attrs` 访问
+
+### 实际用法
+
+```js
+// setup 写法
+<script setup>
+import { useAttrs } from 'vue'
+
+const attrs = useAttrs()
+</script>
+// 非 setup 写法
+export default {
+  setup(props, ctx) {
+    // 透传 attribute 被暴露为 ctx.attrs
+    console.log(ctx.attrs)
+  }
+}
+```
+
+## 插槽
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
