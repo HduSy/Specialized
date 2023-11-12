@@ -327,6 +327,73 @@ unwatch()
 
 #### defineProps 宏 - 自定义组件 props
 
+```js
+<script setup>
+const props = defineProps(['foo'])
+// 类型校验
+defineProps({
+  title: String,
+  likes: Number
+})
+// ts校验
+defineProps<{
+  title?: string
+  likes?: number
+}>()
+// props校验
+defineProps({
+  // 基础类型检查
+  // （给出 `null` 和 `undefined` 值则会跳过任何类型检查）
+  propA: Number,
+  // 多种可能的类型
+  propB: [String, Number],
+  // 必传，且为 String 类型
+  propC: {
+    type: String,
+    required: true
+  },
+  // Number 类型的默认值
+  propD: {
+    type: Number,
+    default: 100
+  },
+  // 对象类型的默认值
+  propE: {
+    type: Object,
+    // 对象或数组的默认值
+    // 必须从一个工厂函数返回。
+    // 该函数接收组件所接收到的原始 prop 作为参数。
+    default(rawProps) {
+      return { message: 'hello' }
+    }
+  },
+  // 自定义类型校验函数
+  propF: {
+    validator(value) {
+      // The value must match one of these strings
+      return ['success', 'warning', 'danger'].includes(value)
+    }
+  },
+  // 函数类型的默认值
+  propG: {
+    type: Function,
+    // 不像对象或数组的默认，这不是一个
+    // 工厂函数。这会是一个用来作为默认值的函数
+    default() {
+      return 'Default function'
+    }
+  }
+})
+</script>
+```
+
+细节补充：
+
+- 所有 `prop` 默认都是可选的（默认 `require:false`），除非声明了 `required: true`
+- 除 `Boolean` 外（默认 `false`）的未传递的可选 prop 将会有一个默认值 `undefined`
+- `Boolean` 类型的未传递 prop 将被转换为 `false`。这可以通过为它设置 `default` 来更改——例如：设置为 `default: undefined` 将与非布尔类型的 prop 的行为保持一致
+- 如果声明了 `default` 值，那么在 prop 的值被解析为 `undefined` 时，无论 prop 是未被传递还是显式指明的 `undefined`，都会改为 `default` 值
+
 #### defineEmits 宏 - 自定义组件事件 emits
 
 #### slot 组件插槽
@@ -345,7 +412,43 @@ unwatch()
 
 ## 组件注册
 
-局部注册有 `tree shaking` 且依赖关系明确
+和全局注册相比，局部注册有 `tree shaking` 且依赖关系明确
+
+## props
+
+### 绑定对象属性值为多个 prop
+
+将对象所有属性都当作 props 传入，可以使用 `无参数的v-bind`
+
+```js
+const post = {
+  id: 1,
+  title: 'My Journey with Vue'
+}
+<BlogPost v-bind="post" />
+// 相当于
+<BlogPost :id="post.id" :title="post.title" />
+```
+
+### 单向数据流
+
+传递给子组件的 `props` 是**只读**的，子组件可通过：  
+**局部化为本地变量**：
+
+```js
+const props = defineProps(['initialCounter'])
+// 计数器只是将 props.initialCounter 作为初始值
+// 像下面这样做就使 prop 和后续更新无关了
+const counter = ref(props.initialCounter)
+```
+
+利用**计算属性**，对 `props` 进行一次转换：
+
+```js
+const props = defineProps(['size'])
+// 该 prop 变更时计算属性也会自动更新
+const normalizedSize = computed(() => props.size.trim().toLowerCase())
+```
 
 # Reference
 
