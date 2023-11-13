@@ -624,6 +624,21 @@ export default {
 
 ## 插槽
 
+### 作用域插槽
+
+应用：封装逻辑，组合视图
+
+## 依赖注入
+
+```js
+import { ref, provide } from 'vue'
+
+const count = ref(0)
+provide('key', count)
+```
+
+响应式的依赖，使得后代组件与提供者建立依赖关系
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  

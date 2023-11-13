@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/面试官问点.md",
+                "file": "Daily/2023-11-13.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,13 +232,13 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "eb9dc1e0c416c2af",
+  "active": "e564b515ad0eb2c3",
   "lastOpenFiles": [
     "Roval/dev/NPM 包/Vue3.md",
-    "Daily/2023-11-13.md",
     "Roval/前端面经/三土面试准备.md",
-    "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/前端面经/面试官问点.md",
+    "Daily/2023-11-13.md",
+    "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/dev/NPM 包/Pasted image 20231109224050.png",
     "Daily/2023-09-19.md",
     "Roval/dev/杂/MDN.md",
