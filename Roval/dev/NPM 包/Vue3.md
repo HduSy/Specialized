@@ -631,13 +631,99 @@ export default {
 ## 依赖注入
 
 ```js
-import { ref, provide } from 'vue'
+// keys.js
+export const myInjectionKey = Symbol()
+```
 
-const count = ref(0)
-provide('key', count)
+```js
+<!-- 在供给方组件内 -->
+<script setup>
+import { provide, ref } from 'vue'
+import { myInjectionKey } from './keys.js'
+const location = ref('North Pole')
+function updateLocation() {
+  location.value = 'South Pole'
+}
+provide('myInjectionKey', {
+  location,
+  updateLocation
+})
+</script>
 ```
 
 响应式的依赖，使得后代组件与提供者建立依赖关系
+
+```js
+<!-- 在注入方组件 -->
+<script setup>
+import { inject } from 'vue'
+import { myInjectionKey } from './keys.js'
+const { location, updateLocation } = inject(myInjectionKey)
+</script>
+<template>
+  <button @click="updateLocation">{{ location }}</button>
+</template>
+```
+
+使用 `symbol` 作注入的依赖名，可有效避免冲突
+
+## 异步加载组件
+
+```js
+const AsyncComp = defineAsyncComponent({
+  // 待加载组件
+  loader: () => import('./Foo.vue'),
+  // 异步组件加载出来前使用的组件
+  loadingComponent: LoadingComponent,
+  // 防止与待加载组件之间的切换闪烁，设置的延迟时间，默认为 200ms
+  delay: 200,
+  // 加载失败后展示的组件
+  errorComponent: ErrorComponent,
+  // 如果提供了一个 timeout 时间限制，并超时了
+  // 也会显示这里配置的报错组件，默认值是：Infinity
+  timeout: 3000
+})
+```
+
+## 逻辑复用
+
+### 组合式函数
+
+利用 `Vue composition-API`**封装和复用有状态逻辑**的函数
+
+```js
+// mouse.js
+import { ref, onMounted, onUnmounted } from 'vue'
+// 按照惯例，组合式函数名以“use”开头
+export function useMouse() {
+  // 被组合式函数封装和管理的状态
+  const x = ref(0)
+  const y = ref(0)
+  // 组合式函数可以随时更改其状态。
+  function update(event) {
+    x.value = event.pageX
+    y.value = event.pageY
+  }
+  // 一个组合式函数也可以挂靠在所属组件的生命周期上
+  // 来启动和卸载副作用
+  onMounted(() => window.addEventListener('mousemove', update))
+  onUnmounted(() => window.removeEventListener('mousemove', update))
+  // 通过返回值暴露所管理的状态
+  return { x, y }
+}
+```
+
+组合式函数复用
+
+```vue
+<script setup>
+import { useMouse } from './mouse.js'
+const { x, y } = useMouse()
+</script>
+<template>Mouse position is at: {{ x }}, {{ y }}</template>
+```
+
+一个组合式函数可以调用一个或多个其他的组合式函数。这使得我们可以像使用多个组件组合成整个应用一样，用多个较小且逻辑独立的单元来组合形成复杂的逻辑。
 
 # Reference
 

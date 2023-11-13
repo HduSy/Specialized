@@ -10,6 +10,21 @@
           {
             "id": "e564b515ad0eb2c3",
             "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/三土面试准备.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "f8bc6614db2e20be",
+            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
@@ -21,19 +36,20 @@
             }
           },
           {
-            "id": "eb9dc1e0c416c2af",
+            "id": "9376da01f148c46c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Roval/dev/NPM 包/Vue3.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Roval/dev/NPM 包/Vue3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Roval/dev/NPM 包/Vue3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-11-13.md"
+                "file": "Roval/dev/NPM 包/Vue3.md"
               }
             }
           },
@@ -182,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Roval/dev/NPM 包/Vue3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,12 +248,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "e564b515ad0eb2c3",
+  "active": "9376da01f148c46c",
   "lastOpenFiles": [
-    "Roval/dev/NPM 包/Vue3.md",
-    "Roval/前端面经/三土面试准备.md",
-    "Roval/前端面经/面试官问点.md",
     "Daily/2023-11-13.md",
+    "Roval/前端面经/三土面试准备.md",
+    "Roval/dev/NPM 包/Vue3.md",
+    "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/dev/NPM 包/Pasted image 20231109224050.png",
     "Daily/2023-09-19.md",
