@@ -110,7 +110,8 @@ count.value = '0' // 成功!
 
 #### 深层响应性
 
-`ref` 使任何类型的值具有深层响应性，包括数组、对象、`js` 内置数据结构，其变化会被检测到。当 `ref` 值为非原始值时，`ref()` 内部调用 [`reactive()`](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive) 转换为 `JavaScript` 响应式代理，**拦截响应式对象所有属性的访问与修改，进行依赖追踪与触发更新**
+`ref` 使任何类型的值具有深层响应性，包括数组、对象、`js` 内置数据结构，其变化会被检测到。当 `ref` 值为非原始值时，`ref()` 内部调用 [`reactive()`](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive) 转换为 `JavaScript` 响应式代理，**拦截响应式对象所有属性的访问与修改，进行依赖追踪与触发更新**  
+[响应式API之reactive](https://cn.vuejs.org/api/reactivity-core.html#reactive)
 
 #### DOM 更新时机
 
