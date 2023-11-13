@@ -49,7 +49,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue3.md",
+                "file": "Daily/2023-11-13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue3.md",
+                "file": "Daily/2023-11-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue3.md"
+                "file": "Daily/2023-11-13.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM 包/Vue3.md",
+                "file": "Daily/2023-11-13.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -248,11 +248,11 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "9376da01f148c46c",
+  "active": "f8bc6614db2e20be",
   "lastOpenFiles": [
+    "Roval/dev/NPM 包/Vue3.md",
     "Daily/2023-11-13.md",
     "Roval/前端面经/三土面试准备.md",
-    "Roval/dev/NPM 包/Vue3.md",
     "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/dev/NPM 包/Pasted image 20231109224050.png",

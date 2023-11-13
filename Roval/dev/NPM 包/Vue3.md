@@ -687,9 +687,9 @@ const AsyncComp = defineAsyncComponent({
 
 ## 逻辑复用
 
-### 组合式函数
+### 组合式函数 composition-funcion
 
-利用 `Vue composition-API`**封装和复用有状态逻辑**的函数
+利用 `Vue composition-API`**封装和复用有状态逻辑**。灵感来源 `React Hooks`
 
 ```js
 // mouse.js
@@ -724,6 +724,20 @@ const { x, y } = useMouse()
 ```
 
 一个组合式函数可以调用一个或多个其他的组合式函数。这使得我们可以像使用多个组件组合成整个应用一样，用多个较小且逻辑独立的单元来组合形成复杂的逻辑。
+
+### 组合式函数 VS 无渲染组件
+
+**无渲染组件**是指仅复用逻辑，通过作用域插槽将状态交给消费者组件去做视图渲染
+
+组合函数**无组件实例、无组件嵌套**开销，更加高效。
+
+### 组合式函数 VS Vue2-mixin
+
+[混入mixin — Vue2.js](https://v2.cn.vuejs.org/v2/guide/mixins.html)  
+`mixin` 短板：
+
+- 数据来源不清晰
+- 多个 `mixin` 命名空间冲突
 
 # Reference
 
