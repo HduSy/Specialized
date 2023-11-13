@@ -246,7 +246,7 @@ const arrSum = computed(() => {
 #### watch
 
 第一个参数为侦听的依赖，第二个参数为回调，第三个参数为配置对象，支持配置**深层侦听与及时回调** `deep、immediate、flush`  
-接受参数 `ref、getter func、前两者组成的数组`
+接受参数 `ref、getter func、以及前两者组成的数组` [组合式API之watch](https://cn.vuejs.org/api/reactivity-core.html#watch)
 
 ```js
 const x = ref(0)
