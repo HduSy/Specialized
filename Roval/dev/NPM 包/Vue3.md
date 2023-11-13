@@ -739,6 +739,86 @@ const { x, y } = useMouse()
 - 数据来源不清晰
 - 多个 `mixin` 命名空间冲突
 
+### 自定义指令
+
+### 插件 - 官方文档没怎么懂
+
+## 内置组件
+
+### Transition
+
+触发条件：
+
+- `v-if`
+- `v-show`
+- `component` 动态组件
+- 特殊 `key` 改变
+
+#### 基于 CSS 动画效果
+
+`name prop` 指定动画名
+
+1. `name-enter-from`：进入动画的起始状态。在元素插入之前添加，在元素插入完成后的下一帧移除。
+2. `name-enter-active`：进入动画的生效状态。应用于整个进入动画阶段。在元素被插入之前添加，在过渡或动画完成之后移除。这个 class 可以被用来定义进入动画的持续时间、延迟与速度曲线类型。
+3. `v-enter-to`：进入动画的结束状态。在元素插入完成后的下一帧被添加 (也就是 `v-enter-from` 被移除的同时)，在过渡或动画完成之后移除。
+4. `v-leave-from`：离开动画的起始状态。在离开过渡效果被触发时立即添加，在一帧后被移除。
+5. `v-leave-active`：离开动画的生效状态。应用于整个离开动画阶段。在离开过渡效果被触发时立即添加，在过渡或动画完成之后移除。这个 class 可以被用来定义离开动画的持续时间、延迟与速度曲线类型。
+6. `v-leave-to`：离开动画的结束状态。在一个离开动画被触发后的下一帧被添加 (也就是 `v-leave-from` 被移除的同时)，在过渡或动画完成之后移除。
+
+为 `Transiton` 组件 `props` 传入特定值，在 `Vue` 动画机制下，结合其他**第三方 CSS 动画库**如 `animate.css` 时，很有用  
+
+`动画 prop` 指定动画类名
+
+- `enter-from-class`
+- `enter-active-class`
+- `enter-to-class`
+- `leave-from-class`
+- `leave-active-class`
+- `leave-to-class`
+
+```html
+<!-- 假设你已经在页面中引入了 Animate.css -->
+<Transition
+  name="custom-classes"
+  enter-active-class="animate__animated animate__tada"
+  leave-active-class="animate__animated animate__bounceOutRight"
+>
+  <p v-if="show">hello</p>
+</Transition>
+```
+
+`duration prop` 指定过渡总时长  
+`Transition` 支持 `css` 子选择器，控制嵌套子元素单独修改过渡效果，随之带来的问题是，`Transition` 是以根元素上的第一个 `transitionend` 或者 `animationend` 事件来自动判断过渡何时结束，而期望的行为应该是**等待**所有内容元素的过渡完成，因此 `duration prop` 指定过渡时间要与所有内容过渡时间一致 [Vue SFC Playground](https://play.vuejs.org/#eNqVVd9v0zAQ/leO8LAfrE3HNKSFbgKmSYMHQNAHkPLiOtfEm2NHttN2mvq/c7bTNi1jgFop9t13d9995ziPyfumGc5bTLJkbLkRjQOLrm2uciXqRhsHj2BwBiuYGV3DAUEPcpUrrpUlaKUXcOkBh860eJSrcRqzUDxtHNaNZA5pBzCets5pBe+4FPz+Mk+66Bf+mSdXE12WEsdphMWQiWHKCicorGgN8wsKPD8f5QkoViNtFFqHBcX7AAopxBzmAzHrChCQS2YtbXXr0GyAHXTtFEptnbnzv1uUUm/AKaHXNTbrcbplSIZx2uuYttY9SL8chtInMAxV4JGcbsr4fWl0q4oMXiLiW5+vYUUhVJnB2ahZBkst1KBCUVYug9NRtK68g7J22WgJsJOOc96DRYUGqIjDgHEn5khUOqtENsfOGom5TUcZMClhNDyzgMzigKhQIzFzegwFSvYAIQHoGXE3VAJQYu2fx+m29H4RgG2RQUiTUZnX5zbm3ufsj97Jfjane5lm2tRZXHr1fx56/Y6CgLphXDhfYJ2cqC8QOFPUntU9KhALrFuw0FoaxtpqycydNnantb6q3Xx/o7rj7eb1nyqHMl7lXYp/o7I/0X8U+0+NkObbvE9L/6MnfXocTqC7pbMJLBxOYHBdUQWEizcwbUsQCiqmCtkTuptYTyI7jC/epBIW6K+0IzAWBKZ47SpiNDV6YZGmo82mxMUrWJAPgRC+WsxSMQtTRAUzscQipPYy9o/KcDQ6jfLQhRZe4uQkcZZuvZkoh3dWK7owgwZ5wnXdCInmSxOo5kkW1fE+mqxefAo2f0GSoNHOK+T3T9jv7NLb8uSrQWpmjnmy8TlmSnTRffP9My5pvXHWumgloZ9xfkOrZes5RtgHGgfR7uEC24/h2qdxTOzN0iFNoGvKE/XIVcDnCX0Krp9pfUv3bHgW4kjPZPULQX004w==)
+
+`appear prop` 使得组件初次渲染时有动画效果  
+`mode prop` 过渡模式，官方推荐 `out-in`
+
+#### 基于 JavaScript 动画
+
+`Transition` 暴露了 8 个钩子，结合**第三方 JS 动画库**如 `GSAP`、`Animate.js`
+
+#### 过渡可复用
+
+做法：基于 `Transition` 开发组件，通过 `slot` 插槽传入其他组件
+
+### TransitionGroup
+
+用于对 `v-for` 列表中的元素或组件的**插入、移除和顺序改变**添加动画效果
+
+#### VS Transition
+
+相同点：`props`、`class name`、`js hook`  
+不同点：
+
+- 默认情况下，它不会渲染一个容器元素。但你可以通过传入 `tag` prop 来指定一个元素作为容器元素来渲染。
+- [过渡模式 mode](https://cn.vuejs.org/guide/built-ins/transition.html#transition-modes) 在这里不可用，因为我们不再是在互斥的元素之间进行切换。
+- 列表中的每个元素都**必须**有一个独一无二的 `key` attribute。
+- CSS 过渡 class 会被应用在列表内的元素上，**而不是**容器元素上。
+
+#### 渐进延迟列表动画
+
+列表项元素添加 `data attributes`，`js hook` 中调用第三方 JS 动画库如 `GSAP` 实现不同项渐进延迟效果
+
 # Reference
 
 [Vue.js官方](https://cn.vuejs.org/guide/introduction.html)  
