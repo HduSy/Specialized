@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Daily/2023-11-14.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Daily/2023-11-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Daily/2023-11-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-11-13.md"
+                "file": "Daily/2023-11-14.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-11-13.md",
+                "file": "Daily/2023-11-14.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,8 +250,9 @@
   },
   "active": "f8bc6614db2e20be",
   "lastOpenFiles": [
-    "Roval/dev/NPM 包/Vue3.md",
     "Daily/2023-11-13.md",
+    "Daily/2023-11-14.md",
+    "Roval/dev/NPM 包/Vue3.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/面试官问点.md",
     "Roval/前端面经/为什么要尽快找到工作.md",
@@ -277,7 +278,6 @@
     "Roval/前端面经/移动端适配方案.md",
     "Roval/前端面经/面试点.png",
     "Roval/coder/面经/前端简历模版fromEasy.md",
-    "职业经验之谈/好文推荐.md",
     "职业经验之谈/Pasted image 20230920141410.png",
     "Untitled.canvas",
     "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
