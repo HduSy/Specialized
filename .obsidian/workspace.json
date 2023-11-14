@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/2023-11-14.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "MDN",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-11-14.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-11-14.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-11-14.md"
+                "file": "Roval/dev/杂/MDN.md"
               }
             }
           },
@@ -198,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Daily/2023-11-14.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,8 +251,8 @@
   },
   "active": "f8bc6614db2e20be",
   "lastOpenFiles": [
-    "Daily/2023-11-13.md",
     "Daily/2023-11-14.md",
+    "Daily/2023-11-13.md",
     "Roval/dev/NPM 包/Vue3.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/面试官问点.md",
