@@ -127,6 +127,8 @@ async function increment() {
 }
 ```
 
+[nextTick | Vue.js](https://cn.vuejs.org/api/general.html#nexttick)
+
 ### reactive
 
 `reactive()` 将深层地转换对象：当访问嵌套对象时，它们也会被 `reactive()` 包装。当 ref 的值是一个对象时，`ref()` 也会在内部调用它。
