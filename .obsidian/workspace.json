@@ -36,19 +36,6 @@
             }
           },
           {
-            "id": "cf64d8f09559cc60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/Vite面经.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f0f190adb966c3c6",
             "type": "leaf",
             "state": {
@@ -73,34 +60,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "88d4cc0b3b32f930",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/webpack面经.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3b735dbe2914f294",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -166,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md"
+                "file": "Roval/前端面经/Rollup面经.md"
               }
             }
           },
@@ -249,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -299,13 +261,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e564b515ad0eb2c3",
+  "active": "751f7be63ca51c92",
   "lastOpenFiles": [
-    "Roval/前端面经/Rollup面经.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/webpack面经.md",
-    "Roval/前端面经/Vite面经.md",
+    "Roval/前端面经/Rollup面经.md",
     "Roval/工程化/Rollup.md",
+    "Roval/前端面经/Vite面经.md",
+    "Roval/前端面经/宋垚面试准备.md",
     "Roval/工程化/vite.md",
     "Roval/dev/杂/MDN.md",
     "Roval/idea/若有所思.md",
