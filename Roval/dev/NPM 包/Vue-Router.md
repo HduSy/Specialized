@@ -45,7 +45,11 @@ Last Modified：2023-11-07 08:23:23
 
 ### 命名视图
 
-不止嵌套，想同级展示多个视图时，可声明多个 `router-view` 作为多个出口
+不止嵌套，想同级展示多个视图时，可声明多个 `router-view` 作为多个出口  
+
+#### router-view key 属性
+
+指定 `key` 属性值为 `$route.fullPath` 保证 `Vue` 组件复用时强制执行组件生命周期函数，执行顺序为：`beforeRouteUpdate -> created -> mounted`，从而重新拉取最新数据
 
 ### 重定向和别名
 
@@ -110,4 +114,5 @@ const router = createRouter({
 
 # Reference
 
-[Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)
+[Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)  
+[＜router-view :key=“key“/＞中key的作用 - CodeAntenna](https://codeantenna.com/a/U6lnGWo9ur)  

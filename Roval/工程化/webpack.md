@@ -155,7 +155,16 @@ module.exports = {
 
 打包过程做一些处理工作
 
+### terser-webpack-plugin
+
+压缩 `JS` 代码  
+`uglifyjs-webpack-plugin` 单线程压缩  
+`webpack-parallel-uglify-plugin` 开启多个子线程通过 `UglifyJS` 进行压缩  
+`terser-webpack-plugin` 使用 `terser` 压缩 `js`， `webpack` 官方推荐，且仍在维护状态
+
 ### html-webpack-plugin
+
+简化 `html` 模板的创建，同时压缩 `html` 代码
 
 ```js
 new HtmlWebpackPlugin({
@@ -187,8 +196,7 @@ new HtmlWebpackPlugin({
 
 ### mini-css-extract-plugin
 
-升级 webpack4 之后替代了 `extract-text-webpack-plugin`  
-将 CSS 从 JavaScript 中提取出来的插件，它会创建一个单独的 CSS 文件。这个插件适用于生产环境，可以帮助优化页面加载速度
+升级 webpack4 之后替代了 `extract-text-webpack-plugin` 将 CSS 从 JavaScript 中提取出来的插件，它会创建一个单独的 CSS 文件。这个插件适用于生产环境，可以帮助优化页面加载速度
 
 ### optimize-css-assets-webpack-plugin
 

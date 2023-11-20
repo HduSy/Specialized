@@ -19,4 +19,4 @@ Last Modified：2023-11-19 12:18:07
 
 # Reference
 
-[【前端小知识】Rollup开发一个Npm包，并发布 - 掘金](https://juejin.cn/post/7264044879209529381)
+[【前端小知识】Rollup开发一个Npm包，并发布 - 掘金](https://juejin.cn/post/7264044879209529381)  

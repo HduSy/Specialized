@@ -142,11 +142,23 @@ export default {
 
 ### @rollup/plugin-node-resolve
 
-引入非本地第三方库
+`Rollup` 无法处理 `node_modules` 中依赖，该插件采用 `node resolution algorithm` 定位模块，`Rollup` 能够 `node_modules` 中的依赖，并将其打包到输出文件里
+
+```js
+// 不配置情况下导入导出
+export foo from './foo/index.js'
+import bar from './bar/index.js'
+```
+
+```js
+// 配置情况下导入导出
+export foo from './foo'
+import bar from './bar'
+```
 
 ### @rollup/plugin-commonjs
 
-处理 `commonjs` 模块规范的第三方库
+`Rollup` 本身只支持 `ES` 模块，将第三方依赖 `commonjs` 规范开发的模块转为 `ES` 模块，方便打包
 
 ### @rollup/plugin-babel
 
@@ -155,6 +167,14 @@ export default {
 ### @rollup/plugin-json
 
 处理 `json` 导入
+
+### @rollup/plugin-typescript
+
+将 `ts` 转为可在浏览器运行的 `js`，还提供了 `ts` 静态类型检查和编译功能，提高 `ts` 项目开发效率，项目可维护性
+
+### @rollup/plugin-replace
+
+动态替换代码中的特定字符串
 
 ## webpack vs rollup
 
@@ -167,8 +187,11 @@ export default {
 
 # Reference
 
-[简介 | Rollup 中文文档](https://cn.rollupjs.org/introduction/)
+[简介 | Rollup 中文文档](https://cn.rollupjs.org/introduction/)  
+[官方|Rollup一站式插件合集](https://github.com/rollup/plugins)
+
+[Rollup 构建中常用插件指南：commonjs、node-resolve、typescript和replace - 掘金](https://juejin.cn/post/7269226884654465081)
 
 [「前端工程化」之 Rollup 上手与基本原理\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1w84y1z77V/?vd_source=032760beb957fcfec470635ca2ed9cef)
 
-[Rollup 集成第三方工具 | rollup.js 中文文档 | rollup.js中文网](https://www.rollupjs.com/guide/tools)
+[Rollup 集成第三方工具 | rollup.js 中文文档 | rollup.js中文网](https://www.rollupjs.com/guide/tools)  

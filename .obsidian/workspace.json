@@ -8,6 +8,21 @@
         "type": "tabs",
         "children": [
           {
+            "id": "59c52755f305177d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/前端面经/为什么要尽快找到工作.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "e564b515ad0eb2c3",
             "type": "leaf",
             "pinned": true,
@@ -23,38 +38,12 @@
             }
           },
           {
-            "id": "aabaa743ddd3fd4a",
+            "id": "b43f3af5f7f7e0f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/Rollup.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0f190adb966c3c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "751f7be63ca51c92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
+                "file": "Roval/工程化/webpack.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +51,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
+                "file": "Roval/工程化/webpack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
+                "file": "Roval/工程化/webpack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Rollup面经.md"
+                "file": "Roval/工程化/webpack.md"
               }
             }
           },
@@ -211,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Rollup面经.md",
+                "file": "Roval/工程化/webpack.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -261,35 +250,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "751f7be63ca51c92",
+  "active": "b43f3af5f7f7e0f7",
   "lastOpenFiles": [
-    "Roval/前端面经/webpack面经.md",
-    "Roval/前端面经/Rollup面经.md",
-    "Roval/工程化/Rollup.md",
-    "Roval/前端面经/Vite面经.md",
     "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/NPM 包/Vue-Router.md",
+    "Roval/dev/NPM 包/Vue2.md",
+    "Roval/dev/NPM 包/Vue3.md",
+    "Roval/前端面经/为什么要尽快找到工作.md",
+    "Roval/前端面经/webpack面经.md",
+    "Roval/前端面经/vue面经.md",
+    "Roval/工程化/Rollup.md",
+    "Roval/前端面经/Rollup面经.md",
+    "Roval/前端面经/Vite面经.md",
     "Roval/工程化/vite.md",
     "Roval/dev/杂/MDN.md",
     "Roval/idea/若有所思.md",
     "Roval/idea/template.md",
     "Daily/2023-11-14.md",
     "Daily/2023-11-16.md",
-    "Roval/dev/NPM 包/Vue3.md",
     "Daily/2023-11-13.md",
     "Roval/前端面经/面试官问点.md",
-    "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/dev/NPM 包/Pasted image 20231109224050.png",
     "Daily/2023-09-19.md",
     "Roval/工程化/Vite.md",
     "Roval/dev/样式/SASS 使用.md",
     "Roval/dev/杂/NPM.md",
-    "Roval/dev/NPM 包/Vue-Router.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/样式/clip-path.md",
     "Roval/dev/样式/css.md",
     "Roval/dev/NPM 包/BlobJS.md",
-    "Roval/前端面经/window上页面加载相关事件.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/面试点.png",
     "职业经验之谈/Pasted image 20230920141410.png",
     "Untitled.canvas",
