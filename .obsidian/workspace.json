@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/工程化/webpack.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -97,7 +97,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -117,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/工程化/webpack.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/工程化/webpack.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/工程化/webpack.md"
+                "file": "Roval/dev/杂/MDN.md"
               }
             }
           },
@@ -200,7 +201,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/工程化/webpack.md",
+                "file": "Roval/dev/杂/MDN.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -252,6 +253,8 @@
   },
   "active": "b43f3af5f7f7e0f7",
   "lastOpenFiles": [
+    "Daily/2023-04-13.md",
+    "Roval/工程化/webpack.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/NPM 包/Vue-Router.md",
     "Roval/dev/NPM 包/Vue2.md",
@@ -277,8 +280,6 @@
     "Roval/dev/杂/NPM.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/样式/clip-path.md",
-    "Roval/dev/样式/css.md",
-    "Roval/dev/NPM 包/BlobJS.md",
     "Roval/前端面经/面试点.png",
     "职业经验之谈/Pasted image 20230920141410.png",
     "Untitled.canvas",
