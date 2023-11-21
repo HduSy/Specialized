@@ -213,6 +213,14 @@ v-bind.sync="doc"
 
 ```
 
+## API
+
+### 特殊 attribute
+
+#### ref
+
+返回 `DOM` 元素或子组件实例 [ref](https://v2.cn.vuejs.org/v2/api/#ref)
+
 # Reference
 
 [property vs attribute](https:juejin.cn/post/6844904114065768462)
