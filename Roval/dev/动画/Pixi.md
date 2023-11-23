@@ -23,4 +23,5 @@ let app = new PIXI.Application({
 
 # Reference
 
-[Pixi官网教程中译](https://github.com/Zainking/LearningPixi)
+[教你用PixiJs实现复杂动画 - 掘金](https://juejin.cn/post/6917849020341682189)  
+[骨骼动画初体验 | fx-team](https://fx-team.github.io/2018/02/11/%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB%E5%88%9D%E4%BD%93%E9%AA%8C/)

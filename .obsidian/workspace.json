@@ -49,9 +49,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "803a1a1be31974c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/动画/Pixi.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -117,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Pixi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Pixi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md"
+                "file": "Roval/dev/动画/Pixi.md"
               }
             }
           },
@@ -200,7 +213,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Pixi.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,8 +263,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e564b515ad0eb2c3",
+  "active": "803a1a1be31974c0",
   "lastOpenFiles": [
+    "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/动画/SVG.md",
     "Roval/dev/动画/SVGA.md",
     "Roval/dev/动画/Animation.md",
@@ -259,7 +273,6 @@
     "Daily/2023-07-14.md",
     "Roval/dev/杂/第三方包.md",
     "Roval/dev/杂/MDN.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/NPM 包/Pasted image 20230115231217.png",
     "Roval/dev/NPM 包/Vue2.md",
     "Roval/dev/NPM 包/Vue3.md",
