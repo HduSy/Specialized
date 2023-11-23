@@ -3,7 +3,7 @@ Last Modified：2022-12-17 21:18:02
 
 # Tags
 
-#CSS
+#CSS [[技术博客与网站]]
 
 # Content
 
@@ -19,8 +19,8 @@ Last Modified：2022-12-17 21:18:02
 [window.postMessage - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) on('message', ()=>{})  
 [event.stopImmediatePropagation - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopImmediatePropagation)  
 [URLSearchParams - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)  
-[IntersectionObserver API 使用教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2016/11/intersectionobserver_api.html) 懒加载&无限滚动  
 [Intersection Observer API - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API)  
+[Element.getBoundingClientRect() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)  
 [Window：resize 事件 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event)  
 [Window - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window)  
 [Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)
