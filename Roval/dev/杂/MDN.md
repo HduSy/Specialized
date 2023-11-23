@@ -23,7 +23,8 @@ Last Modified：2022-12-17 21:18:02
 [Element.getBoundingClientRect() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)  
 [Window：resize 事件 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event)  
 [Window - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window)  
-[Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)
+[Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)  
+[EventTarget.addEventListener() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
 
 ## HTML
 

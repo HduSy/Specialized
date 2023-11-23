@@ -109,6 +109,12 @@ Vue.directive('exposure', {
   })
 ```
 
+使用：
+
+```vue
+<div v-exposure="() => loggerReport('key', 'value')"></div>
+```
+
 # Reference
 
 [[../杂/MDN|MDN]]
