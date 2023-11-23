@@ -21,6 +21,37 @@ Last Modified：2023-11-23 11:13:17
 
 动画设计师专注于动画设计，通过工具输出 `.svga` 文件给到开发者，开发者集成 `svga player` 直接在代码中使用。大大减少动画交互沟通成本，提升开发效率
 
+## 代码实践
+
+直播魔法奇遇活动：`live-live/nuwa/packages/magical_adventure/src/views/full/FullRoot.vue`
+
+```js
+import SVGA from 'svgaplayerweb'
+
+// svga 动画文件
+const svgaMap = {
+  success:
+    'https://i0.hdslb.com/bfs/activity-plat/static/20230313/914c3fa24b42b66ec286f08e3d89a3b7/reZDqJfiTw.svga',
+  normal:
+    'https://i0.hdslb.com/bfs/activity-plat/static/20230313/914c3fa24b42b66ec286f08e3d89a3b7/4klbkrH7qP.svga'
+}
+const player = new SVGA.Player('#animate-canvas') // 动画播放相关
+player.loops = 1
+player.setContentMode('AspectFill')
+player.onFinished(() => {
+	// 动画播放完成回调
+})
+
+const parser = new SVGA.Parser() // 动画加载解析
+parser.load(
+    isSuccess ? svgaMap.success : svgaMap.normal,
+    (videoItem) => {
+      this.svgaPlayer.setVideoItem(videoItem)
+      this.svgaPlayer.startAnimation()
+    }
+)
+```
+
 # Reference
 
 [SVGA官网](https://svga.io/index.html)  
