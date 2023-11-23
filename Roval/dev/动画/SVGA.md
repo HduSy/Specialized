@@ -23,4 +23,6 @@ Last Modified：2023-11-23 11:13:17
 
 # Reference
 
-[SVGA](https://svga.io/index.html)
+[SVGA官网](https://svga.io/index.html)  
+[GitHub - svga/SVGAPlayer-Web-Lite: Lightweight SVGA Web Player](https://github.com/svga/SVGAPlayer-Web-Lite)  
+[GitHub - svga/SVGAPlayer-Web](https://github.com/svga/SVGAPlayer-Web)
