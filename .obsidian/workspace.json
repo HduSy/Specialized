@@ -38,12 +38,12 @@
             }
           },
           {
-            "id": "afa18e432a78001a",
+            "id": "ed025fadbfca7870",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md",
+                "file": "ob-template/template.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -51,12 +51,38 @@
             }
           },
           {
-            "id": "ed025fadbfca7870",
+            "id": "1e3db05d801c5a02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md",
+                "file": "Roval/dev/浏览器/cookie.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1ca7b8ad06bcf85f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM 包/BlobJS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54e582201ed90db0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM 包/mitt.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -130,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md",
+                "file": "ob-template/template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md",
+                "file": "ob-template/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md"
+                "file": "ob-template/template.md"
               }
             }
           },
@@ -213,7 +239,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/技术博客与网站.md",
+                "file": "ob-template/template.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,51 +289,51 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "afa18e432a78001a",
+  "active": "ed025fadbfca7870",
   "lastOpenFiles": [
-    "职业经验之谈/好文推荐.md",
-    "Roval/dev/杂/技术博客与网站.md",
-    "职业经验之谈/2023年年中总结会睿总分享实录.md",
-    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-    "Roval/dev/杂/MDN.md",
-    "代码干燥计划.md",
-    "ruanyifeng.com/blog/2019/08/web_components.html.md",
+    "Excalidraw/Pasted Image 20221215100114_666.png",
+    "Excalidraw/Pasted Image 20221222173002_104.png",
+    "Excalidraw/卡片盒系统之卡片.md",
+    "Excalidraw/ISRC.md",
+    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.md",
+    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.svg",
+    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.svg",
+    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally.md",
+    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.md",
+    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
+    "Daily/新冠日记.md",
+    "Daily/npm-exec.md",
+    "Daily/Pasted image 20230406091646.png",
+    "Daily/Pasted image 20230407095946.png",
+    "Daily/Pasted image 20230407100026.png",
+    "Daily/Pasted image 20230710115423.png",
+    "Daily/Pasted image 20230713153827.png",
+    "Daily/Pasted image 20230713154728.png",
+    "Daily/Pasted image 20230713154908.png",
+    "Daily/2023-09-19.md",
+    "Daily/2023-11-13.md",
+    "Daily/2023-11-14.md",
+    "Daily/2023-11-16.md",
+    "Daily/2023-09-12.md",
+    "Daily/2023-09-14.md",
+    "Daily/2023-09-13.md",
+    "Daily/2023-08-25.md",
+    "Daily/2023-09-09.md",
+    "Daily/2023-08-24.md",
+    "Daily/2023-08-23.md",
+    "Daily/2023-08-22.md",
+    "Daily/2023-08-11.md",
+    "Daily/2023-08-04.md",
+    "Daily/2023-08-03.md",
+    "Daily/2023-07-26.md",
+    "Daily/2023-07-25.md",
     "ruanyifeng.com/blog/2019/08",
     "ruanyifeng.com/blog/2019",
     "ruanyifeng.com/blog",
     "ruanyifeng.com",
-    "Roval/前端面经/宋垚面试准备.md",
-    "Roval/dev/样式/css.md",
-    "Roval/essay/技术文章个人整理/本地数据缓存.md",
-    "Roval/dev/动画/SVGA.md",
-    "Roval/dev/开发经验/页面显示隐藏WEB API.md",
-    "Roval/dev/开发经验/front-end.md",
-    "Roval/dev/开发经验/BUGS.md",
-    "Roval/dev/开发经验/CLine.md",
-    "Roval/dev/开发经验/防抖 VS 节流.md",
-    "Roval/dev/开发经验/定时任务&手动触发.md",
-    "Roval/dev/开发经验/宏任务&微任务.md",
-    "Roval/dev/开发经验/接口请求规范.md",
-    "Roval/dev/动画/Pixi.md",
-    "职业经验之谈/Pasted image 20230920141632.png",
-    "职业经验之谈/Pasted image 20230920141445.png",
-    "职业经验之谈/Pasted image 20230920141410.png",
-    "职业经验之谈/前端技术评审关注点.md",
-    "Roval/dev/动画/GSAP.md",
-    "Roval/dev/NPM 包/Vue3.md",
-    "Roval/dev/动画/SVG.md",
-    "Roval/dev/动画/Animation.md",
-    "Daily/2023-07-14.md",
-    "Roval/dev/NPM 包/Pasted image 20230115231217.png",
-    "Roval/dev/NPM 包/Pasted image 20231109224050.png",
-    "Roval/前端面经/面试点.png",
     "Untitled.canvas",
-    "Roval/coder/企业微信截图_ec0d7ff8-94fb-441f-9a0c-3ca3c95fc722.png",
-    "Roval/coder/平台制作页保存冲突加弹窗.png",
-    "Roval/coder/可能示意图.png",
     "Roval/essay/产品",
     "Roval/工程化",
-    "职业经验之谈/Pasted image 20230920144834.png",
     "bilibili",
     "Roval/dev/浏览器",
     "Roval/coder/bugs",

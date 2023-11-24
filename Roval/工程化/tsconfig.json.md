@@ -137,6 +137,9 @@ Last Modified：2023-09-23 12:08:47
 
 [TypeScript: TSConfig Reference - Docs on every TSConfig option](https://www.typescriptlang.org/tsconfig)
 
+[代码检查工具！从 TSLint 到 ESLint - 掘金](https://juejin.cn/post/6955025103507849223)  
+[TSLint](https://palantir.github.io/tslint/) - 2019 年【已废弃】- 由 [typescript-eslint](https://typescript-eslint.io/) 替代  
+
 [快速上手，tsconfig（文件选项） - 掘金](https://juejin.cn/post/6953553286657998879/)  
 [快速上手，tsconfig （编译选项） - 掘金](https://juejin.cn/post/6953554051879403534)  
 [typeScript tsconfig配置详解 - 掘金](https://juejin.cn/post/6844904093568221191)  
