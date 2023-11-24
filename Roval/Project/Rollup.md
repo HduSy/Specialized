@@ -181,7 +181,7 @@ import bar from './bar'
 开发复杂前端应用程序：引入第三方模块 +HMR 功能提高开发效率 + 拆包  
 开发类库：优点
 
-新版本的 [[Webpack]] 的功能几乎覆盖包含了 `rollup` 的优势点。
+新版本的 [[webpack]] 的功能几乎覆盖包含了 `rollup` 的优势点。
 
 ## parcel
 

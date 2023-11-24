@@ -8,21 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "59c52755f305177d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/为什么要尽快找到工作.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "e564b515ad0eb2c3",
             "type": "leaf",
             "pinned": true,
@@ -38,51 +23,12 @@
             }
           },
           {
-            "id": "ed025fadbfca7870",
+            "id": "201f45ff66763820",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ob-template/template.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e3db05d801c5a02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/浏览器/cookie.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ca7b8ad06bcf85f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM 包/BlobJS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "54e582201ed90db0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM 包/mitt.md",
+                "file": "Roval/rider/车手训练计划.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -90,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Roval/rider/车手训练计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Roval/rider/车手训练计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ob-template/template.md"
+                "file": "Roval/rider/车手训练计划.md"
               }
             }
           },
@@ -239,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ob-template/template.md",
+                "file": "Roval/rider/车手训练计划.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -289,51 +235,51 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ed025fadbfca7870",
+  "active": "72f1b5a0dd505363",
   "lastOpenFiles": [
-    "Excalidraw/Pasted Image 20221215100114_666.png",
-    "Excalidraw/Pasted Image 20221222173002_104.png",
-    "Excalidraw/卡片盒系统之卡片.md",
-    "Excalidraw/ISRC.md",
-    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.md",
-    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally keep text centered.svg",
-    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.svg",
-    "Excalidraw/Scripts/Downloaded/Expand rectangles horizontally.md",
-    "Excalidraw/Scripts/Downloaded/Copy Selected Element Styles to Global.md",
-    "Excalidraw/Scripts/Downloaded/Auto Layout.md",
-    "Daily/新冠日记.md",
-    "Daily/npm-exec.md",
-    "Daily/Pasted image 20230406091646.png",
-    "Daily/Pasted image 20230407095946.png",
-    "Daily/Pasted image 20230407100026.png",
-    "Daily/Pasted image 20230710115423.png",
-    "Daily/Pasted image 20230713153827.png",
-    "Daily/Pasted image 20230713154728.png",
-    "Daily/Pasted image 20230713154908.png",
-    "Daily/2023-09-19.md",
-    "Daily/2023-11-13.md",
-    "Daily/2023-11-14.md",
-    "Daily/2023-11-16.md",
-    "Daily/2023-09-12.md",
-    "Daily/2023-09-14.md",
-    "Daily/2023-09-13.md",
-    "Daily/2023-08-25.md",
-    "Daily/2023-09-09.md",
-    "Daily/2023-08-24.md",
-    "Daily/2023-08-23.md",
-    "Daily/2023-08-22.md",
-    "Daily/2023-08-11.md",
-    "Daily/2023-08-04.md",
-    "Daily/2023-08-03.md",
-    "Daily/2023-07-26.md",
-    "Daily/2023-07-25.md",
+    "Roval/coder/plan/个人发展计划周表.md",
+    "Roval/rider/车手训练计划.md",
+    "Roval/Articals/好文推荐.md",
+    "Roval/dev/开发经验/前端技术评审关注点.md",
+    "Roval/前端面经/宋垚面试准备.md",
+    "temp/era-tasklist.md",
+    "temp/Pasted image 20230320155238.png",
+    "temp/Pasted image 20230317162832.png",
+    "Roval/rider/Snipaste_2022-12-10_22-51-13.png",
+    "Roval/rider/Snipaste_2022-12-11_03-12-53.png",
+    "Roval/rider/Tarmac SL7 Comp.md",
+    "Roval/rider/Me.md",
+    "Roval/rider/ISRC.md",
+    "Roval/rider/AFC CYCLING CLUB.md",
+    "Roval/rider/以俱乐部名义进行的一些活动.md",
+    "Roval/rider/一份详细又简略的公路车相关知识.md",
+    "Roval/rider/训练效果 Private Notes.md",
+    "Roval/rider/上衣尺码参考.md",
+    "Roval/rider/科学训练.md",
+    "Roval/rider/《自行车训练圣经》.md",
+    "Roval/idea/笔记内容.md",
+    "Roval/Articals/书籍/《经济学原理》/第一章 经济学十大原理.md",
+    "Roval/Articals/书籍/《经济学原理》/第三章 相互依存性与贸易的好处.md",
+    "Roval/Articals/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
+    "Roval/Articals/技术文章个人整理/本地数据缓存.md",
+    "Roval/Articals/产品/如何提高网站用户活跃度.md",
+    "Roval/dev/NPM/Vue3.md",
+    "Roval/dev/NPM/Vue2.md",
+    "Roval/dev/NPM/Pasted image 20231109224050.png",
+    "Roval/dev/NPM/Pasted image 20230115231217.png",
+    "Roval/dev/NPM/Pasted image 20230114165200.png",
+    "Roval/dev/NPM/Pasted image 20220301212244.png",
+    "Roval/dev/NPM/Pasted image 20220228165758.png",
+    "Roval/dev/NPM/Pasted image 20220228165401.png",
+    "Roval/dev/NPM/BlobJS.md",
+    "Roval/dev/JavaScript/String.md",
     "ruanyifeng.com/blog/2019/08",
     "ruanyifeng.com/blog/2019",
     "ruanyifeng.com/blog",
     "ruanyifeng.com",
     "Untitled.canvas",
-    "Roval/essay/产品",
-    "Roval/工程化",
+    "Roval/Articals/产品",
+    "Roval/Project",
     "bilibili",
     "Roval/dev/浏览器",
     "Roval/coder/bugs",

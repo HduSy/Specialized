@@ -18,7 +18,7 @@ Last Modified：2023-07-18 14:36:01
 
 ### 打包工具
 
-`webpack`：`babel-loader` [[Webpack]]  
+`webpack`：`babel-loader` [[webpack]]  
 `rollup`：`@rollup/plugin-babel` [[Rollup]]  
 `@rollup/register`  
 
