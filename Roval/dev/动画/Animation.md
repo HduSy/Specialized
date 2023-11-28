@@ -7,17 +7,36 @@ Last Modified：2022-12-17 21:02:23
 
 # Content
 
-## CSS3
+## CSS 动画
 
-- transition - 过渡
-- animation - 动画
+- transition - 过渡动画
+- animation - 动画，借助 `@keyframes`
+- Animate.css
 
-## 动画
+## JS 动画
 
-- [[../NPM 包/pixi]]
-- [[WebGL]]
+### 原生
+
+- `requestAnimationFrame`
+- `setTimeout/setInterval`
+- `canvas`
+- - [[WebGL]]
 - [[SVG]]
-- [[SVGA]]
+
+### 第三方库
+
+- [[Pixi|Pixi动画]]
+- Spine 动画
+- [[SVGA|SVGA动画]]
+- Three.js 3D 动画
+- [[GSAP]]
+- anime.js
+
+### 其他
+
+- GIF
+- MP4
+- 帧动画
 
 ## 工具网站
 
@@ -28,4 +47,7 @@ Last Modified：2022-12-17 21:02:23
 
 [如何选取合适的前端动效方案](https:juejin.cn/post/6844903830094610446)  
 [最全动画库总结](https://www.codeinwp.com/blog/best-javascript-animation-libraries/)  
-[awesome](https://project-awesome.org/sergey-pimenov/awesome-web-animation)
+[awesome](https://project-awesome.org/sergey-pimenov/awesome-web-animation)  
+[Animate.css | A cross-browser library of CSS animations.](https://animate.style/)  
+[anime.js • JavaScript animation engine](https://animejs.com/)  
+[Spine官网: 专注于游戏的2D动画软件](https://zh.esotericsoftware.com/)

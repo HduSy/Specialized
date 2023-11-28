@@ -21,8 +21,35 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "470d45dcf92d6932",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/动画/Animation.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c4e9ec00739e0948",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/杂/MDN.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Animation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Animation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md"
+                "file": "Roval/dev/动画/Animation.md"
               }
             }
           },
@@ -171,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/动画/Animation.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,16 +248,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e564b515ad0eb2c3",
+  "active": "470d45dcf92d6932",
   "lastOpenFiles": [
+    "Roval/dev/动画/requestAnimationRequest.md",
+    "Roval/dev/动画/SVGA.md",
     "Roval/dev/动画/GSAP.md",
+    "Roval/dev/动画/Animation.md",
+    "Roval/dev/动画/Pixi.md",
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/杂/MDN.md",
+    "Roval/dev/动画/SVG.md",
     "Roval/dev/开发经验/video iPhone低电量模式.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/dev/开发经验/H5背景固定.md",
     "Roval/dev/开发经验/H5白屏问题汇总.md",
     "Roval/dev/开发经验/func.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/daily/新冠日记.md",
     "Daily/新冠日记.md",
@@ -243,12 +276,6 @@
     "Roval/coder/plan/个人发展计划周表.md",
     "Roval/coder/docs/WEB自定义字体性能优化分享.md",
     "Roval/coder/bugs/git push rejected.md",
-    "Roval/Articals/好文推荐.md",
-    "Roval/Articals/书籍/《经济学原理》/第二章 像经济学家一样思考.md",
-    "Roval/Articals/技术文章个人整理/本地数据缓存.md",
-    "Roval/dev/JavaScript/localStorage.md",
-    "Roval/Articals/产品/如何提高网站用户活跃度.md",
-    "Roval/前端面经/window上页面加载相关事件.md",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",
