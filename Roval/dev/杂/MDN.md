@@ -25,7 +25,8 @@ Last Modified：2022-12-17 21:18:02
 [Window - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window)  
 [Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)  
 [EventTarget.addEventListener() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)  
-[Window：requestAnimationFrame() 方法 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)
+[Window：requestAnimationFrame() 方法 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)  
+[Document: visibilitychange event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event) 页面初始加载并不会执行 visibilitychange 回调
 
 ## HTML
 
