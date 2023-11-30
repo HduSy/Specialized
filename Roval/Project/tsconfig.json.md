@@ -144,3 +144,4 @@ Last Modified：2023-09-23 12:08:47
 [快速上手，tsconfig （编译选项） - 掘金](https://juejin.cn/post/6953554051879403534)  
 [typeScript tsconfig配置详解 - 掘金](https://juejin.cn/post/6844904093568221191)  
 [详解tsconfig.json文件](https://www.pengfeixc.com/blogs/javascript/tsconfig)  
+[tsconfig.json 详解与常用配置（笔记） - 掘金](https://juejin.cn/post/7153615781321703438)
