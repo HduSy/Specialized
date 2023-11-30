@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Project/tsconfig.json.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Project/tsconfig.json.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Project/tsconfig.json.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Project/tsconfig.json.md"
+                "file": "Roval/dev/杂/技术博客与网站.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Project/tsconfig.json.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,6 +250,7 @@
   },
   "active": "470d45dcf92d6932",
   "lastOpenFiles": [
+    "Roval/Project/tsconfig.json.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/开发经验/func.md",
     "Roval/dev/杂/MDN.md",
@@ -275,7 +276,6 @@
     "Roval/coder/plan/设计切图规范.md",
     "Roval/coder/plan/日积月累.md",
     "Roval/coder/plan/群机器人推送.md",
-    "Roval/coder/plan/个人发展计划周表.md",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",
