@@ -48,9 +48,9 @@ Last Modified：2022-12-17 22:19:23
 
 #### useMemo(calculateValue, dependencies)
 
-`dependencies`: Reactive values include props, state, and all the variables and functions declared directly inside your component body.  
+`calculateValue` 大概长这样 `() => any`，是一个无参数可以返回任意类型的函数，根据 `dependencies` 缓存多次 `re-render` 间的计算结果，**初始化时调用一次**，之后只有依赖项发生变化时才重新调用 `calculateValue` 计算值，否则直接返回上一次的计算结果
 
-`calculateValue` 大概长这样 `() => any`，是一个无参数可以返回任意类型的函数，根据 `dependencies` 缓存多次 re-render 间的计算结果，初始化时调用一次，之后只有依赖项发生变化时，才重新调用 `calculateValue` 计算值，否则直接返回上一次的计算结果。
+`dependencies`: reactive values include **props, state, and all the variables and functions** declared directly inside your component body.React will compare each dependency with its previous value using the [`Object.is`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) comparison.  
 
 [useMemo – React](https://react.dev/reference/react/useMemo)
 
