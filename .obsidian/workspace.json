@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM/React.md"
+                "file": "Roval/dev/JavaScript/TypeScript教学.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,6 +250,7 @@
   },
   "active": "c4e9ec00739e0948",
   "lastOpenFiles": [
+    "Roval/dev/NPM/React.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
@@ -275,7 +276,6 @@
     "Roval/coder/plan/WebView与H5.md",
     "Roval/coder/plan/一款活动常用功能插件.md",
     "Roval/coder/plan/设计切图规范.md",
-    "Roval/coder/plan/日积月累.md",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",

@@ -400,7 +400,7 @@ type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
 
 #### 泛型
 
-定义函数、类、接口时不必预先指定类型，而是在使用时指定具体类型。
+定义函数、类、接口时不必预先指定类型，而是在使用时指定具体类型。 [泛型(generic) - TypeScript 中文手册](https://www.tsdev.cn/generics.html)
 
 ##### 基本使用
 
