@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md"
+                "file": "Roval/dev/开发经验/func.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,10 +250,10 @@
   },
   "active": "c4e9ec00739e0948",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/NPM/React.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/Articals/好文推荐.md",
     "Roval/Project/tsconfig.json.md",
     "Roval/dev/开发经验/func.md",
