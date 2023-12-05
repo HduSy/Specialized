@@ -88,3 +88,5 @@ unsubscribe();
 ## 中间件与异步操作
 
 # Reference
+
+[Redux 入门教程（一）：基本用法 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)

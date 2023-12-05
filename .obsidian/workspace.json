@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Articals/好文推荐.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Articals/好文推荐.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Articals/好文推荐.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Articals/好文推荐.md"
+                "file": "Roval/dev/NPM/react-redux.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Articals/好文推荐.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,12 +250,12 @@
   },
   "active": "c4e9ec00739e0948",
   "lastOpenFiles": [
+    "Roval/Articals/好文推荐.md",
     "Roval/dev/开发经验/func.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/NPM/React.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/Articals/好文推荐.md",
     "Roval/Project/tsconfig.json.md",
     "Roval/dev/动画/Animation.md",
     "Roval/dev/动画/requestAnimationRequest.md",
