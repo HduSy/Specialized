@@ -124,7 +124,9 @@ Last Modified：2022-12-17 22:19:23
 
 ### react-dnd & react-dnd-html5-backend
 
-元素拖拽  
+React 元素拖拽库，开发低代码平台拖拽功能  
+[GitHub - react-dnd/react-dnd: Drag and Drop for React](https://github.com/react-dnd/react-dnd/)  
+[关于react-dnd，看这一篇就够了 - 掘金](https://juejin.cn/post/7155046917028708359)  
 [GitHub - bokuweb/react-rnd: 🖱 A resizable and draggable component for React.](https://github.com/bokuweb/react-rnd)
 
 ### react-hot-loader
