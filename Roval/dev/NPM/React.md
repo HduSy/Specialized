@@ -102,7 +102,7 @@ Last Modified：2022-12-17 22:19:23
 
 ### react-redux
 
-全局状态管理
+全局状态管理 [[react-redux]]
 
 ### @reduxjs/toolkit
 
@@ -155,6 +155,16 @@ Last Modified：2022-12-17 22:19:23
 
 做到文字高亮效果  
 [react-highlight-words - npm](https://www.npmjs.com/package/react-highlight-words)
+
+### antd
+
+antDesign-UI 框架  
+[Ant Design of React - Ant Design](https://ant.design/docs/react/introduce)
+
+### @ant-design/charts
+
+antDesign Charts 图表库  
+[Ant Design Charts - 简单好用的 React 图表库](https://v0-charts.ant.design/)
 
 # Reference
 

@@ -25,7 +25,7 @@ Last Modified：2022-12-17 22:20:18
 
 #### 说明
 
-保存数据的地方，整个应用只能有一个。redux 提供 `createStore()` 方法啊生成。
+保存数据的地方，整个应用只能有一个。redux 提供 `createStore()` 方法生成。
 
 #### 示例
 
@@ -62,7 +62,7 @@ Last Modified：2022-12-17 22:20:18
 
 ##### store.subscribe()
 
-设置监听 `state` 的函数，一旦发生变化，便执行相应函数处理。
+设置监听 `state` 的函数，每当 `dispatch action` 的时候就会执行，`state` 树中的一部分可能已经变化，执行相应函数进行处理。你可以在回调函数里调用 [`getState()`](https://www.reduxjs.cn/api/store/#getstate) 来拿到当前 `state`
 
 #### 示例
 
