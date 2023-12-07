@@ -17,6 +17,7 @@ Last Modified：2022-12-17 21:18:02
 ## JavaScript
 
 [window.postMessage - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) on('message', ()=>{})  
+[MessageEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/MessageEvent) `message` 事件回调参数 `e`  
 [event.stopImmediatePropagation - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopImmediatePropagation)  
 [URLSearchParams - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)  
 [Intersection Observer API - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API)  
