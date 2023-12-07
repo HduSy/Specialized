@@ -75,25 +75,12 @@
             }
           },
           {
-            "id": "db1d892fafaf3a1f",
+            "id": "831ef46fe578dc41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/commitizen.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44c5f829d55eb4f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/开发经验/iframe通信.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -101,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -167,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/MDN.md"
+                "file": "Roval/dev/NPM/react-redux.md"
               }
             }
           },
@@ -250,7 +237,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -300,11 +287,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "44c5f829d55eb4f5",
+  "active": "3a33a42e2e65da60",
   "lastOpenFiles": [
+    "Roval/dev/NPM/commitizen.md",
+    "Roval/dev/开发经验/iframe通信.md",
+    "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/NPM/react-redux.md",
     "Roval/dev/NPM/RTK.md",
-    "Roval/dev/NPM/commitizen.md",
     "Roval/dev/NPM/React.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/杂/技术博客与网站.md",
@@ -325,9 +315,6 @@
     "Roval/Articals/好文推荐.md",
     "Roval/dev/开发经验/func.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
-    "Roval/dev/杂/MDN.md",
-    "Roval/Project/tsconfig.json.md",
-    "Roval/dev/动画/Animation.md",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",
