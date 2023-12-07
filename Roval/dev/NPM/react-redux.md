@@ -56,29 +56,36 @@ Last Modified：2022-12-17 22:20:18
 
 应用中使用集中式的全局状态来管理，并明确更新状态的模式，以便让代码具有可预测性。**Redux 期望所有状态更新都是使用不可变的方式**
 
+### 放入全局 store 还是组件 state
+
+- 应用程序的其他部分是否关心这些数据？
+- 你是否需要能够基于这些原始数据创建进一步的派生数据？
+- 是否使用相同的数据来驱动多个组件？
+- 能够将这种状态恢复到给定的时间点（即时间旅行调试）对你是否有价值？
+- 是否要缓存数据（即，如果数据已经存在，则使用它的状态而不是重新请求它）？
+- 你是否希望在热重载视图组件（交换时可能会丢失其内部状态）时保持此数据一致？
+
 ## API
 
 ### store
 
-#### 说明
-
 应用的整体全局状态以对象树的方式存放于单个 `store`。唯一改变状态树（`state tree`）的方法是创建 `action`，一个描述发生了什么的对象，并将其 `dispatch` 给 `store`。 要指定状态树如何响应 `action` 来进行更新，你可以编写纯 `reducer` 函数，这些函数根据旧 `state` 和 `action` 来计算新 `state`。
 
-##### store.getState()
+#### store.getState()
 
 返回当前状态值
 
-##### store.dispatch()
+#### store.dispatch()
 
 - **更新 state 的唯一方法是调用 `store.dispatch()` 并传入一个 action 对象**。
 - 是 `View` 发出 `action` 的唯一方法。
 - `dispatch` 一个 `action` 可以形象的理解为 " 触发一个事件 "。
 
-##### store.subscribe()
+#### store.subscribe()
 
 设置监听 `state` 的函数，每当 `dispatch action` 的时候就会执行，`state` 树中的一部分可能已经变化，执行相应函数进行处理。你可以在回调函数里调用 [`getState()`](https://www.reduxjs.cn/api/store/#getstate) 来拿到当前 `state`
 
-#### 示例
+### 示例
 
 将 `render` 或 `setState` 方法放入 `listener` 即可：
 
@@ -101,8 +108,6 @@ unsubscribe();
 
 ### state
 
-#### 说明
-
 初始启动：
 
 - 获取应用程序特定时刻的 `store` 快照
@@ -119,29 +124,19 @@ unsubscribe();
 - 每个订阅过 store 数据的视图 组件都会检查它们需要的 state 部分是否被更新。
 - 发现数据被更新的每个组件都强制使用新数据重新渲染，紧接着更新网页
 
-#### 示例
-
 ### action
 
-`action` 是一个具有 `type` 字段的普通 JavaScript 对象。**你可以将 `action` 视为描述应用程序中发生了什么的事件**，`action` 对象可以有其他字段，其中包含有关发生的事情的附加信息。按照惯例，我们将该信息放在名为 `payload` 的字段中。
-
-#### 说明
-
+`action` 是一个具有 `type` 字段的普通 JavaScript 对象。**你可以将 `action` 视为描述应用程序中发生了什么的事件**，`action` 对象可以有其他字段，其中包含有关发生的事情的附加信息。按照惯例，我们将该信息放在名为 `payload` 的字段中。  
 在交互的页面（`View`）中，用户无法直接接触 `state`，只能接触 `View`，`View` 的变化触发 `state` 变化，`action` 就是 `View` 发出的通知。  
 `action` 是改变 `state` 的唯一方式，携带数据到 `state`。
 
-##### action Creator
+#### action creator
 
 是一个创建并返回一个 `action` 对象的函数，避免每次手动编写 `action` 对象
 
-#### 示例
-
 ### reducer
 
-`reducer` 是一个函数，接收当前的 `state` 和一个 `action` 对象，必要时决定如何更新状态，并返回新状态。函数签名是：`(state, action) => newState`。 **你可以将 reducer 视为一个事件监听器，它根据接收到的 action（事件）类型处理事件。**
-
-#### 说明
-
+`reducer` 是一个函数，接收当前的 `state` 和一个 `action` 对象，必要时决定如何更新状态，并返回新状态。函数签名是：`(state, action) => newState`。 **你可以将 reducer 视为一个事件监听器，它根据接收到的 action（事件）类型处理事件。**  
 `store` 收到 `action` 后，经计算过程返回一个全新的 `state` 以更新 `View`，这个中间的计算过程就叫做 `reducer`。
 
 #### 规则
@@ -149,6 +144,17 @@ unsubscribe();
 - 仅使用 `state` 和 `action` 参数计算新的状态值
 - 禁止直接修改 `state`。必须通过复制现有的 `state` 并对复制的值进行更改的方式来做 *不可变更新（immutable updates）*。
 - 禁止任何异步逻辑、依赖随机值或导致其他“副作用”的代码
+
+#### 原因
+
+- Redux 的目标之一是使你的**代码可预测**。当函数的输出仅根据输入参数计算时，更容易理解该代码的工作原理并对其进行测试；
+- 另一方面，如果一个函数依赖于自身之外的变量，或者行为随机，你永远不知道运行它时会发生什么；
+- 如果一个函数 mutate 了其他对象，比如它的参数，这可能会**意外地改变应用程序的工作方式**。这可能是错误的常见来源，例如“我更新了我的状态，但现在我的视图没有在应该更新的时候更新！”
+- Redux DevTools 的一些功能取决于你的 reducer 是否正确遵循这些规则；
+
+### slice
+
+**`slice` 是应用中单个功能的 Redux reducer 逻辑和 action 的集合**，该名称来自于将根 Redux 状态对象拆分为多个状态 “slice”，**根 `state` 的切片**
 
 ### selector
 

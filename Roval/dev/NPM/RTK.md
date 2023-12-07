@@ -7,9 +7,11 @@ Last Modified：2023-12-07 14:07:54
 
 ## 创建 Redux State Slice
 
-features/counter/counterSlice.js
+为 `slice` 定义名称 (`name`)，编写一个包含 `reducer` 函数的对象 (`reducers`) ，自动生成相应的 `action` 代码，`name` 选项的字符串用作每个 `action` 类型的第一部分，每个 `reducer` 函数的**键名**用作第二部分。因此，`"counter"` 名称 + `"increment"` reducer 函数生成了一个 `action` 类型 `{type: "counter/increment"}`  
+`createSlice` 自动生成与 `reducer` 函数同名的 `action creator`  
 
 ```ts
+// features/counter/counterSlice.js
 import { createSlice } from '@reduxjs/toolkit'
 
 export const counterSlice = createSlice({
@@ -88,6 +90,22 @@ export function Counter() {
       </div>
     </div>
   )
+}
+```
+
+## 用 Thunk 编写异步逻辑
+
+**thunk** 是一种特定类型的 Redux 函数，可以包含异步逻辑，它以 `dispatch` 和 `getState` 作为参数
+
+```ts
+// 下面这个函数就是一个 thunk ，它使我们可以执行异步逻辑
+// 你可以 dispatched 异步 action `dispatch(incrementAsync(10))` 就像一个常规的 action
+// 调用 thunk 时接受 `dispatch` 函数作为第一个参数
+// 当异步代码执行完毕时，可以 dispatched actions
+export const incrementAsync = amount => dispatch => {
+  setTimeout(() => {
+    dispatch(incrementByAmount(amount))
+  }, 1000)
 }
 ```
 
