@@ -80,7 +80,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -155,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM/React.md"
+                "file": "Roval/dev/NPM/react-redux.md"
               }
             }
           },
@@ -238,7 +238,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/NPM/react-redux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -290,9 +290,9 @@
   },
   "active": "db1d892fafaf3a1f",
   "lastOpenFiles": [
+    "Roval/dev/NPM/React.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/NPM/react-redux.md",
-    "Roval/dev/NPM/React.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/NPM/hotkeys-js.md",
     "Roval/dev/NPM/commitizen.md",

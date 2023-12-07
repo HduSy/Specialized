@@ -19,13 +19,27 @@ Last Modified：2022-12-17 22:20:18
 - Web 视作状态机，视图状态一一对应
 - 所有状态存在一个对象中
 
+## 官方推荐最佳实践
+
+**如果今天你要写任何的 Redux 逻辑，你都应该使用 `@reduxjs/toolkit` 来编写代码**
+
+### redux vs RTK
+
+`redux` 弊端：`redux` 要写很多额外的于 `redux API` 无关的样板代码，且需手动编写对象的展开和数组操作，这是 `redux bug` 的主要原因 ；
+
+`RTK` 优势：消除样板代码，大大简化书写，防止常见错误。
+
+- `createSlice` 基于 [Immer 库](https://immerjs.github.io/immer/) 编写 `reducer`，从而支持 `"mutating" JS` 语法，比如 `state.value = 123`，无需使用拓展运算符。 同时以 `reducer` 名称生成 `action type` 字符串；
+- `configureStore` 通过**单个函数调用**设置一个配置完善的 `redux store`，包括合并 `reducer`、添加 `thunk` 中间件以及设置 `redux DevTools` 集成。与 `createStore` 相比更容易配置，因为它接受命名选项参数；
+- 友好支持 `TypeScript`；
+
 ## 基本概念&API
 
 ### Store
 
 #### 说明
 
-保存数据的地方，整个应用只能有一个。redux 提供 `createStore()` 方法生成。
+应用的整体全局状态以对象树的方式存放于单个 `store`。唯一改变状态树（`state tree`）的方法是创建 `action`，一个描述发生了什么的对象，并将其 `dispatch` 给 `store`。 要指定状态树如何响应 `action` 来进行更新，你可以编写纯 `reducer` 函数，这些函数根据旧 `state` 和 `action` 来计算新 `state`。
 
 #### 示例
 
