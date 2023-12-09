@@ -32,12 +32,44 @@ Last Modified：2022-12-17 22:19:23
 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
 - more
 
-### useRef
+### useRef(initialValue)
 
-[useRef – React](https://react.dev/reference/react/useRef)
+[useRef – React](https://react.dev/reference/react/useRef) [[#useImperativeHandle]]
 
-- 值的改变不会触发 re-render
-- 可用来操作 DOM 元素
+#### 使用情景
+
+- 创造一个引用值，该值不用来渲染；
+- 作为 `DOM` 元素的引用；
+- 能避免重复创建 `ref` 值，后续渲染将返回同一对象；
+
+#### API
+
+参数： `initialValue`：current 属性的初始值，该参数在首次渲染之后被忽略；
+
+返回值：返回一个只有 `current` 属性的对象，初始值为 `initialValue`。  
+若作为 `jsx` 节点属性用，**当 `React` 创建 `DOM` 节点并将其渲染到屏幕时**，`React` 将会把 `DOM` 节点设置为 ref 对象的 `current` 属性。  
+若节点从屏幕上移除时，`React` 将把 `current` 属性设置回 `null`。
+
+#### 注意
+
+- 修改 `ref` 不会引起组件重渲染；
+- 组件多次渲染之间存储信息；
+- 对组件而言是 `local` 本地的，外部变量则是共享的；
+- 与视图无关，不适合用于存储期望显示在屏幕上的信息；
+- **不要在渲染期间写入或者读取 `ref.current`**，`useEffect` 里是 ok 的；
+- **不要滥用 ref**  
+- **如果可以通过 prop 实现，那就不应该使用 ref**
+
+```ts
+function MyComponent() {
+  // ...
+  // 🚩 不要在渲染期间写入 ref
+  myRef.current = 123;
+  // ...
+  // 🚩 不要在渲染期间读取 ref
+  return <h1>{myOtherRef.current}</h1>;
+}
+```
 
 ### React.memo 性能优化
 
@@ -63,6 +95,20 @@ Last Modified：2022-12-17 22:19:23
 `fn` 是想要缓存的函数，接受任意参数，返回任意类型。一般情况下，组件的 re-render 也会递归 re-render 它的子组件，如果不想子组件重复渲染，可以把子组件用 `memo` 包裹，`memo` 组件的特性就是只要组件 props 不变，那么就会 skip re-render 过程。传递给子组件的函数用 `useCallback` 包裹，这样的话，`dependencies` 不变，函数还是同一函数，子组件可避免重渲染。 [useCallBack你真的知道怎么用吗。 - 掘金](https://juejin.cn/post/7107943235099557896)
 
 [useCallback – React](https://react.dev/reference/react/useCallback)
+
+### useImperativeHandle(ref, createHandle, dependencies?)
+
+自定义由 `ref` 暴露出来的 `handle` 句柄，**受限的**而非暴露整个 `DOM` 节点，这样就无法访问该 `DOM` 节点其他的属性和方法了 [useImperativeHandle – React 中文文档](https://zh-hans.react.dev/reference/react/useImperativeHandle) [[#useRef(initialValue)]] [[#forwardRef]]  
+
+#### 参数
+
+`dependencies`：如果一次重新渲染导致某些依赖项发生了改变，或你没有提供这个参数列表，你的函数 `createHandle` 将会被重新执行，而新生成的句柄则会被分配给 `ref`。
+
+## API
+
+### forwardRef
+
+`forwardRef` 允许组件使用 [ref](https://zh-hans.react.dev/learn/manipulating-the-dom-with-refs) 将 `DOM` 节点暴露给父组件 [forwardRef – React 中文文档](https://zh-hans.react.dev/reference/react/forwardRef)
 
 ## UI 呈现所需最小状态原则 - state
 
