@@ -98,11 +98,11 @@ function MyComponent() {
 
 ### useImperativeHandle(ref, createHandle, dependencies?)
 
-自定义由 `ref` 暴露出来的 `handle` 句柄，**受限的**而非暴露整个 `DOM` 节点，这样就无法访问该 `DOM` 节点其他的属性和方法了 [useImperativeHandle – React 中文文档](https://zh-hans.react.dev/reference/react/useImperativeHandle) [[#useRef(initialValue)]] [[#forwardRef]]  
+自定义由 `ref` 暴露出来的 `handle` 句柄，**受限的**而非暴露整个 `DOM` 节点，这样就无法访问该 `DOM` 节点其他的属性和方法了 [useImperativeHandle](https://react.dev/reference/react/useImperativeHandle) [[#useRef(initialValue)]] [[#forwardRef]]  
 
 #### 参数
 
-`dependencies`：如果一次重新渲染导致某些依赖项发生了改变，或你没有提供这个参数列表，你的函数 `createHandle` 将会被重新执行，而新生成的句柄则会被分配给 `ref`。
+`dependencies`：`createHandle` 函数中所用到的响应式值的列表，包含 props、state 和其他所有直接在你组件体内声明的 variables 和 functions。如果一次重新渲染导致这些依赖项发生了改变，或你没有提供这个参数列表，`createHandle` 函数将会 `re-execute`，而 `newly created handle` 则会被重新赋值给 `ref`
 
 ## API
 
