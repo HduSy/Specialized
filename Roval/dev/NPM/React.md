@@ -104,6 +104,21 @@ function MyComponent() {
 
 `dependencies`：`createHandle` 函数中所用到的响应式值的列表，包含 props、state 和其他所有直接在你组件体内声明的 variables 和 functions。如果一次重新渲染导致这些依赖项发生了改变，或你没有提供这个参数列表，`createHandle` 函数将会 `re-execute`，而 `newly created handle` 则会被重新赋值给 `ref`
 
+### 自定义 Hook
+
+[使用自定义 Hook 复用逻辑](https://zh-hans.react.dev/learn/reusing-logic-with-custom-hooks)  
+函数以 `use` 开头是必须的。内部调用了别的 `hook` 函数，将**逻辑封装起来以达到复用，使代码更加语义化**（语义化：组件内部的代码表达的是目标而不是具体实现，组件代码就主要来表达做什么，而不用把怎么做也写进来）
+
+#### 共享的是状态逻辑，而不是状态 `state` 本身
+
+状态本身是独立的
+
+#### hook 间传递值
+
+每当组件重新渲染，自定义 `Hook` 中的代码就会重新运行，自定义 `Hook` 的代码看作组件主体的一部分随着组件一起重新渲染
+
+#### 什么时候使用自定义 hook
+
 ## API
 
 ### forwardRef
