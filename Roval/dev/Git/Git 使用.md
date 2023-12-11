@@ -197,8 +197,17 @@ git merge --no-ff <commitHash>
 git cherry-pick <commitHash>
 ```
 
+## git filter-branch 核武器级选项
+
+### 从每次提交中移除一个文件
+
+```console
+git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+```
+
 # Reference
 
 [Git 命令简写](https://www.jianshu.com/p/660557b405dd)  
 [阮一峰文章](https://www.ruanyifeng.com/blog/2015/08/git-use-process.html)  
 [阮一峰 cherry-pick](https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html)  
+[Git - 重写历史](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2)

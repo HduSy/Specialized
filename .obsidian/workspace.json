@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useRef",
+                "query": "promise",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM/React.md"
+                "file": "Roval/dev/Git/Git 使用.md"
               }
             }
           },
@@ -199,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM/React.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,11 +251,12 @@
   },
   "active": "c4e9ec00739e0948",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/Promise.md",
+    "Roval/dev/NPM/React.md",
     "Roval/dev/NPM/commitizen.md",
     "Roval/dev/开发经验/iframe通信.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/NPM/hotkeys-js.md",
-    "Roval/dev/NPM/React.md",
     "Roval/dev/NPM/react-redux.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/dev/NPM/RTK.md",
@@ -276,7 +277,6 @@
     "Roval/dev/NPM/Vue2.md",
     "Roval/Articals/好文推荐.md",
     "Roval/dev/开发经验/func.md",
-    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
     "temp/Pasted image 20230317162832.png",
