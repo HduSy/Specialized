@@ -12,7 +12,8 @@ Last Modified：2022-12-17 21:18:02
 [关系选择器 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Combinators)  
 [:focus-within - CSS：层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/:focus-within) 元素获取焦点时的伪类  
 [display - CSS：层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display)  
-[perspective() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective) 透视效果，应用在 `css` 视差滚动
+[perspective() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective) 透视效果，应用在 `css` 视差滚动  
+[transform-origin - CSS | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin) 变换原点
 
 ## JavaScript
 
