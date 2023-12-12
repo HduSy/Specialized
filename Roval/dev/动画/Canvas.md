@@ -7,6 +7,16 @@ Last Modified：2022-12-17 21:03:23
 
 # Content
 
+## Property
+
+### width height
+
+仅仅设置元素宽、高
+
+### style.width height
+
+同时设置元素与画布宽高
+
 ## API
 
 ### HTMLCanvasElement: getContext(contextType)
@@ -19,7 +29,13 @@ Last Modified：2022-12-17 21:03:23
 
 ### CanvasRenderingContext2D.scale(x, y)
 
-缩放
+缩放 `canvas` 元素大小
+
+## Demo
+
+### 仪表盘
+
+[codesandbox.io/p/sandbox/canvasshi-xian-lei-si-zhi-fu-bao-xin-yong-ji-fen-forked-zf5qpz?file=%2Findex.html](https://codesandbox.io/p/sandbox/canvasshi-xian-lei-si-zhi-fu-bao-xin-yong-ji-fen-forked-zf5qpz?file=%2Findex.html)
 
 # Reference
 
