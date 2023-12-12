@@ -34,7 +34,8 @@ Last Modified：2022-12-17 21:18:02
 ## HTML
 
 [tabindex - HTML（超文本标记语言） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex) 元素焦点  
-[script type importmap - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap)
+[script type importmap - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap)  
+[CanvasRenderingContext2D.clearRect() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/clearRect) canvas 擦除方法
 
 ## 响应式图片
 
