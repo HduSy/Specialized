@@ -67,7 +67,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/浏览器/如何开发Chrome插件.md",
+                "file": "Roval/前端面经/Vue面经.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/浏览器/如何开发Chrome插件.md",
+                "file": "Roval/前端面经/Vue面经.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/浏览器/如何开发Chrome插件.md",
+                "file": "Roval/前端面经/Vue面经.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/浏览器/如何开发Chrome插件.md"
+                "file": "Roval/前端面经/Vue面经.md"
               }
             }
           },
@@ -224,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/浏览器/如何开发Chrome插件.md",
+                "file": "Roval/前端面经/Vue面经.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,8 +276,9 @@
   },
   "active": "567359b422f6b3a2",
   "lastOpenFiles": [
-    "Roval/dev/浏览器/cookie.md",
+    "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/浏览器/如何开发Chrome插件.md",
+    "Roval/dev/浏览器/cookie.md",
     "Roval/dev/杂/Chrome控制台.md",
     "Roval/dev/开发经验/前端尺寸.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
@@ -286,7 +287,6 @@
     "Roval/dev/动画/Canvas.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "README.md",
     "Roval/dev/NPM/React.md",
     "Roval/dev/Git/Git 使用.md",
