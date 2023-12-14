@@ -92,6 +92,14 @@ git reset --hard HEAD^
 
 除工作空间改动代码，撤销 `commit`，撤销 `git add` 操作。
 
+## git diff
+
+- `git diff HEAD <file_name>`
+- `git diff <file_name>`
+- `git diff --staged <file_name>` or  `git diff --cached <file_name>`,
+- `git diff <branch_name1> <branch_name2> <file_name>`
+- `git diff <commit_hash> <commit_hash> <file_name>`
+
 ## Git Rebase 变基
 
 ### 作用
