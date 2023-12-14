@@ -54,7 +54,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/GSAP.md",
+                "file": "Roval/dev/JavaScript/location.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/动画/GSAP.md",
+                "file": "Roval/dev/JavaScript/location.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/动画/GSAP.md",
+                "file": "Roval/dev/JavaScript/location.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/动画/GSAP.md"
+                "file": "Roval/dev/JavaScript/location.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/动画/GSAP.md",
+                "file": "Roval/dev/JavaScript/location.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,9 +263,9 @@
   },
   "active": "567359b422f6b3a2",
   "lastOpenFiles": [
+    "Roval/dev/动画/GSAP.md",
     "Roval/dev/开发经验/防抖 VS 节流.md",
     "Roval/dev/浏览器/cookie.md",
-    "Roval/dev/动画/GSAP.md",
     "Roval/前端面经/Vue面经.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/浏览器/如何开发Chrome插件.md",
