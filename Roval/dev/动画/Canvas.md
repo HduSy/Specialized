@@ -13,6 +13,9 @@ Last Modified：2022-12-17 21:03:23
 
 #### width height 属性
 
+The `width` attribute specifies the width of the `<canvas>` element, **in pixels**.  
+The `height` attribute specifies the height of the `<canvas>` element, **in pixels**.
+
 **画布尺寸**，默认 `300px 150px` 大小
 
 #### css style 的 width height
@@ -27,17 +30,64 @@ Last Modified：2022-12-17 21:03:23
 
 ## API
 
-### HTMLCanvasElement: getContext(contextType)
+### HTMLCanvasElement
+
+#### getContext(contextType)
 
 获取 `canvas` 绘制区域上下文
 
-### CanvasRenderingContext2D.clearRect(x, y, width, height)
+### CanvasRenderingContext2D
+
+#### clearRect(x, y, width, height)
 
 绘制一个矩形区域，将其内部像素透明度设为 0，来达到擦除一个矩形区域的目的
 
-### CanvasRenderingContext2D.scale(x, y)
+#### beginPath()
 
-缩放 `canvas` 元素大小
+starts a new path by emptying the list of sub-paths
+
+#### closePath()
+
+add a straight line from the current point to the start of the current sub-path. 如果已闭合什么也不做
+
+#### save()
+
+入 `stack` 存放当前绘画设置的状态
+
+#### restore()
+
+出 `stack` 弹出一次绘画状态应用，来恢复最近一次 `save` 过的绘画状态！  
+[codesandbox.io/p/devbox/canvas-save-restore-gp9j9h](https://codesandbox.io/p/devbox/canvas-save-restore-gp9j9h)
+
+#### scale(x, y)
+
+[CanvasRenderingContext2D: scale() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale)  
+Adds a scaling transformation to the **canvas units** horizontally and/or vertically.**By default, one unit on the canvas is exactly one pixel.** A scaling transformation modifies this behavior. For instance, a scaling factor of **0.5 results in a unit size of 0.5 pixels**; shapes are thus **drawn at half the normal size**. Similarly, a scaling factor of **2.0 increases the unit size so that one unit becomes two pixels**; shapes are thus **drawn at twice the normal size**.
+
+缩放的是 `canvas units:pixels` 的比例，改了 `1 unit` 所对应的 `pixels` 数
+
+所以对于 `dpr=2、dpr=3` 的屏幕，为防止 `canvas` 变模糊，常做以下处理：
+
+```js
+const ctx = canvas.getContext('2d')
+const dpr = window.devicePixelRatio || 1 // dpr=物理像素/逻辑像素
+// 画布大小
+canvas.width = Math.round(oldWidth * dpr);
+canvas.height = Math.round(oldHeight * dpr);
+// 画板大小
+canvas.style.width = `${oldWidth}px`;
+canvas.style.height = `${oldHeight}px`;
+ctx.scale(dpr, dpr); // 改比例
+```
+
+##### scale 为负数时  
+
+[【Canvas杂谈：第一季】scale · hongru/Canvas-Tattle · GitHub](https://github.com/hongru/Canvas-Tattle/issues/14)  
+[MDN] 说法：A negative value flips pixels across the horizontal/vertical axis（镜像反转）
+
+#### translate()
+
+水平/垂直方向平移画板坐标系
 
 ## Demo
 
@@ -69,5 +119,5 @@ ctx.scale(dpr, dpr);
 # Reference
 
 [CodePen上效果炸裂的Canvas动画合集](https://codepen.io/collection/nZQqEM/3/?cursor=ZD0wJm89MCZwPTEmdj00)  
-
+[理解Canvas Context 的save() 和 restore() - 掘金](https://juejin.cn/post/6844903879599996942)  
 [画布尺寸 - Visualization Guidebook](https://tsejx.github.io/visualization-guidebook/canvas/basic/scale)
