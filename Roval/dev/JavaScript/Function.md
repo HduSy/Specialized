@@ -21,6 +21,11 @@ Last Modified：2023-12-14 14:36:39
 
 ## Function.prototype.bind
 
+[Function.prototype.bind() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)  
+
+修改函数内部 `this` 指向，并返回一个新的函数，该函数的 `this` 指向 `bind` 方法的第一个参数。  
+`bind` 其余参数以参数列表形式一个个接收
+
 # Reference
 
 [通过例子来理解 Javascript 中的 Call、Apply和 Bind](https://www.freecodecamp.org/chinese/news/understand-call-apply-and-bind-in-javascript-with-examples)
