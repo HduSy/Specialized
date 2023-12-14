@@ -75,7 +75,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/MDN.md"
+                "file": "Roval/dev/杂/技术博客与网站.md"
               }
             }
           },
@@ -224,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/杂/技术博客与网站.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -274,8 +274,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0207ef60f25af5e3",
+  "active": "470d45dcf92d6932",
   "lastOpenFiles": [
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/JavaScript/Function.md",
     "Roval/dev/JavaScript/location.md",
@@ -283,14 +285,12 @@
     "Roval/dev/开发经验/防抖 VS 节流.md",
     "Roval/dev/浏览器/cookie.md",
     "Roval/前端面经/Vue面经.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/浏览器/如何开发Chrome插件.md",
     "Roval/dev/杂/Chrome控制台.md",
     "Roval/dev/开发经验/前端尺寸.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/动画/Canvas.md",
-    "Roval/dev/杂/MDN.md",
     "README.md",
     "Roval/dev/NPM/React.md",
     "Roval/dev/Git/Git 使用.md",
