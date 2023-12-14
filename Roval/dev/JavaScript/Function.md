@@ -7,11 +7,12 @@ Last Modified：2023-12-14 14:36:39
 
 ## Function.prototype.call
 
-修改函数内部 `this` 指向，非严格模式下，不穿参时 `this` 指向 `window`
-参数以参数列表的
+修改函数内部 `this` 指向，非严格模式下，不穿参时 `this` 指向 `window`  
+参数以参数列表的形式一个个传入 `call` 方法剩余参数
 
 ## Function.prototype.apply
-
+修改函数内部 `this` 指向，非严格模式下，不穿参时 `this` 指向 `window`  
+参数以参数列表的形式一个个传入 `call` 方法剩余参数
 ## Function.prototype.bind
 
 # Reference
