@@ -17,7 +17,7 @@ Last Modified：2023-12-14 14:36:39
 [Function.prototype.apply() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)  
 
 修改函数内部 `this` 指向，非严格模式下，不穿参时 `this` 指向 `window`  
-`apply` 第二个参数为数组或类数组的形式传入 `apply` 方法剩余参数
+`apply` 第二个参数为数组或类数组，`null undefined` 表明无参数传递
 
 ## Function.prototype.bind
 
