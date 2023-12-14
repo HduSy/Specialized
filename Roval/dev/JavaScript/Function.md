@@ -3,7 +3,13 @@ Last Modified：2023-12-14 14:36:39
 
 # Tags
 
+[[../杂/MDN|MDN]]
+
 # Content
+
+## arguments
+
+对应于传递给函数参数的**类数组**对象
 
 ## Function.prototype.call
 
@@ -27,5 +33,3 @@ Last Modified：2023-12-14 14:36:39
 `bind` 其余参数以参数列表形式一个个接收
 
 # Reference
-
-[通过例子来理解 Javascript 中的 Call、Apply和 Bind](https://www.freecodecamp.org/chinese/news/understand-call-apply-and-bind-in-javascript-with-examples)
