@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/JavaScript/Function.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/JavaScript/Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/JavaScript/Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/杂/MDN.md"
+                "file": "Roval/dev/JavaScript/Function.md"
               }
             }
           },
@@ -224,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/杂/MDN.md",
+                "file": "Roval/dev/JavaScript/Function.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,9 +276,9 @@
   },
   "active": "470d45dcf92d6932",
   "lastOpenFiles": [
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/前端面经/宋垚面试准备.md",
-    "Roval/dev/杂/MDN.md",
     "Roval/dev/JavaScript/Function.md",
     "Roval/dev/JavaScript/location.md",
     "Roval/dev/动画/GSAP.md",

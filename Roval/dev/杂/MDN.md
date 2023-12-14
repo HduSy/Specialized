@@ -32,7 +32,7 @@ Last Modified：2022-12-17 21:18:02
 [Element: scrollIntoView() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView) 滚动元素父容器使调用该方法的元素可见  
 [Canvas - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API) `Canvas`  
 [this - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this) `this` 函数调用方式决定了 `this` 的值（运行时决定）  
-[Fetching Title#3x4i](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+[Function.prototype.apply() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 
 ## HTML
 
