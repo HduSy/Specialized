@@ -6,7 +6,9 @@ Last Modified：2023-12-14 14:36:39
 # Content
 
 ## Function.prototype.call
-修改函数内部`this`指向，非严格模式下，不穿参时`this`指向windo
+
+修改函数内部 `this` 指向，非严格模式下，不穿参时 `this` 指向 `window`
+
 ## Function.prototype.apply
 
 ## Function.prototype.bind
