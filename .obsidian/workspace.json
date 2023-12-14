@@ -49,25 +49,12 @@
             }
           },
           {
-            "id": "aaa357ba4135b538",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/浏览器/cookie.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "567359b422f6b3a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/Vue面经.md",
+                "file": "Roval/dev/动画/GSAP.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -75,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -141,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Vue面经.md",
+                "file": "Roval/dev/动画/GSAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Vue面经.md",
+                "file": "Roval/dev/动画/GSAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Vue面经.md"
+                "file": "Roval/dev/动画/GSAP.md"
               }
             }
           },
@@ -224,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Vue面经.md",
+                "file": "Roval/dev/动画/GSAP.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -276,13 +263,15 @@
   },
   "active": "567359b422f6b3a2",
   "lastOpenFiles": [
+    "Roval/dev/开发经验/防抖 VS 节流.md",
+    "Roval/dev/浏览器/cookie.md",
+    "Roval/dev/动画/GSAP.md",
+    "Roval/前端面经/Vue面经.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/浏览器/如何开发Chrome插件.md",
-    "Roval/dev/浏览器/cookie.md",
     "Roval/dev/杂/Chrome控制台.md",
     "Roval/dev/开发经验/前端尺寸.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
-    "Roval/dev/开发经验/防抖 VS 节流.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/动画/Canvas.md",
     "Roval/dev/杂/MDN.md",
@@ -306,8 +295,6 @@
     "Roval/coder/plan/Pasted image 20220327170425.png",
     "Roval/coder/plan/H5事件大全.md",
     "Roval/coder/plan/Github.md",
-    "Roval/coder/plan/Apple Studio Display滚轮入场动画实现.md",
-    "Roval/coder/review/XX项目复盘.md",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",
