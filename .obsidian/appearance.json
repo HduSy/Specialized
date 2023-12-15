@@ -1,7 +1,7 @@
 {
   "baseFontSize": 21,
   "cssTheme": "Dracula for Obsidian",
-  "accentColor": "#ffffff",
+  "accentColor": "",
   "theme": "obsidian",
   "baseFontSizeAction": true,
   "showViewHeader": true,

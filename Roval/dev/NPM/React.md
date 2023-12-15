@@ -24,13 +24,14 @@ Last Modified：2022-12-17 22:19:23
 类似于 Vue 里面 `provide & inject` 跨组件通信方式。创建上下文  
 [createContext – React](https://react.dev/reference/react/createContext)
 
-### useEffect
+### useEffect(setup?, dependencies)
 
-- useEffect 为函数式组件提供副效应，支持第二个参数填依赖项，条件执行  
-[阮一峰 useEffect](https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html)
-- 产生 memorization 函数，以空间换时间，缓存纯函数计算结果，只有指定依赖项发生变更时才重新计算结果。  
-[CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
-- more
+`setup`：处理 `Effect` 的函数，选择性返回 `cleanup` 清理函数。组件添加到 `DOM` 时执行 `setup` 函数，后续 `dependencies` 变动引起的 `re-render` 会先以旧值执行 `cleanup` 再以新值执行 `setup`；组件从 `DOM` 移除时，最后一次执行 `cleanup` 函数  
+`dependencies`：reactive values include props, state, and all the variables and functions declared directly inside your component body. 使用 `Object.is` 比较新旧值. If you omit this argument, your Effect will **re-run** after every re-render of the component.
+
+- useEffect 为函数式组件提供副效应，支持第二个参数填依赖项，条件执行 [阮一峰 useEffect](https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html)
+- 产生 memorization 函数，以空间换时间，缓存纯函数计算结果，只有指定依赖项发生变更时才重新计算结果 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
+- [useEffect – React 中文文档](https://zh-hans.react.dev/reference/react/useEffect)
 
 ### useRef(initialValue)
 

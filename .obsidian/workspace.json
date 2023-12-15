@@ -21,22 +21,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "9e86f9946c74778e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
+                "file": "Roval/前端面经/宋垚面试准备.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
+                "file": "Roval/前端面经/宋垚面试准备.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/Git/Git 使用.md"
+                "file": "Roval/前端面经/宋垚面试准备.md"
               }
             }
           },
@@ -185,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
+                "file": "Roval/前端面经/宋垚面试准备.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,14 +222,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9e86f9946c74778e",
+  "active": "e564b515ad0eb2c3",
   "lastOpenFiles": [
-    "Roval/dev/动画/Canvas.md",
+    "Roval/Articals/好文推荐.md",
     "Roval/前端面经/宋垚面试准备.md",
+    "README.md",
+    "ob-template/template.md",
+    "Roval/dev/NPM/React.md",
+    "Roval/dev/开发经验/React.md",
+    "Roval/dev/开发经验/front-end.md",
+    "Roval/dev/动画/Animation.md",
+    "Roval/dev/动画/SVG.md",
+    "Roval/dev/开发经验/func.md",
+    "Daily/2023-07-14.md",
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/dev/动画/Canvas.md",
     "Roval/Project/webpack.md",
     "Roval/前端面经/为什么要尽快找到工作.md",
     "Daily/2023-04-24.md",
-    "Roval/Articals/好文推荐.md",
     "Excalidraw/卡片盒系统之卡片.md",
     "Excalidraw/ISRC.md",
     "Roval/dev/JavaScript/Function.md",
@@ -254,17 +250,7 @@
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/AVIF.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/dev/动画/GSAP.md",
-    "Roval/dev/浏览器/cookie.md",
-    "Roval/dev/浏览器/如何开发Chrome插件.md",
-    "Roval/dev/杂/Chrome控制台.md",
-    "Roval/dev/开发经验/前端尺寸.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
-    "Roval/dev/开发经验/front-end.md",
-    "README.md",
-    "Roval/dev/NPM/React.md",
-    "Roval/dev/Git/Git 使用.md",
-    "conflict-files-obsidian-git.md",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
     "Roval/coder/plan/Pasted image 20220327172451.png",
