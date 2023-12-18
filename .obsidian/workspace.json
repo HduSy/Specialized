@@ -21,8 +21,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "402ee904cbc0dd48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发经验/iframe通信.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/开发经验/iframe通信.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/开发经验/iframe通信.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md"
+                "file": "Roval/dev/开发经验/iframe通信.md"
               }
             }
           },
@@ -171,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
+                "file": "Roval/dev/开发经验/iframe通信.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,10 +236,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e564b515ad0eb2c3",
+  "active": "402ee904cbc0dd48",
   "lastOpenFiles": [
-    "Roval/Articals/好文推荐.md",
+    "Roval/dev/杂/技术博客与网站.md",
     "Roval/前端面经/宋垚面试准备.md",
+    "Roval/Articals/好文推荐.md",
     "README.md",
     "ob-template/template.md",
     "Roval/dev/NPM/React.md",
@@ -249,7 +264,6 @@
     "Roval/dev/杂/MDN.md",
     "Roval/前端面经/首次-面试官-面试点.md",
     "Roval/前端面经/AVIF.md",
-    "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
