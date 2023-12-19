@@ -64,33 +64,33 @@ eg. `git pull origin master:feat/topic_ttt `
 
 ## Git Reset
 
-不删除工作空间改动代码，撤销 `commit`，并且撤销 `git add` 操作（将添加到暂存区的内容取出）
+`--mixed` 仅保留工作区代码。撤销上次 `git add` 和 `git commit` 操作（将添加到暂存区的内容取出！改动的文件颜色变回红色，工作区状态）
 
 ```bash
 git reset --mixed HEAD^
 等效
-git reset HEAD^
+git reset HEAD^ // 默认
 ```
 
-仅撤回上一次 `commit`，不撤销 `git add` （操作暂存区和工作区代码保留）
+`--soft` 仅撤销上次 `commit`，保留 `git add` （暂存区和工作区代码保留！改动的文件颜色变回绿色，暂存区状态）
 
 ```bash
 git reset --soft HEAD^
 ```
 
-仅保留工作区代码，回到 `git add git commit` 前
-
-```bash
-git reset --mixed HEAD^
-```
-
-其实是 `reset` 较为 **危险⚠️** 的用法之一，不像其他两种操作，难撤销，得通过 `git reflog` 找回。
+`--hard` 清除所有工作区、暂存区改动代码，撤销 `git add` 和 `git commit` 操作，是 `reset` 较为 **危险⚠️（丢失本次改动代码）** 的用法之一。（清除暂存区和工作区代码改动，改动的文件没了！）  
 
 ```bash
 git reset --hard HEAD^
 ```
 
-除工作空间改动代码，撤销 `commit`，撤销 `git add` 操作。
+不像其他两种操作，难撤销，得通过 `git reflog` 找回。
+
+### 总结
+
+`--mixed` 回到 `git commit` 之前；  
+`--soft` 回到 `git add` 之前；  
+`--hard` 回到上次 `git commit` 之后；
 
 ## git diff
 
