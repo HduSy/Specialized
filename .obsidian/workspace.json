@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发经验/iframe通信.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/iframe通信.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/iframe通信.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/iframe通信.md"
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md"
               }
             }
           },
@@ -185,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/iframe通信.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,6 +238,13 @@
   },
   "active": "402ee904cbc0dd48",
   "lastOpenFiles": [
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111257.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111330.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
+    "Roval/dev/开发经验/iframe通信.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
+    "Roval/Articals/书籍/《VueJS设计与实现》",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/Articals/好文推荐.md",
@@ -261,9 +268,6 @@
     "Roval/dev/开发经验/防抖 VS 节流.md",
     "Roval/dev/JavaScript/location.md",
     "Roval/前端面经/Vue面经.md",
-    "Roval/dev/杂/MDN.md",
-    "Roval/前端面经/首次-面试官-面试点.md",
-    "Roval/前端面经/AVIF.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
@@ -277,13 +281,9 @@
     "Roval/coder",
     "Roval/前端面经/面试点.png",
     "temp/Pasted image 20230320155238.png",
-    "temp/Pasted image 20230317162832.png",
-    "Roval/rider/Snipaste_2022-12-10_22-51-13.png",
     "ruanyifeng.com/blog/2019/08",
     "ruanyifeng.com/blog/2019",
     "ruanyifeng.com/blog",
-    "ruanyifeng.com",
-    "Untitled.canvas",
-    "Roval/Articals/产品"
+    "Untitled.canvas"
   ]
 }
