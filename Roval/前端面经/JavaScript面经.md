@@ -5,24 +5,26 @@ Last Modified：2023-12-19 17:32:49
 
 # Content
 
-## 是什么
+## JSONP
+
+### 是什么
 
 `JSON with padding`，解决浏览器**同源安全策略**的一种手段，利用的是 `script` 标签 `src` 属性不受跨域限制。用户发出请求时（**GET**）传递一个 `cb` 参数，服务端将数据包裹在 `cb` 返回，这样客户端自定 `cb` 回调函数拿到服务端返回的数据。
 
-### 要点
+#### 要点
 
 - 只支持 `GET` 请求
 - 服务端响应数据不是 `JSON` 而是 `JavaScript`，`Content-Type: application/javascript`，内容格式为 `callbackFunction(JSON)`
 
-## 实现
+### 实现
 
-### 要点
+#### 要点
 
 - 请求结束移除本次请求产生的 `script` 标签和 `window` 上的回调函数；
 - 回调须挂载在 `window` 上，因为 `script` 加载后的执行作用域为 `window`；
 - 考虑多 `jsonp` 请求，`window` 上挂载的回调函数属性名要唯一；
 
-### 代码
+#### 代码
 
 ```ts
 (function (window,document) {
