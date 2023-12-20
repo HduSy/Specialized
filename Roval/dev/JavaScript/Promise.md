@@ -96,4 +96,5 @@ p1.then(function (value) {
 
 # Reference
 
+[公众号文章 - 手动实现一个Promise（第一部分）](https://mp.weixin.qq.com/s/RBVXkeH0nE4TLwFO0GsdVA)  
 [ES6 Promise](https://es6.ruanyifeng.com/#docs/promise)

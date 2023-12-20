@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/dev/JavaScript/Promise.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#动画",
+                "query": "observer",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/dev/JavaScript/Promise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/dev/JavaScript/Promise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Front-End.md"
+                "file": "Roval/dev/JavaScript/Promise.md"
               }
             }
           },
@@ -198,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/dev/JavaScript/Promise.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,8 +252,13 @@
   },
   "active": "a62881d957f29ea3",
   "lastOpenFiles": [
-    "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
+    "Roval/dev/杂/技术博客与网站.md",
+    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+    "Roval/dev/杂/工程化.md",
+    "Roval/dev/杂/第三方包.md",
+    "Roval/Articals/好文推荐.md",
     "Roval/前端面经/Front-End.md",
+    "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
     "Roval/前端面经/JavaScript面经.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/杂/MDN.md",
@@ -272,8 +278,6 @@
     "Roval/dev/开发经验/iframe通信.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
-    "Roval/dev/杂/技术博客与网站.md",
-    "Roval/Articals/好文推荐.md",
     "README.md",
     "ob-template/template.md",
     "Roval/dev/NPM/React.md",
@@ -282,8 +286,6 @@
     "Roval/dev/动画/Animation.md",
     "Roval/dev/动画/SVG.md",
     "Roval/dev/开发经验/func.md",
-    "Daily/2023-07-14.md",
-    "Roval/dev/动画/Canvas.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
