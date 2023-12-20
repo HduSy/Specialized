@@ -47,19 +47,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9c7192d3fb99331d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 2
@@ -264,14 +251,14 @@
   },
   "active": "a62881d957f29ea3",
   "lastOpenFiles": [
-    "Roval/前端面经/JavaScript面经.md",
     "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
+    "Roval/前端面经/Front-End.md",
+    "Roval/前端面经/JavaScript面经.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/杂/MDN.md",
     "Roval/idea/似曾相识/Pasted image 20231220112217.png",
     "Roval/idea/笔记内容.md",
     "Roval/idea/似曾相识",
-    "Roval/前端面经/Front-End.md",
     "Roval/前端面经/Vite面经.md",
     "Roval/前端面经/Vue面经.md",
     "Roval/前端面经/React面经.md",

@@ -84,7 +84,34 @@ Last Modified：2023-12-20 10:58:04
 
 `cryptojs`
 
+## 前端继承
+
+### 1、原型继承
+
+- 原理：通过实例 **proto** 属性访问原型来继承，子类原型指向父类实例，子类实例的 **proto** 属性指向其原型即父类实例，访问父类实例 **proto** 进而访问父类原型
+- 缺点：引用类型值被所有子类共享，牵一发而动全身
+
+### 2、组合继承：构造函数 + 原型
+
+- 原理：原型继承实现父类函数复用，构造函数调用解决父类引用类型值共享问题
+- 缺点：多次调用父类构造函数，创建了多个父类实例
+
+### 4、组合继承优化 1
+
+- 原理：与 3 不同的是原型指定时，子类原型指向父类原型
+- 缺点：`instanceof` 判断失误，无法区分实例是由哪个类实例化的，因为构造函数指向同一个父类
+
+### 5、组合继承优化 2，寄生组合继承
+
+- 原理：子类原型指向 Object.create 以父类原型为基础创建的对象
+- 缺点：无
+
+### ES6 class extends 继承
+
+- 缺点：无
+
 # Reference
 
 [面试官：你能说说常见的前端加密方法吗？ - 掘金](https://juejin.cn/post/7280057907055919144)  
-[深入理解HTTPS工作原理 · Issue #50 · ljianshu/Blog · GitHub](https://github.com/ljianshu/Blog/issues/50)
+[深入理解HTTPS工作原理 · Issue #50 · ljianshu/Blog · GitHub](https://github.com/ljianshu/Blog/issues/50)  
+[JavaScript常见的六种继承方式 - 前端工匠公众号 - SegmentFault 思否](https://segmentfault.com/a/1190000016708006)
