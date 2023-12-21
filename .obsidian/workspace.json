@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/Promise.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "observer",
+                "query": "<font color=\"#0070c0\">",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,8 +95,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/JavaScript/Promise.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/JavaScript/Promise.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/JavaScript/Promise.md"
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md"
               }
             }
           },
@@ -199,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/JavaScript/Promise.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -252,12 +251,14 @@
   },
   "active": "a62881d957f29ea3",
   "lastOpenFiles": [
+    "Roval/前端面经/Front-End.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
+    "Roval/dev/JavaScript/Promise.md",
     "Roval/dev/杂/技术博客与网站.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/dev/杂/工程化.md",
     "Roval/dev/杂/第三方包.md",
     "Roval/Articals/好文推荐.md",
-    "Roval/前端面经/Front-End.md",
     "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
     "Roval/前端面经/JavaScript面经.md",
     "Roval/dev/Git/Git 使用.md",
@@ -271,7 +272,6 @@
     "Roval/前端面经/为什么要尽快找到工作.md",
     "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/Pasted image 20231219120537.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111257.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111330.png",
@@ -285,7 +285,6 @@
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/动画/Animation.md",
     "Roval/dev/动画/SVG.md",
-    "Roval/dev/开发经验/func.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
