@@ -110,8 +110,132 @@ Last Modified：2023-12-20 10:58:04
 
 - 缺点：无
 
+## 前端样式隔离
+
+### Scoped Styles
+
+```vue
+<template>
+  <div class='title' data-v-f3f3eg8></div>
+</template>
+
+<style lang='scss' scoped>
+.title {
+}
+</scoped>
+// 转化成
+<style lang='scss' scoped>
+.title[data-v-f3f3eg8] {
+}
+</scoped>
+```
+
+在 `Vue` 中，通过为 `style` 标签添加 `scoped` 属性实现 ==作用域样式==，标识该样式表只对当前组件生效，不会和别处的样式发生冲突和覆盖。具体做法是编译模板时为使用了 `scoped` 样式的 ==元素添加唯一属性标识 ==`dada-v-xxxx`，同时将 `css` 选择器转化为带有唯一属性选择器的选择器
+
+### CSS Modules
+
+#### why
+
+1. 集中在同一个地方
+2. 只应用于该组件，避免样式污染
+3. 方便写出独一无二样式，不造成附加影响
+
+```vue
+<template>
+  <div :class='{styles.title}'></div>
+</template>
+<script>
+import styles from './styles.css'
+</script>
+/* 转化为 */
+<div class='title_div_sjd2wsq'></div>
+
+<style lang='scss' module>
+.title {
+}
+</scoped>
+/* 转化为 */
+<style lang='scss'>
+.title_div_sjd2wsq {
+}
+</scoped>
+```
+
+`webpack` 配置示例
+
+```js
+module: {
+  loaders: [
+    // …
+    {
+      test: /\.css$/,
+      loader: "style-loader!css-loader?modules&localIdentName=[path][name]---[local]---[hash:base64:5]"
+    },
+  ]
+}
+```
+
+根据 `webpack css-loader` 定义的类名生成规则生成唯一类名。命名规范可以为 `*.module.css`
+
+### CSS-In-JS 库
+
+支持在 `Javascript` 代码中直接编写样式，样式与组件紧密关联
+
+#### styled-components
+
+```jsx
+import styled from 'styled-components'
+// Title 组件
+onst Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #BF4F74;
+`;
+```
+
+#### emotion
+
+```jsx
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
+// Object Styles
+render(
+  <div
+    css={{
+      backgroundColor: 'hotpink',
+      '&:hover': {
+        color: 'lightgreen'
+      }
+    }}
+  >
+    This has a hotpink background.
+  </div>
+)
+// String Styles
+import { css } from '@emotion/react'
+const color = 'darkgreen'
+render(
+  <div
+    css={css`
+      background-color: hotpink;
+      &:hover {
+        color: ${color};
+      }
+    `}
+  >
+    This has a hotpink background.
+  </div>
+)
+```
+
+### 命名规范
+
+`BEM`
+
 # Reference
 
 [面试官：你能说说常见的前端加密方法吗？ - 掘金](https://juejin.cn/post/7280057907055919144)  
 [深入理解HTTPS工作原理 · Issue #50 · ljianshu/Blog · GitHub](https://github.com/ljianshu/Blog/issues/50)  
-[JavaScript常见的六种继承方式 - 前端工匠公众号 - SegmentFault 思否](https://segmentfault.com/a/1190000016708006)
+[JavaScript常见的六种继承方式 - 前端工匠公众号 - SegmentFault 思否](https://segmentfault.com/a/1190000016708006)  
+[Vue3: CSS Modules和 Scope深度剖析 - 掘金](https://juejin.cn/post/7185828978362417208)  
+[CSS Modules 用法教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2016/06/css_modules.html)
