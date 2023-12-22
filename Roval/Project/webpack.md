@@ -9,6 +9,19 @@ Last Modified：2022-12-17 22:27:40
 
 ## 基础 config
 
+### entry
+
+#### context
+
+#### entry
+
+每个 HTML 页面都有一个入口起点，单页应用 (SPA)：一个入口起点，多页应用 (MPA)：多个入口起点。
+
+```ad-info
+1. 若 entry 是一个 string 或 array，就只会生成一个 Chunk，这时 Chunk 的名称是 main；
+2. 若 entry 是一个 object，就可能会出现多个 Chunk，这时 Chunk 的名称是 object 键值对里 Key 的名称；
+```
+
 ### stats
 
 精准控制哪些打包输出信息需要显示出来  
@@ -18,27 +31,85 @@ Last Modified：2022-12-17 22:27:40
 
 #### path
 
-`webpack` 打包输出文件存放目录
+`webpack` 打包输出文件存放目录，必须是 `string` 类型的**绝对路径**
 
-#### publicPath
-
-【生产环境配置】指定静态资源在 `index.html` 中的引用地址**前缀**
-
-| 类型     | 含义 |
-| -------- | ---- |
-| 相对路径 | 相对于 index.html 地址    |
-| 绝对路径 |   相对于根服务器地址 `/`   |
-| CDN 地址         |   相对于 CDN 指定地址   |
-
-`html-webpack-plugin` 中配置的 `publicPath` 优先级较高
+```js
+module.exports = {
+  //...
+  output: {
+    path: path.resolve(__dirname, 'dist/assets')
+    // 常见
+    path: config.build.assetsRoot 
+    // 其中config.build.assetsRoot = path.resolve(__dirname, '..dist') 当前工作目录下dist文件
+  }
+}
+```
 
 #### filename
 
-配置打包输出 bundle 的命名，仅针对初始化模块
+配置打包输出**入口 Chunk** 的文件名称，仅针对入口模块。当通过多个入口起点 (entry point)、代码拆分 (code splitting) 或各种插件 (plugin) 创建多个 `bundle`，就需要借助模版和变量了  
+
+内置变量：
+
+- name: Chunk name
+- id： Chunk 的唯一标识，从 0 开始
+- name： Chunk 的名称
+- hash： Chunk 的唯一标识的 Hash 值
+- chunkhash： Chunk 内容的 Hash 值
+- query： 模块的 query，例如，文件名 ? 后面的字符串
+
+```js
+module.exports = {
+  //...
+  output: {
+    filename: '[name].bundle.js'
+    // 或者
+    filename: '[name].[hash].bundle.js'
+  }
+};
+```
 
 #### chunkFilename
 
-配置打包输出 bundle 的命名，仅针对按需加载的非初始化模块
+与 `filename` 不同，仅针对==按需加载（运行中产生）==的 Chunk 输出时的文件名称，即**非入口 Chunk** 的输出名称
+
+#### publicPath
+
+【生产环境配置】指定发布到线上静态资源的 **URL 前缀**，在 `index.html` 中的引用资源时需要拼上该前缀
+
+| 类型     | 含义                   | 例子                        |
+| -------- | ---------------------- | --------------------------- |
+| 相对路径 | 相对于 index.html 地址 | 'assets/'、'../assets/'、'' |
+| 绝对路径 | 相对于根服务器地址 `/` | '/assets'                   |
+| CDN 地址 | CDN 地址               | 'https://cdn.example.com/assets/'、'//cdn.example.com/assets/'                            |
+
+```js
+module.exports = {
+  //...
+  output: {
+    // One of the below
+    publicPath: 'https://cdn.example.com/assets/', // CDN（总是 HTTPS 协议）
+    publicPath: '//cdn.example.com/assets/', // CDN（协议相同）
+    publicPath: '/assets/', // 相对于服务(server-relative)
+    publicPath: 'assets/', // 相对于 HTML 页面
+    publicPath: '../assets/', // 相对于 HTML 页面
+    publicPath: '', // 相对于 HTML 页面（目录相同）
+  }
+};
+```
+
+`html-webpack-plugin` 中配置的 `publicPath` 优先级较高
+
+#### crossOriginLoading
+
+`Webpack` 输出的部分代码块可能需要异步加载，而异步加载是通过 `JSONP` 方式实现的 [[../前端面经/JavaScript面经|JavaScript面经]]，`JSONP` 的原理是动态地向 `HTML` 中插入一个 标签去加载异步资源，`crossOriginLoading` 则是用于配置这个异步插入的标签的 `crossorigin` 值
+
+#### libraryTarget 和 library
+
+使用 `Webpack` 构建一个可以被其他模块导入使用的库时需要用到该配置  
+
+`library`：导出库名称  
+`libraryTarget`：导出库规范
 
 ### resolve
 

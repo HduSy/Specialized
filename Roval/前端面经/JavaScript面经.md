@@ -120,9 +120,67 @@ console.log(person.strength); // 60
 person.sayYourName(); // I am Kevin
 ```
 
+## JS 执行上下文
+
+`JS` 可执行代码分三种：全局代码、函数代码、`eval` 代码。执行到这些代码时会创建一个**执行上下文**，包含：
+
+- 变量对象 VO
+- 作用域链
+- `this`
+
+### 执行上下文的生命周期
+
+1. 进入阶段 (VO)
+2. 执行阶段 (AO)
+3. 回收阶段 (GC)
+
+#### 进入阶段
+
+^e309e7
+
+初始化变量对象 `init VO`，按顺序从上到下依次是：
+
+1. 函数形参  
+   名称 - 值作为变量对象的属性；  
+   没有实参传递时为 `undefined`；
+2. 函数声明（优先级高  
+   名称 - 值（`function` 引用地址）作为变量对象的属性；  
+   已存在同属性名时，直接覆盖掉；
+3. 变量声明（优先级低  
+   名称 - 值（`undefined`）作为变量对象的属性；  
+   已存在同属性名时，跳过不处理；
+
+#### 执行阶段
+
+^89658f
+
+执行阶段，变量对象被激活 `VO => AO`，==完成变量赋值、函数声明、以及执行其它代码==
+
+## 变量对象
+
+变量对象是执行上下文中的数据作用域，存储了上下文中的定义的**变量和函数定义**，分为全局上下文变量对象和函数上下文变量对象。
+
+### 变量对象初始化
+
+[[#^e309e7|执行上下文生命周期之初始化阶段]]
+
+### 全局上下文变量对象 GO
+
+全局变量就是全局上下文的变量对象，如 `window`、`global`、`self`
+
+### 函数上下文变量对象 AO
+
+函数上下文中，`AO=VO` ，其实是一个对象，只是执行上下文不同生命周期对变量对象的叫法而已  
+[[#^89658f|执行上下文生命周期之执行阶段]]
+
+## 作用域链
+
+## this
+
 # Reference
 
 [JSONP详细实现 - 掘金](https://juejin.cn/post/7034473926319144968) 部分内容参考即可  
 [手动实现JSONP | awesome-coding-js](https://www.conardli.top/docs/JavaScript/%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0JSONP.html)  
 [阮一峰 - 构造函数与new命令](https://javascript.ruanyifeng.com/oop/basic.html)  
-[new 一个对象时发生了什么](https://jonny-wei.github.io/blog/base/javascript/prototype.html#%E9%97%AE%E9%A2%98)
+[new 一个对象时发生了什么](https://jonny-wei.github.io/blog/base/javascript/prototype.html#%E9%97%AE%E9%A2%98)  
+[冴羽 - 深入系列](https://jonny-wei.github.io/blog/base/javascript/VO.html)
