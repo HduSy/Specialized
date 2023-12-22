@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/前端面经/JavaScript面经.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/前端面经/JavaScript面经.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/前端面经/JavaScript面经.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Front-End.md"
+                "file": "Roval/前端面经/JavaScript面经.md"
               }
             }
           },
@@ -198,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Front-End.md",
+                "file": "Roval/前端面经/JavaScript面经.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -251,8 +251,12 @@
   },
   "active": "a62881d957f29ea3",
   "lastOpenFiles": [
-    "Roval/前端面经/Vue面经.md",
+    "Roval/dev/杂/MDN.md",
+    "Roval/前端面经/JavaScript面经.md",
+    "Roval/前端面经/浏览器市场占有率调查.md",
+    "Roval/前端面经/面试点.png",
     "Roval/前端面经/Front-End.md",
+    "Roval/前端面经/Vue面经.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
     "Roval/dev/JavaScript/Promise.md",
     "Roval/dev/杂/技术博客与网站.md",
@@ -261,9 +265,7 @@
     "Roval/dev/杂/第三方包.md",
     "Roval/Articals/好文推荐.md",
     "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
-    "Roval/前端面经/JavaScript面经.md",
     "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/杂/MDN.md",
     "Roval/idea/似曾相识/Pasted image 20231220112217.png",
     "Roval/idea/笔记内容.md",
     "Roval/idea/似曾相识",
@@ -284,12 +286,10 @@
     "Roval/dev/开发经验/React.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/动画/Animation.md",
-    "Roval/dev/动画/SVG.md",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
     "Roval/coder/plan/Pasted image 20220327172451.png",
-    "Roval/coder/plan/Pasted image 20220327170745.png",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",
