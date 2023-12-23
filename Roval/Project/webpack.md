@@ -9,9 +9,28 @@ Last Modified：2022-12-17 22:27:40
 
 ## 基础 config
 
-### entry
+### mode 构建模式
+
+告知 `webpack` 使用相应模式的内置优化，none, development 或 production（默认）
+
+### target 编译目标
+
+为多种环境或 `target` 构建编译代码输出，默认值为 `browserslist` 环境若没有找到相应配置，则为 `web`，还可指定其他值：  
+
+| `target` 值       | 描述                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------- |
+| browserslist      | **（如果 browserslist 可用，其值则为默认）** 从 `browserslist-config` 中推断出平台和 `ES` 特性
+| web               | 编译为类浏览器环境里可用 （默认）                                                              |
+| node              | 编译为类 Node.js 环境可用（使用 Node.js `require` 加载 chunks）  |
+| webworker         | 编译成一个 WebWorker                                                                           |
+| electron-main     | 编译为 [Electron](https://electronjs.org/) 主进程。                                            |
+| electron-renderer | 编译为 [Electron](https://electronjs.org/) 渲染进程，使用 `JsonpTemplatePlugin`                |
+
+### entry 构建入口
 
 #### context
+
+基础目录，**绝对路径**，用于从配置中解析入口点 (entry point) 和 加载器 (loader)
 
 #### entry
 
@@ -22,12 +41,7 @@ Last Modified：2022-12-17 22:27:40
 2. 若 entry 是一个 object，就可能会出现多个 Chunk，这时 Chunk 的名称是 object 键值对里 Key 的名称；
 ```
 
-### stats
-
-精准控制哪些打包输出信息需要显示出来  
-[Stats | webpack](https://webpack.js.org/configuration/stats/)
-
-### output
+### output 构建输出
 
 #### path
 
@@ -109,23 +123,124 @@ module.exports = {
 使用 `Webpack` 构建一个可以被其他模块导入使用的库时需要用到该配置  
 
 `library`：导出库名称  
-`libraryTarget`：导出库规范
+`libraryTarget`：导出库规范，`umd | umd2 | commonjs2 | commonjs | amd | this | var | assign | window | global | jsonp`
 
-### resolve
+### module 模块配置
 
-#### modules
+#### noParse
 
-配置模块查找目录
+属性值类型： `RegExp`、`[RegExp]`、`function`，忽略==未采用模块化标准==文件的递归解析和处理，提高构建性能
 
-#### extensions
+```js
+// 使用正则表达式  
+noParse: /jquery|chartjs/
 
-按顺序以文件类型解析引用时省略了后缀的模块
+// 使用函数，从 Webpack 3.0.0 开始支持  
+noParse: (content)=> {  
+  // content 代表一个模块的文件路径  
+  // 返回 true or false  
+  return /jquery|chartjs/.test(content);  
+}
+```
 
-#### alias
+#### parser
 
-配置路径别名，缩短引入路径
+解析器 (parser) 细粒度配置，不同模块语法解析规则
 
-### module
+```js
+module.exports = {
+  //…
+  module: {
+    rules: [
+      {
+        //…
+        parser: {
+          amd: false, // 禁用 AMD
+          commonjs: false, // 禁用 CommonJS
+          system: false, // 禁用 SystemJS
+          harmony: false, // 禁用 ES2015 Harmony import/export
+          requireInclude: false, // 禁用 require.include
+          requireEnsure: false, // 禁用 require.ensure
+          requireContext: false, // 禁用 require.context
+          browserify: false, // 禁用特殊处理的 browserify bundle
+          requireJs: false, // 禁用 requirejs.*
+          node: false, // 禁用 __dirname, __filename, module, require.extensions, require.main 等。
+          node: {…} // 在模块级别(module level)上重新配置 node 层(layer)
+        }
+      }
+    ]
+  }
+}
+```
+
+#### loader
+
+将除 `js` 以外其他文件类型转化为 `webpack` 打包模块
+
+- 条件匹配：通过 `test`、`include`、`exclude` 命中目标文件；
+- `use` 配置项为 `loader name array`，从后向前应用一组 `loader`，`enforce` 选项可强行将 `loader` 挪到第一位或最后一位；
+- `loader` 支持以 `query` 的形式传入参数，开启对应功能；
+
+```js
+module: {
+  rules: [
+    {
+      // 命中 JavaScript 文件
+      test: /\.js$/,
+      // 用 babel-loader 转换 JavaScript 文件
+      // ?cacheDirectory 表示传给 babel-loader 的参数，用于缓存 babel 编译结果加快重新编译速度
+      use: ['babel-loader?cacheDirectory'],
+      // 只命中src目录里的js文件，加快 Webpack 搜索速度
+      include: path.resolve(__dirname, 'src')
+    },
+    {
+      // 命中 SCSS 文件
+      test: /\.scss$/,
+      // 使用一组 Loader 去处理 SCSS 文件。
+      /* 处理顺序为从后到前，即先交给 sass-loader 处理，
+      再把结果交给 css-loader 最后再给 style-loader。*/
+      use: ['style-loader', 'css-loader', 'sass-loader'],
+      // 排除 node_modules 目录下的文件
+      exclude: path.resolve(__dirname, 'node_modules'),
+    },
+    {
+      // 对非文本文件采用 url-loader 加载
+      test: /\.(gif|png|jpe?g|eot|woff|ttf|svg|pdf)$/,
+      use: ['url-loader'],
+    },
+    // 给 Loader 传入属性的方式除了有 querystring 外，还可以通过 Object 传入 也可以 
+    {
+      // 命中 JavaScript 文件
+      test:[
+        /\.jsx?$/,
+        /\.tsx?$/
+      ],
+      // 用 babel-loader 转换 JavaScript 文件
+      // ?cacheDirectory 表示传给 babel-loader 的参数，用于缓存 babel 编译结果加快重新编译速度
+      use: [
+        {
+          loader:'babel-loader',
+           options:{
+             cacheDirectory:true,
+           },
+          // enforce:'post' 的含义是把该 Loader 的执行顺序放到最后
+          // enforce 的值还可以是 pre，代表把 Loader 的执行顺序放到最前面
+          enforce:'post'
+        },
+        // 省略其它 Loader
+      ]
+      include:[
+        path.resolve(__dirname, 'src'),
+        path.resolve(__dirname, 'tests'),
+      ],
+      exclude:[
+        path.resolve(__dirname, 'node_modules'),
+        path.resolve(__dirname, 'bower_modules'),
+      ]
+    },
+  ]
+}
+```
 
 #### strictExportPresence
 
@@ -143,53 +258,107 @@ parser: {
 
 为不同文件类型模块配置相应 [[#^6bd27c|loaders]]
 
-### devServer
+### resolve 模块解析
 
-#### publicPath
+`webpack` 启动后从配置的入口模块寻找所有依赖的模块，`resolve` 配置 `webpack` 如何寻找模块所对应的文件
 
-【开发环境配置】`webpack` 打包输出的文件存在于内存里，打包后的资源要想在浏览器的**对外访问路径**为：`publicPath` + 资源文件
+#### alias
 
-### performance
+配置路径别名，简化引入路径
 
-[Performance | webpack](https://webpack.js.org/configuration/performance/)
+#### mainFields
 
-配置项目静态资源、入口文件达到**文件大小限制**时，以什么级别 log 提示
+引用模块时，指明使用 `package.json` 中哪个**字段 field**指定的文件，默认是 `main`，`webpack` 会根据 `mainFields` 的配置，按照数组里的顺序在 `package.json` 文件里寻找，仅使用第一个匹配的：
 
-#### hints
+```json
+// 配置 target === "web" 或者 target === "webworker" 时 mainFields 默认值是：
+  mainFields: ['browser', 'module', 'main'],
 
-打开或关闭提示
+  // target 的值为其他时，mainFields 默认值为：
+  mainFields: ["module", "main"],
+```
 
-### optimization
+#### mainFiles
 
-[Optimization | webpack](https://webpack.js.org/configuration/optimization/)
+解析目录时要使用的文件名，目录中没有 `package.json` 时，指明使用该目录中哪个文件，默认是 `index.js`
+
+```json
+resolve: { mainFiles: ['index'], // 可以添加其他默认使用的文件名 }
+```
+
+#### modules
+
+配置 `webpack` 解析模块时应该搜索的目录
+
+```json
+module.exports = {
+  //...
+  resolve: {
+    modules: [path.resolve(__dirname, 'src'), 'node_modules']
+  }
+};
+```
+
+#### extensions
+
+引入模块时可省略文件扩展名，这时 `webpack` 会自动带上后缀尝试访问文件是否存在，配置先后顺序
+
+```json
+// 先.ts、再.vue、默认.js、.json
+extensions: ['.ts', '.vue', '.js', '.json']
+```
+
+#### enforceExtension
+
+模块引入时不可省略文件扩展名
+
+#### enforceModuleExtension
+
+`node_modules` 中的模块引入时，不可省略文件扩展名，设为 `false`，配合 `enforceExtension` 使用
+
+### optimization 构建优化
+
+从 webpack 4 开始，会根据你选择的 mode 来执行不同的优化，不过所有的优化还是可以手动配置和重写。 [Optimization | webpack](https://webpack.js.org/configuration/optimization/)
+
+#### minimize
+
+Tell webpack to minimize the bundle using the [TerserPlugin](https://webpack.js.org/plugins/terser-webpack-plugin/) or the plugin(s) specified in [`optimization.minimizer`](https://webpack.js.org/configuration/optimization/#optimizationminimizer)
 
 #### minimizer
 
-覆盖
+允许提供一个或多个定制过的 `TerserPlugin` 实例，覆盖默认压缩工具 (`minimizer`)  
 
 ```js
+// 插件形式
 minimizer: [
 	new ESBuildMinifyPlugin({
 		target: 'es2015', // Syntax to compile to (see options below for possible values)
 		css: true,
 	}),
+	new TerserPlugin({
+		cache: true,
+		parallel: true,
+		sourceMap: true, // 在生产环境如果使用source-map则必须设为true。Must be set to true if using source-maps in production
+		terserOptions: {
+		  // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+		}
+  }),
 ]
+// 函数形式
+minimizer: [
+      (compiler) => {
+        const TerserPlugin = require('terser-webpack-plugin')
+        new TerserPlugin({ /* your config 配置项如上*/ }).apply(compiler)
+      ],
 ```
-
-#### runtimeChunk
-
-`'single'`：creates a runtime file to be shared for all generated chunks.  
-`true` or `'multiple'`：adds an additional chunk containing only the runtime to each entrypoint.  
-
-[Optimization | optimization.runtimeChunk](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk)
 
 #### splitChunks
 
-进一步制定代码分割策略，减小首屏加载体积，提高首屏加载性能 [[#^22a680|掘金优质文章]]
+进一步制定代码分割策略，减小首屏加载体积，提高==首屏加载性能== [[#^22a680|见掘金]]
 
 ```js
 module.exports = {
-  //...
+  //…
   optimization: {
     splitChunks: {
       //在cacheGroups外层的属性设定适用于所有缓存组，不过每个缓存组内部可以重设这些属性
@@ -215,20 +384,117 @@ module.exports = {
     },
   },
 };
+```
 
+#### runtimeChunk
+
+运行时 chunk 如何分配：
+
+1. `'single'`：会创建一个在所有生成 `chunk` 之间共享的运行时文件  
+2. `true` or `'multiple'`：为每个入口添加一个只含有 `runtime` 的额外 `chunk`
+
+[Optimization | optimization.runtimeChunk](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk)
+
+### devServer 开发服务器
+
+#### after
+
+在服务内部的所有其他中间件之后， 提供执行自定义中间件的功能
+
+#### before
+
+在服务内部的所有其他中间件之前， 提供执行自定义中间件的功能
+
+#### publicPath
+
+【开发环境配置】`webpack` 打包输出的文件存在于内存里，打包后的资源要想在浏览器的**对外访问路径**为：`publicPath` + 资源文件
+
+#### allowedHosts
+
+白名单列表，允许一些开发服务器访问
+
+#### compress
+
+是否启用 gzip 压缩
+
+#### headers
+
+所有响应中添加自定义 header
+
+```json
+devServer: {
+    headers: {
+      'X-Custom-Foo': 'bar'
+    }
+  }
+```
+
+#### historyApiFallback
+
+`history` 路由开发时，服务器要求任意路由命中时返回对应的 `html` 文件，`404` 时定向跳转到对应页面
+
+#### https
+
+默认 `http` 服务，配置为 `https` 服务
+
+#### hot
+
+开启 HMR
+
+#### proxy
+
+请求代理
+
+### performance
+
+[Performance | webpack](https://webpack.js.org/configuration/performance/)
+
+性能检测提示，配置项目静态资源、入口文件达到**文件大小限制**时，以什么级别 log 提示
+
+#### hints
+
+打开或关闭提示
+
+```json
+ // 输出文件性能检查配置  
+  performance: {  
+	hints: 'warning', // 有性能问题时输出警告  
+	hints: 'error', // 有性能问题时输出错误  
+	hints: false, // 关闭性能检查  
+	maxAssetSize: 200000, // 最大文件大小 (单位 bytes)  
+	maxEntrypointSize: 400000, // 最大入口文件大小 (单位 bytes)  
+	assetFilter: function(assetFilename) { // 过滤要检查的文件  
+	  return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');  
+	}  
+  }
+```
+
+### stats
+
+精准控制哪些打包输出信息需要显示出来  
+[Stats | webpack](https://webpack.js.org/configuration/stats/)
+
+```json
+stats: { // 控制台输出日志控制
+    assets: true,
+    colors: true,
+    errors: true,
+    errorDetails: true,
+    hash: true,
+  },
 ```
 
 ### watch
 
 开启 `watch` 模式，默认为 `false`，生产环境必须为 `false`.In [webpack-dev-server](https://github.com/webpack/webpack-dev-server) and [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) **watch mode is enabled** by default.
 
-## plugins
+## webpack-plugins 插件
 
-打包过程做一些处理工作
+打包过程做一些处理工作 [插件生态](https://webpack.js.org/awesome-webpack)
 
 ### terser-webpack-plugin
 
-压缩 `JS` 代码  
+This plugin uses [terser](https://github.com/terser/terser) to minify/minimize your JavaScript.  
 `uglifyjs-webpack-plugin` 单线程压缩  
 `webpack-parallel-uglify-plugin` 开启多个子线程通过 `UglifyJS` 进行压缩  
 `terser-webpack-plugin` 使用 `terser` 压缩 `js`， `webpack` 官方推荐，且仍在维护状态
