@@ -5,7 +5,7 @@ Last Modified：2023-11-23 16:53:39
 
 # Content
 
-曝光兼容性代码：
+曝光检测兼容性代码：
 
 ```js
 const exposure =  (() => {
@@ -42,7 +42,6 @@ const exposure =  (() => {
         rect.right + preload > 0
       )
     }
-
     const getScrollParent = dom => {
       let el = dom
       if (!el) {
@@ -84,8 +83,6 @@ const exposure =  (() => {
     }
   }
 })()
-
-
 export default exposure
 
 ```
@@ -94,15 +91,15 @@ export default exposure
 
 ```js
 Vue.directive('exposure', {
-	// 指令绑定时执行
+	// 指令绑定时执行，传递指令值即曝光函数
     bind(el, binding) {
       el.__exposure__ = { handler: binding.value } // 指令邦定值
     },
-    // 被绑元素插入父节点时调用
+    // 被绑元素插入父节点时调用，执行曝光函数对元素进行曝光检测并返回取消曝光检测方法
     inserted(el) {
       el.__exposure__.cancel = exposure(el, el.__exposure__.handler)
     },
-    // 指令解绑时调用
+    // 指令解绑时调用，取消曝光监听
     unbind(el) {
       el.__exposure__?.cancel?.()
     },

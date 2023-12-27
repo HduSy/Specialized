@@ -519,7 +519,7 @@ new HtmlWebpackPlugin({
 		minifyCSS: true,
 		minifyURLs: true,
 	},
-	template: path.resolve(ROOT_DIR, 'public/index.ejs'),
+	template: path.resolve(ROOT_DIR, 'public/index.ejs'), // ejs模板
 	externals: {
 		React: `/javascripts/react.${buildKey}.js`,
 		ReactDOM: `/javascripts/react-dom.${buildKey}.js`,
@@ -592,7 +592,7 @@ new webpack.optimize.MinChunkSizePlugin({
 
 Keep chunk size above the specified limit by merging chunks that are smaller than the `minChunkSize`.
 
-## loaders
+## webpack-loaders 加载器
 
 ^6bd27c
 
@@ -615,7 +615,7 @@ Keep chunk size above the specified limit by merging chunks that are smaller tha
 ### sass-loader
 
 `test: /\.(sass|scss)$/`  
-处理 sass 文件为模块
+处理 `sass` 文件为模块
 
 ### sass-resources-loader
 
@@ -640,6 +640,19 @@ const { ESBuildMinifyPlugin } = require('esbuild-loader');
 ```
 
 使用 `esbuild` 的能力提升 `webpack` 构建速度
+
+## 构建流程与原理
+
+`webpack` 核心是**静态模块打包**，能够识别不同类型文件统一转换为 `JavaScript` 模块
+
+### 构建流程
+
+三大阶段：
+
+1. 初始化
+   
+2. 构建
+3. 封装
 
 # Reference
 
