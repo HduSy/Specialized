@@ -28,33 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a62881d957f29ea3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM/qs.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9201083c59f7145f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,8 +82,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md"
+                "file": "Roval/前端面经/Rollup面经.md"
               }
             }
           },
@@ -212,7 +185,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/Vite面经.md",
+                "file": "Roval/前端面经/Rollup面经.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -263,21 +236,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9201083c59f7145f",
+  "active": "402ee904cbc0dd48",
   "lastOpenFiles": [
-    "Roval/dev/NPM/react-redux.md",
+    "Roval/Project/Rollup.md",
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/前端面经/Rollup面经.md",
     "Roval/前端面经/Vite面经.md",
+    "Roval/dev/NPM/qs.md",
+    "Roval/前端面经/collage.webp",
+    "Roval/前端面经/collage.avif",
+    "Roval/dev/NPM/react-redux.md",
     "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/NPM/Eslint.md",
     "Roval/dev/杂/NPM.md",
     "Roval/Project/webpack.md",
     "Roval/dev/NPM/cheerio.md",
     "Roval/dev/NPM/EJS.md",
-    "Roval/dev/NPM/qs.md",
     "Roval/dev/NPM/Vue2.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/前端面经/JavaScript面经.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/前端面经/Front-End.md",
     "Roval/dev/杂/MDN.md",
     "Roval/前端面经/浏览器市场占有率调查.md",
@@ -290,9 +267,7 @@
     "Roval/dev/杂/第三方包.md",
     "Roval/Articals/好文推荐.md",
     "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
-    "Roval/dev/Git/Git 使用.md",
     "Roval/idea/似曾相识/Pasted image 20231220112217.png",
-    "Roval/idea/笔记内容.md",
     "Roval/idea/似曾相识",
     "Roval/前端面经/Pasted image 20231219120537.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
@@ -303,14 +278,12 @@
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
     "Roval/coder/plan/Pasted image 20220411181009.png",
-    "Roval/coder/plan/Pasted image 20220327172451.png",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",
     "Roval/coder/docs",
     "Roval/coder",
     "ruanyifeng.com/blog/2019/08",
-    "ruanyifeng.com/blog/2019",
     "Untitled.canvas"
   ]
 }
