@@ -46,7 +46,9 @@ Last Modified：2023-11-06 14:54:37
 
 1. 首次启动时首屏加载
 2. 热更新慢
-3. 生态没有 `Webpack` 好，且仅支持 `ESM` 模块规范
+3. 生态没有 `Webpack` 好，且仅支持 `ESM` 模块规范  
+
+[Vite 构建原理 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/building.html#q3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4-vite-%E6%AF%94-webpack-%E8%A6%81%E5%BF%AB)
 
 ## 为什么需要预构建
 
@@ -140,6 +142,14 @@ Last Modified：2023-11-06 14:54:37
 ##### 兼容插件机制
 
 `Vite` 的插件写法完全兼容 `Rollup`
+
+## Vite 核心原理
+
+### 基于 `ESM` 的 `Dev Server`
+
+启动开发服务器，`import` 时动态请求对应文件，构建速度不随应用复杂度上升而下降
+
+### 基于 `ESM` 的 `HMR`
 
 # Reference
 
