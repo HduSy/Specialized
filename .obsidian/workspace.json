@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/浏览器市场占有率调查.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,12 +49,12 @@
             }
           },
           {
-            "id": "41695826314fb95c",
+            "id": "77b28275d3cda8d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/前端面经/STAR 法则.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/前端面经/STAR 法则.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/前端面经/STAR 法则.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/前端面经/STAR 法则.md"
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/前端面经/STAR 法则.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -262,14 +262,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "41695826314fb95c",
+  "active": "77b28275d3cda8d5",
   "lastOpenFiles": [
-    "Roval/前端面经/Pasted image 20240103152239.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/前端面经/浏览器市场占有率调查.md",
     "Roval/前端面经/STAR 法则.md",
+    "Roval/前端面经/Pasted image 20240103152239.png",
     "Roval/前端面经/Front-End.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
     "Roval/前端面经/Vite面经.md",
     "Roval/前端面经/Rollup面经.md",
     "Roval/Project/Rollup.md",
@@ -303,7 +304,6 @@
     "Roval/Articals/书籍/《VueJS设计与实现》",
     "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan/Pasted image 20230610124906.png",
-    "Roval/coder/plan/Pasted image 20220411181009.png",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",
