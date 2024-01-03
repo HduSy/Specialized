@@ -232,6 +232,8 @@ render(
 
 `BEM`
 
+## 设计模式
+
 # Reference
 
 [面试官：你能说说常见的前端加密方法吗？ - 掘金](https://juejin.cn/post/7280057907055919144)  
