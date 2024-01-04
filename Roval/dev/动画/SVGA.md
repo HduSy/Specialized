@@ -46,8 +46,8 @@ const parser = new SVGA.Parser() // 动画加载解析
 parser.load(
     isSuccess ? svgaMap.success : svgaMap.normal,
     (videoItem) => {
-      this.svgaPlayer.setVideoItem(videoItem)
-      this.svgaPlayer.startAnimation()
+      player.setVideoItem(videoItem)
+      player.startAnimation()
     }
 )
 ```

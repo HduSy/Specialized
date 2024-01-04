@@ -23,5 +23,7 @@ let app = new PIXI.Application({
 
 # Reference
 
+[前端动效探索(一)-动画介绍与方案推荐 - 掘金](https://juejin.cn/post/6990343686592659487)  
+[PixiJS (一)、PixiJS 是什么？能做什么？不能做什么？🔥🔥 - 掘金](https://juejin.cn/post/7051534565415845901)  
 [教你用PixiJs实现复杂动画 - 掘金](https://juejin.cn/post/6917849020341682189)  
 [骨骼动画初体验 | fx-team](https://fx-team.github.io/2018/02/11/%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB%E5%88%9D%E4%BD%93%E9%AA%8C/)

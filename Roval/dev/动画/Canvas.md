@@ -118,6 +118,8 @@ ctx.scale(dpr, dpr);
 
 # Reference
 
+[PixiJs学前篇（一）：Canvas基础【绘制篇】🔥🔥 - 掘金](https://juejin.cn/post/7161696893695688740)  
+
 [CodePen上效果炸裂的Canvas动画合集](https://codepen.io/collection/nZQqEM/3/?cursor=ZD0wJm89MCZwPTEmdj00)  
 [理解Canvas Context 的save() 和 restore() - 掘金](https://juejin.cn/post/6844903879599996942)  
 [画布尺寸 - Visualization Guidebook](https://tsejx.github.io/visualization-guidebook/canvas/basic/scale)
