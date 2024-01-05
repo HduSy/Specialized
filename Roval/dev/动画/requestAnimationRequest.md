@@ -14,6 +14,16 @@ Last Modified：2023-11-28 16:54:25
 1. 充分利用显示器的刷新机制，随显示器刷新频率而刷新，不会卡顿
 2. 离开页面，自动停止刷新，节省 GPU、CPU、电力⚡️
 
+## DEMO
+
+- 配合 css style 每一帧修改相关样式实现动画；
+- 配合 canvas 修改对象相关属性；
+
+```js
+// 代码demo
+...
+```
+
 # Reference
 
 [性能优化之通俗易懂学习requestAnimationFrame和使用场景举例 - 掘金](https://juejin.cn/post/7190728064458817591)  

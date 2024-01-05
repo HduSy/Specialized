@@ -80,7 +80,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/前端动画调研.md",
+                "file": "Roval/dev/开发经验/video H5兼容适配.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e2da2b9cedd9b8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/网络/HTTP.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -154,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/动画/前端动画调研.md",
+                "file": "Roval/dev/开发经验/video H5兼容适配.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/动画/前端动画调研.md",
+                "file": "Roval/dev/开发经验/video H5兼容适配.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/动画/前端动画调研.md"
+                "file": "Roval/dev/开发经验/video H5兼容适配.md"
               }
             }
           },
@@ -239,7 +252,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/动画/前端动画调研.md",
+                "file": "Roval/dev/开发经验/video H5兼容适配.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -272,7 +285,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 250.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -292,10 +305,15 @@
   },
   "active": "ad3b325bf1c78a22",
   "lastOpenFiles": [
-    "Roval/dev/动画/animation.md",
-    "Roval/dev/动画/前端动画调研.md",
-    "Roval/dev/动画/transition.md",
+    "Roval/dev/开发经验/video iPhone低电量模式.md",
+    "Roval/dev/网络/HTTP.md",
+    "Roval/dev/开发经验/video H5兼容适配.md",
+    "Roval/dev/网络",
     "Roval/dev/动画/requestAnimationRequest.md",
+    "Roval/dev/动画/SVG.md",
+    "Roval/dev/动画/前端动画调研.md",
+    "Roval/dev/动画/animation.md",
+    "Roval/dev/动画/transition.md",
     "Roval/dev/动画/WebGL.md",
     "Roval/dev/动画/Pixi.md",
     "Roval/dev/动画/SVGA.md",
@@ -317,10 +335,6 @@
     "Roval/dev/NPM/react-redux.md",
     "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/NPM/Eslint.md",
-    "Roval/dev/杂/NPM.md",
-    "Roval/Project/webpack.md",
-    "Roval/dev/NPM/cheerio.md",
-    "Roval/dev/NPM/EJS.md",
     "Roval/前端面经/面试点.png",
     "Roval/idea/似曾相识/Pasted image 20231220112217.png",
     "Roval/idea/似曾相识",
