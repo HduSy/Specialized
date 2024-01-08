@@ -7,6 +7,8 @@ Last Modified：2022-12-17 21:05:48
 
 # Content
 
+## Show Me The Code
+
 Pixi 的 `Application` 对象默认使用 `WebGL` 引擎渲染模式，如果强制使用 `Canvas` 引擎绘制，则须配置：
 
 ```ts

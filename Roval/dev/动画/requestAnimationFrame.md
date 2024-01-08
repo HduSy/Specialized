@@ -21,9 +21,11 @@ Last Modified：2023-11-28 16:54:25
 
 ## 应用案例
 
-- B 站赛事抽奖组件，奖品轮播图、中奖用户信息轮播展示
+- 赛事抽奖组件，奖品轮播图；
+- 中奖用户信息轮播展示；
+- 抽奖 9 宫格轮播动画速度控制；
 
-## Code
+## Show Me The Code
 
 ```html
 <!DOCTYPE html>
@@ -68,7 +70,8 @@ Last Modified：2023-11-28 16:54:25
 
 ```
 
-[codesandbox: requestAnimationFrame动画实践](https://codesandbox.io/p/sandbox/requestanimationframedong-hua-shi-jian-yhwrdr?file=%2Findex.html)
+[codesandbox: requestAnimationFrame动画实践](https://codesandbox.io/p/sandbox/requestanimationframedong-hua-shi-jian-yhwrdr?file=%2Findex.html)  
+[HduSy/my-vite-app · GitHub · my-vite-app/src/components/BiliLottery/index.vue at main](https://github.com/HduSy/my-vite-app/blob/main/src/components/BiliLottery/index.vue)
 
 # Reference
 

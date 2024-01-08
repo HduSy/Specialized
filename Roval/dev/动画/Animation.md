@@ -20,7 +20,7 @@ Last Modified：2022-12-17 21:02:23
 - `requestAnimationFrame`
 - `setTimeout/setInterval`
 - `canvas`
-- - [[WebGL]]
+- [[WebGL]]
 - [[SVG]]
 
 ### 第三方库
@@ -31,6 +31,7 @@ Last Modified：2022-12-17 21:02:23
 - Three.js 3D 动画
 - [[GSAP]]
 - anime.js
+- [[Lottie]]
 
 ### 其他
 

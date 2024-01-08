@@ -28,7 +28,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationRequest.md",
+                "file": "Roval/dev/动画/Canvas.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c34b31e202b558f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/动画/requestAnimationFrame.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -36,7 +49,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -65,8 +78,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "getBoundingClientRect",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -82,8 +95,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationRequest.md",
+                "file": "Roval/dev/动画/requestAnimationFrame.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationRequest.md",
+                "file": "Roval/dev/动画/requestAnimationFrame.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationRequest.md"
+                "file": "Roval/dev/动画/requestAnimationFrame.md"
               }
             }
           },
@@ -188,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationRequest.md",
+                "file": "Roval/dev/动画/requestAnimationFrame.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,11 +251,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "402ee904cbc0dd48",
+  "active": "0c34b31e202b558f",
   "lastOpenFiles": [
-    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/动画/Lottie.md",
     "Roval/dev/杂/MDN.md",
+    "Roval/dev/动画/Pixi.md",
+    "Roval/dev/动画/Canvas.md",
+    "Roval/dev/动画/animation.md",
+    "Roval/dev/动画/GSAP.md",
+    "Roval/dev/动画/requestAnimationFrame.md",
+    "Roval/dev/动画/SVG.md",
+    "Roval/dev/动画/SVGA.md",
+    "Roval/dev/动画/transition.md",
+    "Roval/dev/动画/WebGL.md",
+    "Roval/dev/动画/前端动画调研.md",
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/dev/开发经验/Pasted image 20240108105223.png",
     "Roval/dev/开发经验/Pasted image 20240108105208.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
@@ -259,18 +282,8 @@
     "Roval/dev/杂/第三方包.md",
     "Roval/Articals/好文推荐.md",
     "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
-    "Roval/Articals/技术文章个人整理/本地数据缓存.md",
-    "Roval/Project/webpack.md",
-    "Roval/dev/NPM/React.md",
-    "Daily/2023-04-07.md",
-    "Daily/2023-06-06.md",
-    "Daily/2023-04-13.md",
     "Roval/Project/性能优化/打包优化",
     "Roval/Project/性能优化",
-    "Roval/dev/动画/WebGL.md",
-    "Roval/dev/网络/HTTP.md",
-    "Roval/dev/动画/animation.md",
-    "Roval/dev/Git/Git 使用.md",
     "Roval/dev/网络",
     "Roval/前端面经/Pasted image 20240103152239.png",
     "Roval/前端面经/collage.webp",

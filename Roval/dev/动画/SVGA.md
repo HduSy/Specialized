@@ -21,7 +21,7 @@ Last Modified：2023-11-23 11:13:17
 
 动画设计师专注于动画设计，通过工具输出 `.svga` 文件给到开发者，开发者集成 `svga player` 直接在代码中使用。大大减少动画交互沟通成本，提升开发效率
 
-## 代码实践
+## Show Me The Code
 
 直播魔法奇遇活动：`live-live/nuwa/packages/magical_adventure/src/views/full/FullRoot.vue`
 
