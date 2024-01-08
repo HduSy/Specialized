@@ -84,6 +84,8 @@ let observer = new IntersectionObserver(callback, options);
 
 ### 代码
 
+#### 业务中自实现
+
 曝光检测兼容性代码：
 
 ```js
@@ -189,6 +191,84 @@ Vue.directive('exposure', {
 
 ```vue
 <div v-exposure="() => loggerReport('key', 'value')"></div>
+```
+
+#### 政采云团队实现
+
+`Vue` 指令
+
+```js
+const options = {
+    root: null, //默认浏览器视窗
+    threshold: 1 //元素完全出现在浏览器视窗内才执行callback函数。
+}
+const callback =(entries, observer) => {
+  entries.forEach(entry => {});
+};
+const observer = new IntersectionObserver(callback, options);
+const addListenner = (ele, binding) => {
+    observer.observe(ele);
+};
+const removeListener = (ele) => {
+  observer.unobserve(ele);
+};
+//自定义曝光指令
+Vue.directive('visually', {
+  bind: addListenner,
+  unbind: removeListener,
+});
+```
+
+不重复上报通过维护一个全局数组 `visuallyList` 实现：
+
+```js
+let visuallyList = []; //记录已经上报过的埋点信息
+const addListenner = (ele, binding) => {
+    if(visuallyList.indexOf(binding.value) !== -1) return;
+    
+    observer.observe(ele);
+};
+```
+
+曝光超过 5s 才上报通过 `setTimeout` 实现：
+
+```js
+let timer = {}; //增加定时器对象
+const callback = entries => {
+  entries.forEach(entry => {
+    let visuallyData = null;
+    try {
+      visuallyData = JSON.parse(entry.target.getAttribute('visually-data'));
+    } catch (e) {
+      visuallyData = null;
+      console.error('埋点数据格式异常', e);
+    }
+    //没有埋点数据取消上报
+    if (!visuallyData) {
+      observer.unobserve(entry.target);
+      return;
+    }
+    
+    if (entry.isIntersecting) {
+      timer[visuallyData.id] = setTimeout(function() {
+        //上报埋点信息
+        sendUtm(visuallyData).then(res => {
+          if (res.success) {
+            //上报成功后取消监听
+            observer.unobserve(entry.target);
+            visuallyList.push(visuallyData.id);
+            timer[visuallyData.id] = null;
+          }
+        });
+      }, 5000);
+  } else {
+    if (timer[visuallyData.id]) {
+      clearTimeout(timer[visuallyData.id]);
+      timer[visuallyData.id] = null;
+    }
+  }
+  });
+};
 ```
 
 # Reference
