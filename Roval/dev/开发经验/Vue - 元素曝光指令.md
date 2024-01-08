@@ -98,13 +98,14 @@ const exposure =  (() => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const el = entry.target
-          el.__exposure__?.handler?.()
+          el.__exposure__?.handler?.() // 执行曝光后执行方法
           observer.unobserve(el)
         }
       })
     }, {
       threshold: 0.5
     })
+    // 返回曝光检测取消
     return (el, handler) => {
       el.__exposure__ = { ...el.__exposure__, handler }
       observer.observe(el)
@@ -115,6 +116,7 @@ const exposure =  (() => {
       if (!dom) {
         return false
       }
+      // 元素上下左右边界视口检测
       const rect = dom.getBoundingClientRect()
       return (
         rect.top < window.innerHeight + preload &&
@@ -131,6 +133,7 @@ const exposure =  (() => {
       while (el && el.tagName !== 'HTML' && el.tagName !== 'BODY' && el.nodeType === 1) {
         const overflowY = window.getComputedStyle(el).overflowY
         if (overflowY === 'scroll' || overflowY === 'auto') {
+          // 好像是非必要的
           if (el.tagName === 'HTML' || el.tagName === 'BODY') {
             return document
           }
@@ -143,13 +146,13 @@ const exposure =  (() => {
 
     return (el, handler) => {
       if (checkInView(el)) {
-        handler()
+        handler() // 执行曝光后执行方法
         return () => {}
       } else {
         const parent = getScrollParent(el)
         const handleChange = () => {
           if (checkInView(el)) {
-            handler()
+            handler() // 执行曝光后执行方法
             parent.removeEventListener('resize', handleChange)
             parent.removeEventListener('scroll', handleChange)
           }
@@ -274,4 +277,5 @@ const callback = entries => {
 # Reference
 
 [通过自定义Vue指令实现前端曝光埋点 - 个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000039746521)  
-[[../杂/技术博客与网站#阮一峰|技术博客与网站]]
+[[../杂/技术博客与网站#阮一峰|技术博客与网站]]  
+[[../杂/MDN#JavaScript|MDN]]

@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+                "file": "Roval/dev/动画/requestAnimationRequest.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -65,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "intersection",
+                "query": "getBoundingClientRect",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +82,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+                "file": "Roval/dev/动画/requestAnimationRequest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+                "file": "Roval/dev/动画/requestAnimationRequest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md"
+                "file": "Roval/dev/动画/requestAnimationRequest.md"
               }
             }
           },
@@ -187,7 +188,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+                "file": "Roval/dev/动画/requestAnimationRequest.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,6 +241,9 @@
   },
   "active": "402ee904cbc0dd48",
   "lastOpenFiles": [
+    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/杂/MDN.md",
     "Roval/dev/开发经验/Pasted image 20240108105223.png",
     "Roval/dev/开发经验/Pasted image 20240108105208.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
@@ -251,9 +255,6 @@
     "Roval/idea/template.md",
     "Roval/idea/科学上网指北.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-    "Roval/前端面经/宋垚面试准备.md",
-    "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/工程化.md",
     "Roval/dev/杂/第三方包.md",
     "Roval/Articals/好文推荐.md",
@@ -279,7 +280,6 @@
     "Roval/前端面经/Pasted image 20231219120537.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111257.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111330.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
     "Roval/coder/plan",

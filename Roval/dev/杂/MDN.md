@@ -22,7 +22,7 @@ Last Modified：2022-12-17 21:18:02
 [event.stopImmediatePropagation - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Event/stopImmediatePropagation)  
 [URLSearchParams - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)  
 [Intersection Observer API - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API)  
-[Element.getBoundingClientRect() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)  
+[Element.getBoundingClientRect() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect) 检测元素是否出现在视口  
 [Window：resize 事件 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event)  
 [Window - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Window)  
 [Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)  
