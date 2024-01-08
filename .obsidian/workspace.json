@@ -28,33 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4476f6cf99c77877",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/笔记内容.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8afe38f9bcc7c0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/idea/Obsidian 使用指北.md",
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -62,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/idea/Obsidian 使用指北.md",
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/idea/Obsidian 使用指北.md",
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/idea/Obsidian 使用指北.md"
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md"
               }
             }
           },
@@ -213,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/idea/Obsidian 使用指北.md",
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -264,8 +238,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8afe38f9bcc7c0c",
+  "active": "402ee904cbc0dd48",
   "lastOpenFiles": [
+    "Roval/dev/开发经验/Pasted image 20240108105223.png",
+    "Roval/dev/开发经验/Pasted image 20240108105208.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
     "Roval/idea/笔记内容.md",
     "Roval/idea/Obsidian 使用指北.md",
     "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
@@ -279,7 +256,6 @@
     "Roval/dev/杂/MDN.md",
     "Roval/dev/杂/工程化.md",
     "Roval/dev/杂/第三方包.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
     "Roval/Articals/好文推荐.md",
     "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
     "Roval/Articals/技术文章个人整理/本地数据缓存.md",
@@ -294,7 +270,6 @@
     "Roval/dev/网络/HTTP.md",
     "Roval/dev/动画/animation.md",
     "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/开发经验/video H5兼容适配.md",
     "Roval/dev/网络",
     "Roval/前端面经/Pasted image 20240103152239.png",
     "Roval/前端面经/collage.webp",
@@ -307,7 +282,6 @@
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111330.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
-    "Roval/dev/开发经验/Pasted image 20231212212146.png",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",

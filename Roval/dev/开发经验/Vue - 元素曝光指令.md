@@ -26,6 +26,64 @@ Last Modified：2023-11-23 16:53:39
 
 ## 实践
 
+### IntersectionObserver
+
+#### 兼容性
+
+![[Pasted image 20240108105223.png]]
+
+#### API
+
+```js
+let options = {
+    root: document.querySelector('#scrollArea'),
+    rootMargin: '0px',
+    threshold: 1.0
+}
+let callback =(entries, observer) => {
+  entries.forEach(entry => {});
+};
+let observer = new IntersectionObserver(callback, options);
+```
+
+接受两个参数：`callback` 是可见性变化时的回调函数，`option` 是配置对象（该参数可选），返回一个 `observer` 实例  
+
+##### `option`
+
+- root：指定根 (**root**) 元素，用于检查目标（**target**）的可见性。必须是目标元素的父级元素，如果未指定或者为 `null`，则默认为浏览器视窗；
+- rootMargin：根元素的 `margin`，类似于 `CSS` 中的 `margin` 属性，默认值为 `0`；
+- threshold：`target` 和 `root` 相交程度达到该值时 `callback` 函数将会被执行，可以是单一的 `Number` 也可以是 `Number` 数组，当为数组时每达到该值都会执行 `callback` 函数；  
+
+##### `callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver)`
+
+- 参数 `entries` 是一个数组，每个成员都是一个 `IntersectionObserverEntry` 对象；
+- 参数 `observer` 是被调用的 `IO` 实例；  
+
+`callback` 函数一般会被调用两次，一次是目标元素进入可视化区域，另一次是离开可视化区域，配置 `options.threshold` 会影响 `callback` 函数的调用次数
+
+##### `IntersectionObserverEntry`
+
+- `IntersectionObserverEntry.target`：需要观察的目标元素，是一个 DOM 节点对象；
+- `IntersectionObserverEntry.boundingClientRect`：返回**目标元素的边界信息**，边界的计算方式与 `Element.getBoundingClientRect()` 相同；
+- `IntersectionObserverEntry.intersectionRect` ：用来描述根和目标元素的**相交区域的信息**；
+- `IntersectionObserverEntry.intersectionRatio`：返回 `intersectionRect` 与 `boundingClientRect` 的比例值，**0 为完全不可见，1 为完全可见**；
+- `IntersectionObserverEntry.isIntersecting`：返回一个布尔值, 如果根与目标元素相交（即从不可视状态变为可视状态），则返回 `true`；如果返回 `false`, 变换是从可视状态到不可视状态；
+- `IntersectionObserverEntry.rootBounds` ：**根元素的区域信息**；
+- `IntersectionObserverEntry.time`：可见性状态发生改变时间的**时间戳**，单位为毫秒；
+
+##### `IO Instance Method`
+
+- `IntersectionObserver.observe()`： 使 `IO` 开始监听特定目标元素；
+- `IntersectionObserver.unobserve()`：使 `IO` 停止监听特定目标元素；
+- `IntersectionObserver.disconnect()`：使 `IO` 对象停止监听工作；
+- `IntersectionObserver.takeRecords()`：返回所有观察目标的 `IO` 对象数组；  
+
+### getBoundingClientRect
+
+![[Pasted image 20240108105208.png]]
+
+### 代码
+
 曝光检测兼容性代码：
 
 ```js
