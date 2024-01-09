@@ -41,7 +41,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationFrame.md",
+                "file": "Roval/dev/网络/HTTP.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c98e8873448667c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/网络/前端缓存.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationFrame.md",
+                "file": "Roval/dev/网络/前端缓存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationFrame.md",
+                "file": "Roval/dev/网络/前端缓存.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationFrame.md"
+                "file": "Roval/dev/网络/前端缓存.md"
               }
             }
           },
@@ -200,7 +213,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/动画/requestAnimationFrame.md",
+                "file": "Roval/dev/网络/前端缓存.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -245,21 +258,26 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "audio-recorder:Start/stop recording": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c34b31e202b558f",
+  "active": "c98e8873448667c0",
   "lastOpenFiles": [
+    "Roval/dev/网络/Pasted image 20240109135827.png",
+    "Roval/dev/网络/Pasted image 20240109135546.png",
+    "Roval/dev/网络/前端缓存.md",
+    "Roval/dev/网络/HTTP.md",
+    "Roval/前端面经/Front-End.md",
+    "Roval/dev/动画/requestAnimationFrame.md",
     "Roval/dev/动画/Lottie.md",
     "Roval/dev/杂/MDN.md",
     "Roval/dev/动画/Pixi.md",
     "Roval/dev/动画/Canvas.md",
     "Roval/dev/动画/animation.md",
     "Roval/dev/动画/GSAP.md",
-    "Roval/dev/动画/requestAnimationFrame.md",
     "Roval/dev/动画/SVG.md",
     "Roval/dev/动画/SVGA.md",
     "Roval/dev/动画/transition.md",
@@ -278,10 +296,6 @@
     "Roval/idea/template.md",
     "Roval/idea/科学上网指北.md",
     "Roval/dev/杂/技术博客与网站.md",
-    "Roval/dev/杂/工程化.md",
-    "Roval/dev/杂/第三方包.md",
-    "Roval/Articals/好文推荐.md",
-    "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
     "Roval/Project/性能优化/打包优化",
     "Roval/Project/性能优化",
     "Roval/dev/网络",
@@ -292,7 +306,6 @@
     "Roval/idea/似曾相识",
     "Roval/前端面经/Pasted image 20231219120537.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219111257.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
     "Roval/coder/plan",
