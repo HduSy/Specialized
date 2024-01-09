@@ -71,7 +71,8 @@ Last Modified：2023-11-28 16:54:25
 ```
 
 [codesandbox: requestAnimationFrame动画实践](https://codesandbox.io/p/sandbox/requestanimationframedong-hua-shi-jian-yhwrdr?file=%2Findex.html)  
-[HduSy/my-vite-app · GitHub · my-vite-app/src/components/BiliLottery/index.vue at main](https://github.com/HduSy/my-vite-app/blob/main/src/components/BiliLottery/index.vue)
+[my-vite-app/src/components/9Lottery/index.vue at main · HduSy/my-vite-app · GitHub](https://github.com/HduSy/my-vite-app/blob/main/src/components/9Lottery/index.vue) 9 宫格抽奖降速  
+[my-vite-app/src/components/MatchLottery.vue at main · HduSy/my-vite-app · GitHub](https://github.com/HduSy/my-vite-app/blob/main/src/components/MatchLottery.vue) 奖品轮播展示
 
 # Reference
 
