@@ -28,7 +28,13 @@ Last Modified：2022-12-17 21:18:02
 [Document - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document)  
 [EventTarget.addEventListener() - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)  
 [Window：requestAnimationFrame() 方法 - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/window/requestAnimationFrame)  
-[Document: visibilitychange event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event) 页面初始加载并不会执行 visibilitychange 回调  
+
+### [Document: visibilitychange event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event)
+
+> This event fires with a `visibilityState` of `hidden` when a user navigates to a new page, switches tabs, closes the tab, minimizes or closes the browser, or, on mobile, switches from the browser to a different app.  
+
+页面初始加载**并不会**执行 `visibilitychange` 回调。  
+
 [Element: scrollIntoView() method - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView) 滚动元素父容器使调用该方法的元素可见  
 [Canvas - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API) `Canvas`  
 [this - JavaScript | MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this) `this` 函数调用方式决定了 `this` 的值（运行时决定）  

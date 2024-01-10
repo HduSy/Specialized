@@ -8,61 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e564b515ad0eb2c3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/前端面经/宋垚面试准备.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "402ee904cbc0dd48",
+            "id": "77a11666f716861b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/动画/Canvas.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c34b31e202b558f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/网络/HTTP.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c98e8873448667c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/网络/前端缓存.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/网络/前端缓存.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/网络/前端缓存.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/网络/前端缓存.md"
+                "file": "Roval/dev/Git/Git 使用.md"
               }
             }
           },
@@ -213,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/网络/前端缓存.md",
+                "file": "Roval/dev/Git/Git 使用.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -258,24 +216,34 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "templater-obsidian:Templater": false,
       "audio-recorder:Start/stop recording": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c98e8873448667c0",
+  "active": "77a11666f716861b",
   "lastOpenFiles": [
+    "Roval/前端面经/宋垚面试准备.md",
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/前端面经/为什么要尽快找到工作.md",
+    "Roval/dev/动画/Canvas.md",
+    "Roval/dev/网络/HTTP.md",
+    "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
+    "Roval/dev/开发经验/front-end.md",
+    "Roval/dev/CSS/SASS 使用.md",
+    "Roval/dev/开发经验/video H5兼容适配.md",
+    "Roval/Project/性能优化/网络方面/缓存.md",
+    "Roval/Project/性能优化/网络方面",
+    "Roval/dev/杂/MDN.md",
+    "Roval/dev/杂/技术博客与网站.md",
+    "Roval/dev/网络/前端缓存.md",
     "Roval/dev/网络/Pasted image 20240109135827.png",
     "Roval/dev/网络/Pasted image 20240109135546.png",
-    "Roval/dev/网络/前端缓存.md",
-    "Roval/dev/网络/HTTP.md",
     "Roval/前端面经/Front-End.md",
     "Roval/dev/动画/requestAnimationFrame.md",
     "Roval/dev/动画/Lottie.md",
-    "Roval/dev/杂/MDN.md",
     "Roval/dev/动画/Pixi.md",
-    "Roval/dev/动画/Canvas.md",
     "Roval/dev/动画/animation.md",
     "Roval/dev/动画/GSAP.md",
     "Roval/dev/动画/SVG.md",
@@ -283,19 +251,11 @@
     "Roval/dev/动画/transition.md",
     "Roval/dev/动画/WebGL.md",
     "Roval/dev/动画/前端动画调研.md",
-    "Roval/前端面经/宋垚面试准备.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/dev/开发经验/Pasted image 20240108105223.png",
     "Roval/dev/开发经验/Pasted image 20240108105208.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章 权衡的艺术.md",
-    "Roval/idea/笔记内容.md",
-    "Roval/idea/Obsidian 使用指北.md",
-    "Roval/idea/似曾相识/当下的场景在过去仿佛出现过一幕.md",
     "Roval/idea/似曾相识/Pasted image 20231220112217.png",
-    "Roval/idea/笔记原子化.md",
-    "Roval/idea/template.md",
-    "Roval/idea/科学上网指北.md",
-    "Roval/dev/杂/技术博客与网站.md",
     "Roval/Project/性能优化/打包优化",
     "Roval/Project/性能优化",
     "Roval/dev/网络",
@@ -305,13 +265,11 @@
     "Roval/前端面经/面试点.png",
     "Roval/idea/似曾相识",
     "Roval/前端面经/Pasted image 20231219120537.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20231219112721.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
     "Roval/coder/plan",
     "Roval/coder/review",
     "Roval/coder/bugs",
-    "Roval/coder/docs",
     "Untitled.canvas"
   ]
 }

@@ -19,3 +19,5 @@ Last Modified：2024-01-07 20:04:31
 ## 压缩 JavaScript
 
 # Reference
+
+[打包方面优化 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/performance/webpack.html#%E5%8E%8B%E7%BC%A9-html-js-css)
