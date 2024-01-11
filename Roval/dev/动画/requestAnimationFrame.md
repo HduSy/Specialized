@@ -21,6 +21,7 @@ Last Modified：2023-11-28 16:54:25
 
 ## 应用案例
 
+- **节流**；
 - 赛事抽奖组件，奖品轮播图；
 - 中奖用户信息轮播展示；
 - 抽奖 9 宫格轮播动画速度控制；
@@ -67,12 +68,28 @@ Last Modified：2023-11-28 16:54:25
     </script>
   </body>
 </html>
-
 ```
 
 [codesandbox: requestAnimationFrame动画实践](https://codesandbox.io/p/sandbox/requestanimationframedong-hua-shi-jian-yhwrdr?file=%2Findex.html)  
 [my-vite-app/src/components/9Lottery/index.vue at main · HduSy/my-vite-app · GitHub](https://github.com/HduSy/my-vite-app/blob/main/src/components/9Lottery/index.vue) 9 宫格抽奖降速  
 [my-vite-app/src/components/MatchLottery.vue at main · HduSy/my-vite-app · GitHub](https://github.com/HduSy/my-vite-app/blob/main/src/components/MatchLottery.vue) 奖品轮播展示
+
+### 节流
+
+```js
+const current = ref(0)
+const containerScrollTop = () => {
+  let now = Date.now()
+  // 屏幕刷新频率大概率为60hz 16.6ms，保证渲染间隔在两次刷新周期之内
+  if(now - current.value > 30) {
+    console.log('computing!')
+    current.value = Date.now()
+    currentScollTop.value = containerRef.value?.scrollTop || containerRef.value?.scrollTop || 0
+    updateVisiableItems()
+  }
+  requestAnimationFrame(containerScrollTop)
+}
+```
 
 # Reference
 
