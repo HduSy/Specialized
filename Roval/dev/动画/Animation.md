@@ -17,7 +17,7 @@ Last Modified：2022-12-17 21:02:23
 
 ### 原生
 
-- `requestAnimationFrame`
+- [[requestAnimationFrame]]
 - `setTimeout/setInterval`
 - `canvas`
 - [[WebGL]]
