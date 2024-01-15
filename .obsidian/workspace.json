@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "00a07ad01cf5bed0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发经验/func.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/CSS/experience/双圆角TAB.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/CSS/experience/双圆角TAB.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/CSS/experience/双圆角TAB.md"
+                "file": "Roval/dev/开发经验/func.md"
               }
             }
           },
@@ -185,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/CSS/experience/双圆角TAB.md",
+                "file": "Roval/dev/开发经验/func.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,10 +249,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "84708c73561ed66b",
+  "active": "00a07ad01cf5bed0",
   "lastOpenFiles": [
-    "Roval/dev/CSS/experience/CSS 换行.md",
+    "Roval/dev/CSS/experience/文字描边.md",
     "Roval/dev/CSS/experience/双圆角TAB.md",
+    "Roval/dev/CSS/experience/CSS 换行.md",
     "Roval/dev/CSS/css.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
@@ -265,7 +279,6 @@
     "Roval/dev/网络/HTTP.md",
     "Roval/dev/开发经验/front-end.md",
     "Roval/dev/CSS/SASS 使用.md",
-    "Roval/dev/开发经验/video H5兼容适配.md",
     "Roval/Project/性能优化/网络方面",
     "Roval/dev/网络/Pasted image 20240109135827.png",
     "Roval/dev/网络/Pasted image 20240109135546.png",

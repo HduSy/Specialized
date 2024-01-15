@@ -128,3 +128,16 @@ export const wait = (time) => {
   });
 };
 ```
+
+## 判断是否为 Promise
+
+```ts
+function isPromise(obj: any):boolean {
+  if(!obj || typeof obj !== 'object' || typeof obj.then !== 'function') return false
+  if(Promise && Promise.resolve) {
+    return Promise.resolve(obj) === obj
+  } else {
+    return Object.prototype.toString.call(obj) === '[object Promise]'
+  }
+}
+```
