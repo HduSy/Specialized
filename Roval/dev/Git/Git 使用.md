@@ -213,6 +213,16 @@ git cherry-pick <commitHash>
 git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
 ```
 
+## 问题
+
+### fatal: refusing to merge unrelated histories
+
+操作的命令后加上该 CLI 参数
+
+```cmd
+--allow-unrelated-histories
+```
+
 # Reference
 
 [Git 命令简写](https://www.jianshu.com/p/660557b405dd)  

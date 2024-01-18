@@ -39,7 +39,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/开发经验/func.md",
+                "file": "Roval/dev/NPM/cheerio.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35304ceaac179413",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM/发包心得.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1cbf7e8f8223c49a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -113,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/func.md",
+                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/func.md",
+                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/func.md"
+                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md"
               }
             }
           },
@@ -198,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/func.md",
+                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,8 +275,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "00a07ad01cf5bed0",
+  "active": "1cbf7e8f8223c49a",
   "lastOpenFiles": [
+    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118135822.png",
+    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132959.png",
+    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132813.png",
+    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132213.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
+    "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
+    "Roval/Articals/书籍/《网络是怎样连接的》",
+    "README.md",
+    "Untitled",
+    "Roval/dev/NPM/发包心得.md",
+    "Roval/dev/NPM/cheerio.md",
+    "Roval/dev/NPM/qs.md",
+    "Roval/dev/杂/NPM.md",
+    "Roval/dev/浏览器/Chrome Dev-Tools 骚操作.md",
+    "Roval/dev/浏览器/cookie.md",
+    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+    "Roval/dev/开发经验/func.md",
+    "Roval/dev/JavaScript/Function.md",
+    "Roval/dev/Git/Git 使用.md",
     "Roval/dev/CSS/experience/文字描边.md",
     "Roval/dev/CSS/experience/双圆角TAB.md",
     "Roval/dev/CSS/experience/CSS 换行.md",
@@ -264,21 +309,7 @@
     "Roval/dev/JavaScript/事件处理.md",
     "Roval/dev/动画/requestAnimationFrame.md",
     "Roval/dev/动画/animation.md",
-    "Roval/dev/开发经验/长列表优化.md",
-    "Roval/前端面经/移动端适配方案.md",
-    "Roval/dev/开发经验/接口请求规范.md",
-    "Roval/Articals/书籍/《打开心智》/第一章 大脑的底层原理：心智模型四大支柱.md",
-    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/Articals/书籍/《打开心智》",
-    "Roval/dev/杂/MDN.md",
-    "Roval/dev/开发经验/前端尺寸.md",
-    "Roval/dev/Git/Git 使用.md",
-    "Roval/前端面经/宋垚面试准备.md",
-    "Roval/前端面经/为什么要尽快找到工作.md",
-    "Roval/dev/动画/Canvas.md",
-    "Roval/dev/网络/HTTP.md",
-    "Roval/dev/开发经验/front-end.md",
-    "Roval/dev/CSS/SASS 使用.md",
     "Roval/Project/性能优化/网络方面",
     "Roval/dev/网络/Pasted image 20240109135827.png",
     "Roval/dev/网络/Pasted image 20240109135546.png",
@@ -289,14 +320,9 @@
     "Roval/Project/性能优化",
     "Roval/dev/网络",
     "Roval/前端面经/Pasted image 20240103152239.png",
-    "Roval/前端面经/collage.webp",
-    "Roval/前端面经/collage.avif",
-    "Roval/前端面经/面试点.png",
     "Roval/idea/似曾相识",
     "Roval/Articals/书籍/《VueJS设计与实现》/第一章权衡的艺术",
     "Roval/Articals/书籍/《VueJS设计与实现》",
-    "Roval/coder/plan",
-    "Roval/coder/review",
     "Untitled.canvas"
   ]
 }
