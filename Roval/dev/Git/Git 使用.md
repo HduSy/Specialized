@@ -195,6 +195,18 @@ git merge --squash <分支名>
 git merge --no-ff <commitHash>
 ```
 
+## git remote
+
+本地仓库连接远程仓库
+
+### 步骤
+
+```bash
+git remote // 查看远程
+git remote rm origin // 先删除
+git remote add origin git@github.com:HduSy/xxx.git // 再添加
+```
+
 ## Git Cherry-pick
 
 ### 概念
