@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
+                "file": "Roval/dev/JavaScript/事件循环.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
+                "file": "Roval/dev/JavaScript/事件循环.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
+                "file": "Roval/dev/JavaScript/事件循环.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md"
+                "file": "Roval/dev/JavaScript/事件循环.md"
               }
             }
           },
@@ -211,7 +211,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
+                "file": "Roval/dev/JavaScript/事件循环.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -264,20 +264,28 @@
   },
   "active": "00a07ad01cf5bed0",
   "lastOpenFiles": [
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240122102129.png",
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240122101640.png",
+    "Roval/dev/JavaScript/Pasted image 20240122112636.png",
+    "Roval/dev/JavaScript/事件处理.md",
+    "Roval/dev/JavaScript/事件循环.md",
+    "Roval/dev/JavaScript/Pasted image 20230630213419.png",
+    "Roval/dev/JavaScript/Pasted image 20230213114327.png",
+    "Roval/dev/JavaScript/Pasted image 20230213145649.png",
+    "Roval/dev/JavaScript/Pasted image 20220307165656.png",
+    "Roval/dev/JavaScript/Pasted image 20220307165426.png",
+    "Roval/dev/NPM/Pasted image 20220211002140.png",
+    "Roval/dev/NPM/Pasted image 20220211003207.png",
+    "Roval/dev/NPM/Pasted image 20220228165322.png",
+    "Roval/dev/NPM/Pasted image 20220228165401.png",
+    "Roval/dev/NPM/Pasted image 20220228165758.png",
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/dev/DOM/DOM.md",
+    "Roval/dev/CSS/experience/CSS 换行.md",
+    "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240120144916.png",
     "Roval/dev/NPM/cheerio.md",
-    "Roval/dev/Git/Git 使用.md",
     "Roval/dev/NPM/发包心得.md",
-    "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118135822.png",
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132959.png",
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132813.png",
-    "Roval/Articals/书籍/《网络是怎样连接的》/Pasted image 20240118132213.png",
     "Roval/Articals/书籍/《网络是怎样连接的》",
     "README.md",
     "Untitled",
@@ -290,20 +298,12 @@
     "Roval/dev/JavaScript/Function.md",
     "Roval/dev/CSS/experience/文字描边.md",
     "Roval/dev/CSS/experience/双圆角TAB.md",
-    "Roval/dev/CSS/experience/CSS 换行.md",
     "Roval/dev/CSS/css.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
     "Roval/dev/CSS/坐标.md",
-    "Daily/2023-07-13.md",
-    "Roval/dev/CSS/Pasted image 20240111162814.png",
-    "Roval/dev/JavaScript/window.md",
-    "Roval/dev/JavaScript/事件处理.md",
     "Roval/Articals/书籍/《打开心智》",
     "Roval/Project/性能优化/网络方面",
-    "Roval/dev/网络/Pasted image 20240109135827.png",
-    "Roval/dev/网络/Pasted image 20240109135546.png",
-    "Roval/dev/开发经验/Pasted image 20240108105223.png",
     "Roval/Project/性能优化/打包优化",
     "Roval/Project/性能优化",
     "Roval/dev/网络",

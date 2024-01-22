@@ -71,6 +71,53 @@ export function getMetaContentByName(name) {
 元数据（MetaData），不会显示在页面，但是会被浏览器解析，常用于指定网页描述、关键词、作者、最后更新时间等。  
 [<meta>：元数据元素 - HTML（超文本标记语言） | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
+## 事件模型/事件机制/事件流
+
+### 什么是事件流
+
+`DOM` 树中的元素触发事件时，该事件就会在树的根节点与元素节点之间传递，经过的元素也会收到该事件，这种事件传递过程就叫**事件流**
+
+#### 三阶段
+
+- 捕获
+- 目标
+- 冒泡
+
+#### 3 种方式绑定事件
+
+- `DOM0` 级（`on + type`），只支持事件冒泡，缺点是每个元素只能被绑定一个回调；
+- `DOM2` 级（`addEventListener`），`IE6-8` 不兼容这个方法，在低版本的 `IE` 中需要使用 `attachEvent`；
+- 通过 `HTML` 属性，不建议，缺点视图与逻辑耦合在一起，减少可读性与可维护性，同时 `HTML` 文件变大；
+
+#### 事件委托
+
+事件代理是**利用事件冒泡机制**处理指定一个事件处理程序，来管理某一类型的所有事件，将同类元素的事件委托给父级或者更外级的元素，使用事件代理/委托后：
+
+- 不必为每个列表元素绑定事件，消耗内存；
+- 不必为动态添加/删除的元素重新绑定事件；
+- `event.target == event.currentTarget`，让触发事件的元素等于绑定事件的元素；
+
+```ad-info
+`event.target` 与 `event.currentTarget` 区别
+
+- `event.target` 返回**触发事件**的元素
+- `event.currentTarget` 返回**绑定事件**的元素，只有被点击的那个目标元素的 `event.target`才会等于 `event.currentTarget`
+```
+
+#### 一些方法
+
+`event.stopPropagation()`：阻止事件冒泡；  
+`event.preventDefault()`：阻止事件默认行为；
+
+#### Vue 中的事件修饰符
+
+- `.stop` 阻止事件冒泡
+- `.prevent` 阻止默认行为
+- `.once` 只触发一次
+- `.capture` 捕获阶段执行
+- `.passive`：告诉浏览器不要阻止默认行为
+- `.self` 只在元素本身触发
+
 # Reference
 
 [async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
