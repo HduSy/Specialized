@@ -66,12 +66,12 @@ Last Modified：2023-09-23 12:08:47
        /* Strict Type-Checking Options */
        // 严格模式将会打开下面的几个选项
        "strict": false, 
-       /* 不允许变量或函数参数具有隐式any类型,例如
+       /* 不允许变量或函数参数被隐式推断为any类型,例如
        function(name) {
            return name;
        } */
        "noImplicitAny": true,
-       // null类型检测,const teacher: string = null;会报错
+       // 明确处理null undefined类型检测,const teacher: string = null;会报错
        "strictNullChecks": true,
        // 对函数参数进行严格逆变比较
        "strictFunctionTypes": true,

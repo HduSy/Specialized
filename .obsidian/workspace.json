@@ -39,7 +39,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/事件循环.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fc63173108f772cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/Project/tsconfig.json.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -126,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/JavaScript/事件循环.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/JavaScript/事件循环.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/JavaScript/事件循环.md"
+                "file": "Roval/dev/JavaScript/TypeScript教学.md"
               }
             }
           },
@@ -211,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/JavaScript/事件循环.md",
+                "file": "Roval/dev/JavaScript/TypeScript教学.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,7 +247,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7229811807984659,
+                  "scale": 2.1210844057231877,
                   "close": true
                 }
               }
@@ -264,9 +277,12 @@
   },
   "active": "00a07ad01cf5bed0",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/type vs interface.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
+    "Roval/Project/tsconfig.json.md",
+    "Roval/dev/JavaScript/事件循环.md",
     "Roval/dev/JavaScript/Pasted image 20240122112636.png",
     "Roval/dev/JavaScript/事件处理.md",
-    "Roval/dev/JavaScript/事件循环.md",
     "Roval/dev/JavaScript/Pasted image 20230630213419.png",
     "Roval/dev/JavaScript/Pasted image 20230213114327.png",
     "Roval/dev/JavaScript/Pasted image 20230213145649.png",
@@ -276,7 +292,6 @@
     "Roval/dev/NPM/Pasted image 20220211003207.png",
     "Roval/dev/NPM/Pasted image 20220228165322.png",
     "Roval/dev/NPM/Pasted image 20220228165401.png",
-    "Roval/dev/NPM/Pasted image 20220228165758.png",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/DOM/DOM.md",
     "Roval/dev/CSS/experience/CSS 换行.md",
@@ -300,8 +315,6 @@
     "Roval/dev/CSS/experience/双圆角TAB.md",
     "Roval/dev/CSS/css.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
-    "Roval/Project/性能优化/打包优化/压缩 HTML-CSS-JavaScript.md",
-    "Roval/dev/CSS/坐标.md",
     "Roval/Articals/书籍/《打开心智》",
     "Roval/Project/性能优化/网络方面",
     "Roval/Project/性能优化/打包优化",

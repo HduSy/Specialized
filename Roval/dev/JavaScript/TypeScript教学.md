@@ -3,7 +3,7 @@ Last Modified：2022-12-26 12:45:48
 
 # Tags
 
-#TypeScript
+#TypeScript [[../../Project/tsconfig.json|tsconfig.json]]
 
 # Content
 
@@ -31,10 +31,11 @@ ts 是强类型静态类型的语言，js 是弱类型动态类型的语言。[[
 
 ## TS 能干点什么
 
-### 静态检查
+### 静态类型检查
 
-错误尽早在编译期检查出来，而非运行时或线上（不容易发现），只有影响程序正常使用时才会发现。  
-1、低级错误，如字符敲错、调用没有的属性或方法（属性、方法判断）；
+错误尽早在编译期检查出来，而非运行时或线上（不容易发现），只有影响程序正常使用时才会发现
+
+- 低级错误，如拼写错误、调用没有的属性或方法（属性、方法判断）；
 
 ```ts
 const peoples = [{
@@ -49,10 +50,9 @@ const sortedPeoples = peoples.sort((a, b) => a.name.localCompare(b.name));
 
 ```console
 error TS2339: Property 'localCompare' does not exist on type 'string'.
-
 ```
 
-2、非空判断，前端处理后端嵌套较深的接口，层层取值，不做空值判断的话，就是一颗随机炸弹；
+- 非空判断，前端处理后端嵌套较深的接口，层层取值，不做空值判断的话，就是一颗随机炸弹；
 
 ```ts
 let data = { list: null, success: true }; const value = data.list.length;
@@ -61,6 +61,12 @@ let data = { list: null, success: true }; const value = data.list.length;
 ```console
 error TS2532: Object is possibly 'null'.
 ```
+
+- 自动补全与快速修复
+
+### 非异常失败
+
+ECMA 规范明确了的异常之外的错误提示
 
 ### 面向对象编程增强
 
@@ -112,20 +118,189 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 ## TypeScript 入门
 
+### 基础
+
+#### 类型检查器
+
+#### tsc 编译器
+
+##### 显式类型（Explict Types）  
+
+显式指定类型，也叫类型注解，不总是需要注解类型，`ts` 某些情况会根据上下文类型，推断出类型
+
+##### 类型抹除（Erased Types）
+
+编译输出的 `js` 文件不再具有 `ts` 特有代码，如类型注解会被抹除，只剩下 `js` 代码
+
+##### 降级（Down Leveling）
+
+将高版本 ECMA 语法转为低版本语法的过程。默认 `ES3`，不过目前浏览器均已支持 `ES5`，设置 `target:"ES5"` 即可
+
+##### 严格模式（strict）
+
+#### 类型收窄（narrowing）
+
+沿着代码可能的执行路径，分析值在给定位置上的具体类型
+
+##### typeof 收窄
+
+类型保护
+
+##### 真值收窄
+
+`&&`、`||`、`!`
+
+```ts
+function printAll(strs: string | string[] | null) {
+  if (strs && typeof strs === "object") {
+    for (const s of strs) {
+      console.log(s);
+    }
+  } else if (typeof strs === "string") {
+    console.log(strs);
+  }
+}
+```
+
+##### 等值收窄
+
+`===`、`==`、`!==`、`!=`
+
+```ts
+function example(x: string|number, y:string|boolean) {
+	if(x ==== y) {
+		// x、y收窄为string
+		x.toUpperCase()
+		y.toUpperCase()
+	} else {
+		// x、y没有被收窄
+	}
+}
+```
+
+##### in 收窄
+
+```ts
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+type Human = { swim?: () => void; fly?: () => void };
+ 
+function move(animal: Fish | Bird | Human) {
+  if ("swim" in animal) {
+    animal; // (parameter) animal: Fish | Human
+  } else {
+    animal; // (parameter) animal: Bird | Human
+  }
+}
+```
+
+##### instanceof 收窄
+
+也是一种类型保护
+
+```ts
+function example(date: Date|string) {
+	if(date instanceof Date) {
+		console.log(date.toUTCString()) // date: Date
+	} else {
+		console.log(date.toUpperString()) // date: string
+	}
+}
+```
+
+##### 赋值语句收窄
+
+```ts
+let a = Math.random() > 0.5 ? 1 : false // a:number|boolean
+
+a = 2 // a:number
+```
+
+##### 控制流分析（基于 if 条件可达性）
+
 ### 数据类型
 
 #### number、string、boolean
 
 需要注意的是 `void` 与 `undefined&null` 区别，后者是任意类型的子类型，也就是说可以赋值给其他类型，`void` 的常用场景就是定义函数无返回值，声明一个变量为 `void` 类型没有多大意义，因为只能被赋值为 `undefined&null`
 
+##### 类型判断式
+
+`pet is Fish` 就是我们的类型判断式
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+// Both calls to 'swim' and 'fly' are now okay.
+let pet = getSmallPet();
+ 
+if (isFish(pet)) {
+  pet.swim(); // let pet: Fish
+} else {
+  pet.fly(); // let pet: Bird
+}
+```
+
+##### 可判断联合式
+
+```ts
+interface Circle {
+  kind: "circle";
+  radius: number;
+}
+ 
+interface Square {
+  kind: "square";
+  sideLength: number;
+}
+ 
+type Shape = Circle | Square;
+
+function getArea(shape: Shape) {
+  if (shape.kind === "circle") {
+    return Math.PI * shape.radius! ** 2 // shape: Circle
+  } else {
+	return shape.sideLength ** 2 // // shape: Square
+  }
+}
+```
+
+##### 穷尽检查
+
+任何除 `never` 类型以外的类型都不可赋值给 `never` 类型，可用作 `switch` 语句穷尽检查（确实穷尽时，报错）
+
+```ts
+interface Triangle {
+  kind: "triangle";
+  sideLength: number;
+}
+ 
+type Shape = Circle | Square | Triangle;
+ 
+function getArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius ** 2;
+    case "square":
+      return shape.sideLength ** 2;
+    default:
+      const _exhaustiveCheck: never = shape;
+      // Type 'Triangle' is not assignable to type 'never'.
+      return _exhaustiveCheck;
+  }
+}
+```
+
 #### any
 
-表示任意类型。
+表示任意类型
 
-- 声明变量时未指定类型，则为 any 类型
-- 可以在 any 类型上访问任意方法与属性
-- any 类型允许被任意类型的值赋值
-- 对 any 类型进行操作，其返回值仍为 any 类型，属性类型也都是 any 类型【属性污染】  
+- 声明变量时未指定类型，则为 `any` 类型
+- 可以在 `any` 类型上访问任意方法与属性
+- `any` 类型允许被任意类型的值赋值
+- 对 `any` 类型进行操作，其返回值仍为 `any` 类型，属性类型也都是 `any` 类型【属性污染】  
+
 不建议使用 any，会失去 ts 的意义。
 
 #### unknown
@@ -176,6 +351,35 @@ function print(str: string): never {
 let n: never
 const a: any = '1'
 n = a // no. Type 'any' is not assignable to type 'never'.
+```
+
+##### strictNullChecks 开启（建议
+
+如果一个值==可能是== `null` 或者 `undefined`，在用它的方法或者属性之前，**先检查这些值**，就像用可选的属性之前，先检查一下 是否是 `undefined
+
+```ts
+function doSomething(x: string | null) {
+  if (x === null) {
+    // do nothing
+  } else {
+    console.log("Hello, " + x.toUpperCase());
+  }
+}
+```
+
+##### strictNullChecks 关闭
+
+如果一个值==可能是== `null` 或者 `undefined` 依然可以被正确的访问，或者被赋值给任意类型的属性  
+
+##### 非空断言操作符!
+
+不做任何检查的情况下，从类型中移除 `null` 和 `undefined`，表示它的值不可能是 `null` 或者 `undefined`
+
+```ts
+function liveDangerously(x?: number | null) {
+  // No error
+  console.log(x!.toFixed());
+}
 ```
 
 #### 数组类型
@@ -298,9 +502,12 @@ function reverse(x: number | string): number | string | void {
 }
 ```
 
-#### enum
+- 返回值类型  
+也不总是需要手动注解，`ts` 会根据 `return` 语句自动推断
 
-用来定义常量。数值递增。
+#### 枚举类型
+
+会添加到语言和运行时。用来定义常量，数值递增
 
 ```ts
 enum EActInfoType {  
@@ -321,6 +528,14 @@ const 常量枚举，编译后的代码简洁。
 
 ```ts
 const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" }
+```
+
+#### 对象类型
+
+简单的列出对象的属性和对应的类型
+
+```ts
+{ x: string, y?:number }
 ```
 
 #### 类型推断
@@ -354,12 +569,19 @@ const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" 
 
 #### 联合类型 |
 
-表示一个变量支持多种类型。当 ts 不确定变量类型时，只能访问联合类型共有属性或方法。
+表示一个变量支持多种类型，`ts` 要求进行的操作只能是访问联合类型**共有的属性或方法**
 
 ```ts
 let num: number|string;
 num = 6
 num = '6'
+```
+
+**类型收窄**：`ts` 根据代码结构推断出一个更加具体的类型，如 `if` 条件中 `typeof`、`Array.isArray` 判断
+
+```ad-faq
+你可能很奇怪，为什么联合类型只能使用这些类型属性的交集？
+让我们举个例子，现在有两个房间，一个房间都是身高八尺戴帽子的人，另外一个房间则是会讲西班牙语戴帽子的人，合并这两个房间后，我们唯一知道的事情是：每一个人都戴着帽子
 ```
 
 #### 交叉类型 &
@@ -379,18 +601,72 @@ const C:B = {
 
 #### 类型别名 type
 
-类型起个别名，使得 ts 代码写起来简洁、清晰。[[type vs interface]]
+顾名思义，一个可以指代任意类型的名字。多次使用的类型起个别名方便使用，使得 `ts` 代码写起来简洁、清晰
 
-#### 类型断言
+```ts
+type Point = {
+	x: number;
+	y: number;
+}
+```
 
-值 as 类型
+#### 接口 interface
 
-#### 字面量类型
+命名对象类型的另一种方式
 
-定义一些常量，只能从已定义常量中取值
+```ts
+interface Point {
+	x: number;
+	y: number;
+}
+```
+
+与 `type` 区别，`type` 通过交叉类型 `&` 扩展，`interface` 通过 `extends` 扩展；`type` 本身无法添加新的属性 [[type vs interface]]
+
+#### 类型断言 as
+
+你知道明确的类型但 `ts` 不知道时，可手动推断为具体类型
+
+```ts
+// ts只知道这是个HTMLElement，手动告诉ts这是个HTMLCanvasElement
+const canvasEl = document.getElementById("myCanvas") as HTMLCanvasElement
+// 另种写法
+const canvasEl = <HTMLCanvasElement>document.getElementById('myCanvas')
+```
+
+```ad-warning
+因为类型断言会在编译的时候被移除，所以运行时并不会有类型断言的检查，即使类型断言是错误的，也不会有异常或者 `null` 产生
+```
+
+#### 字面量类型（Literal Types）
+
+定义一些常量，只能从已定义常量中取值，🉑结合联合类型
 
 ```ts
 type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
+```
+
+##### 字面量推断
+
+`req.method` 被推断为 `string` ，而不是 `"GET"`
+
+```ts
+declare function handleRequest(url: string, method: "GET" | "POST"): void;
+const req = { url: "https://example.com", method: "GET" };
+handleRequest(req.url, req.method);
+// Argument of type 'string' is not assignable to parameter of type '"GET" | "POST"'.
+```
+
+解决 1：添加类型断言改变推断结果
+
+```ts
+const req = { url: "https://example.com", method: "GET" as "GET" }
+```
+
+解决 2：使用 `as const` 把整个对象转为一个类型字面量：
+
+```ts
+const req = { url: "https://example.com", method: "GET" } as const
 ```
 
 #### 声明文件
@@ -401,6 +677,10 @@ type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
 #### 泛型
 
 定义函数、类、接口时不必预先指定类型，而是在使用时指定具体类型。 [泛型(generic) - TypeScript 中文手册](https://www.tsdev.cn/generics.html)
+
+```ad-note
+类型参数是用来关联多个值之间的类型。如果一个类型参数只在函数签名里出现了一次，那它就没有跟任何东西产生关联。
+```
 
 ##### 基本使用
 
@@ -421,7 +701,7 @@ function swap<T, U>(tuple: [T, U]):[U, T] {
 
 ###### 约束泛型
 
-泛型通过继承接口，可对泛型进行一定的约束，如，要求传入的类型一定要有 length 属性，否则报错
+泛型通过 `extends` 继承接口，可对泛型进行一定的约束，如，要求传入的类型一定要有 length 属性，否则报错
 
 ```ts
 interface ILength {
@@ -858,6 +1138,7 @@ const b = getValue(obj, 'b') // 传入对象无key时IDE报错
 
 # Reference
 
+[TypeScript中文文档\_入门进阶必备](https://ts.yayujs.com/)  
 [会写 TypeScript 但你真的会 TS 编译配置吗？ - 掘金](https://juejin.cn/post/7039583726375796749)  
 [接口interface](https://ts.xcatliu.com/advanced/class-and-interfaces.html#%E7%B1%BB%E5%AE%9E%E7%8E%B0%E6%8E%A5%E5%8F%A3)  
 [类型别名type](https://ts.xcatliu.com/advanced/type-aliases.html)  
