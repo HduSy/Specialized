@@ -142,9 +142,91 @@ myGenericNumber.add = function(x, y) { return x + y; };
 
 沿着代码可能的执行路径，分析值在给定位置上的具体类型
 
-##### typeof 收窄
+##### `typeof` 收窄
 
-类型保护
+也叫类型保护，在**类型上下文**（`type context`）中使用，用于获取一个变量或者属性的类型，和其他的类型操作符搭配使用才能发挥它的作用，使用示例：
+
+```ts
+type Predicate = (x: unknown) => boolean;
+type K = ReturnType<Predicate>;
+/// type K = boolean
+```
+
+直接传入函数名：
+
+```ts
+function f() {
+  return { x: 10, y: 3 };
+}
+type P = ReturnType<f>;
+
+// 'f' refers to a value, but is being used as a type here. Did you mean 'typeof f'?
+```
+
+因为值（`values`）和类型（`types`）并不是一种东西，解决：
+
+```ts
+function f() {
+  return { x: 10, y: 3 };
+}
+type P = ReturnType<typeof f>;
+                    
+// type P = {
+//    x: number;
+//    y: number;
+// }
+```
+
+```ad-tip
+在 `ts` 中，只有对**标识符（比如变量名）或者他们的属性**使用 `typeof` 才是合法的
+```
+
+```ts
+let shouldContinue: typeof msgbox("Are you sure you want to continue?"); // ❌
+// Meant to use = ReturnType<typeof msgbox> ✅
+```
+
+```ts
+/* 对象 */
+const person = { name: "kevin", age: "18" }
+type Kevin = typeof person;
+// type Kevin = {
+// 		name: string;
+// 		age: string;
+// }
+
+/*函数*/
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
+type result = typeof identity;
+// type result = <Type>(arg: Type) => Type
+
+/*enum类型*/
+enum UserResponse {
+  No = 0,
+  Yes = 1,
+}
+type result = typeof UserResponse;
+// result 类型类似于：
+// {
+//	"No": number,
+//  "YES": number
+// }
+
+// ok
+const a: result = {
+  "No": 2,
+  "Yes": 3
+}
+```
+
+`typeof` 通常还会搭配 `keyof` 操作符用于获取属性名的联合字符串
+
+```ts
+type result = keyof typeof UserResponse;
+// type result = "No" | "Yes"
+```
 
 ##### 真值收窄
 
@@ -194,7 +276,7 @@ function move(animal: Fish | Bird | Human) {
 }
 ```
 
-##### instanceof 收窄
+##### `instanceof` 收窄
 
 也是一种类型保护
 
@@ -292,7 +374,7 @@ function getArea(shape: Shape) {
 }
 ```
 
-#### any
+#### `any`
 
 表示任意类型
 
@@ -303,11 +385,11 @@ function getArea(shape: Shape) {
 
 不建议使用 any，会失去 ts 的意义。
 
-#### unknown
+#### `unknown`
 
 也表示任意类型，但是相比于 any 是类型安全的 ，定义为 unknown 类型的变量，不允许执行任意操作。  
 
-#### void
+#### `void`
 
 与 any 类型相反，表示无类型。
 
@@ -326,7 +408,7 @@ function add(a: number, b: number):void {
 }
 ```
 
-#### never
+#### `never`
 
 **永不** 存在值的类型，如抛出异常的函数、死循环。
 
@@ -343,7 +425,7 @@ function print(str: string): never {
 
 没有类型是 never 的子类型或可以赋值给 never（any 也不行，never 本身除外）
 
-#### undefined null
+#### `undefined` `null`
 
 `undefined`、`null`、`never` 均是任何类型的子类型，可以赋值给其他类型的值。
 
@@ -353,7 +435,7 @@ const a: any = '1'
 n = a // no. Type 'any' is not assignable to type 'never'.
 ```
 
-##### strictNullChecks 开启（建议
+##### `strictNullChecks` 开启（建议
 
 如果一个值==可能是== `null` 或者 `undefined`，在用它的方法或者属性之前，**先检查这些值**，就像用可选的属性之前，先检查一下 是否是 `undefined
 
@@ -367,7 +449,7 @@ function doSomething(x: string | null) {
 }
 ```
 
-##### strictNullChecks 关闭
+##### `strictNullChecks` 关闭
 
 如果一个值==可能是== `null` 或者 `undefined` 依然可以被正确的访问，或者被赋值给任意类型的属性  
 
@@ -410,20 +492,54 @@ function liveDangerously(x?: number | null) {
 - 越界访问、赋值不报错；
 - 调用数组方法，push 元素时，类型必须一致。
 
-#### 元组 tuple
+##### `ReadonlyArray<T>` 或 `readonly T[]`
+
+是一种特殊类型作为意图声明，明确告知数组内容不可更改
+
+```ts
+const arr: ReadonlyArray<number> = [1, 2, 3];
+// arr[0] = 0;
+// Index signature in type 'readonly number[]' only permits reading.
+arr.push(4);
+// Property 'push' does not exist on type 'readonly number[]'.
+```
+
+#### 元组类型
+
+明确知道数组包含多少个元素，并且每个位置元素的类型都明确知道的时候
 
 ##### 表示方法
 
 可以描述已知元素 **指定数量** 和 **指定类型** 的数组。
 
 ```ts
-const x: [number, string] = [1, '1']
+const arr: [number, string] = [1, '1']
+type Either2dOr3d = [number, number, number?] // 可选类型
+const brr:Either2dOr3d = [1, 2] // ok
 ```
+
+##### 支持剩余元素语法
+
+必须是 `array/tuple` 类型
+
+```ts
+type typea = [string, number, …boolean[]];
+type typeb = [string, number];
+const arr: typea = ['', 1, true];
+const crr: typea = ['', 1, true, true, true];
+const brr: typeb = ['', 1];
+console.log(arr.length); // (property) length: number 有剩余元素的元组不设length，因为不清楚还有多少元素呐
+console.log(brr.length); // (property) length: 2
+```
+
+##### 支持 `readonly`
+
+只读元组，大部分情况下，元组用来被创建，后续不会修改，声明为 `readonly` 是好的编程习惯
 
 ##### 特点
 
 - 越界访问、赋值报错；
-- 调用数组方法，push 一个 **已定义类型** 的元素时，不会报错。  
+- 调用数组方法，`push` 一个 **已定义类型** 的元素时，不会报错。  
 
 ```ts
 x.push(1) // ok
@@ -507,7 +623,7 @@ function reverse(x: number | string): number | string | void {
 
 #### 枚举类型
 
-会添加到语言和运行时。用来定义常量，数值递增
+`enum` 数据类型，在运行时会被编译成对象添加到语言。用来定义常量，数值递增
 
 ```ts
 enum EActInfoType {  
@@ -532,10 +648,102 @@ const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" 
 
 #### 对象类型
 
-简单的列出对象的属性和对应的类型
+简单的列出对象的属性和对应的类型来描述对象，三种方式：
 
 ```ts
-{ x: string, y?:number }
+// 匿名
+function greet(person: { name: string; age: number }) {
+  return "Hello " + person.name;
+}
+// interface
+interface Person {
+  name: string;
+  age: number;
+} 
+function greet(person: Person) {
+  return "Hello " + person.name;
+}
+// 类型别名
+type Person = {
+  name: string;
+  age: number;
+};
+function greet(person: Person) {
+  return "Hello " + person.name;
+}
+
+interface SomeType {
+  x?: number; // 可选类型
+  readonly prop: string; // 只读类型，属性本身只读，对于引用类型值来说地址不可变
+}
+```
+
+`ts` 在检查两个类型是否兼容的时候，并不会考虑两个类型里的属性是否是 `readonly`，这就意味着，`readonly` 的值是可以通过别名修改的。
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+}
+ 
+interface ReadonlyPerson {
+  readonly name: string;
+  readonly age: number;
+}
+ 
+let writablePerson: Person = {
+  name: "Person McPersonface",
+  age: 42,
+};
+ 
+// works，类型是兼容的
+let readonlyPerson: ReadonlyPerson = writablePerson;
+ 
+console.log(readonlyPerson.age); // prints '42'
+writablePerson.age++;
+console.log(readonlyPerson.age); // prints '43'
+```
+
+##### 索引签名
+
+不确定属性的名字，只知道属性的类型时使用。
+
+```ts
+interface StringArray {  
+  [index: number]: string;
+}
+// 表示当一个 StringArray 类型的值使用 number 类型的值进行索引的时候，会返回一个 string 类型的值
+```
+
+一个索引签名的属性类型必须是 `string` 或者是 `number`
+
+```ts
+interface ReadonlyStringArray {
+  readonly [index: number]: string|number;
+  ength: number; // ok, length is a number
+  name: string; // ok, name is a string
+}
+```
+
+##### 属性继承 `extends`
+
+^b3b2fb
+
+方便从其他声明过的类型中拷贝成员，并且随意添加新成员
+
+```ts
+interface Colorful {
+  color: string;
+}
+interface Circle {
+  radius: number;
+}
+// 同时继承多个类型
+interface ColorfulCircle extends Colorful, Circle {}
+const cc: ColorfulCircle = {
+  color: "red",
+  radius: 42,
+};
 ```
 
 #### 类型推断
@@ -567,7 +775,7 @@ const enum Direction { UP = "UP", DOWN = "DOWN", LEFT = "LEFT", RIGHT = "RIGHT" 
 
 ### 高级类型（一）
 
-#### 联合类型 |
+#### 联合类型 `|`
 
 表示一个变量支持多种类型，`ts` 要求进行的操作只能是访问联合类型**共有的属性或方法**
 
@@ -584,9 +792,9 @@ num = '6'
 让我们举个例子，现在有两个房间，一个房间都是身高八尺戴帽子的人，另外一个房间则是会讲西班牙语戴帽子的人，合并这两个房间后，我们唯一知道的事情是：每一个人都戴着帽子
 ```
 
-#### 交叉类型 &
+#### 交叉类型 `&`
 
-类似接口继承，实现对对象形状的组合和扩展。[[type vs interface]]
+类似接口继承，实现对对象形状的组合和扩展
 
 ```ts
 type A = {
@@ -599,9 +807,36 @@ const C:B = {
 }
 ```
 
-#### 类型别名 type
+##### 与接口继承的不同 [[#^b3b2fb]]
 
-顾名思义，一个可以指代任意类型的名字。多次使用的类型起个别名方便使用，使得 `ts` 代码写起来简洁、清晰
+最原则性的不同就是在于冲突怎么处理
+
+```ts
+interface Colorful {
+  color: string;
+}
+// 重写类型会导致编译错误
+interface ColorfulSub extends Colorful {
+  color: number
+}
+
+// Interface 'ColorfulSub' incorrectly extends interface 'Colorful'.
+// Types of property 'color' are incompatible.
+// Type 'number' is not assignable to type 'string'.
+
+// 不会报错
+type ColorfulSub = Colorful & {
+  color: number
+}
+// 最终color类型为never,取得是string和number的交集
+type ColorfulSub = {
+  color: never
+}
+```
+
+#### 类型别名 `type`
+
+顾名思义，一个可以指代任意类型的名字。多次使用的类型起个别名方便使用，使得 `ts` 代码写起来简洁、清晰 [[type vs interface]]
 
 ```ts
 type Point = {
@@ -610,7 +845,7 @@ type Point = {
 }
 ```
 
-#### 接口 interface
+#### 接口 `interface`
 
 命名对象类型的另一种方式
 
@@ -623,7 +858,7 @@ interface Point {
 
 与 `type` 区别，`type` 通过交叉类型 `&` 扩展，`interface` 通过 `extends` 扩展；`type` 本身无法添加新的属性 [[type vs interface]]
 
-#### 类型断言 as
+#### 类型断言 `as`
 
 你知道明确的类型但 `ts` 不知道时，可手动推断为具体类型
 
@@ -640,7 +875,7 @@ const canvasEl = <HTMLCanvasElement>document.getElementById('myCanvas')
 
 #### 字面量类型（Literal Types）
 
-定义一些常量，只能从已定义常量中取值，🉑结合联合类型
+定义一些常量，只能从已定义常量中取值，🉑结合联合类型发挥作用
 
 ```ts
 type ButtonSize = 'mini' | 'small' | 'normal' | 'large'
@@ -679,7 +914,7 @@ const req = { url: "https://example.com", method: "GET" } as const
 定义函数、类、接口时不必预先指定类型，而是在使用时指定具体类型。 [泛型(generic) - TypeScript 中文手册](https://www.tsdev.cn/generics.html)
 
 ```ad-note
-类型参数是用来关联多个值之间的类型。如果一个类型参数只在函数签名里出现了一次，那它就没有跟任何东西产生关联。
+可以把范型想象成一个实际类型的模板，`T` 就是一个占位符，可以被替代为具体的类型，重复利用这个模板
 ```
 
 ##### 基本使用
@@ -701,7 +936,7 @@ function swap<T, U>(tuple: [T, U]):[U, T] {
 
 ###### 约束泛型
 
-泛型通过 `extends` 继承接口，可对泛型进行一定的约束，如，要求传入的类型一定要有 length 属性，否则报错
+泛型通过 `extends` 继承接口，可对泛型进行一定的约束，如，要求传入的类型一定要有 `length` 属性，否则报错
 
 ```ts
 interface ILength {
@@ -761,21 +996,93 @@ const param2:IParam<number, string> = {key: 1, value: '1'}
 const param3: Array<number> = [1,2,3]
 ```
 
+###### 泛型帮助类型
+
+```ts
+type OrNull<Type> = Type | null;
+type OneOrMany<Type> = Type | Type[];
+type OneOrManyOrNull<Type> = OrNull<OneOrMany<Type>>; // 逐渐开始做体操
+type OneOrManyOrNull<Type> = OneOrMany<Type> | null
+type OneOrManyOrNullStrings = OneOrManyOrNull<string>;
+type OneOrManyOrNullStrings = OneOrMany<string> | null
+```
+
 ### 高级类型（二）
 
 #### 索引类型
 
-##### keyof
+##### `keyof`
 
-获取某种类型的所有键，返回类型是联合类型
+获取某种类型的所有键，返回类型是**字符串或者数字字面量的联合类型**
 
-##### T[K]
+```ts
+// 字符串
+type Point = { x: number; y: number };
+type P = keyof Point;
+// type P = "x" | "y"
 
-获取接口 T 的 K 属性代表的类型
+type Arrayish = { [n: number]: unknown };  
+type A = keyof Arrayish;  
+// type A = number
+
+type Mapish = { [k: string]: boolean };  
+type M = keyof Mapish;  
+// type M = string | number
+
+// 数字字面量
+const NumericObject = {
+  [1]: "冴羽一号",
+  [2]: "冴羽二号",
+  [3]: "冴羽三号"
+};
+type result = keyof typeof NumericObject
+// typeof NumbericObject 的结果为：
+// {
+//   1: string;
+//   2: string;
+//   3: string;
+// }
+// 所以最终的结果为：
+// type result = 1 | 2 | 3
+
+// symbol
+const sym1 = Symbol();
+const sym2 = Symbol();
+const sym3 = Symbol();
+const symbolToNumberMap = {
+  [sym1]: 1,
+  [sym2]: 2,
+  [sym3]: 3,
+};
+type KS = keyof typeof symbolToNumberMap; // typeof sym1 | typeof sym2 | typeof sym3
+
+// 类
+class Person {
+  name: "冴羽"
+}
+type result = keyof Person;
+// type result = "name"
+class Person {
+  [1]: string = "冴羽";
+}
+type result = keyof Person;
+// type result = 1
+
+// 接口
+interface Person {
+  name: "string";
+}
+type result = keyof Person;
+// type result = "name"
+```
+
+##### `T[K]`
+
+获取接口 `T` 的 `K` 属性代表的类型
 
 #### 映射类型
 
-##### in
+##### `in`
 
 遍历联合类型
 
@@ -792,7 +1099,7 @@ type Obj = {
 }
 ```
 
-##### Partial\<T\>
+##### `Partial<T>`
 
 将类型 T 的所有属性映射为可选
 
@@ -802,7 +1109,7 @@ type Partial<T> = {
 }
 ```
 
-##### Readonly\<T\>
+##### `Readonly<T>`
 
 将类型 T 的所有属性映射为只读
 
@@ -812,7 +1119,7 @@ type Readonly<T> = {
 }
 ```
 
-##### Pick<T, K>
+##### `Pick<T, K>`
 
 从类型 T 中挑选属性 K 组成新的类型。第一个参数为目标类型，第二个参数必须取自目标类型属性字面量联合类型。
 
@@ -822,7 +1129,7 @@ type Pick<T, K extends keyof T> = {
 }
 ```
 
-##### Record<K, T>
+##### `Record<K, T>`
 
 创建一个新的类型
 
@@ -839,7 +1146,7 @@ T extends U ? X : Y
 //若类型 T 可被赋值给类型 U,那么结果类型就是 X 类型,否则就是 Y 类型
 ```
 
-##### Exclude<T, U>
+##### `Exclude<T, U>`
 
 联合类型 T 中剔除联合类型 U 剩下的部分
 
@@ -856,7 +1163,7 @@ type Exclude<T, U> = T extends U ? never : T
 
 never 与其他类型联合结果为其他类型
 
-##### Extract<T, U>
+##### `Extract<T, U>`
 
 提取联合类型 T 与联合类型 U 交集
 
@@ -871,7 +1178,7 @@ type Test = Extract<'key1' | 'key2', 'key1'>
 type Extract<T, U> = T extends U ? T : never
 ```
 
-##### Omit<T, U>
+##### `Omit<T, U>`
 
 从类型 T 中剔除类型 U 中的所有属性
 
@@ -884,7 +1191,7 @@ type TT = Omit<IPer, 'name'>
 // type TT = {age: number;}
 ```
 
-##### NonNullable\<T\>
+##### `NonNullable<T>`
 
 过滤类型 T 中的 null、undefined 类型
 
@@ -892,7 +1199,7 @@ type TT = Omit<IPer, 'name'>
 type NonNullable<T> = T extends null | undefined ? never : T
 ```
 
-##### Parameters\<T\>
+##### `Parameters<T>`
 
 获取函数参数类型，T 为函数类型
 
@@ -902,13 +1209,17 @@ type T3 = Parameters<(arg1: string, arg2: number) => void> // [arg1: string, arg
 const p: T3 = ['', 0]
 ```
 
-##### ReturnType\<T\>
+##### `ReturnType<T>`
 
 获取函数返回值类型，T 为函数类型
 
 ```ts
 type T1 = ReturnType<(s: string) => void> // void
 ```
+
+##### `InstanceType<T>`
+
+用于构造一个由所有 `T` 的构造函数的实例类型组成的类型。
 
 ### 类型体操
 
@@ -920,7 +1231,7 @@ ts 高级类型会根据传入的类型参数如 T、U 得出新的类型，这�
 
 定义类型
 
-#### *.d.ts
+#### `*.d.ts`
 
 将声明集中存放在\*.d.ts 文件中构成声明文件，项目中其余 .ts 文件都可以获得类型定义了。
 
