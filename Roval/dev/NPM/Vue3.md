@@ -79,6 +79,50 @@ Last Modified：2022-12-17 22:26:40
 
 ### 响应式基础
 
+#### Vue2 VS Vue3
+
+##### Vue2
+
+`Object.defineProperty` API 的 `getter/setter` 来实现数据的响应性
+
+```js
+// 声明一个响应式数据
+const vm = {}
+Object.defineProperty(vm, 'text', {
+	set(value) {
+	  document.querySelector('#input').value = value
+	  document.querySelector('#output').innerText = value
+	},
+})
+```
+
+不足：
+
+- 利用数组下标修改数组是非响应的，如 `arr[i] = newValue`；
+- 通过 `length` 修改数组长度是非响应的，如 `arr.length = 10`；
+- 无法侦听对象属性的添加或删除，因为 `Vue` 会在初始化实例时对 `property` 执行 ` getter/setter` 转化，所以 `property` 必须在 `data` 对象上存在才能让 Vue 将它转换为响应式的；—— 用 `Vue.set API` 设置
+- 使用 `Object.assign()` 等方法给对象添加新属性时，也不会触发更新；—— 用 `Object.assign()` 创建新对象
+- 。。。  
+
+[检测变化的注意事项 — Vue.js](https://v2.cn.vuejs.org/v2/guide/reactivity.html#%E6%A3%80%E6%B5%8B%E5%8F%98%E5%8C%96%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+
+##### Vue3
+
+`Proxy`API 的 `getter/setter` 来实现数据的响应性
+
+```js
+// 声明一个响应式数据
+  const vm = new Proxy(
+	{},
+	{
+	  set(obj, key, value) {
+		document.querySelector('#input').value = value
+		document.querySelector('#output').innerText = value
+	  },
+	}
+  )
+```
+
 #### 声明响应状态
 
 ##### ref
