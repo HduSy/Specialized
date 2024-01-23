@@ -29,6 +29,132 @@ Last Modified：2022-12-17 22:26:40
 
 ## 快速上手
 
+### 单文件组件 SFC
+
+#### 响应式 API 之 `ref`
+
+```ts
+// `ref` API 的 TS 类型
+function ref<T>(value: T): Ref<UnwrapRef<T>>
+
+// `ref` API 的返回值的 TS 类型
+interface Ref<T> {
+  value: T
+}
+```
+
+适用于任何类型，切记必须通过 `.value` 访问，赋值、重置都不会影响其响应性
+
+#### 响应式 API 之 `reactive`
+
+只适合数组、对象
+
+```ts
+function reactive<T extends object>(target: T): UnwrapNestedRefs<T>
+```
+
+特别注意数组操作时：
+
+- 改变引用地址的操作，会使数据失去响应性；
+- `ES6解构` 得到的变量会失去响应性；
+
+```ts
+const userInfo = reactive({ id: 1, name: 'Petter', }) // reactive声明的响应式数据ES6解构后得到的变量失去了响应性
+// newUserInfo 非响应性
+const newUserInfo: Member = { ...userInfo }
+// name 非响应性
+const { name } = userInfo
+```
+
+#### 响应式 API 之 `toRef`
+
+转换后将得到新的变量，并且新、旧变量保持同步更新
+
+```ts
+// `toRef` API 的 TS 类型
+function toRef<T extends object, K extends keyof T>(
+  object: T,
+  key: K,
+  defaultValue?: T[K]
+): ToRef<T[K]>
+
+// `toRef` API 的返回值的 TS 类型
+type ToRef<T> = T extends Ref ? T : Ref<T>
+```
+
+第一个参数为 `reactive` 对象；第二个参数为要转换的 `key`；第三个参数可选，为默认值设置，只设置 `Ref` 变量；
+
+```ts
+interface Member {
+  id: number
+  name: string
+  // 类型上新增一个属性，因为是可选的，因此默认值会是 `undefined`
+  age?: number
+}
+
+// 声明变量时省略 `age` 属性
+const userInfo: Member = reactive({
+  id: 1,
+  name: 'Petter',
+})
+
+// 此时为了避免程序运行错误，可以指定一个初始值
+// 但初始值仅对 Ref 变量有效，不会影响 Reactive 字段的值
+const age = toRef(userInfo, 'age', 18)
+console.log(age.value)  // 18
+console.log(userInfo.age) // undefined
+
+// 除非重新赋值，才会使两者同时更新
+age.value = 25
+console.log(age.value)  // 25
+console.log(userInfo.age) // 25
+```
+
+```ad-tip
+不建议用`toRef`转换一个原对象上不存在的`key`，因为通不过`ts`的类型校验，虽可以`any`类型蒙混过关，但不建议
+```
+
+#### 响应式 API 之 `toRefs`
+
+每个字段都变成了 `Ref` 响应式变量，解构使用时仍具有响应性。不同于直接解构 `reactive` 得到失去响应性的普通变量
+
+```ts
+function toRefs<T extends object>(
+  object: T
+): {
+  [K in keyof T]: ToRef<T[K]>
+}
+
+type ToRef = T extends Ref ? T : Ref<T>
+```
+
+只接收一个参数，一个 `reactive` 对象
+
+```ts
+import { Ref, reactive, toRefs } from "vue";
+
+interface Member {
+  id: number;
+  name: string;
+}
+
+const userInfo: Member = reactive({
+  id: 0,
+  name: 'st'
+})
+
+const userInfoRefs = toRefs(userInfo)
+// 类型变为 ToRefs<Member>
+// interface Member {
+//   id: Ref<number>;
+//   name: Ref<string>;
+// }
+```
+
+#### `toRef` `toRefs` 解决的问题
+
+既避免了 `script` 里必须使用 `.value` 操作值，也避免了 `template` 里 `obj.x` 的繁琐
+
 ## 基础
 
 ### 创建一个应用
@@ -50,6 +176,57 @@ Last Modified：2022-12-17 22:26:40
 
 #### 指令
 
+```ts
+// 对象式写法的 TS 类型
+export declare interface ObjectDirective<T = any, V = any> {
+  created?: DirectiveHook<T, null, V>
+  beforeMount?: DirectiveHook<T, null, V>
+  mounted?: DirectiveHook<T, null, V>
+  beforeUpdate?: DirectiveHook<T, VNode<any, T>, V>
+  updated?: DirectiveHook<T, VNode<any, T>, V>
+  beforeUnmount?: DirectiveHook<T, null, V>
+  unmounted?: DirectiveHook<T, null, V>
+  getSSRProps?: SSRDirectiveHook
+  deep?: boolean
+}
+// 函数式写法的 TS 类型
+export declare type DirectiveHook<
+  T = any,
+  Prev = VNode<any, T> | null,
+  V = any
+> = (
+  el: T, // 指令绑定的 DOM 元素
+  binding: DirectiveBinding<V>, // 绑定信息
+  vnode: VNode<any, T>, // el 对应在Vue里的虚拟节点信息
+  prevVNode: Prev // Update 时的上一个虚拟节点信息，仅在beforeUpdate和updated可用
+) => void
+// 钩子函数第二个参数的 TS 类型
+export declare interface DirectiveBinding<V = any> {
+  instance: ComponentPublicInstance | null
+  value: V
+  oldValue: V | null
+  arg?: string
+  modifiers: DirectiveModifiers
+  dir: ObjectDirective<any, V>
+}
+export declare type FunctionDirective<T = any, V = any> = DirectiveHook<
+  T,
+  any,
+  V
+>
+```
+
+`binding`：
+
+|属性|作用|
+|---|---|
+|value|传递给指令的值，例如 `v-foo="bar"` 里的 `bar` ，支持任意有效的 JS 表达式|
+|oldValue|指令的上一个值，仅对 `beforeUpdate` 和 `updated` 可用|
+|arg|传给指令的参数，例如 `v-foo:bar` 里的 `bar`|
+|modifiers|传给指令的修饰符，例如 `v-foo.bar` 里的 `bar`|
+|instance|使用指令的组件实例|
+|dir|指令定义的对象（就是上面的 `const myDirective = { /* … */ }` 这个对象）|  
+
 ![[Pasted image 20231109224050.png]]
 
 `v-attribute`：指令的任务是其表达式发生变化时更新 `DOM`  
@@ -61,19 +238,33 @@ Last Modified：2022-12-17 22:26:40
 `v-on` 简写 `@`  
 `v-slot`
 
-##### 参数类型
+##### 指令声明周期与 `deep` 选项
+
+|钩子函数|调用时机|
+|---|---|
+|created|在绑定元素的 attribute 或事件侦听器被应用之前调用|
+|beforeMount|当指令第一次绑定到元素并且在挂载父组件之前调用|
+|mounted|在绑定元素的父组件被挂载后调用|
+|beforeUpdate|在更新包含组件的 VNode 之前调用|
+|updated|在包含组件的 VNode 及其子组件的 VNode 更新后调用|
+|beforeUnmount|在卸载绑定元素的父组件之前调用|
+|unmounted|当指令与元素解除绑定且父组件已卸载时，只调用一次|
+
+嵌套对象在嵌套属性更新的时候想触发 `beforeUpdate` 和 `updated` 钩子，那么需要将这个指令选项 `deep:true`， 才能执行到这两个指令生命周期函数
+
+##### 指令参数类型
 
 元素属性：`<a :href="url"> … </a>` 表达式 `url` 的值绑定到元素的 `href` 属性上；  
 事件名称：`<a @click="doSomething"> … </a>` 将 `click` 事件绑定到元素上
 
-##### 参数也可以是动态的
+##### 指令动态参数
 
 `<a :[attributeName]="attributeName"> … </a>`  
 `<a @[eventName]="eventName"> … </a>`  
 
 动态参数**值限制**为字符串或 `null`，后者时表示移除绑定
 
-##### 修饰符
+##### 指令修饰符
 
 告诉指令以特殊方式绑定，`.prevent`
 
@@ -229,7 +420,19 @@ const arrSum = computed(() => {
 // arrSum 为 ref 响应性值
 ```
 
-基于响应式依赖更新
+特性：只基于响应式依赖更新，修改值须另外定义 `set`  
+也可以接收一个对象，分别传入 `getter、setter` 函数
+
+```ts
+const first = computed({
+  get() {
+    return `My firstname is ${firstname.value}`
+  },
+  set(newValue: string) {
+    firstname.value = newValue
+  }
+})
+```
 
 ### 条件渲染
 
@@ -288,14 +491,66 @@ const arrSum = computed(() => {
 
 #### 组件 v-model
 
-### 侦听器 watch & watchEffect
+### `watch` & `watchEffect` 侦听器
 
-#### watch
+惰性的，默认初始化时不执行回调，有需要的话配置 `immediate: true`
 
-第一个参数为侦听的依赖，第二个参数为回调，第三个参数为配置对象，支持配置**深层侦听与及时回调** `deep、immediate、flush`  
-接受参数 `ref、getter func、以及前两者组成的数组` [组合式API之watch](https://cn.vuejs.org/api/reactivity-core.html#watch)
+#### `watch(source, callback, options)`
+
+```ts
+// watch 第 1 个入参的 TS 类型
+export declare type WatchSource<T = any> = Ref<T> | ComputedRef<T> | (() => T)
+// watch 第 2 个入参的 TS 类型
+export declare type WatchCallback<V = any, OV = any> = (
+  value: V, // 新值
+  oldValue: OV, // 旧值
+  onCleanup: OnCleanup // 清理函数
+) => any
+// 基础使用
+export declare function watch<T, Immediate extends Readonly<boolean> = false>(
+  source: WatchSource<T>,
+  cb: WatchCallback<T, Immediate extends true ? T | undefined : T>,
+  options?: WatchOptions<Immediate>
+): WatchStopHandle
+
+// 批量监听
+export declare function watch<
+  T extends MultiWatchSources,
+  Immediate extends Readonly<boolean> = false
+>(
+  sources: [...T],
+  cb: WatchCallback<MapSources<T, false>, MapSources<T, Immediate>>,
+  options?: WatchOptions<Immediate>
+): WatchStopHandle
+// MultiWatchSources 是一个数组
+declare type MultiWatchSources = (WatchSource<unknown> | object)[]
+// …
+```
+
+第一个参数为侦听的数据源，第二个参数为侦听到变化后要执行的回调函数，第三个参数为侦听选项，支持配置深层侦听与及时回调 `deep、immediate、flush`；返回**停止侦听的函数**（`immediate:true` 时，无法在第一次回调时取消该数据源的侦听）
+
+|选项|类型|默认值|可选值|作用|
+|---|---|---|---|---|
+|deep|boolean|false|true \| false|是否进行深度侦听|
+|immediate|boolean|false|true \| false|是否立即执行侦听回调|
+|flush|string|'pre'|'pre' \| 'post' \| 'sync'|控制侦听回调的调用时机|
+|onTrack|(e) => void|||（仅开发模式下）在数据源被追踪时调用 |
+|onTrigger|(e) => void|||（仅开发模式下）在侦听回调被触发时调用 |
+
+```ad-tip
+`deep` 默认是 `false` ，但是在侦听 `reactive` 对象或数组时，会默认为 `true`，且无法通过配置修改为 `false`。`watch API` 源码中通过`isReactive`判断是否是`reactive`数据
+```
+
+|可选值|回调的调用时机|使用场景|
+|---|---|---|
+|'pre'|将在渲染前被调用|允许回调在模板运行前更新了其他值|
+|'sync'|在渲染时被同步调用|目前来说没什么好处，可以了解但不建议用…|
+|'post'|被推迟到渲染之后调用|如果要通过 ref 操作 DOM 元素与子组件 ，需要使用这个值来启用该选项，以达到预期的执行效果 |  
+
+数据源要求： `响应式API定义的响应式变量Ref<T>、ComputedRef<T>、() => T` [组合式API之watch](https://cn.vuejs.org/api/reactivity-core.html#watch)
 
 ```js
+// 基础使用
 const x = ref(0)
 const y = ref(0)
 // 单个 ref
@@ -315,9 +570,75 @@ watch([x, () => y.value], ([newX, newY]) => {
 })
 ```
 
-#### watchEffect
+```ts
+// 批量侦听
+import { defineComponent, ref, watch } from 'vue'
 
-当侦听器的源与回调中使用的值是同一个时，可通过 `watchEffect` 简化写法
+export default defineComponent({
+  setup() {
+    // 定义多个数据源
+    const message = ref<string>('')
+    const index = ref<number>(0)
+
+    // 2s后改变数据
+    setTimeout(() => {
+      message.value = 'Hello World!'
+      index.value++
+    }, 2000)
+
+    watch(
+      // 数据源改成了数组
+      [message, index],
+      // 回调的入参也变成了数组，每个数组里面的顺序和数据源数组排序一致
+      ([newMessage, newIndex], [oldMessage, oldIndex]) => {
+        console.log('message 的变化', { newMessage, oldMessage })
+        console.log('index 的变化', { newIndex, oldIndex })
+      }
+    )
+  },
+})
+```
+
+手动调用清理函数的情况：
+
+- watcher 即将重新运行的时候
+- watcher 被停止（组件被卸载或者被手动停止）
+
+```ts
+let unwatch: WatchStopHandle
+unwatch = watch(
+  message,
+  (newValue, oldValue, onCleanup) => {
+    // 需要在停止侦听之前注册好清理行为
+    onCleanup(() => {
+      console.log('侦听清理ing')
+      // 根据实际的业务情况定义一些清理操作 …
+    })
+    // 然后再停止侦听
+    if (typeof unwatch === 'function') {
+      unwatch()
+    }
+  },
+  {
+    immediate: true,
+  }
+)
+```
+
+#### `watchEffect(effect, options)`
+
+```ts
+// …
+export declare type WatchEffect = (onCleanup: OnCleanup) => void
+
+export declare function watchEffect(
+  effect: WatchEffect, // 副作用回调
+  options?: WatchOptionsBase
+): WatchStopHandle
+// …
+```
+
+`watch` 一定程度上通过 `watchEffect` 简化：
 
 ```js
 const todoId = ref(1)
@@ -329,13 +650,9 @@ watch(todoId, async () => {
   )
   data.value = await response.json()
 }, { immediate: true })
-```
 
-简化为
-
-```js
 // 会立即执行
-watchEffect(async () => {
+watchEffect(todoId, async () => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/todos/${todoId.value}`
   )
@@ -345,23 +662,18 @@ watchEffect(async () => {
 
 #### 区别
 
-追踪响应式依赖的方式：
-
-- `watch` 只追踪**明确指定**侦听的数据源，它不会追踪任何在回调中访问到的东西，仅支持**单个依赖项**
-- `watchEffect` 同步执行过程中自动追踪**所有访问**到的响应式属性，支持**多个依赖项、嵌套结构中属性**
-
-#### 回调触发时机
-
-组件更新之前
+- `watch` 回调有 `NewValue` 和 `OldValue`，`watchEffect` 拿不到旧值；
+- `watch` 默认属性改变时才执行回调，`watchEffect` 则默认会执行一次；
+- `watchEffect` 不支持 `deep` 和 `immediate` 选项；
 
 #### 侦听器的停止
 
-建议同步创建，会自动停止；  
+建议同步创建，组件卸载时，会自动停止侦听（`unwatch`）；  
 异步创建的，需手动调用，`unwatch`（创建后的一个返回值）
 
 ```js
 const unwatch = watchEffect(() => {})
-// …当该侦听器不再需要时
+// 当该侦听器不再需要时
 unwatch()
 ```
 
@@ -477,7 +789,56 @@ function submitForm(email, password) {
 </script>
 ```
 
-#### slot 组件插槽
+#### 组件插槽
+
+##### 具名插槽
+
+```html
+<template>
+  <!-- 显示标题的插槽内容 -->
+  <div class="title">
+    <slot name="title" />
+  </div>
+
+  <!-- 显示作者的插槽内容 -->
+  <div class="author">
+    <slot name="author" />
+  </div>
+
+  <!-- 其他插槽内容放到这里 -->
+  <div class="content">
+    <slot />
+  </div>
+</template>
+```
+
+使用：
+
+```html
+<template>
+  <Child>
+    <!-- 传给标题插槽 -->
+    <template #title>
+      <h1>这是标题</h1>
+    </template>
+
+    <!-- 传给作者插槽 -->
+    <template v-slot:author>
+      <h1>这是作者信息</h1>
+    </template>
+
+    <!-- 传给默认插槽 -->
+    <p>这是插槽内容</p>
+  </Child>
+</template>
+```
+
+```ad-tip
+有一条规则需要记住：
+
+- 父组件里的所有内容都是在父级作用域中编译的
+- 子组件里的所有内容都是在子作用域中编译的
+```
 
 #### 动态组件 component
 

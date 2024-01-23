@@ -114,5 +114,6 @@ const router = createRouter({
 
 # Reference
 
+[路由的使用 | Vue3 入门指南与实战案例](https://vue3.chengpeiquan.com/router.html)  
 [Vue Router | Vue.js 的官方路由](https://router.vuejs.org/zh/)  
 [＜router-view :key=“key“/＞中key的作用 - CodeAntenna](https://codeantenna.com/a/U6lnGWo9ur)  
