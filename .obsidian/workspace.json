@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/Git/Git 使用.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,51 @@
             }
           },
           {
-            "id": "16fdf0feb93e19b0",
+            "id": "1dd2acf143b09883",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
+                "file": "Roval/dev/NPM/Vue-Router.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a831b9ff1e8d880e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM/BlobJS.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1aa3bebb2832ea48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM/Vuex.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1536f3c9f013e97a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/NPM/Vue3.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -100,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
+                "file": "Roval/dev/NPM/Vue3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
+                "file": "Roval/dev/NPM/Vue3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md"
+                "file": "Roval/dev/NPM/Vue3.md"
               }
             }
           },
@@ -185,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
+                "file": "Roval/dev/NPM/Vue3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,14 +275,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "16fdf0feb93e19b0",
+  "active": "1536f3c9f013e97a",
   "lastOpenFiles": [
+    "Roval/dev/NPM/Pinia.md",
+    "Roval/dev/NPM/Vuex.md",
+    "Roval/dev/NPM/BlobJS.md",
+    "Roval/dev/NPM/Vue3.md",
+    "Roval/dev/NPM/Vue-Router.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240124102159.png",
     "Roval/dev/Git/Git 使用.md",
-    "Roval/dev/NPM/Vue-Router.md",
-    "Roval/dev/NPM/Vue3.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240124102159.png",
     "Roval/dev/CSS/experience/CSS 换行.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141823.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141622.png",
@@ -273,8 +315,6 @@
     "Roval/dev/浏览器/Chrome Dev-Tools 骚操作.md",
     "Roval/dev/浏览器/cookie.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-    "Roval/dev/开发经验/func.md",
-    "Roval/dev/JavaScript/Function.md",
     "Roval/Articals/书籍/《打开心智》",
     "Roval/Project/性能优化/网络方面",
     "Roval/Project/性能优化/打包优化",

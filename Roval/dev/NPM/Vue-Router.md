@@ -103,23 +103,78 @@ Last Modified：2023-11-07 08:23:23
 
 ## 进阶
 
+```ad-tip
+只有从不同的路由切换进来，才会触发该钩子
+```
+
 ### 导航守卫
 
-#### 全局前置守卫
+#### 全局钩子
 
-`beforeEach` 返回值如下：  
-`false`：取消导航；  
-路由地址：跳转到另一个路由
+| 可用钩子 | 含义 | 触发时机 |
+| ---- | ---- | ---- |
+| beforeEach | 全局前置守卫 | 在路由跳转前触发 |
+| beforeResolve | 全局解析守卫 | 在导航被确认前，同时在组件内守卫和异步路由组件被解析后 |
+| afterEach | 全局后置守卫 | 在路由跳转完成后触发 |
+| beforeEnter | **路由独享**前置守卫 | 在路由跳转前触发 |
+
+#### 组件内钩子
+
+##### onBeforeRouteUpdate
+
+当前路由改变，但是该组件被复用时，重新调用里面的一些函数用来更新模板数据的渲染
+
+##### onBeforeRouteLeave
+
+离开当前路由之前，实现一些离开前的判断拦截  
+
+|可用钩子|含义|触发时机|
+|---|---|---|
+|onBeforeRouteUpdate|组件内的更新守卫|在当前路由改变，但是该组件被复用时调用|
+|onBeforeRouteLeave|组件内的离开守卫|导航离开该组件的对应路由时调用|
 
 ### 组合式 API
 
 #### useRoute、useRouter
 
-#### onBeforeRouteLeave、onBeforeRouteUpdate
-
-导航守卫 `Hook`
-
 #### useLink、RouterLink
+
+### 路由监听
+
+```js
+import { defineComponent, watch } from 'vue'
+import { useRoute } from 'vue-router'
+export default defineComponent({
+  setup() {
+    const route = useRoute()
+    // 侦听整个路由
+    watch(route, (to, from) => {
+      // 处理一些事情
+      // ...
+    })
+    // 侦听路由参数的变化
+    watch(
+      () => route.query.id,
+      () => {
+        console.log('侦听到 ID 变化')
+      }
+    )
+    
+    // 从接口查询文章详情
+    async function queryArticleDetail() {
+      const id = Number(route.params.id) || 0
+      console.log('文章 ID 是：', id)
+
+      const res = await axios({
+        url: `/article/${id}`,
+      })
+      // ...
+    }
+    // 直接侦听->包含路由参数的那个函数
+    watchEffect(queryArticleDetail)
+  },
+})
+```
 
 ### 滚动行为
 

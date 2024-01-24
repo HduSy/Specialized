@@ -507,7 +507,7 @@ export declare type WatchCallback<V = any, OV = any> = (
   onCleanup: OnCleanup // 清理函数
 ) => any
 // 基础使用
-export declare function watch<T, Immediate extends Readonly<boolean> = false>(
+export declare function <T, Immediate extends Readonly<boolean> = false>(
   source: WatchSource<T>,
   cb: WatchCallback<T, Immediate extends true ? T | undefined : T>,
   options?: WatchOptions<Immediate>
@@ -627,6 +627,8 @@ unwatch = watch(
 
 #### `watchEffect(effect, options)`
 
+批量监听，如果一个函数里包含了多个需要侦听的数据，一个一个数据去侦听太麻烦了，在 `Vue3`，可以直接使用 `watchEffect API ` 来简化的操作。
+
 ```ts
 // …
 export declare type WatchEffect = (onCleanup: OnCleanup) => void
@@ -652,7 +654,7 @@ watch(todoId, async () => {
 }, { immediate: true })
 
 // 会立即执行
-watchEffect(todoId, async () => {
+watchEffect(async () => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/todos/${todoId.value}`
   )
@@ -688,13 +690,14 @@ unwatch()
 
 ```js
 <script setup>
+// 方式一
 const props = defineProps(['foo'])
-// 类型校验
+// 方式二
 defineProps({
   title: String,
   likes: Number
 })
-// ts校验
+// 方式三
 defineProps<{
   title?: string
   likes?: number
@@ -753,6 +756,26 @@ defineProps({
 - `Boolean` 类型的未传递 prop 将被转换为 `false`。这可以通过为它设置 `default` 来更改——例如：设置为 `default: undefined` 将与非布尔类型的 prop 的行为保持一致
 - 如果声明了 `default` 值，那么在 prop 的值被解析为 `undefined` 时，无论 prop 是未被传递还是显式指明的 `undefined`，都会改为 `default` 值
 
+##### `withDefaults`
+
+设置默认值
+
+```ts
+// 先通过 interface 声明其类型
+interface Props {
+  size?: number
+  labels?: string[]
+}
+// 再作为 `defineProps` 的类型传入
+const props = withDefaults(defineProps<Props>(), {
+  size: 3,
+  labels: () => ['default label'],
+})
+
+// 这样就可以通过 `props` 变量拿到需要的值
+console.log(props.size)
+```
+
 #### defineEmits 宏 - 自定义组件事件 emits
 
 ```js
@@ -788,6 +811,10 @@ function submitForm(email, password) {
 }
 </script>
 ```
+
+#### defineExpose 宏 - 暴露子组件内部的属性和方法
+
+本身是一个函数，接收一个对象作为参数，其中 `key: value` 形式暴露出去，父组件通过 `ref` 拿到这些数据
 
 #### 组件插槽
 
@@ -852,7 +879,142 @@ function submitForm(email, password) {
 - 必须写闭合标签
 - `select、table、ul、ol` 等元素对放置其中的元素类型有限制，相应的，某些元素仅在放置于特定元素中时才会显示
 
-## 组件注册
+#### 组件通信
+
+|方案|父组件向子组件|子组件向父组件|对应章节传送门|
+|---|---|---|---|
+|props / emits|props|emits|[点击查看](https://vue3.chengpeiquan.com/communication.html#props-emits)|
+|v-model / emits|v-model|emits|[点击查看](https://vue3.chengpeiquan.com/communication.html#v-model-emits)|
+|ref / emits|ref|emits|[点击查看](https://vue3.chengpeiquan.com/communication.html#ref-emits)|
+|provide / inject|provide|inject|[点击查看](https://vue3.chengpeiquan.com/communication.html#provide-inject)|
+|EventBus|emit / on|emit / on|[点击查看](https://vue3.chengpeiquan.com/communication.html#eventbus-new)|
+|Reative State|-|-|[点击查看](https://vue3.chengpeiquan.com/communication.html#reative-state-new)|
+|Vuex|-|-|[点击查看](https://vue3.chengpeiquan.com/communication.html#vuex-new)|
+|Pinia|-|-|[点击查看](https://vue3.chengpeiquan.com/pinia.html)|
+
+##### props/emits
+
+###### 获取非 `props` 的属性
+
+对于单个根元素情况，通过 `setup(props, context)` 函数第二个参数 `context` 获得
+
+```ad-info
+`attrs` vs `props`
+根据它们的缩写，其实是可以知道 Prop 是指 Property ，而 Attr 是指 Attribute ，虽然都是 “属性” ，但 Property 更接近于**事物本身**的属性，因此需要在组件里声明，而 Attribute 更偏向于**赋予的**属性，因此用于指代父组件传递的其他未被声明为 Property 的属性。
+```
+
+```js
+// Child.vue
+export default defineComponent({
+  setup(props, { attrs }) {
+    // `attrs` 是个对象，每个 Attribute 都是它的 `key`
+    console.log(attrs.id) // child-component
+    console.log(attrs.class) // class-name-from-father
+
+    // 传递数组会被保留类型，不会被转换为 `key1,key2` 这样的字符串
+    // 这一点与 `Element.getAttribute()` 完全不同
+    console.log(attrs.keys) // ['foo', 'bar']
+
+    // 传递对象也可以正常获取
+    console.log(attrs.obj) // {foo: 'bar'}
+
+    // 如果传下来的 Attribute 带有短横线，需要通过这种方式获取
+    console.log(attrs['data-hash']) // b10a8db164e0754105b7a99be72e3fe5
+  },
+})
+```
+
+`setup(props)`：第一个参数 `props` 具备响应性，父组件修改了传递下来的值，子组件也会同步得到更新，因此请不要直接解构，可以通过 [toRef 或 toRefs](https://vue3.chengpeiquan.com/component.html#%E5%93%8D%E5%BA%94%E5%BC%8F-api-%E4%B9%8B-toref-%E4%B8%8E-torefs-new) API 转换为响应式变量
+
+`Vue3` 支持多个根元素，对于多个根元素情况，通过 `Vue` 实例属性 `$attrs` 或者从 `setup` 函数里把 `attrs` `return` 出来使用
+
+```vue
+<!-- Child.vue -->
+<template>
+  <!-- 默认不会继承属性 -->
+  <div class="child">不会继承</div>
+
+  <!-- 绑定后可继承， `$attrs` 是一个 Vue 提供的实例属性 -->
+  <div class="child" v-bind="$attrs">使用 $attrs 继承</div>
+
+  <!-- 绑定后可继承， `attrs` 是从 `setup` 里 `return` 出来的变量 -->
+  <div class="child" v-bind="attrs">使用 attrs 继承</div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  setup(props, { attrs }) {
+
+    return {
+      attrs,
+    }
+  },
+})
+</script>
+```
+
+`Composition API` 写法
+
+```ts
+import { useAttrs } from 'vue'
+// 获取 attrs
+const attrs = useAttrs()
+// attrs 是个对象，和 props 一样，需要通过 `key` 来得到对应的单个 attr
+console.log(attrs.msg)
+```
+
+###### 绑定 `emits`
+
+父组件写业务逻辑，如 `updateName`，子组件自定义事件名并用 `@` 绑定到该业务函数
+
+```vue
+<!-- Father.vue -->
+<template>
+  <Child @update-name="updateName" />
+</template>
+```
+
+子组件内接收 `emits` 并通过 `setup(props, { emit })` 第二个参数 `emit` 触发自定义事件名 `update-name`
+
+```ts
+// Child.vue
+export default defineComponent({
+  // 参数校验
+  emits: {
+    'update-name': (name: string) => {
+      // 写一些条件拦截，返回 `false` 表示验证不通过
+      if (name.length < 2) {
+        console.log('姓名至少2个字，不符合要求')
+        return false
+      }
+      // 通过则返回 `true`
+      return true
+    },
+    // 一些无需校验的，设置为 `null` 即可
+    'update-age': null,
+  },
+  setup(props, { emit }) {
+    // 通知父组件将年龄设置为 `2`
+    emit('update-name', 2)
+  },
+})
+```
+
+`Composition API` 写法
+
+```ts
+// 获取 emit
+const emit = defineEmits(['update-name'])
+
+// 调用 emit
+emit('update-name', 'Tom')
+```
+
+##### v-model/emits
+
+#### 组件注册
 
 和全局注册相比，局部注册有 `tree shaking` 且依赖关系明确
 
@@ -1034,7 +1196,29 @@ export default {
 
 ### 作用域插槽
 
-应用：封装逻辑，组合视图
+在使用 `jsx / tsx` 编写的子组件里，就可以通过 `useSlots` 来获取父组件传进来的 `slots` 数据进行渲染从而组合视图
+
+```tsx
+// src/components/ChildTSX.tsx
+import { defineComponent, useSlots } from 'vue'
+export default defineComponent({
+  setup() {
+    // 获取插槽数据
+    const slots = useSlots()
+
+    // 渲染组件
+    return () => (
+      <div>
+        {/* 渲染默认插槽 */}
+        <p>{slots.default ? slots.default() : ''}</p>
+
+        {/* 渲染命名插槽 */}
+        <p>{slots.msg ? slots.msg() : ''}</p>
+      </div>
+    )
+  },
+})
+```
 
 ## 依赖注入
 
