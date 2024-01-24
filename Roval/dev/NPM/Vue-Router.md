@@ -34,6 +34,35 @@ Last Modified：2023-11-07 08:23:23
 
 `Browser History API`
 
+### 使用 `router-link` 跳转
+
+```html
+<template>
+  <router-link to="/home" custom v-slot="{ navigate }">
+    <span class="link" @click="navigate"> 首页 </span>
+  </router-link>
+</template>
+```
+
+关于这两个属性的参数说明如下：
+
+1. `custom` ，一个布尔值，用于控制是否需要渲染为 `a` 标签，当不包含 `custom` 或者把 `custom` 设置为 `false` 时，则依然使用 `a` 标签渲染；
+2. `v-slot` 是一个对象，用来决定标签的行为，它包含了：  
+
+|字段|含义|
+|---|---|
+|href|解析后的 URL，将会作为一个 `a` 元素的 `href` 属性|
+|route|解析后的规范化的地址|
+|navigate|触发导航的函数，会在必要时自动阻止事件，和 `router-link` 同理|
+|isActive|如果需要应用激活的 `class` 则为 `true`，允许应用一个任意的 `class`|
+|isExactActive|如果需要应用精确激活的 `class` 则为 `true`，允许应用一个任意的 `class`|
+
+```ad-tip
+要渲染为非 `a` 标签，切记两个点：
+1. `router-link` 必须带上 `custom` 和 `v-slot` 属性
+2. 最终要渲染的标签，写在 `router-link` 里，包括对应的 `className` 和点击事件
+```
+
 ### 命名路由
 
 优点：

@@ -7,7 +7,7 @@ Last Modified：2022-12-17 21:25:23
 
 # Content
 
-## Git Push
+## git push
 
 `git push` 命用于从将本地的分支版本上传到远程并合并。
 
@@ -43,7 +43,7 @@ git push origin --delete feat/topic_ttt
 
 删除远程主机上的分支
 
-## Git Pull
+## git pull
 
 `git pull = git fetch + git merge`
 
@@ -56,13 +56,13 @@ git pull <远程主机名> <远程分支名>[:本地分支名]
 eg. `git pull origin master:feat/topic_ttt `  
 将远程 `origin` 的 `master` 分支拉下来与本地 `feat/topic_ttt` 分支合并。
 
-## Git Commit
+## git commit
 
 `git commit --amend` 修改最近一次提交的 **提交信息**
 
 `gc --fixup [commitId]` 指定分支上 fix bug，然后 `grbi --autosquash [commitId]` 让 fix-bug-commit 分支合并到 `[commitId]` 指定那次 `commit` 里，从而隐去 fix-bug-commit
 
-## Git Reset
+## git reset
 
 `--mixed` 仅保留工作区代码。撤销上次 `git add` 和 `git commit` 操作（将添加到暂存区的内容取出！改动的文件颜色变回红色，工作区状态）
 
@@ -100,7 +100,18 @@ git reset --hard HEAD^
 - `git diff <branch_name1> <branch_name2> <file_name>`
 - `git diff <commit_hash> <commit_hash> <file_name>`
 
-## Git Rebase 变基
+## git rm
+
+移除已添加到暂存区的代码
+
+```shell
+// 不删除物理文件,仅将该文件从缓存中删除
+git rm --cached 文件路径 -r
+// 删除物理文件,将该文件从缓存中删除
+git rm --f 文件路径
+```
+
+## git rebase 变基
 
 ### 作用
 
@@ -150,7 +161,7 @@ Once you are satisfied with your changes, run
 
 ```
 
-## Git Stash
+## git stash
 
 保存当前所做修改到暂存区。
 
@@ -170,7 +181,7 @@ git stash list
 git stash pop stash@{x}
 ```
 
-## Git Merge
+## git merge
 
 ### 概念
 
@@ -207,7 +218,7 @@ git remote rm origin // 先删除
 git remote add origin git@github.com:HduSy/xxx.git // 再添加
 ```
 
-## Git Cherry-pick
+## git cherry-pick
 
 ### 概念
 
