@@ -47,7 +47,37 @@ package-lock.json
 
 ## main
 
-（可选）主入口文件，默认 `index.js`。
+（可选）主入口文件，如 `.dist/src/index.js`
+
+## exports
+
+优先级比 `main` 高，包含了多种导出形式： 默认导出、子路径导出和条件导出
+
+```json
+// package.json
+{
+  "name": "package-a",
+  "type": "module", // 指定ESM模块规范
+  "exports": {
+    // 默认导出，使用方式: import a from 'package-a'
+    ".": "./dist/index.js",
+    // 子路径导出，使用方式: import d from 'package-a/dist'
+    "./dist": "./dist/index.js",
+    "./dist/*": "./dist/*", // 这里可以使用 `*` 导出目录下所有的文件
+    // 条件导出，区分 ESM 和 CommonJS 引入的情况
+    "./main": {
+      "import": "./main.js",
+      "require": "./main.cjs"
+    },
+  }
+}
+```
+
+- `node`：在 `Node.js` 环境下适用，可以定义为嵌套条件导出
+- `import`：用于 `import` 方式导入的情况，如 `import("package-a")`;
+- `require`：用于 `require` 方式导入的情况，如 ` require("package-a")`;
+- `default`：兜底方案，如果前面的条件都没命中，则使用 `default` 导出的路径。  
+条件导出还包含 `types、browser、develoment、production` 等属性
 
 ## browser
 

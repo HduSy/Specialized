@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/Vue3.md",
+                "file": "Roval/dev/JavaScript/模块化.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM/Vue3.md",
+                "file": "Roval/dev/JavaScript/模块化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM/Vue3.md",
+                "file": "Roval/dev/JavaScript/模块化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM/Vue3.md"
+                "file": "Roval/dev/JavaScript/模块化.md"
               }
             }
           },
@@ -224,7 +224,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM/Vue3.md",
+                "file": "Roval/dev/JavaScript/模块化.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -277,10 +277,14 @@
   },
   "active": "1536f3c9f013e97a",
   "lastOpenFiles": [
+    "Roval/Project/package.json.md",
+    "Roval/dev/JavaScript/模块化.md",
+    "Roval/Project/vite.md",
+    "Roval/dev/JavaScript/TypeScript教学.md",
+    "Roval/dev/NPM/Vue3.md",
     "Roval/dev/NPM/Pinia.md",
     "Roval/dev/NPM/Vuex.md",
     "Roval/dev/NPM/BlobJS.md",
-    "Roval/dev/NPM/Vue3.md",
     "Roval/dev/NPM/Vue-Router.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
@@ -294,7 +298,6 @@
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141532.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141536.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141528.png",
-    "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/JavaScript/type vs interface.md",
     "Roval/Project/tsconfig.json.md",
     "Roval/dev/JavaScript/事件循环.md",
@@ -312,9 +315,6 @@
     "Untitled",
     "Roval/dev/NPM/qs.md",
     "Roval/dev/杂/NPM.md",
-    "Roval/dev/浏览器/Chrome Dev-Tools 骚操作.md",
-    "Roval/dev/浏览器/cookie.md",
-    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
     "Roval/Articals/书籍/《打开心智》",
     "Roval/Project/性能优化/网络方面",
     "Roval/Project/性能优化/打包优化",
