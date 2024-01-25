@@ -641,6 +641,36 @@ const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 使用 `esbuild` 的能力提升 `webpack` 构建速度
 
+### babel-loader
+
+[babel-loader | webpack](https://webpack.js.org/loaders/babel-loader/)  
+This package allows transpiling JavaScript files using [Babel](https://github.com/babel/babel) and [webpack](https://github.com/webpack/webpack). ^a0a331
+
+```bash
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+```
+
+`webpack` 配置：
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.(?:js|mjs|cjs)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
 ## 构建流程与原理
 
 `webpack` 核心是**静态模块打包**，能够识别不同类型文件统一转换为 `JavaScript` 模块

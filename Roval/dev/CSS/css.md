@@ -43,6 +43,22 @@ Last Modified：2023-11-09 10:03:20
 
 **同层选择器之后任意**一个命中，则应用
 
+## 模块化
+
+原生 `CSS` 痛点：
+
+- 开发体验欠佳，不支持嵌套、函数、混入；
+- 浏览器兼容性得手动加前缀处理；
+- 会造成全局样式污染；
+- 打包输出没有优化；  
+
+相应的社区解决方案：
+
+- 预处理器（`sass、less、stylus`）、原子化（`Tailwind`）；
+- 后处理器 `postcss`；
+- `CSS Module`、`CSS in JS`（`styled-components、emotion`）；
+
 # Reference
 
+[CSS 工程化 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/css.html)  
 [[../杂/MDN|MDN]]

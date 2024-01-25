@@ -162,7 +162,24 @@ import bar from './bar'
 
 ### @rollup/plugin-babel
 
-使用 `babel` 的功能
+^f9ddaa
+
+[plugins/packages/babel at master · rollup/plugins · GitHub](https://github.com/rollup/plugins/tree/master/packages/babel)  
+🍣 A Rollup plugin for seamless integration between Rollup and Babel，无缝整合 `Rollup` 和 `Babel`，使用 `babel` 的功能
+
+```ts
+import { babel } from '@rollup/plugin-babel';
+const config = {
+  input: 'src/index.js',
+  output: {
+    dir: 'output',
+    format: 'es'
+  },
+  plugins: [babel({ babelHelpers: 'bundled' })]
+};
+
+export default config;
+```
 
 ### @rollup/plugin-json
 

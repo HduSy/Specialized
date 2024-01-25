@@ -54,7 +54,77 @@ Last Modified：2023-09-23 16:47:10
 - `Vue 2.7 SFC` 支持：[@vitejs/plugin-vue2](https://github.com/vitejs/vite-plugin-vue2)
 - `Vue 2.7 JSX` support via [@vitejs/plugin-vue2-jsx](https://github.com/vitejs/vite-plugin-vue2-jsx)
 
-### CSS
+### 内置支持 CSS 预处理器
+
+内置支持 `sass less stylus`，🉑直接使用
+
+### 支持 CSS Module 配置和使用
+
+`Vite` 原生支持 [[../dev/CSS/css#模块化|模块化]]，会对 `.module.css` 后缀结尾的文件视作 `CSS Modules`，且可自定义配置处理后类名生成规则：
+
+```ts
+export default defineConfig({
+  // ...
+  css: {
+    modules: {
+      localsConvention: 'camelCaseOnly', // 生成的样式对象类型key形式，camel or dash
+      scopeBehaviour: 'local', // 是否开启css模块化
+      generateScopedName: '[name]_[local]_[hash:base64:5]', // name-文件名 local-css类名
+    },
+  },
+  // ...
+})
+```
+
+### 支持 PostCSS 配置和使用
+
+```ts
+import postcssPresetEnv from 'postcss-preset-env' // 🉑编写最新CSS语法，无需担心兼容问题
+import autoprefixer from 'autoprefixer' // 解决浏览器兼容问题，为CSS添加不同浏览器的兼容前缀
+export default defineConfig({
+  // ...
+  css: {
+    postcss: {
+      plugins: [postcssPresetEnv(),autoprefixer({
+          // 指定目标浏览器
+          overrideBrowserslist: ['Chrome > 40', 'ff > 31', 'ie 11']
+        })]
+    }
+  },
+  // ...
+})
+```
+
+- [postcss-preset-env](https://github.com/csstools/postcss-preset-env)：convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments.
+- [autoprefixer](https://github.com/postcss/autoprefixer)：parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com/).
+- [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)：generates rem units from pixel units. 适配移动端应用
+
+### 支持 CSS in JS
+
+`Vite` 作为构建侧要考虑 `选择器命名问题`、`DCE`(`Dead Code Elimination` 即无用代码删除)、`代码压缩`、`生成 SourceMap`、`服务端渲染(SSR)` 等问题，目前的两种 `CSS in JS` 方案（`styled-components`、`emotion`）均提供了对应的 `babel` 插件，在 `Vite` 中集成即可解决这些问题：
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          "babel-plugin-styled-components" // Improve the debugging experience and add server-side rendering support to styled-components
+          "@emotion/babel-plugin" // Babel plugin for the minification and optimization of emotion styles.
+        ]
+      },
+      // 注意: 对于 emotion，需要单独加上这个配置
+      // 通过 `@emotion/react` 包编译 emotion 中的特殊 jsx 语法
+      jsxImportSource: "@emotion/react"
+    })
+  ]
+})
+```
 
 ### 静态资源处理
 
@@ -328,7 +398,22 @@ export default defineConfig({
 
 ### @vitejs/plugin-legacy
 
-自动生成传统版本的 `chunk` 及与其相对应 ES 语言特性方面的 `polyfill`
+^0efffb
+
+自动生成传统版本的 `chunk` 及与其相对应 `ES` 语言特性方面的 `polyfill`
+
+```ts
+// vite.config.js
+import legacy from '@vitejs/plugin-legacy'
+
+export default {
+  plugins: [
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
+  ],
+}
+```
 
 ### vite-plugin-compression
 
@@ -338,7 +423,8 @@ export default defineConfig({
 
 `Vite` 开发时，让普通浏览器也支持模块顶层编写 `await`，而不用额外设置 `build.target` to `esnext`
 
-[vite-plugin-top-level-await - npm](https://www.npmjs.com/package/vite-plugin-top-level-await)
+[Plugins | Vite](https://vitejs.dev/plugins/)  
+[vite-plugin-top-level-await - npm](https://www.npmjs.com/package/vite-plugin-top-level-await)  
 
 ## API
 
