@@ -244,6 +244,10 @@ declare interface Configuration {
 }
 ```
 
+### devtool
+
+`false`：`develop` 模式时关闭 `sourcemap` 功能
+
 ### mode
 
 告知 `webpack` 使用相应模式的内置优化，`none`, `development` 或 `production`（default）  
@@ -265,26 +269,37 @@ declare interface Configuration {
 | electron-main     | 编译为 [Electron](https://electronjs.org/) 主进程。                                            |
 | electron-renderer | 编译为 [Electron](https://electronjs.org/) 渲染进程，使用 `JsonpTemplatePlugin`                |
 
+### context
+
+一个**绝对路径**，基础目录，用于从配置中解析入口点 (`entry`) 和 加载器 (`loader`)，`context + entry = webpack entry point`
+
 ### entry 构建入口
-
-#### context
-
-基础目录，**绝对路径**，用于从配置中解析入口点 (entry point) 和 加载器 (loader)
 
 #### entry
 
-每个 HTML 页面都有一个入口起点，单页应用 (`SPA`)：一个入口起点，多页应用 (`MPA`)：多个入口起点。
+```ts
+/**
+	 * The entry point(s) of the compilation.
+	 */
+	entry?:
+		| string
+		| (() => string | EntryObject | string[] | Promise<EntryStatic>)
+		| EntryObject
+		| string[];
+```
+
+每个 `HTML` 页面都有一个入口起点，单页应用 (`SPA`)：一个入口起点，多页应用 (`MPA`)：多个入口起点。
 
 ```ad-info
-1. 若 entry 是一个 string 或 array，就只会生成一个 Chunk，这时 Chunk 的名称是 main；
-2. 若 entry 是一个 object，就可能会出现多个 Chunk，这时 Chunk 的名称是 object 键值对里 Key 的名称；
+1. 单入口：若 `entry` 是一个 `string` 或 `string[]`，就只会生成一个 `Chunk`，这时 `Chunk` 的名称是 `main`；
+2. 多入口：若 `entry` 是一个 `object`，就可能会出现多个 `Chunk`，这时 `Chunk` 的名称是 `object` 键值对里 `Key` 的名称；
 ```
 
 ### output 构建输出
 
 #### path
 
-`webpack` 打包输出文件存放目录，必须是 `string` 类型的**绝对路径**
+一个**绝对路径**，`webpack` 打包输出文件在磁盘上的真实存放目录，必须是 `string` 类型的
 
 ```js
 module.exports = {
@@ -298,41 +313,15 @@ module.exports = {
 }
 ```
 
-#### filename
-
-配置打包输出**入口 Chunk** 的文件名称，仅针对入口模块。当通过多个入口起点 (entry point)、代码拆分 (code splitting) 或各种插件 (plugin) 创建多个 `bundle`，就需要借助模版和变量了  
-
-内置变量：
-
-- name: Chunk name
-- id： Chunk 的唯一标识，从 0 开始
-- name： Chunk 的名称
-- hash： Chunk 的唯一标识的 Hash 值
-- chunkhash： Chunk 内容的 Hash 值
-- query： 模块的 query，例如，文件名 ? 后面的字符串
-
-```js
-module.exports = {
-  //...
-  output: {
-    filename: '[name].bundle.js'
-    // 或者
-    filename: '[name].[hash].bundle.js'
-  }
-};
-```
-
-#### chunkFilename
-
-与 `filename` 不同，仅针对==按需加载（运行中产生）==的 Chunk 输出时的文件名称，即**非入口 Chunk** 的输出名称
-
 #### publicPath
 
+`public` 配置了资源存放磁盘路径，但浏览器如何知道资源存放在什么位置呢？  
+`publicPath` 配置了资源访问路径  
 【生产环境配置】指定发布到线上静态资源的 **URL 前缀**，在 `index.html` 中的引用资源时需要拼上该前缀
 
 | 类型     | 含义                   | 例子                        |
 | -------- | ---------------------- | --------------------------- |
-| 相对路径 | 相对于 index.html 地址 | 'assets/'、'../assets/'、'' |
+| 相对路径 | 相对于当前浏览的 `index.html` 地址 | 'assets/'、'../assets/'、'' |
 | 绝对路径 | 相对于根服务器地址 `/` | '/assets'                   |
 | CDN 地址 | CDN 地址               | 'https://cdn.example.com/assets/'、'//cdn.example.com/assets/'                            |
 
@@ -353,6 +342,35 @@ module.exports = {
 
 `html-webpack-plugin` 中配置的 `publicPath` 优先级较高
 
+#### filename
+
+配置打包输出**入口 Chunk** 的文件名称，仅针对入口模块。当通过多个入口起点 (entry point)、代码拆分 (code splitting) 或各种插件 (plugin) 创建多个 `bundle`，就需要借助模版和变量了  
+
+内置变量：
+
+- `name`: `chunk name`
+- `id`： `chunk` 的唯一标识，从 0 开始
+- `name`： `chunk` 的文件名
+- `hash`： 打包中所有的文件计算出的 `hash`
+- `chunkhash`： 根据当前 `chunk` 计算出 `hash`
+- `contenthash`：根据打包时 `CSS 内容` 计算出的 `hash`，对提取出的 `CSS` 文件进行命名
+- `query`： 模块的 `query`，例如，文件名 `?` 后面的字符串
+
+```js
+module.exports = {
+  //...
+  output: {
+    filename: '[name].bundle.js'
+    // 或者
+    filename: '[name].[hash].bundle.js'
+  }
+};
+```
+
+#### chunkFilename
+
+与 `filename` 不同，仅针对==按需加载（运行中产生）==`异步chunk`，即**非入口 chunk** 的输出名称
+
 #### crossOriginLoading
 
 `Webpack` 输出的部分代码块可能需要异步加载，而异步加载是通过 `JSONP` 方式实现的 [[../前端面经/JavaScript面经|JavaScript面经]]，`JSONP` 的原理是动态地向 `HTML` 中插入一个 标签去加载异步资源，`crossOriginLoading` 则是用于配置这个异步插入的标签的 `crossorigin` 值
@@ -365,6 +383,24 @@ module.exports = {
 `libraryTarget`：导出库规范，`umd | umd2 | commonjs2 | commonjs | amd | this | var | assign | window | global | jsonp`
 
 ### module 模块配置
+
+#### rules
+
+为不同文件类型模块配置相应 [[#^6bd27c|loaders]]
+
+```js
+rules: [
+	{
+		test: /\.js$/i,
+		use: ["babel-loader"],
+		include: /src/, // 只包含
+		exclude: /node_modules/, // 排除在外
+		enforce: "pre", // 调整 loader 执行顺序
+	}
+]
+```
+
+`resource` 被引用资源；`issuer` 资源引用者
 
 #### noParse
 
@@ -492,10 +528,6 @@ parser: {
 	}
 }
 ```
-
-#### rules
-
-为不同文件类型模块配置相应 [[#^6bd27c|loaders]]
 
 ### resolve 模块解析
 
@@ -882,6 +914,7 @@ const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 ### babel-loader
 
+[[Babel]]  
 [babel-loader | webpack](https://webpack.js.org/loaders/babel-loader/)  
 This package allows transpiling JavaScript files using [Babel](https://github.com/babel/babel) and [webpack](https://github.com/webpack/webpack). ^a0a331
 
@@ -908,6 +941,33 @@ module: {
     }
   ]
 }
+```
+
+配置前输出：
+
+```js
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   print: function() { return /* binding */ print; }
+/* harmony export */ });
+const print = str => {
+  console.log(str)
+}
+
+console.log('console有副作用')
+```
+
+配置后输出：
+
+```js
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   print: function() { return /* binding */ print; }
+/* harmony export */ });
+var print = function print(str) {
+  console.log(str);
+};
+console.log('console有副作用');
 ```
 
 ## 构建流程与原理

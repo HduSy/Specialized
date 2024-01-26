@@ -87,7 +87,7 @@ pnpm add @babel/runtime // for 生产环境
 
 ###### corejs 配置项
 
-`"corejs: false"`：开不开启，绝对对不对 `API` 进行转换，如：
+`"corejs: false"`：开不开启，绝定对不对 `API` 进行转换，如：
 
 ```js
 import "core-js/modules/es.promise.js"; // window.Promise被污染
@@ -170,6 +170,10 @@ import "core-js/modules/es.array.unscopables.flat.js";
 [图形化显示浏览器支持范围](https://browsersl.ist/)
 
 ##### useBuiltIns 选项
+
+```ad-danger
+When this plugin is enabled, the `useBuiltIns` option in `@babel/preset-env` must not be set. Otherwise, this plugin may not able to completely sandbox the environment.
+```
 
 ```json
 "entry": 须手动在主文件入口/构建工具入口处引入`@babel/polyfill`
@@ -282,6 +286,8 @@ We do not recommend that you import the whole polyfill directly, either try the�
 #### @babel/runtime
 
 is a library that contains Babel modular runtime helpers.
+
+无需开启 `corejs2 API` 转换时，安装 `@babel/runtime` 即可；需要 `corejs3 API` 转换时需安装 `@babel/runtime-corejs2/3`
 
 ## 总结
 
