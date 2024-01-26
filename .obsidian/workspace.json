@@ -65,6 +65,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Roval/Project/webpack.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1ee980f2eef8bd9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Roval/Project/package.json.md",
                 "mode": "source",
                 "backlinks": false,
@@ -99,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -301,9 +314,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "45cd257c1f40ad02",
+  "active": "1ee980f2eef8bd9c",
   "lastOpenFiles": [
     "Roval/Project/webpack.md",
+    "Roval/Project/package.json.md",
     "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/NPM/Vue-Router.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
@@ -313,7 +327,6 @@
     "Roval/Project/Babel.md",
     "Roval/Project/Rollup.md",
     "Roval/dev/Git/Git 使用.md",
-    "Roval/Project/package.json.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/NPM/Vue3.md",
     "Roval/dev/NPM/Pinia.md",
