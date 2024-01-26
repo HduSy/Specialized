@@ -7,11 +7,250 @@ Last Modified：2022-12-17 22:27:40
 
 # Content
 
+## CLI
+
+| Flag/Alias | Type | Description |
+| ---- | ---- | ---- |
+| [`--entry`](https://webpack.js.org/api/cli#entry) | `string[]` | 入口 |
+| [`--config, -c`](https://webpack.js.org/api/cli#config) | `string[]` | `webpack` 配置文件 |
+| [`--output-path, -o`](https://webpack.js.org/api/cli#output-path) | `string` | 输出路径，如 `./dist` |
+| `--watch, -w` | `boolean` | `watch` 模式 |
+| `--mode` | `string` | `development` `production` |
+| [`--analyze`](https://webpack.js.org/api/cli#analyzing-bundle) | `boolean` | It invokes `webpack-bundle-analyzer` plugin to get bundle information |
+| [`--extends, -e`](https://webpack.js.org/api/cli#extends) | `string[]` | 基于现有配置进行配置扩展 |
+|  |  |  |
+
 ## 基础 config
 
-### mode 构建模式
+### `ts` 类型声明
 
-告知 `webpack` 使用相应模式的内置优化，none, development 或 production（默认）
+```ts
+/**
+ * Options object as provided by the user.
+ */
+declare interface Configuration {
+	/**
+	 * Set the value of `require.amd` and `define.amd`. Or disable AMD support.
+	 */
+	amd?: false | { [index: string]: any };
+	/**
+	 * Report the first error as a hard error instead of tolerating it.
+	 */
+	bail?: boolean;
+	/**
+	 * Cache generated modules and chunks to improve performance for multiple incremental builds.
+	 */
+	cache?: boolean | FileCacheOptions | MemoryCacheOptions;
+	/**
+	 * The base directory (absolute path!) for resolving the `entry` option. If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
+	 */
+	context?: string;
+	/**
+	 * References to other configurations to depend on.
+	 */
+	dependencies?: string[];
+	/**
+	 * A developer tool to enhance debugging (false | eval | [inline-|hidden-|eval-][nosources-][cheap-[module-]]source-map).
+	 */
+	devtool?: string | false;
+	/**
+	 * The entry point(s) of the compilation.
+	 */
+	entry?:
+		| string
+		| (() => string | EntryObject | string[] | Promise<EntryStatic>)
+		| EntryObject
+		| string[];
+	/**
+	 * Enables/Disables experiments (experimental features with relax SemVer compatibility).
+	 */
+	experiments?: Experiments;
+	/**
+	 * Extend configuration from another configuration (only works when using webpack-cli).
+	 */
+	extends?: string | string[];
+	/**
+	 * Specify dependencies that shouldn't be resolved by webpack, but should become dependencies of the resulting bundle. The kind of the dependency depends on `output.libraryTarget`.
+	 */
+	externals?:
+		| string
+		| RegExp
+		| ExternalItem[]
+		| (ExternalItemObjectKnown & ExternalItemObjectUnknown)
+		| ((
+				data: ExternalItemFunctionData,
+				callback: (
+					err?: null | Error,
+					result?: string | boolean | string[] | { [index: string]: any }
+				) => void
+		  ) => void)
+		| ((data: ExternalItemFunctionData) => Promise<ExternalItemValue>);
+	/**
+	 * Enable presets of externals for specific targets.
+	 */
+	externalsPresets?: ExternalsPresets;
+	/**
+	 * Specifies the default type of externals ('amd*', 'umd*', 'system' and 'jsonp' depend on output.libraryTarget set to the same value).
+	 */
+	externalsType?:
+		| "import"
+		| "var"
+		| "module"
+		| "assign"
+		| "this"
+		| "window"
+		| "self"
+		| "global"
+		| "commonjs"
+		| "commonjs2"
+		| "commonjs-module"
+		| "commonjs-static"
+		| "amd"
+		| "amd-require"
+		| "umd"
+		| "umd2"
+		| "jsonp"
+		| "system"
+		| "promise"
+		| "script"
+		| "node-commonjs";
+	/**
+	 * Ignore specific warnings.
+	 */
+	ignoreWarnings?: (
+		| RegExp
+		| {
+				/**
+				 * A RegExp to select the origin file for the warning.
+				 */
+				file?: RegExp;
+				/**
+				 * A RegExp to select the warning message.
+				 */
+				message?: RegExp;
+				/**
+				 * A RegExp to select the origin module for the warning.
+				 */
+				module?: RegExp;
+		  }
+		| ((warning: WebpackError, compilation: Compilation) => boolean)
+	)[];
+	/**
+	 * Options for infrastructure level logging.
+	 */
+	infrastructureLogging?: InfrastructureLogging;
+	/**
+	 * Custom values available in the loader context.
+	 */
+	loader?: Loader;
+	/**
+	 * Enable production optimizations or development hints.
+	 */
+	mode?: "none" | "development" | "production";
+	/**
+	 * Options affecting the normal modules (`NormalModuleFactory`).
+	 */
+	module?: ModuleOptions;
+	/**
+	 * Name of the configuration. Used when loading multiple configurations.
+	 */
+	name?: string;
+	/**
+	 * Include polyfills or mocks for various node stuff.
+	 */
+	node?: false | NodeOptions;
+	/**
+	 * Enables/Disables integrated optimizations.
+	 */
+	optimization?: Optimization;
+	/**
+	 * Options affecting the output of the compilation. `output` options tell webpack how to write the compiled files to disk.
+	 */
+	output?: Output;
+	/**
+	 * The number of parallel processed modules in the compilation.
+	 */
+	parallelism?: number;
+	/**
+	 * Configuration for web performance recommendations.
+	 */
+	performance?: false | PerformanceOptions;
+	/**
+	 * Add additional plugins to the compiler.
+	 */
+	plugins?: (
+		| undefined
+		| null
+		| false
+		| ""
+		| 0
+		| ((this: Compiler, compiler: Compiler) => void)
+		| WebpackPluginInstance
+	)[];
+	/**
+	 * Capture timing information for each module.
+	 */
+	profile?: boolean;
+	/**
+	 * Store compiler state to a json file.
+	 */
+	recordsInputPath?: string | false;
+	/**
+	 * Load compiler state from a json file.
+	 */
+	recordsOutputPath?: string | false;
+	/**
+	 * Store/Load compiler state from/to a json file. This will result in persistent ids of modules and chunks. An absolute path is expected. `recordsPath` is used for `recordsInputPath` and `recordsOutputPath` if they left undefined.
+	 */
+	recordsPath?: string | false;
+	/**
+	 * Options for the resolver.
+	 */
+	resolve?: ResolveOptionsWebpackOptions;
+	/**
+	 * Options for the resolver when resolving loaders.
+	 */
+	resolveLoader?: ResolveOptionsWebpackOptions;
+	/**
+	 * Options affecting how file system snapshots are created and validated.
+	 */
+	snapshot?: SnapshotOptionsWebpackOptions;
+	/**
+	 * Stats options object or preset name.
+	 */
+	stats?:
+		| boolean
+		| StatsOptions
+		| "none"
+		| "verbose"
+		| "summary"
+		| "errors-only"
+		| "errors-warnings"
+		| "minimal"
+		| "normal"
+		| "detailed";
+	/**
+	 * Environment to build for. An array of environments to build for all of them when possible.
+	 */
+	target?: string | false | string[];
+	/**
+	 * Enter watch mode, which rebuilds on file change.
+	 */
+	watch?: boolean;
+	/**
+	 * Options for the watcher.
+	 */
+	watchOptions?: WatchOptions;
+}
+```
+
+### mode
+
+告知 `webpack` 使用相应模式的内置优化，`none`, `development` 或 `production`（default）  
+
+- `none`： 不使用任何默认优化选项  
+- `development`： 为开发环境构建，Enables useful names for modules and chunks.  
+- `production`：为生产环境构建，压缩、去注释，`FlagDependencyUsagePlugin`, `FlagIncludedChunksPlugin`, `ModuleConcatenationPlugin`, `NoEmitOnErrorsPlugin` and `TerserPlugin`
 
 ### target 编译目标
 
@@ -34,7 +273,7 @@ Last Modified：2022-12-17 22:27:40
 
 #### entry
 
-每个 HTML 页面都有一个入口起点，单页应用 (SPA)：一个入口起点，多页应用 (MPA)：多个入口起点。
+每个 HTML 页面都有一个入口起点，单页应用 (`SPA`)：一个入口起点，多页应用 (`MPA`)：多个入口起点。
 
 ```ad-info
 1. 若 entry 是一个 string 或 array，就只会生成一个 Chunk，这时 Chunk 的名称是 main；
@@ -623,7 +862,7 @@ Keep chunk size above the specified limit by merging chunks that are smaller tha
 
 ### css-loader
 
-处理 css 文件中的 `@import` 和 `url()` 语法，输出 js 模块
+处理 `css` 文件中的 `@import` 和 `url()` 语法，输出 js 模块
 
 ### style-loader
 

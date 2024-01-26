@@ -49,6 +49,78 @@ package-lock.json
 
 （可选）主入口文件，如 `.dist/src/index.js`
 
+## sideEffects
+
+> The new webpack 4 release expands on this capability with a way to provide hints to the compiler via the `"sideEffects"` `package.json` property to denote which files in your project are "pure" and therefore safe to prune if unused.
+
+类型 `boolean|string[]`，非 `package.json` 官方，`webpackv4` 新增属性，为了配合 `tree-shaking` 进行打包优化（节省代码体积、减少对源码的分析，加快打包速度）。`webpack` 打包时会将虽未使用但有副作用的代码保留下来
+
+```js
+// 引入未使用，配置了false，导致样式失效
+import './normalize.css';  
+import './polyfill';  
+import './App.less';
+```
+
+```ad-warning
+`webpack` 会认为所有 `import 'xxx'` 语句是仅引入而未使用, 如果你错误的将其声明成了”无副作用”, 它们就会被`tree-shaking` 掉, 并且由于 `tree-shaking` 仅在 `production` 模式生效, 本地开发时可能一切仍是正常的, 生产环境并不能及时发现问题.
+```
+
+### 自测
+
+```js
+// a.js 无副作用
+export const str = 'Hello Webpack'
+
+// b.js 无副作用
+function print(str) {
+  console.log(str)
+}
+console.log('console有副作用')
+export { print }
+
+// index.js 打包入口文件
+import { str } from './src/a'
+import { print } from './src/b'
+import './src/css/base.css'
+console.log(str)
+```
+
+#### `sideEffects: true`
+
+打包结果包含仅引入但未使用的 `print` 函数
+
+```js
+// ...
+function print(str) {\n console.log(str)\n}\n\nconsole.log('console有副作用')
+// ...
+```
+
+#### `sideEffects: false`
+
+关闭副作用检查。整个模块/包没有副作用，尽情地把没引用/用到的代码 `shaking` 掉。  
+
+打包结果不包含 `print` 函数相关代码，同时也没了样式文件 `base.css`，样式无效
+
+#### `sideEffects: ["./src/**/*.css"]`
+
+指定哪些文件含副作用代码，这些文件无论是否使用都不会被 `shaking` 掉
+
+```js
+// 样式引入
+...css-loader@6.9.1_webpack@5.90.0/node_modules/css-loader/dist/cjs.js!./base.css */ \"../../node_mo...
+// js模块引入
+...y export */ });\nconst aaa = 'aaa'\n\n\n//#...
+```
+
+### 局限
+
+`sideEffects` 配置是以文件为维度的, 只要你配置了文件具备副作用, 即便你只用了该文件中没有副作用的那部分功能, 仍然会将副作用保留  
+
+### 参考
+
+[深入理解sideEffects配置 | 明日之事 事事难求](https://libin1991.github.io/2019/05/01/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3sideEffects%E9%85%8D%E7%BD%AE/)
+
 ## exports
 
 优先级比 `main` 高，包含了多种导出形式： 默认导出、子路径导出和条件导出
