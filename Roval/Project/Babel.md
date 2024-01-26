@@ -33,7 +33,7 @@ pnpm babel ./src/index.js -o ./dist/output.js
 `rollup`：`@rollup/plugin-babel` [[Rollup#^f9ddaa]]  
 `vite`：`@vitejs/plugin-legacy` [[vite#^0efffb]]  
 
-无论使用哪种方式，`@babel/core` 及其相应配置文件都是必须的
+无论使用哪种方式，`@babel/core`、`@babel/cli`、`@babel/preset-env` 及其相应配置文件都是必须的
 
 ## 使用指南
 
@@ -282,6 +282,23 @@ We do not recommend that you import the whole polyfill directly, either try the�
 #### @babel/runtime
 
 is a library that contains Babel modular runtime helpers.
+
+## 总结
+
+`Babel` 三大功能：
+
+- `only syntax transform`
+- `pollyfill`  
+
+其中 `pollyfill` 存在副作用：
+
+- `re-use`
+- `pollute global`
+
+解决：
+
+- `@babel/plugin-transform-runtime auto import @babel/runtime helper functions`
+- `config chorejs config`
 
 # Reference
 

@@ -212,7 +212,7 @@ const module = await import(`./dir/${file}.js`)
 
 ^352e73
 
-`Vite` 加载站点前预构建了项目依赖
+`Vite` 提倡 `no-bundle`，开发时按需加载，无需全部打包后再加载。模块分为源码（业务代码）和第三方依赖代码，`no-bundle` 针对的是源码，对于第三方依赖而言仍需 `bundle`，且利用 `esbuild` 进行打包，秒级依赖编译速度
 
 ### 原因
 
