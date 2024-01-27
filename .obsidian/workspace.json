@@ -78,7 +78,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Project/Babel.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -191,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Project/Babel.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Project/Babel.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Project/Babel.md"
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md"
               }
             }
           },
@@ -276,7 +276,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Project/Babel.md",
+                "file": "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -299,7 +299,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.1144342859734258,
+                  "scale": 0.0078125,
                   "close": true
                 }
               }
@@ -329,12 +329,14 @@
   },
   "active": "7036574920b5b650",
   "lastOpenFiles": [
-    "Roval/Project/webpack.md",
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101312.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101047.png",
+    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/Project/Babel.md",
+    "Roval/Project/webpack.md",
     "Roval/Project/package.json.md",
     "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/NPM/Vue-Router.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
     "Roval/dev/CSS/css.md",
     "Roval/Articals/书籍/《网络是怎样连接的》/第一章 浏览器生成消息——探索浏览器内部.md",
     "Roval/Project/vite.md",
@@ -361,10 +363,8 @@
     "Roval/dev/JavaScript/Pasted image 20240122112636.png",
     "Roval/dev/JavaScript/事件处理.md",
     "Roval/dev/JavaScript/Pasted image 20230630213419.png",
-    "Roval/dev/JavaScript/Pasted image 20230213114327.png",
     "Roval/dev/DOM/DOM.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",
-    "Roval/dev/NPM/cheerio.md",
     "Roval/Articals/书籍/《网络是怎样连接的》",
     "Untitled",
     "Roval/Articals/书籍/《打开心智》",
