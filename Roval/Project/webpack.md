@@ -246,7 +246,16 @@ declare interface Configuration {
 
 ### devtool
 
-`false`：`develop` 模式时关闭 `sourcemap` 功能
+选择一种 [sourcemap](http://blog.teamtreehouse.com/introduction-source-maps) 风格来增强调试过程，`devtool` 默认值在生产环境下，也就是 `mode` 为 `production`，值是 `false`。在开发环境下也就是 `mode` 为 `development`，值是 `eval` ，不同的值会明显影响到初次构建 `build` 和重构建 `rebuild` 的速度
+
+| 配置值 | 含义 |
+| ---- | ---- |
+| `false` | 不生成 `sourcemap` |
+| `inline` | `base64` 内联的 `sourcemap` |
+| `cheap` | 针对业务代码，定位到行 |
+| `module` | 可以定位业务代码 + 第三方依赖代码 |
+| `eval` | `eval` 函数包裹，打包速度最快，性能最好 |
+| `hidden` | 生成但不使用 |
 
 ### mode
 
@@ -533,46 +542,43 @@ parser: {
 
 `webpack` 启动后从配置的入口模块寻找所有依赖的模块，`resolve` 配置 `webpack` 如何寻找模块所对应的文件
 
-#### alias
-
-配置路径别名，简化引入路径
-
-#### mainFields
-
-引用模块时，指明使用 `package.json` 中哪个**字段 field**指定的文件，默认是 `main`，`webpack` 会根据 `mainFields` 的配置，按照数组里的顺序在 `package.json` 文件里寻找，仅使用第一个匹配的：
-
-```json
-// 配置 target === "web" 或者 target === "webworker" 时 mainFields 默认值是：
-  mainFields: ['browser', 'module', 'main'],
-
-  // target 的值为其他时，mainFields 默认值为：
-  mainFields: ["module", "main"],
-```
-
-#### mainFiles
-
-解析目录时要使用的文件名，目录中没有 `package.json` 时，指明使用该目录中哪个文件，默认是 `index.js`
-
-```json
-resolve: { mainFiles: ['index'], // 可以添加其他默认使用的文件名 }
-```
-
 #### modules
 
-配置 `webpack` 解析模块时应该搜索的目录
+配置 `webpack` 解析第三方模块时应该搜寻的目录，默认只会去 `node_modules` 下寻找。如果项目中某个文件夹下的模块经常被导入，可特殊配置：
 
 ```json
 module.exports = {
-  //...
+  //…
   resolve: {
-    modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    modules: [path.resolve(__dirname, 'components'), 'node_modules']
   }
 };
 ```
 
+```js
+// 优先去 src/components 中寻找
+import CustomComponent from 'CustomComponent.vue'
+```
+
+#### alias
+
+配置路径别名，简化引入路径
+
+```js
+resolve: {
+	alias: {
+	  "@": path.resolve(__dirname, "src/components"),
+	}
+}
+```
+
+```js
+import CustomComponent from '@/CustomComponent.vue'
+```
+
 #### extensions
 
-引入模块时可省略文件扩展名，这时 `webpack` 会自动带上后缀尝试访问文件是否存在，配置先后顺序
+引入模块时可省略文件扩展名，这时 `webpack` 会自动带上后缀尝试访问文件是否存在，配置先后顺序。默认值 `['.js', '.json', '.wasm']`
 
 ```json
 // 先.ts、再.vue、默认.js、.json
@@ -586,6 +592,30 @@ extensions: ['.ts', '.vue', '.js', '.json']
 #### enforceModuleExtension
 
 `node_modules` 中的模块引入时，不可省略文件扩展名，设为 `false`，配合 `enforceExtension` 使用
+
+#### mainFields
+
+当引用模块时，指明使用 `package.json` 中哪个字段 `field` 指定的文件，默认是 `main`，`webpack` 会根据 `mainFields` 的配置，按照数组里的顺序依次在 `package.json` 文件里寻找，仅使用第一个匹配的：
+
+```json
+// 配置 target === "web" 或者 target === "webworker" 时 mainFields 默认值是：
+  mainFields: ['browser', 'module', 'main'],
+
+  // target 的值为其他时(包括node)，mainFields 默认值为：
+  mainFields: ["module", "main"],
+```
+
+#### externals
+
+`webpack` 将排除依赖的构建，不打包进去，将小产物体积，可通过 `cdn` 引入
+
+#### mainFiles
+
+解析目录时要使用的文件名，目录中没有 `package.json` 时，指明使用该目录中哪个文件，默认是 `index.js`
+
+```json
+resolve: { mainFiles: ['index'], // 可以添加其他默认使用的文件名 }
+```
 
 ### optimization 构建优化
 
@@ -666,7 +696,39 @@ module.exports = {
 
 [Optimization | optimization.runtimeChunk](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk)
 
-### devServer 开发服务器
+### devServer
+
+```shell
+pnpm add webpack-dev-server -D
+```
+
+```js
+devServer: {
+    static: path.join(__dirname, 'dist'), // 静态文件目录
+    https: true,
+    port: 8888, // 端口
+    client: { // 浏览器
+      progress: true, // 浏览器显示编译进度
+      overlay: true, // 浏览器全屏显示错误
+    },
+    open: false, // 自动打开
+    hot: true, // 热更新
+    compress: true, // 静态资源 gzip 压缩
+    proxy: { // 代理请求
+      '/api': 'http://localhost:3000', // /api/xx -> http://localhost:3000/api/xx
+      '/api2': {
+        target: 'http://localhost:3000', // /api2/xx -> http://localhost:3000/xx
+        pathRewrite: {
+          '/api2': '',
+        },
+      },
+    },
+  },
+```
+
+#### static
+
+静态文件目录，定位到打包构建后输出目录
 
 #### after
 
@@ -684,10 +746,6 @@ module.exports = {
 
 白名单列表，允许一些开发服务器访问
 
-#### compress
-
-是否启用 gzip 压缩
-
 #### headers
 
 所有响应中添加自定义 header
@@ -703,18 +761,6 @@ devServer: {
 #### historyApiFallback
 
 `history` 路由开发时，服务器要求任意路由命中时返回对应的 `html` 文件，`404` 时定向跳转到对应页面
-
-#### https
-
-默认 `http` 服务，配置为 `https` 服务
-
-#### hot
-
-开启 HMR
-
-#### proxy
-
-请求代理
 
 ### performance
 
@@ -763,16 +809,73 @@ stats: { // 控制台输出日志控制
 
 打包过程做一些处理工作 [插件生态](https://webpack.js.org/awesome-webpack)
 
+### clean-webpack-plugin
+
+A webpack plugin to remove/clean your build folder(s).  
+每次打包时，自动执行了 `rm -rf output.path`
+
+```js
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
+plugins: [
+    new CleanWebpackPlugin(),
+  ],
+```
+
+```ad-tip
+设置`output.clean`为`true`同样达成效果，因此可省略该插件的安装
+```
+
+### copy-webpack-plugin
+
+Copies individual files or entire directories, which already exist, to the build directory.  
+拷贝文件到打包输出目录中（可配置 `from`、`to`）
+
+```js
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{ from: './src/public', to: 'public' }],
+    }),
+  ],
+```
+
+### VueLoaderPlugin
+
+```js
+const { VueLoaderPlugin } = require('vue-loader')
+```
+
+使得其他规则 `rules` 同样应用到 `.vue` 文件的 `<style>`、`<script>` 标签，通过改 `plugin` 施展魔法，详见代码示例 [[2023-07-11#^f8b58a]]
+
+### case-sensitive-paths-webpack-plugin
+
+不同 OS 下严格匹配（大小写敏感）模块引入时所在磁盘路径，统一跨平台引入路径大小写。官网描述：This Webpack plugin enforces the entire path of all required modules match the exact case of the actual path on disk。 [case-sensitive-paths](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin)
+
+### monaco-editor-webpack-plugin
+
+Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin)
+
+### webpack.NoEmitOnErrorsPlugin
+
+【webpack 内置】  
+遇到编译报错不输出。比如我们启用热加载开发时，改错资源引用将导致页面实时报错，配置该插件可以让遇到错误的编译不再输出资源文件，页面也不会更新报错。打包时也是如此，遇到错误将跳过输出。  
+
+[[NoEmitOnErrorsPlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/NoEmitOnErrorsPlugin/)
+
+## 性能优化相关（也包含插件）
+
 ### terser-webpack-plugin
 
 This plugin uses [terser](https://github.com/terser/terser) to minify/minimize your JavaScript.  
-`uglifyjs-webpack-plugin` 单线程压缩  
-`webpack-parallel-uglify-plugin` 开启多个子线程通过 `UglifyJS` 进行压缩  
-`terser-webpack-plugin` 使用 `terser` 压缩 `js`， `webpack` 官方推荐，且仍在维护状态
+`terser-webpack-plugin` 使用 `terser` 压缩 `js`， `webpack` 官方推荐，且仍在维护状态，设置 `parallel` 参数启用多进程并行来提高构建速度  
+`uglifyjs-webpack-plugin` 年久失修  
+`webpack-parallel-uglify-plugin【deprecated】` 年久失修，开启多个子线程通过 `UglifyJS` 进行压缩  
 
 ### html-webpack-plugin
 
-简化 `html` 模板的创建，同时压缩 `html` 代码
+简化 `html` 模板的创建，设置 `template`，`js、css` 产物自动注入 `script`、`style or link`，同时支持压缩 `html` 代码
 
 ```js
 new HtmlWebpackPlugin({
@@ -798,40 +901,103 @@ new HtmlWebpackPlugin({
 })
 ```
 
-以指定 HTML 为模板自动引入打包输出的 js、css 资源  
+以指定 `HTML` 为模板自动引入打包输出的 js、css 资源  
 [html-webpack-plugin: options配置说明](https://github.com/jantimon/html-webpack-plugin#options)  
 [html-webpack-plugin: minify配置压缩html代码](https://github.com/jantimon/html-webpack-plugin#minification)
 
 ### mini-css-extract-plugin
 
-升级 webpack4 之后替代了 `extract-text-webpack-plugin` 将 CSS 从 JavaScript 中提取出来的插件，它会创建一个单独的 CSS 文件。这个插件适用于生产环境，可以帮助优化页面加载速度
+此插件为每个包含 `css` 的 `js` 文件创建一个单独的 `css` 文件，不想嵌入 `style` 而是抽离为单独 `.css` 文件以 `link` 方式引入时，可使用该插件减小 `HTML` 体积，适用于生产环境，可以帮助优化页面初始加载速度。升级 `v4` 之后平替了 `extract-text-webpack-plugin`
+
+```js
+module: {
+    rules: [
+      {
+        test: /\.scss$/i,
+        // use: ["style-loader", "css-loader", "sass-loader"],
+        // 替换 style-loader
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+    ],
+  },
+```
 
 ### optimize-css-assets-webpack-plugin
 
-用于优化和压缩 CSS 资源的插件。它使用 cssnano 进行 CSS 的优化和压缩，可以减小 CSS 文件的体积，提高页面加载速度
+`v4`.用于优化和压缩 `CSS` 资源的插件。它使用 `cssnano` 进行 `CSS` 的优化和压缩，可以减小 `CSS` 文件的体积，提高页面加载速度
 
-### VueLoaderPlugin
+- 不能使用 `style-loader` 来处理 `css`，而是需要使用 `mini-css-extract-plugin` 插件的 `MiniCssExtractPlugin.loader` 将 `css` 单独抽离出来才能进行压缩
+- `v4` 及以下的时候是配置在 `plugins` 里面，但是在 `v5` 中需要统一配置在 `optimization` 中
+
+### css-minimizer-webpack-plugin
+
+`v5`.Just like [optimize-css-assets-webpack-plugin](https://github.com/NMFR/optimize-css-assets-webpack-plugin) but more accurate with source maps and assets using query string, allows caching and works in parallel mode.  
+
+### imagemin
+
+压缩图片
 
 ```js
-const { VueLoaderPlugin } = require('vue-loader')
+rules: [{
+  test: /\.(gif|png|jpe?g|svg)$/i,
+  use: [
+    'file-loader',
+    {
+      loader: 'image-webpack-loader',
+      options: {
+        mozjpeg: {
+          progressive: true,
+        },
+        // optipng.enabled: false will disable optipng
+        optipng: {
+          enabled: false,
+        },
+        pngquant: {
+          quality: [0.65, 0.90],
+          speed: 4
+        },
+        gifsicle: {
+          interlaced: false,
+        },
+        // the webp option will enable WEBP
+        webp: {
+          quality: 75
+        }
+      }
+    },
+  ],
+}]
 ```
 
-使得其他规则 `rules` 同样应用到 `.vue` 文件的 `<style>`、`<script>` 标签，通过改 `plugin` 施展魔法，详见代码示例 [[2023-07-11#^f8b58a]]
+### SplitChunksPlugin
 
-### case-sensitive-paths-webpack-plugin
+`v4` 已移除，取而代之 `optimization.splitChunks`
 
-不同 OS 下严格匹配（大小写敏感）模块引入时所在磁盘路径，统一跨平台引入路径大小写。官网描述：This Webpack plugin enforces the entire path of all required modules match the exact case of the actual path on disk。 [case-sensitive-paths](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin)
-
-### monaco-editor-webpack-plugin
-
-Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/package/monaco-editor-webpack-plugin)
-
-### webpack.NoEmitOnErrorsPlugin
-
-【webpack 内置】  
-遇到编译报错不输出。比如我们启用热加载开发时，改错资源引用将导致页面实时报错，配置该插件可以让遇到错误的编译不再输出资源文件，页面也不会更新报错。打包时也是如此，遇到错误将跳过输出。  
-
-[[NoEmitOnErrorsPlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/NoEmitOnErrorsPlugin/)]()
+```js
+optimization: {
+    splitChunks: {
+      chunks: 'async', // 值有 `all`，`async` 和 `initial`
+      minSize: 20000, // 生成 chunk 的最小体积（以 bytes 为单位）。
+      minRemainingSize: 0,
+      minChunks: 1, // 拆分前必须共享模块的最小 chunks 数。
+      maxAsyncRequests: 30, // 按需加载时的最大并行请求数。
+      maxInitialRequests: 30, // 入口点的最大并行请求数。
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\/]node_modules[\/]/,
+          priority: -10,
+          reuseExistingChunk: true,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
+```
 
 ### webpack.HotModuleReplacementPlugin
 
@@ -840,18 +1006,66 @@ Monaco-Editor 引入。[monaco-editor-webpack-plugin](https://www.npmjs.com/pack
 
 ### webpack.DefinePlugin
 
+- 如果该值为字符串，它将被作为**代码片段**来使用
+- 如果该值不是字符串，则将被转换成**字符串**（包括函数方法）
+- 如果键添加 `typeof` 作为前缀，它会被定义为 `typeof` 调用
+- 如果值是一个对象，则它所有的键将使用相同方法定义
+
 ```js
 new webpack.DefinePlugin({
-	'process.env.BABEL_ENV': JSON.stringify('development'),
-	'process.env.NODE_ENV': JSON.stringify('development'),
-	'process.env.BROWSER': true,
-	'process.env.DEBUG': true,
-	__DEBUG__: true,
-})
+  PRODUCTION: JSON.stringify(true), // true (Boolean)
+  VERSION: JSON.stringify("5fa3b9"),  // 5fa3b9
+  BROWSER_SUPPORTS_HTML5: true, // true (String)
+  TWO: "1+1", // 2
+  "typeof window": JSON.stringify("哈哈"), // object
+  "process.env.TEST": { name: JSON.stringify("test") }, // {name: 'test'}
+}),
 ```
 
-允许在 **编译时** 将你代码中的变量替换为其他值或表达式。这在需要根据开发模式与生产模式进行不同的操作时，非常有用。  
-[[DefinePlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/define-plugin/)]()
+```js
+// .eslintrc.js
+module.exports = {
+  globals: { "PRODUCTION": true, "VERSION": true, }
+}
+```
+
+允许在 **编译时** 将源码（业务代码）中的变量替换为其他值或表达式。在区分开发模式与生产模式进行不同的操作时非常有用  
+[[DefinePlugin | webpack 中文文档 | webpack中文文档 | webpack中文网](https://www.webpackjs.com/plugins/define-plugin/)
+
+### webpack.ProvidePlugin
+
+不需要 `import` 或 `require` 就可以在项目中到处使用配置好的变量，简单理解就是**自动导入**功能
+
+```js
+// 不必在项目中各处手动引入 import $ from 'jquery'
+plugins: [
+  // 自动引入 jquery
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    React: 'react'
+  }),
+]
+```
+
+```js
+// .eslintrc.js 防止ESlint报错，进行配置
+module.exports = {
+  globals: { "React": true, "$": true, }
+}
+```
+
+### webpack.IgnorePlugin
+
+可在构建模块时直接删除那些需要被排除的模块，从而提升模块的构建速度，并减少产物体积
+
+```js
+// 排除moment中不必要的多国语言模块
+module.export = {
+  plugins: [
+    new webpack.IgnorePlugin(/^./locale$/, /moment$/)
+  ]
+}
+```
 
 ### webpack.optimize.MinChunkSizePlugin
 
@@ -863,20 +1077,231 @@ new webpack.optimize.MinChunkSizePlugin({
 
 Keep chunk size above the specified limit by merging chunks that are smaller than the `minChunkSize`.
 
+### prefetch
+
+使用：`/* webpackPrefetch: true */`
+
+```js
+// index.js
+document.getElementById("btn1").onclick = async () => {
+  const imp = await import(/* webpackPrefetch: true */ "./impModule.js");
+  imp.default();
+};
+// html中插入一段
+<link rel="prefetch" as="script" href="file:///Users/rayonreal/dev/me-pro/oh-my-monorepo/packages/webpack5-giant/dist/async-70f06af2-chunk.js">
+```
+
+### preload
+
+使用：`/* webpackPreload: true */`  
+
+区别
+
+1. `preload chunk` 具有中等优先级，并立即下载。`prefetch chunk` 在浏览器闲置时下载
+2. `preload chunk` 会在父 `chunk` 加载时，以并行方式开始加载。`prefetch chunk` 会在父 `chunk` 加载结束后开始加载
+3. `preload chunk` 会在父 `chunk` 中立即请求，用于当下时刻。`prefetch chunk` 会用于未来的某个时刻
+4. 浏览器支持程度不同，需要注意
+
+### js Tree-Shaking
+
+生产模式下自动开启。配合 `package.json` 的 `sideEffects` 进行准确的 `Tree-Shaking`[[package.json#sideEffects]]
+
+```json
+"sideEffects": [
+    "./src/**/*.css"
+  ],
+```
+
+### css Tree-Shaking
+
+`purgecss-webpack-plugin` 去除没用到的 `css` 样式
+
+### 资源压缩
+
+`compression-webpack-plugin`
+
+### Scope Hoisting
+
+生产环境下自动开启。分析模块之间的依赖关系，将那些只被引用一次的模块进行合并，减少引用的次数
+
+### speed-measure-webpack-plugin
+
+时间分析，分析整个打包的总耗时，以及每一个 `loader` 和每一个 `plugins` 构建所耗费的时间，从而帮助我们快速定位到可以优化 `Webpack` 的配置
+
+```shell
+SMP  ⏱  
+General output time took 1.17 secs
+
+ SMP  ⏱  Plugins
+HtmlWebpackPlugin took 0.051 secs
+ProgressPlugin took 0.001 secs
+HotModuleReplacementPlugin took 0.001 secs
+
+ SMP  ⏱  Loaders
+css-loader, and 
+postcss-loader, and 
+thread-loader took 0.395 secs
+  module count = 1
+css-loader, and 
+sass-loader took 0.189 secs
+  module count = 1
+modules with no loaders took 0.158 secs
+  module count = 8
+esbuild-loader took 0.062 secs
+  module count = 5
+style-loader, and 
+css-loader, and 
+postcss-loader, and 
+thread-loader took 0.051 secs
+  module count = 1
+html-webpack-plugin took 0.022 secs
+  module count = 1
+style-loader, and 
+css-loader, and 
+sass-loader took 0.001 secs
+  module count = 1
+
+
+
+Build completed in 1.173s
+
+
+Build completed in 0.735s
+```
+
+### webpack-bundle-analyzer
+
+构建结果分析：
+
+- 打包出的文件中都包含了什么；
+- 每个文件的尺寸在总体中的占比，哪些文件尺寸大，思考一下，为什么那么大，是否有替换方案，是否使用了它包含的所有代码；
+- 模块之间的包含关系；
+- 是否有重复的依赖项，是否存在一个库在多个文件中重复？ 或者捆绑包中是否具有同一库的多个版本？
+- 是否有相似的依赖库， 尝试使用一种依赖库实现相似的功能。
+- 每个文件的压缩后的大小。
+
 ## webpack-loaders 加载器
 
 ^6bd27c
 
 处理不同类型文件为模块
 
-### file-loader
+```ad-warning
+`url-loader``file-loader`，`v5`已不再推荐，替代成 [Asset Modules | webpack](https://webpack.js.org/guides/asset-modules/)
+```
 
-指定静态资源 **输出** 目录地址，通过 **hash 命名** 文件活得更好缓存。开发时，使用文件相对引用路径，打包输出后自动替换文件路径为正确 URL
+### Asset Modules
 
-### url-loader
+- `asset/resource`：将资源文件输出到指定的输出目录，作用等同于 `file—loader`；
+- `asset/inline`：将资源文件内容以指定的格式进行编码（一般为 `base64`），然后以 [data URI](https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fzh-CN%2Fdocs%2FWeb%2FHTTP%2FBasics_of_HTTP%2FData_URLs "https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/Data_URLs") 的形式嵌入到生成的 `bundle` 中，作用等同于 `url-loader`；
+- `asset/source`：将资源文件的内容以字符串的形式嵌入到生成的 `bundle` 中，作用相当于 `raw-loader`；
+- `asset`：作用等同于设置了 `limit` 属性的 `url-loader`，即资源文件的大小如果小于 `limit` 的值（默认值为 `8kb`），则采用 `asset/inline` 模式，否则采用 `asset/resource` 模式
 
-`test: /\.(png|jpg|gif|ttf)$/i`  
-封装了 `file-loader`，配置 `limit` 参数，静态资源体积小于 `limit` 时将被转为 Base64URL 作为文件引用路径，从而减少 HTTP 请求次数
+```js
+{
+	test: /\.(png|jpe?g|gif)$/i,
+	// type: 'asset', // url-loader
+	// parser: {
+	// 生成DataURL内联的条件
+	//   dataUrlCondition: {
+	//     maxSize: 4 * 1024, // 4kb，单位为 byte，默认值为 8kb
+	//   },
+	// },
+	
+	// type: 'asset/inline', // 内联
+	
+	// type: 'asset/resource', // url-loader
+},
+```
+
+自定义模块的输出路径：
+
+- `output.assetModuleFilename`：对所有模块生效
+- `generator.filename`：对具体某个类型的模块生效  
+
+### css-loader
+
+处理 `css` 文件中的 `@import` 和 `url()` 语法
+
+```js
+ {
+    loader: 'css-loader',
+    options: {
+        // Enable CSS Modules features
+        modules: true,
+        importLoaders: 2,
+        // 0 => no loaders (default);
+        // 1 => postcss-loader;
+        // 2 => postcss-loader, sass-loader
+    },
+},
+```
+
+[css-loader和file-loader/url-loader冲突无法显示图片\_唐霜的博客](https://www.tangshuang.net/8450.html)  
+[webpack入门之图片、字体、文本、数据文件处理 - 掘金](https://juejin.cn/post/7126012733018865695)
+
+### file-loader【v5-deprecated】
+
+**将代码里的引入路径转换为打包输出后的访问路径**。开发时 `js import`、`css url()` 使用的引入路径，`file-loader` 将其转换为打包输出后的引入路径，保证正确访问到资源
+
+```js
+{
+	test: /\.(png|jpg|gif|jpeg|webp|svg)$/,
+	use: {
+	  loader: 'file-loader',
+	  options: {
+		name: '[name]-[hash:4].[ext]',
+		esModule: false, // v5
+		outputPath: 'images/', // Specify where the target file(s) will be placed
+		publicPath: './dist/images/', // Specify a custom public path for the target file(s).
+	  },
+	},
+	type: "javascript/auto", // v5
+    exclude: /node_modules/, // 排除 node_modules 目录
+},
+```
+
+### url-loader【v5-deprecated】
+
+封装了 `file-loader`，配置 `limit` 参数，静态资源体积小于 `limit` 时将被转为 `Base64URL` 作为文件引用路径，从而减少 `HTTP` 请求次数，否则仍使用 `file-loader` 做处理
+
+```js
+{
+	test: /\.(png|jpg|gif|ttf)$/i,
+	use: {
+	  loader: 'url-loader',
+	  options: {
+		limit: 4 * 1024,
+		name: '[name]-[hash:4].[ext]',
+		esModule: false, // v5
+		outputPath: 'images/', // Specify where the target file(s) will be placed
+	  },
+	},
+	type: "javascript/auto", // v5
+},
+```
+
+### raw-loader
+
+`allow import file as string`
+
+```js
+// webpack.config.js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.txt$/i,
+        use: 'raw-loader',
+      },
+    ],
+  },
+};
+```
+
+```js
+import txt from './file.txt';
+```
 
 ### less-loader
 
@@ -892,17 +1317,30 @@ Keep chunk size above the specified limit by merging chunks that are smaller tha
 
 将 sass/less 变量全局化，不用每个文件重复引用
 
-### css-loader
-
-处理 `css` 文件中的 `@import` 和 `url()` 语法，输出 js 模块
-
 ### style-loader
 
-用来将 `css-loader` 生成的样式模块通过 `<style>` 标签插入到 html 中去
+用来将 `css-loader` 生成的样式模块通过 `<style>` 标签插入到 `html` 中去
 
 ### postcss-loader
 
-利用 js 处理 css 成 AST，并能在过程中调用各种插件，如 autoprefixer、cssnano 等
+后处理器，首先说下 `PostCSS` 的功能（类比 `babel` 对 `js` 的编译）：
+
+- 可以自动为 `CSS` 规则**添加浏览器兼容前缀**；
+- 将最新的 `CSS` 语法转换成大多数浏览器都能理解的语法；
+- `css-modules` 解决全局命名冲突问题；  
+
+`postcss-loader` 是使用 `PostCSS` 处理 `css` 的 `loader`，利用 `js` 把 `css` 处理成 `AST`，并能在过程中调用各种插件，如 `autoprefixer`（已包含在 `postcss-preset-env` 插件内）、`cssnano` 等  
+
+`postcss.config.js` 是 `postcss` 的配置文件：
+
+```js
+module.exports = {
+  // remove autoprefixer if you had it here, it's part of postcss-preset-env
+  plugins: ['postcss-preset-env'],
+}
+```
+
+[postcss 官方插件集 · GitHub](https://github.com/postcss/postcss/blob/main/docs/plugins.md)
 
 ### esbuild-loader
 
@@ -970,6 +1408,19 @@ var print = function print(str) {
 console.log('console有副作用');
 ```
 
+### ts-loader
+
+用样可以编译 `ts` 到 `js`，`ts-loader` vs `babel-loader` 有啥区别呢  
+[webpack入门之ts处理(ts-loadr和babel-loader的选择) - 掘金](https://juejin.cn/post/7127206384797483044)  
+
+- 编译速度上
+- 代码体积上
+- 类型检测上
+
+## 本地开发
+
+`pnpm add webpack-server -D`
+
 ## 构建流程与原理
 
 `webpack` 核心是**静态模块打包**，能够识别不同类型文件统一转换为 `JavaScript` 模块
@@ -979,11 +1430,15 @@ console.log('console有副作用');
 三大阶段：
 
 1. 初始化
-   
 2. 构建
 3. 封装
 
 # Reference
+
+[webpack进阶之性能优化(webpack5最新版本) - 掘金](https://juejin.cn/post/7244819106342780988) 该系列质量非常不错 🌟🌟🌟  
+[webpack入门之提升开发效率的几个配置(ProvidePlugin、DefinePlugin、resolve、externals) - 掘金](https://juejin.cn/post/7241424021128364087) 🌟🌟🌟
+
+[JELLY DESIGN | 京东零售官方设计共享平台](https://jelly.jd.com/article/6107701c22a78f01a317cd05)  
 
 [在淘宝优化了一个大型项目，分享一些干货（Webpack，SplitChunk代码实例，图文结合） - 掘金](https://juejin.cn/post/6844904183917871117#heading-5) ^22a680
 

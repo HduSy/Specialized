@@ -11,7 +11,7 @@ Last Modified：2023-07-18 14:36:01
 
 1. **仅**语法 (`syntax`) 转换，新语法转换为向后兼容的语法，兼容旧浏览器（仅 `JavaScript syntax` 转换，不转换 `API` 如 `Promise`、`Proxy`、`Map`、`Set`、`Symbol`、`Iterator` 和新增实例方法如 `Object.assign`、`Array.find`）；
 2. 为目标环境添加垫片 `polyfill` 提供低版本浏览器不支持的功能（如全局的 `ES6` 对象以及通过 `修改原型链 prototype` 等实现）；
-3. Source code transformations (codemods)
+3. 源码转换：可以将 `jsx`、`vue` 代码转换为浏览器可识别的 `js` 代码
 
 ## 使用方式
 
@@ -37,6 +37,10 @@ pnpm babel ./src/index.js -o ./dist/output.js
 
 ## 使用指南
 
+1. `plugin` 在 `preset` 前运行；
+2. `plugin` 顺序从前往后排列；
+3. `preset` 顺序是从后往前（颠倒的）；
+
 ### plugin
 
 由 `Javascript` 编写，指导 `Babel` 如何转换代码 [官网插件列表 · Babel](https://babeljs.io/docs/plugins-list)
@@ -48,7 +52,7 @@ pnpm babel ./src/index.js -o ./dist/output.js
 A plugin that enables the **re-use** of Babel's injected helper functions code to **save on codesize**.  
 移除 `helpers functions`（辅助函数），将其替换为 `@babel/runtime/helpers` 中的函数引用进行复用，节省生成代码空间.
 
-- **减少重复引用，节省代码体积**：自动移除重复的 `helpers` 引入，替换为统一引入 `@babel/runtime/helpers` 里的 `helpers`；
+- **减少 helper 函数重复声明，节省代码体积**：自动将 `helpers` 函数引入统一替换为 `@babel/runtime/helpers` 里的 `helpers` 引入；
 - **避免污染全局环境（针对库开发者）**：create `a sandboxed environment` for your code.作为 `APP` 或 `CLI Tool` 没什么问题，但作为 `lib` 提供给其他人使用时，无法确认代码运行的环境，或许会 **pollute the global scope** ；
 - `import _regeneratorRuntime from '@babel/runtime/regenerator'` 支持 `Generator/async` 函数，替代全局引入的 `regenerator-runtime/runtime`；
 - 自动引入 `@babel/runtime-corejs3/core-js-stable/` 替代全局引入的 `core-js/stable`
@@ -66,6 +70,7 @@ Sometimes `Babel` may inject some code in the output that is the same **across f
 ```shell
 pnpm add --save-dev @babel/plugin-transform-runtime // for 开发环境
 pnpm add @babel/runtime // for 生产环境
+pnpm add @babel/runtime-corejs3 // for 生产环境
 ```
 
 ##### config
@@ -131,14 +136,41 @@ import "core-js/modules/es.array.unscopables.flat.js";
 
 #### @babel/preset-flow
 
+对使用了 `flow` 的 `js` 代码编译成 `js` 文件
+
 #### @babel/preset-react
+
+编译 `react` 的 `jsx` 文件
 
 #### @babel/preset-typescript
 
+将 `ts` 文件编译成 `js` 文件
+
+`Webpack` 支持 `typescript` 配置中，用 `babel` 预设 `@babel/preset-typescript` 编译 `ts` 的编译速度要**快于**`ts-loader` 因为：`ts-loader` 需拿到整个工程的信息进行类型检查，`babel` 以单个文件为维度处理，没有类型检查这一步
+
+原理：  
+`ts-loader` 内部调用 `tsc`，共享同一份 `tsconfig.json` 配置  
+`@babel/preset-typescript` 负责将 `ts` 编译为 `js`，类型检查须配合 `tsc --watch`  
+
+```js
+// tsc + babel-loader + @babel/preset-typescript > ts-loader
+```
+
+```json
+{
+  "presets": ["@babel/preset-env", "@babel/preset-typescript"], // 预设合集，语法转换
+  "plugins": [ ["@babel/plugin-transform-runtime", {
+    "helpers": true, // 开启自动导入
+    "corejs": 3, // 2
+    "useESModules": true, // 开启ES6模块语法
+    "absoluteRuntime": false // 模块路径引入规则
+  }] ]
+}
+```
+
 #### @babel/preset-env
 
-`.browserslistrc` 配置支持的目标环境（浏览器版本、浏览器覆盖率），进行语法转换。  
-配置优先级 `targets`>`browserslist`
+将高版本 `js` 编译成低版本 `js`，支持**按需引入**，`@babel/preset-env` 会根据 `.browserslistrc` 配置支持的目标环境（浏览器版本、浏览器覆盖率）进行语法转换，配置优先级 `targets`>`browserslist`
 
 ```json
 {
@@ -182,7 +214,7 @@ false: 须手动在主文件入口/构建工具入口处引入`@babel/polyfill`�
 ```
 
 `useBuiltIns: "entry"`  
-须手动在主文件入口/构建工具入口处引入 `@babel/polyfill`；根据目标环境缺失 `API` 进行引入，不管代码中是否用到
+须手动在主文件入口/构建工具入口处==全量引入== `@babel/polyfill`；根据目标环境缺失 `API` 进行引入，不管代码中是否用到
 
 ```js
 "use strict";
@@ -210,7 +242,7 @@ require("core-js/modules/es6.number.max-safe-integer.js");
 ```
 
 `useBuiltIns: "usage"`  
-无须手动引入 `@babel/polyfill`, `Babel` 自动引入 `polyfill`；代码中用到的 `API` 针对性引入 `pollyfill`  
+无须手动引入 `@babel/polyfill`, `Babel` 自动引入 `polyfill`；代码中用到的 `API` 针对性按需引入 `pollyfill`  
 
 ```js
 "use strict";
@@ -265,21 +297,21 @@ This option must be one of `'commonjs'`, `'amd'`, `'umd'`, `'systemjs'` - `'auto
 pnpm add @babel/polyfill // 生产环境
 ```
 
-使用方式：
+使用方式：==全量引入==
 
 1. 直接在 `html` 文件引入 `Babel` 官方的 `polyfill.js` 脚本文件 `<script src="https://xxx/polyfill.js"></script>`；
 2. 在入口文件开头引入 `import './polyfill.js'`；
-3. 在入口文件开头引入 `import '@babel/polyfill'`；
-4. 在入口文件开头引入 `import "core-js/stable";import "regenerator-runtime/runtime";`；
+3. `v7.4.0` 之前，在入口文件开头引入 `import '@babel/polyfill'`；
+4. `v7.4.0` 之后，在入口文件开头引入 `import "core-js/stable";import "regenerator-runtime/runtime";`
 5. 构建工具文件入口项配置引入，如 `webpack`： `entry: ['./polyfill.js', './index.js']`；
-6. 构建工具文件入口项配置引入，如 `webpack`： `entry: ['@babel/polyfill', './index.js']`；
-7. 构建工具文件入口项配置引入，如 `webpack`： `entry: ['core-js/stable', 'regenerator-runtime/runtime', './index.js']`；  
+6. `v7.4.0` 之前，构建工具文件入口项配置引入，如 `webpack`： `entry: ['@babel/polyfill', './index.js']`；
+7. `v7.4.0` 之后，构建工具文件入口项配置引入，如 `webpack`： `entry: ['core-js/stable', 'regenerator-runtime/runtime', './index.js']`；  
 
 ```ad-warning
-We do not recommend that you import the whole polyfill directly, either try the `useBuiltIns` options or import only the polyfills you need manually
-```
+We do not recommend that you import the whole polyfill directly, either try the `useBuiltIns` options or import only the polyfills you need manually. 
 
-==副作用==：`7.4.0` 后不建议使用 `@babel/polyfill`，将在全局模拟完整的 `ECMA2015+` 功能，**造成污染**。而 `@babel/preset-env` 的 `"useBuiltIns": "usage"` 配置，只对使用到的、目标环境缺失的功能进行代码转换和添加 `polyfill`
+**副作用全局污染、体积变大**
+```
 
 ### Tool Packages
 
@@ -288,6 +320,14 @@ We do not recommend that you import the whole polyfill directly, either try the�
 is a library that contains Babel modular runtime helpers.
 
 无需开启 `corejs2 API` 转换时，安装 `@babel/runtime` 即可；需要 `corejs3 API` 转换时需安装 `@babel/runtime-corejs2/3`
+
+#### @babel/runtime-corejs3
+
+处理 `corejs2` 处理不了的 `API`
+
+#### @babel/polyfill
+
+全量引入使用❗️❗️❗️
 
 ## 总结
 
@@ -308,6 +348,7 @@ is a library that contains Babel modular runtime helpers.
 
 # Reference
 
+[webpack入门之js处理(babel、babel polyfill) - 掘金](https://juejin.cn/post/7126465727178997791) 🌟🌟🌟  
 [Babel 教程 - 姜瑞涛的官方网站](https://www.jiangruitao.com/babel/) 🎉🎉🎉  
 [编译 ts 代码用 tsc 还是 babel？ - 掘金](https://juejin.cn/post/7084882650233569317)
 
