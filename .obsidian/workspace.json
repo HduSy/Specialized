@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/Project/Babel.md",
+                "file": "Roval/Project/vite.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -112,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -141,7 +141,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mainF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/Project/webpack.md",
+                "file": "Roval/Project/vite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/Project/webpack.md",
+                "file": "Roval/Project/vite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/Project/webpack.md"
+                "file": "Roval/Project/vite.md"
               }
             }
           },
@@ -257,7 +257,7 @@
       {
         "id": "fa756dafd5be18c4",
         "type": "tabs",
-        "dimension": 28.937381404174573,
+        "dimension": 28.937381404174577,
         "children": [
           {
             "id": "06de15da7c18b297",
@@ -265,7 +265,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/Project/webpack.md",
+                "file": "Roval/Project/vite.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -316,11 +316,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "06de15da7c18b297",
+  "active": "1536f3c9f013e97a",
   "lastOpenFiles": [
-    "Roval/Project/package.json.md",
-    "Roval/Project/webpack.md",
+    "Roval/Project/Pasted image 20240131114542.png",
+    "Roval/Project/Pasted image 20240131112324.png",
+    "Roval/Project/Pasted image 20240131111951.png",
+    "Roval/Project/Pasted image 20240131111715.png",
     "Roval/Project/Babel.md",
+    "Roval/Project/webpack.md",
+    "Roval/Project/package.json.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101312.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101047.png",
@@ -344,12 +348,9 @@
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141550.png",
     "Roval/dev/CSS/experience/双圆角TAB.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141532.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141536.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141528.png",
     "Roval/dev/JavaScript/type vs interface.md",
     "Roval/Project/tsconfig.json.md",
     "Roval/dev/JavaScript/事件循环.md",
-    "Roval/dev/JavaScript/Pasted image 20240122112636.png",
     "Roval/dev/JavaScript/事件处理.md",
     "Roval/dev/DOM/DOM.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/第三章 Vue.js 3 的设计思路.md",

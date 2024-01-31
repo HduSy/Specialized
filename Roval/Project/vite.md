@@ -9,6 +9,38 @@ Last Modified：2023-09-23 16:47:10
 
 ## 开始
 
+### 开发/生产环境
+
+#### 开发环境
+
+`esm` + `esbuild`，并没有对“源码”进行打包，而是启动一个开发服务器加载当前根目录下的 `index.html` 文件，利用浏览器原生支持 `ESM` 模块化标准直接加载 `html` 文件中的 `script`，顺着依赖加载其他 `js`  
+
+```shell
+vite
+```
+
+#### 生产环境
+
+`Rollup`，也是以根目录下 `index.html` 文件为入口，会把入口文件中加载的 `js` 打包为一个 `js`，以 `ESM` 方式引入
+
+```shell
+vite build // 执行打包
+vite preview // 预览打包好的项目
+```
+
+```ad-tip
+- `index.html`中引入的多个`js`都将会被打包成一个`js`文件
+- `vite`内置了`js`代码压缩（相比`webpack`简直太方便了，上手成本低
+```
+
+### 为什么生产环境仍需打包
+
+尽管原生 `ESM` 现在得到了广泛支持，但由于**嵌套导入会导致额外的网络往返**，在生产环境中发布未打包的 `ESM` 仍然效率低下（即使使用 `HTTP/2`）。为了在生产环境中获得最佳的加载性能，最好还是将代码进行 `tree-shaking`、懒加载和 `chunk` 分割（以获得更好的缓存）
+
+#### 那为何不用 `ESBuild` 打包而是 `Rollup`
+
+`Vite` 目前的插件 `API` 与使用 `esbuild` 作为打包器**并不兼容**。尽管 `esbuild` 速度更快，但 `Vite` 采用了 `Rollup` 灵活的插件 `API` 和基础建设，这对 `Vite` 在生态中的成功起到了重要作用
+
 ### index.html 作为 Vite 入口文件
 
 `Vite` 项目中的 `index.html` 存放在根目录，而非 `public` 目录，Vite 解析 `<script type="module" src="…">` ，甚至内联引入 JavaScript 的 `<script type="module">` 和引用 CSS 的 `<link href>` 也能利用 Vite 特有的功能被解析，`Vite` 将 `index.html` 视作源码和模块图的一部分
@@ -20,6 +52,20 @@ Last Modified：2023-09-23 16:47:10
 ## 功能
 
 `Vite` 支持 `ES6` 模块引入方式，为打包构建场景提供了增强功能。
+
+### 快
+
+- 本地开发时，**源码不打包**，利用浏览器原生支持 `ESM` 模块规范的特性，将这部分工作交给了浏览器；
+- `esbuild` 预构建第三方依赖，`esbuild` 天生快
+- 利用文件系统缓存和浏览器缓存
+- 内置原生 `ESM` 的 `HMR` 热替换
+- 合并模块请求
+- 按需提供代码
+
+#### Vite vs Webpack
+
+`Webpack` 从 `entry` 入口构建 `module graph`，处理每一个用到的模块，全部打包结束后，启动开发服务器，如果项目比较大，打包耗时增长；  
+`Vite` 采用 `esbuild` 进行依赖预构建，将产物缓存在文件系统中 `node_modules/.vite/`，然后就立即启动开发服务器，根据 `index.html` 入口文件中的 `js` 去按需加载（浏览器强缓存），只根据访问到的路由提供按需加载的模块，不在当前路由的模块不会加载。缓存命中时也不会再次预构建、请求
 
 ### NPM 依赖解析与预构建
 
@@ -56,7 +102,54 @@ Last Modified：2023-09-23 16:47:10
 
 ### 内置支持 CSS 预处理器
 
-内置支持 `sass less stylus`，🉑直接使用
+内置支持 `sass less stylus`，安装相应的预处理器依赖后🉑直接使用
+
+#### 开发/生产环境
+
+开发环境下：`JS` 文件中以 `import` 导入的 `.css` 文件内容经处理后会插入到 `index.html` 文件的 `<style>` 标签中，同时自带 `HMR` 支持，不处理 `html <link>` 标签引入的 `CSS`
+
+```html
+<link rel="stylesheet" href="./src/styles/link.css">
+<style type="text/css" data-vite-dev-id="/Users/rayonreal/dev/me-pro/MeiDragon/vite-appdev-template/src/styles/index.css">.base {
+  box-sizing: border-box;
+  width: 111px;
+  height: 111px;
+  background: url(/IMG_1487.JPG) center/contain no-repeat;
+}
+.vite {
+  font-size: 12px;
+}</style>
+```
+
+生产环境下：通过 `html <link>` 标签引入和 `import` 引入的 `CSS` 打包到一个 `CSS` 文件中，输出在项目的 `dist/assets` 目录下，以 `html <link>` 方式引入
+
+```html
+<!-- link引入、js中import引入都在index-ENAsjBG7.css -->
+<link rel="stylesheet" crossorigin href="/assets/index-ENAsjBG7.css">
+```
+
+`index-ENAsjBG7.css`：
+
+```css
+.link {
+    color: red
+}
+
+.base {
+    box-sizing: border-box;
+    width: 111px;
+    height: 111px;
+    background: url(/IMG_1487.JPG) center/contain no-repeat
+}
+
+.vite {
+    font-size: 12px
+}
+```
+
+```ad-tip
+和`webpack`区分`development`、`production`使用不同插件一样，生产环境使用`mini-css-extract-plugin`抽离`css`，开发环境注入到`html <style>`标签
+```
 
 ### 支持 CSS Module 配置和使用
 
@@ -76,7 +169,49 @@ export default defineConfig({
 })
 ```
 
+`redbox.module.css`
+
+```css
+.red-box {
+  width: 111px;
+  height: 111px;
+  background-color: red;
+}
+```
+
+`insertRedBox.js`
+
+```js
+import redBoxStyle from '../styles/redbox.module.css'
+export function insertRedBox() {
+  const div = document.createElement('div')
+  div.className = redBoxStyle['red-box']
+  document.body.appendChild(div)
+}
+```
+
+`CSS Modules` 模块化命名了，避免了选择器名冲突  
+`dev` - `style`
+
+```html
+<style type="text/css" data-vite-dev-id="/Users/rayonreal/dev/me-pro/MeiDragon/vite-appdev-template/src/styles/redbox.module.css">
+._red-box_y6ano_1 {
+  width: 111px;
+  height: 111px;
+  background-color: red;
+}
+</style>
+```
+
+`build` - `<link rel="stylesheet" crossorigin href="/assets/index-bmce2Ixs.css">`
+
+```css
+._red-box_y6ano_1{width:111px;height:111px;background-color:red}
+```
+
 ### 支持 PostCSS 配置和使用
+
+内置了 `postcss`，剩下的工作只需安装插件、配置好就🉑
 
 ```ts
 import postcssPresetEnv from 'postcss-preset-env' // 🉑编写最新CSS语法，无需担心兼容问题
@@ -150,7 +285,7 @@ import Worker from './worker.js?worker'
 import InlineWorker from './worker.js?worker&inline'
 ```
 
-### 导入 JSON
+### 支持 JSON
 
 `Vite` 支持直接导入 `JSON` 文件
 
@@ -212,19 +347,46 @@ const module = await import(`./dir/${file}.js`)
 
 ^352e73
 
-`Vite` 提倡 `no-bundle`，开发时按需加载，无需全部打包后再加载。模块分为源码（业务代码）和第三方依赖代码，`no-bundle` 针对的是源码，对于第三方依赖而言仍需 `bundle`，且利用 `esbuild` 进行打包，秒级依赖编译速度
+`Vite` 提倡 `no-bundle`，开发时按需加载，无需全部打包后再加载。模块分为**源码（业务代码）和第三方依赖代码**，`no-bundle` 针对的是源码，对于第三方依赖而言仍需 `bundle`，且利用 `esbuild` 进行打包，秒级依赖编译速度
 
 ### 原因
 
 #### 一 模块系统兼容性
 
-`Vite` 开发服务器将所有代码识别为 `ES` 模块，而第三方依赖的模块系统可能是 `CMD`/`UMD`，因此 `Vite` 必须先转为 `ES` 模块规范。
+`Vite` 开发服务器将所有代码识别为 `ES` 模块，而第三方依赖的模块系统可能是 `CommonJS`/`UMD`，遇到以下情况必须处理：  
+
+情况一：`import` 引入第三方依赖，浏览器可不知道要到 `node_modules` 目录下去找第三方依赖
+
+```js
+import axios from "axios"; // ES 模块
+```
+
+情况二：第三方依赖模块规范并不是 `ESM` 规范
+
+```js
+// node.js 导出模块  
+module.exports = {  
+  a: 1,  
+  b: 2,  
+};
+```
+
+因此，`Vite` 必须先转为 `ES` 模块规范
 
 #### 二 加载性能
 
-`Vite` 将拥有许多内部模块的依赖项转化为单个模块，节省 HTTP 请求，避免网络拥塞，拖慢页面加载速度
+有些包将它们的 `ES` 模块构建为许多单独的文件彼此导入，例如
+
+```ad-example
+`lodash-es` 有超过 300 个内置模块！当我们执行 `import { debounce } from 'lodash-es'` 时，浏览器同时发出 300 多个 HTTP 请求！即使服务器能够轻松处理它们，但大量请求会导致浏览器端的网络拥塞，使页面加载变得明显缓慢，通过将 `lodash-es` 预构建成单个模块，现在我们只需要一个 HTTP 请求！
+```
+
+![[Pasted image 20240131111715.png]]  
+
+因此，`Vite` 将拥有许多内部模块的 `ESM` 依赖项转化为单个模块，节省 `HTTP` 请求，避免网络拥塞拖慢页面加载速度
 
 ```ad-tip
+
 依赖预构建仅适用于开发模式
 ```
 
@@ -244,7 +406,11 @@ const module = await import(`./dir/${file}.js`)
 
 #### 文件系统缓存
 
-预构建的依赖项存放于 `node_modules/.vite` 目录，以下任一项发生变化时引起**重新预构建**：
+预构建的依赖项存放于 `node_modules/.vite` 目录，后序启动开发服务时，如果缓存中能找到直接使用，跳过预构建步骤
+
+![[Pasted image 20240131111951.png]]
+
+以下任一项发生变化时引起**重新预构建**：
 
 1. 包管理器的 `.lock` 文件；
 2. `vite.config.js` 相关字段；
@@ -255,7 +421,11 @@ const module = await import(`./dir/${file}.js`)
 
 #### 浏览器缓存
 
-已预构建的依赖请求使用 HTTP Header `max-age=31536000, immutable` 进行**强缓存**，以提高开发阶段页面重载性能，以下任一项发生变化时引起**重新预构建**：
+已预构建的依赖请求使用 `HTTP Header max-age=31536000, immutable` 进行**强缓存**，一旦被缓存，这些请求将永远不会再次访问开发服务器，而是直接从级存中读取，以提高开发阶段页面重载性能
+
+![[Pasted image 20240131112324.png]]  
+
+以下任一项发生变化时引起**重新预构建**：
 
 1. 包管理器的.lock 文件；
 2. 浏览器 `Network` 选项卡禁用缓存
@@ -264,15 +434,18 @@ const module = await import(`./dir/${file}.js`)
 
 ## 静态资源处理
 
-^9c7654
+^9c7654  
+`Vite` 作为一个开箱即用的前端构建工具，默认支持 `JS`、`CSS`、`Sass`、`Less`、`JSON`、图片、`HTML` 等静态资源的处理
 
 ### public 目录
 
-不会被引入；保持原文件名；的资源可放在 `<root>/<public>` 目录中，打包后目录中的资源文件将被完整复制到目标目录的根目录下
+不会也不应该被 `js` 引入的资源可放在 `<root>/<public>` 目录中，打包后 `public` 目录中的资源文件将被完整复制到目标目录的**根目录下** ：  
+![[Pasted image 20240131114542.png]]
 
 ```ad-tip
-要以根绝对路径方式引入其中资源；
-其中的资源不应被JS文件引用；
+- 尽管在`public`目录下，🉑以绝对路径方式引入其中资源，如`<img src="/IMG_1487.JPG"/>`
+- 其中的资源不应被`JS`文件引入；
+- 不管里面的资源是否有被外界引用，都会直接复制到打包后的根目下；
 ```
 
 ### new URL(url, import.meta.url)
@@ -288,7 +461,7 @@ document.getElementById('logo-img').src = imgUrl
 
 ### 公共基础路径
 
-指定一个嵌套的公共路径下部署项目，`JS` 中饮用地址，`CSS` 中的 URL 地址，`HTML` 中引用的地址都将据此地址进行替换
+指定一个嵌套的公共路径下部署项目，`JS` 中引用地址，`CSS` 中的 URL 地址，`HTML` 中引用的地址都将据此地址进行替换
 
 ### 自定义构建
 
@@ -400,19 +573,37 @@ export default defineConfig({
 
 ^0efffb
 
-自动生成传统版本的 `chunk` 及与其相对应 `ES` 语言特性方面的 `polyfill`
+向后兼容转换 `js` 语法。This plugin provides support for legacy browsers that do not support those features when building for production.
+
+```
+npm i -D @vitejs/plugin-legacy
+npm i -D terser  #必须安装Terser，因为 @vitejs/plugin-legacy插件使用Terser进行压缩JS代码
+```
+
+配合 `.browserslistrc` 作不同浏览器环境兼容
 
 ```ts
-// vite.config.js
-import legacy from '@vitejs/plugin-legacy'
+import PluginLegacy from '@vitejs/plugin-legacy'
+import { defineConfig } from 'vite'
 
-export default {
-  plugins: [
-    legacy({
-      targets: ['defaults', 'not IE 11'],
-    }),
-  ],
-}
+export default defineConfig({
+  plugins:[ PluginLegacy() ]
+})
+```
+
+`build` 输出：
+
+```txt
+index-wgTsvOKx.js // 未兼容的，浏览器环境支持的情况下只会请求该文件
+index-legacy-FcXRIZlj.js // 语法兼容处理后的
+polyfills-legacy-QX10uLmV.js // API兼容
+```
+
+配合 `script nomodule` 属性，该属性表明这段脚本在支持 `esm` 浏览器的环境中不会执行
+
+```html
+<script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-QX10uLmV.js"></script>
+<script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-FcXRIZlj.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 ```
 
 ### vite-plugin-compression
