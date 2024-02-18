@@ -35,7 +35,9 @@ Last Modified：2022-12-17 22:19:23
 
 ### useRef(initialValue)
 
-[useRef – React](https://react.dev/reference/react/useRef) [[#useImperativeHandle]]
+[useRef – React 英文文档](https://react.dev/reference/react/useRef)  
+[useRef – React 中文文档](https://zh-hans.react.dev/reference/react/useRef)  
+[[#useImperativeHandle]]
 
 #### 使用情景
 

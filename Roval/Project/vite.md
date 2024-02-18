@@ -13,7 +13,7 @@ Last Modified：2023-09-23 16:47:10
 
 #### 开发环境
 
-`esm` + `esbuild`，并没有对“源码”进行打包，而是启动一个开发服务器加载当前根目录下的 `index.html` 文件，利用浏览器原生支持 `ESM` 模块化标准直接加载 `html` 文件中的 `script`，顺着依赖加载其他 `js`  
+`esm` + `esbuild`，不对“源码”进行打包，而是启动一个开发服务器加载当前根目录下的 `index.html` 文件，利用浏览器原生支持 `ESM` 模块化标准直接加载 `html` 文件中的 `script`，顺着依赖加载其他 `js`  
 
 ```shell
 vite
@@ -230,7 +230,7 @@ export default defineConfig({
 })
 ```
 
-- [postcss-preset-env](https://github.com/csstools/postcss-preset-env)：convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments.
+- [postcss-preset-env](https://github.com/csstools/postcss-preset-env)：convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments.功能上🉑替代 `autoprefixer`
 - [autoprefixer](https://github.com/postcss/autoprefixer)：parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com/).
 - [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)：generates rem units from pixel units. 适配移动端应用
 
@@ -353,7 +353,7 @@ const module = await import(`./dir/${file}.js`)
 
 #### 一 模块系统兼容性
 
-`Vite` 开发服务器将所有代码识别为 `ES` 模块，而第三方依赖的模块系统可能是 `CommonJS`/`UMD`，遇到以下情况必须处理：  
+`Vite` 基于浏览器原生 `ES` 模块规范实现开发服务，而第三方依赖的模块系统可能是 `CommonJS`/`UMD` 在 `Vite` 中无法直接运行，遇到以下情况必须处理：  
 
 情况一：`import` 引入第三方依赖，浏览器可不知道要到 `node_modules` 目录下去找第三方依赖
 
@@ -375,7 +375,7 @@ module.exports = {
 
 #### 二 加载性能
 
-有些包将它们的 `ES` 模块构建为许多单独的文件彼此导入，例如
+有些包将它们的 `ES` 模块构建为许多单独的文件彼此导入，每个 `import` 都会触发一次新的文件请求，因此在这种 `依赖层级深`、`涉及模块数量多` 的情况下，会触发成百上千个网络请求，巨大的请求量加上 `Chrome` 对同一个域名下只能同时支持 6 个 `HTTP` 并发请求的限制，导致页面加载十分缓慢
 
 ```ad-example
 `lodash-es` 有超过 300 个内置模块！当我们执行 `import { debounce } from 'lodash-es'` 时，浏览器同时发出 300 多个 HTTP 请求！即使服务器能够轻松处理它们，但大量请求会导致浏览器端的网络拥塞，使页面加载变得明显缓慢，通过将 `lodash-es` 预构建成单个模块，现在我们只需要一个 HTTP 请求！
@@ -406,6 +406,8 @@ module.exports = {
 
 #### 文件系统缓存
 
+##### 自动开启
+
 预构建的依赖项存放于 `node_modules/.vite` 目录，后序启动开发服务时，如果缓存中能找到直接使用，跳过预构建步骤
 
 ![[Pasted image 20240131111951.png]]
@@ -413,11 +415,16 @@ module.exports = {
 以下任一项发生变化时引起**重新预构建**：
 
 1. 包管理器的 `.lock` 文件；
-2. `vite.config.js` 相关字段；
-3. `NODE_ENV`；
-4. 补丁文件修改；
+2. `package.json` 的 `dependencies`；
+3. `vite.config.js` 的 `optimizeDeps` 配置项；
+4. `NODE_ENV`；
+5. 补丁文件修改；
 
-或命令行加 `--force` 强制重新运营预构建
+##### 手动开启
+
+- 删除 `node_modules/.vite`  
+- `optimizeDeps.force: true`  
+- `vite --force`
 
 #### 浏览器缓存
 
@@ -641,8 +648,199 @@ import { defineConfig } from 'vite'
 export default defineConfig(config:UserConfig|UserConfigFnObject)
 ```
 
+## vite.config.js
+
+```js
+import PluginLegacy from '@vitejs/plugin-legacy';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  /**
+   * Dep optimization options
+   */
+  optimizeDeps: {
+    /**
+     * By default, Vite will crawl your `index.html` to detect dependencies that
+     * need to be pre-bundled. If `build.rollupOptions.input` is specified, Vite
+     * will crawl those entry points instead.
+     *
+     * If neither of these fit your needs, you can specify custom entries using
+     * this option - the value should be a fast-glob pattern or array of patterns
+     * (https://github.com/mrmlnc/fast-glob#basic-syntax) that are relative from
+     * vite project root. This will overwrite default entries inference.
+     * 默认行为不符合要求时，比如入口文件为 .vue，可自定入口
+     */
+    entries: [],
+    /**
+     * Force optimize listed dependencies (must be resolvable import paths,
+     * cannot be globs).
+     * 指定强制预构建的依赖，Vite自身扫描检测依赖不可靠
+     * 场景一：动态import会导致二次预构建=重走预构建+刷新页面+重新请求，Vite天然按需加载的特性使得某些依赖只在运行时才识别到
+     * 场景二：某些包被exclude（不常用）
+     */
+    include: [],
+    /**
+     * Do not optimize these dependencies (must be resolvable import paths,
+     * cannot be globs).
+     */
+    exclude: [],
+    /**
+     * Options to pass to esbuild during the dep scanning and optimization
+     *
+     * Certain options are omitted since changing them would not be compatible
+     * with Vite's dep optimization.
+     *
+     * - `external` is also omitted, use Vite's `optimizeDeps.exclude` option
+     * - `plugins` are merged with Vite's dep plugin
+     *
+     * https://esbuild.github.io/api
+     * 自定 esbuild 配置
+     */
+    esbuildOptions: {
+      plugins: []
+    },
+    /**
+     * Force dep pre-optimization regardless of whether deps have changed.
+     * 手动强制开启预构建
+     * @experimental
+     */
+    force: true
+  },
+  // CSS related options (preprocessors and CSS modules)
+  css: {
+    // https://github.com/css-modules/postcss-modules
+    modules: {
+      generateScopedName: '[name]-[local]-[hash:base64:5]'
+    },
+    preprocessorOptions: {
+
+    },
+    postcss: {
+      plugins: []
+    }
+  },
+  // 模块解析，和`webpack`一样
+  resolve: {
+    alias: {
+      '@': '/src/',
+      '@utils': '/src/utils/',
+      '@styles': '/src/styles/',
+    }
+  },
+  // 配置开发服务
+  server: {
+    port: 5173,
+    open: true,
+    hmr: true,
+    /**
+     * Configure custom proxy rules for the dev server. Expects an object
+     * of `{ key: options }` pairs.
+     * Uses [`http-proxy`](https://github.com/http-party/node-http-proxy).
+     * Full options [here](https://github.com/http-party/node-http-proxy#options).
+     *
+     * Example `vite.config.js`:
+     * ``` js
+     * module.exports = {
+     *   proxy: {
+     *     // string shorthand
+     *     '/foo': 'http://localhost:4567/foo',
+     *     // with options
+     *     '/api': {
+     *       target: 'http://jsonplaceholder.typicode.com',
+     *       changeOrigin: true,
+     *       rewrite: path => path.replace(/^\/api/, '')
+     *     }
+     *   }
+     * }
+     * ```
+     */
+    proxy: {
+      // /foo 是字符串 http://localhost:5173/foo 的简写法
+      '/foo': 'http://localhost:4567/foo',
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
+  },
+  // 配置打包服务
+  build: {
+    /**
+     * Directory relative from `outDir` where the built js/css/image assets will
+     * be placed.
+     * @default 'assets'
+     */
+    assetsDir: 'assets',
+    /**
+     * Static asset files smaller than this number (in bytes) will be inlined as
+     * base64 strings. Default limit is `4096` (4 KiB). Set to `0` to disable.
+     * @default 4096
+     */
+    assetsInlineLimit: 5 * 1024,
+    /**
+     * Will be merged with internal rollup options.
+     * https://rollupjs.org/configuration-options/
+     */
+    rollupOptions: {
+      // 生产环境多入口配置，开发环境默认支持
+      input: {
+        index: './index.html',
+        list: './list.html',
+      },
+      output: {
+        // 入口chunk
+        entryFileNames: 'assets/js/[name]-[hash:8].js',
+        // 非入口chunk
+        chunkFileNames: 'assets/chunk/[name]-[hash:8].js',
+        // 资源出口路径(如：图片、css等)
+        assetFileNames: chunkInfo => {
+          const { name = '', source, type } = chunkInfo
+          if (/\.css$/i.test(name)) {
+            return "assets/css/[name]-[hash:8][extname]"
+          } else if (/\.[jpe?g|png|gif]$/i.test(name)) {
+            return "assets/images/[name]-[hash:8][extname]"
+          } else {
+            return `assets/[ext]/[name]-[hash:8][extname]`
+          }
+        }
+      }
+    }
+  },
+  // 插件
+  plugins:[ PluginLegacy() ]
+})
+```
+
+## 双引擎架构
+
+![[Pasted image 20240131211828.png]]
+
+### esbuild
+
+负责 `依赖预构建-Bundler`、`TS(X)、JSX语法转译-Transformer`、`代码压缩-Minifier`
+
+优点：
+
+- `GoLang` 开发，原生机器码
+- 多核多线程优势
+- 无第三方依赖
+- `AST` 复用，节省内存  
+缺点：
+- 不支持降级到 `ES5` 的代码。这意味着在低端浏览器代码会跑不起来
+- 不支持 `const enum` 等语法。这意味着单独使用这些语法在 `esbuild` 中会直接抛错
+- 不提供操作打包产物的接口，像 `Rollup` 中灵活处理打包产物的能力 (如 `renderChunk` 钩子) 在 `esbuild` 当中完全没有
+- 不支持自定义 `Code Splitting` 策略。传统的 `Webpack` 和 `Rollup` 都提供了自定义拆包策略的 `API`，而 `esbuild` 并未提供，从而降级了拆包优化的灵活性
+- 不支持 `ts` 类型检查，没有实现类型系统
+
+### Rollup
+
+- `vite` 插件完全兼容 `Rollup`
+- `css` 代码抽离，更好利用浏览器对静态资源的缓存
+- 异步加载优化，为入口 `chunk` 的依赖自动生成预加载标签 `<link rel="modulepreload">`
+
 # Reference
 
-[Vite | 下一代的前端工具链](https://cn.vitejs.dev/)
-
+[Vite | 下一代的前端工具链](https://cn.vitejs.dev/)  
+[Vite | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/engines.html)  
 [[../前端面经/Vite面经|Vite面经]]

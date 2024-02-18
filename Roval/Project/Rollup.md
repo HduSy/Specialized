@@ -193,7 +193,68 @@ export default config;
 
 动态替换代码中的特定字符串
 
-## webpack vs rollup
+### rollup-plugin-visualizer
+
+Visualize and analyze your Rollup bundle to see which modules are taking up space.
+
+## API
+
+### rollup.rollup
+
+### rollup.watch
+
+## 原理
+
+```mermaid
+graph LR
+Input---Build---Output
+```
+
+对于一次完整的构建过程而言，`Rollup` 会先进入到 `Build` 阶段，解析各模块的内容及依赖关系，然后进入 `Output` 阶段调用 `bundle` 对象暴露的 `generate` 和 `write` 方法完成打包及输出的过程
+
+### 插件 Hook 类型分类
+
+#### 按阶段
+
+##### build
+
+主要进行模块代码的转换、`AST` 解析以及模块依赖的解析，粒度为模块级别，即单文件级别
+
+##### output
+
+主要进行代码的打包，粒度为 `chunk` 级别（一个 chunk 通常指很多文件打包到一起的产物）
+
+#### 按执行方式
+
+##### Async & Sync
+
+异步和同步的钩子函数
+
+##### Parallel
+
+并行的钩子函数（底层 `Promise.all`）
+
+##### Sequential
+
+适用于插件间处理结果相互依赖的情况
+
+##### First
+
+如果有多个插件实现了这个 `Hook`，那么 `Hook` 将依次运行，直到返回一个 `非null` 或 `非undefined` 的值为止
+
+### 插件开发
+
+[Rollup 开发 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/rollup.html#%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91)
+
+### HMR 原理
+
+[Vite HMR 热更新 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/hmr.html#hmr-%E7%AE%80%E4%BB%8B)
+
+### SSR 工程化实现
+
+[SSR 工程化 | 前端那些事儿](https://jonny-wei.github.io/blog/devops/vite/ssr.html#%E7%90%86%E8%A7%A3-ssr)
+
+## 比较 webpack vs rollup
 
 开发复杂前端应用程序：引入第三方模块 +HMR 功能提高开发效率 + 拆包  
 开发类库：优点
