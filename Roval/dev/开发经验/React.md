@@ -70,4 +70,22 @@ const addDuringHeartBeats = useDuringHeartBeats({
   }, []);
 ```
 
+## 服务端 API
+
+### renderToStaticMarkup
+
+将一个非交互式的 React 树渲染成 HTML 字符串  
+
+[renderToStaticMarkup – React 中文文档](https://zh-hans.react.dev/reference/react-dom/server/renderToStaticMarkup)
+
+## 过时 API
+
+### createElement
+
+调用 `createElement` 替代 `jsx` 来创建一个 `React` 组件，它有 `type`、`props` 和 `children` 三个参数，返回一个 `React` 元素
+
+`type`：`type` 参数必须是一个有效的 `React` 组件类型，例如一个字符串标签名（如 `'div'` 或 `'span'`），或一个 `React` 组件（一个函数式组件、一个类式组件，或者是一个特殊的组件如 [`Fragment`](https://zh-hans.react.dev/reference/react/Fragment)）  
+
+[createElement – React 中文文档](https://zh-hans.react.dev/reference/react/createElement)
+
 # Reference
