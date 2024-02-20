@@ -78,7 +78,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/react-beautiful-dnd.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/NPM/react-beautiful-dnd.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/NPM/react-beautiful-dnd.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/NPM/react-beautiful-dnd.md"
+                "file": "Roval/dev/JavaScript/RegExp.md"
               }
             }
           },
@@ -304,7 +304,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/NPM/react-beautiful-dnd.md",
+                "file": "Roval/dev/JavaScript/RegExp.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -357,9 +357,11 @@
   },
   "active": "9dfed6d8f6ad7ee2",
   "lastOpenFiles": [
+    "Roval/dev/JavaScript/String.md",
+    "Roval/dev/JavaScript/RegExp.md",
+    "Roval/dev/NPM/react-beautiful-dnd.md",
     "Roval/dev/NPM/react-dnd.md",
     "Roval/dev/NPM/react-redux.md",
-    "Roval/dev/NPM/react-beautiful-dnd.md",
     "Roval/dev/NPM/React.md",
     "Roval/dev/NPM/BlobJS.md",
     "Roval/dev/NPM/发包心得.md",
@@ -388,8 +390,6 @@
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/JavaScript/TypeScript教学.md",
     "Roval/dev/NPM/Vue3.md",
-    "Roval/dev/NPM/Pinia.md",
-    "Roval/dev/NPM/Vuex.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240124102159.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141823.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141622.png",
