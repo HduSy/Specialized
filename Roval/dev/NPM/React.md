@@ -75,6 +75,10 @@ function MyComponent() {
 }
 ```
 
+#### ref callback
+
+[Common components (e.g. \<div\>) – React](https://react.dev/reference/react-dom/components/common#ref-callback)
+
 ### React.memo 性能优化
 
 创建（memoized）记忆化组件，`prop` 变化或其自身 `state`、`context` 变化时，才会重新渲染。  
