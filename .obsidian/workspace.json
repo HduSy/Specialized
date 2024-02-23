@@ -99,6 +99,45 @@
             }
           },
           {
+            "id": "943b735a30c058af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0db6c557ba487e84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发经验/Vue - 表单节流指令.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3aa74accea4efa47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aca5539e784424e5",
             "type": "leaf",
             "state": {
@@ -164,7 +203,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -231,7 +270,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/移动端适配.md",
+                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +287,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/移动端适配.md",
+                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +310,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/移动端适配.md"
+                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md"
               }
             }
           },
@@ -317,7 +356,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/移动端适配.md",
+                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -368,10 +407,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "305413b7e7a7e5dc",
+  "active": "3aa74accea4efa47",
   "lastOpenFiles": [
-    "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
+    "Roval/dev/开发经验/Vue - 表单节流指令.md",
+    "Roval/dev/开发经验/Vue - 一键复制指令.md",
+    "Roval/dev/开发经验/Vue - 元素曝光指令.md",
+    "Roval/dev/开发经验/1px问题.md",
     "Roval/dev/开发经验/移动端适配.md",
+    "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
     "Roval/dev/开发经验/前端尺寸.md",
     "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
     "Roval/dev/开发经验/rem font-size设置.md",
@@ -397,12 +440,8 @@
     "Roval/Project/Pasted image 20240131111715.png",
     "Roval/Project/Babel.md",
     "Roval/Project/webpack.md",
-    "Roval/Project/package.json.md",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第四章 响应系统的作用与实现.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101312.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101047.png",
-    "Roval/Articals/书籍/《VueJS设计与实现》/第二章 框架设计的核心要素.md",
-    "Roval/dev/JavaScript/模块化.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240124102159.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141823.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240123141622.png",
