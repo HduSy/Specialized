@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d25f2b1841c54d78",
+        "id": "f244cc998ef99d35",
         "type": "tabs",
         "children": [
           {
-            "id": "1dd2acf143b09883",
+            "id": "757c3806334bf98a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/JavaScript/模块化.md",
+                "file": "Roval/dev/DOM/DOM.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,181 +21,12 @@
             }
           },
           {
-            "id": "a831b9ff1e8d880e",
+            "id": "f957c0397836c6de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/NPM/BlobJS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1aa3bebb2832ea48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM/Vuex.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1536f3c9f013e97a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/Project/vite.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2f13d3aeab01b33",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM/BlobJS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9dfed6d8f6ad7ee2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "305413b7e7a7e5dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发经验/移动端适配.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "943b735a30c058af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0db6c557ba487e84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发经验/Vue - 表单节流指令.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3aa74accea4efa47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aca5539e784424e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/NPM/react-dnd.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "573a319b07a3973e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/Project/webpack.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ee980f2eef8bd9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/Project/package.json.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c9047b9c3444183",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/Project/Rollup.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c732b82e52e63904",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Roval/dev/CSS/css.md",
+                "file": "Roval/dev/DOM/微前端.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -203,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CSS In JS",
+                "query": "intersection",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -270,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
+                "file": "Roval/dev/DOM/微前端.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
+                "file": "Roval/dev/DOM/微前端.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -310,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md"
+                "file": "Roval/dev/DOM/微前端.md"
               }
             }
           },
@@ -356,7 +187,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/开发经验/Vue - 一键复制指令.md",
+                "file": "Roval/dev/DOM/微前端.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -407,39 +238,39 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3aa74accea4efa47",
+  "active": "f957c0397836c6de",
   "lastOpenFiles": [
-    "Roval/dev/开发经验/Vue - 表单节流指令.md",
-    "Roval/dev/开发经验/Vue - 一键复制指令.md",
+    "Roval/dev/DOM/DOM.md",
+    "Roval/dev/DOM/微前端.md",
+    "Roval/dev/Git/Git 使用.md",
+    "Roval/dev/Git/Git 简写.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
-    "Roval/dev/开发经验/1px问题.md",
-    "Roval/dev/开发经验/移动端适配.md",
-    "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
-    "Roval/dev/开发经验/前端尺寸.md",
-    "Roval/dev/开发经验/H5中页面是如何加载出来的.md",
-    "Roval/dev/开发经验/rem font-size设置.md",
-    "Roval/dev/NPM/React.md",
-    "Roval/dev/开发经验/React.md",
-    "Roval/dev/JavaScript/RegExp.md",
-    "Roval/dev/JavaScript/String.md",
-    "Roval/dev/NPM/react-beautiful-dnd.md",
-    "Roval/dev/NPM/react-dnd.md",
-    "Roval/dev/NPM/react-redux.md",
-    "Roval/dev/NPM/BlobJS.md",
-    "Roval/dev/NPM/发包心得.md",
-    "Roval/dev/NPM/mitt.md",
-    "Roval/Project/Rollup.md",
-    "Roval/Project/vite.md",
-    "Roval/Project/Pasted image 20240131211828.png",
-    "Daily/2023-07-13.md",
-    "Daily/2023-08-04.md",
+    "Roval/dev/杂/MDN.md",
+    "Roval/dev/杂/技术博客与网站.md",
+    "Roval/dev/杂/工程化.md",
     "Roval/dev/杂/第三方包.md",
+    "Roval/Project/vite.md",
+    "Roval/dev/开发经验/长列表优化.md",
+    "Roval/前端面经/面试官问点.md",
+    "Roval/dev/开发经验/front-end.md",
+    "Daily/2023-08-23.md",
+    "Roval/dev/JavaScript/模块化.md",
+    "Roval/dev/NPM/React.md",
+    "Roval/前端面经/Vite面经.md",
+    "Roval/dev/CSS/css.md",
+    "Roval/Project/Rollup.md",
+    "Roval/Project/package.json.md",
+    "Roval/Project/webpack.md",
+    "Roval/dev/NPM/react-dnd.md",
+    "Roval/dev/NPM/BlobJS.md",
+    "Roval/dev/NPM/Vuex.md",
+    "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
+    "Roval/dev/开发经验/移动端适配.md",
+    "Roval/Project/Pasted image 20240131211828.png",
     "Roval/Project/Pasted image 20240131114542.png",
     "Roval/Project/Pasted image 20240131112324.png",
     "Roval/Project/Pasted image 20240131111951.png",
     "Roval/Project/Pasted image 20240131111715.png",
-    "Roval/Project/Babel.md",
-    "Roval/Project/webpack.md",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101312.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240127101047.png",
     "Roval/Articals/书籍/《VueJS设计与实现》/Pasted image 20240124102159.png",

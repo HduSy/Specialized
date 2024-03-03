@@ -141,3 +141,13 @@ function isPromise(obj: any):boolean {
   }
 }
 ```
+
+## 指定字符串重复 n 次
+
+```js
+const str = 'str'
+new Array(n).join(str)
+str.repeat(n) // String.prototype.repeat
+// for-loop
+// lodash-repeat
+```

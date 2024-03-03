@@ -26,12 +26,27 @@ Last Modified：2022-12-17 22:19:23
 
 ### useEffect(setup?, dependencies)
 
-`setup`：处理 `Effect` 的函数，选择性返回 `cleanup` 清理函数。组件添加到 `DOM` 时执行 `setup` 函数，后续 `dependencies` 变动引起的 `re-render` 会先以旧值执行 `cleanup` 再以新值执行 `setup`；组件从 `DOM` 移除时，最后一次执行 `cleanup` 函数  
-`dependencies`：reactive values include props, state, and all the variables and functions declared directly inside your component body. 使用 `Object.is` 比较新旧值. If you omit this argument, your Effect will **re-run** after every re-render of the component.
+顶层调用，接收 2 个参数：  
 
+- `setup`：处理副作用的函数，选择性返回 `cleanup` 清理函数；
+- `dependencies`：reactive values include props, state, and all the variables and functions declared directly inside your component body. 使用 `Object.is` 比较新旧值. If you omit this argument, your Effect will **re-run** after every re-render of the component.（`Object.is(a, b)` 是对严格相等 `===`2 个例外的补充）
+
+#### setup 执行时机
+
+- 组件添加到 `DOM` 时执行 `setup` 函数；
+- 后续 `prop、state` 变动引起的 `re-render` 时，若 `dependencies` 会先以旧值执行 `cleanup` 再以新值执行 `setup`；
+- 组件从 `DOM` 移除时，最后一次执行 `cleanup` 函数  
 - useEffect 为函数式组件提供副效应，支持第二个参数填依赖项，条件执行 [阮一峰 useEffect](https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html)
-- 产生 memorization 函数，以空间换时间，缓存纯函数计算结果，只有指定依赖项发生变更时才重新计算结果 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)
-- [useEffect – React 中文文档](https://zh-hans.react.dev/reference/react/useEffect)
+- 产生 memorization 函数，以空间换时间，缓存纯函数计算结果，只有指定依赖项发生变更时才重新计算结果 [CSDN useCallback](https://blog.csdn.net/milk_0126/article/details/103635225)  
+  [useEffect – React 中文文档](https://zh-hans.react.dev/reference/react/useEffect)
+
+### useLayoutEffect
+
+`useEffect` 的另一版本，参数与其相同，不同的是：`useLayoutEffect` 能解决重渲染画面闪烁问题，在浏览器重绘前执行回调。因而也可能给应用带来性能问题
+
+#### 应用
+
+[为元素即时渲染ToolTip](https://react.dev/reference/react/useLayoutEffect#measuring-layout-before-the-browser-repaints-the-screen)
 
 ### useRef(initialValue)
 

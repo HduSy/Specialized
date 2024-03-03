@@ -33,7 +33,7 @@ git push --force <远程主机名> <本地分支名>
 git push -u origin [target-branch]
 ```
 
-首次 push 到远程 registry 时指定默认 push 分支，后续 pull/push 操作可不用指定操作的分支。
+本地分支与远程分支做管理，首次 push 到远程 registry 时指定默认 push 分支，后续 pull/push 操作可不用指定操作的分支。
 
 `-d`
 
@@ -64,7 +64,9 @@ eg. `git pull origin master:feat/topic_ttt `
 
 ## git reset
 
-`--mixed` 仅保留工作区代码。撤销上次 `git add` 和 `git commit` 操作（将添加到暂存区的内容取出！改动的文件颜色变回红色，工作区状态）
+回退到指定 CommitID 的版本
+
+`--mixed` （默认）仅保留工作区代码。撤销上次 `git add` 和 `git commit` 操作（将添加到暂存区的内容取出！改动的文件颜色变回红色，工作区状态）
 
 ```bash
 git reset --mixed HEAD^
