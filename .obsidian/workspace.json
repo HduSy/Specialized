@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roval/dev/DOM/微前端.md",
+                "file": "Roval/dev/浏览器/Chrome Dev-Tools 骚操作.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c4cd5ba8b792298f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Roval/dev/浏览器/页面生命周期.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Roval/dev/DOM/微前端.md",
+                "file": "Roval/dev/浏览器/页面生命周期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Roval/dev/DOM/微前端.md",
+                "file": "Roval/dev/浏览器/页面生命周期.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Roval/dev/DOM/微前端.md"
+                "file": "Roval/dev/浏览器/页面生命周期.md"
               }
             }
           },
@@ -187,7 +200,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Roval/dev/DOM/微前端.md",
+                "file": "Roval/dev/浏览器/页面生命周期.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,10 +251,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f957c0397836c6de",
+  "active": "c4cd5ba8b792298f",
   "lastOpenFiles": [
-    "Roval/dev/DOM/DOM.md",
+    "Roval/dev/浏览器/Chrome Dev-Tools 骚操作.md",
+    "Roval/dev/浏览器/页面生命周期.md",
+    "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/DOM/微前端.md",
+    "Roval/dev/DOM/DOM.md",
     "Roval/dev/Git/Git 使用.md",
     "Roval/dev/Git/Git 简写.md",
     "Roval/dev/开发经验/Vue - 元素曝光指令.md",
@@ -254,7 +270,6 @@
     "Roval/前端面经/面试官问点.md",
     "Roval/dev/开发经验/front-end.md",
     "Daily/2023-08-23.md",
-    "Roval/dev/JavaScript/模块化.md",
     "Roval/dev/NPM/React.md",
     "Roval/前端面经/Vite面经.md",
     "Roval/dev/CSS/css.md",
@@ -264,8 +279,6 @@
     "Roval/dev/NPM/react-dnd.md",
     "Roval/dev/NPM/BlobJS.md",
     "Roval/dev/NPM/Vuex.md",
-    "Roval/dev/开发经验/Web浏览器端页面是如何加载出来的.md",
-    "Roval/dev/开发经验/移动端适配.md",
     "Roval/Project/Pasted image 20240131211828.png",
     "Roval/Project/Pasted image 20240131114542.png",
     "Roval/Project/Pasted image 20240131112324.png",
